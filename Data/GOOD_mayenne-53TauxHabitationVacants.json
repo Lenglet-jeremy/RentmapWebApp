@@ -1,0 +1,1442 @@
+[
+    {
+        "codgeo": 53001,
+        "libgeo": "Ahuille",
+        "an": 2021,
+        "part_logt_vacant": 4.9
+    },
+    {
+        "codgeo": 53002,
+        "libgeo": "Alexain",
+        "an": 2021,
+        "part_logt_vacant": 9.2
+    },
+    {
+        "codgeo": 53003,
+        "libgeo": "Ambrieres les Vallees",
+        "an": 2021,
+        "part_logt_vacant": 13.9
+    },
+    {
+        "codgeo": 53005,
+        "libgeo": "Andouille",
+        "an": 2021,
+        "part_logt_vacant": 8.6
+    },
+    {
+        "codgeo": 53007,
+        "libgeo": "Argentre",
+        "an": 2021,
+        "part_logt_vacant": 4.0
+    },
+    {
+        "codgeo": 53008,
+        "libgeo": "Aron",
+        "an": 2021,
+        "part_logt_vacant": 5.5
+    },
+    {
+        "codgeo": 53009,
+        "libgeo": "Arquenay",
+        "an": 2021,
+        "part_logt_vacant": 5.6
+    },
+    {
+        "codgeo": 53010,
+        "libgeo": "Asse le Berenger",
+        "an": 2021,
+        "part_logt_vacant": 10.0
+    },
+    {
+        "codgeo": 53011,
+        "libgeo": "Astille",
+        "an": 2021,
+        "part_logt_vacant": 5.5
+    },
+    {
+        "codgeo": 53012,
+        "libgeo": "Athee",
+        "an": 2021,
+        "part_logt_vacant": 9.3
+    },
+    {
+        "codgeo": 53013,
+        "libgeo": "Averton",
+        "an": 2021,
+        "part_logt_vacant": 13.7
+    },
+    {
+        "codgeo": 53015,
+        "libgeo": "La Baconniere",
+        "an": 2021,
+        "part_logt_vacant": 8.6
+    },
+    {
+        "codgeo": 53016,
+        "libgeo": "Bais",
+        "an": 2021,
+        "part_logt_vacant": 16.7
+    },
+    {
+        "codgeo": 53017,
+        "libgeo": "Val du Maine",
+        "an": 2021,
+        "part_logt_vacant": 9.0
+    },
+    {
+        "codgeo": 53018,
+        "libgeo": "Ballots",
+        "an": 2021,
+        "part_logt_vacant": 11.6
+    },
+    {
+        "codgeo": 53019,
+        "libgeo": "Bannes",
+        "an": 2021,
+        "part_logt_vacant": 9.0
+    },
+    {
+        "codgeo": 53021,
+        "libgeo": "La Bazoge Montpincon",
+        "an": 2021,
+        "part_logt_vacant": 0.6
+    },
+    {
+        "codgeo": 53022,
+        "libgeo": "La Bazouge de Chemere",
+        "an": 2021,
+        "part_logt_vacant": 14.3
+    },
+    {
+        "codgeo": 53023,
+        "libgeo": "La Bazouge des Alleux",
+        "an": 2021,
+        "part_logt_vacant": 8.5
+    },
+    {
+        "codgeo": 53025,
+        "libgeo": "Bazougers",
+        "an": 2021,
+        "part_logt_vacant": 8.4
+    },
+    {
+        "codgeo": 53026,
+        "libgeo": "Beaulieu sur Oudon",
+        "an": 2021,
+        "part_logt_vacant": 6.9
+    },
+    {
+        "codgeo": 53027,
+        "libgeo": "Beaumont Pied de Boeuf",
+        "an": 2021,
+        "part_logt_vacant": 9.5
+    },
+    {
+        "codgeo": 53028,
+        "libgeo": "Belgeard",
+        "an": 2021,
+        "part_logt_vacant": 5.8
+    },
+    {
+        "codgeo": 53029,
+        "libgeo": "Bierne les Villages",
+        "an": 2021,
+        "part_logt_vacant": 10.9
+    },
+    {
+        "codgeo": 53030,
+        "libgeo": "Le Bignon du Maine",
+        "an": 2021,
+        "part_logt_vacant": 13.9
+    },
+    {
+        "codgeo": 53031,
+        "libgeo": "La Bigottiere",
+        "an": 2021,
+        "part_logt_vacant": 5.2
+    },
+    {
+        "codgeo": 53033,
+        "libgeo": "La Boissiere",
+        "an": 2021,
+        "part_logt_vacant": 11.4
+    },
+    {
+        "codgeo": 53034,
+        "libgeo": "Bonchamp les Laval",
+        "an": 2021,
+        "part_logt_vacant": 3.5
+    },
+    {
+        "codgeo": 53035,
+        "libgeo": "Bouchamps les Craon",
+        "an": 2021,
+        "part_logt_vacant": 2.1
+    },
+    {
+        "codgeo": 53036,
+        "libgeo": "Bouere",
+        "an": 2021,
+        "part_logt_vacant": 10.8
+    },
+    {
+        "codgeo": 53037,
+        "libgeo": "Bouessay",
+        "an": 2021,
+        "part_logt_vacant": 9.3
+    },
+    {
+        "codgeo": 53038,
+        "libgeo": "Boulay les Ifs",
+        "an": 2021,
+        "part_logt_vacant": 2.9
+    },
+    {
+        "codgeo": 53039,
+        "libgeo": "Le Bourgneuf la Foret",
+        "an": 2021,
+        "part_logt_vacant": 9.0
+    },
+    {
+        "codgeo": 53040,
+        "libgeo": "Bourgon",
+        "an": 2021,
+        "part_logt_vacant": 8.2
+    },
+    {
+        "codgeo": 53041,
+        "libgeo": "Brains sur les Marches",
+        "an": 2021,
+        "part_logt_vacant": 8.0
+    },
+    {
+        "codgeo": 53042,
+        "libgeo": "Brece",
+        "an": 2021,
+        "part_logt_vacant": 7.3
+    },
+    {
+        "codgeo": 53043,
+        "libgeo": "Bree",
+        "an": 2021,
+        "part_logt_vacant": 11.0
+    },
+    {
+        "codgeo": 53045,
+        "libgeo": "La Brulatte",
+        "an": 2021,
+        "part_logt_vacant": 3.4
+    },
+    {
+        "codgeo": 53046,
+        "libgeo": "Le Buret",
+        "an": 2021,
+        "part_logt_vacant": 6.3
+    },
+    {
+        "codgeo": 53047,
+        "libgeo": "Carelles",
+        "an": 2021,
+        "part_logt_vacant": 16.2
+    },
+    {
+        "codgeo": 53048,
+        "libgeo": "Chailland",
+        "an": 2021,
+        "part_logt_vacant": 14.8
+    },
+    {
+        "codgeo": 53049,
+        "libgeo": "Chalons du Maine",
+        "an": 2021,
+        "part_logt_vacant": 4.7
+    },
+    {
+        "codgeo": 53051,
+        "libgeo": "Champeon",
+        "an": 2021,
+        "part_logt_vacant": 14.4
+    },
+    {
+        "codgeo": 53052,
+        "libgeo": "Champfremont",
+        "an": 2021,
+        "part_logt_vacant": 17.0
+    },
+    {
+        "codgeo": 53053,
+        "libgeo": "Champgeneteux",
+        "an": 2021,
+        "part_logt_vacant": 21.5
+    },
+    {
+        "codgeo": 53054,
+        "libgeo": "Change",
+        "an": 2021,
+        "part_logt_vacant": 3.8
+    },
+    {
+        "codgeo": 53055,
+        "libgeo": "Chantrigne",
+        "an": 2021,
+        "part_logt_vacant": 10.2
+    },
+    {
+        "codgeo": 53056,
+        "libgeo": "La Chapelle Anthenaise",
+        "an": 2021,
+        "part_logt_vacant": 5.3
+    },
+    {
+        "codgeo": 53057,
+        "libgeo": "La Chapelle au Riboul",
+        "an": 2021,
+        "part_logt_vacant": 17.1
+    },
+    {
+        "codgeo": 53058,
+        "libgeo": "La Chapelle Craonnaise",
+        "an": 2021,
+        "part_logt_vacant": 6.1
+    },
+    {
+        "codgeo": 53059,
+        "libgeo": "La Chapelle Rainsouin",
+        "an": 2021,
+        "part_logt_vacant": 9.3
+    },
+    {
+        "codgeo": 53061,
+        "libgeo": "Charchigne",
+        "an": 2021,
+        "part_logt_vacant": 10.5
+    },
+    {
+        "codgeo": 53062,
+        "libgeo": "Chateau Gontier sur Mayenne",
+        "an": 2021,
+        "part_logt_vacant": 7.0
+    },
+    {
+        "codgeo": 53063,
+        "libgeo": "Chatelain",
+        "an": 2021,
+        "part_logt_vacant": 6.1
+    },
+    {
+        "codgeo": 53064,
+        "libgeo": "Chatillon sur Colmont",
+        "an": 2021,
+        "part_logt_vacant": 13.3
+    },
+    {
+        "codgeo": 53066,
+        "libgeo": "Chemaze",
+        "an": 2021,
+        "part_logt_vacant": 8.3
+    },
+    {
+        "codgeo": 53067,
+        "libgeo": "Chemere le Roi",
+        "an": 2021,
+        "part_logt_vacant": 12.2
+    },
+    {
+        "codgeo": 53068,
+        "libgeo": "Cherance",
+        "an": 2021,
+        "part_logt_vacant": 15.4
+    },
+    {
+        "codgeo": 53069,
+        "libgeo": "Chevaigne du Maine",
+        "an": 2021,
+        "part_logt_vacant": 16.9
+    },
+    {
+        "codgeo": 53071,
+        "libgeo": "Colombiers du Plessis",
+        "an": 2021,
+        "part_logt_vacant": 10.2
+    },
+    {
+        "codgeo": 53072,
+        "libgeo": "Commer",
+        "an": 2021,
+        "part_logt_vacant": 4.7
+    },
+    {
+        "codgeo": 53073,
+        "libgeo": "Congrier",
+        "an": 2021,
+        "part_logt_vacant": 10.0
+    },
+    {
+        "codgeo": 53074,
+        "libgeo": "Contest",
+        "an": 2021,
+        "part_logt_vacant": 6.2
+    },
+    {
+        "codgeo": 53075,
+        "libgeo": "Cosmes",
+        "an": 2021,
+        "part_logt_vacant": 5.5
+    },
+    {
+        "codgeo": 53076,
+        "libgeo": "Cosse en Champagne",
+        "an": 2021,
+        "part_logt_vacant": 10.5
+    },
+    {
+        "codgeo": 53077,
+        "libgeo": "Cosse le Vivien",
+        "an": 2021,
+        "part_logt_vacant": 8.7
+    },
+    {
+        "codgeo": 53078,
+        "libgeo": "Coudray",
+        "an": 2021,
+        "part_logt_vacant": 4.2
+    },
+    {
+        "codgeo": 53079,
+        "libgeo": "Couesmes Vauce",
+        "an": 2021,
+        "part_logt_vacant": 19.9
+    },
+    {
+        "codgeo": 53080,
+        "libgeo": "Couptrain",
+        "an": 2021,
+        "part_logt_vacant": 24.6
+    },
+    {
+        "codgeo": 53082,
+        "libgeo": "Courbeveille",
+        "an": 2021,
+        "part_logt_vacant": 5.4
+    },
+    {
+        "codgeo": 53083,
+        "libgeo": "Courcite",
+        "an": 2021,
+        "part_logt_vacant": 14.2
+    },
+    {
+        "codgeo": 53084,
+        "libgeo": "Craon",
+        "an": 2021,
+        "part_logt_vacant": 10.8
+    },
+    {
+        "codgeo": 53085,
+        "libgeo": "Crennes sur Fraubee",
+        "an": 2021,
+        "part_logt_vacant": 11.8
+    },
+    {
+        "codgeo": 53086,
+        "libgeo": "La Croixille",
+        "an": 2021,
+        "part_logt_vacant": 11.7
+    },
+    {
+        "codgeo": 53087,
+        "libgeo": "La Cropte",
+        "an": 2021,
+        "part_logt_vacant": 8.0
+    },
+    {
+        "codgeo": 53088,
+        "libgeo": "Cuille",
+        "an": 2021,
+        "part_logt_vacant": 11.4
+    },
+    {
+        "codgeo": 53089,
+        "libgeo": "Daon",
+        "an": 2021,
+        "part_logt_vacant": 11.5
+    },
+    {
+        "codgeo": 53090,
+        "libgeo": "Denaze",
+        "an": 2021,
+        "part_logt_vacant": 7.0
+    },
+    {
+        "codgeo": 53091,
+        "libgeo": "Desertines",
+        "an": 2021,
+        "part_logt_vacant": 8.7
+    },
+    {
+        "codgeo": 53093,
+        "libgeo": "La Doree",
+        "an": 2021,
+        "part_logt_vacant": 12.8
+    },
+    {
+        "codgeo": 53094,
+        "libgeo": "Entrammes",
+        "an": 2021,
+        "part_logt_vacant": 4.1
+    },
+    {
+        "codgeo": 53096,
+        "libgeo": "Ernee",
+        "an": 2021,
+        "part_logt_vacant": 11.2
+    },
+    {
+        "codgeo": 53097,
+        "libgeo": "Evron",
+        "an": 2021,
+        "part_logt_vacant": 10.4
+    },
+    {
+        "codgeo": 53098,
+        "libgeo": "Fontaine Couverte",
+        "an": 2021,
+        "part_logt_vacant": 12.3
+    },
+    {
+        "codgeo": 53099,
+        "libgeo": "Force",
+        "an": 2021,
+        "part_logt_vacant": 4.4
+    },
+    {
+        "codgeo": 53100,
+        "libgeo": "Fougerolles du Plessis",
+        "an": 2021,
+        "part_logt_vacant": 12.2
+    },
+    {
+        "codgeo": 53101,
+        "libgeo": "Fromentieres",
+        "an": 2021,
+        "part_logt_vacant": 5.1
+    },
+    {
+        "codgeo": 53102,
+        "libgeo": "Gastines",
+        "an": 2021,
+        "part_logt_vacant": 9.3
+    },
+    {
+        "codgeo": 53103,
+        "libgeo": "Le Genest st Isle",
+        "an": 2021,
+        "part_logt_vacant": 2.4
+    },
+    {
+        "codgeo": 53104,
+        "libgeo": "Gennes Longuefuye",
+        "an": 2021,
+        "part_logt_vacant": 7.5
+    },
+    {
+        "codgeo": 53105,
+        "libgeo": "Gesnes",
+        "an": 2021,
+        "part_logt_vacant": 6.7
+    },
+    {
+        "codgeo": 53106,
+        "libgeo": "Gesvres",
+        "an": 2021,
+        "part_logt_vacant": 15.8
+    },
+    {
+        "codgeo": 53107,
+        "libgeo": "Gorron",
+        "an": 2021,
+        "part_logt_vacant": 12.6
+    },
+    {
+        "codgeo": 53108,
+        "libgeo": "La Gravelle",
+        "an": 2021,
+        "part_logt_vacant": 10.5
+    },
+    {
+        "codgeo": 53109,
+        "libgeo": "Grazay",
+        "an": 2021,
+        "part_logt_vacant": 10.0
+    },
+    {
+        "codgeo": 53110,
+        "libgeo": "Grez en Bouere",
+        "an": 2021,
+        "part_logt_vacant": 9.2
+    },
+    {
+        "codgeo": 53111,
+        "libgeo": "La Haie Traversaine",
+        "an": 2021,
+        "part_logt_vacant": 12.1
+    },
+    {
+        "codgeo": 53112,
+        "libgeo": "Le Ham",
+        "an": 2021,
+        "part_logt_vacant": 13.4
+    },
+    {
+        "codgeo": 53113,
+        "libgeo": "Hambers",
+        "an": 2021,
+        "part_logt_vacant": 15.8
+    },
+    {
+        "codgeo": 53114,
+        "libgeo": "Hardanges",
+        "an": 2021,
+        "part_logt_vacant": 13.9
+    },
+    {
+        "codgeo": 53115,
+        "libgeo": "Herce",
+        "an": 2021,
+        "part_logt_vacant": 8.6
+    },
+    {
+        "codgeo": 53116,
+        "libgeo": "Le Horps",
+        "an": 2021,
+        "part_logt_vacant": 14.2
+    },
+    {
+        "codgeo": 53117,
+        "libgeo": "Houssay",
+        "an": 2021,
+        "part_logt_vacant": 6.2
+    },
+    {
+        "codgeo": 53118,
+        "libgeo": "Le Housseau Bretignolles",
+        "an": 2021,
+        "part_logt_vacant": 9.5
+    },
+    {
+        "codgeo": 53119,
+        "libgeo": "L Huisserie",
+        "an": 2021,
+        "part_logt_vacant": 5.6
+    },
+    {
+        "codgeo": 53120,
+        "libgeo": "Ize",
+        "an": 2021,
+        "part_logt_vacant": 12.5
+    },
+    {
+        "codgeo": 53121,
+        "libgeo": "Javron les Chapelles",
+        "an": 2021,
+        "part_logt_vacant": 15.1
+    },
+    {
+        "codgeo": 53122,
+        "libgeo": "Jublains",
+        "an": 2021,
+        "part_logt_vacant": 11.0
+    },
+    {
+        "codgeo": 53123,
+        "libgeo": "Juvigne",
+        "an": 2021,
+        "part_logt_vacant": 10.1
+    },
+    {
+        "codgeo": 53124,
+        "libgeo": "Pree d Anjou",
+        "an": 2021,
+        "part_logt_vacant": 7.0
+    },
+    {
+        "codgeo": 53125,
+        "libgeo": "Landivy",
+        "an": 2021,
+        "part_logt_vacant": 16.6
+    },
+    {
+        "codgeo": 53126,
+        "libgeo": "Larchamp",
+        "an": 2021,
+        "part_logt_vacant": 13.7
+    },
+    {
+        "codgeo": 53127,
+        "libgeo": "Lassay les Chateaux",
+        "an": 2021,
+        "part_logt_vacant": 15.6
+    },
+    {
+        "codgeo": 53128,
+        "libgeo": "Laubrieres",
+        "an": 2021,
+        "part_logt_vacant": 8.3
+    },
+    {
+        "codgeo": 53129,
+        "libgeo": "Launay Villiers",
+        "an": 2021,
+        "part_logt_vacant": 6.4
+    },
+    {
+        "codgeo": 53130,
+        "libgeo": "Laval",
+        "an": 2021,
+        "part_logt_vacant": 8.4
+    },
+    {
+        "codgeo": 53131,
+        "libgeo": "Lesbois",
+        "an": 2021,
+        "part_logt_vacant": 13.9
+    },
+    {
+        "codgeo": 53132,
+        "libgeo": "Levare",
+        "an": 2021,
+        "part_logt_vacant": 16.2
+    },
+    {
+        "codgeo": 53133,
+        "libgeo": "Lignieres Orgeres",
+        "an": 2021,
+        "part_logt_vacant": 13.7
+    },
+    {
+        "codgeo": 53134,
+        "libgeo": "Livet",
+        "an": 2021,
+        "part_logt_vacant": 10.0
+    },
+    {
+        "codgeo": 53135,
+        "libgeo": "Livre la Touche",
+        "an": 2021,
+        "part_logt_vacant": 11.8
+    },
+    {
+        "codgeo": 53136,
+        "libgeo": "La Roche Neuville",
+        "an": 2021,
+        "part_logt_vacant": 3.1
+    },
+    {
+        "codgeo": 53137,
+        "libgeo": "Loiron Ruille",
+        "an": 2021,
+        "part_logt_vacant": 5.1
+    },
+    {
+        "codgeo": 53139,
+        "libgeo": "Loupfougeres",
+        "an": 2021,
+        "part_logt_vacant": 14.7
+    },
+    {
+        "codgeo": 53140,
+        "libgeo": "Louverne",
+        "an": 2021,
+        "part_logt_vacant": 4.3
+    },
+    {
+        "codgeo": 53141,
+        "libgeo": "Louvigne",
+        "an": 2021,
+        "part_logt_vacant": 6.1
+    },
+    {
+        "codgeo": 53142,
+        "libgeo": "Madre",
+        "an": 2021,
+        "part_logt_vacant": 10.2
+    },
+    {
+        "codgeo": 53143,
+        "libgeo": "Maisoncelles du Maine",
+        "an": 2021,
+        "part_logt_vacant": 3.2
+    },
+    {
+        "codgeo": 53144,
+        "libgeo": "Marcille la Ville",
+        "an": 2021,
+        "part_logt_vacant": 13.1
+    },
+    {
+        "codgeo": 53145,
+        "libgeo": "Marigne Peuton",
+        "an": 2021,
+        "part_logt_vacant": 5.6
+    },
+    {
+        "codgeo": 53146,
+        "libgeo": "Martigne sur Mayenne",
+        "an": 2021,
+        "part_logt_vacant": 7.3
+    },
+    {
+        "codgeo": 53147,
+        "libgeo": "Mayenne",
+        "an": 2021,
+        "part_logt_vacant": 11.6
+    },
+    {
+        "codgeo": 53148,
+        "libgeo": "Mee",
+        "an": 2021,
+        "part_logt_vacant": 0.0
+    },
+    {
+        "codgeo": 53150,
+        "libgeo": "Menil",
+        "an": 2021,
+        "part_logt_vacant": 5.7
+    },
+    {
+        "codgeo": 53151,
+        "libgeo": "Meral",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 53152,
+        "libgeo": "Meslay du Maine",
+        "an": 2021,
+        "part_logt_vacant": 8.3
+    },
+    {
+        "codgeo": 53153,
+        "libgeo": "Mezangers",
+        "an": 2021,
+        "part_logt_vacant": 8.2
+    },
+    {
+        "codgeo": 53154,
+        "libgeo": "Montaudin",
+        "an": 2021,
+        "part_logt_vacant": 13.1
+    },
+    {
+        "codgeo": 53155,
+        "libgeo": "Montenay",
+        "an": 2021,
+        "part_logt_vacant": 6.4
+    },
+    {
+        "codgeo": 53156,
+        "libgeo": "Montflours",
+        "an": 2021,
+        "part_logt_vacant": 10.9
+    },
+    {
+        "codgeo": 53157,
+        "libgeo": "Montigne le Brillant",
+        "an": 2021,
+        "part_logt_vacant": 5.1
+    },
+    {
+        "codgeo": 53158,
+        "libgeo": "Montjean",
+        "an": 2021,
+        "part_logt_vacant": 5.3
+    },
+    {
+        "codgeo": 53160,
+        "libgeo": "Montreuil Poulay",
+        "an": 2021,
+        "part_logt_vacant": 20.6
+    },
+    {
+        "codgeo": 53161,
+        "libgeo": "Montsurs",
+        "an": 2021,
+        "part_logt_vacant": 9.6
+    },
+    {
+        "codgeo": 53162,
+        "libgeo": "Moulay",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 53163,
+        "libgeo": "Neau",
+        "an": 2021,
+        "part_logt_vacant": 11.2
+    },
+    {
+        "codgeo": 53164,
+        "libgeo": "Neuilly le Vendin",
+        "an": 2021,
+        "part_logt_vacant": 15.8
+    },
+    {
+        "codgeo": 53165,
+        "libgeo": "Niafles",
+        "an": 2021,
+        "part_logt_vacant": 3.5
+    },
+    {
+        "codgeo": 53168,
+        "libgeo": "Nuille sur Vicoin",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 53169,
+        "libgeo": "Olivet",
+        "an": 2021,
+        "part_logt_vacant": 5.8
+    },
+    {
+        "codgeo": 53170,
+        "libgeo": "Oisseau",
+        "an": 2021,
+        "part_logt_vacant": 12.2
+    },
+    {
+        "codgeo": 53172,
+        "libgeo": "Origne",
+        "an": 2021,
+        "part_logt_vacant": 7.0
+    },
+    {
+        "codgeo": 53173,
+        "libgeo": "La Pallu",
+        "an": 2021,
+        "part_logt_vacant": 27.3
+    },
+    {
+        "codgeo": 53174,
+        "libgeo": "Parigne sur Braye",
+        "an": 2021,
+        "part_logt_vacant": 6.8
+    },
+    {
+        "codgeo": 53175,
+        "libgeo": "Parne sur Roc",
+        "an": 2021,
+        "part_logt_vacant": 4.1
+    },
+    {
+        "codgeo": 53176,
+        "libgeo": "Le Pas",
+        "an": 2021,
+        "part_logt_vacant": 11.5
+    },
+    {
+        "codgeo": 53177,
+        "libgeo": "La Pellerine",
+        "an": 2021,
+        "part_logt_vacant": 11.0
+    },
+    {
+        "codgeo": 53178,
+        "libgeo": "Peuton",
+        "an": 2021,
+        "part_logt_vacant": 12.1
+    },
+    {
+        "codgeo": 53179,
+        "libgeo": "Place",
+        "an": 2021,
+        "part_logt_vacant": 9.4
+    },
+    {
+        "codgeo": 53180,
+        "libgeo": "Pommerieux",
+        "an": 2021,
+        "part_logt_vacant": 4.2
+    },
+    {
+        "codgeo": 53181,
+        "libgeo": "Pontmain",
+        "an": 2021,
+        "part_logt_vacant": 4.1
+    },
+    {
+        "codgeo": 53182,
+        "libgeo": "Port Brillet",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 53184,
+        "libgeo": "Preaux",
+        "an": 2021,
+        "part_logt_vacant": 7.0
+    },
+    {
+        "codgeo": 53185,
+        "libgeo": "Pre en Pail st Samson",
+        "an": 2021,
+        "part_logt_vacant": 18.1
+    },
+    {
+        "codgeo": 53186,
+        "libgeo": "Quelaines st Gault",
+        "an": 2021,
+        "part_logt_vacant": 6.9
+    },
+    {
+        "codgeo": 53187,
+        "libgeo": "Ravigny",
+        "an": 2021,
+        "part_logt_vacant": 6.1
+    },
+    {
+        "codgeo": 53188,
+        "libgeo": "Renaze",
+        "an": 2021,
+        "part_logt_vacant": 13.5
+    },
+    {
+        "codgeo": 53189,
+        "libgeo": "Rennes en Grenouilles",
+        "an": 2021,
+        "part_logt_vacant": 11.0
+    },
+    {
+        "codgeo": 53190,
+        "libgeo": "Le Ribay",
+        "an": 2021,
+        "part_logt_vacant": 9.1
+    },
+    {
+        "codgeo": 53191,
+        "libgeo": "La Roe",
+        "an": 2021,
+        "part_logt_vacant": 14.9
+    },
+    {
+        "codgeo": 53192,
+        "libgeo": "La Rouaudiere",
+        "an": 2021,
+        "part_logt_vacant": 11.1
+    },
+    {
+        "codgeo": 53193,
+        "libgeo": "Ruille Froid Fonds",
+        "an": 2021,
+        "part_logt_vacant": 9.9
+    },
+    {
+        "codgeo": 53195,
+        "libgeo": "Sace",
+        "an": 2021,
+        "part_logt_vacant": 4.6
+    },
+    {
+        "codgeo": 53196,
+        "libgeo": "st Aignan de Couptrain",
+        "an": 2021,
+        "part_logt_vacant": 17.0
+    },
+    {
+        "codgeo": 53197,
+        "libgeo": "st Aignan sur Roe",
+        "an": 2021,
+        "part_logt_vacant": 10.5
+    },
+    {
+        "codgeo": 53198,
+        "libgeo": "st Aubin du Desert",
+        "an": 2021,
+        "part_logt_vacant": 17.3
+    },
+    {
+        "codgeo": 53199,
+        "libgeo": "st Aubin Fosse Louvain",
+        "an": 2021,
+        "part_logt_vacant": 9.7
+    },
+    {
+        "codgeo": 53200,
+        "libgeo": "st Baudelle",
+        "an": 2021,
+        "part_logt_vacant": 2.9
+    },
+    {
+        "codgeo": 53201,
+        "libgeo": "st Berthevin",
+        "an": 2021,
+        "part_logt_vacant": 4.4
+    },
+    {
+        "codgeo": 53202,
+        "libgeo": "st Berthevin la Tanniere",
+        "an": 2021,
+        "part_logt_vacant": 17.3
+    },
+    {
+        "codgeo": 53203,
+        "libgeo": "st Brice",
+        "an": 2021,
+        "part_logt_vacant": 9.1
+    },
+    {
+        "codgeo": 53204,
+        "libgeo": "st Calais du Desert",
+        "an": 2021,
+        "part_logt_vacant": 22.4
+    },
+    {
+        "codgeo": 53206,
+        "libgeo": "st Charles la Foret",
+        "an": 2021,
+        "part_logt_vacant": 4.4
+    },
+    {
+        "codgeo": 53208,
+        "libgeo": "st Cyr en Pail",
+        "an": 2021,
+        "part_logt_vacant": 11.2
+    },
+    {
+        "codgeo": 53209,
+        "libgeo": "st Cyr le Gravelais",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 53210,
+        "libgeo": "st Denis d Anjou",
+        "an": 2021,
+        "part_logt_vacant": 9.9
+    },
+    {
+        "codgeo": 53211,
+        "libgeo": "st Denis de Gastines",
+        "an": 2021,
+        "part_logt_vacant": 11.4
+    },
+    {
+        "codgeo": 53212,
+        "libgeo": "st Denis du Maine",
+        "an": 2021,
+        "part_logt_vacant": 7.4
+    },
+    {
+        "codgeo": 53213,
+        "libgeo": "st Ellier du Maine",
+        "an": 2021,
+        "part_logt_vacant": 11.2
+    },
+    {
+        "codgeo": 53214,
+        "libgeo": "st Erblon",
+        "an": 2021,
+        "part_logt_vacant": 2.6
+    },
+    {
+        "codgeo": 53216,
+        "libgeo": "st Fraimbault de Prieres",
+        "an": 2021,
+        "part_logt_vacant": 8.5
+    },
+    {
+        "codgeo": 53218,
+        "libgeo": "Sainte Gemmes le Robert",
+        "an": 2021,
+        "part_logt_vacant": 11.7
+    },
+    {
+        "codgeo": 53219,
+        "libgeo": "st Georges Buttavent",
+        "an": 2021,
+        "part_logt_vacant": 7.9
+    },
+    {
+        "codgeo": 53220,
+        "libgeo": "st Georges le Flechard",
+        "an": 2021,
+        "part_logt_vacant": 7.0
+    },
+    {
+        "codgeo": 53221,
+        "libgeo": "st Georges sur Erve",
+        "an": 2021,
+        "part_logt_vacant": 15.5
+    },
+    {
+        "codgeo": 53222,
+        "libgeo": "st Germain d Anxure",
+        "an": 2021,
+        "part_logt_vacant": 11.9
+    },
+    {
+        "codgeo": 53223,
+        "libgeo": "st Germain de Coulamer",
+        "an": 2021,
+        "part_logt_vacant": 13.8
+    },
+    {
+        "codgeo": 53224,
+        "libgeo": "st Germain le Fouilloux",
+        "an": 2021,
+        "part_logt_vacant": 4.7
+    },
+    {
+        "codgeo": 53225,
+        "libgeo": "st Germain le Guillaume",
+        "an": 2021,
+        "part_logt_vacant": 11.2
+    },
+    {
+        "codgeo": 53226,
+        "libgeo": "st Hilaire du Maine",
+        "an": 2021,
+        "part_logt_vacant": 7.6
+    },
+    {
+        "codgeo": 53228,
+        "libgeo": "Blandouet st Jean",
+        "an": 2021,
+        "part_logt_vacant": 13.5
+    },
+    {
+        "codgeo": 53229,
+        "libgeo": "st Jean sur Mayenne",
+        "an": 2021,
+        "part_logt_vacant": 4.1
+    },
+    {
+        "codgeo": 53230,
+        "libgeo": "st Julien du Terroux",
+        "an": 2021,
+        "part_logt_vacant": 11.1
+    },
+    {
+        "codgeo": 53232,
+        "libgeo": "st Leger",
+        "an": 2021,
+        "part_logt_vacant": 7.6
+    },
+    {
+        "codgeo": 53233,
+        "libgeo": "st Loup du Dorat",
+        "an": 2021,
+        "part_logt_vacant": 6.8
+    },
+    {
+        "codgeo": 53234,
+        "libgeo": "st Loup du Gast",
+        "an": 2021,
+        "part_logt_vacant": 6.0
+    },
+    {
+        "codgeo": 53235,
+        "libgeo": "Sainte Marie du Bois",
+        "an": 2021,
+        "part_logt_vacant": 12.1
+    },
+    {
+        "codgeo": 53236,
+        "libgeo": "st Mars du Desert",
+        "an": 2021,
+        "part_logt_vacant": 14.5
+    },
+    {
+        "codgeo": 53237,
+        "libgeo": "st Mars sur Colmont",
+        "an": 2021,
+        "part_logt_vacant": 9.4
+    },
+    {
+        "codgeo": 53238,
+        "libgeo": "st Mars sur la Futaie",
+        "an": 2021,
+        "part_logt_vacant": 15.6
+    },
+    {
+        "codgeo": 53240,
+        "libgeo": "st Martin du Limet",
+        "an": 2021,
+        "part_logt_vacant": 7.5
+    },
+    {
+        "codgeo": 53242,
+        "libgeo": "st Michel de la Roe",
+        "an": 2021,
+        "part_logt_vacant": 8.3
+    },
+    {
+        "codgeo": 53243,
+        "libgeo": "st Ouen des Toits",
+        "an": 2021,
+        "part_logt_vacant": 7.0
+    },
+    {
+        "codgeo": 53245,
+        "libgeo": "st Pierre des Landes",
+        "an": 2021,
+        "part_logt_vacant": 12.3
+    },
+    {
+        "codgeo": 53246,
+        "libgeo": "st Pierre des Nids",
+        "an": 2021,
+        "part_logt_vacant": 15.4
+    },
+    {
+        "codgeo": 53247,
+        "libgeo": "st Pierre la Cour",
+        "an": 2021,
+        "part_logt_vacant": 6.8
+    },
+    {
+        "codgeo": 53248,
+        "libgeo": "st Pierre sur Erve",
+        "an": 2021,
+        "part_logt_vacant": 13.8
+    },
+    {
+        "codgeo": 53249,
+        "libgeo": "Vimartin sur Orthe",
+        "an": 2021,
+        "part_logt_vacant": 15.9
+    },
+    {
+        "codgeo": 53250,
+        "libgeo": "st Poix",
+        "an": 2021,
+        "part_logt_vacant": 12.0
+    },
+    {
+        "codgeo": 53251,
+        "libgeo": "st Quentin les Anges",
+        "an": 2021,
+        "part_logt_vacant": 9.0
+    },
+    {
+        "codgeo": 53253,
+        "libgeo": "st Saturnin du Limet",
+        "an": 2021,
+        "part_logt_vacant": 6.8
+    },
+    {
+        "codgeo": 53255,
+        "libgeo": "Sainte Suzanne et Chammes",
+        "an": 2021,
+        "part_logt_vacant": 9.5
+    },
+    {
+        "codgeo": 53256,
+        "libgeo": "st Thomas de Courceriers",
+        "an": 2021,
+        "part_logt_vacant": 27.9
+    },
+    {
+        "codgeo": 53257,
+        "libgeo": "Saulges",
+        "an": 2021,
+        "part_logt_vacant": 14.3
+    },
+    {
+        "codgeo": 53258,
+        "libgeo": "La Selle Craonnaise",
+        "an": 2021,
+        "part_logt_vacant": 9.4
+    },
+    {
+        "codgeo": 53259,
+        "libgeo": "Senonnes",
+        "an": 2021,
+        "part_logt_vacant": 7.1
+    },
+    {
+        "codgeo": 53260,
+        "libgeo": "Simple",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 53261,
+        "libgeo": "Souce",
+        "an": 2021,
+        "part_logt_vacant": 8.3
+    },
+    {
+        "codgeo": 53262,
+        "libgeo": "Soulge sur Ouette",
+        "an": 2021,
+        "part_logt_vacant": 9.9
+    },
+    {
+        "codgeo": 53263,
+        "libgeo": "Thuboeuf",
+        "an": 2021,
+        "part_logt_vacant": 15.1
+    },
+    {
+        "codgeo": 53264,
+        "libgeo": "Thorigne en Charnie",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 53265,
+        "libgeo": "Torce Viviers en Charnie",
+        "an": 2021,
+        "part_logt_vacant": 13.2
+    },
+    {
+        "codgeo": 53266,
+        "libgeo": "Trans",
+        "an": 2021,
+        "part_logt_vacant": 18.8
+    },
+    {
+        "codgeo": 53267,
+        "libgeo": "Vaiges",
+        "an": 2021,
+        "part_logt_vacant": 16.5
+    },
+    {
+        "codgeo": 53269,
+        "libgeo": "Vautorte",
+        "an": 2021,
+        "part_logt_vacant": 16.3
+    },
+    {
+        "codgeo": 53270,
+        "libgeo": "Vieuvy",
+        "an": 2021,
+        "part_logt_vacant": 23.0
+    },
+    {
+        "codgeo": 53271,
+        "libgeo": "Villaines la Juhel",
+        "an": 2021,
+        "part_logt_vacant": 14.9
+    },
+    {
+        "codgeo": 53272,
+        "libgeo": "Villepail",
+        "an": 2021,
+        "part_logt_vacant": 18.6
+    },
+    {
+        "codgeo": 53273,
+        "libgeo": "Villiers Charlemagne",
+        "an": 2021,
+        "part_logt_vacant": 7.4
+    },
+    {
+        "codgeo": 53276,
+        "libgeo": "Voutre",
+        "an": 2021,
+        "part_logt_vacant": 13.6
+    }
+]

@@ -1,0 +1,2126 @@
+[
+    {
+        "codgeo": 72001,
+        "libgeo": "Aigné",
+        "an": 2020,
+        "med_disp": 23960.0
+    },
+    {
+        "codgeo": 72002,
+        "libgeo": "Aillières-Beauvoir",
+        "an": 2020,
+        "med_disp": 21870.0
+    },
+    {
+        "codgeo": 72003,
+        "libgeo": "Allonnes",
+        "an": 2020,
+        "med_disp": 18430.0
+    },
+    {
+        "codgeo": 72004,
+        "libgeo": "Amné",
+        "an": 2020,
+        "med_disp": 22520.0
+    },
+    {
+        "codgeo": 72005,
+        "libgeo": "Ancinnes",
+        "an": 2020,
+        "med_disp": 21950.0
+    },
+    {
+        "codgeo": 72006,
+        "libgeo": "Arçonnay",
+        "an": 2020,
+        "med_disp": 23160.0
+    },
+    {
+        "codgeo": 72007,
+        "libgeo": "Ardenay-sur-Mérize",
+        "an": 2020,
+        "med_disp": 21130.0
+    },
+    {
+        "codgeo": 72008,
+        "libgeo": "Arnage",
+        "an": 2020,
+        "med_disp": 22460.0
+    },
+    {
+        "codgeo": 72009,
+        "libgeo": "Arthezé",
+        "an": 2020,
+        "med_disp": 20720.0
+    },
+    {
+        "codgeo": 72010,
+        "libgeo": "Asnières-sur-Vègre",
+        "an": 2020,
+        "med_disp": 22360.0
+    },
+    {
+        "codgeo": 72011,
+        "libgeo": "Assé-le-Boisne",
+        "an": 2020,
+        "med_disp": 20220.0
+    },
+    {
+        "codgeo": 72012,
+        "libgeo": "Assé-le-Riboul",
+        "an": 2020,
+        "med_disp": 22940.0
+    },
+    {
+        "codgeo": 72013,
+        "libgeo": "Aubigné-Racan",
+        "an": 2020,
+        "med_disp": 20120.0
+    },
+    {
+        "codgeo": 72015,
+        "libgeo": "Les Aulneaux",
+        "an": 2020,
+        "med_disp": 19650.0
+    },
+    {
+        "codgeo": 72016,
+        "libgeo": "Auvers-le-Hamon",
+        "an": 2020,
+        "med_disp": 20690.0
+    },
+    {
+        "codgeo": 72017,
+        "libgeo": "Auvers-sous-Montfaucon",
+        "an": 2020,
+        "med_disp": 21180.0
+    },
+    {
+        "codgeo": 72018,
+        "libgeo": "Avesnes-en-Saosnois",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72019,
+        "libgeo": "Avessé",
+        "an": 2020,
+        "med_disp": 20160.0
+    },
+    {
+        "codgeo": 72020,
+        "libgeo": "Avezé",
+        "an": 2020,
+        "med_disp": 22940.0
+    },
+    {
+        "codgeo": 72021,
+        "libgeo": "Avoise",
+        "an": 2020,
+        "med_disp": 21270.0
+    },
+    {
+        "codgeo": 72022,
+        "libgeo": "Le Bailleul",
+        "an": 2020,
+        "med_disp": 21120.0
+    },
+    {
+        "codgeo": 72023,
+        "libgeo": "Ballon-Saint Mars",
+        "an": 2020,
+        "med_disp": 20910.0
+    },
+    {
+        "codgeo": 72024,
+        "libgeo": "La Bazoge",
+        "an": 2020,
+        "med_disp": 24200.0
+    },
+    {
+        "codgeo": 72025,
+        "libgeo": "Bazouges Cré sur Loir",
+        "an": 2020,
+        "med_disp": 21560.0
+    },
+    {
+        "codgeo": 72026,
+        "libgeo": "Beaufay",
+        "an": 2020,
+        "med_disp": 22320.0
+    },
+    {
+        "codgeo": 72027,
+        "libgeo": "Beaumont-sur-Dême",
+        "an": 2020,
+        "med_disp": 20870.0
+    },
+    {
+        "codgeo": 72028,
+        "libgeo": "Beaumont-Pied-de-Bœuf",
+        "an": 2020,
+        "med_disp": 20170.0
+    },
+    {
+        "codgeo": 72029,
+        "libgeo": "Beaumont-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 20610.0
+    },
+    {
+        "codgeo": 72031,
+        "libgeo": "Beillé",
+        "an": 2020,
+        "med_disp": 21450.0
+    },
+    {
+        "codgeo": 72032,
+        "libgeo": "Berfay",
+        "an": 2020,
+        "med_disp": 21660.0
+    },
+    {
+        "codgeo": 72034,
+        "libgeo": "Bérus",
+        "an": 2020,
+        "med_disp": 24040.0
+    },
+    {
+        "codgeo": 72035,
+        "libgeo": "Bessé-sur-Braye",
+        "an": 2020,
+        "med_disp": 21400.0
+    },
+    {
+        "codgeo": 72036,
+        "libgeo": "Béthon",
+        "an": 2020,
+        "med_disp": 21950.0
+    },
+    {
+        "codgeo": 72037,
+        "libgeo": "Blèves",
+        "an": 2020,
+        "med_disp": 18230.0
+    },
+    {
+        "codgeo": 72038,
+        "libgeo": "Boëssé-le-Sec",
+        "an": 2020,
+        "med_disp": 20890.0
+    },
+    {
+        "codgeo": 72039,
+        "libgeo": "Bonnétable",
+        "an": 2020,
+        "med_disp": 20020.0
+    },
+    {
+        "codgeo": 72040,
+        "libgeo": "La Bosse",
+        "an": 2020,
+        "med_disp": 21030.0
+    },
+    {
+        "codgeo": 72041,
+        "libgeo": "Bouër",
+        "an": 2020,
+        "med_disp": 21590.0
+    },
+    {
+        "codgeo": 72042,
+        "libgeo": "Bouloire",
+        "an": 2020,
+        "med_disp": 21010.0
+    },
+    {
+        "codgeo": 72043,
+        "libgeo": "Bourg-le-Roi",
+        "an": 2020,
+        "med_disp": 21750.0
+    },
+    {
+        "codgeo": 72044,
+        "libgeo": "Bousse",
+        "an": 2020,
+        "med_disp": 22040.0
+    },
+    {
+        "codgeo": 72045,
+        "libgeo": "Brains-sur-Gée",
+        "an": 2020,
+        "med_disp": 22590.0
+    },
+    {
+        "codgeo": 72046,
+        "libgeo": "Le Breil-sur-Mérize",
+        "an": 2020,
+        "med_disp": 21640.0
+    },
+    {
+        "codgeo": 72047,
+        "libgeo": "Brette-les-Pins",
+        "an": 2020,
+        "med_disp": 22990.0
+    },
+    {
+        "codgeo": 72048,
+        "libgeo": "Briosne-lès-Sables",
+        "an": 2020,
+        "med_disp": 22260.0
+    },
+    {
+        "codgeo": 72049,
+        "libgeo": "La Bruère-sur-Loir",
+        "an": 2020,
+        "med_disp": 19270.0
+    },
+    {
+        "codgeo": 72050,
+        "libgeo": "Brûlon",
+        "an": 2020,
+        "med_disp": 20510.0
+    },
+    {
+        "codgeo": 72051,
+        "libgeo": "Cérans-Foulletourte",
+        "an": 2020,
+        "med_disp": 22770.0
+    },
+    {
+        "codgeo": 72052,
+        "libgeo": "Chahaignes",
+        "an": 2020,
+        "med_disp": 21880.0
+    },
+    {
+        "codgeo": 72053,
+        "libgeo": "Challes",
+        "an": 2020,
+        "med_disp": 23220.0
+    },
+    {
+        "codgeo": 72054,
+        "libgeo": "Champagné",
+        "an": 2020,
+        "med_disp": 22230.0
+    },
+    {
+        "codgeo": 72056,
+        "libgeo": "Champfleur",
+        "an": 2020,
+        "med_disp": 22450.0
+    },
+    {
+        "codgeo": 72057,
+        "libgeo": "Champrond",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72058,
+        "libgeo": "Changé",
+        "an": 2020,
+        "med_disp": 25110.0
+    },
+    {
+        "codgeo": 72059,
+        "libgeo": "Chantenay-Villedieu",
+        "an": 2020,
+        "med_disp": 21280.0
+    },
+    {
+        "codgeo": 72060,
+        "libgeo": "La Chapelle-aux-Choux",
+        "an": 2020,
+        "med_disp": 18850.0
+    },
+    {
+        "codgeo": 72061,
+        "libgeo": "La Chapelle-d'Aligné",
+        "an": 2020,
+        "med_disp": 21560.0
+    },
+    {
+        "codgeo": 72062,
+        "libgeo": "La Chapelle-du-Bois",
+        "an": 2020,
+        "med_disp": 22330.0
+    },
+    {
+        "codgeo": 72064,
+        "libgeo": "La Chapelle-Huon",
+        "an": 2020,
+        "med_disp": 21130.0
+    },
+    {
+        "codgeo": 72065,
+        "libgeo": "La Chapelle-Saint-Aubin",
+        "an": 2020,
+        "med_disp": 26290.0
+    },
+    {
+        "codgeo": 72066,
+        "libgeo": "La Chapelle-Saint-Fray",
+        "an": 2020,
+        "med_disp": 24270.0
+    },
+    {
+        "codgeo": 72067,
+        "libgeo": "La Chapelle-Saint-Rémy",
+        "an": 2020,
+        "med_disp": 20630.0
+    },
+    {
+        "codgeo": 72068,
+        "libgeo": "La Chartre-sur-le-Loir",
+        "an": 2020,
+        "med_disp": 19560.0
+    },
+    {
+        "codgeo": 72070,
+        "libgeo": "Chassillé",
+        "an": 2020,
+        "med_disp": 21740.0
+    },
+    {
+        "codgeo": 72071,
+        "libgeo": "Montval-sur-Loir",
+        "an": 2020,
+        "med_disp": 19810.0
+    },
+    {
+        "codgeo": 72072,
+        "libgeo": "Château-l'Hermitage",
+        "an": 2020,
+        "med_disp": 21720.0
+    },
+    {
+        "codgeo": 72073,
+        "libgeo": "Chaufour-Notre-Dame",
+        "an": 2020,
+        "med_disp": 23490.0
+    },
+    {
+        "codgeo": 72074,
+        "libgeo": "Chemiré-en-Charnie",
+        "an": 2020,
+        "med_disp": 20490.0
+    },
+    {
+        "codgeo": 72075,
+        "libgeo": "Chemiré-le-Gaudin",
+        "an": 2020,
+        "med_disp": 22270.0
+    },
+    {
+        "codgeo": 72076,
+        "libgeo": "Chenay",
+        "an": 2020,
+        "med_disp": 22400.0
+    },
+    {
+        "codgeo": 72077,
+        "libgeo": "Chenu",
+        "an": 2020,
+        "med_disp": 20850.0
+    },
+    {
+        "codgeo": 72078,
+        "libgeo": "Chérancé",
+        "an": 2020,
+        "med_disp": 21020.0
+    },
+    {
+        "codgeo": 72079,
+        "libgeo": "Chérisay",
+        "an": 2020,
+        "med_disp": 23030.0
+    },
+    {
+        "codgeo": 72080,
+        "libgeo": "Cherré-Au",
+        "an": 2020,
+        "med_disp": 23240.0
+    },
+    {
+        "codgeo": 72083,
+        "libgeo": "Chevillé",
+        "an": 2020,
+        "med_disp": 22590.0
+    },
+    {
+        "codgeo": 72084,
+        "libgeo": "Clermont-Créans",
+        "an": 2020,
+        "med_disp": 22230.0
+    },
+    {
+        "codgeo": 72085,
+        "libgeo": "Cogners",
+        "an": 2020,
+        "med_disp": 22220.0
+    },
+    {
+        "codgeo": 72086,
+        "libgeo": "Commerveil",
+        "an": 2020,
+        "med_disp": 22340.0
+    },
+    {
+        "codgeo": 72087,
+        "libgeo": "Conflans-sur-Anille",
+        "an": 2020,
+        "med_disp": 22790.0
+    },
+    {
+        "codgeo": 72088,
+        "libgeo": "Congé-sur-Orne",
+        "an": 2020,
+        "med_disp": 21720.0
+    },
+    {
+        "codgeo": 72089,
+        "libgeo": "Conlie",
+        "an": 2020,
+        "med_disp": 20470.0
+    },
+    {
+        "codgeo": 72090,
+        "libgeo": "Connerré",
+        "an": 2020,
+        "med_disp": 20960.0
+    },
+    {
+        "codgeo": 72091,
+        "libgeo": "Contilly",
+        "an": 2020,
+        "med_disp": 21110.0
+    },
+    {
+        "codgeo": 72093,
+        "libgeo": "Cormes",
+        "an": 2020,
+        "med_disp": 22890.0
+    },
+    {
+        "codgeo": 72094,
+        "libgeo": "Coudrecieux",
+        "an": 2020,
+        "med_disp": 20610.0
+    },
+    {
+        "codgeo": 72095,
+        "libgeo": "Coulaines",
+        "an": 2020,
+        "med_disp": 19050.0
+    },
+    {
+        "codgeo": 72096,
+        "libgeo": "Coulans-sur-Gée",
+        "an": 2020,
+        "med_disp": 23190.0
+    },
+    {
+        "codgeo": 72098,
+        "libgeo": "Coulongé",
+        "an": 2020,
+        "med_disp": 21070.0
+    },
+    {
+        "codgeo": 72099,
+        "libgeo": "Courcebœufs",
+        "an": 2020,
+        "med_disp": 21700.0
+    },
+    {
+        "codgeo": 72100,
+        "libgeo": "Courcelles-la-Forêt",
+        "an": 2020,
+        "med_disp": 21970.0
+    },
+    {
+        "codgeo": 72101,
+        "libgeo": "Courcemont",
+        "an": 2020,
+        "med_disp": 21110.0
+    },
+    {
+        "codgeo": 72102,
+        "libgeo": "Courcival",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72103,
+        "libgeo": "Courdemanche",
+        "an": 2020,
+        "med_disp": 20300.0
+    },
+    {
+        "codgeo": 72104,
+        "libgeo": "Courgains",
+        "an": 2020,
+        "med_disp": 20130.0
+    },
+    {
+        "codgeo": 72105,
+        "libgeo": "Courgenard",
+        "an": 2020,
+        "med_disp": 23740.0
+    },
+    {
+        "codgeo": 72106,
+        "libgeo": "Courtillers",
+        "an": 2020,
+        "med_disp": 22430.0
+    },
+    {
+        "codgeo": 72107,
+        "libgeo": "Crannes-en-Champagne",
+        "an": 2020,
+        "med_disp": 23420.0
+    },
+    {
+        "codgeo": 72109,
+        "libgeo": "Crissé",
+        "an": 2020,
+        "med_disp": 21390.0
+    },
+    {
+        "codgeo": 72110,
+        "libgeo": "Crosmières",
+        "an": 2020,
+        "med_disp": 21730.0
+    },
+    {
+        "codgeo": 72111,
+        "libgeo": "Cures",
+        "an": 2020,
+        "med_disp": 23560.0
+    },
+    {
+        "codgeo": 72112,
+        "libgeo": "Dangeul",
+        "an": 2020,
+        "med_disp": 19970.0
+    },
+    {
+        "codgeo": 72113,
+        "libgeo": "Degré",
+        "an": 2020,
+        "med_disp": 23860.0
+    },
+    {
+        "codgeo": 72114,
+        "libgeo": "Dehault",
+        "an": 2020,
+        "med_disp": 21440.0
+    },
+    {
+        "codgeo": 72115,
+        "libgeo": "Dissay-sous-Courcillon",
+        "an": 2020,
+        "med_disp": 20880.0
+    },
+    {
+        "codgeo": 72118,
+        "libgeo": "Dollon",
+        "an": 2020,
+        "med_disp": 20980.0
+    },
+    {
+        "codgeo": 72119,
+        "libgeo": "Domfront-en-Champagne",
+        "an": 2020,
+        "med_disp": 22710.0
+    },
+    {
+        "codgeo": 72120,
+        "libgeo": "Doucelles",
+        "an": 2020,
+        "med_disp": 21240.0
+    },
+    {
+        "codgeo": 72121,
+        "libgeo": "Douillet",
+        "an": 2020,
+        "med_disp": 20430.0
+    },
+    {
+        "codgeo": 72122,
+        "libgeo": "Duneau",
+        "an": 2020,
+        "med_disp": 22530.0
+    },
+    {
+        "codgeo": 72123,
+        "libgeo": "Dureil",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72124,
+        "libgeo": "Écommoy",
+        "an": 2020,
+        "med_disp": 21380.0
+    },
+    {
+        "codgeo": 72125,
+        "libgeo": "Écorpain",
+        "an": 2020,
+        "med_disp": 21760.0
+    },
+    {
+        "codgeo": 72126,
+        "libgeo": "Épineu-le-Chevreuil",
+        "an": 2020,
+        "med_disp": 22100.0
+    },
+    {
+        "codgeo": 72127,
+        "libgeo": "Étival-lès-le-Mans",
+        "an": 2020,
+        "med_disp": 24160.0
+    },
+    {
+        "codgeo": 72128,
+        "libgeo": "Val-d'Étangson",
+        "an": 2020,
+        "med_disp": 21060.0
+    },
+    {
+        "codgeo": 72129,
+        "libgeo": "Fatines",
+        "an": 2020,
+        "med_disp": 23010.0
+    },
+    {
+        "codgeo": 72130,
+        "libgeo": "Fay",
+        "an": 2020,
+        "med_disp": 25550.0
+    },
+    {
+        "codgeo": 72131,
+        "libgeo": "Fercé-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 22250.0
+    },
+    {
+        "codgeo": 72132,
+        "libgeo": "La Ferté-Bernard",
+        "an": 2020,
+        "med_disp": 20660.0
+    },
+    {
+        "codgeo": 72133,
+        "libgeo": "Fillé",
+        "an": 2020,
+        "med_disp": 25510.0
+    },
+    {
+        "codgeo": 72134,
+        "libgeo": "Flée",
+        "an": 2020,
+        "med_disp": 21440.0
+    },
+    {
+        "codgeo": 72135,
+        "libgeo": "La Fontaine-Saint-Martin",
+        "an": 2020,
+        "med_disp": 20770.0
+    },
+    {
+        "codgeo": 72136,
+        "libgeo": "Fontenay-sur-Vègre",
+        "an": 2020,
+        "med_disp": 21170.0
+    },
+    {
+        "codgeo": 72137,
+        "libgeo": "Villeneuve-en-Perseigne",
+        "an": 2020,
+        "med_disp": 21990.0
+    },
+    {
+        "codgeo": 72138,
+        "libgeo": "Fresnay-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 20210.0
+    },
+    {
+        "codgeo": 72139,
+        "libgeo": "Fyé",
+        "an": 2020,
+        "med_disp": 21650.0
+    },
+    {
+        "codgeo": 72141,
+        "libgeo": "Gesnes-le-Gandelin",
+        "an": 2020,
+        "med_disp": 21810.0
+    },
+    {
+        "codgeo": 72142,
+        "libgeo": "Grandchamp",
+        "an": 2020,
+        "med_disp": 21590.0
+    },
+    {
+        "codgeo": 72143,
+        "libgeo": "Le Grand-Lucé",
+        "an": 2020,
+        "med_disp": 20150.0
+    },
+    {
+        "codgeo": 72144,
+        "libgeo": "Gréez-sur-Roc",
+        "an": 2020,
+        "med_disp": 20310.0
+    },
+    {
+        "codgeo": 72145,
+        "libgeo": "Le Grez",
+        "an": 2020,
+        "med_disp": 21130.0
+    },
+    {
+        "codgeo": 72146,
+        "libgeo": "Guécélard",
+        "an": 2020,
+        "med_disp": 23590.0
+    },
+    {
+        "codgeo": 72147,
+        "libgeo": "La Guierche",
+        "an": 2020,
+        "med_disp": 23300.0
+    },
+    {
+        "codgeo": 72148,
+        "libgeo": "Jauzé",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72149,
+        "libgeo": "Joué-en-Charnie",
+        "an": 2020,
+        "med_disp": 21060.0
+    },
+    {
+        "codgeo": 72150,
+        "libgeo": "Joué-l'Abbé",
+        "an": 2020,
+        "med_disp": 22990.0
+    },
+    {
+        "codgeo": 72151,
+        "libgeo": "Juigné-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 21640.0
+    },
+    {
+        "codgeo": 72152,
+        "libgeo": "Juillé",
+        "an": 2020,
+        "med_disp": 22460.0
+    },
+    {
+        "codgeo": 72153,
+        "libgeo": "Jupilles",
+        "an": 2020,
+        "med_disp": 20250.0
+    },
+    {
+        "codgeo": 72154,
+        "libgeo": "La Flèche",
+        "an": 2020,
+        "med_disp": 21050.0
+    },
+    {
+        "codgeo": 72155,
+        "libgeo": "Laigné-en-Belin",
+        "an": 2020,
+        "med_disp": 23020.0
+    },
+    {
+        "codgeo": 72156,
+        "libgeo": "Lamnay",
+        "an": 2020,
+        "med_disp": 21220.0
+    },
+    {
+        "codgeo": 72157,
+        "libgeo": "Lavardin",
+        "an": 2020,
+        "med_disp": 24520.0
+    },
+    {
+        "codgeo": 72158,
+        "libgeo": "Lavaré",
+        "an": 2020,
+        "med_disp": 20790.0
+    },
+    {
+        "codgeo": 72160,
+        "libgeo": "Lavernat",
+        "an": 2020,
+        "med_disp": 21700.0
+    },
+    {
+        "codgeo": 72161,
+        "libgeo": "Lhomme",
+        "an": 2020,
+        "med_disp": 20680.0
+    },
+    {
+        "codgeo": 72163,
+        "libgeo": "Ligron",
+        "an": 2020,
+        "med_disp": 21430.0
+    },
+    {
+        "codgeo": 72164,
+        "libgeo": "Livet-en-Saosnois",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72165,
+        "libgeo": "Lombron",
+        "an": 2020,
+        "med_disp": 22570.0
+    },
+    {
+        "codgeo": 72166,
+        "libgeo": "Longnes",
+        "an": 2020,
+        "med_disp": 22350.0
+    },
+    {
+        "codgeo": 72167,
+        "libgeo": "Louailles",
+        "an": 2020,
+        "med_disp": 22260.0
+    },
+    {
+        "codgeo": 72168,
+        "libgeo": "Loué",
+        "an": 2020,
+        "med_disp": 20340.0
+    },
+    {
+        "codgeo": 72169,
+        "libgeo": "Louplande",
+        "an": 2020,
+        "med_disp": 23600.0
+    },
+    {
+        "codgeo": 72170,
+        "libgeo": "Louvigny",
+        "an": 2020,
+        "med_disp": 20760.0
+    },
+    {
+        "codgeo": 72171,
+        "libgeo": "Louzes",
+        "an": 2020,
+        "med_disp": 21770.0
+    },
+    {
+        "codgeo": 72172,
+        "libgeo": "Le Luart",
+        "an": 2020,
+        "med_disp": 21690.0
+    },
+    {
+        "codgeo": 72173,
+        "libgeo": "Luceau",
+        "an": 2020,
+        "med_disp": 21520.0
+    },
+    {
+        "codgeo": 72174,
+        "libgeo": "Lucé-sous-Ballon",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72175,
+        "libgeo": "Luché-Pringé",
+        "an": 2020,
+        "med_disp": 20490.0
+    },
+    {
+        "codgeo": 72176,
+        "libgeo": "Le Lude",
+        "an": 2020,
+        "med_disp": 19610.0
+    },
+    {
+        "codgeo": 72177,
+        "libgeo": "Maigné",
+        "an": 2020,
+        "med_disp": 22090.0
+    },
+    {
+        "codgeo": 72178,
+        "libgeo": "Maisoncelles",
+        "an": 2020,
+        "med_disp": 18470.0
+    },
+    {
+        "codgeo": 72179,
+        "libgeo": "Malicorne-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 20540.0
+    },
+    {
+        "codgeo": 72180,
+        "libgeo": "Mamers",
+        "an": 2020,
+        "med_disp": 18610.0
+    },
+    {
+        "codgeo": 72181,
+        "libgeo": "Le Mans",
+        "an": 2020,
+        "med_disp": 20800.0
+    },
+    {
+        "codgeo": 72182,
+        "libgeo": "Mansigné",
+        "an": 2020,
+        "med_disp": 21020.0
+    },
+    {
+        "codgeo": 72183,
+        "libgeo": "Marçon",
+        "an": 2020,
+        "med_disp": 20040.0
+    },
+    {
+        "codgeo": 72184,
+        "libgeo": "Mareil-en-Champagne",
+        "an": 2020,
+        "med_disp": 21730.0
+    },
+    {
+        "codgeo": 72185,
+        "libgeo": "Mareil-sur-Loir",
+        "an": 2020,
+        "med_disp": 21380.0
+    },
+    {
+        "codgeo": 72186,
+        "libgeo": "Maresché",
+        "an": 2020,
+        "med_disp": 21520.0
+    },
+    {
+        "codgeo": 72187,
+        "libgeo": "Marigné-Laillé",
+        "an": 2020,
+        "med_disp": 20450.0
+    },
+    {
+        "codgeo": 72188,
+        "libgeo": "Marollette",
+        "an": 2020,
+        "med_disp": 22580.0
+    },
+    {
+        "codgeo": 72189,
+        "libgeo": "Marolles-les-Braults",
+        "an": 2020,
+        "med_disp": 19340.0
+    },
+    {
+        "codgeo": 72190,
+        "libgeo": "Marolles-lès-Saint-Calais",
+        "an": 2020,
+        "med_disp": 22940.0
+    },
+    {
+        "codgeo": 72191,
+        "libgeo": "Mayet",
+        "an": 2020,
+        "med_disp": 20860.0
+    },
+    {
+        "codgeo": 72192,
+        "libgeo": "Les Mées",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72193,
+        "libgeo": "Melleray",
+        "an": 2020,
+        "med_disp": 21100.0
+    },
+    {
+        "codgeo": 72194,
+        "libgeo": "Meurcé",
+        "an": 2020,
+        "med_disp": 20380.0
+    },
+    {
+        "codgeo": 72195,
+        "libgeo": "Mézeray",
+        "an": 2020,
+        "med_disp": 21140.0
+    },
+    {
+        "codgeo": 72196,
+        "libgeo": "Mézières-sur-Ponthouin",
+        "an": 2020,
+        "med_disp": 20660.0
+    },
+    {
+        "codgeo": 72197,
+        "libgeo": "Mézières-sous-Lavardin",
+        "an": 2020,
+        "med_disp": 21410.0
+    },
+    {
+        "codgeo": 72198,
+        "libgeo": "La Milesse",
+        "an": 2020,
+        "med_disp": 25120.0
+    },
+    {
+        "codgeo": 72199,
+        "libgeo": "Moitron-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 21210.0
+    },
+    {
+        "codgeo": 72200,
+        "libgeo": "Moncé-en-Belin",
+        "an": 2020,
+        "med_disp": 23630.0
+    },
+    {
+        "codgeo": 72201,
+        "libgeo": "Moncé-en-Saosnois",
+        "an": 2020,
+        "med_disp": 20050.0
+    },
+    {
+        "codgeo": 72202,
+        "libgeo": "Monhoudou",
+        "an": 2020,
+        "med_disp": 21280.0
+    },
+    {
+        "codgeo": 72204,
+        "libgeo": "Montaillé",
+        "an": 2020,
+        "med_disp": 21100.0
+    },
+    {
+        "codgeo": 72205,
+        "libgeo": "Montbizot",
+        "an": 2020,
+        "med_disp": 22280.0
+    },
+    {
+        "codgeo": 72208,
+        "libgeo": "Montmirail",
+        "an": 2020,
+        "med_disp": 22160.0
+    },
+    {
+        "codgeo": 72209,
+        "libgeo": "Montreuil-le-Chétif",
+        "an": 2020,
+        "med_disp": 20570.0
+    },
+    {
+        "codgeo": 72210,
+        "libgeo": "Montreuil-le-Henri",
+        "an": 2020,
+        "med_disp": 20110.0
+    },
+    {
+        "codgeo": 72211,
+        "libgeo": "Mont-Saint-Jean",
+        "an": 2020,
+        "med_disp": 18020.0
+    },
+    {
+        "codgeo": 72212,
+        "libgeo": "Moulins-le-Carbonnel",
+        "an": 2020,
+        "med_disp": 20890.0
+    },
+    {
+        "codgeo": 72213,
+        "libgeo": "Mulsanne",
+        "an": 2020,
+        "med_disp": 22370.0
+    },
+    {
+        "codgeo": 72214,
+        "libgeo": "Nauvay",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72215,
+        "libgeo": "Neufchâtel-en-Saosnois",
+        "an": 2020,
+        "med_disp": 20870.0
+    },
+    {
+        "codgeo": 72216,
+        "libgeo": "Neuvillalais",
+        "an": 2020,
+        "med_disp": 21490.0
+    },
+    {
+        "codgeo": 72217,
+        "libgeo": "Neuville-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 25640.0
+    },
+    {
+        "codgeo": 72218,
+        "libgeo": "Neuvillette-en-Charnie",
+        "an": 2020,
+        "med_disp": 20710.0
+    },
+    {
+        "codgeo": 72219,
+        "libgeo": "Bernay-Neuvy-en-Champagne",
+        "an": 2020,
+        "med_disp": 21540.0
+    },
+    {
+        "codgeo": 72220,
+        "libgeo": "Nogent-le-Bernard",
+        "an": 2020,
+        "med_disp": 21120.0
+    },
+    {
+        "codgeo": 72221,
+        "libgeo": "Nogent-sur-Loir",
+        "an": 2020,
+        "med_disp": 19930.0
+    },
+    {
+        "codgeo": 72222,
+        "libgeo": "Nouans",
+        "an": 2020,
+        "med_disp": 20960.0
+    },
+    {
+        "codgeo": 72223,
+        "libgeo": "Noyen-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 20920.0
+    },
+    {
+        "codgeo": 72224,
+        "libgeo": "Nuillé-le-Jalais",
+        "an": 2020,
+        "med_disp": 21450.0
+    },
+    {
+        "codgeo": 72225,
+        "libgeo": "Oisseau-le-Petit",
+        "an": 2020,
+        "med_disp": 21860.0
+    },
+    {
+        "codgeo": 72226,
+        "libgeo": "Oizé",
+        "an": 2020,
+        "med_disp": 21270.0
+    },
+    {
+        "codgeo": 72227,
+        "libgeo": "Panon",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72228,
+        "libgeo": "Parcé-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 21990.0
+    },
+    {
+        "codgeo": 72229,
+        "libgeo": "Parennes",
+        "an": 2020,
+        "med_disp": 19220.0
+    },
+    {
+        "codgeo": 72230,
+        "libgeo": "Parigné-le-Pôlin",
+        "an": 2020,
+        "med_disp": 23670.0
+    },
+    {
+        "codgeo": 72231,
+        "libgeo": "Parigné-l'Évêque",
+        "an": 2020,
+        "med_disp": 23650.0
+    },
+    {
+        "codgeo": 72232,
+        "libgeo": "Notre-Dame-du-Pé",
+        "an": 2020,
+        "med_disp": 22010.0
+    },
+    {
+        "codgeo": 72233,
+        "libgeo": "Peray",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72234,
+        "libgeo": "Pezé-le-Robert",
+        "an": 2020,
+        "med_disp": 21300.0
+    },
+    {
+        "codgeo": 72235,
+        "libgeo": "Piacé",
+        "an": 2020,
+        "med_disp": 20610.0
+    },
+    {
+        "codgeo": 72236,
+        "libgeo": "Pincé",
+        "an": 2020,
+        "med_disp": 24570.0
+    },
+    {
+        "codgeo": 72237,
+        "libgeo": "Pirmil",
+        "an": 2020,
+        "med_disp": 21730.0
+    },
+    {
+        "codgeo": 72238,
+        "libgeo": "Pizieux",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72239,
+        "libgeo": "Poillé-sur-Vègre",
+        "an": 2020,
+        "med_disp": 22100.0
+    },
+    {
+        "codgeo": 72241,
+        "libgeo": "Montfort-le-Gesnois",
+        "an": 2020,
+        "med_disp": 22310.0
+    },
+    {
+        "codgeo": 72243,
+        "libgeo": "Pontvallain",
+        "an": 2020,
+        "med_disp": 21230.0
+    },
+    {
+        "codgeo": 72244,
+        "libgeo": "Précigné",
+        "an": 2020,
+        "med_disp": 21600.0
+    },
+    {
+        "codgeo": 72245,
+        "libgeo": "Préval",
+        "an": 2020,
+        "med_disp": 21890.0
+    },
+    {
+        "codgeo": 72246,
+        "libgeo": "Prévelles",
+        "an": 2020,
+        "med_disp": 21380.0
+    },
+    {
+        "codgeo": 72247,
+        "libgeo": "Pruillé-le-Chétif",
+        "an": 2020,
+        "med_disp": 25730.0
+    },
+    {
+        "codgeo": 72248,
+        "libgeo": "Pruillé-l'Éguillé",
+        "an": 2020,
+        "med_disp": 21340.0
+    },
+    {
+        "codgeo": 72249,
+        "libgeo": "La Quinte",
+        "an": 2020,
+        "med_disp": 23630.0
+    },
+    {
+        "codgeo": 72250,
+        "libgeo": "Rahay",
+        "an": 2020,
+        "med_disp": 21640.0
+    },
+    {
+        "codgeo": 72251,
+        "libgeo": "René",
+        "an": 2020,
+        "med_disp": 20540.0
+    },
+    {
+        "codgeo": 72252,
+        "libgeo": "Requeil",
+        "an": 2020,
+        "med_disp": 21110.0
+    },
+    {
+        "codgeo": 72253,
+        "libgeo": "Roëzé-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 23650.0
+    },
+    {
+        "codgeo": 72254,
+        "libgeo": "Rouessé-Fontaine",
+        "an": 2020,
+        "med_disp": 21600.0
+    },
+    {
+        "codgeo": 72255,
+        "libgeo": "Rouessé-Vassé",
+        "an": 2020,
+        "med_disp": 20520.0
+    },
+    {
+        "codgeo": 72256,
+        "libgeo": "Rouez",
+        "an": 2020,
+        "med_disp": 19930.0
+    },
+    {
+        "codgeo": 72257,
+        "libgeo": "Rouillon",
+        "an": 2020,
+        "med_disp": 28690.0
+    },
+    {
+        "codgeo": 72259,
+        "libgeo": "Rouperroux-le-Coquet",
+        "an": 2020,
+        "med_disp": 21190.0
+    },
+    {
+        "codgeo": 72260,
+        "libgeo": "Ruaudin",
+        "an": 2020,
+        "med_disp": 24490.0
+    },
+    {
+        "codgeo": 72261,
+        "libgeo": "Ruillé-en-Champagne",
+        "an": 2020,
+        "med_disp": 21570.0
+    },
+    {
+        "codgeo": 72262,
+        "libgeo": "Loir en Vallée",
+        "an": 2020,
+        "med_disp": 20980.0
+    },
+    {
+        "codgeo": 72264,
+        "libgeo": "Sablé-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 19110.0
+    },
+    {
+        "codgeo": 72265,
+        "libgeo": "Saint-Aignan",
+        "an": 2020,
+        "med_disp": 19440.0
+    },
+    {
+        "codgeo": 72266,
+        "libgeo": "Saint-Aubin-de-Locquenay",
+        "an": 2020,
+        "med_disp": 21470.0
+    },
+    {
+        "codgeo": 72267,
+        "libgeo": "Saint-Aubin-des-Coudrais",
+        "an": 2020,
+        "med_disp": 22520.0
+    },
+    {
+        "codgeo": 72268,
+        "libgeo": "Saint-Biez-en-Belin",
+        "an": 2020,
+        "med_disp": 22220.0
+    },
+    {
+        "codgeo": 72269,
+        "libgeo": "Saint-Calais",
+        "an": 2020,
+        "med_disp": 20140.0
+    },
+    {
+        "codgeo": 72270,
+        "libgeo": "Saint-Calez-en-Saosnois",
+        "an": 2020,
+        "med_disp": 21140.0
+    },
+    {
+        "codgeo": 72271,
+        "libgeo": "Saint-Célerin",
+        "an": 2020,
+        "med_disp": 20310.0
+    },
+    {
+        "codgeo": 72272,
+        "libgeo": "Sainte-Cérotte",
+        "an": 2020,
+        "med_disp": 21250.0
+    },
+    {
+        "codgeo": 72273,
+        "libgeo": "Saint-Christophe-du-Jambet",
+        "an": 2020,
+        "med_disp": 19500.0
+    },
+    {
+        "codgeo": 72274,
+        "libgeo": "Saint-Christophe-en-Champagne",
+        "an": 2020,
+        "med_disp": 21280.0
+    },
+    {
+        "codgeo": 72275,
+        "libgeo": "Saint-Corneille",
+        "an": 2020,
+        "med_disp": 23250.0
+    },
+    {
+        "codgeo": 72276,
+        "libgeo": "Saint-Cosme-en-Vairais",
+        "an": 2020,
+        "med_disp": 20600.0
+    },
+    {
+        "codgeo": 72277,
+        "libgeo": "Saint-Denis-des-Coudrais",
+        "an": 2020,
+        "med_disp": 24360.0
+    },
+    {
+        "codgeo": 72278,
+        "libgeo": "Saint-Denis-d'Orques",
+        "an": 2020,
+        "med_disp": 19590.0
+    },
+    {
+        "codgeo": 72279,
+        "libgeo": "Saint-Georges-de-la-Couée",
+        "an": 2020,
+        "med_disp": 20030.0
+    },
+    {
+        "codgeo": 72280,
+        "libgeo": "Saint-Georges-du-Bois",
+        "an": 2020,
+        "med_disp": 24560.0
+    },
+    {
+        "codgeo": 72281,
+        "libgeo": "Saint-Georges-du-Rosay",
+        "an": 2020,
+        "med_disp": 20290.0
+    },
+    {
+        "codgeo": 72282,
+        "libgeo": "Saint-Georges-le-Gaultier",
+        "an": 2020,
+        "med_disp": 19110.0
+    },
+    {
+        "codgeo": 72283,
+        "libgeo": "Saint-Germain-d'Arcé",
+        "an": 2020,
+        "med_disp": 19120.0
+    },
+    {
+        "codgeo": 72286,
+        "libgeo": "Saint-Gervais-de-Vic",
+        "an": 2020,
+        "med_disp": 21900.0
+    },
+    {
+        "codgeo": 72287,
+        "libgeo": "Saint-Gervais-en-Belin",
+        "an": 2020,
+        "med_disp": 24240.0
+    },
+    {
+        "codgeo": 72289,
+        "libgeo": "Sainte-Jamme-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 21840.0
+    },
+    {
+        "codgeo": 72290,
+        "libgeo": "Saint-Jean-d'Assé",
+        "an": 2020,
+        "med_disp": 21500.0
+    },
+    {
+        "codgeo": 72291,
+        "libgeo": "Saint-Jean-de-la-Motte",
+        "an": 2020,
+        "med_disp": 20050.0
+    },
+    {
+        "codgeo": 72292,
+        "libgeo": "Saint-Jean-des-Échelles",
+        "an": 2020,
+        "med_disp": 23400.0
+    },
+    {
+        "codgeo": 72293,
+        "libgeo": "Saint-Jean-du-Bois",
+        "an": 2020,
+        "med_disp": 21270.0
+    },
+    {
+        "codgeo": 72294,
+        "libgeo": "Saint-Léonard-des-Bois",
+        "an": 2020,
+        "med_disp": 22610.0
+    },
+    {
+        "codgeo": 72295,
+        "libgeo": "Saint-Longis",
+        "an": 2020,
+        "med_disp": 22750.0
+    },
+    {
+        "codgeo": 72296,
+        "libgeo": "Saint-Maixent",
+        "an": 2020,
+        "med_disp": 22620.0
+    },
+    {
+        "codgeo": 72297,
+        "libgeo": "Saint-Marceau",
+        "an": 2020,
+        "med_disp": 22610.0
+    },
+    {
+        "codgeo": 72298,
+        "libgeo": "Saint-Mars-de-Locquenay",
+        "an": 2020,
+        "med_disp": 23060.0
+    },
+    {
+        "codgeo": 72299,
+        "libgeo": "Saint-Mars-d'Outillé",
+        "an": 2020,
+        "med_disp": 21710.0
+    },
+    {
+        "codgeo": 72300,
+        "libgeo": "Saint-Mars-la-Brière",
+        "an": 2020,
+        "med_disp": 22540.0
+    },
+    {
+        "codgeo": 72302,
+        "libgeo": "Saint-Martin-des-Monts",
+        "an": 2020,
+        "med_disp": 22970.0
+    },
+    {
+        "codgeo": 72303,
+        "libgeo": "Saint-Michel-de-Chavaignes",
+        "an": 2020,
+        "med_disp": 20600.0
+    },
+    {
+        "codgeo": 72305,
+        "libgeo": "Saint-Ouen-de-Mimbré",
+        "an": 2020,
+        "med_disp": 21330.0
+    },
+    {
+        "codgeo": 72306,
+        "libgeo": "Saint-Ouen-en-Belin",
+        "an": 2020,
+        "med_disp": 22090.0
+    },
+    {
+        "codgeo": 72307,
+        "libgeo": "Saint-Ouen-en-Champagne",
+        "an": 2020,
+        "med_disp": 20330.0
+    },
+    {
+        "codgeo": 72308,
+        "libgeo": "Saint-Paterne - Le Chevain",
+        "an": 2020,
+        "med_disp": 22420.0
+    },
+    {
+        "codgeo": 72309,
+        "libgeo": "Saint-Paul-le-Gaultier",
+        "an": 2020,
+        "med_disp": 21510.0
+    },
+    {
+        "codgeo": 72310,
+        "libgeo": "Saint-Pavace",
+        "an": 2020,
+        "med_disp": 28250.0
+    },
+    {
+        "codgeo": 72311,
+        "libgeo": "Saint-Pierre-de-Chevillé",
+        "an": 2020,
+        "med_disp": 19570.0
+    },
+    {
+        "codgeo": 72312,
+        "libgeo": "Saint-Pierre-des-Bois",
+        "an": 2020,
+        "med_disp": 20130.0
+    },
+    {
+        "codgeo": 72313,
+        "libgeo": "Saint-Pierre-des-Ormes",
+        "an": 2020,
+        "med_disp": 20810.0
+    },
+    {
+        "codgeo": 72314,
+        "libgeo": "Saint-Pierre-du-Lorouër",
+        "an": 2020,
+        "med_disp": 20720.0
+    },
+    {
+        "codgeo": 72315,
+        "libgeo": "Saint-Rémy-de-Sillé",
+        "an": 2020,
+        "med_disp": 20560.0
+    },
+    {
+        "codgeo": 72316,
+        "libgeo": "Saint-Rémy-des-Monts",
+        "an": 2020,
+        "med_disp": 21110.0
+    },
+    {
+        "codgeo": 72317,
+        "libgeo": "Saint-Rémy-du-Val",
+        "an": 2020,
+        "med_disp": 20860.0
+    },
+    {
+        "codgeo": 72319,
+        "libgeo": "Sainte-Sabine-sur-Longève",
+        "an": 2020,
+        "med_disp": 22200.0
+    },
+    {
+        "codgeo": 72320,
+        "libgeo": "Saint-Saturnin",
+        "an": 2020,
+        "med_disp": 26090.0
+    },
+    {
+        "codgeo": 72321,
+        "libgeo": "Saint-Symphorien",
+        "an": 2020,
+        "med_disp": 22500.0
+    },
+    {
+        "codgeo": 72322,
+        "libgeo": "Saint-Ulphace",
+        "an": 2020,
+        "med_disp": 21370.0
+    },
+    {
+        "codgeo": 72323,
+        "libgeo": "Saint-Victeur",
+        "an": 2020,
+        "med_disp": 20520.0
+    },
+    {
+        "codgeo": 72324,
+        "libgeo": "Saint-Vincent-des-Prés",
+        "an": 2020,
+        "med_disp": 20640.0
+    },
+    {
+        "codgeo": 72325,
+        "libgeo": "Saint-Vincent-du-Lorouër",
+        "an": 2020,
+        "med_disp": 19670.0
+    },
+    {
+        "codgeo": 72326,
+        "libgeo": "Saosnes",
+        "an": 2020,
+        "med_disp": 22870.0
+    },
+    {
+        "codgeo": 72327,
+        "libgeo": "Sarcé",
+        "an": 2020,
+        "med_disp": 21520.0
+    },
+    {
+        "codgeo": 72328,
+        "libgeo": "Sargé-lès-le-Mans",
+        "an": 2020,
+        "med_disp": 26060.0
+    },
+    {
+        "codgeo": 72329,
+        "libgeo": "Savigné-l'Évêque",
+        "an": 2020,
+        "med_disp": 24640.0
+    },
+    {
+        "codgeo": 72330,
+        "libgeo": "Savigné-sous-le-Lude",
+        "an": 2020,
+        "med_disp": 19000.0
+    },
+    {
+        "codgeo": 72331,
+        "libgeo": "Sceaux-sur-Huisne",
+        "an": 2020,
+        "med_disp": 20610.0
+    },
+    {
+        "codgeo": 72332,
+        "libgeo": "Ségrie",
+        "an": 2020,
+        "med_disp": 21480.0
+    },
+    {
+        "codgeo": 72333,
+        "libgeo": "Semur-en-Vallon",
+        "an": 2020,
+        "med_disp": 20290.0
+    },
+    {
+        "codgeo": 72334,
+        "libgeo": "Sillé-le-Guillaume",
+        "an": 2020,
+        "med_disp": 19720.0
+    },
+    {
+        "codgeo": 72335,
+        "libgeo": "Sillé-le-Philippe",
+        "an": 2020,
+        "med_disp": 22940.0
+    },
+    {
+        "codgeo": 72336,
+        "libgeo": "Solesmes",
+        "an": 2020,
+        "med_disp": 24680.0
+    },
+    {
+        "codgeo": 72337,
+        "libgeo": "Sougé-le-Ganelon",
+        "an": 2020,
+        "med_disp": 20630.0
+    },
+    {
+        "codgeo": 72338,
+        "libgeo": "Souillé",
+        "an": 2020,
+        "med_disp": 23130.0
+    },
+    {
+        "codgeo": 72339,
+        "libgeo": "Souligné-Flacé",
+        "an": 2020,
+        "med_disp": 22600.0
+    },
+    {
+        "codgeo": 72340,
+        "libgeo": "Souligné-sous-Ballon",
+        "an": 2020,
+        "med_disp": 22730.0
+    },
+    {
+        "codgeo": 72341,
+        "libgeo": "Soulitré",
+        "an": 2020,
+        "med_disp": 23280.0
+    },
+    {
+        "codgeo": 72342,
+        "libgeo": "Souvigné-sur-Même",
+        "an": 2020,
+        "med_disp": 25030.0
+    },
+    {
+        "codgeo": 72343,
+        "libgeo": "Souvigné-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 21430.0
+    },
+    {
+        "codgeo": 72344,
+        "libgeo": "Spay",
+        "an": 2020,
+        "med_disp": 24670.0
+    },
+    {
+        "codgeo": 72345,
+        "libgeo": "Surfonds",
+        "an": 2020,
+        "med_disp": 21980.0
+    },
+    {
+        "codgeo": 72346,
+        "libgeo": "La Suze-sur-Sarthe",
+        "an": 2020,
+        "med_disp": 22200.0
+    },
+    {
+        "codgeo": 72347,
+        "libgeo": "Tassé",
+        "an": 2020,
+        "med_disp": 21110.0
+    },
+    {
+        "codgeo": 72348,
+        "libgeo": "Tassillé",
+        "an": 2020,
+        "med_disp": 23640.0
+    },
+    {
+        "codgeo": 72349,
+        "libgeo": "Teillé",
+        "an": 2020,
+        "med_disp": 21760.0
+    },
+    {
+        "codgeo": 72350,
+        "libgeo": "Teloché",
+        "an": 2020,
+        "med_disp": 22750.0
+    },
+    {
+        "codgeo": 72351,
+        "libgeo": "Tennie",
+        "an": 2020,
+        "med_disp": 21320.0
+    },
+    {
+        "codgeo": 72352,
+        "libgeo": "Terrehault",
+        "an": 2020,
+        "med_disp": 20340.0
+    },
+    {
+        "codgeo": 72353,
+        "libgeo": "Théligny",
+        "an": 2020,
+        "med_disp": 22750.0
+    },
+    {
+        "codgeo": 72354,
+        "libgeo": "Thoigné",
+        "an": 2020,
+        "med_disp": 20700.0
+    },
+    {
+        "codgeo": 72355,
+        "libgeo": "Thoiré-sous-Contensor",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72356,
+        "libgeo": "Thoiré-sur-Dinan",
+        "an": 2020,
+        "med_disp": 21470.0
+    },
+    {
+        "codgeo": 72357,
+        "libgeo": "Thorée-les-Pins",
+        "an": 2020,
+        "med_disp": 21000.0
+    },
+    {
+        "codgeo": 72358,
+        "libgeo": "Thorigné-sur-Dué",
+        "an": 2020,
+        "med_disp": 21110.0
+    },
+    {
+        "codgeo": 72359,
+        "libgeo": "Torcé-en-Vallée",
+        "an": 2020,
+        "med_disp": 22120.0
+    },
+    {
+        "codgeo": 72360,
+        "libgeo": "Trangé",
+        "an": 2020,
+        "med_disp": 25000.0
+    },
+    {
+        "codgeo": 72361,
+        "libgeo": "Tresson",
+        "an": 2020,
+        "med_disp": 19870.0
+    },
+    {
+        "codgeo": 72362,
+        "libgeo": "Le Tronchet",
+        "an": 2020,
+        "med_disp": 21530.0
+    },
+    {
+        "codgeo": 72363,
+        "libgeo": "Tuffé Val de la Chéronne",
+        "an": 2020,
+        "med_disp": 21030.0
+    },
+    {
+        "codgeo": 72364,
+        "libgeo": "Vaas",
+        "an": 2020,
+        "med_disp": 20370.0
+    },
+    {
+        "codgeo": 72366,
+        "libgeo": "Valennes",
+        "an": 2020,
+        "med_disp": 21350.0
+    },
+    {
+        "codgeo": 72367,
+        "libgeo": "Vallon-sur-Gée",
+        "an": 2020,
+        "med_disp": 20180.0
+    },
+    {
+        "codgeo": 72368,
+        "libgeo": "Vancé",
+        "an": 2020,
+        "med_disp": 20550.0
+    },
+    {
+        "codgeo": 72369,
+        "libgeo": "Verneil-le-Chétif",
+        "an": 2020,
+        "med_disp": 21570.0
+    },
+    {
+        "codgeo": 72370,
+        "libgeo": "Vernie",
+        "an": 2020,
+        "med_disp": 20470.0
+    },
+    {
+        "codgeo": 72372,
+        "libgeo": "Vezot",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 72373,
+        "libgeo": "Vibraye",
+        "an": 2020,
+        "med_disp": 21420.0
+    },
+    {
+        "codgeo": 72374,
+        "libgeo": "Villaines-la-Carelle",
+        "an": 2020,
+        "med_disp": 20460.0
+    },
+    {
+        "codgeo": 72375,
+        "libgeo": "Villaines-la-Gonais",
+        "an": 2020,
+        "med_disp": 23890.0
+    },
+    {
+        "codgeo": 72376,
+        "libgeo": "Villaines-sous-Lucé",
+        "an": 2020,
+        "med_disp": 21740.0
+    },
+    {
+        "codgeo": 72377,
+        "libgeo": "Villaines-sous-Malicorne",
+        "an": 2020,
+        "med_disp": 21850.0
+    },
+    {
+        "codgeo": 72378,
+        "libgeo": "Vion",
+        "an": 2020,
+        "med_disp": 22200.0
+    },
+    {
+        "codgeo": 72379,
+        "libgeo": "Viré-en-Champagne",
+        "an": 2020,
+        "med_disp": 20540.0
+    },
+    {
+        "codgeo": 72380,
+        "libgeo": "Vivoin",
+        "an": 2020,
+        "med_disp": 21890.0
+    },
+    {
+        "codgeo": 72381,
+        "libgeo": "Voivres-lès-le-Mans",
+        "an": 2020,
+        "med_disp": 22940.0
+    },
+    {
+        "codgeo": 72382,
+        "libgeo": "Volnay",
+        "an": 2020,
+        "med_disp": 21480.0
+    },
+    {
+        "codgeo": 72383,
+        "libgeo": "Vouvray-sur-Huisne",
+        "an": 2020,
+        "med_disp": 22440.0
+    },
+    {
+        "codgeo": 72385,
+        "libgeo": "Yvré-le-Pôlin",
+        "an": 2020,
+        "med_disp": 22150.0
+    },
+    {
+        "codgeo": 72386,
+        "libgeo": "Yvré-l'Évêque",
+        "an": 2020,
+        "med_disp": 25830.0
+    }
+]

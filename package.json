@@ -1,0 +1,25 @@
+{
+    "name": "rentmap",
+    "version": "1.0.0",
+    "bin": "start-http-server.js",
+    "main": "start-http-server.js",
+    "scripts": {
+        "start": "node start-http-server.js",
+        "build": "pkg . --output ./dist/rentmap.exe"
+    },
+    "pkg": {
+        "targets": ["node18-win-x64"],
+        "assets": ["Front/**/*", "Back/**/*"],
+        "noconsole": true
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.17.1",
+        "node-fetch": "^3.3.2",
+        "open": "^8.4.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    }
+}
