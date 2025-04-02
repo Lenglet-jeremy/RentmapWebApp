@@ -1,6 +1,18 @@
-PROJET EN PLEIN DEVELOPPEMENT !
+PROJET EN PLEIN DÉVELOPPEMENT !
 
-Actuellement les données disponible pour l'analyse concerne toutes les villes de bretagne, du pays de la loire et de Normandie, pour l'heure il n'y pas de données concernant le nord pas de calais
+Les données disponibles pour l’analyse couvrent actuellement toutes les villes de Bretagne, du Pays de la Loire et de Normandie. Pour l’instant, aucune donnée n’est disponible pour le Nord-Pas-de-Calais.
+Installation et exécution de l'application web :
 
+    Installez Node.js si ce n'est pas déjà fait.
 
-Pour générer pour pouvoir éxécuter l'application web via double clique, installer nodeJS et dans un terminal executer "npm run build", cela générera un fichier executable dans le dossier ./dist qui exécutera l'application mais avec un terminal, pour executer le terminal en arrieres, exécuter rentmap.vbs après la commende "npm run build"
+    Dans un terminal, exécutez la commande :
+
+    npm run build
+
+    Cela générera un fichier exécutable dans le dossier ./dist.
+
+    Ce fichier exécutera l’application avec un terminal.
+
+    Pour exécuter l’application en arrière-plan sans afficher le terminal, lancez rentmap.vbs après avoir exécuté npm run build.
+
+L'application évolue en continu, restez à l'affût des prochaines mises à jour !
