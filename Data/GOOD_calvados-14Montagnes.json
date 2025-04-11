@@ -1,0 +1,2642 @@
+[
+    {
+        "codgeo": 14001,
+        "libgeo": "Ablon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14003,
+        "libgeo": "Agy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14005,
+        "libgeo": "Valambray",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14006,
+        "libgeo": "Amayé-sur-Orne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14007,
+        "libgeo": "Amayé-sur-Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14009,
+        "libgeo": "Amfreville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14011,
+        "libgeo": "Aurseulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14012,
+        "libgeo": "Angerville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14014,
+        "libgeo": "Colomby-Anguerny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14015,
+        "libgeo": "Anisy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14016,
+        "libgeo": "Annebault",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14019,
+        "libgeo": "Arganchy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14020,
+        "libgeo": "Argences",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14021,
+        "libgeo": "Arromanches-les-Bains",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14022,
+        "libgeo": "Asnelles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14023,
+        "libgeo": "Asnières-en-Bessin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14024,
+        "libgeo": "Auberville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14025,
+        "libgeo": "Aubigny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14026,
+        "libgeo": "Audrieu",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14027,
+        "libgeo": "Les Monts d'Aunay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14030,
+        "libgeo": "Authie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14032,
+        "libgeo": "Les Authieux-sur-Calonne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14033,
+        "libgeo": "Auvillars",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14034,
+        "libgeo": "Avenay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14035,
+        "libgeo": "Balleroy-sur-Drôme",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14036,
+        "libgeo": "Banneville-la-Campagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14037,
+        "libgeo": "Malherbe-sur-Ajon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14038,
+        "libgeo": "Banville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14039,
+        "libgeo": "Barbery",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14040,
+        "libgeo": "Barbeville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14041,
+        "libgeo": "Barneville-la-Bertran",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14042,
+        "libgeo": "Baron-sur-Odon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14043,
+        "libgeo": "Barou-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14044,
+        "libgeo": "Basly",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14045,
+        "libgeo": "Basseneville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14046,
+        "libgeo": "Bavent",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14047,
+        "libgeo": "Bayeux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14049,
+        "libgeo": "Bazenville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14050,
+        "libgeo": "La Bazoque",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14053,
+        "libgeo": "Beaumais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14054,
+        "libgeo": "Beaumesnil",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14055,
+        "libgeo": "Beaumont-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14057,
+        "libgeo": "Bellengreville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14059,
+        "libgeo": "Benerville-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14060,
+        "libgeo": "Bénouville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14061,
+        "libgeo": "Souleuvre en Bocage",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14062,
+        "libgeo": "Bény-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14063,
+        "libgeo": "Bernesq",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14064,
+        "libgeo": "Bernières-d'Ailly",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14066,
+        "libgeo": "Bernières-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14068,
+        "libgeo": "Biéville-Beuville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14069,
+        "libgeo": "Beuvillers",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14070,
+        "libgeo": "Beuvron-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14076,
+        "libgeo": "Blainville-sur-Orne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14077,
+        "libgeo": "Blangy-le-Château",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14078,
+        "libgeo": "Blay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14079,
+        "libgeo": "Blonville-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14080,
+        "libgeo": "Le Bô",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14082,
+        "libgeo": "La Boissière",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14083,
+        "libgeo": "Bonnebosq",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14084,
+        "libgeo": "Bonnemaison",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14085,
+        "libgeo": "Bonneville-la-Louvet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14086,
+        "libgeo": "Bonneville-sur-Touques",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14087,
+        "libgeo": "Bonnœil",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14088,
+        "libgeo": "Bons-Tassilly",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14089,
+        "libgeo": "Bougy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14090,
+        "libgeo": "Boulon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14091,
+        "libgeo": "Bourgeauville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14092,
+        "libgeo": "Bourguébus",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14093,
+        "libgeo": "Branville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14096,
+        "libgeo": "Brémoy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14097,
+        "libgeo": "Bretteville-le-Rabet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14098,
+        "libgeo": "Thue et Mue",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14100,
+        "libgeo": "Bretteville-sur-Laize",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14101,
+        "libgeo": "Bretteville-sur-Odon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14102,
+        "libgeo": "Le Breuil-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14103,
+        "libgeo": "Le Breuil-en-Bessin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14104,
+        "libgeo": "Le Brévedent",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14106,
+        "libgeo": "Bréville-les-Monts",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14107,
+        "libgeo": "Bricqueville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14110,
+        "libgeo": "Brucourt",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14111,
+        "libgeo": "Bucéels",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14116,
+        "libgeo": "Le Bû-sur-Rouvres",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14117,
+        "libgeo": "Cabourg",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14118,
+        "libgeo": "Caen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14119,
+        "libgeo": "Cagny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14120,
+        "libgeo": "Cahagnes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14121,
+        "libgeo": "Cahagnolles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14122,
+        "libgeo": "La Caine",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14123,
+        "libgeo": "Cairon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14124,
+        "libgeo": "La Cambe",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14125,
+        "libgeo": "Cambes-en-Plaine",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14126,
+        "libgeo": "Cambremer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14127,
+        "libgeo": "Campagnolles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14130,
+        "libgeo": "Campigny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14131,
+        "libgeo": "Canapville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14132,
+        "libgeo": "Canchy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14134,
+        "libgeo": "Canteloup",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14135,
+        "libgeo": "Carcagny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14136,
+        "libgeo": "Cardonville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14137,
+        "libgeo": "Carpiquet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14138,
+        "libgeo": "Cartigny-l'Épinay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14140,
+        "libgeo": "Castillon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14141,
+        "libgeo": "Castillon-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14143,
+        "libgeo": "Caumont-sur-Aure",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14145,
+        "libgeo": "Cauvicourt",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14146,
+        "libgeo": "Cauville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14147,
+        "libgeo": "Cernay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14149,
+        "libgeo": "Cesny-aux-Vignes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14150,
+        "libgeo": "Cesny-les-Sources",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14159,
+        "libgeo": "Chouain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14160,
+        "libgeo": "Cintheaux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14161,
+        "libgeo": "Clarbec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14162,
+        "libgeo": "Clécy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14163,
+        "libgeo": "Cléville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14165,
+        "libgeo": "Colleville-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14166,
+        "libgeo": "Colleville-Montgomery",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14167,
+        "libgeo": "Colombelles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14168,
+        "libgeo": "Colombières",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14169,
+        "libgeo": "Colombiers-sur-Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14171,
+        "libgeo": "Combray",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14172,
+        "libgeo": "Commes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14173,
+        "libgeo": "Condé-sur-Ifs",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14174,
+        "libgeo": "Condé-en-Normandie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14175,
+        "libgeo": "Condé-sur-Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14177,
+        "libgeo": "Coquainvilliers",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14179,
+        "libgeo": "Cordebugle",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14180,
+        "libgeo": "Cordey",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14181,
+        "libgeo": "Cormelles-le-Royal",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14182,
+        "libgeo": "Cormolain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14183,
+        "libgeo": "Cossesseville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14184,
+        "libgeo": "Cottun",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14190,
+        "libgeo": "Courcy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14191,
+        "libgeo": "Courseulles-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14193,
+        "libgeo": "Courtonne-la-Meurdrac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14194,
+        "libgeo": "Courtonne-les-Deux-Églises",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14195,
+        "libgeo": "Courvaudon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14196,
+        "libgeo": "Crépon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14197,
+        "libgeo": "Cresserons",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14198,
+        "libgeo": "Cresseveuille",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14200,
+        "libgeo": "Creully sur Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14202,
+        "libgeo": "Cricquebœuf",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14203,
+        "libgeo": "Cricqueville-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14204,
+        "libgeo": "Cricqueville-en-Bessin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14205,
+        "libgeo": "Cristot",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14206,
+        "libgeo": "Crocy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14207,
+        "libgeo": "Croisilles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14209,
+        "libgeo": "Crouay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14211,
+        "libgeo": "Culey-le-Patry",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14214,
+        "libgeo": "Cussy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14215,
+        "libgeo": "Cuverville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14216,
+        "libgeo": "Damblainville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14218,
+        "libgeo": "Danestal",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14220,
+        "libgeo": "Deauville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14221,
+        "libgeo": "Démouville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14223,
+        "libgeo": "Le Détroit",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14224,
+        "libgeo": "Deux-Jumeaux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14225,
+        "libgeo": "Dives-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14226,
+        "libgeo": "Donnay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14227,
+        "libgeo": "Douville-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14228,
+        "libgeo": "Douvres-la-Délivrande",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14229,
+        "libgeo": "Dozulé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14230,
+        "libgeo": "Drubec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14231,
+        "libgeo": "Beaufour-Druval",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14232,
+        "libgeo": "Ducy-Sainte-Marguerite",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14236,
+        "libgeo": "Ellon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14237,
+        "libgeo": "Émiéville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14238,
+        "libgeo": "Englesqueville-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14239,
+        "libgeo": "Englesqueville-la-Percée",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14240,
+        "libgeo": "Épaney",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14241,
+        "libgeo": "Épinay-sur-Odon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14242,
+        "libgeo": "Épron",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14243,
+        "libgeo": "Équemauville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14244,
+        "libgeo": "Eraines",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14245,
+        "libgeo": "Ernes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14246,
+        "libgeo": "Escoville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14248,
+        "libgeo": "Espins",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14249,
+        "libgeo": "Esquay-Notre-Dame",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14250,
+        "libgeo": "Esquay-sur-Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14251,
+        "libgeo": "Esson",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14252,
+        "libgeo": "Estrées-la-Campagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14254,
+        "libgeo": "Éterville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14256,
+        "libgeo": "Étréham",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14257,
+        "libgeo": "Évrecy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14258,
+        "libgeo": "Falaise",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14260,
+        "libgeo": "Fauguernon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14261,
+        "libgeo": "Le Faulq",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14266,
+        "libgeo": "Feuguerolles-Bully",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14269,
+        "libgeo": "Fierville-les-Parcs",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14270,
+        "libgeo": "Firfol",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14271,
+        "libgeo": "Fleury-sur-Orne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14272,
+        "libgeo": "La Folie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14273,
+        "libgeo": "La Folletière-Abenon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14274,
+        "libgeo": "Fontaine-Étoupefour",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14275,
+        "libgeo": "Fontaine-Henry",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14276,
+        "libgeo": "Fontaine-le-Pin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14277,
+        "libgeo": "Fontenay-le-Marmion",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14278,
+        "libgeo": "Fontenay-le-Pesnel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14280,
+        "libgeo": "Formentin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14281,
+        "libgeo": "Formigny La Bataille",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14282,
+        "libgeo": "Foulognes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14283,
+        "libgeo": "Fourches",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14284,
+        "libgeo": "Fourneaux-le-Val",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14285,
+        "libgeo": "Le Fournet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14286,
+        "libgeo": "Fourneville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14287,
+        "libgeo": "Frénouville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14288,
+        "libgeo": "Le Fresne-Camilly",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14289,
+        "libgeo": "Fresné-la-Mère",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14290,
+        "libgeo": "Fresney-le-Puceux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14291,
+        "libgeo": "Fresney-le-Vieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14293,
+        "libgeo": "Fumichon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14297,
+        "libgeo": "Gavrus",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14298,
+        "libgeo": "Géfosse-Fontenay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14299,
+        "libgeo": "Genneville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14300,
+        "libgeo": "Gerrots",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14301,
+        "libgeo": "Giberville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14302,
+        "libgeo": "Glanville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14303,
+        "libgeo": "Glos",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14304,
+        "libgeo": "Gonneville-sur-Honfleur",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14305,
+        "libgeo": "Gonneville-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14306,
+        "libgeo": "Gonneville-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14308,
+        "libgeo": "Goustranville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14309,
+        "libgeo": "Gouvix",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14310,
+        "libgeo": "Grainville-Langannerie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14311,
+        "libgeo": "Grainville-sur-Odon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14312,
+        "libgeo": "Grandcamp-Maisy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14316,
+        "libgeo": "Grangues",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14318,
+        "libgeo": "Graye-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14319,
+        "libgeo": "Grentheville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14320,
+        "libgeo": "Grimbosq",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14322,
+        "libgeo": "Guéron",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14325,
+        "libgeo": "Hermanville-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14326,
+        "libgeo": "Hermival-les-Vaux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14327,
+        "libgeo": "Hérouville-Saint-Clair",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14328,
+        "libgeo": "Hérouvillette",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14329,
+        "libgeo": "Heuland",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14332,
+        "libgeo": "La Hoguette",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14333,
+        "libgeo": "Honfleur",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14334,
+        "libgeo": "L'Hôtellerie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14335,
+        "libgeo": "Hotot-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14336,
+        "libgeo": "Hottot-les-Bagues",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14337,
+        "libgeo": "La Houblonnière",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14338,
+        "libgeo": "Houlgate",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14341,
+        "libgeo": "Ifs",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14342,
+        "libgeo": "Isigny-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14343,
+        "libgeo": "Les Isles-Bardel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14344,
+        "libgeo": "Janville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14345,
+        "libgeo": "Jort",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14346,
+        "libgeo": "Juaye-Mondaye",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14347,
+        "libgeo": "Dialan sur Chaîne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14348,
+        "libgeo": "Juvigny-sur-Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14349,
+        "libgeo": "Laize-Clinchamps",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14352,
+        "libgeo": "Landelles-et-Coupigny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14353,
+        "libgeo": "Landes-sur-Ajon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14354,
+        "libgeo": "Langrune-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14355,
+        "libgeo": "Ponts sur Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14357,
+        "libgeo": "Terres de Druance",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14358,
+        "libgeo": "Léaupartie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14360,
+        "libgeo": "Leffard",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14362,
+        "libgeo": "Lessard-et-le-Chêne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14364,
+        "libgeo": "Lingèvres",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14365,
+        "libgeo": "Lion-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14366,
+        "libgeo": "Lisieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14367,
+        "libgeo": "Lison",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14368,
+        "libgeo": "Lisores",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14369,
+        "libgeo": "Litteau",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14370,
+        "libgeo": "Le Molay-Littry",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14371,
+        "libgeo": "Livarot-Pays-d'Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14374,
+        "libgeo": "Les Loges",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14375,
+        "libgeo": "Les Loges-Saulces",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14377,
+        "libgeo": "Longues-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14378,
+        "libgeo": "Longueville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14379,
+        "libgeo": "Longvillers",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14380,
+        "libgeo": "Loucelles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14381,
+        "libgeo": "Louvagny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14383,
+        "libgeo": "Louvigny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14384,
+        "libgeo": "Luc-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14385,
+        "libgeo": "Magny-en-Bessin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14389,
+        "libgeo": "Maisoncelles-Pelvey",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14390,
+        "libgeo": "Maisoncelles-sur-Ajon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14391,
+        "libgeo": "Maisons",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14393,
+        "libgeo": "Maizet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14394,
+        "libgeo": "Maizières",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14396,
+        "libgeo": "Maltot",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14397,
+        "libgeo": "Mandeville-en-Bessin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14398,
+        "libgeo": "Manerbe",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14399,
+        "libgeo": "Manneville-la-Pipard",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14400,
+        "libgeo": "Le Manoir",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14401,
+        "libgeo": "Manvieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14402,
+        "libgeo": "Le Marais-la-Chapelle",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14403,
+        "libgeo": "Marolles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14404,
+        "libgeo": "Martainville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14405,
+        "libgeo": "Martigny-sur-l'Ante",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14406,
+        "libgeo": "Moulins-en-Bessin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14407,
+        "libgeo": "Mathieu",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14408,
+        "libgeo": "May-sur-Orne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14409,
+        "libgeo": "Merville-Franceville-Plage",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14410,
+        "libgeo": "Méry-Bissières-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14411,
+        "libgeo": "Meslay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14412,
+        "libgeo": "Le Mesnil-au-Grain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14419,
+        "libgeo": "Le Mesnil-Eudes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14421,
+        "libgeo": "Le Mesnil-Guillaume",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14424,
+        "libgeo": "Le Mesnil-Robert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14425,
+        "libgeo": "Le Mesnil-Simon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14426,
+        "libgeo": "Le Mesnil-sur-Blangy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14427,
+        "libgeo": "Le Mesnil-Villement",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14430,
+        "libgeo": "Meuvaines",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14431,
+        "libgeo": "Mézidon Vallée d'Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14435,
+        "libgeo": "Les Monceaux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14436,
+        "libgeo": "Monceaux-en-Bessin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14437,
+        "libgeo": "Mondeville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14438,
+        "libgeo": "Mondrainville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14439,
+        "libgeo": "Monfréville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14445,
+        "libgeo": "Montfiquet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14446,
+        "libgeo": "Montigny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14448,
+        "libgeo": "Montreuil-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14449,
+        "libgeo": "Monts-en-Bessin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14452,
+        "libgeo": "Morteaux-Coulibœuf",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14453,
+        "libgeo": "Mosles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14454,
+        "libgeo": "Mouen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14455,
+        "libgeo": "Moulines",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14456,
+        "libgeo": "Moult-Chicheboville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14457,
+        "libgeo": "Les Moutiers-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14458,
+        "libgeo": "Les Moutiers-en-Cinglais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14460,
+        "libgeo": "Moyaux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14461,
+        "libgeo": "Mutrécy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14465,
+        "libgeo": "Nonant",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14466,
+        "libgeo": "Norolles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14467,
+        "libgeo": "Noron-l'Abbaye",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14468,
+        "libgeo": "Noron-la-Poterie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14469,
+        "libgeo": "Norrey-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14473,
+        "libgeo": "Notre-Dame-de-Livaye",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14474,
+        "libgeo": "Notre-Dame-d'Estrées-Corbon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14475,
+        "libgeo": "Val d'Arry",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14476,
+        "libgeo": "Olendon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14478,
+        "libgeo": "Orbec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14480,
+        "libgeo": "Osmanville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14482,
+        "libgeo": "Ouézy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14483,
+        "libgeo": "Ouffières",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14484,
+        "libgeo": "Ouilly-du-Houley",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14486,
+        "libgeo": "Ouilly-le-Tesson",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14487,
+        "libgeo": "Ouilly-le-Vicomte",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14488,
+        "libgeo": "Ouistreham",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14491,
+        "libgeo": "Parfouru-sur-Odon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14492,
+        "libgeo": "Pennedepie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14494,
+        "libgeo": "Périers-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14495,
+        "libgeo": "Périers-sur-le-Dan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14496,
+        "libgeo": "Périgny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14497,
+        "libgeo": "Perrières",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14498,
+        "libgeo": "Pertheville-Ners",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14499,
+        "libgeo": "Petiville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14500,
+        "libgeo": "Pierrefitte-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14501,
+        "libgeo": "Pierrefitte-en-Cinglais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14502,
+        "libgeo": "Pierrepont",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14504,
+        "libgeo": "Le Pin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14506,
+        "libgeo": "Planquery",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14509,
+        "libgeo": "Plumetot",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14510,
+        "libgeo": "La Pommeraye",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14511,
+        "libgeo": "Pont-Bellanger",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14512,
+        "libgeo": "Pontécoulant",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14514,
+        "libgeo": "Pont-l'Évêque",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14515,
+        "libgeo": "Port-en-Bessin-Huppain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14516,
+        "libgeo": "Potigny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14519,
+        "libgeo": "Préaux-Bocage",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14520,
+        "libgeo": "Le Pré-d'Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14522,
+        "libgeo": "Prêtreville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14524,
+        "libgeo": "Putot-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14527,
+        "libgeo": "Belle Vie en Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14528,
+        "libgeo": "Quetteville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14529,
+        "libgeo": "Ranchy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14530,
+        "libgeo": "Ranville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14531,
+        "libgeo": "Rapilly",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14533,
+        "libgeo": "Repentigny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14534,
+        "libgeo": "Reux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14535,
+        "libgeo": "Reviers",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14536,
+        "libgeo": "La Rivière-Saint-Sauveur",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14538,
+        "libgeo": "Castine-en-Plaine",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14540,
+        "libgeo": "Rocques",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14541,
+        "libgeo": "La Roque-Baignard",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14542,
+        "libgeo": "Rosel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14543,
+        "libgeo": "Rots",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14546,
+        "libgeo": "Rouvres",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14547,
+        "libgeo": "Rubercy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14550,
+        "libgeo": "Rumesnil",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14552,
+        "libgeo": "Ryes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14554,
+        "libgeo": "Le Castelet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14555,
+        "libgeo": "Saint-André-d'Hébertot",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14556,
+        "libgeo": "Saint-André-sur-Orne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14557,
+        "libgeo": "Saint-Arnoult",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14558,
+        "libgeo": "Saint-Aubin-d'Arquenay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14559,
+        "libgeo": "Saint-Aubin-des-Bois",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14562,
+        "libgeo": "Saint-Aubin-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14563,
+        "libgeo": "Saint-Benoît-d'Hébertot",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14565,
+        "libgeo": "Saint-Côme-de-Fresné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14566,
+        "libgeo": "Saint-Contest",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14569,
+        "libgeo": "Sainte-Croix-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14570,
+        "libgeo": "Valorbiquet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14571,
+        "libgeo": "Saint-Denis-de-Mailloc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14572,
+        "libgeo": "Saint-Denis-de-Méré",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14574,
+        "libgeo": "Saint-Désir",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14575,
+        "libgeo": "Saint-Étienne-la-Thillaye",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14576,
+        "libgeo": "Val-de-Vie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14578,
+        "libgeo": "Saint-Gatien-des-Bois",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14579,
+        "libgeo": "Seulline",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14582,
+        "libgeo": "Saint-Germain-de-Livet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14586,
+        "libgeo": "Saint-Germain-du-Pert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14587,
+        "libgeo": "Saint-Germain-la-Blanche-Herbe",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14588,
+        "libgeo": "Saint-Germain-Langot",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14589,
+        "libgeo": "Saint-Germain-le-Vasson",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14590,
+        "libgeo": "Sainte-Honorine-de-Ducy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14591,
+        "libgeo": "Aure sur Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14592,
+        "libgeo": "Sainte-Honorine-du-Fay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14593,
+        "libgeo": "Saint-Hymer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14595,
+        "libgeo": "Saint-Jean-de-Livet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14598,
+        "libgeo": "Saint-Jouin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14601,
+        "libgeo": "Saint-Julien-sur-Calonne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14602,
+        "libgeo": "Saint-Lambert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14603,
+        "libgeo": "Saint-Laurent-de-Condel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14605,
+        "libgeo": "Saint-Laurent-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14606,
+        "libgeo": "Saint-Léger-Dubosq",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14607,
+        "libgeo": "Saint-Louet-sur-Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14609,
+        "libgeo": "Saint-Loup-Hors",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14610,
+        "libgeo": "Saint-Manvieu-Norrey",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14613,
+        "libgeo": "Saint-Marcouf",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14614,
+        "libgeo": "Sainte-Marguerite-d'Elle",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14619,
+        "libgeo": "Sainte-Marie-Outre-l'Eau",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14620,
+        "libgeo": "Saint-Martin-aux-Chartrains",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14621,
+        "libgeo": "Saint-Martin-de-Bienfaite-la-Cressonnière",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14622,
+        "libgeo": "Saint-Martin-de-Blagny",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14623,
+        "libgeo": "Saint-Martin-de-Fontenay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14625,
+        "libgeo": "Saint-Martin-de-la-Lieue",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14626,
+        "libgeo": "Saint-Martin-de-Mailloc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14627,
+        "libgeo": "Saint-Martin-de-Mieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14630,
+        "libgeo": "Saint-Martin-des-Entrées",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14635,
+        "libgeo": "Saint-Omer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14637,
+        "libgeo": "Saint-Ouen-du-Mesnil-Oger",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14639,
+        "libgeo": "Saint-Ouen-le-Pin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14640,
+        "libgeo": "Saint-Pair",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14643,
+        "libgeo": "Saint-Paul-du-Vernay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14644,
+        "libgeo": "Saint-Philbert-des-Champs",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14645,
+        "libgeo": "Saint-Pierre-Azif",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14646,
+        "libgeo": "Saint-Pierre-Canivet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14648,
+        "libgeo": "Saint-Pierre-des-Ifs",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14649,
+        "libgeo": "Saint-Pierre-du-Bû",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14650,
+        "libgeo": "Saint-Pierre-du-Fresne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14651,
+        "libgeo": "Saint-Pierre-du-Jonquet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14652,
+        "libgeo": "Saint-Pierre-du-Mont",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14654,
+        "libgeo": "Saint-Pierre-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14656,
+        "libgeo": "Saint-Rémy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14657,
+        "libgeo": "Saint-Samson",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14658,
+        "libgeo": "Noues de Sienne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14659,
+        "libgeo": "Saint-Sylvain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14660,
+        "libgeo": "Saint-Vaast-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14661,
+        "libgeo": "Saint-Vaast-sur-Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14663,
+        "libgeo": "Saint-Vigor-le-Grand",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14664,
+        "libgeo": "Sallen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14665,
+        "libgeo": "Sallenelles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14666,
+        "libgeo": "Sannerville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14667,
+        "libgeo": "Saon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14668,
+        "libgeo": "Saonnet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14669,
+        "libgeo": "Sassy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14672,
+        "libgeo": "Val de Drôme",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14674,
+        "libgeo": "Soignolles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14675,
+        "libgeo": "Soliers",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14676,
+        "libgeo": "Sommervieu",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14677,
+        "libgeo": "Soulangy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14678,
+        "libgeo": "Soumont-Saint-Quentin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14679,
+        "libgeo": "Subles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14680,
+        "libgeo": "Sully",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14681,
+        "libgeo": "Surrain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14682,
+        "libgeo": "Surville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14684,
+        "libgeo": "Tessel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14685,
+        "libgeo": "Thaon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14687,
+        "libgeo": "Le Theil-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14689,
+        "libgeo": "Thury-Harcourt-le-Hom",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14692,
+        "libgeo": "Tilly-sur-Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14694,
+        "libgeo": "Le Torquesne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14698,
+        "libgeo": "Touffréville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14699,
+        "libgeo": "Touques",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14700,
+        "libgeo": "Tour-en-Bessin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14701,
+        "libgeo": "Tourgéville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14705,
+        "libgeo": "Tournières",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14706,
+        "libgeo": "Tourville-en-Auge",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14707,
+        "libgeo": "Tourville-sur-Odon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14708,
+        "libgeo": "Tracy-Bocage",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14709,
+        "libgeo": "Tracy-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14710,
+        "libgeo": "Tréprel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14711,
+        "libgeo": "Trévières",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14712,
+        "libgeo": "Troarn",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14713,
+        "libgeo": "Montillières-sur-Orne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14714,
+        "libgeo": "Le Tronquay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14715,
+        "libgeo": "Trouville-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14716,
+        "libgeo": "Trungy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14719,
+        "libgeo": "Urville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14720,
+        "libgeo": "Ussy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14721,
+        "libgeo": "Vacognes-Neuilly",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14723,
+        "libgeo": "Valsemé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14724,
+        "libgeo": "Varaville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14726,
+        "libgeo": "Valdallière",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14728,
+        "libgeo": "Vaucelles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14731,
+        "libgeo": "Vauville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14732,
+        "libgeo": "Vaux-sur-Aure",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14733,
+        "libgeo": "Vaux-sur-Seulles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14734,
+        "libgeo": "Vendes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14735,
+        "libgeo": "Vendeuvre",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14737,
+        "libgeo": "Versainville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14738,
+        "libgeo": "Verson",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14739,
+        "libgeo": "Ver-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14740,
+        "libgeo": "La Vespière-Friardel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14741,
+        "libgeo": "Le Vey",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14742,
+        "libgeo": "Vicques",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14743,
+        "libgeo": "Victot-Pontfol",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14744,
+        "libgeo": "Vienne-en-Bessin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14745,
+        "libgeo": "Vierville-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14747,
+        "libgeo": "Vieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14748,
+        "libgeo": "Vieux-Bourg",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14751,
+        "libgeo": "Vignats",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14752,
+        "libgeo": "Villers-Bocage",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14753,
+        "libgeo": "Villers-Canivet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14754,
+        "libgeo": "Villers-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14755,
+        "libgeo": "Villerville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14756,
+        "libgeo": "La Villette",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14758,
+        "libgeo": "Villons-les-Buissons",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14759,
+        "libgeo": "Villy-lez-Falaise",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14760,
+        "libgeo": "Villy-Bocage",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14761,
+        "libgeo": "Vimont",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14762,
+        "libgeo": "Vire Normandie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 14764,
+        "libgeo": "Pont-d'Ouilly",
+        "mont_urb_zpp": "out"
+    }
+]

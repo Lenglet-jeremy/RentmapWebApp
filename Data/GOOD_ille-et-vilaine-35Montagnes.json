@@ -1,0 +1,1662 @@
+[
+    {
+        "codgeo": 35001,
+        "libgeo": "Acigné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35002,
+        "libgeo": "Amanlis",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35003,
+        "libgeo": "Andouillé-Neuville",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35004,
+        "libgeo": "Val-Couesnon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35005,
+        "libgeo": "Arbrissel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35006,
+        "libgeo": "Argentré-du-Plessis",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35007,
+        "libgeo": "Aubigné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35008,
+        "libgeo": "Availles-sur-Seiche",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35009,
+        "libgeo": "Baguer-Morvan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35010,
+        "libgeo": "Baguer-Pican",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35012,
+        "libgeo": "Bain-de-Bretagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35013,
+        "libgeo": "Bains-sur-Oust",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35014,
+        "libgeo": "Bais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35015,
+        "libgeo": "Balazé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35016,
+        "libgeo": "Baulon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35017,
+        "libgeo": "La Baussaine",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35018,
+        "libgeo": "La Bazouge-du-Désert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35019,
+        "libgeo": "Bazouges-la-Pérouse",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35021,
+        "libgeo": "Beaucé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35022,
+        "libgeo": "Bécherel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35023,
+        "libgeo": "Bédée",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35024,
+        "libgeo": "Betton",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35025,
+        "libgeo": "Billé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35026,
+        "libgeo": "Bléruais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35027,
+        "libgeo": "Boisgervilly",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35028,
+        "libgeo": "Boistrudan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35029,
+        "libgeo": "Bonnemain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35030,
+        "libgeo": "La Bosse-de-Bretagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35031,
+        "libgeo": "La Bouëxière",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35032,
+        "libgeo": "Bourgbarré",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35033,
+        "libgeo": "Bourg-des-Comptes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35034,
+        "libgeo": "La Boussac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35035,
+        "libgeo": "Bovel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35037,
+        "libgeo": "Bréal-sous-Montfort",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35038,
+        "libgeo": "Bréal-sous-Vitré",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35039,
+        "libgeo": "Brécé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35040,
+        "libgeo": "Breteil",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35041,
+        "libgeo": "Brie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35042,
+        "libgeo": "Brielles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35044,
+        "libgeo": "Broualan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35045,
+        "libgeo": "Bruc-sur-Aff",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35046,
+        "libgeo": "Les Brulais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35047,
+        "libgeo": "Bruz",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35049,
+        "libgeo": "Cancale",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35050,
+        "libgeo": "Cardroc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35051,
+        "libgeo": "Cesson-Sévigné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35052,
+        "libgeo": "Champeaux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35054,
+        "libgeo": "Chanteloup",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35055,
+        "libgeo": "Chantepie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35056,
+        "libgeo": "La Chapelle-aux-Filtzméens",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35057,
+        "libgeo": "La Chapelle-Bouëxic",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35058,
+        "libgeo": "La Chapelle-Chaussée",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35059,
+        "libgeo": "La Chapelle-des-Fougeretz",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35060,
+        "libgeo": "La Chapelle du Lou du Lac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35061,
+        "libgeo": "La Chapelle-Erbrée",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35062,
+        "libgeo": "La Chapelle-Fleurigné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35063,
+        "libgeo": "La Chapelle-Saint-Aubert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35064,
+        "libgeo": "La Chapelle-de-Brain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35065,
+        "libgeo": "La Chapelle-Thouarault",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35066,
+        "libgeo": "Chartres-de-Bretagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35067,
+        "libgeo": "Chasné-sur-Illet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35068,
+        "libgeo": "Châteaubourg",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35069,
+        "libgeo": "Châteaugiron",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35070,
+        "libgeo": "Châteauneuf-d'Ille-et-Vilaine",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35071,
+        "libgeo": "Le Châtellier",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35072,
+        "libgeo": "Châtillon-en-Vendelais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35075,
+        "libgeo": "Chauvigné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35076,
+        "libgeo": "Chavagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35077,
+        "libgeo": "Chelun",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35078,
+        "libgeo": "Cherrueix",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35079,
+        "libgeo": "Chevaigné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35080,
+        "libgeo": "Cintré",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35081,
+        "libgeo": "Clayes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35082,
+        "libgeo": "Coësmes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35084,
+        "libgeo": "Comblessac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35085,
+        "libgeo": "Combourg",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35086,
+        "libgeo": "Combourtillé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35087,
+        "libgeo": "Cornillé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35088,
+        "libgeo": "Corps-Nuds",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35089,
+        "libgeo": "La Couyère",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35090,
+        "libgeo": "Crevin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35091,
+        "libgeo": "Le Crouais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35092,
+        "libgeo": "Cuguen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35093,
+        "libgeo": "Dinard",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35094,
+        "libgeo": "Dingé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35095,
+        "libgeo": "Dol-de-Bretagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35096,
+        "libgeo": "Domagné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35097,
+        "libgeo": "Domalain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35098,
+        "libgeo": "La Dominelais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35099,
+        "libgeo": "Domloup",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35101,
+        "libgeo": "Dourdain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35102,
+        "libgeo": "Drouges",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35103,
+        "libgeo": "Eancé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35104,
+        "libgeo": "Epiniac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35105,
+        "libgeo": "Erbrée",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35106,
+        "libgeo": "Ercé-en-Lamée",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35107,
+        "libgeo": "Ercé-près-Liffré",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35108,
+        "libgeo": "Essé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35109,
+        "libgeo": "Étrelles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35110,
+        "libgeo": "Feins",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35111,
+        "libgeo": "Le Ferré",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35114,
+        "libgeo": "Forges-la-Forêt",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35115,
+        "libgeo": "Fougères",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35116,
+        "libgeo": "La Fresnais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35117,
+        "libgeo": "Gaël",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35118,
+        "libgeo": "Gahard",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35119,
+        "libgeo": "Gennes-sur-Seiche",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35120,
+        "libgeo": "Gévezé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35121,
+        "libgeo": "Gosné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35122,
+        "libgeo": "La Gouesnière",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35123,
+        "libgeo": "Goven",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35124,
+        "libgeo": "Grand-Fougeray",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35125,
+        "libgeo": "La Guerche-de-Bretagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35126,
+        "libgeo": "Guichen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35127,
+        "libgeo": "Guignen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35128,
+        "libgeo": "Guipel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35130,
+        "libgeo": "Hédé-Bazouges",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35131,
+        "libgeo": "L'Hermitage",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35132,
+        "libgeo": "Hirel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35133,
+        "libgeo": "Iffendic",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35134,
+        "libgeo": "Les Iffs",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35135,
+        "libgeo": "Irodouër",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35136,
+        "libgeo": "Janzé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35137,
+        "libgeo": "Javené",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35138,
+        "libgeo": "Laignelet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35139,
+        "libgeo": "Laillé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35140,
+        "libgeo": "Lalleu",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35141,
+        "libgeo": "Landavran",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35142,
+        "libgeo": "Landéan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35143,
+        "libgeo": "Landujan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35144,
+        "libgeo": "Langan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35145,
+        "libgeo": "Langon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35146,
+        "libgeo": "Langouet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35148,
+        "libgeo": "Lanrigan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35149,
+        "libgeo": "Lassy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35150,
+        "libgeo": "Lécousse",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35151,
+        "libgeo": "Lieuron",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35152,
+        "libgeo": "Liffré",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35153,
+        "libgeo": "Lillemer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35154,
+        "libgeo": "Livré-sur-Changeon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35155,
+        "libgeo": "Lohéac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35156,
+        "libgeo": "Longaulnay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35157,
+        "libgeo": "Le Loroux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35159,
+        "libgeo": "Lourmais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35160,
+        "libgeo": "Loutehel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35161,
+        "libgeo": "Louvigné-de-Bais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35162,
+        "libgeo": "Louvigné-du-Désert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35163,
+        "libgeo": "Luitré-Dompierre",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35164,
+        "libgeo": "Marcillé-Raoul",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35165,
+        "libgeo": "Marcillé-Robert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35166,
+        "libgeo": "Marpiré",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35167,
+        "libgeo": "Martigné-Ferchaud",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35168,
+        "libgeo": "Val d'Anast",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35169,
+        "libgeo": "Maxent",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35170,
+        "libgeo": "Mecé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35171,
+        "libgeo": "Médréac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35172,
+        "libgeo": "Meillac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35173,
+        "libgeo": "Melesse",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35174,
+        "libgeo": "Mellé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35175,
+        "libgeo": "Mernel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35176,
+        "libgeo": "Guipry-Messac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35177,
+        "libgeo": "La Mézière",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35178,
+        "libgeo": "Mézières-sur-Couesnon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35179,
+        "libgeo": "Miniac-Morvan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35180,
+        "libgeo": "Miniac-sous-Bécherel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35181,
+        "libgeo": "Le Minihic-sur-Rance",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35183,
+        "libgeo": "Mondevert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35184,
+        "libgeo": "Montauban-de-Bretagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35185,
+        "libgeo": "Montautour",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35186,
+        "libgeo": "Mont-Dol",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35187,
+        "libgeo": "Monterfil",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35188,
+        "libgeo": "Montfort-sur-Meu",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35189,
+        "libgeo": "Montgermont",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35190,
+        "libgeo": "Monthault",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35191,
+        "libgeo": "Les Portes du Coglais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35192,
+        "libgeo": "Montreuil-des-Landes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35193,
+        "libgeo": "Montreuil-le-Gast",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35194,
+        "libgeo": "Montreuil-sous-Pérouse",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35195,
+        "libgeo": "Montreuil-sur-Ille",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35196,
+        "libgeo": "Mordelles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35197,
+        "libgeo": "Mouazé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35198,
+        "libgeo": "Moulins",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35199,
+        "libgeo": "Moussé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35200,
+        "libgeo": "Moutiers",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35201,
+        "libgeo": "Muel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35202,
+        "libgeo": "La Noë-Blanche",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35203,
+        "libgeo": "La Nouaye",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35204,
+        "libgeo": "Nouvoitou",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35205,
+        "libgeo": "Noyal-sous-Bazouges",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35206,
+        "libgeo": "Noyal-Châtillon-sur-Seiche",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35207,
+        "libgeo": "Noyal-sur-Vilaine",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35208,
+        "libgeo": "Orgères",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35210,
+        "libgeo": "Pacé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35211,
+        "libgeo": "Paimpont",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35212,
+        "libgeo": "Pancé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35214,
+        "libgeo": "Parcé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35215,
+        "libgeo": "Parigné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35216,
+        "libgeo": "Parthenay-de-Bretagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35217,
+        "libgeo": "Le Pertre",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35218,
+        "libgeo": "Le Petit-Fougeray",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35219,
+        "libgeo": "Pipriac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35220,
+        "libgeo": "Piré-Chancé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35221,
+        "libgeo": "Pléchâtel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35222,
+        "libgeo": "Pleine-Fougères",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35223,
+        "libgeo": "Plélan-le-Grand",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35224,
+        "libgeo": "Plerguer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35225,
+        "libgeo": "Plesder",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35226,
+        "libgeo": "Pleugueneuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35227,
+        "libgeo": "Pleumeleuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35228,
+        "libgeo": "Pleurtuit",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35229,
+        "libgeo": "Pocé-les-Bois",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35230,
+        "libgeo": "Poilley",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35231,
+        "libgeo": "Poligné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35232,
+        "libgeo": "Princé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35233,
+        "libgeo": "Québriac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35234,
+        "libgeo": "Quédillac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35235,
+        "libgeo": "Rannée",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35236,
+        "libgeo": "Redon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35237,
+        "libgeo": "Renac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35238,
+        "libgeo": "Rennes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35239,
+        "libgeo": "Retiers",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35240,
+        "libgeo": "Le Rheu",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35241,
+        "libgeo": "La Richardais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35242,
+        "libgeo": "Rimou",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35243,
+        "libgeo": "Romagné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35244,
+        "libgeo": "Romazy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35245,
+        "libgeo": "Romillé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35246,
+        "libgeo": "Roz-Landrieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35247,
+        "libgeo": "Roz-sur-Couesnon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35248,
+        "libgeo": "Sains",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35249,
+        "libgeo": "Sainte-Anne-sur-Vilaine",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35250,
+        "libgeo": "Saint-Armel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35251,
+        "libgeo": "Saint-Aubin-d'Aubigné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35252,
+        "libgeo": "Saint-Aubin-des-Landes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35253,
+        "libgeo": "Saint-Aubin-du-Cormier",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35255,
+        "libgeo": "Saint-Benoît-des-Ondes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35256,
+        "libgeo": "Saint-Briac-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35257,
+        "libgeo": "Maen Roch",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35258,
+        "libgeo": "Saint-Brieuc-des-Iffs",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35259,
+        "libgeo": "Saint-Broladre",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35260,
+        "libgeo": "Saint-Christophe-des-Bois",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35261,
+        "libgeo": "Saint-Christophe-de-Valains",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35262,
+        "libgeo": "Sainte-Colombe",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35263,
+        "libgeo": "Saint-Coulomb",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35264,
+        "libgeo": "Saint-Didier",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35265,
+        "libgeo": "Saint-Domineuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35266,
+        "libgeo": "Saint-Erblon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35268,
+        "libgeo": "Saint-Ganton",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35270,
+        "libgeo": "Saint-Georges-de-Gréhaigne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35271,
+        "libgeo": "Saint-Georges-de-Reintembault",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35272,
+        "libgeo": "Saint-Germain-du-Pinel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35273,
+        "libgeo": "Saint-Germain-en-Coglès",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35274,
+        "libgeo": "Saint-Germain-sur-Ille",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35275,
+        "libgeo": "Saint-Gilles",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35276,
+        "libgeo": "Saint-Gondran",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35277,
+        "libgeo": "Saint-Gonlay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35278,
+        "libgeo": "Saint-Grégoire",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35279,
+        "libgeo": "Saint-Guinoux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35280,
+        "libgeo": "Saint-Hilaire-des-Landes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35281,
+        "libgeo": "Saint-Jacques-de-la-Lande",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35282,
+        "libgeo": "Rives-du-Couesnon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35283,
+        "libgeo": "Saint-Jean-sur-Vilaine",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35284,
+        "libgeo": "Saint-Jouan-des-Guérets",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35285,
+        "libgeo": "Saint-Just",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35286,
+        "libgeo": "Saint-Léger-des-Prés",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35287,
+        "libgeo": "Saint-Lunaire",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35288,
+        "libgeo": "Saint-Malo",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35289,
+        "libgeo": "Saint-Malo-de-Phily",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35290,
+        "libgeo": "Saint-Malon-sur-Mel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35291,
+        "libgeo": "Saint-Marcan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35292,
+        "libgeo": "Saint-Marc-le-Blanc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35294,
+        "libgeo": "Sainte-Marie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35295,
+        "libgeo": "Saint-Maugan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35296,
+        "libgeo": "Saint-Médard-sur-Ille",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35297,
+        "libgeo": "Saint-Méen-le-Grand",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35299,
+        "libgeo": "Saint-Méloir-des-Ondes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35300,
+        "libgeo": "Saint-M'Hervé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35302,
+        "libgeo": "Saint-Onen-la-Chapelle",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35304,
+        "libgeo": "Saint-Ouen-des-Alleux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35305,
+        "libgeo": "Saint-Péran",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35306,
+        "libgeo": "Saint-Père-Marc-en-Poulet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35307,
+        "libgeo": "Saint-Pern",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35308,
+        "libgeo": "Mesnil-Roc'h",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35309,
+        "libgeo": "Saint-Rémy-du-Plain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35310,
+        "libgeo": "Saint-Sauveur-des-Landes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35311,
+        "libgeo": "Saint-Séglin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35312,
+        "libgeo": "Saint-Senoux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35314,
+        "libgeo": "Saint-Suliac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35315,
+        "libgeo": "Saint-Sulpice-la-Forêt",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35316,
+        "libgeo": "Saint-Sulpice-des-Landes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35317,
+        "libgeo": "Saint-Symphorien",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35318,
+        "libgeo": "Saint-Thual",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35319,
+        "libgeo": "Saint-Thurial",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35320,
+        "libgeo": "Saint-Uniac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35321,
+        "libgeo": "Saulnières",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35322,
+        "libgeo": "Le Sel-de-Bretagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35324,
+        "libgeo": "La Selle-en-Luitré",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35325,
+        "libgeo": "La Selle-Guerchaise",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35326,
+        "libgeo": "Sens-de-Bretagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35327,
+        "libgeo": "Servon-sur-Vilaine",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35328,
+        "libgeo": "Sixt-sur-Aff",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35329,
+        "libgeo": "Sougeal",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35330,
+        "libgeo": "Taillis",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35331,
+        "libgeo": "Talensac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35332,
+        "libgeo": "Teillay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35333,
+        "libgeo": "Le Theil-de-Bretagne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35334,
+        "libgeo": "Thorigné-Fouillard",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35335,
+        "libgeo": "Thourie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35336,
+        "libgeo": "Le Tiercent",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35337,
+        "libgeo": "Tinténiac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35338,
+        "libgeo": "Torcé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35339,
+        "libgeo": "Trans-la-Forêt",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35340,
+        "libgeo": "Treffendel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35342,
+        "libgeo": "Trémeheuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35343,
+        "libgeo": "Tresbœuf",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35345,
+        "libgeo": "Trévérien",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35346,
+        "libgeo": "Trimer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35347,
+        "libgeo": "Val-d'Izé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35350,
+        "libgeo": "Vergéal",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35351,
+        "libgeo": "Le Verger",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35352,
+        "libgeo": "Vern-sur-Seiche",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35353,
+        "libgeo": "Vezin-le-Coquet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35354,
+        "libgeo": "Vieux-Viel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35355,
+        "libgeo": "Vieux-Vy-sur-Couesnon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35356,
+        "libgeo": "Vignoc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35357,
+        "libgeo": "Villamée",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35358,
+        "libgeo": "La Ville-ès-Nonais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35359,
+        "libgeo": "Visseiche",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35360,
+        "libgeo": "Vitré",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35361,
+        "libgeo": "Le Vivier-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35362,
+        "libgeo": "Le Tronchet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 35363,
+        "libgeo": "Pont-Péan",
+        "mont_urb_zpp": "out"
+    }
+]

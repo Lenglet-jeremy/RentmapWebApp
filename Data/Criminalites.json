@@ -1,0 +1,66 @@
+[
+    {
+        "indicateur":"Autres coups et blessures volontaires",
+        "nombre":131237
+    },
+    {
+        "indicateur":"Cambriolages de logement",
+        "nombre":190797
+    },
+    {
+        "indicateur":"Coups et blessures volontaires",
+        "nombre":311082
+    },
+    {
+        "indicateur":"Coups et blessures volontaires intrafamiliaux",
+        "nombre":161143
+    },
+    {
+        "indicateur":"Destructions et dégradations volontaires",
+        "nombre":539761
+    },
+    {
+        "indicateur":"Escroqueries",
+        "nombre":388012
+    },
+    {
+        "indicateur":"Trafic de stupéfiants",
+        "nombre":47345
+    },
+    {
+        "indicateur":"Usage de stupéfiants",
+        "nombre":269185
+    },
+    {
+        "indicateur":"Usage de stupéfiants (AFD)",
+        "nombre":167477
+    },
+    {
+        "indicateur":"Violences sexuelles",
+        "nombre":89155
+    },
+    {
+        "indicateur":"Vols avec armes",
+        "nombre":6804
+    },
+    {
+        "indicateur":"Vols d'accessoires sur véhicules",
+        "nombre":72450
+    },
+    {
+        "indicateur":"Vols dans les véhicules",
+        "nombre":266146
+    },
+    {
+        "indicateur":"Vols de véhicules",
+        "nombre":125552
+    },
+    {
+        "indicateur":"Vols sans violence contre des personnes",
+        "nombre":751556
+    },
+    {
+        "indicateur":"Vols violents sans arme",
+        "nombre":62971
+    }
+]

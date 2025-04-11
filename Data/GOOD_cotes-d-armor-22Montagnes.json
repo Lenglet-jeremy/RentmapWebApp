@@ -1,0 +1,1742 @@
+[
+    {
+        "codgeo": 22001,
+        "libgeo": "Allineuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22002,
+        "libgeo": "Andel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22003,
+        "libgeo": "Aucaleuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22004,
+        "libgeo": "Bégard",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22005,
+        "libgeo": "Belle-Isle-en-Terre",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22006,
+        "libgeo": "Berhet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22008,
+        "libgeo": "Bobital",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22009,
+        "libgeo": "Le Bodéo",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22011,
+        "libgeo": "Boqueho",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22012,
+        "libgeo": "La Bouillie",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22013,
+        "libgeo": "Bourbriac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22014,
+        "libgeo": "Bourseul",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22015,
+        "libgeo": "Bréhand",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22016,
+        "libgeo": "Île-de-Bréhat",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22018,
+        "libgeo": "Brélidy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22019,
+        "libgeo": "Bringolo",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22020,
+        "libgeo": "Broons",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22021,
+        "libgeo": "Brusvily",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22023,
+        "libgeo": "Bulat-Pestivien",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22024,
+        "libgeo": "Calanhel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22025,
+        "libgeo": "Callac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22026,
+        "libgeo": "Calorguen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22027,
+        "libgeo": "Le Cambout",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22028,
+        "libgeo": "Camlez",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22029,
+        "libgeo": "Canihuel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22030,
+        "libgeo": "Caouënnec-Lanvézéac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22031,
+        "libgeo": "Carnoët",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22032,
+        "libgeo": "Caulnes",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22033,
+        "libgeo": "Caurel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22034,
+        "libgeo": "Cavan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22035,
+        "libgeo": "Les Champs-Géraux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22036,
+        "libgeo": "La Chapelle-Blanche",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22037,
+        "libgeo": "La Chapelle-Neuve",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22039,
+        "libgeo": "La Chèze",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22040,
+        "libgeo": "Coadout",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22041,
+        "libgeo": "Coatascorn",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22042,
+        "libgeo": "Coatréven",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22043,
+        "libgeo": "Coëtlogon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22044,
+        "libgeo": "Coëtmieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22045,
+        "libgeo": "Cohiniac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22046,
+        "libgeo": "Le Mené",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22047,
+        "libgeo": "Corlay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22048,
+        "libgeo": "Corseul",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22049,
+        "libgeo": "Créhen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22050,
+        "libgeo": "Dinan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22052,
+        "libgeo": "Duault",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22053,
+        "libgeo": "Éréac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22054,
+        "libgeo": "Erquy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22055,
+        "libgeo": "Binic-Étables-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22056,
+        "libgeo": "Évran",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22057,
+        "libgeo": "Le Faouët",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22059,
+        "libgeo": "Le Fœil",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22060,
+        "libgeo": "Gausson",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22061,
+        "libgeo": "Glomel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22062,
+        "libgeo": "Gomené",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22063,
+        "libgeo": "Gommenec'h",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22064,
+        "libgeo": "Gouarec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22065,
+        "libgeo": "Goudelin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22067,
+        "libgeo": "Grâces",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22068,
+        "libgeo": "Grâce-Uzel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22069,
+        "libgeo": "Guenroc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22070,
+        "libgeo": "Guingamp",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22071,
+        "libgeo": "Guitté",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22072,
+        "libgeo": "Gurunhuel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22073,
+        "libgeo": "La Harmoye",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22074,
+        "libgeo": "Le Haut-Corlay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22075,
+        "libgeo": "Hémonstoir",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22076,
+        "libgeo": "Hénanbihen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22077,
+        "libgeo": "Hénansal",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22079,
+        "libgeo": "Hénon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22081,
+        "libgeo": "Hillion",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22082,
+        "libgeo": "Le Hinglé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22083,
+        "libgeo": "Illifaut",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22084,
+        "libgeo": "Jugon-les-Lacs",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22085,
+        "libgeo": "Kerbors",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22086,
+        "libgeo": "Kerfot",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22087,
+        "libgeo": "Kergrist-Moëlou",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22088,
+        "libgeo": "Kerien",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22090,
+        "libgeo": "Kermaria-Sulard",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22091,
+        "libgeo": "Kermoroc'h",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22092,
+        "libgeo": "Kerpert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22093,
+        "libgeo": "Lamballe-Armor",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22094,
+        "libgeo": "Lancieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22095,
+        "libgeo": "Landebaëron",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22096,
+        "libgeo": "Landébia",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22097,
+        "libgeo": "La Landec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22098,
+        "libgeo": "Landéhen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22099,
+        "libgeo": "Lanfains",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22101,
+        "libgeo": "Langoat",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22103,
+        "libgeo": "Langrolay-sur-Rance",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22104,
+        "libgeo": "Languédias",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22105,
+        "libgeo": "Languenan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22106,
+        "libgeo": "Langueux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22107,
+        "libgeo": "Bon Repos sur Blavet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22108,
+        "libgeo": "Lanleff",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22109,
+        "libgeo": "Lanloup",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22110,
+        "libgeo": "Lanmérin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22111,
+        "libgeo": "Lanmodez",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22112,
+        "libgeo": "Lannebert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22113,
+        "libgeo": "Lannion",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22114,
+        "libgeo": "Lanrelas",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22115,
+        "libgeo": "Lanrivain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22116,
+        "libgeo": "Lanrodec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22117,
+        "libgeo": "Lantic",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22118,
+        "libgeo": "Lanvallay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22119,
+        "libgeo": "Lanvellec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22121,
+        "libgeo": "Lanvollon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22122,
+        "libgeo": "Laurenan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22124,
+        "libgeo": "Lescouët-Gouarec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22126,
+        "libgeo": "Le Leslay",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22127,
+        "libgeo": "Lézardrieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22128,
+        "libgeo": "Locarn",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22129,
+        "libgeo": "Loc-Envel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22131,
+        "libgeo": "Loguivy-Plougras",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22132,
+        "libgeo": "Lohuec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22133,
+        "libgeo": "Loscouët-sur-Meu",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22134,
+        "libgeo": "Louannec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22135,
+        "libgeo": "Louargat",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22136,
+        "libgeo": "Loudéac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22137,
+        "libgeo": "Maël-Carhaix",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22138,
+        "libgeo": "Maël-Pestivien",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22139,
+        "libgeo": "Magoar",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22140,
+        "libgeo": "La Malhoure",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22141,
+        "libgeo": "Mantallot",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22143,
+        "libgeo": "Matignon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22144,
+        "libgeo": "La Méaugon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22145,
+        "libgeo": "Mégrit",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22146,
+        "libgeo": "Mellionnec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22147,
+        "libgeo": "Merdrignac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22148,
+        "libgeo": "Mérillac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22149,
+        "libgeo": "Merléac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22150,
+        "libgeo": "Le Merzer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22152,
+        "libgeo": "Minihy-Tréguier",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22153,
+        "libgeo": "Moncontour",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22155,
+        "libgeo": "La Motte",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22156,
+        "libgeo": "Moustéru",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22157,
+        "libgeo": "Le Moustoir",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22158,
+        "libgeo": "Guerlédan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22160,
+        "libgeo": "Noyal",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22161,
+        "libgeo": "Pabu",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22162,
+        "libgeo": "Paimpol",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22163,
+        "libgeo": "Paule",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22164,
+        "libgeo": "Pédernec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22165,
+        "libgeo": "Penguily",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22166,
+        "libgeo": "Penvénan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22168,
+        "libgeo": "Perros-Guirec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22169,
+        "libgeo": "Peumerit-Quintin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22170,
+        "libgeo": "Plaine-Haute",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22171,
+        "libgeo": "Plaintel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22172,
+        "libgeo": "Plancoët",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22174,
+        "libgeo": "Pléboulle",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22175,
+        "libgeo": "Plédéliac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22176,
+        "libgeo": "Plédran",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22177,
+        "libgeo": "Pléguien",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22178,
+        "libgeo": "Pléhédel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22179,
+        "libgeo": "Fréhel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22180,
+        "libgeo": "Plélan-le-Petit",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22181,
+        "libgeo": "Plélauff",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22182,
+        "libgeo": "Plélo",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22183,
+        "libgeo": "Plémet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22184,
+        "libgeo": "Plémy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22185,
+        "libgeo": "Plénée-Jugon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22186,
+        "libgeo": "Pléneuf-Val-André",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22187,
+        "libgeo": "Plérin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22188,
+        "libgeo": "Plerneuf",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22189,
+        "libgeo": "Plésidy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22190,
+        "libgeo": "Pleslin-Trigavou",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22193,
+        "libgeo": "Plestan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22194,
+        "libgeo": "Plestin-les-Grèves",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22195,
+        "libgeo": "Pleubian",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22196,
+        "libgeo": "Pleudaniel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22197,
+        "libgeo": "Pleudihen-sur-Rance",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22198,
+        "libgeo": "Pleumeur-Bodou",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22199,
+        "libgeo": "Pleumeur-Gautier",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22200,
+        "libgeo": "Pléven",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22201,
+        "libgeo": "Plévenon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22202,
+        "libgeo": "Plévin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22203,
+        "libgeo": "Plœuc-L'Hermitage",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22204,
+        "libgeo": "Ploëzal",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22205,
+        "libgeo": "Plorec-sur-Arguenon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22206,
+        "libgeo": "Châtelaudren-Plouagat",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22207,
+        "libgeo": "Plouaret",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22208,
+        "libgeo": "Plouasne",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22209,
+        "libgeo": "Beaussais-sur-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22210,
+        "libgeo": "Ploubazlanec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22211,
+        "libgeo": "Ploubezre",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22212,
+        "libgeo": "Plouëc-du-Trieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22213,
+        "libgeo": "Plouër-sur-Rance",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22214,
+        "libgeo": "Plouézec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22215,
+        "libgeo": "Ploufragan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22216,
+        "libgeo": "Plougonver",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22217,
+        "libgeo": "Plougras",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22218,
+        "libgeo": "Plougrescant",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22219,
+        "libgeo": "Plouguenast-Langast",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22220,
+        "libgeo": "Plouguernével",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22221,
+        "libgeo": "Plouguiel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22222,
+        "libgeo": "Plouha",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22223,
+        "libgeo": "Plouisy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22224,
+        "libgeo": "Ploulec'h",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22225,
+        "libgeo": "Ploumagoar",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22226,
+        "libgeo": "Ploumilliau",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22227,
+        "libgeo": "Plounérin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22228,
+        "libgeo": "Plounévez-Moëdec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22229,
+        "libgeo": "Plounévez-Quintin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22231,
+        "libgeo": "Plourac'h",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22232,
+        "libgeo": "Plourhan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22233,
+        "libgeo": "Plourivo",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22234,
+        "libgeo": "Plouvara",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22235,
+        "libgeo": "Plouzélambre",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22236,
+        "libgeo": "Pludual",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22237,
+        "libgeo": "Pluduno",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22238,
+        "libgeo": "Plufur",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22239,
+        "libgeo": "Plumaudan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22240,
+        "libgeo": "Plumaugat",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22241,
+        "libgeo": "Plumieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22242,
+        "libgeo": "Plurien",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22243,
+        "libgeo": "Plusquellec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22244,
+        "libgeo": "Plussulien",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22245,
+        "libgeo": "Pluzunet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22246,
+        "libgeo": "Pommeret",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22248,
+        "libgeo": "Pommerit-le-Vicomte",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22249,
+        "libgeo": "Pont-Melvez",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22250,
+        "libgeo": "Pontrieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22251,
+        "libgeo": "Pordic",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22254,
+        "libgeo": "Prat",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22255,
+        "libgeo": "La Prénessaye",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22256,
+        "libgeo": "Quemper-Guézennec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22257,
+        "libgeo": "Quemperven",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22258,
+        "libgeo": "Quessoy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22259,
+        "libgeo": "Quévert",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22260,
+        "libgeo": "Le Quillio",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22261,
+        "libgeo": "Quintenic",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22262,
+        "libgeo": "Quintin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22263,
+        "libgeo": "Le Quiou",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22264,
+        "libgeo": "La Roche-Jaudy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22265,
+        "libgeo": "Rospez",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22266,
+        "libgeo": "Rostrenen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22267,
+        "libgeo": "Rouillac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22268,
+        "libgeo": "Ruca",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22269,
+        "libgeo": "Runan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22271,
+        "libgeo": "Saint-Adrien",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22272,
+        "libgeo": "Saint-Agathon",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22273,
+        "libgeo": "Saint-Alban",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22274,
+        "libgeo": "Saint-André-des-Eaux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22275,
+        "libgeo": "Saint-Barnabé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22276,
+        "libgeo": "Saint-Bihy",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22277,
+        "libgeo": "Saint-Brandan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22278,
+        "libgeo": "Saint-Brieuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22279,
+        "libgeo": "Saint-Caradec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22280,
+        "libgeo": "Saint-Carné",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22281,
+        "libgeo": "Saint-Carreuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22282,
+        "libgeo": "Saint-Cast-le-Guildo",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22283,
+        "libgeo": "Saint-Clet",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22284,
+        "libgeo": "Saint-Connan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22285,
+        "libgeo": "Saint-Connec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22286,
+        "libgeo": "Saint-Denoual",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22287,
+        "libgeo": "Saint-Donan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22288,
+        "libgeo": "Saint-Étienne-du-Gué-de-l'Isle",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22289,
+        "libgeo": "Saint-Fiacre",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22291,
+        "libgeo": "Saint-Gildas",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22293,
+        "libgeo": "Saint-Gilles-les-Bois",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22294,
+        "libgeo": "Saint-Gilles-Pligeaux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22295,
+        "libgeo": "Saint-Gilles-Vieux-Marché",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22296,
+        "libgeo": "Saint-Glen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22299,
+        "libgeo": "Saint-Hélen",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22300,
+        "libgeo": "Saint-Hervé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22302,
+        "libgeo": "Saint-Jacut-de-la-Mer",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22304,
+        "libgeo": "Saint-Jean-Kerdaniel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22305,
+        "libgeo": "Saint-Jouan-de-l'Isle",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22306,
+        "libgeo": "Saint-Judoce",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22307,
+        "libgeo": "Saint-Julien",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22308,
+        "libgeo": "Saint-Juvat",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22309,
+        "libgeo": "Saint-Launeuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22310,
+        "libgeo": "Saint-Laurent",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22311,
+        "libgeo": "Saint-Lormel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22312,
+        "libgeo": "Saint-Maden",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22313,
+        "libgeo": "Saint-Martin-des-Prés",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22314,
+        "libgeo": "Saint-Maudan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22315,
+        "libgeo": "Saint-Maudez",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22316,
+        "libgeo": "Saint-Mayeux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22317,
+        "libgeo": "Saint-Méloir-des-Bois",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22318,
+        "libgeo": "Saint-Michel-de-Plélan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22319,
+        "libgeo": "Saint-Michel-en-Grève",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22320,
+        "libgeo": "Saint-Nicodème",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22321,
+        "libgeo": "Saint-Nicolas-du-Pélem",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22322,
+        "libgeo": "Saint-Péver",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22323,
+        "libgeo": "Saint-Pôtan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22324,
+        "libgeo": "Saint-Quay-Perros",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22325,
+        "libgeo": "Saint-Quay-Portrieux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22326,
+        "libgeo": "Saint-Rieul",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22327,
+        "libgeo": "Saint-Samson-sur-Rance",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22328,
+        "libgeo": "Saint-Servais",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22330,
+        "libgeo": "Saint-Thélo",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22331,
+        "libgeo": "Sainte-Tréphine",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22332,
+        "libgeo": "Saint-Trimoël",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22333,
+        "libgeo": "Saint-Vran",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22334,
+        "libgeo": "Saint-Igeaux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22335,
+        "libgeo": "Senven-Léhart",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22337,
+        "libgeo": "Sévignac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22338,
+        "libgeo": "Squiffiec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22339,
+        "libgeo": "Taden",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22340,
+        "libgeo": "Tonquédec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22341,
+        "libgeo": "Tramain",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22342,
+        "libgeo": "Trébédan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22343,
+        "libgeo": "Trébeurden",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22344,
+        "libgeo": "Trébrivan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22345,
+        "libgeo": "Trébry",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22346,
+        "libgeo": "Trédaniel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22347,
+        "libgeo": "Trédarzec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22348,
+        "libgeo": "Trédias",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22349,
+        "libgeo": "Trédrez-Locquémeau",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22350,
+        "libgeo": "Tréduder",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22351,
+        "libgeo": "Treffrin",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22352,
+        "libgeo": "Tréfumel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22353,
+        "libgeo": "Trégastel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22354,
+        "libgeo": "Tréglamus",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22356,
+        "libgeo": "Trégomeur",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22358,
+        "libgeo": "Trégonneau",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22359,
+        "libgeo": "Trégrom",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22360,
+        "libgeo": "Trégueux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22361,
+        "libgeo": "Tréguidel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22362,
+        "libgeo": "Tréguier",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22363,
+        "libgeo": "Trélévern",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22364,
+        "libgeo": "Trélivan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22365,
+        "libgeo": "Trémargat",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22366,
+        "libgeo": "Trémel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22368,
+        "libgeo": "Tréméreuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22369,
+        "libgeo": "Trémeur",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22370,
+        "libgeo": "Tréméven",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22371,
+        "libgeo": "Trémorel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22372,
+        "libgeo": "Trémuson",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22373,
+        "libgeo": "Tréogan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22375,
+        "libgeo": "Tressignaux",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22376,
+        "libgeo": "Trévé",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22377,
+        "libgeo": "Tréveneuc",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22378,
+        "libgeo": "Trévérec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22379,
+        "libgeo": "Trévou-Tréguignec",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22380,
+        "libgeo": "Trévron",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22381,
+        "libgeo": "Trézény",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22383,
+        "libgeo": "Troguéry",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22384,
+        "libgeo": "Uzel",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22385,
+        "libgeo": "La Vicomté-sur-Rance",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22386,
+        "libgeo": "Le Vieux-Bourg",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22387,
+        "libgeo": "Le Vieux-Marché",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22388,
+        "libgeo": "Vildé-Guingalan",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22389,
+        "libgeo": "Yffiniac",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22390,
+        "libgeo": "Yvias",
+        "mont_urb_zpp": "out"
+    },
+    {
+        "codgeo": 22391,
+        "libgeo": "Yvignac-la-Tour",
+        "mont_urb_zpp": "out"
+    }
+]

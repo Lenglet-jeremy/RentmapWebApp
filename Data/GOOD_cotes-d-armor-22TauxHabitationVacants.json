@@ -1,0 +1,2090 @@
+[
+    {
+        "codgeo": 22001,
+        "libgeo": "Allineuc",
+        "an": 2021,
+        "part_logt_vacant": 15.6
+    },
+    {
+        "codgeo": 22002,
+        "libgeo": "Andel",
+        "an": 2021,
+        "part_logt_vacant": 4.4
+    },
+    {
+        "codgeo": 22003,
+        "libgeo": "Aucaleuc",
+        "an": 2021,
+        "part_logt_vacant": 6.1
+    },
+    {
+        "codgeo": 22004,
+        "libgeo": "Begard",
+        "an": 2021,
+        "part_logt_vacant": 12.2
+    },
+    {
+        "codgeo": 22005,
+        "libgeo": "Belle Isle en Terre",
+        "an": 2021,
+        "part_logt_vacant": 11.2
+    },
+    {
+        "codgeo": 22006,
+        "libgeo": "Berhet",
+        "an": 2021,
+        "part_logt_vacant": 6.0
+    },
+    {
+        "codgeo": 22008,
+        "libgeo": "Bobital",
+        "an": 2021,
+        "part_logt_vacant": 7.7
+    },
+    {
+        "codgeo": 22009,
+        "libgeo": "Le Bodeo",
+        "an": 2021,
+        "part_logt_vacant": 16.5
+    },
+    {
+        "codgeo": 22011,
+        "libgeo": "Boqueho",
+        "an": 2021,
+        "part_logt_vacant": 11.7
+    },
+    {
+        "codgeo": 22012,
+        "libgeo": "La Bouillie",
+        "an": 2021,
+        "part_logt_vacant": 6.6
+    },
+    {
+        "codgeo": 22013,
+        "libgeo": "Bourbriac",
+        "an": 2021,
+        "part_logt_vacant": 17.7
+    },
+    {
+        "codgeo": 22014,
+        "libgeo": "Bourseul",
+        "an": 2021,
+        "part_logt_vacant": 6.7
+    },
+    {
+        "codgeo": 22015,
+        "libgeo": "Brehand",
+        "an": 2021,
+        "part_logt_vacant": 6.4
+    },
+    {
+        "codgeo": 22016,
+        "libgeo": "Ile de Brehat",
+        "an": 2021,
+        "part_logt_vacant": 3.0
+    },
+    {
+        "codgeo": 22018,
+        "libgeo": "Brelidy",
+        "an": 2021,
+        "part_logt_vacant": 11.0
+    },
+    {
+        "codgeo": 22019,
+        "libgeo": "Bringolo",
+        "an": 2021,
+        "part_logt_vacant": 6.9
+    },
+    {
+        "codgeo": 22020,
+        "libgeo": "Broons",
+        "an": 2021,
+        "part_logt_vacant": 12.7
+    },
+    {
+        "codgeo": 22021,
+        "libgeo": "Brusvily",
+        "an": 2021,
+        "part_logt_vacant": 9.4
+    },
+    {
+        "codgeo": 22023,
+        "libgeo": "Bulat Pestivien",
+        "an": 2021,
+        "part_logt_vacant": 15.2
+    },
+    {
+        "codgeo": 22024,
+        "libgeo": "Calanhel",
+        "an": 2021,
+        "part_logt_vacant": 17.5
+    },
+    {
+        "codgeo": 22025,
+        "libgeo": "Callac",
+        "an": 2021,
+        "part_logt_vacant": 15.1
+    },
+    {
+        "codgeo": 22026,
+        "libgeo": "Calorguen",
+        "an": 2021,
+        "part_logt_vacant": 6.9
+    },
+    {
+        "codgeo": 22027,
+        "libgeo": "Le Cambout",
+        "an": 2021,
+        "part_logt_vacant": 22.1
+    },
+    {
+        "codgeo": 22028,
+        "libgeo": "Camlez",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 22029,
+        "libgeo": "Canihuel",
+        "an": 2021,
+        "part_logt_vacant": 15.7
+    },
+    {
+        "codgeo": 22030,
+        "libgeo": "Caouennec Lanvezeac",
+        "an": 2021,
+        "part_logt_vacant": 5.7
+    },
+    {
+        "codgeo": 22031,
+        "libgeo": "Carnoet",
+        "an": 2021,
+        "part_logt_vacant": 19.8
+    },
+    {
+        "codgeo": 22032,
+        "libgeo": "Caulnes",
+        "an": 2021,
+        "part_logt_vacant": 9.3
+    },
+    {
+        "codgeo": 22033,
+        "libgeo": "Caurel",
+        "an": 2021,
+        "part_logt_vacant": 9.2
+    },
+    {
+        "codgeo": 22034,
+        "libgeo": "Cavan",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 22035,
+        "libgeo": "Les Champs Geraux",
+        "an": 2021,
+        "part_logt_vacant": 10.8
+    },
+    {
+        "codgeo": 22036,
+        "libgeo": "La Chapelle Blanche",
+        "an": 2021,
+        "part_logt_vacant": 21.2
+    },
+    {
+        "codgeo": 22037,
+        "libgeo": "La Chapelle Neuve",
+        "an": 2021,
+        "part_logt_vacant": 14.0
+    },
+    {
+        "codgeo": 22039,
+        "libgeo": "La Cheze",
+        "an": 2021,
+        "part_logt_vacant": 12.2
+    },
+    {
+        "codgeo": 22040,
+        "libgeo": "Coadout",
+        "an": 2021,
+        "part_logt_vacant": 7.6
+    },
+    {
+        "codgeo": 22041,
+        "libgeo": "Coatascorn",
+        "an": 2021,
+        "part_logt_vacant": 6.1
+    },
+    {
+        "codgeo": 22042,
+        "libgeo": "Coatreven",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 22043,
+        "libgeo": "Coetlogon",
+        "an": 2021,
+        "part_logt_vacant": 12.4
+    },
+    {
+        "codgeo": 22044,
+        "libgeo": "Coetmieux",
+        "an": 2021,
+        "part_logt_vacant": 6.3
+    },
+    {
+        "codgeo": 22045,
+        "libgeo": "Cohiniac",
+        "an": 2021,
+        "part_logt_vacant": 7.9
+    },
+    {
+        "codgeo": 22046,
+        "libgeo": "Le Mene",
+        "an": 2021,
+        "part_logt_vacant": 13.4
+    },
+    {
+        "codgeo": 22047,
+        "libgeo": "Corlay",
+        "an": 2021,
+        "part_logt_vacant": 16.2
+    },
+    {
+        "codgeo": 22048,
+        "libgeo": "Corseul",
+        "an": 2021,
+        "part_logt_vacant": 9.3
+    },
+    {
+        "codgeo": 22049,
+        "libgeo": "Crehen",
+        "an": 2021,
+        "part_logt_vacant": 7.8
+    },
+    {
+        "codgeo": 22050,
+        "libgeo": "Dinan",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 22052,
+        "libgeo": "Duault",
+        "an": 2021,
+        "part_logt_vacant": 16.4
+    },
+    {
+        "codgeo": 22053,
+        "libgeo": "Ereac",
+        "an": 2021,
+        "part_logt_vacant": 19.8
+    },
+    {
+        "codgeo": 22054,
+        "libgeo": "Erquy",
+        "an": 2021,
+        "part_logt_vacant": 2.6
+    },
+    {
+        "codgeo": 22055,
+        "libgeo": "Binic Etables sur Mer",
+        "an": 2021,
+        "part_logt_vacant": 5.2
+    },
+    {
+        "codgeo": 22056,
+        "libgeo": "Evran",
+        "an": 2021,
+        "part_logt_vacant": 7.7
+    },
+    {
+        "codgeo": 22057,
+        "libgeo": "Le Faouet",
+        "an": 2021,
+        "part_logt_vacant": 7.4
+    },
+    {
+        "codgeo": 22059,
+        "libgeo": "Le Foeil",
+        "an": 2021,
+        "part_logt_vacant": 6.3
+    },
+    {
+        "codgeo": 22060,
+        "libgeo": "Gausson",
+        "an": 2021,
+        "part_logt_vacant": 16.8
+    },
+    {
+        "codgeo": 22061,
+        "libgeo": "Glomel",
+        "an": 2021,
+        "part_logt_vacant": 18.2
+    },
+    {
+        "codgeo": 22062,
+        "libgeo": "Gomene",
+        "an": 2021,
+        "part_logt_vacant": 14.5
+    },
+    {
+        "codgeo": 22063,
+        "libgeo": "Gommenec h",
+        "an": 2021,
+        "part_logt_vacant": 8.4
+    },
+    {
+        "codgeo": 22064,
+        "libgeo": "Gouarec",
+        "an": 2021,
+        "part_logt_vacant": 10.5
+    },
+    {
+        "codgeo": 22065,
+        "libgeo": "Goudelin",
+        "an": 2021,
+        "part_logt_vacant": 9.3
+    },
+    {
+        "codgeo": 22067,
+        "libgeo": "Graces",
+        "an": 2021,
+        "part_logt_vacant": 9.2
+    },
+    {
+        "codgeo": 22068,
+        "libgeo": "Grace Uzel",
+        "an": 2021,
+        "part_logt_vacant": 15.5
+    },
+    {
+        "codgeo": 22069,
+        "libgeo": "Guenroc",
+        "an": 2021,
+        "part_logt_vacant": 11.7
+    },
+    {
+        "codgeo": 22070,
+        "libgeo": "Guingamp",
+        "an": 2021,
+        "part_logt_vacant": 14.9
+    },
+    {
+        "codgeo": 22071,
+        "libgeo": "Guitte",
+        "an": 2021,
+        "part_logt_vacant": 7.6
+    },
+    {
+        "codgeo": 22072,
+        "libgeo": "Gurunhuel",
+        "an": 2021,
+        "part_logt_vacant": 19.8
+    },
+    {
+        "codgeo": 22073,
+        "libgeo": "La Harmoye",
+        "an": 2021,
+        "part_logt_vacant": 2.8
+    },
+    {
+        "codgeo": 22074,
+        "libgeo": "Le Haut Corlay",
+        "an": 2021,
+        "part_logt_vacant": 11.0
+    },
+    {
+        "codgeo": 22075,
+        "libgeo": "Hemonstoir",
+        "an": 2021,
+        "part_logt_vacant": 10.6
+    },
+    {
+        "codgeo": 22076,
+        "libgeo": "Henanbihen",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 22077,
+        "libgeo": "Henansal",
+        "an": 2021,
+        "part_logt_vacant": 6.8
+    },
+    {
+        "codgeo": 22079,
+        "libgeo": "Henon",
+        "an": 2021,
+        "part_logt_vacant": 9.2
+    },
+    {
+        "codgeo": 22081,
+        "libgeo": "Hillion",
+        "an": 2021,
+        "part_logt_vacant": 6.2
+    },
+    {
+        "codgeo": 22082,
+        "libgeo": "Le Hingle",
+        "an": 2021,
+        "part_logt_vacant": 6.8
+    },
+    {
+        "codgeo": 22083,
+        "libgeo": "Illifaut",
+        "an": 2021,
+        "part_logt_vacant": 13.1
+    },
+    {
+        "codgeo": 22084,
+        "libgeo": "Jugon les Lacs",
+        "an": 2021,
+        "part_logt_vacant": 7.8
+    },
+    {
+        "codgeo": 22085,
+        "libgeo": "Kerbors",
+        "an": 2021,
+        "part_logt_vacant": 10.4
+    },
+    {
+        "codgeo": 22086,
+        "libgeo": "Kerfot",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 22087,
+        "libgeo": "Kergrist Moelou",
+        "an": 2021,
+        "part_logt_vacant": 13.2
+    },
+    {
+        "codgeo": 22088,
+        "libgeo": "Kerien",
+        "an": 2021,
+        "part_logt_vacant": 12.7
+    },
+    {
+        "codgeo": 22090,
+        "libgeo": "Kermaria Sulard",
+        "an": 2021,
+        "part_logt_vacant": 3.5
+    },
+    {
+        "codgeo": 22091,
+        "libgeo": "Kermoroc h",
+        "an": 2021,
+        "part_logt_vacant": 8.7
+    },
+    {
+        "codgeo": 22092,
+        "libgeo": "Kerpert",
+        "an": 2021,
+        "part_logt_vacant": 16.8
+    },
+    {
+        "codgeo": 22093,
+        "libgeo": "Lamballe Armor",
+        "an": 2021,
+        "part_logt_vacant": 8.9
+    },
+    {
+        "codgeo": 22094,
+        "libgeo": "Lancieux",
+        "an": 2021,
+        "part_logt_vacant": 3.9
+    },
+    {
+        "codgeo": 22095,
+        "libgeo": "Landebaeron",
+        "an": 2021,
+        "part_logt_vacant": 10.7
+    },
+    {
+        "codgeo": 22096,
+        "libgeo": "Landebia",
+        "an": 2021,
+        "part_logt_vacant": 10.3
+    },
+    {
+        "codgeo": 22097,
+        "libgeo": "La Landec",
+        "an": 2021,
+        "part_logt_vacant": 6.4
+    },
+    {
+        "codgeo": 22098,
+        "libgeo": "Landehen",
+        "an": 2021,
+        "part_logt_vacant": 3.3
+    },
+    {
+        "codgeo": 22099,
+        "libgeo": "Lanfains",
+        "an": 2021,
+        "part_logt_vacant": 7.5
+    },
+    {
+        "codgeo": 22101,
+        "libgeo": "Langoat",
+        "an": 2021,
+        "part_logt_vacant": 10.5
+    },
+    {
+        "codgeo": 22103,
+        "libgeo": "Langrolay sur Rance",
+        "an": 2021,
+        "part_logt_vacant": 6.7
+    },
+    {
+        "codgeo": 22104,
+        "libgeo": "Languedias",
+        "an": 2021,
+        "part_logt_vacant": 10.2
+    },
+    {
+        "codgeo": 22105,
+        "libgeo": "Languenan",
+        "an": 2021,
+        "part_logt_vacant": 7.9
+    },
+    {
+        "codgeo": 22106,
+        "libgeo": "Langueux",
+        "an": 2021,
+        "part_logt_vacant": 5.5
+    },
+    {
+        "codgeo": 22107,
+        "libgeo": "Bon Repos sur Blavet",
+        "an": 2021,
+        "part_logt_vacant": 9.1
+    },
+    {
+        "codgeo": 22108,
+        "libgeo": "Lanleff",
+        "an": 2021,
+        "part_logt_vacant": 4.1
+    },
+    {
+        "codgeo": 22109,
+        "libgeo": "Lanloup",
+        "an": 2021,
+        "part_logt_vacant": 3.6
+    },
+    {
+        "codgeo": 22110,
+        "libgeo": "Lanmerin",
+        "an": 2021,
+        "part_logt_vacant": 4.8
+    },
+    {
+        "codgeo": 22111,
+        "libgeo": "Lanmodez",
+        "an": 2021,
+        "part_logt_vacant": 9.8
+    },
+    {
+        "codgeo": 22112,
+        "libgeo": "Lannebert",
+        "an": 2021,
+        "part_logt_vacant": 8.0
+    },
+    {
+        "codgeo": 22113,
+        "libgeo": "Lannion",
+        "an": 2021,
+        "part_logt_vacant": 6.2
+    },
+    {
+        "codgeo": 22114,
+        "libgeo": "Lanrelas",
+        "an": 2021,
+        "part_logt_vacant": 9.7
+    },
+    {
+        "codgeo": 22115,
+        "libgeo": "Lanrivain",
+        "an": 2021,
+        "part_logt_vacant": 10.0
+    },
+    {
+        "codgeo": 22116,
+        "libgeo": "Lanrodec",
+        "an": 2021,
+        "part_logt_vacant": 4.4
+    },
+    {
+        "codgeo": 22117,
+        "libgeo": "Lantic",
+        "an": 2021,
+        "part_logt_vacant": 3.5
+    },
+    {
+        "codgeo": 22118,
+        "libgeo": "Lanvallay",
+        "an": 2021,
+        "part_logt_vacant": 6.1
+    },
+    {
+        "codgeo": 22119,
+        "libgeo": "Lanvellec",
+        "an": 2021,
+        "part_logt_vacant": 8.3
+    },
+    {
+        "codgeo": 22121,
+        "libgeo": "Lanvollon",
+        "an": 2021,
+        "part_logt_vacant": 10.0
+    },
+    {
+        "codgeo": 22122,
+        "libgeo": "Laurenan",
+        "an": 2021,
+        "part_logt_vacant": 13.0
+    },
+    {
+        "codgeo": 22124,
+        "libgeo": "Lescouet Gouarec",
+        "an": 2021,
+        "part_logt_vacant": 21.4
+    },
+    {
+        "codgeo": 22126,
+        "libgeo": "Le Leslay",
+        "an": 2021,
+        "part_logt_vacant": 4.2
+    },
+    {
+        "codgeo": 22127,
+        "libgeo": "Lezardrieux",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 22128,
+        "libgeo": "Locarn",
+        "an": 2021,
+        "part_logt_vacant": 27.7
+    },
+    {
+        "codgeo": 22129,
+        "libgeo": "Loc Envel",
+        "an": 2021,
+        "part_logt_vacant": 25.6
+    },
+    {
+        "codgeo": 22131,
+        "libgeo": "Loguivy Plougras",
+        "an": 2021,
+        "part_logt_vacant": 16.0
+    },
+    {
+        "codgeo": 22132,
+        "libgeo": "Lohuec",
+        "an": 2021,
+        "part_logt_vacant": 21.6
+    },
+    {
+        "codgeo": 22133,
+        "libgeo": "Loscouet sur Meu",
+        "an": 2021,
+        "part_logt_vacant": 15.1
+    },
+    {
+        "codgeo": 22134,
+        "libgeo": "Louannec",
+        "an": 2021,
+        "part_logt_vacant": 4.1
+    },
+    {
+        "codgeo": 22135,
+        "libgeo": "Louargat",
+        "an": 2021,
+        "part_logt_vacant": 12.0
+    },
+    {
+        "codgeo": 22136,
+        "libgeo": "Loudeac",
+        "an": 2021,
+        "part_logt_vacant": 11.6
+    },
+    {
+        "codgeo": 22137,
+        "libgeo": "Mael Carhaix",
+        "an": 2021,
+        "part_logt_vacant": 16.7
+    },
+    {
+        "codgeo": 22138,
+        "libgeo": "Mael Pestivien",
+        "an": 2021,
+        "part_logt_vacant": 18.2
+    },
+    {
+        "codgeo": 22139,
+        "libgeo": "Magoar",
+        "an": 2021,
+        "part_logt_vacant": 23.0
+    },
+    {
+        "codgeo": 22140,
+        "libgeo": "La Malhoure",
+        "an": 2021,
+        "part_logt_vacant": 3.4
+    },
+    {
+        "codgeo": 22141,
+        "libgeo": "Mantallot",
+        "an": 2021,
+        "part_logt_vacant": 4.5
+    },
+    {
+        "codgeo": 22143,
+        "libgeo": "Matignon",
+        "an": 2021,
+        "part_logt_vacant": 7.7
+    },
+    {
+        "codgeo": 22144,
+        "libgeo": "La Meaugon",
+        "an": 2021,
+        "part_logt_vacant": 5.7
+    },
+    {
+        "codgeo": 22145,
+        "libgeo": "Megrit",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 22146,
+        "libgeo": "Mellionnec",
+        "an": 2021,
+        "part_logt_vacant": 16.2
+    },
+    {
+        "codgeo": 22147,
+        "libgeo": "Merdrignac",
+        "an": 2021,
+        "part_logt_vacant": 14.1
+    },
+    {
+        "codgeo": 22148,
+        "libgeo": "Merillac",
+        "an": 2021,
+        "part_logt_vacant": 9.0
+    },
+    {
+        "codgeo": 22149,
+        "libgeo": "Merleac",
+        "an": 2021,
+        "part_logt_vacant": 16.8
+    },
+    {
+        "codgeo": 22150,
+        "libgeo": "Le Merzer",
+        "an": 2021,
+        "part_logt_vacant": 4.4
+    },
+    {
+        "codgeo": 22152,
+        "libgeo": "Minihy Treguier",
+        "an": 2021,
+        "part_logt_vacant": 2.6
+    },
+    {
+        "codgeo": 22153,
+        "libgeo": "Moncontour",
+        "an": 2021,
+        "part_logt_vacant": 25.2
+    },
+    {
+        "codgeo": 22155,
+        "libgeo": "La Motte",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 22156,
+        "libgeo": "Mousteru",
+        "an": 2021,
+        "part_logt_vacant": 9.8
+    },
+    {
+        "codgeo": 22157,
+        "libgeo": "Le Moustoir",
+        "an": 2021,
+        "part_logt_vacant": 7.0
+    },
+    {
+        "codgeo": 22158,
+        "libgeo": "Guerledan",
+        "an": 2021,
+        "part_logt_vacant": 15.4
+    },
+    {
+        "codgeo": 22160,
+        "libgeo": "Noyal",
+        "an": 2021,
+        "part_logt_vacant": 5.0
+    },
+    {
+        "codgeo": 22161,
+        "libgeo": "Pabu",
+        "an": 2021,
+        "part_logt_vacant": 9.3
+    },
+    {
+        "codgeo": 22162,
+        "libgeo": "Paimpol",
+        "an": 2021,
+        "part_logt_vacant": 9.5
+    },
+    {
+        "codgeo": 22163,
+        "libgeo": "Paule",
+        "an": 2021,
+        "part_logt_vacant": 12.9
+    },
+    {
+        "codgeo": 22164,
+        "libgeo": "Pedernec",
+        "an": 2021,
+        "part_logt_vacant": 11.0
+    },
+    {
+        "codgeo": 22165,
+        "libgeo": "Penguily",
+        "an": 2021,
+        "part_logt_vacant": 7.6
+    },
+    {
+        "codgeo": 22166,
+        "libgeo": "Penvenan",
+        "an": 2021,
+        "part_logt_vacant": 3.6
+    },
+    {
+        "codgeo": 22168,
+        "libgeo": "Perros Guirec",
+        "an": 2021,
+        "part_logt_vacant": 8.6
+    },
+    {
+        "codgeo": 22169,
+        "libgeo": "Peumerit Quintin",
+        "an": 2021,
+        "part_logt_vacant": 9.2
+    },
+    {
+        "codgeo": 22170,
+        "libgeo": "Plaine Haute",
+        "an": 2021,
+        "part_logt_vacant": 7.3
+    },
+    {
+        "codgeo": 22171,
+        "libgeo": "Plaintel",
+        "an": 2021,
+        "part_logt_vacant": 6.3
+    },
+    {
+        "codgeo": 22172,
+        "libgeo": "Plancoet",
+        "an": 2021,
+        "part_logt_vacant": 8.5
+    },
+    {
+        "codgeo": 22174,
+        "libgeo": "Pleboulle",
+        "an": 2021,
+        "part_logt_vacant": 9.2
+    },
+    {
+        "codgeo": 22175,
+        "libgeo": "Pledeliac",
+        "an": 2021,
+        "part_logt_vacant": 10.3
+    },
+    {
+        "codgeo": 22176,
+        "libgeo": "Pledran",
+        "an": 2021,
+        "part_logt_vacant": 5.5
+    },
+    {
+        "codgeo": 22177,
+        "libgeo": "Pleguien",
+        "an": 2021,
+        "part_logt_vacant": 4.9
+    },
+    {
+        "codgeo": 22178,
+        "libgeo": "Plehedel",
+        "an": 2021,
+        "part_logt_vacant": 8.9
+    },
+    {
+        "codgeo": 22179,
+        "libgeo": "Frehel",
+        "an": 2021,
+        "part_logt_vacant": 2.4
+    },
+    {
+        "codgeo": 22180,
+        "libgeo": "Plelan le Petit",
+        "an": 2021,
+        "part_logt_vacant": 9.6
+    },
+    {
+        "codgeo": 22181,
+        "libgeo": "Plelauff",
+        "an": 2021,
+        "part_logt_vacant": 14.0
+    },
+    {
+        "codgeo": 22182,
+        "libgeo": "Plelo",
+        "an": 2021,
+        "part_logt_vacant": 6.3
+    },
+    {
+        "codgeo": 22183,
+        "libgeo": "Plemet",
+        "an": 2021,
+        "part_logt_vacant": 11.8
+    },
+    {
+        "codgeo": 22184,
+        "libgeo": "Plemy",
+        "an": 2021,
+        "part_logt_vacant": 11.6
+    },
+    {
+        "codgeo": 22185,
+        "libgeo": "Plenee Jugon",
+        "an": 2021,
+        "part_logt_vacant": 8.4
+    },
+    {
+        "codgeo": 22186,
+        "libgeo": "Pleneuf Val Andre",
+        "an": 2021,
+        "part_logt_vacant": 3.5
+    },
+    {
+        "codgeo": 22187,
+        "libgeo": "Plerin",
+        "an": 2021,
+        "part_logt_vacant": 5.1
+    },
+    {
+        "codgeo": 22188,
+        "libgeo": "Plerneuf",
+        "an": 2021,
+        "part_logt_vacant": 6.6
+    },
+    {
+        "codgeo": 22189,
+        "libgeo": "Plesidy",
+        "an": 2021,
+        "part_logt_vacant": 21.4
+    },
+    {
+        "codgeo": 22190,
+        "libgeo": "Pleslin Trigavou",
+        "an": 2021,
+        "part_logt_vacant": 5.1
+    },
+    {
+        "codgeo": 22193,
+        "libgeo": "Plestan",
+        "an": 2021,
+        "part_logt_vacant": 9.8
+    },
+    {
+        "codgeo": 22194,
+        "libgeo": "Plestin les Greves",
+        "an": 2021,
+        "part_logt_vacant": 7.0
+    },
+    {
+        "codgeo": 22195,
+        "libgeo": "Pleubian",
+        "an": 2021,
+        "part_logt_vacant": 1.3
+    },
+    {
+        "codgeo": 22196,
+        "libgeo": "Pleudaniel",
+        "an": 2021,
+        "part_logt_vacant": 13.1
+    },
+    {
+        "codgeo": 22197,
+        "libgeo": "Pleudihen sur Rance",
+        "an": 2021,
+        "part_logt_vacant": 9.0
+    },
+    {
+        "codgeo": 22198,
+        "libgeo": "Pleumeur Bodou",
+        "an": 2021,
+        "part_logt_vacant": 4.2
+    },
+    {
+        "codgeo": 22199,
+        "libgeo": "Pleumeur Gautier",
+        "an": 2021,
+        "part_logt_vacant": 9.3
+    },
+    {
+        "codgeo": 22200,
+        "libgeo": "Pleven",
+        "an": 2021,
+        "part_logt_vacant": 4.8
+    },
+    {
+        "codgeo": 22201,
+        "libgeo": "Plevenon",
+        "an": 2021,
+        "part_logt_vacant": 2.7
+    },
+    {
+        "codgeo": 22202,
+        "libgeo": "Plevin",
+        "an": 2021,
+        "part_logt_vacant": 12.2
+    },
+    {
+        "codgeo": 22203,
+        "libgeo": "Ploeuc L Hermitage",
+        "an": 2021,
+        "part_logt_vacant": 10.6
+    },
+    {
+        "codgeo": 22204,
+        "libgeo": "Ploezal",
+        "an": 2021,
+        "part_logt_vacant": 8.5
+    },
+    {
+        "codgeo": 22205,
+        "libgeo": "Plorec sur Arguenon",
+        "an": 2021,
+        "part_logt_vacant": 4.1
+    },
+    {
+        "codgeo": 22206,
+        "libgeo": "Chatelaudren Plouagat",
+        "an": 2021,
+        "part_logt_vacant": 9.4
+    },
+    {
+        "codgeo": 22207,
+        "libgeo": "Plouaret",
+        "an": 2021,
+        "part_logt_vacant": 11.0
+    },
+    {
+        "codgeo": 22208,
+        "libgeo": "Plouasne",
+        "an": 2021,
+        "part_logt_vacant": 11.4
+    },
+    {
+        "codgeo": 22209,
+        "libgeo": "Beaussais sur Mer",
+        "an": 2021,
+        "part_logt_vacant": 6.8
+    },
+    {
+        "codgeo": 22210,
+        "libgeo": "Ploubazlanec",
+        "an": 2021,
+        "part_logt_vacant": 5.1
+    },
+    {
+        "codgeo": 22211,
+        "libgeo": "Ploubezre",
+        "an": 2021,
+        "part_logt_vacant": 8.6
+    },
+    {
+        "codgeo": 22212,
+        "libgeo": "Plouec du Trieux",
+        "an": 2021,
+        "part_logt_vacant": 9.5
+    },
+    {
+        "codgeo": 22213,
+        "libgeo": "Plouer sur Rance",
+        "an": 2021,
+        "part_logt_vacant": 6.3
+    },
+    {
+        "codgeo": 22214,
+        "libgeo": "Plouezec",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 22215,
+        "libgeo": "Ploufragan",
+        "an": 2021,
+        "part_logt_vacant": 5.8
+    },
+    {
+        "codgeo": 22216,
+        "libgeo": "Plougonver",
+        "an": 2021,
+        "part_logt_vacant": 13.2
+    },
+    {
+        "codgeo": 22217,
+        "libgeo": "Plougras",
+        "an": 2021,
+        "part_logt_vacant": 14.1
+    },
+    {
+        "codgeo": 22218,
+        "libgeo": "Plougrescant",
+        "an": 2021,
+        "part_logt_vacant": 5.2
+    },
+    {
+        "codgeo": 22219,
+        "libgeo": "Plouguenast Langast",
+        "an": 2021,
+        "part_logt_vacant": 10.6
+    },
+    {
+        "codgeo": 22220,
+        "libgeo": "Plouguernevel",
+        "an": 2021,
+        "part_logt_vacant": 12.6
+    },
+    {
+        "codgeo": 22221,
+        "libgeo": "Plouguiel",
+        "an": 2021,
+        "part_logt_vacant": 13.3
+    },
+    {
+        "codgeo": 22222,
+        "libgeo": "Plouha",
+        "an": 2021,
+        "part_logt_vacant": 8.6
+    },
+    {
+        "codgeo": 22223,
+        "libgeo": "Plouisy",
+        "an": 2021,
+        "part_logt_vacant": 8.6
+    },
+    {
+        "codgeo": 22224,
+        "libgeo": "Ploulec h",
+        "an": 2021,
+        "part_logt_vacant": 5.7
+    },
+    {
+        "codgeo": 22225,
+        "libgeo": "Ploumagoar",
+        "an": 2021,
+        "part_logt_vacant": 8.4
+    },
+    {
+        "codgeo": 22226,
+        "libgeo": "Ploumilliau",
+        "an": 2021,
+        "part_logt_vacant": 8.8
+    },
+    {
+        "codgeo": 22227,
+        "libgeo": "Plounerin",
+        "an": 2021,
+        "part_logt_vacant": 5.7
+    },
+    {
+        "codgeo": 22228,
+        "libgeo": "Plounevez Moedec",
+        "an": 2021,
+        "part_logt_vacant": 16.7
+    },
+    {
+        "codgeo": 22229,
+        "libgeo": "Plounevez Quintin",
+        "an": 2021,
+        "part_logt_vacant": 15.9
+    },
+    {
+        "codgeo": 22231,
+        "libgeo": "Plourac h",
+        "an": 2021,
+        "part_logt_vacant": 13.8
+    },
+    {
+        "codgeo": 22232,
+        "libgeo": "Plourhan",
+        "an": 2021,
+        "part_logt_vacant": 5.2
+    },
+    {
+        "codgeo": 22233,
+        "libgeo": "Plourivo",
+        "an": 2021,
+        "part_logt_vacant": 9.0
+    },
+    {
+        "codgeo": 22234,
+        "libgeo": "Plouvara",
+        "an": 2021,
+        "part_logt_vacant": 6.7
+    },
+    {
+        "codgeo": 22235,
+        "libgeo": "Plouzelambre",
+        "an": 2021,
+        "part_logt_vacant": 7.4
+    },
+    {
+        "codgeo": 22236,
+        "libgeo": "Pludual",
+        "an": 2021,
+        "part_logt_vacant": 5.2
+    },
+    {
+        "codgeo": 22237,
+        "libgeo": "Pluduno",
+        "an": 2021,
+        "part_logt_vacant": 5.8
+    },
+    {
+        "codgeo": 22238,
+        "libgeo": "Plufur",
+        "an": 2021,
+        "part_logt_vacant": 12.4
+    },
+    {
+        "codgeo": 22239,
+        "libgeo": "Plumaudan",
+        "an": 2021,
+        "part_logt_vacant": 7.9
+    },
+    {
+        "codgeo": 22240,
+        "libgeo": "Plumaugat",
+        "an": 2021,
+        "part_logt_vacant": 14.6
+    },
+    {
+        "codgeo": 22241,
+        "libgeo": "Plumieux",
+        "an": 2021,
+        "part_logt_vacant": 14.9
+    },
+    {
+        "codgeo": 22242,
+        "libgeo": "Plurien",
+        "an": 2021,
+        "part_logt_vacant": 5.9
+    },
+    {
+        "codgeo": 22243,
+        "libgeo": "Plusquellec",
+        "an": 2021,
+        "part_logt_vacant": 17.3
+    },
+    {
+        "codgeo": 22244,
+        "libgeo": "Plussulien",
+        "an": 2021,
+        "part_logt_vacant": 11.7
+    },
+    {
+        "codgeo": 22245,
+        "libgeo": "Pluzunet",
+        "an": 2021,
+        "part_logt_vacant": 9.2
+    },
+    {
+        "codgeo": 22246,
+        "libgeo": "Pommeret",
+        "an": 2021,
+        "part_logt_vacant": 4.1
+    },
+    {
+        "codgeo": 22248,
+        "libgeo": "Pommerit le Vicomte",
+        "an": 2021,
+        "part_logt_vacant": 12.0
+    },
+    {
+        "codgeo": 22249,
+        "libgeo": "Pont Melvez",
+        "an": 2021,
+        "part_logt_vacant": 10.0
+    },
+    {
+        "codgeo": 22250,
+        "libgeo": "Pontrieux",
+        "an": 2021,
+        "part_logt_vacant": 13.2
+    },
+    {
+        "codgeo": 22251,
+        "libgeo": "Pordic",
+        "an": 2021,
+        "part_logt_vacant": 6.9
+    },
+    {
+        "codgeo": 22254,
+        "libgeo": "Prat",
+        "an": 2021,
+        "part_logt_vacant": 8.8
+    },
+    {
+        "codgeo": 22255,
+        "libgeo": "La Prenessaye",
+        "an": 2021,
+        "part_logt_vacant": 13.3
+    },
+    {
+        "codgeo": 22256,
+        "libgeo": "Quemper Guezennec",
+        "an": 2021,
+        "part_logt_vacant": 6.7
+    },
+    {
+        "codgeo": 22257,
+        "libgeo": "Quemperven",
+        "an": 2021,
+        "part_logt_vacant": 6.3
+    },
+    {
+        "codgeo": 22258,
+        "libgeo": "Quessoy",
+        "an": 2021,
+        "part_logt_vacant": 8.7
+    },
+    {
+        "codgeo": 22259,
+        "libgeo": "Quevert",
+        "an": 2021,
+        "part_logt_vacant": 4.4
+    },
+    {
+        "codgeo": 22260,
+        "libgeo": "Le Quillio",
+        "an": 2021,
+        "part_logt_vacant": 4.4
+    },
+    {
+        "codgeo": 22261,
+        "libgeo": "Quintenic",
+        "an": 2021,
+        "part_logt_vacant": 3.7
+    },
+    {
+        "codgeo": 22262,
+        "libgeo": "Quintin",
+        "an": 2021,
+        "part_logt_vacant": 12.4
+    },
+    {
+        "codgeo": 22263,
+        "libgeo": "Le Quiou",
+        "an": 2021,
+        "part_logt_vacant": 12.2
+    },
+    {
+        "codgeo": 22264,
+        "libgeo": "La Roche Jaudy",
+        "an": 2021,
+        "part_logt_vacant": 5.7
+    },
+    {
+        "codgeo": 22265,
+        "libgeo": "Rospez",
+        "an": 2021,
+        "part_logt_vacant": 4.8
+    },
+    {
+        "codgeo": 22266,
+        "libgeo": "Rostrenen",
+        "an": 2021,
+        "part_logt_vacant": 13.6
+    },
+    {
+        "codgeo": 22267,
+        "libgeo": "Rouillac",
+        "an": 2021,
+        "part_logt_vacant": 13.1
+    },
+    {
+        "codgeo": 22268,
+        "libgeo": "Ruca",
+        "an": 2021,
+        "part_logt_vacant": 6.7
+    },
+    {
+        "codgeo": 22269,
+        "libgeo": "Runan",
+        "an": 2021,
+        "part_logt_vacant": 8.7
+    },
+    {
+        "codgeo": 22271,
+        "libgeo": "st Adrien",
+        "an": 2021,
+        "part_logt_vacant": 9.0
+    },
+    {
+        "codgeo": 22272,
+        "libgeo": "st Agathon",
+        "an": 2021,
+        "part_logt_vacant": 7.3
+    },
+    {
+        "codgeo": 22273,
+        "libgeo": "st Alban",
+        "an": 2021,
+        "part_logt_vacant": 4.6
+    },
+    {
+        "codgeo": 22274,
+        "libgeo": "st Andre des Eaux",
+        "an": 2021,
+        "part_logt_vacant": 8.5
+    },
+    {
+        "codgeo": 22275,
+        "libgeo": "st Barnabe",
+        "an": 2021,
+        "part_logt_vacant": 5.9
+    },
+    {
+        "codgeo": 22276,
+        "libgeo": "st Bihy",
+        "an": 2021,
+        "part_logt_vacant": 7.1
+    },
+    {
+        "codgeo": 22277,
+        "libgeo": "st Brandan",
+        "an": 2021,
+        "part_logt_vacant": 9.2
+    },
+    {
+        "codgeo": 22278,
+        "libgeo": "st Brieuc",
+        "an": 2021,
+        "part_logt_vacant": 10.7
+    },
+    {
+        "codgeo": 22279,
+        "libgeo": "st Caradec",
+        "an": 2021,
+        "part_logt_vacant": 7.1
+    },
+    {
+        "codgeo": 22280,
+        "libgeo": "st Carne",
+        "an": 2021,
+        "part_logt_vacant": 7.5
+    },
+    {
+        "codgeo": 22281,
+        "libgeo": "st Carreuc",
+        "an": 2021,
+        "part_logt_vacant": 7.5
+    },
+    {
+        "codgeo": 22282,
+        "libgeo": "st Cast le Guildo",
+        "an": 2021,
+        "part_logt_vacant": 2.0
+    },
+    {
+        "codgeo": 22283,
+        "libgeo": "st Clet",
+        "an": 2021,
+        "part_logt_vacant": 9.1
+    },
+    {
+        "codgeo": 22284,
+        "libgeo": "st Connan",
+        "an": 2021,
+        "part_logt_vacant": 20.1
+    },
+    {
+        "codgeo": 22285,
+        "libgeo": "st Connec",
+        "an": 2021,
+        "part_logt_vacant": 14.5
+    },
+    {
+        "codgeo": 22286,
+        "libgeo": "st Denoual",
+        "an": 2021,
+        "part_logt_vacant": 6.0
+    },
+    {
+        "codgeo": 22287,
+        "libgeo": "st Donan",
+        "an": 2021,
+        "part_logt_vacant": 5.1
+    },
+    {
+        "codgeo": 22288,
+        "libgeo": "st Etienne du Gue de l Isle",
+        "an": 2021,
+        "part_logt_vacant": 10.7
+    },
+    {
+        "codgeo": 22289,
+        "libgeo": "st Fiacre",
+        "an": 2021,
+        "part_logt_vacant": 15.6
+    },
+    {
+        "codgeo": 22291,
+        "libgeo": "st Gildas",
+        "an": 2021,
+        "part_logt_vacant": 24.5
+    },
+    {
+        "codgeo": 22293,
+        "libgeo": "st Gilles les Bois",
+        "an": 2021,
+        "part_logt_vacant": 11.5
+    },
+    {
+        "codgeo": 22294,
+        "libgeo": "st Gilles Pligeaux",
+        "an": 2021,
+        "part_logt_vacant": 23.0
+    },
+    {
+        "codgeo": 22295,
+        "libgeo": "st Gilles Vieux Marche",
+        "an": 2021,
+        "part_logt_vacant": 17.0
+    },
+    {
+        "codgeo": 22296,
+        "libgeo": "st Glen",
+        "an": 2021,
+        "part_logt_vacant": 11.8
+    },
+    {
+        "codgeo": 22299,
+        "libgeo": "st Helen",
+        "an": 2021,
+        "part_logt_vacant": 6.8
+    },
+    {
+        "codgeo": 22300,
+        "libgeo": "st Herve",
+        "an": 2021,
+        "part_logt_vacant": 14.5
+    },
+    {
+        "codgeo": 22302,
+        "libgeo": "st Jacut de la Mer",
+        "an": 2021,
+        "part_logt_vacant": 2.7
+    },
+    {
+        "codgeo": 22304,
+        "libgeo": "st Jean Kerdaniel",
+        "an": 2021,
+        "part_logt_vacant": 7.3
+    },
+    {
+        "codgeo": 22305,
+        "libgeo": "st Jouan de l Isle",
+        "an": 2021,
+        "part_logt_vacant": 10.1
+    },
+    {
+        "codgeo": 22306,
+        "libgeo": "st Judoce",
+        "an": 2021,
+        "part_logt_vacant": 5.2
+    },
+    {
+        "codgeo": 22307,
+        "libgeo": "st Julien",
+        "an": 2021,
+        "part_logt_vacant": 5.1
+    },
+    {
+        "codgeo": 22308,
+        "libgeo": "st Juvat",
+        "an": 2021,
+        "part_logt_vacant": 12.9
+    },
+    {
+        "codgeo": 22309,
+        "libgeo": "st Launeuc",
+        "an": 2021,
+        "part_logt_vacant": 13.5
+    },
+    {
+        "codgeo": 22310,
+        "libgeo": "st Laurent",
+        "an": 2021,
+        "part_logt_vacant": 5.3
+    },
+    {
+        "codgeo": 22311,
+        "libgeo": "st Lormel",
+        "an": 2021,
+        "part_logt_vacant": 6.0
+    },
+    {
+        "codgeo": 22312,
+        "libgeo": "st Maden",
+        "an": 2021,
+        "part_logt_vacant": 17.9
+    },
+    {
+        "codgeo": 22313,
+        "libgeo": "st Martin des Pres",
+        "an": 2021,
+        "part_logt_vacant": 10.5
+    },
+    {
+        "codgeo": 22314,
+        "libgeo": "st Maudan",
+        "an": 2021,
+        "part_logt_vacant": 5.6
+    },
+    {
+        "codgeo": 22315,
+        "libgeo": "st Maudez",
+        "an": 2021,
+        "part_logt_vacant": 6.9
+    },
+    {
+        "codgeo": 22316,
+        "libgeo": "st Mayeux",
+        "an": 2021,
+        "part_logt_vacant": 14.6
+    },
+    {
+        "codgeo": 22317,
+        "libgeo": "st Meloir des Bois",
+        "an": 2021,
+        "part_logt_vacant": 8.8
+    },
+    {
+        "codgeo": 22318,
+        "libgeo": "st Michel de Plelan",
+        "an": 2021,
+        "part_logt_vacant": 9.8
+    },
+    {
+        "codgeo": 22319,
+        "libgeo": "st Michel en Greve",
+        "an": 2021,
+        "part_logt_vacant": 5.1
+    },
+    {
+        "codgeo": 22320,
+        "libgeo": "st Nicodeme",
+        "an": 2021,
+        "part_logt_vacant": 20.9
+    },
+    {
+        "codgeo": 22321,
+        "libgeo": "st Nicolas du Pelem",
+        "an": 2021,
+        "part_logt_vacant": 15.4
+    },
+    {
+        "codgeo": 22322,
+        "libgeo": "st Pever",
+        "an": 2021,
+        "part_logt_vacant": 10.6
+    },
+    {
+        "codgeo": 22323,
+        "libgeo": "st Potan",
+        "an": 2021,
+        "part_logt_vacant": 10.0
+    },
+    {
+        "codgeo": 22324,
+        "libgeo": "st Quay Perros",
+        "an": 2021,
+        "part_logt_vacant": 6.7
+    },
+    {
+        "codgeo": 22325,
+        "libgeo": "st Quay Portrieux",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 22326,
+        "libgeo": "st Rieul",
+        "an": 2021,
+        "part_logt_vacant": 5.2
+    },
+    {
+        "codgeo": 22327,
+        "libgeo": "st Samson sur Rance",
+        "an": 2021,
+        "part_logt_vacant": 3.4
+    },
+    {
+        "codgeo": 22328,
+        "libgeo": "st Servais",
+        "an": 2021,
+        "part_logt_vacant": 17.1
+    },
+    {
+        "codgeo": 22330,
+        "libgeo": "st Thelo",
+        "an": 2021,
+        "part_logt_vacant": 17.4
+    },
+    {
+        "codgeo": 22331,
+        "libgeo": "Sainte Trephine",
+        "an": 2021,
+        "part_logt_vacant": 17.2
+    },
+    {
+        "codgeo": 22332,
+        "libgeo": "st Trimoel",
+        "an": 2021,
+        "part_logt_vacant": 7.6
+    },
+    {
+        "codgeo": 22333,
+        "libgeo": "st Vran",
+        "an": 2021,
+        "part_logt_vacant": 14.8
+    },
+    {
+        "codgeo": 22334,
+        "libgeo": "st Igeaux",
+        "an": 2021,
+        "part_logt_vacant": 21.1
+    },
+    {
+        "codgeo": 22335,
+        "libgeo": "Senven Lehart",
+        "an": 2021,
+        "part_logt_vacant": 24.1
+    },
+    {
+        "codgeo": 22337,
+        "libgeo": "Sevignac",
+        "an": 2021,
+        "part_logt_vacant": 13.5
+    },
+    {
+        "codgeo": 22338,
+        "libgeo": "Squiffiec",
+        "an": 2021,
+        "part_logt_vacant": 4.0
+    },
+    {
+        "codgeo": 22339,
+        "libgeo": "Taden",
+        "an": 2021,
+        "part_logt_vacant": 7.3
+    },
+    {
+        "codgeo": 22340,
+        "libgeo": "Tonquedec",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 22341,
+        "libgeo": "Tramain",
+        "an": 2021,
+        "part_logt_vacant": 7.1
+    },
+    {
+        "codgeo": 22342,
+        "libgeo": "Trebedan",
+        "an": 2021,
+        "part_logt_vacant": 6.7
+    },
+    {
+        "codgeo": 22343,
+        "libgeo": "Trebeurden",
+        "an": 2021,
+        "part_logt_vacant": 3.4
+    },
+    {
+        "codgeo": 22344,
+        "libgeo": "Trebrivan",
+        "an": 2021,
+        "part_logt_vacant": 10.1
+    },
+    {
+        "codgeo": 22345,
+        "libgeo": "Trebry",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 22346,
+        "libgeo": "Tredaniel",
+        "an": 2021,
+        "part_logt_vacant": 7.9
+    },
+    {
+        "codgeo": 22347,
+        "libgeo": "Tredarzec",
+        "an": 2021,
+        "part_logt_vacant": 5.3
+    },
+    {
+        "codgeo": 22348,
+        "libgeo": "Tredias",
+        "an": 2021,
+        "part_logt_vacant": 13.3
+    },
+    {
+        "codgeo": 22349,
+        "libgeo": "Tredrez Locquemeau",
+        "an": 2021,
+        "part_logt_vacant": 0.9
+    },
+    {
+        "codgeo": 22350,
+        "libgeo": "Treduder",
+        "an": 2021,
+        "part_logt_vacant": 4.6
+    },
+    {
+        "codgeo": 22351,
+        "libgeo": "Treffrin",
+        "an": 2021,
+        "part_logt_vacant": 8.2
+    },
+    {
+        "codgeo": 22352,
+        "libgeo": "Trefumel",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 22353,
+        "libgeo": "Tregastel",
+        "an": 2021,
+        "part_logt_vacant": 0.2
+    },
+    {
+        "codgeo": 22354,
+        "libgeo": "Treglamus",
+        "an": 2021,
+        "part_logt_vacant": 8.8
+    },
+    {
+        "codgeo": 22356,
+        "libgeo": "Tregomeur",
+        "an": 2021,
+        "part_logt_vacant": 10.1
+    },
+    {
+        "codgeo": 22358,
+        "libgeo": "Tregonneau",
+        "an": 2021,
+        "part_logt_vacant": 3.9
+    },
+    {
+        "codgeo": 22359,
+        "libgeo": "Tregrom",
+        "an": 2021,
+        "part_logt_vacant": 12.5
+    },
+    {
+        "codgeo": 22360,
+        "libgeo": "Tregueux",
+        "an": 2021,
+        "part_logt_vacant": 4.8
+    },
+    {
+        "codgeo": 22361,
+        "libgeo": "Treguidel",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 22362,
+        "libgeo": "Treguier",
+        "an": 2021,
+        "part_logt_vacant": 14.2
+    },
+    {
+        "codgeo": 22363,
+        "libgeo": "Trelevern",
+        "an": 2021,
+        "part_logt_vacant": 3.4
+    },
+    {
+        "codgeo": 22364,
+        "libgeo": "Trelivan",
+        "an": 2021,
+        "part_logt_vacant": 4.4
+    },
+    {
+        "codgeo": 22365,
+        "libgeo": "Tremargat",
+        "an": 2021,
+        "part_logt_vacant": 8.4
+    },
+    {
+        "codgeo": 22366,
+        "libgeo": "Tremel",
+        "an": 2021,
+        "part_logt_vacant": 14.5
+    },
+    {
+        "codgeo": 22368,
+        "libgeo": "Tremereuc",
+        "an": 2021,
+        "part_logt_vacant": 5.3
+    },
+    {
+        "codgeo": 22369,
+        "libgeo": "Tremeur",
+        "an": 2021,
+        "part_logt_vacant": 9.3
+    },
+    {
+        "codgeo": 22370,
+        "libgeo": "Tremeven",
+        "an": 2021,
+        "part_logt_vacant": 2.4
+    },
+    {
+        "codgeo": 22371,
+        "libgeo": "Tremorel",
+        "an": 2021,
+        "part_logt_vacant": 8.7
+    },
+    {
+        "codgeo": 22372,
+        "libgeo": "Tremuson",
+        "an": 2021,
+        "part_logt_vacant": 4.3
+    },
+    {
+        "codgeo": 22373,
+        "libgeo": "Treogan",
+        "an": 2021,
+        "part_logt_vacant": 20.5
+    },
+    {
+        "codgeo": 22375,
+        "libgeo": "Tressignaux",
+        "an": 2021,
+        "part_logt_vacant": 7.9
+    },
+    {
+        "codgeo": 22376,
+        "libgeo": "Treve",
+        "an": 2021,
+        "part_logt_vacant": 8.0
+    },
+    {
+        "codgeo": 22377,
+        "libgeo": "Treveneuc",
+        "an": 2021,
+        "part_logt_vacant": 5.0
+    },
+    {
+        "codgeo": 22378,
+        "libgeo": "Treverec",
+        "an": 2021,
+        "part_logt_vacant": 2.9
+    },
+    {
+        "codgeo": 22379,
+        "libgeo": "Trevou Treguignec",
+        "an": 2021,
+        "part_logt_vacant": 1.6
+    },
+    {
+        "codgeo": 22380,
+        "libgeo": "Trevron",
+        "an": 2021,
+        "part_logt_vacant": 10.6
+    },
+    {
+        "codgeo": 22381,
+        "libgeo": "Trezeny",
+        "an": 2021,
+        "part_logt_vacant": 7.3
+    },
+    {
+        "codgeo": 22383,
+        "libgeo": "Troguery",
+        "an": 2021,
+        "part_logt_vacant": 6.0
+    },
+    {
+        "codgeo": 22384,
+        "libgeo": "Uzel",
+        "an": 2021,
+        "part_logt_vacant": 9.8
+    },
+    {
+        "codgeo": 22385,
+        "libgeo": "La Vicomte sur Rance",
+        "an": 2021,
+        "part_logt_vacant": 8.1
+    },
+    {
+        "codgeo": 22386,
+        "libgeo": "Le Vieux Bourg",
+        "an": 2021,
+        "part_logt_vacant": 15.1
+    },
+    {
+        "codgeo": 22387,
+        "libgeo": "Le Vieux Marche",
+        "an": 2021,
+        "part_logt_vacant": 10.4
+    },
+    {
+        "codgeo": 22388,
+        "libgeo": "Vilde Guingalan",
+        "an": 2021,
+        "part_logt_vacant": 6.5
+    },
+    {
+        "codgeo": 22389,
+        "libgeo": "Yffiniac",
+        "an": 2021,
+        "part_logt_vacant": 6.7
+    },
+    {
+        "codgeo": 22390,
+        "libgeo": "Yvias",
+        "an": 2021,
+        "part_logt_vacant": 4.7
+    },
+    {
+        "codgeo": 22391,
+        "libgeo": "Yvignac la Tour",
+        "an": 2021,
+        "part_logt_vacant": 15.8
+    }
+]

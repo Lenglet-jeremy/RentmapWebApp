@@ -1,0 +1,1244 @@
+[
+    {
+        "codgeo": 44001,
+        "libgeo": "Abbaretz",
+        "an": 2021,
+        "part_proprio": 74.1
+    },
+    {
+        "codgeo": 44002,
+        "libgeo": "Aigrefeuille-sur-Maine",
+        "an": 2021,
+        "part_proprio": 80.7
+    },
+    {
+        "codgeo": 44003,
+        "libgeo": "Ancenis-Saint-Géréon",
+        "an": 2021,
+        "part_proprio": 56.2
+    },
+    {
+        "codgeo": 44005,
+        "libgeo": "Chaumes-en-Retz",
+        "an": 2021,
+        "part_proprio": 75.2
+    },
+    {
+        "codgeo": 44006,
+        "libgeo": "Assérac",
+        "an": 2021,
+        "part_proprio": 79.0
+    },
+    {
+        "codgeo": 44007,
+        "libgeo": "Avessac",
+        "an": 2021,
+        "part_proprio": 75.9
+    },
+    {
+        "codgeo": 44009,
+        "libgeo": "Basse-Goulaine",
+        "an": 2021,
+        "part_proprio": 74.7
+    },
+    {
+        "codgeo": 44010,
+        "libgeo": "Batz-sur-Mer",
+        "an": 2021,
+        "part_proprio": 73.7
+    },
+    {
+        "codgeo": 44012,
+        "libgeo": "La Bernerie-en-Retz",
+        "an": 2021,
+        "part_proprio": 77.1
+    },
+    {
+        "codgeo": 44013,
+        "libgeo": "Besné",
+        "an": 2021,
+        "part_proprio": 82.9
+    },
+    {
+        "codgeo": 44014,
+        "libgeo": "Le Bignon",
+        "an": 2021,
+        "part_proprio": 81.1
+    },
+    {
+        "codgeo": 44015,
+        "libgeo": "Blain",
+        "an": 2021,
+        "part_proprio": 69.3
+    },
+    {
+        "codgeo": 44016,
+        "libgeo": "La Boissière-du-Doré",
+        "an": 2021,
+        "part_proprio": 84.7
+    },
+    {
+        "codgeo": 44018,
+        "libgeo": "Bouaye",
+        "an": 2021,
+        "part_proprio": 69.9
+    },
+    {
+        "codgeo": 44019,
+        "libgeo": "Bouée",
+        "an": 2021,
+        "part_proprio": 87.2
+    },
+    {
+        "codgeo": 44020,
+        "libgeo": "Bouguenais",
+        "an": 2021,
+        "part_proprio": 64.6
+    },
+    {
+        "codgeo": 44021,
+        "libgeo": "Villeneuve-en-Retz",
+        "an": 2021,
+        "part_proprio": 79.9
+    },
+    {
+        "codgeo": 44022,
+        "libgeo": "Boussay",
+        "an": 2021,
+        "part_proprio": 83.5
+    },
+    {
+        "codgeo": 44023,
+        "libgeo": "Bouvron",
+        "an": 2021,
+        "part_proprio": 75.9
+    },
+    {
+        "codgeo": 44024,
+        "libgeo": "Brains",
+        "an": 2021,
+        "part_proprio": 84.3
+    },
+    {
+        "codgeo": 44025,
+        "libgeo": "Campbon",
+        "an": 2021,
+        "part_proprio": 81.5
+    },
+    {
+        "codgeo": 44026,
+        "libgeo": "Carquefou",
+        "an": 2021,
+        "part_proprio": 59.7
+    },
+    {
+        "codgeo": 44027,
+        "libgeo": "Casson",
+        "an": 2021,
+        "part_proprio": 83.8
+    },
+    {
+        "codgeo": 44028,
+        "libgeo": "Le Cellier",
+        "an": 2021,
+        "part_proprio": 79.6
+    },
+    {
+        "codgeo": 44029,
+        "libgeo": "Divatte-sur-Loire",
+        "an": 2021,
+        "part_proprio": 78.5
+    },
+    {
+        "codgeo": 44030,
+        "libgeo": "La Chapelle-des-Marais",
+        "an": 2021,
+        "part_proprio": 77.7
+    },
+    {
+        "codgeo": 44031,
+        "libgeo": "La Chapelle-Glain",
+        "an": 2021,
+        "part_proprio": 79.0
+    },
+    {
+        "codgeo": 44032,
+        "libgeo": "La Chapelle-Heulin",
+        "an": 2021,
+        "part_proprio": 81.8
+    },
+    {
+        "codgeo": 44033,
+        "libgeo": "La Chapelle-Launay",
+        "an": 2021,
+        "part_proprio": 85.8
+    },
+    {
+        "codgeo": 44035,
+        "libgeo": "La Chapelle-sur-Erdre",
+        "an": 2021,
+        "part_proprio": 68.7
+    },
+    {
+        "codgeo": 44036,
+        "libgeo": "Châteaubriant",
+        "an": 2021,
+        "part_proprio": 57.5
+    },
+    {
+        "codgeo": 44037,
+        "libgeo": "Château-Thébaud",
+        "an": 2021,
+        "part_proprio": 79.8
+    },
+    {
+        "codgeo": 44038,
+        "libgeo": "Chauvé",
+        "an": 2021,
+        "part_proprio": 80.0
+    },
+    {
+        "codgeo": 44039,
+        "libgeo": "Cheix-en-Retz",
+        "an": 2021,
+        "part_proprio": 86.3
+    },
+    {
+        "codgeo": 44041,
+        "libgeo": "La Chevrolière",
+        "an": 2021,
+        "part_proprio": 83.3
+    },
+    {
+        "codgeo": 44043,
+        "libgeo": "Clisson",
+        "an": 2021,
+        "part_proprio": 63.5
+    },
+    {
+        "codgeo": 44044,
+        "libgeo": "Conquereuil",
+        "an": 2021,
+        "part_proprio": 77.6
+    },
+    {
+        "codgeo": 44045,
+        "libgeo": "Cordemais",
+        "an": 2021,
+        "part_proprio": 81.6
+    },
+    {
+        "codgeo": 44046,
+        "libgeo": "Corsept",
+        "an": 2021,
+        "part_proprio": 83.8
+    },
+    {
+        "codgeo": 44047,
+        "libgeo": "Couëron",
+        "an": 2021,
+        "part_proprio": 67.1
+    },
+    {
+        "codgeo": 44048,
+        "libgeo": "Couffé",
+        "an": 2021,
+        "part_proprio": 82.1
+    },
+    {
+        "codgeo": 44049,
+        "libgeo": "Le Croisic",
+        "an": 2021,
+        "part_proprio": 68.9
+    },
+    {
+        "codgeo": 44050,
+        "libgeo": "Crossac",
+        "an": 2021,
+        "part_proprio": 91.0
+    },
+    {
+        "codgeo": 44051,
+        "libgeo": "Derval",
+        "an": 2021,
+        "part_proprio": 71.1
+    },
+    {
+        "codgeo": 44052,
+        "libgeo": "Donges",
+        "an": 2021,
+        "part_proprio": 75.8
+    },
+    {
+        "codgeo": 44053,
+        "libgeo": "Drefféac",
+        "an": 2021,
+        "part_proprio": 82.3
+    },
+    {
+        "codgeo": 44054,
+        "libgeo": "Erbray",
+        "an": 2021,
+        "part_proprio": 82.7
+    },
+    {
+        "codgeo": 44055,
+        "libgeo": "La Baule-Escoublac",
+        "an": 2021,
+        "part_proprio": 70.4
+    },
+    {
+        "codgeo": 44056,
+        "libgeo": "Fay-de-Bretagne",
+        "an": 2021,
+        "part_proprio": 76.6
+    },
+    {
+        "codgeo": 44057,
+        "libgeo": "Fégréac",
+        "an": 2021,
+        "part_proprio": 80.5
+    },
+    {
+        "codgeo": 44058,
+        "libgeo": "Fercé",
+        "an": 2021,
+        "part_proprio": 78.6
+    },
+    {
+        "codgeo": 44061,
+        "libgeo": "Frossay",
+        "an": 2021,
+        "part_proprio": 81.7
+    },
+    {
+        "codgeo": 44062,
+        "libgeo": "Le Gâvre",
+        "an": 2021,
+        "part_proprio": 78.3
+    },
+    {
+        "codgeo": 44063,
+        "libgeo": "Gétigné",
+        "an": 2021,
+        "part_proprio": 81.2
+    },
+    {
+        "codgeo": 44064,
+        "libgeo": "Gorges",
+        "an": 2021,
+        "part_proprio": 76.6
+    },
+    {
+        "codgeo": 44065,
+        "libgeo": "Grand-Auverné",
+        "an": 2021,
+        "part_proprio": 81.7
+    },
+    {
+        "codgeo": 44066,
+        "libgeo": "Grandchamp-des-Fontaines",
+        "an": 2021,
+        "part_proprio": 80.9
+    },
+    {
+        "codgeo": 44067,
+        "libgeo": "Guémené-Penfao",
+        "an": 2021,
+        "part_proprio": 74.4
+    },
+    {
+        "codgeo": 44068,
+        "libgeo": "Guenrouet",
+        "an": 2021,
+        "part_proprio": 83.5
+    },
+    {
+        "codgeo": 44069,
+        "libgeo": "Guérande",
+        "an": 2021,
+        "part_proprio": 70.3
+    },
+    {
+        "codgeo": 44070,
+        "libgeo": "La Haie-Fouassière",
+        "an": 2021,
+        "part_proprio": 79.4
+    },
+    {
+        "codgeo": 44071,
+        "libgeo": "Haute-Goulaine",
+        "an": 2021,
+        "part_proprio": 77.4
+    },
+    {
+        "codgeo": 44072,
+        "libgeo": "Herbignac",
+        "an": 2021,
+        "part_proprio": 74.9
+    },
+    {
+        "codgeo": 44073,
+        "libgeo": "Héric",
+        "an": 2021,
+        "part_proprio": 77.7
+    },
+    {
+        "codgeo": 44074,
+        "libgeo": "Indre",
+        "an": 2021,
+        "part_proprio": 63.3
+    },
+    {
+        "codgeo": 44075,
+        "libgeo": "Issé",
+        "an": 2021,
+        "part_proprio": 80.4
+    },
+    {
+        "codgeo": 44076,
+        "libgeo": "Jans",
+        "an": 2021,
+        "part_proprio": 87.0
+    },
+    {
+        "codgeo": 44077,
+        "libgeo": "Joué-sur-Erdre",
+        "an": 2021,
+        "part_proprio": 82.1
+    },
+    {
+        "codgeo": 44078,
+        "libgeo": "Juigné-des-Moutiers",
+        "an": 2021,
+        "part_proprio": 71.6
+    },
+    {
+        "codgeo": 44079,
+        "libgeo": "Le Landreau",
+        "an": 2021,
+        "part_proprio": 77.2
+    },
+    {
+        "codgeo": 44080,
+        "libgeo": "Lavau-sur-Loire",
+        "an": 2021,
+        "part_proprio": 86.1
+    },
+    {
+        "codgeo": 44081,
+        "libgeo": "Legé",
+        "an": 2021,
+        "part_proprio": 74.9
+    },
+    {
+        "codgeo": 44082,
+        "libgeo": "Ligné",
+        "an": 2021,
+        "part_proprio": 82.4
+    },
+    {
+        "codgeo": 44083,
+        "libgeo": "La Limouzinière",
+        "an": 2021,
+        "part_proprio": 83.3
+    },
+    {
+        "codgeo": 44084,
+        "libgeo": "Le Loroux-Bottereau",
+        "an": 2021,
+        "part_proprio": 69.2
+    },
+    {
+        "codgeo": 44085,
+        "libgeo": "Louisfert",
+        "an": 2021,
+        "part_proprio": 82.8
+    },
+    {
+        "codgeo": 44086,
+        "libgeo": "Lusanger",
+        "an": 2021,
+        "part_proprio": 75.4
+    },
+    {
+        "codgeo": 44087,
+        "libgeo": "Machecoul-Saint-Même",
+        "an": 2021,
+        "part_proprio": 70.3
+    },
+    {
+        "codgeo": 44088,
+        "libgeo": "Maisdon-sur-Sèvre",
+        "an": 2021,
+        "part_proprio": 79.7
+    },
+    {
+        "codgeo": 44089,
+        "libgeo": "Malville",
+        "an": 2021,
+        "part_proprio": 78.1
+    },
+    {
+        "codgeo": 44090,
+        "libgeo": "La Marne",
+        "an": 2021,
+        "part_proprio": 79.4
+    },
+    {
+        "codgeo": 44091,
+        "libgeo": "Marsac-sur-Don",
+        "an": 2021,
+        "part_proprio": 77.4
+    },
+    {
+        "codgeo": 44092,
+        "libgeo": "Massérac",
+        "an": 2021,
+        "part_proprio": 85.8
+    },
+    {
+        "codgeo": 44094,
+        "libgeo": "Mauves-sur-Loire",
+        "an": 2021,
+        "part_proprio": 78.8
+    },
+    {
+        "codgeo": 44095,
+        "libgeo": "La Meilleraye-de-Bretagne",
+        "an": 2021,
+        "part_proprio": 76.2
+    },
+    {
+        "codgeo": 44096,
+        "libgeo": "Mésanger",
+        "an": 2021,
+        "part_proprio": 78.4
+    },
+    {
+        "codgeo": 44097,
+        "libgeo": "Mesquer",
+        "an": 2021,
+        "part_proprio": 79.6
+    },
+    {
+        "codgeo": 44098,
+        "libgeo": "Missillac",
+        "an": 2021,
+        "part_proprio": 82.7
+    },
+    {
+        "codgeo": 44099,
+        "libgeo": "Moisdon-la-Rivière",
+        "an": 2021,
+        "part_proprio": 77.4
+    },
+    {
+        "codgeo": 44100,
+        "libgeo": "Monnières",
+        "an": 2021,
+        "part_proprio": 80.2
+    },
+    {
+        "codgeo": 44101,
+        "libgeo": "La Montagne",
+        "an": 2021,
+        "part_proprio": 73.7
+    },
+    {
+        "codgeo": 44102,
+        "libgeo": "Montbert",
+        "an": 2021,
+        "part_proprio": 80.8
+    },
+    {
+        "codgeo": 44103,
+        "libgeo": "Montoir-de-Bretagne",
+        "an": 2021,
+        "part_proprio": 65.2
+    },
+    {
+        "codgeo": 44104,
+        "libgeo": "Montrelais",
+        "an": 2021,
+        "part_proprio": 81.1
+    },
+    {
+        "codgeo": 44105,
+        "libgeo": "Mouais",
+        "an": 2021,
+        "part_proprio": 78.7
+    },
+    {
+        "codgeo": 44106,
+        "libgeo": "Les Moutiers-en-Retz",
+        "an": 2021,
+        "part_proprio": 74.8
+    },
+    {
+        "codgeo": 44107,
+        "libgeo": "Mouzeil",
+        "an": 2021,
+        "part_proprio": 84.3
+    },
+    {
+        "codgeo": 44108,
+        "libgeo": "Mouzillon",
+        "an": 2021,
+        "part_proprio": 75.1
+    },
+    {
+        "codgeo": 44109,
+        "libgeo": "Nantes",
+        "an": 2021,
+        "part_proprio": 36.5
+    },
+    {
+        "codgeo": 44110,
+        "libgeo": "Nort-sur-Erdre",
+        "an": 2021,
+        "part_proprio": 70.1
+    },
+    {
+        "codgeo": 44111,
+        "libgeo": "Notre-Dame-des-Landes",
+        "an": 2021,
+        "part_proprio": 79.7
+    },
+    {
+        "codgeo": 44112,
+        "libgeo": "Noyal-sur-Brutz",
+        "an": 2021,
+        "part_proprio": 80.3
+    },
+    {
+        "codgeo": 44113,
+        "libgeo": "Nozay",
+        "an": 2021,
+        "part_proprio": 65.7
+    },
+    {
+        "codgeo": 44114,
+        "libgeo": "Orvault",
+        "an": 2021,
+        "part_proprio": 66.2
+    },
+    {
+        "codgeo": 44115,
+        "libgeo": "Oudon",
+        "an": 2021,
+        "part_proprio": 81.9
+    },
+    {
+        "codgeo": 44116,
+        "libgeo": "Paimbœuf",
+        "an": 2021,
+        "part_proprio": 58.2
+    },
+    {
+        "codgeo": 44117,
+        "libgeo": "Le Pallet",
+        "an": 2021,
+        "part_proprio": 79.6
+    },
+    {
+        "codgeo": 44118,
+        "libgeo": "Pannecé",
+        "an": 2021,
+        "part_proprio": 82.6
+    },
+    {
+        "codgeo": 44119,
+        "libgeo": "Paulx",
+        "an": 2021,
+        "part_proprio": 80.8
+    },
+    {
+        "codgeo": 44120,
+        "libgeo": "Le Pellerin",
+        "an": 2021,
+        "part_proprio": 70.3
+    },
+    {
+        "codgeo": 44121,
+        "libgeo": "Petit-Auverné",
+        "an": 2021,
+        "part_proprio": 85.1
+    },
+    {
+        "codgeo": 44122,
+        "libgeo": "Petit-Mars",
+        "an": 2021,
+        "part_proprio": 81.0
+    },
+    {
+        "codgeo": 44123,
+        "libgeo": "Pierric",
+        "an": 2021,
+        "part_proprio": 77.3
+    },
+    {
+        "codgeo": 44124,
+        "libgeo": "Le Pin",
+        "an": 2021,
+        "part_proprio": 80.8
+    },
+    {
+        "codgeo": 44125,
+        "libgeo": "Piriac-sur-Mer",
+        "an": 2021,
+        "part_proprio": 78.0
+    },
+    {
+        "codgeo": 44126,
+        "libgeo": "La Plaine-sur-Mer",
+        "an": 2021,
+        "part_proprio": 75.0
+    },
+    {
+        "codgeo": 44127,
+        "libgeo": "La Planche",
+        "an": 2021,
+        "part_proprio": 79.3
+    },
+    {
+        "codgeo": 44128,
+        "libgeo": "Plessé",
+        "an": 2021,
+        "part_proprio": 77.6
+    },
+    {
+        "codgeo": 44129,
+        "libgeo": "Pontchâteau",
+        "an": 2021,
+        "part_proprio": 71.5
+    },
+    {
+        "codgeo": 44130,
+        "libgeo": "Pont-Saint-Martin",
+        "an": 2021,
+        "part_proprio": 80.8
+    },
+    {
+        "codgeo": 44131,
+        "libgeo": "Pornic",
+        "an": 2021,
+        "part_proprio": 70.9
+    },
+    {
+        "codgeo": 44132,
+        "libgeo": "Pornichet",
+        "an": 2021,
+        "part_proprio": 67.2
+    },
+    {
+        "codgeo": 44133,
+        "libgeo": "Port-Saint-Père",
+        "an": 2021,
+        "part_proprio": 76.2
+    },
+    {
+        "codgeo": 44134,
+        "libgeo": "Pouillé-les-Côteaux",
+        "an": 2021,
+        "part_proprio": 80.9
+    },
+    {
+        "codgeo": 44135,
+        "libgeo": "Le Pouliguen",
+        "an": 2021,
+        "part_proprio": 69.2
+    },
+    {
+        "codgeo": 44136,
+        "libgeo": "Préfailles",
+        "an": 2021,
+        "part_proprio": 75.3
+    },
+    {
+        "codgeo": 44137,
+        "libgeo": "Prinquiau",
+        "an": 2021,
+        "part_proprio": 85.0
+    },
+    {
+        "codgeo": 44138,
+        "libgeo": "Puceul",
+        "an": 2021,
+        "part_proprio": 75.5
+    },
+    {
+        "codgeo": 44139,
+        "libgeo": "Quilly",
+        "an": 2021,
+        "part_proprio": 85.0
+    },
+    {
+        "codgeo": 44140,
+        "libgeo": "La Regrippière",
+        "an": 2021,
+        "part_proprio": 85.6
+    },
+    {
+        "codgeo": 44141,
+        "libgeo": "La Remaudière",
+        "an": 2021,
+        "part_proprio": 83.2
+    },
+    {
+        "codgeo": 44142,
+        "libgeo": "Remouillé",
+        "an": 2021,
+        "part_proprio": 80.5
+    },
+    {
+        "codgeo": 44143,
+        "libgeo": "Rezé",
+        "an": 2021,
+        "part_proprio": 57.3
+    },
+    {
+        "codgeo": 44144,
+        "libgeo": "Riaillé",
+        "an": 2021,
+        "part_proprio": 72.8
+    },
+    {
+        "codgeo": 44145,
+        "libgeo": "Rouans",
+        "an": 2021,
+        "part_proprio": 84.1
+    },
+    {
+        "codgeo": 44146,
+        "libgeo": "Rougé",
+        "an": 2021,
+        "part_proprio": 82.2
+    },
+    {
+        "codgeo": 44148,
+        "libgeo": "Ruffigné",
+        "an": 2021,
+        "part_proprio": 81.0
+    },
+    {
+        "codgeo": 44149,
+        "libgeo": "Saffré",
+        "an": 2021,
+        "part_proprio": 81.2
+    },
+    {
+        "codgeo": 44150,
+        "libgeo": "Saint-Aignan-Grandlieu",
+        "an": 2021,
+        "part_proprio": 83.0
+    },
+    {
+        "codgeo": 44151,
+        "libgeo": "Saint-André-des-Eaux",
+        "an": 2021,
+        "part_proprio": 79.9
+    },
+    {
+        "codgeo": 44152,
+        "libgeo": "Sainte-Anne-sur-Brivet",
+        "an": 2021,
+        "part_proprio": 84.4
+    },
+    {
+        "codgeo": 44153,
+        "libgeo": "Saint-Aubin-des-Châteaux",
+        "an": 2021,
+        "part_proprio": 80.9
+    },
+    {
+        "codgeo": 44154,
+        "libgeo": "Saint-Brevin-les-Pins",
+        "an": 2021,
+        "part_proprio": 71.1
+    },
+    {
+        "codgeo": 44155,
+        "libgeo": "Saint-Colomban",
+        "an": 2021,
+        "part_proprio": 78.3
+    },
+    {
+        "codgeo": 44156,
+        "libgeo": "Corcoué-sur-Logne",
+        "an": 2021,
+        "part_proprio": 81.1
+    },
+    {
+        "codgeo": 44157,
+        "libgeo": "Saint-Étienne-de-Mer-Morte",
+        "an": 2021,
+        "part_proprio": 78.1
+    },
+    {
+        "codgeo": 44158,
+        "libgeo": "Saint-Étienne-de-Montluc",
+        "an": 2021,
+        "part_proprio": 76.7
+    },
+    {
+        "codgeo": 44159,
+        "libgeo": "Saint-Fiacre-sur-Maine",
+        "an": 2021,
+        "part_proprio": 80.2
+    },
+    {
+        "codgeo": 44161,
+        "libgeo": "Saint-Gildas-des-Bois",
+        "an": 2021,
+        "part_proprio": 76.3
+    },
+    {
+        "codgeo": 44162,
+        "libgeo": "Saint-Herblain",
+        "an": 2021,
+        "part_proprio": 55.5
+    },
+    {
+        "codgeo": 44163,
+        "libgeo": "Vair-sur-Loire",
+        "an": 2021,
+        "part_proprio": 81.2
+    },
+    {
+        "codgeo": 44164,
+        "libgeo": "Saint-Hilaire-de-Chaléons",
+        "an": 2021,
+        "part_proprio": 78.8
+    },
+    {
+        "codgeo": 44165,
+        "libgeo": "Saint-Hilaire-de-Clisson",
+        "an": 2021,
+        "part_proprio": 81.5
+    },
+    {
+        "codgeo": 44166,
+        "libgeo": "Saint-Jean-de-Boiseau",
+        "an": 2021,
+        "part_proprio": 76.5
+    },
+    {
+        "codgeo": 44168,
+        "libgeo": "Saint-Joachim",
+        "an": 2021,
+        "part_proprio": 79.1
+    },
+    {
+        "codgeo": 44169,
+        "libgeo": "Saint-Julien-de-Concelles",
+        "an": 2021,
+        "part_proprio": 80.8
+    },
+    {
+        "codgeo": 44170,
+        "libgeo": "Saint-Julien-de-Vouvantes",
+        "an": 2021,
+        "part_proprio": 76.9
+    },
+    {
+        "codgeo": 44171,
+        "libgeo": "Saint-Léger-les-Vignes",
+        "an": 2021,
+        "part_proprio": 77.9
+    },
+    {
+        "codgeo": 44172,
+        "libgeo": "Sainte-Luce-sur-Loire",
+        "an": 2021,
+        "part_proprio": 62.5
+    },
+    {
+        "codgeo": 44173,
+        "libgeo": "Saint-Lumine-de-Clisson",
+        "an": 2021,
+        "part_proprio": 75.9
+    },
+    {
+        "codgeo": 44174,
+        "libgeo": "Saint-Lumine-de-Coutais",
+        "an": 2021,
+        "part_proprio": 81.5
+    },
+    {
+        "codgeo": 44175,
+        "libgeo": "Saint-Lyphard",
+        "an": 2021,
+        "part_proprio": 82.0
+    },
+    {
+        "codgeo": 44176,
+        "libgeo": "Saint-Malo-de-Guersac",
+        "an": 2021,
+        "part_proprio": 86.0
+    },
+    {
+        "codgeo": 44178,
+        "libgeo": "Saint-Mars-de-Coutais",
+        "an": 2021,
+        "part_proprio": 80.8
+    },
+    {
+        "codgeo": 44179,
+        "libgeo": "Saint-Mars-du-Désert",
+        "an": 2021,
+        "part_proprio": 84.2
+    },
+    {
+        "codgeo": 44180,
+        "libgeo": "Vallons-de-l'Erdre",
+        "an": 2021,
+        "part_proprio": 74.0
+    },
+    {
+        "codgeo": 44182,
+        "libgeo": "Saint-Michel-Chef-Chef",
+        "an": 2021,
+        "part_proprio": 70.3
+    },
+    {
+        "codgeo": 44183,
+        "libgeo": "Saint-Molf",
+        "an": 2021,
+        "part_proprio": 76.3
+    },
+    {
+        "codgeo": 44184,
+        "libgeo": "Saint-Nazaire",
+        "an": 2021,
+        "part_proprio": 48.7
+    },
+    {
+        "codgeo": 44185,
+        "libgeo": "Saint-Nicolas-de-Redon",
+        "an": 2021,
+        "part_proprio": 72.2
+    },
+    {
+        "codgeo": 44186,
+        "libgeo": "Sainte-Pazanne",
+        "an": 2021,
+        "part_proprio": 74.6
+    },
+    {
+        "codgeo": 44187,
+        "libgeo": "Saint-Père-en-Retz",
+        "an": 2021,
+        "part_proprio": 73.3
+    },
+    {
+        "codgeo": 44188,
+        "libgeo": "Saint-Philbert-de-Grand-Lieu",
+        "an": 2021,
+        "part_proprio": 72.8
+    },
+    {
+        "codgeo": 44189,
+        "libgeo": "Sainte-Reine-de-Bretagne",
+        "an": 2021,
+        "part_proprio": 83.1
+    },
+    {
+        "codgeo": 44190,
+        "libgeo": "Saint-Sébastien-sur-Loire",
+        "an": 2021,
+        "part_proprio": 59.9
+    },
+    {
+        "codgeo": 44192,
+        "libgeo": "Saint-Viaud",
+        "an": 2021,
+        "part_proprio": 78.3
+    },
+    {
+        "codgeo": 44193,
+        "libgeo": "Saint-Vincent-des-Landes",
+        "an": 2021,
+        "part_proprio": 81.5
+    },
+    {
+        "codgeo": 44194,
+        "libgeo": "Sautron",
+        "an": 2021,
+        "part_proprio": 66.8
+    },
+    {
+        "codgeo": 44195,
+        "libgeo": "Savenay",
+        "an": 2021,
+        "part_proprio": 65.4
+    },
+    {
+        "codgeo": 44196,
+        "libgeo": "Sévérac",
+        "an": 2021,
+        "part_proprio": 87.2
+    },
+    {
+        "codgeo": 44197,
+        "libgeo": "Sion-les-Mines",
+        "an": 2021,
+        "part_proprio": 81.3
+    },
+    {
+        "codgeo": 44198,
+        "libgeo": "Les Sorinières",
+        "an": 2021,
+        "part_proprio": 70.7
+    },
+    {
+        "codgeo": 44199,
+        "libgeo": "Soudan",
+        "an": 2021,
+        "part_proprio": 80.6
+    },
+    {
+        "codgeo": 44200,
+        "libgeo": "Soulvache",
+        "an": 2021,
+        "part_proprio": 78.1
+    },
+    {
+        "codgeo": 44201,
+        "libgeo": "Sucé-sur-Erdre",
+        "an": 2021,
+        "part_proprio": 82.2
+    },
+    {
+        "codgeo": 44202,
+        "libgeo": "Teillé",
+        "an": 2021,
+        "part_proprio": 79.3
+    },
+    {
+        "codgeo": 44203,
+        "libgeo": "Le Temple-de-Bretagne",
+        "an": 2021,
+        "part_proprio": 83.6
+    },
+    {
+        "codgeo": 44204,
+        "libgeo": "Thouaré-sur-Loire",
+        "an": 2021,
+        "part_proprio": 62.8
+    },
+    {
+        "codgeo": 44205,
+        "libgeo": "Les Touches",
+        "an": 2021,
+        "part_proprio": 78.5
+    },
+    {
+        "codgeo": 44206,
+        "libgeo": "Touvois",
+        "an": 2021,
+        "part_proprio": 81.2
+    },
+    {
+        "codgeo": 44207,
+        "libgeo": "Trans-sur-Erdre",
+        "an": 2021,
+        "part_proprio": 86.8
+    },
+    {
+        "codgeo": 44208,
+        "libgeo": "Treffieux",
+        "an": 2021,
+        "part_proprio": 79.9
+    },
+    {
+        "codgeo": 44209,
+        "libgeo": "Treillières",
+        "an": 2021,
+        "part_proprio": 80.2
+    },
+    {
+        "codgeo": 44210,
+        "libgeo": "Trignac",
+        "an": 2021,
+        "part_proprio": 67.1
+    },
+    {
+        "codgeo": 44211,
+        "libgeo": "La Turballe",
+        "an": 2021,
+        "part_proprio": 73.2
+    },
+    {
+        "codgeo": 44212,
+        "libgeo": "Vallet",
+        "an": 2021,
+        "part_proprio": 69.5
+    },
+    {
+        "codgeo": 44213,
+        "libgeo": "Loireauxence",
+        "an": 2021,
+        "part_proprio": 73.8
+    },
+    {
+        "codgeo": 44214,
+        "libgeo": "Vay",
+        "an": 2021,
+        "part_proprio": 78.2
+    },
+    {
+        "codgeo": 44215,
+        "libgeo": "Vertou",
+        "an": 2021,
+        "part_proprio": 71.1
+    },
+    {
+        "codgeo": 44216,
+        "libgeo": "Vieillevigne",
+        "an": 2021,
+        "part_proprio": 81.5
+    },
+    {
+        "codgeo": 44217,
+        "libgeo": "Vigneux-de-Bretagne",
+        "an": 2021,
+        "part_proprio": 85.2
+    },
+    {
+        "codgeo": 44218,
+        "libgeo": "Villepot",
+        "an": 2021,
+        "part_proprio": 83.6
+    },
+    {
+        "codgeo": 44220,
+        "libgeo": "Vue",
+        "an": 2021,
+        "part_proprio": 81.5
+    },
+    {
+        "codgeo": 44221,
+        "libgeo": "La Chevallerais",
+        "an": 2021,
+        "part_proprio": 78.9
+    },
+    {
+        "codgeo": 44222,
+        "libgeo": "La Roche-Blanche",
+        "an": 2021,
+        "part_proprio": 84.3
+    },
+    {
+        "codgeo": 44223,
+        "libgeo": "Geneston",
+        "an": 2021,
+        "part_proprio": 81.4
+    },
+    {
+        "codgeo": 44224,
+        "libgeo": "La Grigonnais",
+        "an": 2021,
+        "part_proprio": 81.9
+    }
+]

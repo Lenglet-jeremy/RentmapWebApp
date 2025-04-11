@@ -1,0 +1,2642 @@
+[
+    {
+        "codgeo": 14001,
+        "libgeo": "Ablon",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14003,
+        "libgeo": "Agy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14005,
+        "libgeo": "Valambray",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14006,
+        "libgeo": "Amayé-sur-Orne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14007,
+        "libgeo": "Amayé-sur-Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14009,
+        "libgeo": "Amfreville",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14011,
+        "libgeo": "Aurseulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14012,
+        "libgeo": "Angerville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14014,
+        "libgeo": "Colomby-Anguerny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14015,
+        "libgeo": "Anisy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14016,
+        "libgeo": "Annebault",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14019,
+        "libgeo": "Arganchy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14020,
+        "libgeo": "Argences",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14021,
+        "libgeo": "Arromanches-les-Bains",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14022,
+        "libgeo": "Asnelles",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14023,
+        "libgeo": "Asnières-en-Bessin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14024,
+        "libgeo": "Auberville",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14025,
+        "libgeo": "Aubigny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14026,
+        "libgeo": "Audrieu",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14027,
+        "libgeo": "Les Monts d'Aunay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14030,
+        "libgeo": "Authie",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14032,
+        "libgeo": "Les Authieux-sur-Calonne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14033,
+        "libgeo": "Auvillars",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14034,
+        "libgeo": "Avenay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14035,
+        "libgeo": "Balleroy-sur-Drôme",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14036,
+        "libgeo": "Banneville-la-Campagne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14037,
+        "libgeo": "Malherbe-sur-Ajon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14038,
+        "libgeo": "Banville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14039,
+        "libgeo": "Barbery",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14040,
+        "libgeo": "Barbeville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14041,
+        "libgeo": "Barneville-la-Bertran",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14042,
+        "libgeo": "Baron-sur-Odon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14043,
+        "libgeo": "Barou-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14044,
+        "libgeo": "Basly",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14045,
+        "libgeo": "Basseneville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14046,
+        "libgeo": "Bavent",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14047,
+        "libgeo": "Bayeux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14049,
+        "libgeo": "Bazenville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14050,
+        "libgeo": "La Bazoque",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14053,
+        "libgeo": "Beaumais",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14054,
+        "libgeo": "Beaumesnil",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14055,
+        "libgeo": "Beaumont-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14057,
+        "libgeo": "Bellengreville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14059,
+        "libgeo": "Benerville-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14060,
+        "libgeo": "Bénouville",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14061,
+        "libgeo": "Souleuvre en Bocage",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14062,
+        "libgeo": "Bény-sur-Mer",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14063,
+        "libgeo": "Bernesq",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14064,
+        "libgeo": "Bernières-d'Ailly",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14066,
+        "libgeo": "Bernières-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14068,
+        "libgeo": "Biéville-Beuville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14069,
+        "libgeo": "Beuvillers",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14070,
+        "libgeo": "Beuvron-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14076,
+        "libgeo": "Blainville-sur-Orne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14077,
+        "libgeo": "Blangy-le-Château",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14078,
+        "libgeo": "Blay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14079,
+        "libgeo": "Blonville-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14080,
+        "libgeo": "Le Bô",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14082,
+        "libgeo": "La Boissière",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14083,
+        "libgeo": "Bonnebosq",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14084,
+        "libgeo": "Bonnemaison",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14085,
+        "libgeo": "Bonneville-la-Louvet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14086,
+        "libgeo": "Bonneville-sur-Touques",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14087,
+        "libgeo": "Bonnœil",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14088,
+        "libgeo": "Bons-Tassilly",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14089,
+        "libgeo": "Bougy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14090,
+        "libgeo": "Boulon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14091,
+        "libgeo": "Bourgeauville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14092,
+        "libgeo": "Bourguébus",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14093,
+        "libgeo": "Branville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14096,
+        "libgeo": "Brémoy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14097,
+        "libgeo": "Bretteville-le-Rabet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14098,
+        "libgeo": "Thue et Mue",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14100,
+        "libgeo": "Bretteville-sur-Laize",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14101,
+        "libgeo": "Bretteville-sur-Odon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14102,
+        "libgeo": "Le Breuil-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14103,
+        "libgeo": "Le Breuil-en-Bessin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14104,
+        "libgeo": "Le Brévedent",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14106,
+        "libgeo": "Bréville-les-Monts",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14107,
+        "libgeo": "Bricqueville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14110,
+        "libgeo": "Brucourt",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14111,
+        "libgeo": "Bucéels",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14116,
+        "libgeo": "Le Bû-sur-Rouvres",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14117,
+        "libgeo": "Cabourg",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14118,
+        "libgeo": "Caen",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14119,
+        "libgeo": "Cagny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14120,
+        "libgeo": "Cahagnes",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14121,
+        "libgeo": "Cahagnolles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14122,
+        "libgeo": "La Caine",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14123,
+        "libgeo": "Cairon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14124,
+        "libgeo": "La Cambe",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14125,
+        "libgeo": "Cambes-en-Plaine",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14126,
+        "libgeo": "Cambremer",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14127,
+        "libgeo": "Campagnolles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14130,
+        "libgeo": "Campigny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14131,
+        "libgeo": "Canapville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14132,
+        "libgeo": "Canchy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14134,
+        "libgeo": "Canteloup",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14135,
+        "libgeo": "Carcagny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14136,
+        "libgeo": "Cardonville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14137,
+        "libgeo": "Carpiquet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14138,
+        "libgeo": "Cartigny-l'Épinay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14140,
+        "libgeo": "Castillon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14141,
+        "libgeo": "Castillon-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14143,
+        "libgeo": "Caumont-sur-Aure",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14145,
+        "libgeo": "Cauvicourt",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14146,
+        "libgeo": "Cauville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14147,
+        "libgeo": "Cernay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14149,
+        "libgeo": "Cesny-aux-Vignes",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14150,
+        "libgeo": "Cesny-les-Sources",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14159,
+        "libgeo": "Chouain",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14160,
+        "libgeo": "Cintheaux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14161,
+        "libgeo": "Clarbec",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14162,
+        "libgeo": "Clécy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14163,
+        "libgeo": "Cléville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14165,
+        "libgeo": "Colleville-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14166,
+        "libgeo": "Colleville-Montgomery",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14167,
+        "libgeo": "Colombelles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14168,
+        "libgeo": "Colombières",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14169,
+        "libgeo": "Colombiers-sur-Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14171,
+        "libgeo": "Combray",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14172,
+        "libgeo": "Commes",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14173,
+        "libgeo": "Condé-sur-Ifs",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14174,
+        "libgeo": "Condé-en-Normandie",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14175,
+        "libgeo": "Condé-sur-Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14177,
+        "libgeo": "Coquainvilliers",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14179,
+        "libgeo": "Cordebugle",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14180,
+        "libgeo": "Cordey",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14181,
+        "libgeo": "Cormelles-le-Royal",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14182,
+        "libgeo": "Cormolain",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14183,
+        "libgeo": "Cossesseville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14184,
+        "libgeo": "Cottun",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14190,
+        "libgeo": "Courcy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14191,
+        "libgeo": "Courseulles-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14193,
+        "libgeo": "Courtonne-la-Meurdrac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14194,
+        "libgeo": "Courtonne-les-Deux-Églises",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14195,
+        "libgeo": "Courvaudon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14196,
+        "libgeo": "Crépon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14197,
+        "libgeo": "Cresserons",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14198,
+        "libgeo": "Cresseveuille",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14200,
+        "libgeo": "Creully sur Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14202,
+        "libgeo": "Cricquebœuf",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14203,
+        "libgeo": "Cricqueville-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14204,
+        "libgeo": "Cricqueville-en-Bessin",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14205,
+        "libgeo": "Cristot",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14206,
+        "libgeo": "Crocy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14207,
+        "libgeo": "Croisilles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14209,
+        "libgeo": "Crouay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14211,
+        "libgeo": "Culey-le-Patry",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14214,
+        "libgeo": "Cussy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14215,
+        "libgeo": "Cuverville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14216,
+        "libgeo": "Damblainville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14218,
+        "libgeo": "Danestal",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14220,
+        "libgeo": "Deauville",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14221,
+        "libgeo": "Démouville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14223,
+        "libgeo": "Le Détroit",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14224,
+        "libgeo": "Deux-Jumeaux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14225,
+        "libgeo": "Dives-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14226,
+        "libgeo": "Donnay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14227,
+        "libgeo": "Douville-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14228,
+        "libgeo": "Douvres-la-Délivrande",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14229,
+        "libgeo": "Dozulé",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14230,
+        "libgeo": "Drubec",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14231,
+        "libgeo": "Beaufour-Druval",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14232,
+        "libgeo": "Ducy-Sainte-Marguerite",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14236,
+        "libgeo": "Ellon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14237,
+        "libgeo": "Émiéville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14238,
+        "libgeo": "Englesqueville-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14239,
+        "libgeo": "Englesqueville-la-Percée",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14240,
+        "libgeo": "Épaney",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14241,
+        "libgeo": "Épinay-sur-Odon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14242,
+        "libgeo": "Épron",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14243,
+        "libgeo": "Équemauville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14244,
+        "libgeo": "Eraines",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14245,
+        "libgeo": "Ernes",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14246,
+        "libgeo": "Escoville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14248,
+        "libgeo": "Espins",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14249,
+        "libgeo": "Esquay-Notre-Dame",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14250,
+        "libgeo": "Esquay-sur-Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14251,
+        "libgeo": "Esson",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14252,
+        "libgeo": "Estrées-la-Campagne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14254,
+        "libgeo": "Éterville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14256,
+        "libgeo": "Étréham",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14257,
+        "libgeo": "Évrecy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14258,
+        "libgeo": "Falaise",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14260,
+        "libgeo": "Fauguernon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14261,
+        "libgeo": "Le Faulq",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14266,
+        "libgeo": "Feuguerolles-Bully",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14269,
+        "libgeo": "Fierville-les-Parcs",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14270,
+        "libgeo": "Firfol",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14271,
+        "libgeo": "Fleury-sur-Orne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14272,
+        "libgeo": "La Folie",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14273,
+        "libgeo": "La Folletière-Abenon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14274,
+        "libgeo": "Fontaine-Étoupefour",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14275,
+        "libgeo": "Fontaine-Henry",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14276,
+        "libgeo": "Fontaine-le-Pin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14277,
+        "libgeo": "Fontenay-le-Marmion",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14278,
+        "libgeo": "Fontenay-le-Pesnel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14280,
+        "libgeo": "Formentin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14281,
+        "libgeo": "Formigny La Bataille",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14282,
+        "libgeo": "Foulognes",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14283,
+        "libgeo": "Fourches",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14284,
+        "libgeo": "Fourneaux-le-Val",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14285,
+        "libgeo": "Le Fournet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14286,
+        "libgeo": "Fourneville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14287,
+        "libgeo": "Frénouville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14288,
+        "libgeo": "Le Fresne-Camilly",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14289,
+        "libgeo": "Fresné-la-Mère",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14290,
+        "libgeo": "Fresney-le-Puceux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14291,
+        "libgeo": "Fresney-le-Vieux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14293,
+        "libgeo": "Fumichon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14297,
+        "libgeo": "Gavrus",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14298,
+        "libgeo": "Géfosse-Fontenay",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14299,
+        "libgeo": "Genneville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14300,
+        "libgeo": "Gerrots",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14301,
+        "libgeo": "Giberville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14302,
+        "libgeo": "Glanville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14303,
+        "libgeo": "Glos",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14304,
+        "libgeo": "Gonneville-sur-Honfleur",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14305,
+        "libgeo": "Gonneville-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14306,
+        "libgeo": "Gonneville-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14308,
+        "libgeo": "Goustranville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14309,
+        "libgeo": "Gouvix",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14310,
+        "libgeo": "Grainville-Langannerie",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14311,
+        "libgeo": "Grainville-sur-Odon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14312,
+        "libgeo": "Grandcamp-Maisy",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14316,
+        "libgeo": "Grangues",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14318,
+        "libgeo": "Graye-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14319,
+        "libgeo": "Grentheville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14320,
+        "libgeo": "Grimbosq",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14322,
+        "libgeo": "Guéron",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14325,
+        "libgeo": "Hermanville-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14326,
+        "libgeo": "Hermival-les-Vaux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14327,
+        "libgeo": "Hérouville-Saint-Clair",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14328,
+        "libgeo": "Hérouvillette",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14329,
+        "libgeo": "Heuland",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14332,
+        "libgeo": "La Hoguette",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14333,
+        "libgeo": "Honfleur",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14334,
+        "libgeo": "L'Hôtellerie",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14335,
+        "libgeo": "Hotot-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14336,
+        "libgeo": "Hottot-les-Bagues",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14337,
+        "libgeo": "La Houblonnière",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14338,
+        "libgeo": "Houlgate",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14341,
+        "libgeo": "Ifs",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14342,
+        "libgeo": "Isigny-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14343,
+        "libgeo": "Les Isles-Bardel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14344,
+        "libgeo": "Janville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14345,
+        "libgeo": "Jort",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14346,
+        "libgeo": "Juaye-Mondaye",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14347,
+        "libgeo": "Dialan sur Chaîne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14348,
+        "libgeo": "Juvigny-sur-Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14349,
+        "libgeo": "Laize-Clinchamps",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14352,
+        "libgeo": "Landelles-et-Coupigny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14353,
+        "libgeo": "Landes-sur-Ajon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14354,
+        "libgeo": "Langrune-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14355,
+        "libgeo": "Ponts sur Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14357,
+        "libgeo": "Terres de Druance",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14358,
+        "libgeo": "Léaupartie",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14360,
+        "libgeo": "Leffard",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14362,
+        "libgeo": "Lessard-et-le-Chêne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14364,
+        "libgeo": "Lingèvres",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14365,
+        "libgeo": "Lion-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14366,
+        "libgeo": "Lisieux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14367,
+        "libgeo": "Lison",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14368,
+        "libgeo": "Lisores",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14369,
+        "libgeo": "Litteau",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14370,
+        "libgeo": "Le Molay-Littry",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14371,
+        "libgeo": "Livarot-Pays-d'Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14374,
+        "libgeo": "Les Loges",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14375,
+        "libgeo": "Les Loges-Saulces",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14377,
+        "libgeo": "Longues-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14378,
+        "libgeo": "Longueville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14379,
+        "libgeo": "Longvillers",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14380,
+        "libgeo": "Loucelles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14381,
+        "libgeo": "Louvagny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14383,
+        "libgeo": "Louvigny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14384,
+        "libgeo": "Luc-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14385,
+        "libgeo": "Magny-en-Bessin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14389,
+        "libgeo": "Maisoncelles-Pelvey",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14390,
+        "libgeo": "Maisoncelles-sur-Ajon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14391,
+        "libgeo": "Maisons",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14393,
+        "libgeo": "Maizet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14394,
+        "libgeo": "Maizières",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14396,
+        "libgeo": "Maltot",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14397,
+        "libgeo": "Mandeville-en-Bessin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14398,
+        "libgeo": "Manerbe",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14399,
+        "libgeo": "Manneville-la-Pipard",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14400,
+        "libgeo": "Le Manoir",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14401,
+        "libgeo": "Manvieux",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14402,
+        "libgeo": "Le Marais-la-Chapelle",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14403,
+        "libgeo": "Marolles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14404,
+        "libgeo": "Martainville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14405,
+        "libgeo": "Martigny-sur-l'Ante",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14406,
+        "libgeo": "Moulins-en-Bessin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14407,
+        "libgeo": "Mathieu",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14408,
+        "libgeo": "May-sur-Orne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14409,
+        "libgeo": "Merville-Franceville-Plage",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14410,
+        "libgeo": "Méry-Bissières-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14411,
+        "libgeo": "Meslay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14412,
+        "libgeo": "Le Mesnil-au-Grain",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14419,
+        "libgeo": "Le Mesnil-Eudes",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14421,
+        "libgeo": "Le Mesnil-Guillaume",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14424,
+        "libgeo": "Le Mesnil-Robert",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14425,
+        "libgeo": "Le Mesnil-Simon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14426,
+        "libgeo": "Le Mesnil-sur-Blangy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14427,
+        "libgeo": "Le Mesnil-Villement",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14430,
+        "libgeo": "Meuvaines",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14431,
+        "libgeo": "Mézidon Vallée d'Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14435,
+        "libgeo": "Les Monceaux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14436,
+        "libgeo": "Monceaux-en-Bessin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14437,
+        "libgeo": "Mondeville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14438,
+        "libgeo": "Mondrainville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14439,
+        "libgeo": "Monfréville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14445,
+        "libgeo": "Montfiquet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14446,
+        "libgeo": "Montigny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14448,
+        "libgeo": "Montreuil-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14449,
+        "libgeo": "Monts-en-Bessin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14452,
+        "libgeo": "Morteaux-Coulibœuf",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14453,
+        "libgeo": "Mosles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14454,
+        "libgeo": "Mouen",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14455,
+        "libgeo": "Moulines",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14456,
+        "libgeo": "Moult-Chicheboville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14457,
+        "libgeo": "Les Moutiers-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14458,
+        "libgeo": "Les Moutiers-en-Cinglais",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14460,
+        "libgeo": "Moyaux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14461,
+        "libgeo": "Mutrécy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14465,
+        "libgeo": "Nonant",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14466,
+        "libgeo": "Norolles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14467,
+        "libgeo": "Noron-l'Abbaye",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14468,
+        "libgeo": "Noron-la-Poterie",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14469,
+        "libgeo": "Norrey-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14473,
+        "libgeo": "Notre-Dame-de-Livaye",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14474,
+        "libgeo": "Notre-Dame-d'Estrées-Corbon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14475,
+        "libgeo": "Val d'Arry",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14476,
+        "libgeo": "Olendon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14478,
+        "libgeo": "Orbec",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14480,
+        "libgeo": "Osmanville",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14482,
+        "libgeo": "Ouézy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14483,
+        "libgeo": "Ouffières",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14484,
+        "libgeo": "Ouilly-du-Houley",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14486,
+        "libgeo": "Ouilly-le-Tesson",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14487,
+        "libgeo": "Ouilly-le-Vicomte",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14488,
+        "libgeo": "Ouistreham",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14491,
+        "libgeo": "Parfouru-sur-Odon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14492,
+        "libgeo": "Pennedepie",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14494,
+        "libgeo": "Périers-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14495,
+        "libgeo": "Périers-sur-le-Dan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14496,
+        "libgeo": "Périgny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14497,
+        "libgeo": "Perrières",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14498,
+        "libgeo": "Pertheville-Ners",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14499,
+        "libgeo": "Petiville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14500,
+        "libgeo": "Pierrefitte-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14501,
+        "libgeo": "Pierrefitte-en-Cinglais",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14502,
+        "libgeo": "Pierrepont",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14504,
+        "libgeo": "Le Pin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14506,
+        "libgeo": "Planquery",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14509,
+        "libgeo": "Plumetot",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14510,
+        "libgeo": "La Pommeraye",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14511,
+        "libgeo": "Pont-Bellanger",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14512,
+        "libgeo": "Pontécoulant",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14514,
+        "libgeo": "Pont-l'Évêque",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14515,
+        "libgeo": "Port-en-Bessin-Huppain",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14516,
+        "libgeo": "Potigny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14519,
+        "libgeo": "Préaux-Bocage",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14520,
+        "libgeo": "Le Pré-d'Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14522,
+        "libgeo": "Prêtreville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14524,
+        "libgeo": "Putot-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14527,
+        "libgeo": "Belle Vie en Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14528,
+        "libgeo": "Quetteville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14529,
+        "libgeo": "Ranchy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14530,
+        "libgeo": "Ranville",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14531,
+        "libgeo": "Rapilly",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14533,
+        "libgeo": "Repentigny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14534,
+        "libgeo": "Reux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14535,
+        "libgeo": "Reviers",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14536,
+        "libgeo": "La Rivière-Saint-Sauveur",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14538,
+        "libgeo": "Castine-en-Plaine",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14540,
+        "libgeo": "Rocques",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14541,
+        "libgeo": "La Roque-Baignard",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14542,
+        "libgeo": "Rosel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14543,
+        "libgeo": "Rots",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14546,
+        "libgeo": "Rouvres",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14547,
+        "libgeo": "Rubercy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14550,
+        "libgeo": "Rumesnil",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14552,
+        "libgeo": "Ryes",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14554,
+        "libgeo": "Le Castelet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14555,
+        "libgeo": "Saint-André-d'Hébertot",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14556,
+        "libgeo": "Saint-André-sur-Orne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14557,
+        "libgeo": "Saint-Arnoult",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14558,
+        "libgeo": "Saint-Aubin-d'Arquenay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14559,
+        "libgeo": "Saint-Aubin-des-Bois",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14562,
+        "libgeo": "Saint-Aubin-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14563,
+        "libgeo": "Saint-Benoît-d'Hébertot",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14565,
+        "libgeo": "Saint-Côme-de-Fresné",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14566,
+        "libgeo": "Saint-Contest",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14569,
+        "libgeo": "Sainte-Croix-sur-Mer",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14570,
+        "libgeo": "Valorbiquet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14571,
+        "libgeo": "Saint-Denis-de-Mailloc",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14572,
+        "libgeo": "Saint-Denis-de-Méré",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14574,
+        "libgeo": "Saint-Désir",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14575,
+        "libgeo": "Saint-Étienne-la-Thillaye",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14576,
+        "libgeo": "Val-de-Vie",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14578,
+        "libgeo": "Saint-Gatien-des-Bois",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14579,
+        "libgeo": "Seulline",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14582,
+        "libgeo": "Saint-Germain-de-Livet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14586,
+        "libgeo": "Saint-Germain-du-Pert",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14587,
+        "libgeo": "Saint-Germain-la-Blanche-Herbe",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14588,
+        "libgeo": "Saint-Germain-Langot",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14589,
+        "libgeo": "Saint-Germain-le-Vasson",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14590,
+        "libgeo": "Sainte-Honorine-de-Ducy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14591,
+        "libgeo": "Aure sur Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14592,
+        "libgeo": "Sainte-Honorine-du-Fay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14593,
+        "libgeo": "Saint-Hymer",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14595,
+        "libgeo": "Saint-Jean-de-Livet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14598,
+        "libgeo": "Saint-Jouin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14601,
+        "libgeo": "Saint-Julien-sur-Calonne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14602,
+        "libgeo": "Saint-Lambert",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14603,
+        "libgeo": "Saint-Laurent-de-Condel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14605,
+        "libgeo": "Saint-Laurent-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14606,
+        "libgeo": "Saint-Léger-Dubosq",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14607,
+        "libgeo": "Saint-Louet-sur-Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14609,
+        "libgeo": "Saint-Loup-Hors",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14610,
+        "libgeo": "Saint-Manvieu-Norrey",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14613,
+        "libgeo": "Saint-Marcouf",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14614,
+        "libgeo": "Sainte-Marguerite-d'Elle",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14619,
+        "libgeo": "Sainte-Marie-Outre-l'Eau",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14620,
+        "libgeo": "Saint-Martin-aux-Chartrains",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14621,
+        "libgeo": "Saint-Martin-de-Bienfaite-la-Cressonnière",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14622,
+        "libgeo": "Saint-Martin-de-Blagny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14623,
+        "libgeo": "Saint-Martin-de-Fontenay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14625,
+        "libgeo": "Saint-Martin-de-la-Lieue",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14626,
+        "libgeo": "Saint-Martin-de-Mailloc",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14627,
+        "libgeo": "Saint-Martin-de-Mieux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14630,
+        "libgeo": "Saint-Martin-des-Entrées",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14635,
+        "libgeo": "Saint-Omer",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14637,
+        "libgeo": "Saint-Ouen-du-Mesnil-Oger",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14639,
+        "libgeo": "Saint-Ouen-le-Pin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14640,
+        "libgeo": "Saint-Pair",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14643,
+        "libgeo": "Saint-Paul-du-Vernay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14644,
+        "libgeo": "Saint-Philbert-des-Champs",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14645,
+        "libgeo": "Saint-Pierre-Azif",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14646,
+        "libgeo": "Saint-Pierre-Canivet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14648,
+        "libgeo": "Saint-Pierre-des-Ifs",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14649,
+        "libgeo": "Saint-Pierre-du-Bû",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14650,
+        "libgeo": "Saint-Pierre-du-Fresne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14651,
+        "libgeo": "Saint-Pierre-du-Jonquet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14652,
+        "libgeo": "Saint-Pierre-du-Mont",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14654,
+        "libgeo": "Saint-Pierre-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14656,
+        "libgeo": "Saint-Rémy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14657,
+        "libgeo": "Saint-Samson",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14658,
+        "libgeo": "Noues de Sienne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14659,
+        "libgeo": "Saint-Sylvain",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14660,
+        "libgeo": "Saint-Vaast-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14661,
+        "libgeo": "Saint-Vaast-sur-Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14663,
+        "libgeo": "Saint-Vigor-le-Grand",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14664,
+        "libgeo": "Sallen",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14665,
+        "libgeo": "Sallenelles",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14666,
+        "libgeo": "Sannerville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14667,
+        "libgeo": "Saon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14668,
+        "libgeo": "Saonnet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14669,
+        "libgeo": "Sassy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14672,
+        "libgeo": "Val de Drôme",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14674,
+        "libgeo": "Soignolles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14675,
+        "libgeo": "Soliers",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14676,
+        "libgeo": "Sommervieu",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14677,
+        "libgeo": "Soulangy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14678,
+        "libgeo": "Soumont-Saint-Quentin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14679,
+        "libgeo": "Subles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14680,
+        "libgeo": "Sully",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14681,
+        "libgeo": "Surrain",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14682,
+        "libgeo": "Surville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14684,
+        "libgeo": "Tessel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14685,
+        "libgeo": "Thaon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14687,
+        "libgeo": "Le Theil-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14689,
+        "libgeo": "Thury-Harcourt-le-Hom",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14692,
+        "libgeo": "Tilly-sur-Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14694,
+        "libgeo": "Le Torquesne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14698,
+        "libgeo": "Touffréville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14699,
+        "libgeo": "Touques",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14700,
+        "libgeo": "Tour-en-Bessin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14701,
+        "libgeo": "Tourgéville",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14705,
+        "libgeo": "Tournières",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14706,
+        "libgeo": "Tourville-en-Auge",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14707,
+        "libgeo": "Tourville-sur-Odon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14708,
+        "libgeo": "Tracy-Bocage",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14709,
+        "libgeo": "Tracy-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14710,
+        "libgeo": "Tréprel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14711,
+        "libgeo": "Trévières",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14712,
+        "libgeo": "Troarn",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14713,
+        "libgeo": "Montillières-sur-Orne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14714,
+        "libgeo": "Le Tronquay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14715,
+        "libgeo": "Trouville-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14716,
+        "libgeo": "Trungy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14719,
+        "libgeo": "Urville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14720,
+        "libgeo": "Ussy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14721,
+        "libgeo": "Vacognes-Neuilly",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14723,
+        "libgeo": "Valsemé",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14724,
+        "libgeo": "Varaville",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14726,
+        "libgeo": "Valdallière",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14728,
+        "libgeo": "Vaucelles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14731,
+        "libgeo": "Vauville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14732,
+        "libgeo": "Vaux-sur-Aure",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14733,
+        "libgeo": "Vaux-sur-Seulles",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14734,
+        "libgeo": "Vendes",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14735,
+        "libgeo": "Vendeuvre",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14737,
+        "libgeo": "Versainville",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14738,
+        "libgeo": "Verson",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14739,
+        "libgeo": "Ver-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14740,
+        "libgeo": "La Vespière-Friardel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14741,
+        "libgeo": "Le Vey",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14742,
+        "libgeo": "Vicques",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14743,
+        "libgeo": "Victot-Pontfol",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14744,
+        "libgeo": "Vienne-en-Bessin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14745,
+        "libgeo": "Vierville-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14747,
+        "libgeo": "Vieux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14748,
+        "libgeo": "Vieux-Bourg",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14751,
+        "libgeo": "Vignats",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14752,
+        "libgeo": "Villers-Bocage",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14753,
+        "libgeo": "Villers-Canivet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14754,
+        "libgeo": "Villers-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14755,
+        "libgeo": "Villerville",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 14756,
+        "libgeo": "La Villette",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14758,
+        "libgeo": "Villons-les-Buissons",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14759,
+        "libgeo": "Villy-lez-Falaise",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14760,
+        "libgeo": "Villy-Bocage",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14761,
+        "libgeo": "Vimont",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14762,
+        "libgeo": "Vire Normandie",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 14764,
+        "libgeo": "Pont-d'Ouilly",
+        "loilitt_simp": "NC"
+    }
+]

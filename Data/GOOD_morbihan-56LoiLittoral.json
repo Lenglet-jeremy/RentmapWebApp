@@ -1,0 +1,1247 @@
+[
+    {
+        "codgeo": 56001,
+        "libgeo": "Allaire",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56002,
+        "libgeo": "Ambon",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56003,
+        "libgeo": "Arradon",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56004,
+        "libgeo": "Arzal",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56005,
+        "libgeo": "Arzon",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56006,
+        "libgeo": "Augan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56007,
+        "libgeo": "Auray",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56008,
+        "libgeo": "Baden",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56009,
+        "libgeo": "Bangor",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56010,
+        "libgeo": "Baud",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56011,
+        "libgeo": "Béganne",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56012,
+        "libgeo": "Beignon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56013,
+        "libgeo": "Belz",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56014,
+        "libgeo": "Berné",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56015,
+        "libgeo": "Berric",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56017,
+        "libgeo": "Bignan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56018,
+        "libgeo": "Billiers",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56019,
+        "libgeo": "Billio",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56020,
+        "libgeo": "Bohal",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56021,
+        "libgeo": "Brandérion",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56022,
+        "libgeo": "Brandivy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56023,
+        "libgeo": "Brech",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56024,
+        "libgeo": "Bréhan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56025,
+        "libgeo": "Brignac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56026,
+        "libgeo": "Bubry",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56027,
+        "libgeo": "Buléon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56028,
+        "libgeo": "Caden",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56029,
+        "libgeo": "Calan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56030,
+        "libgeo": "Camoël",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56031,
+        "libgeo": "Camors",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56032,
+        "libgeo": "Campénéac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56033,
+        "libgeo": "Carentoir",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56034,
+        "libgeo": "Carnac",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56035,
+        "libgeo": "Caro",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56036,
+        "libgeo": "Caudan",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56039,
+        "libgeo": "La Chapelle-Neuve",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56040,
+        "libgeo": "Cléguer",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56041,
+        "libgeo": "Cléguérec",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56042,
+        "libgeo": "Colpo",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56043,
+        "libgeo": "Concoret",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56044,
+        "libgeo": "Cournon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56045,
+        "libgeo": "Le Cours",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56046,
+        "libgeo": "Crach",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56047,
+        "libgeo": "Crédin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56048,
+        "libgeo": "Le Croisty",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56050,
+        "libgeo": "La Croix-Helléan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56051,
+        "libgeo": "Cruguel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56052,
+        "libgeo": "Damgan",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56053,
+        "libgeo": "Elven",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56054,
+        "libgeo": "Erdeven",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56055,
+        "libgeo": "Étel",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56056,
+        "libgeo": "Évriguet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56057,
+        "libgeo": "Le Faouët",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56058,
+        "libgeo": "Férel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56060,
+        "libgeo": "Les Fougerêts",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56061,
+        "libgeo": "La Gacilly",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56062,
+        "libgeo": "Gâvres",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56063,
+        "libgeo": "Gestel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56065,
+        "libgeo": "Gourhel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56066,
+        "libgeo": "Gourin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56067,
+        "libgeo": "Grand-Champ",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56068,
+        "libgeo": "La Grée-Saint-Laurent",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56069,
+        "libgeo": "Groix",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56070,
+        "libgeo": "Guégon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56071,
+        "libgeo": "Guéhenno",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56072,
+        "libgeo": "Gueltas",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56073,
+        "libgeo": "Guémené-sur-Scorff",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56074,
+        "libgeo": "Guénin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56075,
+        "libgeo": "Guer",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56076,
+        "libgeo": "Guern",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56077,
+        "libgeo": "Le Guerno",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56078,
+        "libgeo": "Guidel",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56079,
+        "libgeo": "Guillac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56080,
+        "libgeo": "Guilliers",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56081,
+        "libgeo": "Guiscriff",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56082,
+        "libgeo": "Helléan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56083,
+        "libgeo": "Hennebont",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56084,
+        "libgeo": "Le Hézo",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56085,
+        "libgeo": "Hœdic",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56086,
+        "libgeo": "Île-d'Houat",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56087,
+        "libgeo": "Île-aux-Moines",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56088,
+        "libgeo": "Île-d'Arz",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56089,
+        "libgeo": "Inguiniel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56090,
+        "libgeo": "Inzinzac-Lochrist",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56091,
+        "libgeo": "Josselin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56092,
+        "libgeo": "Kerfourn",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56093,
+        "libgeo": "Kergrist",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56094,
+        "libgeo": "Kervignac",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56096,
+        "libgeo": "Landaul",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56097,
+        "libgeo": "Landévant",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56098,
+        "libgeo": "Lanester",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56099,
+        "libgeo": "Langoëlan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56100,
+        "libgeo": "Langonnet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56101,
+        "libgeo": "Languidic",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56102,
+        "libgeo": "Forges de Lanouée",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56103,
+        "libgeo": "Lantillac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56104,
+        "libgeo": "Lanvaudan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56105,
+        "libgeo": "Lanvénégen",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56106,
+        "libgeo": "Larmor-Baden",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56107,
+        "libgeo": "Larmor-Plage",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56108,
+        "libgeo": "Larré",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56109,
+        "libgeo": "Lauzach",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56110,
+        "libgeo": "Lignol",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56111,
+        "libgeo": "Limerzel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56112,
+        "libgeo": "Lizio",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56113,
+        "libgeo": "Locmalo",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56114,
+        "libgeo": "Locmaria",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56115,
+        "libgeo": "Locmaria-Grand-Champ",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56116,
+        "libgeo": "Locmariaquer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56117,
+        "libgeo": "Locminé",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56118,
+        "libgeo": "Locmiquélic",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56119,
+        "libgeo": "Locoal-Mendon",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56120,
+        "libgeo": "Locqueltas",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56121,
+        "libgeo": "Lorient",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56122,
+        "libgeo": "Loyat",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56123,
+        "libgeo": "Malansac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56124,
+        "libgeo": "Malestroit",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56125,
+        "libgeo": "Malguénac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56126,
+        "libgeo": "Marzan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56127,
+        "libgeo": "Mauron",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56128,
+        "libgeo": "Melrand",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56129,
+        "libgeo": "Ménéac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56130,
+        "libgeo": "Merlevenez",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56131,
+        "libgeo": "Meslan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56132,
+        "libgeo": "Meucon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56133,
+        "libgeo": "Missiriac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56134,
+        "libgeo": "Mohon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56135,
+        "libgeo": "Molac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56136,
+        "libgeo": "Monteneuf",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56137,
+        "libgeo": "Monterblanc",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56139,
+        "libgeo": "Montertelot",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56140,
+        "libgeo": "Moréac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56141,
+        "libgeo": "Moustoir-Ac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56143,
+        "libgeo": "Muzillac",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56144,
+        "libgeo": "Évellys",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56145,
+        "libgeo": "Néant-sur-Yvel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56146,
+        "libgeo": "Neulliac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56147,
+        "libgeo": "Nivillac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56148,
+        "libgeo": "Nostang",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56149,
+        "libgeo": "Noyal-Muzillac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56151,
+        "libgeo": "Noyal-Pontivy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56152,
+        "libgeo": "Le Palais",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56153,
+        "libgeo": "Péaule",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56154,
+        "libgeo": "Peillac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56155,
+        "libgeo": "Pénestin",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56156,
+        "libgeo": "Persquen",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56157,
+        "libgeo": "Plaudren",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56158,
+        "libgeo": "Plescop",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56159,
+        "libgeo": "Pleucadeuc",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56160,
+        "libgeo": "Pleugriffet",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56161,
+        "libgeo": "Ploemel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56162,
+        "libgeo": "Ploemeur",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56163,
+        "libgeo": "Ploërdut",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56164,
+        "libgeo": "Ploeren",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56165,
+        "libgeo": "Ploërmel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56166,
+        "libgeo": "Plouay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56167,
+        "libgeo": "Plougoumelen",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56168,
+        "libgeo": "Plouharnel",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56169,
+        "libgeo": "Plouhinec",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56170,
+        "libgeo": "Plouray",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56171,
+        "libgeo": "Pluherlin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56172,
+        "libgeo": "Plumelec",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56173,
+        "libgeo": "Pluméliau-Bieuzy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56174,
+        "libgeo": "Plumelin",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56175,
+        "libgeo": "Plumergat",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56176,
+        "libgeo": "Pluneret",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56177,
+        "libgeo": "Pluvigner",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56178,
+        "libgeo": "Pontivy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56179,
+        "libgeo": "Pont-Scorff",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56180,
+        "libgeo": "Porcaro",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56181,
+        "libgeo": "Port-Louis",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56182,
+        "libgeo": "Priziac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56184,
+        "libgeo": "Questembert",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56185,
+        "libgeo": "Quéven",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56186,
+        "libgeo": "Quiberon",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56188,
+        "libgeo": "Quistinic",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56189,
+        "libgeo": "Radenac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56190,
+        "libgeo": "Réguiny",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56191,
+        "libgeo": "Réminiac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56193,
+        "libgeo": "Riantec",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56194,
+        "libgeo": "Rieux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56195,
+        "libgeo": "La Roche-Bernard",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56196,
+        "libgeo": "Rochefort-en-Terre",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56197,
+        "libgeo": "Val d'Oust",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56198,
+        "libgeo": "Rohan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56199,
+        "libgeo": "Roudouallec",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56200,
+        "libgeo": "Ruffiac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56201,
+        "libgeo": "Le Saint",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56202,
+        "libgeo": "Saint-Abraham",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56203,
+        "libgeo": "Saint-Aignan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56204,
+        "libgeo": "Saint-Allouestre",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56205,
+        "libgeo": "Saint-Armel",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56206,
+        "libgeo": "Saint-Avé",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56207,
+        "libgeo": "Saint-Barthélemy",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56208,
+        "libgeo": "Saint-Brieuc-de-Mauron",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56209,
+        "libgeo": "Sainte-Brigitte",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56210,
+        "libgeo": "Saint-Caradec-Trégomel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56211,
+        "libgeo": "Saint-Congard",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56212,
+        "libgeo": "Saint-Dolay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56213,
+        "libgeo": "Saint-Gérand-Croixanvec",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56214,
+        "libgeo": "Saint-Gildas-de-Rhuys",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56215,
+        "libgeo": "Saint-Gonnery",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56216,
+        "libgeo": "Saint-Gorgon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56218,
+        "libgeo": "Saint-Gravé",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56219,
+        "libgeo": "Saint-Guyomard",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56220,
+        "libgeo": "Sainte-Hélène",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56221,
+        "libgeo": "Saint-Jacut-les-Pins",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56222,
+        "libgeo": "Saint-Jean-Brévelay",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56223,
+        "libgeo": "Saint-Jean-la-Poterie",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56224,
+        "libgeo": "Saint-Laurent-sur-Oust",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56225,
+        "libgeo": "Saint-Léry",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56226,
+        "libgeo": "Saint-Malo-de-Beignon",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56227,
+        "libgeo": "Saint-Malo-des-Trois-Fontaines",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56228,
+        "libgeo": "Saint-Marcel",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56229,
+        "libgeo": "Saint-Martin-sur-Oust",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56230,
+        "libgeo": "Saint-Nicolas-du-Tertre",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56231,
+        "libgeo": "Saint-Nolff",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56232,
+        "libgeo": "Saint-Perreux",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56233,
+        "libgeo": "Saint-Philibert",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56234,
+        "libgeo": "Saint-Pierre-Quiberon",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56236,
+        "libgeo": "Saint-Servant",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56237,
+        "libgeo": "Saint-Thuriau",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56238,
+        "libgeo": "Saint-Tugdual",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56239,
+        "libgeo": "Saint-Vincent-sur-Oust",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56240,
+        "libgeo": "Sarzeau",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56241,
+        "libgeo": "Sauzon",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56242,
+        "libgeo": "Séglien",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56243,
+        "libgeo": "Séné",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56244,
+        "libgeo": "Sérent",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56245,
+        "libgeo": "Silfiac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56246,
+        "libgeo": "Le Sourn",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56247,
+        "libgeo": "Sulniac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56248,
+        "libgeo": "Surzur",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56249,
+        "libgeo": "Taupont",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56250,
+        "libgeo": "Théhillac",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56251,
+        "libgeo": "Theix-Noyalo",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56252,
+        "libgeo": "Le Tour-du-Parc",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56253,
+        "libgeo": "Tréal",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56254,
+        "libgeo": "Trédion",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56255,
+        "libgeo": "Treffléan",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56256,
+        "libgeo": "Tréhorenteuc",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56257,
+        "libgeo": "La Trinité-Porhoët",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56258,
+        "libgeo": "La Trinité-sur-Mer",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56259,
+        "libgeo": "La Trinité-Surzur",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56260,
+        "libgeo": "Vannes",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56261,
+        "libgeo": "La Vraie-Croix",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56262,
+        "libgeo": "Le Bono",
+        "loilitt_simp": "C"
+    },
+    {
+        "codgeo": 56263,
+        "libgeo": "Sainte-Anne-d'Auray",
+        "loilitt_simp": "NC"
+    },
+    {
+        "codgeo": 56264,
+        "libgeo": "Kernascléden",
+        "loilitt_simp": "NC"
+    }
+]

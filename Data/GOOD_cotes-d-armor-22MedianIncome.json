@@ -1,0 +1,2090 @@
+[
+    {
+        "codgeo": 22001,
+        "libgeo": "Allineuc",
+        "an": 2020,
+        "med_disp": 20300.0
+    },
+    {
+        "codgeo": 22002,
+        "libgeo": "Andel",
+        "an": 2020,
+        "med_disp": 23570.0
+    },
+    {
+        "codgeo": 22003,
+        "libgeo": "Aucaleuc",
+        "an": 2020,
+        "med_disp": 21780.0
+    },
+    {
+        "codgeo": 22004,
+        "libgeo": "Bégard",
+        "an": 2020,
+        "med_disp": 21020.0
+    },
+    {
+        "codgeo": 22005,
+        "libgeo": "Belle-Isle-en-Terre",
+        "an": 2020,
+        "med_disp": 18770.0
+    },
+    {
+        "codgeo": 22006,
+        "libgeo": "Berhet",
+        "an": 2020,
+        "med_disp": 19460.0
+    },
+    {
+        "codgeo": 22008,
+        "libgeo": "Bobital",
+        "an": 2020,
+        "med_disp": 22640.0
+    },
+    {
+        "codgeo": 22009,
+        "libgeo": "Le Bodéo",
+        "an": 2020,
+        "med_disp": 18080.0
+    },
+    {
+        "codgeo": 22011,
+        "libgeo": "Boqueho",
+        "an": 2020,
+        "med_disp": 21140.0
+    },
+    {
+        "codgeo": 22012,
+        "libgeo": "La Bouillie",
+        "an": 2020,
+        "med_disp": 21820.0
+    },
+    {
+        "codgeo": 22013,
+        "libgeo": "Bourbriac",
+        "an": 2020,
+        "med_disp": 20940.0
+    },
+    {
+        "codgeo": 22014,
+        "libgeo": "Bourseul",
+        "an": 2020,
+        "med_disp": 20560.0
+    },
+    {
+        "codgeo": 22015,
+        "libgeo": "Bréhand",
+        "an": 2020,
+        "med_disp": 22170.0
+    },
+    {
+        "codgeo": 22016,
+        "libgeo": "Île-de-Bréhat",
+        "an": 2020,
+        "med_disp": 23890.0
+    },
+    {
+        "codgeo": 22018,
+        "libgeo": "Brélidy",
+        "an": 2020,
+        "med_disp": 20330.0
+    },
+    {
+        "codgeo": 22019,
+        "libgeo": "Bringolo",
+        "an": 2020,
+        "med_disp": 22060.0
+    },
+    {
+        "codgeo": 22020,
+        "libgeo": "Broons",
+        "an": 2020,
+        "med_disp": 21820.0
+    },
+    {
+        "codgeo": 22021,
+        "libgeo": "Brusvily",
+        "an": 2020,
+        "med_disp": 20840.0
+    },
+    {
+        "codgeo": 22023,
+        "libgeo": "Bulat-Pestivien",
+        "an": 2020,
+        "med_disp": 19380.0
+    },
+    {
+        "codgeo": 22024,
+        "libgeo": "Calanhel",
+        "an": 2020,
+        "med_disp": 17220.0
+    },
+    {
+        "codgeo": 22025,
+        "libgeo": "Callac",
+        "an": 2020,
+        "med_disp": 19520.0
+    },
+    {
+        "codgeo": 22026,
+        "libgeo": "Calorguen",
+        "an": 2020,
+        "med_disp": 20860.0
+    },
+    {
+        "codgeo": 22027,
+        "libgeo": "Le Cambout",
+        "an": 2020,
+        "med_disp": 20360.0
+    },
+    {
+        "codgeo": 22028,
+        "libgeo": "Camlez",
+        "an": 2020,
+        "med_disp": 21430.0
+    },
+    {
+        "codgeo": 22029,
+        "libgeo": "Canihuel",
+        "an": 2020,
+        "med_disp": 19970.0
+    },
+    {
+        "codgeo": 22030,
+        "libgeo": "Caouënnec-Lanvézéac",
+        "an": 2020,
+        "med_disp": 22090.0
+    },
+    {
+        "codgeo": 22031,
+        "libgeo": "Carnoët",
+        "an": 2020,
+        "med_disp": 18140.0
+    },
+    {
+        "codgeo": 22032,
+        "libgeo": "Caulnes",
+        "an": 2020,
+        "med_disp": 21040.0
+    },
+    {
+        "codgeo": 22033,
+        "libgeo": "Caurel",
+        "an": 2020,
+        "med_disp": 20610.0
+    },
+    {
+        "codgeo": 22034,
+        "libgeo": "Cavan",
+        "an": 2020,
+        "med_disp": 21740.0
+    },
+    {
+        "codgeo": 22035,
+        "libgeo": "Les Champs-Géraux",
+        "an": 2020,
+        "med_disp": 21900.0
+    },
+    {
+        "codgeo": 22036,
+        "libgeo": "La Chapelle-Blanche",
+        "an": 2020,
+        "med_disp": 21940.0
+    },
+    {
+        "codgeo": 22037,
+        "libgeo": "La Chapelle-Neuve",
+        "an": 2020,
+        "med_disp": 18200.0
+    },
+    {
+        "codgeo": 22039,
+        "libgeo": "La Chèze",
+        "an": 2020,
+        "med_disp": 19280.0
+    },
+    {
+        "codgeo": 22040,
+        "libgeo": "Coadout",
+        "an": 2020,
+        "med_disp": 21470.0
+    },
+    {
+        "codgeo": 22041,
+        "libgeo": "Coatascorn",
+        "an": 2020,
+        "med_disp": 19090.0
+    },
+    {
+        "codgeo": 22042,
+        "libgeo": "Coatréven",
+        "an": 2020,
+        "med_disp": 21020.0
+    },
+    {
+        "codgeo": 22043,
+        "libgeo": "Coëtlogon",
+        "an": 2020,
+        "med_disp": 18750.0
+    },
+    {
+        "codgeo": 22044,
+        "libgeo": "Coëtmieux",
+        "an": 2020,
+        "med_disp": 23750.0
+    },
+    {
+        "codgeo": 22045,
+        "libgeo": "Cohiniac",
+        "an": 2020,
+        "med_disp": 22200.0
+    },
+    {
+        "codgeo": 22046,
+        "libgeo": "Le Mené",
+        "an": 2020,
+        "med_disp": 20570.0
+    },
+    {
+        "codgeo": 22047,
+        "libgeo": "Corlay",
+        "an": 2020,
+        "med_disp": 19620.0
+    },
+    {
+        "codgeo": 22048,
+        "libgeo": "Corseul",
+        "an": 2020,
+        "med_disp": 21390.0
+    },
+    {
+        "codgeo": 22049,
+        "libgeo": "Créhen",
+        "an": 2020,
+        "med_disp": 21980.0
+    },
+    {
+        "codgeo": 22050,
+        "libgeo": "Dinan",
+        "an": 2020,
+        "med_disp": 22480.0
+    },
+    {
+        "codgeo": 22052,
+        "libgeo": "Duault",
+        "an": 2020,
+        "med_disp": 20310.0
+    },
+    {
+        "codgeo": 22053,
+        "libgeo": "Éréac",
+        "an": 2020,
+        "med_disp": 18320.0
+    },
+    {
+        "codgeo": 22054,
+        "libgeo": "Erquy",
+        "an": 2020,
+        "med_disp": 24520.0
+    },
+    {
+        "codgeo": 22055,
+        "libgeo": "Binic-Étables-sur-Mer",
+        "an": 2020,
+        "med_disp": 25400.0
+    },
+    {
+        "codgeo": 22056,
+        "libgeo": "Évran",
+        "an": 2020,
+        "med_disp": 21180.0
+    },
+    {
+        "codgeo": 22057,
+        "libgeo": "Le Faouët",
+        "an": 2020,
+        "med_disp": 20250.0
+    },
+    {
+        "codgeo": 22059,
+        "libgeo": "Le Fœil",
+        "an": 2020,
+        "med_disp": 22430.0
+    },
+    {
+        "codgeo": 22060,
+        "libgeo": "Gausson",
+        "an": 2020,
+        "med_disp": 20440.0
+    },
+    {
+        "codgeo": 22061,
+        "libgeo": "Glomel",
+        "an": 2020,
+        "med_disp": 20350.0
+    },
+    {
+        "codgeo": 22062,
+        "libgeo": "Gomené",
+        "an": 2020,
+        "med_disp": 20910.0
+    },
+    {
+        "codgeo": 22063,
+        "libgeo": "Gommenec'h",
+        "an": 2020,
+        "med_disp": 19110.0
+    },
+    {
+        "codgeo": 22064,
+        "libgeo": "Gouarec",
+        "an": 2020,
+        "med_disp": 20400.0
+    },
+    {
+        "codgeo": 22065,
+        "libgeo": "Goudelin",
+        "an": 2020,
+        "med_disp": 21620.0
+    },
+    {
+        "codgeo": 22067,
+        "libgeo": "Grâces",
+        "an": 2020,
+        "med_disp": 22210.0
+    },
+    {
+        "codgeo": 22068,
+        "libgeo": "Grâce-Uzel",
+        "an": 2020,
+        "med_disp": 21210.0
+    },
+    {
+        "codgeo": 22069,
+        "libgeo": "Guenroc",
+        "an": 2020,
+        "med_disp": 21710.0
+    },
+    {
+        "codgeo": 22070,
+        "libgeo": "Guingamp",
+        "an": 2020,
+        "med_disp": 17630.0
+    },
+    {
+        "codgeo": 22071,
+        "libgeo": "Guitté",
+        "an": 2020,
+        "med_disp": 20260.0
+    },
+    {
+        "codgeo": 22072,
+        "libgeo": "Gurunhuel",
+        "an": 2020,
+        "med_disp": 19670.0
+    },
+    {
+        "codgeo": 22073,
+        "libgeo": "La Harmoye",
+        "an": 2020,
+        "med_disp": 20630.0
+    },
+    {
+        "codgeo": 22074,
+        "libgeo": "Le Haut-Corlay",
+        "an": 2020,
+        "med_disp": 20320.0
+    },
+    {
+        "codgeo": 22075,
+        "libgeo": "Hémonstoir",
+        "an": 2020,
+        "med_disp": 21520.0
+    },
+    {
+        "codgeo": 22076,
+        "libgeo": "Hénanbihen",
+        "an": 2020,
+        "med_disp": 21360.0
+    },
+    {
+        "codgeo": 22077,
+        "libgeo": "Hénansal",
+        "an": 2020,
+        "med_disp": 21530.0
+    },
+    {
+        "codgeo": 22079,
+        "libgeo": "Hénon",
+        "an": 2020,
+        "med_disp": 21430.0
+    },
+    {
+        "codgeo": 22081,
+        "libgeo": "Hillion",
+        "an": 2020,
+        "med_disp": 23390.0
+    },
+    {
+        "codgeo": 22082,
+        "libgeo": "Le Hinglé",
+        "an": 2020,
+        "med_disp": 22470.0
+    },
+    {
+        "codgeo": 22083,
+        "libgeo": "Illifaut",
+        "an": 2020,
+        "med_disp": 19720.0
+    },
+    {
+        "codgeo": 22084,
+        "libgeo": "Jugon-les-Lacs",
+        "an": 2020,
+        "med_disp": 21470.0
+    },
+    {
+        "codgeo": 22085,
+        "libgeo": "Kerbors",
+        "an": 2020,
+        "med_disp": 23230.0
+    },
+    {
+        "codgeo": 22086,
+        "libgeo": "Kerfot",
+        "an": 2020,
+        "med_disp": 22290.0
+    },
+    {
+        "codgeo": 22087,
+        "libgeo": "Kergrist-Moëlou",
+        "an": 2020,
+        "med_disp": 19770.0
+    },
+    {
+        "codgeo": 22088,
+        "libgeo": "Kerien",
+        "an": 2020,
+        "med_disp": 18770.0
+    },
+    {
+        "codgeo": 22090,
+        "libgeo": "Kermaria-Sulard",
+        "an": 2020,
+        "med_disp": 21070.0
+    },
+    {
+        "codgeo": 22091,
+        "libgeo": "Kermoroc'h",
+        "an": 2020,
+        "med_disp": 20820.0
+    },
+    {
+        "codgeo": 22092,
+        "libgeo": "Kerpert",
+        "an": 2020,
+        "med_disp": 17510.0
+    },
+    {
+        "codgeo": 22093,
+        "libgeo": "Lamballe-Armor",
+        "an": 2020,
+        "med_disp": 22920.0
+    },
+    {
+        "codgeo": 22094,
+        "libgeo": "Lancieux",
+        "an": 2020,
+        "med_disp": 26540.0
+    },
+    {
+        "codgeo": 22095,
+        "libgeo": "Landebaëron",
+        "an": 2020,
+        "med_disp": 19710.0
+    },
+    {
+        "codgeo": 22096,
+        "libgeo": "Landébia",
+        "an": 2020,
+        "med_disp": 19360.0
+    },
+    {
+        "codgeo": 22097,
+        "libgeo": "La Landec",
+        "an": 2020,
+        "med_disp": 20750.0
+    },
+    {
+        "codgeo": 22098,
+        "libgeo": "Landéhen",
+        "an": 2020,
+        "med_disp": 22240.0
+    },
+    {
+        "codgeo": 22099,
+        "libgeo": "Lanfains",
+        "an": 2020,
+        "med_disp": 21080.0
+    },
+    {
+        "codgeo": 22101,
+        "libgeo": "Langoat",
+        "an": 2020,
+        "med_disp": 20530.0
+    },
+    {
+        "codgeo": 22103,
+        "libgeo": "Langrolay-sur-Rance",
+        "an": 2020,
+        "med_disp": 23620.0
+    },
+    {
+        "codgeo": 22104,
+        "libgeo": "Languédias",
+        "an": 2020,
+        "med_disp": 19520.0
+    },
+    {
+        "codgeo": 22105,
+        "libgeo": "Languenan",
+        "an": 2020,
+        "med_disp": 21490.0
+    },
+    {
+        "codgeo": 22106,
+        "libgeo": "Langueux",
+        "an": 2020,
+        "med_disp": 23320.0
+    },
+    {
+        "codgeo": 22107,
+        "libgeo": "Bon Repos sur Blavet",
+        "an": 2020,
+        "med_disp": 19500.0
+    },
+    {
+        "codgeo": 22108,
+        "libgeo": "Lanleff",
+        "an": 2020,
+        "med_disp": 20580.0
+    },
+    {
+        "codgeo": 22109,
+        "libgeo": "Lanloup",
+        "an": 2020,
+        "med_disp": 22440.0
+    },
+    {
+        "codgeo": 22110,
+        "libgeo": "Lanmérin",
+        "an": 2020,
+        "med_disp": 20390.0
+    },
+    {
+        "codgeo": 22111,
+        "libgeo": "Lanmodez",
+        "an": 2020,
+        "med_disp": 21000.0
+    },
+    {
+        "codgeo": 22112,
+        "libgeo": "Lannebert",
+        "an": 2020,
+        "med_disp": 20050.0
+    },
+    {
+        "codgeo": 22113,
+        "libgeo": "Lannion",
+        "an": 2020,
+        "med_disp": 22600.0
+    },
+    {
+        "codgeo": 22114,
+        "libgeo": "Lanrelas",
+        "an": 2020,
+        "med_disp": 19270.0
+    },
+    {
+        "codgeo": 22115,
+        "libgeo": "Lanrivain",
+        "an": 2020,
+        "med_disp": 17410.0
+    },
+    {
+        "codgeo": 22116,
+        "libgeo": "Lanrodec",
+        "an": 2020,
+        "med_disp": 21160.0
+    },
+    {
+        "codgeo": 22117,
+        "libgeo": "Lantic",
+        "an": 2020,
+        "med_disp": 22870.0
+    },
+    {
+        "codgeo": 22118,
+        "libgeo": "Lanvallay",
+        "an": 2020,
+        "med_disp": 23320.0
+    },
+    {
+        "codgeo": 22119,
+        "libgeo": "Lanvellec",
+        "an": 2020,
+        "med_disp": 20110.0
+    },
+    {
+        "codgeo": 22121,
+        "libgeo": "Lanvollon",
+        "an": 2020,
+        "med_disp": 21420.0
+    },
+    {
+        "codgeo": 22122,
+        "libgeo": "Laurenan",
+        "an": 2020,
+        "med_disp": 20160.0
+    },
+    {
+        "codgeo": 22124,
+        "libgeo": "Lescouët-Gouarec",
+        "an": 2020,
+        "med_disp": 17390.0
+    },
+    {
+        "codgeo": 22126,
+        "libgeo": "Le Leslay",
+        "an": 2020,
+        "med_disp": 20950.0
+    },
+    {
+        "codgeo": 22127,
+        "libgeo": "Lézardrieux",
+        "an": 2020,
+        "med_disp": 22830.0
+    },
+    {
+        "codgeo": 22128,
+        "libgeo": "Locarn",
+        "an": 2020,
+        "med_disp": 18590.0
+    },
+    {
+        "codgeo": 22129,
+        "libgeo": "Loc-Envel",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 22131,
+        "libgeo": "Loguivy-Plougras",
+        "an": 2020,
+        "med_disp": 19910.0
+    },
+    {
+        "codgeo": 22132,
+        "libgeo": "Lohuec",
+        "an": 2020,
+        "med_disp": 16830.0
+    },
+    {
+        "codgeo": 22133,
+        "libgeo": "Loscouët-sur-Meu",
+        "an": 2020,
+        "med_disp": 22620.0
+    },
+    {
+        "codgeo": 22134,
+        "libgeo": "Louannec",
+        "an": 2020,
+        "med_disp": 25810.0
+    },
+    {
+        "codgeo": 22135,
+        "libgeo": "Louargat",
+        "an": 2020,
+        "med_disp": 20620.0
+    },
+    {
+        "codgeo": 22136,
+        "libgeo": "Loudéac",
+        "an": 2020,
+        "med_disp": 21110.0
+    },
+    {
+        "codgeo": 22137,
+        "libgeo": "Maël-Carhaix",
+        "an": 2020,
+        "med_disp": 19800.0
+    },
+    {
+        "codgeo": 22138,
+        "libgeo": "Maël-Pestivien",
+        "an": 2020,
+        "med_disp": 16700.0
+    },
+    {
+        "codgeo": 22139,
+        "libgeo": "Magoar",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 22140,
+        "libgeo": "La Malhoure",
+        "an": 2020,
+        "med_disp": 22590.0
+    },
+    {
+        "codgeo": 22141,
+        "libgeo": "Mantallot",
+        "an": 2020,
+        "med_disp": 19120.0
+    },
+    {
+        "codgeo": 22143,
+        "libgeo": "Matignon",
+        "an": 2020,
+        "med_disp": 22440.0
+    },
+    {
+        "codgeo": 22144,
+        "libgeo": "La Méaugon",
+        "an": 2020,
+        "med_disp": 22560.0
+    },
+    {
+        "codgeo": 22145,
+        "libgeo": "Mégrit",
+        "an": 2020,
+        "med_disp": 20470.0
+    },
+    {
+        "codgeo": 22146,
+        "libgeo": "Mellionnec",
+        "an": 2020,
+        "med_disp": 18680.0
+    },
+    {
+        "codgeo": 22147,
+        "libgeo": "Merdrignac",
+        "an": 2020,
+        "med_disp": 20860.0
+    },
+    {
+        "codgeo": 22148,
+        "libgeo": "Mérillac",
+        "an": 2020,
+        "med_disp": 20220.0
+    },
+    {
+        "codgeo": 22149,
+        "libgeo": "Merléac",
+        "an": 2020,
+        "med_disp": 19400.0
+    },
+    {
+        "codgeo": 22150,
+        "libgeo": "Le Merzer",
+        "an": 2020,
+        "med_disp": 21280.0
+    },
+    {
+        "codgeo": 22152,
+        "libgeo": "Minihy-Tréguier",
+        "an": 2020,
+        "med_disp": 22210.0
+    },
+    {
+        "codgeo": 22153,
+        "libgeo": "Moncontour",
+        "an": 2020,
+        "med_disp": 20690.0
+    },
+    {
+        "codgeo": 22155,
+        "libgeo": "La Motte",
+        "an": 2020,
+        "med_disp": 21450.0
+    },
+    {
+        "codgeo": 22156,
+        "libgeo": "Moustéru",
+        "an": 2020,
+        "med_disp": 21350.0
+    },
+    {
+        "codgeo": 22157,
+        "libgeo": "Le Moustoir",
+        "an": 2020,
+        "med_disp": 21350.0
+    },
+    {
+        "codgeo": 22158,
+        "libgeo": "Guerlédan",
+        "an": 2020,
+        "med_disp": 20900.0
+    },
+    {
+        "codgeo": 22160,
+        "libgeo": "Noyal",
+        "an": 2020,
+        "med_disp": 23490.0
+    },
+    {
+        "codgeo": 22161,
+        "libgeo": "Pabu",
+        "an": 2020,
+        "med_disp": 22470.0
+    },
+    {
+        "codgeo": 22162,
+        "libgeo": "Paimpol",
+        "an": 2020,
+        "med_disp": 22920.0
+    },
+    {
+        "codgeo": 22163,
+        "libgeo": "Paule",
+        "an": 2020,
+        "med_disp": 19460.0
+    },
+    {
+        "codgeo": 22164,
+        "libgeo": "Pédernec",
+        "an": 2020,
+        "med_disp": 21010.0
+    },
+    {
+        "codgeo": 22165,
+        "libgeo": "Penguily",
+        "an": 2020,
+        "med_disp": 22390.0
+    },
+    {
+        "codgeo": 22166,
+        "libgeo": "Penvénan",
+        "an": 2020,
+        "med_disp": 23610.0
+    },
+    {
+        "codgeo": 22168,
+        "libgeo": "Perros-Guirec",
+        "an": 2020,
+        "med_disp": 25020.0
+    },
+    {
+        "codgeo": 22169,
+        "libgeo": "Peumerit-Quintin",
+        "an": 2020,
+        "med_disp": 19750.0
+    },
+    {
+        "codgeo": 22170,
+        "libgeo": "Plaine-Haute",
+        "an": 2020,
+        "med_disp": 21310.0
+    },
+    {
+        "codgeo": 22171,
+        "libgeo": "Plaintel",
+        "an": 2020,
+        "med_disp": 22740.0
+    },
+    {
+        "codgeo": 22172,
+        "libgeo": "Plancoët",
+        "an": 2020,
+        "med_disp": 20630.0
+    },
+    {
+        "codgeo": 22174,
+        "libgeo": "Pléboulle",
+        "an": 2020,
+        "med_disp": 21820.0
+    },
+    {
+        "codgeo": 22175,
+        "libgeo": "Plédéliac",
+        "an": 2020,
+        "med_disp": 21840.0
+    },
+    {
+        "codgeo": 22176,
+        "libgeo": "Plédran",
+        "an": 2020,
+        "med_disp": 21900.0
+    },
+    {
+        "codgeo": 22177,
+        "libgeo": "Pléguien",
+        "an": 2020,
+        "med_disp": 21360.0
+    },
+    {
+        "codgeo": 22178,
+        "libgeo": "Pléhédel",
+        "an": 2020,
+        "med_disp": 21390.0
+    },
+    {
+        "codgeo": 22179,
+        "libgeo": "Fréhel",
+        "an": 2020,
+        "med_disp": 22950.0
+    },
+    {
+        "codgeo": 22180,
+        "libgeo": "Plélan-le-Petit",
+        "an": 2020,
+        "med_disp": 22370.0
+    },
+    {
+        "codgeo": 22181,
+        "libgeo": "Plélauff",
+        "an": 2020,
+        "med_disp": 20380.0
+    },
+    {
+        "codgeo": 22182,
+        "libgeo": "Plélo",
+        "an": 2020,
+        "med_disp": 22600.0
+    },
+    {
+        "codgeo": 22183,
+        "libgeo": "Plémet",
+        "an": 2020,
+        "med_disp": 20950.0
+    },
+    {
+        "codgeo": 22184,
+        "libgeo": "Plémy",
+        "an": 2020,
+        "med_disp": 21150.0
+    },
+    {
+        "codgeo": 22185,
+        "libgeo": "Plénée-Jugon",
+        "an": 2020,
+        "med_disp": 21560.0
+    },
+    {
+        "codgeo": 22186,
+        "libgeo": "Pléneuf-Val-André",
+        "an": 2020,
+        "med_disp": 25420.0
+    },
+    {
+        "codgeo": 22187,
+        "libgeo": "Plérin",
+        "an": 2020,
+        "med_disp": 24460.0
+    },
+    {
+        "codgeo": 22188,
+        "libgeo": "Plerneuf",
+        "an": 2020,
+        "med_disp": 22440.0
+    },
+    {
+        "codgeo": 22189,
+        "libgeo": "Plésidy",
+        "an": 2020,
+        "med_disp": 19200.0
+    },
+    {
+        "codgeo": 22190,
+        "libgeo": "Pleslin-Trigavou",
+        "an": 2020,
+        "med_disp": 21950.0
+    },
+    {
+        "codgeo": 22193,
+        "libgeo": "Plestan",
+        "an": 2020,
+        "med_disp": 21950.0
+    },
+    {
+        "codgeo": 22194,
+        "libgeo": "Plestin-les-Grèves",
+        "an": 2020,
+        "med_disp": 22630.0
+    },
+    {
+        "codgeo": 22195,
+        "libgeo": "Pleubian",
+        "an": 2020,
+        "med_disp": 21980.0
+    },
+    {
+        "codgeo": 22196,
+        "libgeo": "Pleudaniel",
+        "an": 2020,
+        "med_disp": 20760.0
+    },
+    {
+        "codgeo": 22197,
+        "libgeo": "Pleudihen-sur-Rance",
+        "an": 2020,
+        "med_disp": 22840.0
+    },
+    {
+        "codgeo": 22198,
+        "libgeo": "Pleumeur-Bodou",
+        "an": 2020,
+        "med_disp": 24780.0
+    },
+    {
+        "codgeo": 22199,
+        "libgeo": "Pleumeur-Gautier",
+        "an": 2020,
+        "med_disp": 19990.0
+    },
+    {
+        "codgeo": 22200,
+        "libgeo": "Pléven",
+        "an": 2020,
+        "med_disp": 20110.0
+    },
+    {
+        "codgeo": 22201,
+        "libgeo": "Plévenon",
+        "an": 2020,
+        "med_disp": 23300.0
+    },
+    {
+        "codgeo": 22202,
+        "libgeo": "Plévin",
+        "an": 2020,
+        "med_disp": 20100.0
+    },
+    {
+        "codgeo": 22203,
+        "libgeo": "Plœuc-L'Hermitage",
+        "an": 2020,
+        "med_disp": 21020.0
+    },
+    {
+        "codgeo": 22204,
+        "libgeo": "Ploëzal",
+        "an": 2020,
+        "med_disp": 19540.0
+    },
+    {
+        "codgeo": 22205,
+        "libgeo": "Plorec-sur-Arguenon",
+        "an": 2020,
+        "med_disp": 20610.0
+    },
+    {
+        "codgeo": 22206,
+        "libgeo": "Châtelaudren-Plouagat",
+        "an": 2020,
+        "med_disp": 21480.0
+    },
+    {
+        "codgeo": 22207,
+        "libgeo": "Plouaret",
+        "an": 2020,
+        "med_disp": 20840.0
+    },
+    {
+        "codgeo": 22208,
+        "libgeo": "Plouasne",
+        "an": 2020,
+        "med_disp": 20630.0
+    },
+    {
+        "codgeo": 22209,
+        "libgeo": "Beaussais-sur-Mer",
+        "an": 2020,
+        "med_disp": 21620.0
+    },
+    {
+        "codgeo": 22210,
+        "libgeo": "Ploubazlanec",
+        "an": 2020,
+        "med_disp": 24010.0
+    },
+    {
+        "codgeo": 22211,
+        "libgeo": "Ploubezre",
+        "an": 2020,
+        "med_disp": 22350.0
+    },
+    {
+        "codgeo": 22212,
+        "libgeo": "Plouëc-du-Trieux",
+        "an": 2020,
+        "med_disp": 19730.0
+    },
+    {
+        "codgeo": 22213,
+        "libgeo": "Plouër-sur-Rance",
+        "an": 2020,
+        "med_disp": 24460.0
+    },
+    {
+        "codgeo": 22214,
+        "libgeo": "Plouézec",
+        "an": 2020,
+        "med_disp": 22530.0
+    },
+    {
+        "codgeo": 22215,
+        "libgeo": "Ploufragan",
+        "an": 2020,
+        "med_disp": 21530.0
+    },
+    {
+        "codgeo": 22216,
+        "libgeo": "Plougonver",
+        "an": 2020,
+        "med_disp": 18690.0
+    },
+    {
+        "codgeo": 22217,
+        "libgeo": "Plougras",
+        "an": 2020,
+        "med_disp": 17640.0
+    },
+    {
+        "codgeo": 22218,
+        "libgeo": "Plougrescant",
+        "an": 2020,
+        "med_disp": 21460.0
+    },
+    {
+        "codgeo": 22219,
+        "libgeo": "Plouguenast-Langast",
+        "an": 2020,
+        "med_disp": 21010.0
+    },
+    {
+        "codgeo": 22220,
+        "libgeo": "Plouguernével",
+        "an": 2020,
+        "med_disp": 21280.0
+    },
+    {
+        "codgeo": 22221,
+        "libgeo": "Plouguiel",
+        "an": 2020,
+        "med_disp": 20450.0
+    },
+    {
+        "codgeo": 22222,
+        "libgeo": "Plouha",
+        "an": 2020,
+        "med_disp": 21970.0
+    },
+    {
+        "codgeo": 22223,
+        "libgeo": "Plouisy",
+        "an": 2020,
+        "med_disp": 21260.0
+    },
+    {
+        "codgeo": 22224,
+        "libgeo": "Ploulec'h",
+        "an": 2020,
+        "med_disp": 22970.0
+    },
+    {
+        "codgeo": 22225,
+        "libgeo": "Ploumagoar",
+        "an": 2020,
+        "med_disp": 21650.0
+    },
+    {
+        "codgeo": 22226,
+        "libgeo": "Ploumilliau",
+        "an": 2020,
+        "med_disp": 21580.0
+    },
+    {
+        "codgeo": 22227,
+        "libgeo": "Plounérin",
+        "an": 2020,
+        "med_disp": 20240.0
+    },
+    {
+        "codgeo": 22228,
+        "libgeo": "Plounévez-Moëdec",
+        "an": 2020,
+        "med_disp": 19730.0
+    },
+    {
+        "codgeo": 22229,
+        "libgeo": "Plounévez-Quintin",
+        "an": 2020,
+        "med_disp": 20160.0
+    },
+    {
+        "codgeo": 22231,
+        "libgeo": "Plourac'h",
+        "an": 2020,
+        "med_disp": 18430.0
+    },
+    {
+        "codgeo": 22232,
+        "libgeo": "Plourhan",
+        "an": 2020,
+        "med_disp": 22990.0
+    },
+    {
+        "codgeo": 22233,
+        "libgeo": "Plourivo",
+        "an": 2020,
+        "med_disp": 21610.0
+    },
+    {
+        "codgeo": 22234,
+        "libgeo": "Plouvara",
+        "an": 2020,
+        "med_disp": 20350.0
+    },
+    {
+        "codgeo": 22235,
+        "libgeo": "Plouzélambre",
+        "an": 2020,
+        "med_disp": 20870.0
+    },
+    {
+        "codgeo": 22236,
+        "libgeo": "Pludual",
+        "an": 2020,
+        "med_disp": 21620.0
+    },
+    {
+        "codgeo": 22237,
+        "libgeo": "Pluduno",
+        "an": 2020,
+        "med_disp": 22200.0
+    },
+    {
+        "codgeo": 22238,
+        "libgeo": "Plufur",
+        "an": 2020,
+        "med_disp": 19080.0
+    },
+    {
+        "codgeo": 22239,
+        "libgeo": "Plumaudan",
+        "an": 2020,
+        "med_disp": 20960.0
+    },
+    {
+        "codgeo": 22240,
+        "libgeo": "Plumaugat",
+        "an": 2020,
+        "med_disp": 20240.0
+    },
+    {
+        "codgeo": 22241,
+        "libgeo": "Plumieux",
+        "an": 2020,
+        "med_disp": 20350.0
+    },
+    {
+        "codgeo": 22242,
+        "libgeo": "Plurien",
+        "an": 2020,
+        "med_disp": 22470.0
+    },
+    {
+        "codgeo": 22243,
+        "libgeo": "Plusquellec",
+        "an": 2020,
+        "med_disp": 20860.0
+    },
+    {
+        "codgeo": 22244,
+        "libgeo": "Plussulien",
+        "an": 2020,
+        "med_disp": 19440.0
+    },
+    {
+        "codgeo": 22245,
+        "libgeo": "Pluzunet",
+        "an": 2020,
+        "med_disp": 19710.0
+    },
+    {
+        "codgeo": 22246,
+        "libgeo": "Pommeret",
+        "an": 2020,
+        "med_disp": 22550.0
+    },
+    {
+        "codgeo": 22248,
+        "libgeo": "Pommerit-le-Vicomte",
+        "an": 2020,
+        "med_disp": 20110.0
+    },
+    {
+        "codgeo": 22249,
+        "libgeo": "Pont-Melvez",
+        "an": 2020,
+        "med_disp": 20180.0
+    },
+    {
+        "codgeo": 22250,
+        "libgeo": "Pontrieux",
+        "an": 2020,
+        "med_disp": 19130.0
+    },
+    {
+        "codgeo": 22251,
+        "libgeo": "Pordic",
+        "an": 2020,
+        "med_disp": 24660.0
+    },
+    {
+        "codgeo": 22254,
+        "libgeo": "Prat",
+        "an": 2020,
+        "med_disp": 20540.0
+    },
+    {
+        "codgeo": 22255,
+        "libgeo": "La Prénessaye",
+        "an": 2020,
+        "med_disp": 20760.0
+    },
+    {
+        "codgeo": 22256,
+        "libgeo": "Quemper-Guézennec",
+        "an": 2020,
+        "med_disp": 21030.0
+    },
+    {
+        "codgeo": 22257,
+        "libgeo": "Quemperven",
+        "an": 2020,
+        "med_disp": 21450.0
+    },
+    {
+        "codgeo": 22258,
+        "libgeo": "Quessoy",
+        "an": 2020,
+        "med_disp": 22160.0
+    },
+    {
+        "codgeo": 22259,
+        "libgeo": "Quévert",
+        "an": 2020,
+        "med_disp": 22830.0
+    },
+    {
+        "codgeo": 22260,
+        "libgeo": "Le Quillio",
+        "an": 2020,
+        "med_disp": 21990.0
+    },
+    {
+        "codgeo": 22261,
+        "libgeo": "Quintenic",
+        "an": 2020,
+        "med_disp": 20650.0
+    },
+    {
+        "codgeo": 22262,
+        "libgeo": "Quintin",
+        "an": 2020,
+        "med_disp": 21350.0
+    },
+    {
+        "codgeo": 22263,
+        "libgeo": "Le Quiou",
+        "an": 2020,
+        "med_disp": 21000.0
+    },
+    {
+        "codgeo": 22264,
+        "libgeo": "La Roche-Jaudy",
+        "an": 2020,
+        "med_disp": 20370.0
+    },
+    {
+        "codgeo": 22265,
+        "libgeo": "Rospez",
+        "an": 2020,
+        "med_disp": 21950.0
+    },
+    {
+        "codgeo": 22266,
+        "libgeo": "Rostrenen",
+        "an": 2020,
+        "med_disp": 19520.0
+    },
+    {
+        "codgeo": 22267,
+        "libgeo": "Rouillac",
+        "an": 2020,
+        "med_disp": 19760.0
+    },
+    {
+        "codgeo": 22268,
+        "libgeo": "Ruca",
+        "an": 2020,
+        "med_disp": 21870.0
+    },
+    {
+        "codgeo": 22269,
+        "libgeo": "Runan",
+        "an": 2020,
+        "med_disp": 18890.0
+    },
+    {
+        "codgeo": 22271,
+        "libgeo": "Saint-Adrien",
+        "an": 2020,
+        "med_disp": 22900.0
+    },
+    {
+        "codgeo": 22272,
+        "libgeo": "Saint-Agathon",
+        "an": 2020,
+        "med_disp": 22920.0
+    },
+    {
+        "codgeo": 22273,
+        "libgeo": "Saint-Alban",
+        "an": 2020,
+        "med_disp": 22730.0
+    },
+    {
+        "codgeo": 22274,
+        "libgeo": "Saint-André-des-Eaux",
+        "an": 2020,
+        "med_disp": 19780.0
+    },
+    {
+        "codgeo": 22275,
+        "libgeo": "Saint-Barnabé",
+        "an": 2020,
+        "med_disp": 21420.0
+    },
+    {
+        "codgeo": 22276,
+        "libgeo": "Saint-Bihy",
+        "an": 2020,
+        "med_disp": 21240.0
+    },
+    {
+        "codgeo": 22277,
+        "libgeo": "Saint-Brandan",
+        "an": 2020,
+        "med_disp": 21900.0
+    },
+    {
+        "codgeo": 22278,
+        "libgeo": "Saint-Brieuc",
+        "an": 2020,
+        "med_disp": 20430.0
+    },
+    {
+        "codgeo": 22279,
+        "libgeo": "Saint-Caradec",
+        "an": 2020,
+        "med_disp": 20140.0
+    },
+    {
+        "codgeo": 22280,
+        "libgeo": "Saint-Carné",
+        "an": 2020,
+        "med_disp": 21980.0
+    },
+    {
+        "codgeo": 22281,
+        "libgeo": "Saint-Carreuc",
+        "an": 2020,
+        "med_disp": 21700.0
+    },
+    {
+        "codgeo": 22282,
+        "libgeo": "Saint-Cast-le-Guildo",
+        "an": 2020,
+        "med_disp": 24650.0
+    },
+    {
+        "codgeo": 22283,
+        "libgeo": "Saint-Clet",
+        "an": 2020,
+        "med_disp": 19900.0
+    },
+    {
+        "codgeo": 22284,
+        "libgeo": "Saint-Connan",
+        "an": 2020,
+        "med_disp": 18770.0
+    },
+    {
+        "codgeo": 22285,
+        "libgeo": "Saint-Connec",
+        "an": 2020,
+        "med_disp": 20020.0
+    },
+    {
+        "codgeo": 22286,
+        "libgeo": "Saint-Denoual",
+        "an": 2020,
+        "med_disp": 21990.0
+    },
+    {
+        "codgeo": 22287,
+        "libgeo": "Saint-Donan",
+        "an": 2020,
+        "med_disp": 22190.0
+    },
+    {
+        "codgeo": 22288,
+        "libgeo": "Saint-Étienne-du-Gué-de-l'Isle",
+        "an": 2020,
+        "med_disp": 19800.0
+    },
+    {
+        "codgeo": 22289,
+        "libgeo": "Saint-Fiacre",
+        "an": 2020,
+        "med_disp": 20600.0
+    },
+    {
+        "codgeo": 22291,
+        "libgeo": "Saint-Gildas",
+        "an": 2020,
+        "med_disp": 23220.0
+    },
+    {
+        "codgeo": 22293,
+        "libgeo": "Saint-Gilles-les-Bois",
+        "an": 2020,
+        "med_disp": 20150.0
+    },
+    {
+        "codgeo": 22294,
+        "libgeo": "Saint-Gilles-Pligeaux",
+        "an": 2020,
+        "med_disp": 17960.0
+    },
+    {
+        "codgeo": 22295,
+        "libgeo": "Saint-Gilles-Vieux-Marché",
+        "an": 2020,
+        "med_disp": 21040.0
+    },
+    {
+        "codgeo": 22296,
+        "libgeo": "Saint-Glen",
+        "an": 2020,
+        "med_disp": 21630.0
+    },
+    {
+        "codgeo": 22299,
+        "libgeo": "Saint-Hélen",
+        "an": 2020,
+        "med_disp": 21580.0
+    },
+    {
+        "codgeo": 22300,
+        "libgeo": "Saint-Hervé",
+        "an": 2020,
+        "med_disp": 21440.0
+    },
+    {
+        "codgeo": 22302,
+        "libgeo": "Saint-Jacut-de-la-Mer",
+        "an": 2020,
+        "med_disp": 25030.0
+    },
+    {
+        "codgeo": 22304,
+        "libgeo": "Saint-Jean-Kerdaniel",
+        "an": 2020,
+        "med_disp": 21960.0
+    },
+    {
+        "codgeo": 22305,
+        "libgeo": "Saint-Jouan-de-l'Isle",
+        "an": 2020,
+        "med_disp": 21070.0
+    },
+    {
+        "codgeo": 22306,
+        "libgeo": "Saint-Judoce",
+        "an": 2020,
+        "med_disp": 21590.0
+    },
+    {
+        "codgeo": 22307,
+        "libgeo": "Saint-Julien",
+        "an": 2020,
+        "med_disp": 22020.0
+    },
+    {
+        "codgeo": 22308,
+        "libgeo": "Saint-Juvat",
+        "an": 2020,
+        "med_disp": 20990.0
+    },
+    {
+        "codgeo": 22309,
+        "libgeo": "Saint-Launeuc",
+        "an": 2020,
+        "med_disp": 19970.0
+    },
+    {
+        "codgeo": 22310,
+        "libgeo": "Saint-Laurent",
+        "an": 2020,
+        "med_disp": 20310.0
+    },
+    {
+        "codgeo": 22311,
+        "libgeo": "Saint-Lormel",
+        "an": 2020,
+        "med_disp": 22390.0
+    },
+    {
+        "codgeo": 22312,
+        "libgeo": "Saint-Maden",
+        "an": 2020,
+        "med_disp": 20300.0
+    },
+    {
+        "codgeo": 22313,
+        "libgeo": "Saint-Martin-des-Prés",
+        "an": 2020,
+        "med_disp": 19430.0
+    },
+    {
+        "codgeo": 22314,
+        "libgeo": "Saint-Maudan",
+        "an": 2020,
+        "med_disp": 21490.0
+    },
+    {
+        "codgeo": 22315,
+        "libgeo": "Saint-Maudez",
+        "an": 2020,
+        "med_disp": 21490.0
+    },
+    {
+        "codgeo": 22316,
+        "libgeo": "Saint-Mayeux",
+        "an": 2020,
+        "med_disp": 16650.0
+    },
+    {
+        "codgeo": 22317,
+        "libgeo": "Saint-Méloir-des-Bois",
+        "an": 2020,
+        "med_disp": 20450.0
+    },
+    {
+        "codgeo": 22318,
+        "libgeo": "Saint-Michel-de-Plélan",
+        "an": 2020,
+        "med_disp": 20370.0
+    },
+    {
+        "codgeo": 22319,
+        "libgeo": "Saint-Michel-en-Grève",
+        "an": 2020,
+        "med_disp": 22720.0
+    },
+    {
+        "codgeo": 22320,
+        "libgeo": "Saint-Nicodème",
+        "an": 2020,
+        "med_disp": 16770.0
+    },
+    {
+        "codgeo": 22321,
+        "libgeo": "Saint-Nicolas-du-Pélem",
+        "an": 2020,
+        "med_disp": 20070.0
+    },
+    {
+        "codgeo": 22322,
+        "libgeo": "Saint-Péver",
+        "an": 2020,
+        "med_disp": 20520.0
+    },
+    {
+        "codgeo": 22323,
+        "libgeo": "Saint-Pôtan",
+        "an": 2020,
+        "med_disp": 21120.0
+    },
+    {
+        "codgeo": 22324,
+        "libgeo": "Saint-Quay-Perros",
+        "an": 2020,
+        "med_disp": 25170.0
+    },
+    {
+        "codgeo": 22325,
+        "libgeo": "Saint-Quay-Portrieux",
+        "an": 2020,
+        "med_disp": 24400.0
+    },
+    {
+        "codgeo": 22326,
+        "libgeo": "Saint-Rieul",
+        "an": 2020,
+        "med_disp": 20720.0
+    },
+    {
+        "codgeo": 22327,
+        "libgeo": "Saint-Samson-sur-Rance",
+        "an": 2020,
+        "med_disp": 22600.0
+    },
+    {
+        "codgeo": 22328,
+        "libgeo": "Saint-Servais",
+        "an": 2020,
+        "med_disp": 18610.0
+    },
+    {
+        "codgeo": 22330,
+        "libgeo": "Saint-Thélo",
+        "an": 2020,
+        "med_disp": 20340.0
+    },
+    {
+        "codgeo": 22331,
+        "libgeo": "Sainte-Tréphine",
+        "an": 2020,
+        "med_disp": 20520.0
+    },
+    {
+        "codgeo": 22332,
+        "libgeo": "Saint-Trimoël",
+        "an": 2020,
+        "med_disp": 21840.0
+    },
+    {
+        "codgeo": 22333,
+        "libgeo": "Saint-Vran",
+        "an": 2020,
+        "med_disp": 20110.0
+    },
+    {
+        "codgeo": 22334,
+        "libgeo": "Saint-Igeaux",
+        "an": 2020,
+        "med_disp": 19180.0
+    },
+    {
+        "codgeo": 22335,
+        "libgeo": "Senven-Léhart",
+        "an": 2020,
+        "med_disp": 19200.0
+    },
+    {
+        "codgeo": 22337,
+        "libgeo": "Sévignac",
+        "an": 2020,
+        "med_disp": 19770.0
+    },
+    {
+        "codgeo": 22338,
+        "libgeo": "Squiffiec",
+        "an": 2020,
+        "med_disp": 20900.0
+    },
+    {
+        "codgeo": 22339,
+        "libgeo": "Taden",
+        "an": 2020,
+        "med_disp": 22780.0
+    },
+    {
+        "codgeo": 22340,
+        "libgeo": "Tonquédec",
+        "an": 2020,
+        "med_disp": 21180.0
+    },
+    {
+        "codgeo": 22341,
+        "libgeo": "Tramain",
+        "an": 2020,
+        "med_disp": 22590.0
+    },
+    {
+        "codgeo": 22342,
+        "libgeo": "Trébédan",
+        "an": 2020,
+        "med_disp": 19510.0
+    },
+    {
+        "codgeo": 22343,
+        "libgeo": "Trébeurden",
+        "an": 2020,
+        "med_disp": 25180.0
+    },
+    {
+        "codgeo": 22344,
+        "libgeo": "Trébrivan",
+        "an": 2020,
+        "med_disp": 20450.0
+    },
+    {
+        "codgeo": 22345,
+        "libgeo": "Trébry",
+        "an": 2020,
+        "med_disp": 21920.0
+    },
+    {
+        "codgeo": 22346,
+        "libgeo": "Trédaniel",
+        "an": 2020,
+        "med_disp": 22320.0
+    },
+    {
+        "codgeo": 22347,
+        "libgeo": "Trédarzec",
+        "an": 2020,
+        "med_disp": 22430.0
+    },
+    {
+        "codgeo": 22348,
+        "libgeo": "Trédias",
+        "an": 2020,
+        "med_disp": 19420.0
+    },
+    {
+        "codgeo": 22349,
+        "libgeo": "Trédrez-Locquémeau",
+        "an": 2020,
+        "med_disp": 23150.0
+    },
+    {
+        "codgeo": 22350,
+        "libgeo": "Tréduder",
+        "an": 2020,
+        "med_disp": 20670.0
+    },
+    {
+        "codgeo": 22351,
+        "libgeo": "Treffrin",
+        "an": 2020,
+        "med_disp": 23370.0
+    },
+    {
+        "codgeo": 22352,
+        "libgeo": "Tréfumel",
+        "an": 2020,
+        "med_disp": 20510.0
+    },
+    {
+        "codgeo": 22353,
+        "libgeo": "Trégastel",
+        "an": 2020,
+        "med_disp": 24420.0
+    },
+    {
+        "codgeo": 22354,
+        "libgeo": "Tréglamus",
+        "an": 2020,
+        "med_disp": 21330.0
+    },
+    {
+        "codgeo": 22356,
+        "libgeo": "Trégomeur",
+        "an": 2020,
+        "med_disp": 23160.0
+    },
+    {
+        "codgeo": 22358,
+        "libgeo": "Trégonneau",
+        "an": 2020,
+        "med_disp": 20490.0
+    },
+    {
+        "codgeo": 22359,
+        "libgeo": "Trégrom",
+        "an": 2020,
+        "med_disp": 18430.0
+    },
+    {
+        "codgeo": 22360,
+        "libgeo": "Trégueux",
+        "an": 2020,
+        "med_disp": 22310.0
+    },
+    {
+        "codgeo": 22361,
+        "libgeo": "Tréguidel",
+        "an": 2020,
+        "med_disp": 21830.0
+    },
+    {
+        "codgeo": 22362,
+        "libgeo": "Tréguier",
+        "an": 2020,
+        "med_disp": 19430.0
+    },
+    {
+        "codgeo": 22363,
+        "libgeo": "Trélévern",
+        "an": 2020,
+        "med_disp": 25260.0
+    },
+    {
+        "codgeo": 22364,
+        "libgeo": "Trélivan",
+        "an": 2020,
+        "med_disp": 22140.0
+    },
+    {
+        "codgeo": 22365,
+        "libgeo": "Trémargat",
+        "an": 2020,
+        "med_disp": 18120.0
+    },
+    {
+        "codgeo": 22366,
+        "libgeo": "Trémel",
+        "an": 2020,
+        "med_disp": 21000.0
+    },
+    {
+        "codgeo": 22368,
+        "libgeo": "Tréméreuc",
+        "an": 2020,
+        "med_disp": 22580.0
+    },
+    {
+        "codgeo": 22369,
+        "libgeo": "Trémeur",
+        "an": 2020,
+        "med_disp": 22110.0
+    },
+    {
+        "codgeo": 22370,
+        "libgeo": "Tréméven",
+        "an": 2020,
+        "med_disp": 20490.0
+    },
+    {
+        "codgeo": 22371,
+        "libgeo": "Trémorel",
+        "an": 2020,
+        "med_disp": 21530.0
+    },
+    {
+        "codgeo": 22372,
+        "libgeo": "Trémuson",
+        "an": 2020,
+        "med_disp": 22540.0
+    },
+    {
+        "codgeo": 22373,
+        "libgeo": "Tréogan",
+        "an": 2020,
+        "med_disp": ""
+    },
+    {
+        "codgeo": 22375,
+        "libgeo": "Tressignaux",
+        "an": 2020,
+        "med_disp": 22580.0
+    },
+    {
+        "codgeo": 22376,
+        "libgeo": "Trévé",
+        "an": 2020,
+        "med_disp": 21600.0
+    },
+    {
+        "codgeo": 22377,
+        "libgeo": "Tréveneuc",
+        "an": 2020,
+        "med_disp": 24450.0
+    },
+    {
+        "codgeo": 22378,
+        "libgeo": "Trévérec",
+        "an": 2020,
+        "med_disp": 20290.0
+    },
+    {
+        "codgeo": 22379,
+        "libgeo": "Trévou-Tréguignec",
+        "an": 2020,
+        "med_disp": 23830.0
+    },
+    {
+        "codgeo": 22380,
+        "libgeo": "Trévron",
+        "an": 2020,
+        "med_disp": 21240.0
+    },
+    {
+        "codgeo": 22381,
+        "libgeo": "Trézény",
+        "an": 2020,
+        "med_disp": 22230.0
+    },
+    {
+        "codgeo": 22383,
+        "libgeo": "Troguéry",
+        "an": 2020,
+        "med_disp": 20840.0
+    },
+    {
+        "codgeo": 22384,
+        "libgeo": "Uzel",
+        "an": 2020,
+        "med_disp": 21610.0
+    },
+    {
+        "codgeo": 22385,
+        "libgeo": "La Vicomté-sur-Rance",
+        "an": 2020,
+        "med_disp": 22930.0
+    },
+    {
+        "codgeo": 22386,
+        "libgeo": "Le Vieux-Bourg",
+        "an": 2020,
+        "med_disp": 20340.0
+    },
+    {
+        "codgeo": 22387,
+        "libgeo": "Le Vieux-Marché",
+        "an": 2020,
+        "med_disp": 20530.0
+    },
+    {
+        "codgeo": 22388,
+        "libgeo": "Vildé-Guingalan",
+        "an": 2020,
+        "med_disp": 20640.0
+    },
+    {
+        "codgeo": 22389,
+        "libgeo": "Yffiniac",
+        "an": 2020,
+        "med_disp": 22310.0
+    },
+    {
+        "codgeo": 22390,
+        "libgeo": "Yvias",
+        "an": 2020,
+        "med_disp": 20300.0
+    },
+    {
+        "codgeo": 22391,
+        "libgeo": "Yvignac-la-Tour",
+        "an": 2020,
+        "med_disp": 20930.0
+    }
+]

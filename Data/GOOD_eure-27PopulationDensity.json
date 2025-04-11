@@ -1,0 +1,3512 @@
+[
+    {
+        "codgeo": 27001,
+        "libgeo": "Aclou",
+        "an": 2021,
+        "dens_pop": 90.81
+    },
+    {
+        "codgeo": 27002,
+        "libgeo": "Acon",
+        "an": 2021,
+        "dens_pop": 50.65
+    },
+    {
+        "codgeo": 27003,
+        "libgeo": "Acquigny",
+        "an": 2021,
+        "dens_pop": 95.45
+    },
+    {
+        "codgeo": 27004,
+        "libgeo": "Aigleville",
+        "an": 2021,
+        "dens_pop": 130.0
+    },
+    {
+        "codgeo": 27005,
+        "libgeo": "Ailly",
+        "an": 2021,
+        "dens_pop": 77.56
+    },
+    {
+        "codgeo": 27006,
+        "libgeo": "Aizier",
+        "an": 2021,
+        "dens_pop": 64.17
+    },
+    {
+        "codgeo": 27008,
+        "libgeo": "Alizay",
+        "an": 2021,
+        "dens_pop": 185.12
+    },
+    {
+        "codgeo": 27009,
+        "libgeo": "Ambenay",
+        "an": 2021,
+        "dens_pop": 33.21
+    },
+    {
+        "codgeo": 27010,
+        "libgeo": "Amécourt",
+        "an": 2021,
+        "dens_pop": 29.0
+    },
+    {
+        "codgeo": 27011,
+        "libgeo": "Amfreville-Saint-Amand",
+        "an": 2021,
+        "dens_pop": 124.38
+    },
+    {
+        "codgeo": 27012,
+        "libgeo": "Amfreville-les-Champs",
+        "an": 2021,
+        "dens_pop": 67.73
+    },
+    {
+        "codgeo": 27013,
+        "libgeo": "Amfreville-sous-les-Monts",
+        "an": 2021,
+        "dens_pop": 67.07
+    },
+    {
+        "codgeo": 27014,
+        "libgeo": "Amfreville-sur-Iton",
+        "an": 2021,
+        "dens_pop": 158.36
+    },
+    {
+        "codgeo": 27015,
+        "libgeo": "Andé",
+        "an": 2021,
+        "dens_pop": 247.17
+    },
+    {
+        "codgeo": 27016,
+        "libgeo": "Les Andelys",
+        "an": 2021,
+        "dens_pop": 195.49
+    },
+    {
+        "codgeo": 27017,
+        "libgeo": "Angerville-la-Campagne",
+        "an": 2021,
+        "dens_pop": 382.22
+    },
+    {
+        "codgeo": 27018,
+        "libgeo": "Appeville-Annebault",
+        "an": 2021,
+        "dens_pop": 74.36
+    },
+    {
+        "codgeo": 27019,
+        "libgeo": "Armentières-sur-Avre",
+        "an": 2021,
+        "dens_pop": 26.23
+    },
+    {
+        "codgeo": 27020,
+        "libgeo": "Arnières-sur-Iton",
+        "an": 2021,
+        "dens_pop": 135.98
+    },
+    {
+        "codgeo": 27021,
+        "libgeo": "Asnières",
+        "an": 2021,
+        "dens_pop": 41.6
+    },
+    {
+        "codgeo": 27022,
+        "libgeo": "Le Val d'Hazey",
+        "an": 2021,
+        "dens_pop": 360.69
+    },
+    {
+        "codgeo": 27023,
+        "libgeo": "Aulnay-sur-Iton",
+        "an": 2021,
+        "dens_pop": 472.67
+    },
+    {
+        "codgeo": 27025,
+        "libgeo": "Autheuil-Authouillet",
+        "an": 2021,
+        "dens_pop": 80.85
+    },
+    {
+        "codgeo": 27026,
+        "libgeo": "Authevernes",
+        "an": 2021,
+        "dens_pop": 55.12
+    },
+    {
+        "codgeo": 27027,
+        "libgeo": "Les Authieux",
+        "an": 2021,
+        "dens_pop": 58.98
+    },
+    {
+        "codgeo": 27028,
+        "libgeo": "Authou",
+        "an": 2021,
+        "dens_pop": 112.33
+    },
+    {
+        "codgeo": 27031,
+        "libgeo": "Aviron",
+        "an": 2021,
+        "dens_pop": 150.41
+    },
+    {
+        "codgeo": 27032,
+        "libgeo": "Chambois",
+        "an": 2021,
+        "dens_pop": 49.75
+    },
+    {
+        "codgeo": 27033,
+        "libgeo": "Bacquepuis",
+        "an": 2021,
+        "dens_pop": 60.2
+    },
+    {
+        "codgeo": 27034,
+        "libgeo": "Bacqueville",
+        "an": 2021,
+        "dens_pop": 56.73
+    },
+    {
+        "codgeo": 27035,
+        "libgeo": "Bailleul-la-Vallée",
+        "an": 2021,
+        "dens_pop": 21.06
+    },
+    {
+        "codgeo": 27036,
+        "libgeo": "Bâlines",
+        "an": 2021,
+        "dens_pop": 147.03
+    },
+    {
+        "codgeo": 27037,
+        "libgeo": "Barc",
+        "an": 2021,
+        "dens_pop": 102.3
+    },
+    {
+        "codgeo": 27038,
+        "libgeo": "Les Barils",
+        "an": 2021,
+        "dens_pop": 28.74
+    },
+    {
+        "codgeo": 27039,
+        "libgeo": "Barneville-sur-Seine",
+        "an": 2021,
+        "dens_pop": 58.64
+    },
+    {
+        "codgeo": 27040,
+        "libgeo": "Barquet",
+        "an": 2021,
+        "dens_pop": 32.7
+    },
+    {
+        "codgeo": 27042,
+        "libgeo": "Barville",
+        "an": 2021,
+        "dens_pop": 30.74
+    },
+    {
+        "codgeo": 27043,
+        "libgeo": "Les Baux-de-Breteuil",
+        "an": 2021,
+        "dens_pop": 19.8
+    },
+    {
+        "codgeo": 27044,
+        "libgeo": "Les Baux-Sainte-Croix",
+        "an": 2021,
+        "dens_pop": 50.12
+    },
+    {
+        "codgeo": 27045,
+        "libgeo": "Bazincourt-sur-Epte",
+        "an": 2021,
+        "dens_pop": 71.0
+    },
+    {
+        "codgeo": 27046,
+        "libgeo": "Bazoques",
+        "an": 2021,
+        "dens_pop": 20.58
+    },
+    {
+        "codgeo": 27047,
+        "libgeo": "Beaubray",
+        "an": 2021,
+        "dens_pop": 21.82
+    },
+    {
+        "codgeo": 27048,
+        "libgeo": "Beauficel-en-Lyons",
+        "an": 2021,
+        "dens_pop": 27.36
+    },
+    {
+        "codgeo": 27049,
+        "libgeo": "Mesnil-en-Ouche",
+        "an": 2021,
+        "dens_pop": 26.92
+    },
+    {
+        "codgeo": 27050,
+        "libgeo": "Beaumontel",
+        "an": 2021,
+        "dens_pop": 54.31
+    },
+    {
+        "codgeo": 27051,
+        "libgeo": "Beaumont-le-Roger",
+        "an": 2021,
+        "dens_pop": 75.93
+    },
+    {
+        "codgeo": 27052,
+        "libgeo": "Le Bec-Hellouin",
+        "an": 2021,
+        "dens_pop": 40.62
+    },
+    {
+        "codgeo": 27053,
+        "libgeo": "Le Bec-Thomas",
+        "an": 2021,
+        "dens_pop": 147.14
+    },
+    {
+        "codgeo": 27054,
+        "libgeo": "Bémécourt",
+        "an": 2021,
+        "dens_pop": 33.27
+    },
+    {
+        "codgeo": 27055,
+        "libgeo": "Bérengeville-la-Campagne",
+        "an": 2021,
+        "dens_pop": 35.87
+    },
+    {
+        "codgeo": 27056,
+        "libgeo": "Bernay",
+        "an": 2021,
+        "dens_pop": 400.92
+    },
+    {
+        "codgeo": 27057,
+        "libgeo": "Bernienville",
+        "an": 2021,
+        "dens_pop": 37.31
+    },
+    {
+        "codgeo": 27059,
+        "libgeo": "Bernouville",
+        "an": 2021,
+        "dens_pop": 51.15
+    },
+    {
+        "codgeo": 27061,
+        "libgeo": "Berthouville",
+        "an": 2021,
+        "dens_pop": 44.0
+    },
+    {
+        "codgeo": 27062,
+        "libgeo": "Les Monts du Roumois",
+        "an": 2021,
+        "dens_pop": 66.01
+    },
+    {
+        "codgeo": 27063,
+        "libgeo": "Berville-la-Campagne",
+        "an": 2021,
+        "dens_pop": 29.89
+    },
+    {
+        "codgeo": 27064,
+        "libgeo": "Berville-sur-Mer",
+        "an": 2021,
+        "dens_pop": 133.73
+    },
+    {
+        "codgeo": 27065,
+        "libgeo": "Beuzeville",
+        "an": 2021,
+        "dens_pop": 202.11
+    },
+    {
+        "codgeo": 27066,
+        "libgeo": "Bézu-la-Forêt",
+        "an": 2021,
+        "dens_pop": 33.56
+    },
+    {
+        "codgeo": 27067,
+        "libgeo": "Bézu-Saint-Éloi",
+        "an": 2021,
+        "dens_pop": 138.42
+    },
+    {
+        "codgeo": 27068,
+        "libgeo": "Bois-Anzeray",
+        "an": 2021,
+        "dens_pop": 15.34
+    },
+    {
+        "codgeo": 27069,
+        "libgeo": "Bois-Arnault",
+        "an": 2021,
+        "dens_pop": 53.8
+    },
+    {
+        "codgeo": 27070,
+        "libgeo": "Frenelles-en-Vexin",
+        "an": 2021,
+        "dens_pop": 58.49
+    },
+    {
+        "codgeo": 27071,
+        "libgeo": "Le Bois-Hellain",
+        "an": 2021,
+        "dens_pop": 65.94
+    },
+    {
+        "codgeo": 27072,
+        "libgeo": "Bois-Jérôme-Saint-Ouen",
+        "an": 2021,
+        "dens_pop": 71.14
+    },
+    {
+        "codgeo": 27073,
+        "libgeo": "Bois-le-Roi",
+        "an": 2021,
+        "dens_pop": 227.96
+    },
+    {
+        "codgeo": 27074,
+        "libgeo": "Boisney",
+        "an": 2021,
+        "dens_pop": 48.62
+    },
+    {
+        "codgeo": 27075,
+        "libgeo": "Bois-Normand-près-Lyre",
+        "an": 2021,
+        "dens_pop": 21.36
+    },
+    {
+        "codgeo": 27076,
+        "libgeo": "Boisset-les-Prévanches",
+        "an": 2021,
+        "dens_pop": 67.2
+    },
+    {
+        "codgeo": 27077,
+        "libgeo": "Boissey-le-Châtel",
+        "an": 2021,
+        "dens_pop": 193.64
+    },
+    {
+        "codgeo": 27078,
+        "libgeo": "La Boissière",
+        "an": 2021,
+        "dens_pop": 74.57
+    },
+    {
+        "codgeo": 27079,
+        "libgeo": "Boissy-Lamberville",
+        "an": 2021,
+        "dens_pop": 45.93
+    },
+    {
+        "codgeo": 27081,
+        "libgeo": "Boncourt",
+        "an": 2021,
+        "dens_pop": 43.33
+    },
+    {
+        "codgeo": 27082,
+        "libgeo": "La Bonneville-sur-Iton",
+        "an": 2021,
+        "dens_pop": 511.5
+    },
+    {
+        "codgeo": 27083,
+        "libgeo": "Bonneville-Aptot",
+        "an": 2021,
+        "dens_pop": 35.07
+    },
+    {
+        "codgeo": 27085,
+        "libgeo": "Flancourt-Crescy-en-Roumois",
+        "an": 2021,
+        "dens_pop": 82.58
+    },
+    {
+        "codgeo": 27089,
+        "libgeo": "Thénouville",
+        "an": 2021,
+        "dens_pop": 76.44
+    },
+    {
+        "codgeo": 27090,
+        "libgeo": "Bosroumois",
+        "an": 2021,
+        "dens_pop": 286.82
+    },
+    {
+        "codgeo": 27091,
+        "libgeo": "Bosgouet",
+        "an": 2021,
+        "dens_pop": 79.69
+    },
+    {
+        "codgeo": 27094,
+        "libgeo": "Bosquentin",
+        "an": 2021,
+        "dens_pop": 18.26
+    },
+    {
+        "codgeo": 27095,
+        "libgeo": "Bosrobert",
+        "an": 2021,
+        "dens_pop": 73.04
+    },
+    {
+        "codgeo": 27096,
+        "libgeo": "Les Bottereaux",
+        "an": 2021,
+        "dens_pop": 15.57
+    },
+    {
+        "codgeo": 27097,
+        "libgeo": "Bouafles",
+        "an": 2021,
+        "dens_pop": 53.02
+    },
+    {
+        "codgeo": 27098,
+        "libgeo": "Bouchevilliers",
+        "an": 2021,
+        "dens_pop": 17.67
+    },
+    {
+        "codgeo": 27099,
+        "libgeo": "Le Boulay-Morin",
+        "an": 2021,
+        "dens_pop": 147.14
+    },
+    {
+        "codgeo": 27100,
+        "libgeo": "Boulleville",
+        "an": 2021,
+        "dens_pop": 167.92
+    },
+    {
+        "codgeo": 27101,
+        "libgeo": "Bouquelon",
+        "an": 2021,
+        "dens_pop": 43.33
+    },
+    {
+        "codgeo": 27102,
+        "libgeo": "Bouquetot",
+        "an": 2021,
+        "dens_pop": 78.4
+    },
+    {
+        "codgeo": 27103,
+        "libgeo": "Bourg-Achard",
+        "an": 2021,
+        "dens_pop": 326.34
+    },
+    {
+        "codgeo": 27104,
+        "libgeo": "Bourg-Beaudouin",
+        "an": 2021,
+        "dens_pop": 133.77
+    },
+    {
+        "codgeo": 27105,
+        "libgeo": "Grand Bourgtheroulde",
+        "an": 2021,
+        "dens_pop": 206.41
+    },
+    {
+        "codgeo": 27106,
+        "libgeo": "Bournainville-Faverolles",
+        "an": 2021,
+        "dens_pop": 69.43
+    },
+    {
+        "codgeo": 27107,
+        "libgeo": "Bourneville-Sainte-Croix",
+        "an": 2021,
+        "dens_pop": 85.0
+    },
+    {
+        "codgeo": 27108,
+        "libgeo": "Bourth",
+        "an": 2021,
+        "dens_pop": 62.96
+    },
+    {
+        "codgeo": 27109,
+        "libgeo": "Bray",
+        "an": 2021,
+        "dens_pop": 68.45
+    },
+    {
+        "codgeo": 27110,
+        "libgeo": "Brestot",
+        "an": 2021,
+        "dens_pop": 74.02
+    },
+    {
+        "codgeo": 27111,
+        "libgeo": "Bretagnolles",
+        "an": 2021,
+        "dens_pop": 53.16
+    },
+    {
+        "codgeo": 27112,
+        "libgeo": "Breteuil",
+        "an": 2021,
+        "dens_pop": 77.95
+    },
+    {
+        "codgeo": 27113,
+        "libgeo": "Brétigny",
+        "an": 2021,
+        "dens_pop": 26.48
+    },
+    {
+        "codgeo": 27114,
+        "libgeo": "Breuilpont",
+        "an": 2021,
+        "dens_pop": 98.77
+    },
+    {
+        "codgeo": 27115,
+        "libgeo": "Breux-sur-Avre",
+        "an": 2021,
+        "dens_pop": 47.04
+    },
+    {
+        "codgeo": 27116,
+        "libgeo": "Brionne",
+        "an": 2021,
+        "dens_pop": 251.13
+    },
+    {
+        "codgeo": 27117,
+        "libgeo": "Broglie",
+        "an": 2021,
+        "dens_pop": 125.0
+    },
+    {
+        "codgeo": 27118,
+        "libgeo": "Brosville",
+        "an": 2021,
+        "dens_pop": 88.89
+    },
+    {
+        "codgeo": 27119,
+        "libgeo": "Bueil",
+        "an": 2021,
+        "dens_pop": 331.63
+    },
+    {
+        "codgeo": 27120,
+        "libgeo": "Burey",
+        "an": 2021,
+        "dens_pop": 74.81
+    },
+    {
+        "codgeo": 27123,
+        "libgeo": "Caillouet-Orgeville",
+        "an": 2021,
+        "dens_pop": 61.52
+    },
+    {
+        "codgeo": 27124,
+        "libgeo": "Cailly-sur-Eure",
+        "an": 2021,
+        "dens_pop": 66.06
+    },
+    {
+        "codgeo": 27125,
+        "libgeo": "Calleville",
+        "an": 2021,
+        "dens_pop": 76.86
+    },
+    {
+        "codgeo": 27126,
+        "libgeo": "Campigny",
+        "an": 2021,
+        "dens_pop": 103.36
+    },
+    {
+        "codgeo": 27127,
+        "libgeo": "Canappeville",
+        "an": 2021,
+        "dens_pop": 67.69
+    },
+    {
+        "codgeo": 27129,
+        "libgeo": "Caorches-Saint-Nicolas",
+        "an": 2021,
+        "dens_pop": 50.85
+    },
+    {
+        "codgeo": 27130,
+        "libgeo": "Capelle-les-Grands",
+        "an": 2021,
+        "dens_pop": 30.9
+    },
+    {
+        "codgeo": 27132,
+        "libgeo": "Caugé",
+        "an": 2021,
+        "dens_pop": 71.64
+    },
+    {
+        "codgeo": 27133,
+        "libgeo": "Caumont",
+        "an": 2021,
+        "dens_pop": 184.83
+    },
+    {
+        "codgeo": 27134,
+        "libgeo": "Cauverville-en-Roumois",
+        "an": 2021,
+        "dens_pop": 65.94
+    },
+    {
+        "codgeo": 27135,
+        "libgeo": "Cesseville",
+        "an": 2021,
+        "dens_pop": 67.42
+    },
+    {
+        "codgeo": 27136,
+        "libgeo": "Chaignes",
+        "an": 2021,
+        "dens_pop": 41.88
+    },
+    {
+        "codgeo": 27137,
+        "libgeo": "Chaise-Dieu-du-Theil",
+        "an": 2021,
+        "dens_pop": 33.39
+    },
+    {
+        "codgeo": 27138,
+        "libgeo": "Chamblac",
+        "an": 2021,
+        "dens_pop": 17.8
+    },
+    {
+        "codgeo": 27139,
+        "libgeo": "Chambord",
+        "an": 2021,
+        "dens_pop": 12.19
+    },
+    {
+        "codgeo": 27140,
+        "libgeo": "Chambray",
+        "an": 2021,
+        "dens_pop": 47.74
+    },
+    {
+        "codgeo": 27141,
+        "libgeo": "Champ-Dolent",
+        "an": 2021,
+        "dens_pop": 26.96
+    },
+    {
+        "codgeo": 27142,
+        "libgeo": "Champenard",
+        "an": 2021,
+        "dens_pop": 125.65
+    },
+    {
+        "codgeo": 27144,
+        "libgeo": "Champigny-la-Futelaye",
+        "an": 2021,
+        "dens_pop": 17.0
+    },
+    {
+        "codgeo": 27146,
+        "libgeo": "La Chapelle-Bayvel",
+        "an": 2021,
+        "dens_pop": 78.75
+    },
+    {
+        "codgeo": 27147,
+        "libgeo": "La Chapelle-du-Bois-des-Faulx",
+        "an": 2021,
+        "dens_pop": 153.41
+    },
+    {
+        "codgeo": 27148,
+        "libgeo": "La Chapelle-Gauthier",
+        "an": 2021,
+        "dens_pop": 24.94
+    },
+    {
+        "codgeo": 27149,
+        "libgeo": "La Chapelle-Hareng",
+        "an": 2021,
+        "dens_pop": 30.24
+    },
+    {
+        "codgeo": 27151,
+        "libgeo": "Charleval",
+        "an": 2021,
+        "dens_pop": 120.85
+    },
+    {
+        "codgeo": 27152,
+        "libgeo": "Château-sur-Epte",
+        "an": 2021,
+        "dens_pop": 128.91
+    },
+    {
+        "codgeo": 27153,
+        "libgeo": "Chauvincourt-Provemont",
+        "an": 2021,
+        "dens_pop": 35.65
+    },
+    {
+        "codgeo": 27154,
+        "libgeo": "Chavigny-Bailleul",
+        "an": 2021,
+        "dens_pop": 32.28
+    },
+    {
+        "codgeo": 27155,
+        "libgeo": "Chennebrun",
+        "an": 2021,
+        "dens_pop": 35.52
+    },
+    {
+        "codgeo": 27156,
+        "libgeo": "Chéronvilliers",
+        "an": 2021,
+        "dens_pop": 21.49
+    },
+    {
+        "codgeo": 27157,
+        "libgeo": "Marbois",
+        "an": 2021,
+        "dens_pop": 28.13
+    },
+    {
+        "codgeo": 27158,
+        "libgeo": "Cierrey",
+        "an": 2021,
+        "dens_pop": 197.5
+    },
+    {
+        "codgeo": 27161,
+        "libgeo": "Claville",
+        "an": 2021,
+        "dens_pop": 60.68
+    },
+    {
+        "codgeo": 27162,
+        "libgeo": "Collandres-Quincarnon",
+        "an": 2021,
+        "dens_pop": 30.25
+    },
+    {
+        "codgeo": 27163,
+        "libgeo": "Colletot",
+        "an": 2021,
+        "dens_pop": 43.72
+    },
+    {
+        "codgeo": 27164,
+        "libgeo": "Combon",
+        "an": 2021,
+        "dens_pop": 50.31
+    },
+    {
+        "codgeo": 27165,
+        "libgeo": "Conches-en-Ouche",
+        "an": 2021,
+        "dens_pop": 293.71
+    },
+    {
+        "codgeo": 27167,
+        "libgeo": "Condé-sur-Risle",
+        "an": 2021,
+        "dens_pop": 66.77
+    },
+    {
+        "codgeo": 27168,
+        "libgeo": "Connelles",
+        "an": 2021,
+        "dens_pop": 41.43
+    },
+    {
+        "codgeo": 27169,
+        "libgeo": "Conteville",
+        "an": 2021,
+        "dens_pop": 95.23
+    },
+    {
+        "codgeo": 27170,
+        "libgeo": "Cormeilles",
+        "an": 2021,
+        "dens_pop": 388.67
+    },
+    {
+        "codgeo": 27171,
+        "libgeo": "Le Cormier",
+        "an": 2021,
+        "dens_pop": 35.05
+    },
+    {
+        "codgeo": 27173,
+        "libgeo": "Corneville-la-Fouquetière",
+        "an": 2021,
+        "dens_pop": 31.0
+    },
+    {
+        "codgeo": 27174,
+        "libgeo": "Corneville-sur-Risle",
+        "an": 2021,
+        "dens_pop": 104.09
+    },
+    {
+        "codgeo": 27176,
+        "libgeo": "Coudray",
+        "an": 2021,
+        "dens_pop": 27.95
+    },
+    {
+        "codgeo": 27177,
+        "libgeo": "Coudres",
+        "an": 2021,
+        "dens_pop": 35.45
+    },
+    {
+        "codgeo": 27179,
+        "libgeo": "Courbépine",
+        "an": 2021,
+        "dens_pop": 60.34
+    },
+    {
+        "codgeo": 27180,
+        "libgeo": "Courcelles-sur-Seine",
+        "an": 2021,
+        "dens_pop": 389.09
+    },
+    {
+        "codgeo": 27181,
+        "libgeo": "Courdemanche",
+        "an": 2021,
+        "dens_pop": 66.22
+    },
+    {
+        "codgeo": 27182,
+        "libgeo": "Courteilles",
+        "an": 2021,
+        "dens_pop": 26.61
+    },
+    {
+        "codgeo": 27183,
+        "libgeo": "La Couture-Boussey",
+        "an": 2021,
+        "dens_pop": 211.56
+    },
+    {
+        "codgeo": 27184,
+        "libgeo": "Crasville",
+        "an": 2021,
+        "dens_pop": 48.8
+    },
+    {
+        "codgeo": 27185,
+        "libgeo": "Crestot",
+        "an": 2021,
+        "dens_pop": 88.73
+    },
+    {
+        "codgeo": 27187,
+        "libgeo": "Criquebeuf-la-Campagne",
+        "an": 2021,
+        "dens_pop": 44.1
+    },
+    {
+        "codgeo": 27188,
+        "libgeo": "Criquebeuf-sur-Seine",
+        "an": 2021,
+        "dens_pop": 103.67
+    },
+    {
+        "codgeo": 27189,
+        "libgeo": "La Croisille",
+        "an": 2021,
+        "dens_pop": 77.22
+    },
+    {
+        "codgeo": 27190,
+        "libgeo": "Croisy-sur-Eure",
+        "an": 2021,
+        "dens_pop": 53.75
+    },
+    {
+        "codgeo": 27191,
+        "libgeo": "Clef Vallée d'Eure",
+        "an": 2021,
+        "dens_pop": 96.41
+    },
+    {
+        "codgeo": 27192,
+        "libgeo": "Crosville-la-Vieille",
+        "an": 2021,
+        "dens_pop": 78.83
+    },
+    {
+        "codgeo": 27193,
+        "libgeo": "Croth",
+        "an": 2021,
+        "dens_pop": 131.24
+    },
+    {
+        "codgeo": 27194,
+        "libgeo": "Cuverville",
+        "an": 2021,
+        "dens_pop": 40.16
+    },
+    {
+        "codgeo": 27196,
+        "libgeo": "Les Damps",
+        "an": 2021,
+        "dens_pop": 286.6
+    },
+    {
+        "codgeo": 27198,
+        "libgeo": "Mesnils-sur-Iton",
+        "an": 2021,
+        "dens_pop": 49.16
+    },
+    {
+        "codgeo": 27199,
+        "libgeo": "Dangu",
+        "an": 2021,
+        "dens_pop": 69.5
+    },
+    {
+        "codgeo": 27200,
+        "libgeo": "Dardez",
+        "an": 2021,
+        "dens_pop": 48.93
+    },
+    {
+        "codgeo": 27201,
+        "libgeo": "Daubeuf-la-Campagne",
+        "an": 2021,
+        "dens_pop": 38.41
+    },
+    {
+        "codgeo": 27202,
+        "libgeo": "Daubeuf-près-Vatteville",
+        "an": 2021,
+        "dens_pop": 40.8
+    },
+    {
+        "codgeo": 27203,
+        "libgeo": "Douains",
+        "an": 2021,
+        "dens_pop": 40.44
+    },
+    {
+        "codgeo": 27204,
+        "libgeo": "Doudeauville-en-Vexin",
+        "an": 2021,
+        "dens_pop": 46.55
+    },
+    {
+        "codgeo": 27205,
+        "libgeo": "Douville-sur-Andelle",
+        "an": 2021,
+        "dens_pop": 94.89
+    },
+    {
+        "codgeo": 27206,
+        "libgeo": "Droisy",
+        "an": 2021,
+        "dens_pop": 26.29
+    },
+    {
+        "codgeo": 27207,
+        "libgeo": "Drucourt",
+        "an": 2021,
+        "dens_pop": 48.42
+    },
+    {
+        "codgeo": 27208,
+        "libgeo": "Duranville",
+        "an": 2021,
+        "dens_pop": 31.7
+    },
+    {
+        "codgeo": 27209,
+        "libgeo": "Écaquelon",
+        "an": 2021,
+        "dens_pop": 46.38
+    },
+    {
+        "codgeo": 27210,
+        "libgeo": "Écardenville-la-Campagne",
+        "an": 2021,
+        "dens_pop": 61.49
+    },
+    {
+        "codgeo": 27212,
+        "libgeo": "Écauville",
+        "an": 2021,
+        "dens_pop": 32.65
+    },
+    {
+        "codgeo": 27213,
+        "libgeo": "Vexin-sur-Epte",
+        "an": 2021,
+        "dens_pop": 52.31
+    },
+    {
+        "codgeo": 27214,
+        "libgeo": "Écouis",
+        "an": 2021,
+        "dens_pop": 63.66
+    },
+    {
+        "codgeo": 27215,
+        "libgeo": "Ecquetot",
+        "an": 2021,
+        "dens_pop": 68.07
+    },
+    {
+        "codgeo": 27216,
+        "libgeo": "Émalleville",
+        "an": 2021,
+        "dens_pop": 113.1
+    },
+    {
+        "codgeo": 27217,
+        "libgeo": "Émanville",
+        "an": 2021,
+        "dens_pop": 50.93
+    },
+    {
+        "codgeo": 27218,
+        "libgeo": "Épaignes",
+        "an": 2021,
+        "dens_pop": 59.69
+    },
+    {
+        "codgeo": 27219,
+        "libgeo": "Épégard",
+        "an": 2021,
+        "dens_pop": 120.45
+    },
+    {
+        "codgeo": 27220,
+        "libgeo": "Épieds",
+        "an": 2021,
+        "dens_pop": 71.02
+    },
+    {
+        "codgeo": 27222,
+        "libgeo": "Épreville-en-Lieuvin",
+        "an": 2021,
+        "dens_pop": 29.7
+    },
+    {
+        "codgeo": 27224,
+        "libgeo": "Épreville-près-le-Neubourg",
+        "an": 2021,
+        "dens_pop": 58.44
+    },
+    {
+        "codgeo": 27226,
+        "libgeo": "Étrépagny",
+        "an": 2021,
+        "dens_pop": 180.59
+    },
+    {
+        "codgeo": 27227,
+        "libgeo": "Étréville",
+        "an": 2021,
+        "dens_pop": 59.38
+    },
+    {
+        "codgeo": 27228,
+        "libgeo": "Éturqueraye",
+        "an": 2021,
+        "dens_pop": 45.37
+    },
+    {
+        "codgeo": 27229,
+        "libgeo": "Évreux",
+        "an": 2021,
+        "dens_pop": 1784.49
+    },
+    {
+        "codgeo": 27230,
+        "libgeo": "Ézy-sur-Eure",
+        "an": 2021,
+        "dens_pop": 412.25
+    },
+    {
+        "codgeo": 27231,
+        "libgeo": "Fains",
+        "an": 2021,
+        "dens_pop": 115.0
+    },
+    {
+        "codgeo": 27232,
+        "libgeo": "Farceaux",
+        "an": 2021,
+        "dens_pop": 45.26
+    },
+    {
+        "codgeo": 27233,
+        "libgeo": "Fatouville-Grestain",
+        "an": 2021,
+        "dens_pop": 69.71
+    },
+    {
+        "codgeo": 27234,
+        "libgeo": "Fauville",
+        "an": 2021,
+        "dens_pop": 97.58
+    },
+    {
+        "codgeo": 27235,
+        "libgeo": "Faverolles-la-Campagne",
+        "an": 2021,
+        "dens_pop": 34.04
+    },
+    {
+        "codgeo": 27237,
+        "libgeo": "Le Favril",
+        "an": 2021,
+        "dens_pop": 44.25
+    },
+    {
+        "codgeo": 27238,
+        "libgeo": "Ferrières-Haut-Clocher",
+        "an": 2021,
+        "dens_pop": 100.0
+    },
+    {
+        "codgeo": 27239,
+        "libgeo": "Ferrières-Saint-Hilaire",
+        "an": 2021,
+        "dens_pop": 42.45
+    },
+    {
+        "codgeo": 27240,
+        "libgeo": "La Ferrière-sur-Risle",
+        "an": 2021,
+        "dens_pop": 1055.0
+    },
+    {
+        "codgeo": 27241,
+        "libgeo": "Feuguerolles",
+        "an": 2021,
+        "dens_pop": 20.98
+    },
+    {
+        "codgeo": 27242,
+        "libgeo": "Le Fidelaire",
+        "an": 2021,
+        "dens_pop": 30.06
+    },
+    {
+        "codgeo": 27243,
+        "libgeo": "Fiquefleur-Équainville",
+        "an": 2021,
+        "dens_pop": 76.53
+    },
+    {
+        "codgeo": 27245,
+        "libgeo": "Fleury-la-Forêt",
+        "an": 2021,
+        "dens_pop": 35.77
+    },
+    {
+        "codgeo": 27246,
+        "libgeo": "Fleury-sur-Andelle",
+        "an": 2021,
+        "dens_pop": 478.42
+    },
+    {
+        "codgeo": 27247,
+        "libgeo": "Flipou",
+        "an": 2021,
+        "dens_pop": 46.0
+    },
+    {
+        "codgeo": 27248,
+        "libgeo": "Folleville",
+        "an": 2021,
+        "dens_pop": 31.29
+    },
+    {
+        "codgeo": 27249,
+        "libgeo": "Fontaine-Bellenger",
+        "an": 2021,
+        "dens_pop": 224.4
+    },
+    {
+        "codgeo": 27251,
+        "libgeo": "Fontaine-l'Abbé",
+        "an": 2021,
+        "dens_pop": 42.2
+    },
+    {
+        "codgeo": 27252,
+        "libgeo": "Fontaine-la-Louvet",
+        "an": 2021,
+        "dens_pop": 29.37
+    },
+    {
+        "codgeo": 27254,
+        "libgeo": "Fontaine-sous-Jouy",
+        "an": 2021,
+        "dens_pop": 115.34
+    },
+    {
+        "codgeo": 27256,
+        "libgeo": "La Forêt-du-Parc",
+        "an": 2021,
+        "dens_pop": 82.08
+    },
+    {
+        "codgeo": 27258,
+        "libgeo": "Fort-Moville",
+        "an": 2021,
+        "dens_pop": 55.7
+    },
+    {
+        "codgeo": 27259,
+        "libgeo": "Foucrainville",
+        "an": 2021,
+        "dens_pop": 17.36
+    },
+    {
+        "codgeo": 27260,
+        "libgeo": "Foulbec",
+        "an": 2021,
+        "dens_pop": 55.21
+    },
+    {
+        "codgeo": 27261,
+        "libgeo": "Fouqueville",
+        "an": 2021,
+        "dens_pop": 53.78
+    },
+    {
+        "codgeo": 27263,
+        "libgeo": "Le Perrey",
+        "an": 2021,
+        "dens_pop": 57.43
+    },
+    {
+        "codgeo": 27266,
+        "libgeo": "Franqueville",
+        "an": 2021,
+        "dens_pop": 102.67
+    },
+    {
+        "codgeo": 27267,
+        "libgeo": "Freneuse-sur-Risle",
+        "an": 2021,
+        "dens_pop": 41.98
+    },
+    {
+        "codgeo": 27269,
+        "libgeo": "Fresne-Cauverville",
+        "an": 2021,
+        "dens_pop": 30.97
+    },
+    {
+        "codgeo": 27271,
+        "libgeo": "Fresney",
+        "an": 2021,
+        "dens_pop": 50.32
+    },
+    {
+        "codgeo": 27273,
+        "libgeo": "Gadencourt",
+        "an": 2021,
+        "dens_pop": 94.87
+    },
+    {
+        "codgeo": 27275,
+        "libgeo": "Gaillon",
+        "an": 2021,
+        "dens_pop": 666.76
+    },
+    {
+        "codgeo": 27276,
+        "libgeo": "Gamaches-en-Vexin",
+        "an": 2021,
+        "dens_pop": 32.87
+    },
+    {
+        "codgeo": 27277,
+        "libgeo": "La Baronnie",
+        "an": 2021,
+        "dens_pop": 66.88
+    },
+    {
+        "codgeo": 27278,
+        "libgeo": "Garennes-sur-Eure",
+        "an": 2021,
+        "dens_pop": 189.62
+    },
+    {
+        "codgeo": 27279,
+        "libgeo": "Gasny",
+        "an": 2021,
+        "dens_pop": 238.14
+    },
+    {
+        "codgeo": 27280,
+        "libgeo": "Gauciel",
+        "an": 2021,
+        "dens_pop": 108.44
+    },
+    {
+        "codgeo": 27281,
+        "libgeo": "Gaudreville-la-Rivière",
+        "an": 2021,
+        "dens_pop": 32.99
+    },
+    {
+        "codgeo": 27282,
+        "libgeo": "Gauville-la-Campagne",
+        "an": 2021,
+        "dens_pop": 102.1
+    },
+    {
+        "codgeo": 27284,
+        "libgeo": "Gisors",
+        "an": 2021,
+        "dens_pop": 713.71
+    },
+    {
+        "codgeo": 27285,
+        "libgeo": "Giverny",
+        "an": 2021,
+        "dens_pop": 71.85
+    },
+    {
+        "codgeo": 27286,
+        "libgeo": "Giverville",
+        "an": 2021,
+        "dens_pop": 64.1
+    },
+    {
+        "codgeo": 27287,
+        "libgeo": "Glisolles",
+        "an": 2021,
+        "dens_pop": 79.36
+    },
+    {
+        "codgeo": 27288,
+        "libgeo": "Glos-sur-Risle",
+        "an": 2021,
+        "dens_pop": 83.84
+    },
+    {
+        "codgeo": 27289,
+        "libgeo": "La Goulafrière",
+        "an": 2021,
+        "dens_pop": 11.67
+    },
+    {
+        "codgeo": 27290,
+        "libgeo": "Goupil-Othon",
+        "an": 2021,
+        "dens_pop": 84.73
+    },
+    {
+        "codgeo": 27291,
+        "libgeo": "Gournay-le-Guérin",
+        "an": 2021,
+        "dens_pop": 9.84
+    },
+    {
+        "codgeo": 27294,
+        "libgeo": "Val d'Orger",
+        "an": 2021,
+        "dens_pop": 90.18
+    },
+    {
+        "codgeo": 27295,
+        "libgeo": "Grand-Camp",
+        "an": 2021,
+        "dens_pop": 32.77
+    },
+    {
+        "codgeo": 27298,
+        "libgeo": "Graveron-Sémerville",
+        "an": 2021,
+        "dens_pop": 39.88
+    },
+    {
+        "codgeo": 27299,
+        "libgeo": "Gravigny",
+        "an": 2021,
+        "dens_pop": 400.5
+    },
+    {
+        "codgeo": 27300,
+        "libgeo": "Grosley-sur-Risle",
+        "an": 2021,
+        "dens_pop": 40.0
+    },
+    {
+        "codgeo": 27301,
+        "libgeo": "Grossœuvre",
+        "an": 2021,
+        "dens_pop": 85.3
+    },
+    {
+        "codgeo": 27302,
+        "libgeo": "Le Bosc du Theil",
+        "an": 2021,
+        "dens_pop": 65.12
+    },
+    {
+        "codgeo": 27304,
+        "libgeo": "Guerny",
+        "an": 2021,
+        "dens_pop": 26.33
+    },
+    {
+        "codgeo": 27306,
+        "libgeo": "Guichainville",
+        "an": 2021,
+        "dens_pop": 200.46
+    },
+    {
+        "codgeo": 27307,
+        "libgeo": "Guiseniers",
+        "an": 2021,
+        "dens_pop": 44.95
+    },
+    {
+        "codgeo": 27309,
+        "libgeo": "L'Habit",
+        "an": 2021,
+        "dens_pop": 97.25
+    },
+    {
+        "codgeo": 27310,
+        "libgeo": "Hacqueville",
+        "an": 2021,
+        "dens_pop": 42.04
+    },
+    {
+        "codgeo": 27311,
+        "libgeo": "Harcourt",
+        "an": 2021,
+        "dens_pop": 71.71
+    },
+    {
+        "codgeo": 27312,
+        "libgeo": "Hardencourt-Cocherel",
+        "an": 2021,
+        "dens_pop": 55.92
+    },
+    {
+        "codgeo": 27313,
+        "libgeo": "La Harengère",
+        "an": 2021,
+        "dens_pop": 168.89
+    },
+    {
+        "codgeo": 27315,
+        "libgeo": "Harquency",
+        "an": 2021,
+        "dens_pop": 19.57
+    },
+    {
+        "codgeo": 27316,
+        "libgeo": "Hauville",
+        "an": 2021,
+        "dens_pop": 88.03
+    },
+    {
+        "codgeo": 27317,
+        "libgeo": "La Haye-Aubrée",
+        "an": 2021,
+        "dens_pop": 58.13
+    },
+    {
+        "codgeo": 27318,
+        "libgeo": "La Haye-de-Calleville",
+        "an": 2021,
+        "dens_pop": 84.0
+    },
+    {
+        "codgeo": 27319,
+        "libgeo": "La Haye-de-Routot",
+        "an": 2021,
+        "dens_pop": 117.2
+    },
+    {
+        "codgeo": 27320,
+        "libgeo": "La Haye-du-Theil",
+        "an": 2021,
+        "dens_pop": 45.29
+    },
+    {
+        "codgeo": 27321,
+        "libgeo": "La Haye-le-Comte",
+        "an": 2021,
+        "dens_pop": 42.42
+    },
+    {
+        "codgeo": 27322,
+        "libgeo": "La Haye-Malherbe",
+        "an": 2021,
+        "dens_pop": 139.39
+    },
+    {
+        "codgeo": 27323,
+        "libgeo": "La Haye-Saint-Sylvestre",
+        "an": 2021,
+        "dens_pop": 15.59
+    },
+    {
+        "codgeo": 27324,
+        "libgeo": "Hébécourt",
+        "an": 2021,
+        "dens_pop": 55.62
+    },
+    {
+        "codgeo": 27325,
+        "libgeo": "Hecmanville",
+        "an": 2021,
+        "dens_pop": 65.33
+    },
+    {
+        "codgeo": 27326,
+        "libgeo": "Hécourt",
+        "an": 2021,
+        "dens_pop": 40.39
+    },
+    {
+        "codgeo": 27327,
+        "libgeo": "Hectomare",
+        "an": 2021,
+        "dens_pop": 108.5
+    },
+    {
+        "codgeo": 27329,
+        "libgeo": "Hennezis",
+        "an": 2021,
+        "dens_pop": 48.53
+    },
+    {
+        "codgeo": 27330,
+        "libgeo": "Herqueville",
+        "an": 2021,
+        "dens_pop": 33.95
+    },
+    {
+        "codgeo": 27331,
+        "libgeo": "Heubécourt-Haricourt",
+        "an": 2021,
+        "dens_pop": 38.49
+    },
+    {
+        "codgeo": 27332,
+        "libgeo": "Heudebouville",
+        "an": 2021,
+        "dens_pop": 85.81
+    },
+    {
+        "codgeo": 27333,
+        "libgeo": "Heudicourt",
+        "an": 2021,
+        "dens_pop": 68.41
+    },
+    {
+        "codgeo": 27334,
+        "libgeo": "Heudreville-en-Lieuvin",
+        "an": 2021,
+        "dens_pop": 26.67
+    },
+    {
+        "codgeo": 27335,
+        "libgeo": "Heudreville-sur-Eure",
+        "an": 2021,
+        "dens_pop": 75.35
+    },
+    {
+        "codgeo": 27336,
+        "libgeo": "La Heunière",
+        "an": 2021,
+        "dens_pop": 147.74
+    },
+    {
+        "codgeo": 27337,
+        "libgeo": "Heuqueville",
+        "an": 2021,
+        "dens_pop": 44.74
+    },
+    {
+        "codgeo": 27338,
+        "libgeo": "Les Hogues",
+        "an": 2021,
+        "dens_pop": 57.71
+    },
+    {
+        "codgeo": 27339,
+        "libgeo": "Hondouville",
+        "an": 2021,
+        "dens_pop": 115.8
+    },
+    {
+        "codgeo": 27340,
+        "libgeo": "Honguemare-Guenouville",
+        "an": 2021,
+        "dens_pop": 75.81
+    },
+    {
+        "codgeo": 27341,
+        "libgeo": "L'Hosmes",
+        "an": 2021,
+        "dens_pop": 9.85
+    },
+    {
+        "codgeo": 27342,
+        "libgeo": "Houetteville",
+        "an": 2021,
+        "dens_pop": 28.68
+    },
+    {
+        "codgeo": 27343,
+        "libgeo": "Houlbec-Cocherel",
+        "an": 2021,
+        "dens_pop": 108.79
+    },
+    {
+        "codgeo": 27345,
+        "libgeo": "La Houssaye",
+        "an": 2021,
+        "dens_pop": 49.05
+    },
+    {
+        "codgeo": 27346,
+        "libgeo": "Houville-en-Vexin",
+        "an": 2021,
+        "dens_pop": 29.01
+    },
+    {
+        "codgeo": 27347,
+        "libgeo": "Huest",
+        "an": 2021,
+        "dens_pop": 117.42
+    },
+    {
+        "codgeo": 27348,
+        "libgeo": "Igoville",
+        "an": 2021,
+        "dens_pop": 307.86
+    },
+    {
+        "codgeo": 27349,
+        "libgeo": "Illeville-sur-Montfort",
+        "an": 2021,
+        "dens_pop": 57.58
+    },
+    {
+        "codgeo": 27350,
+        "libgeo": "Illiers-l'Évêque",
+        "an": 2021,
+        "dens_pop": 49.61
+    },
+    {
+        "codgeo": 27351,
+        "libgeo": "Incarville",
+        "an": 2021,
+        "dens_pop": 193.66
+    },
+    {
+        "codgeo": 27353,
+        "libgeo": "Irreville",
+        "an": 2021,
+        "dens_pop": 83.75
+    },
+    {
+        "codgeo": 27354,
+        "libgeo": "Iville",
+        "an": 2021,
+        "dens_pop": 46.25
+    },
+    {
+        "codgeo": 27355,
+        "libgeo": "Ivry-la-Bataille",
+        "an": 2021,
+        "dens_pop": 338.21
+    },
+    {
+        "codgeo": 27358,
+        "libgeo": "Jouy-sur-Eure",
+        "an": 2021,
+        "dens_pop": 58.67
+    },
+    {
+        "codgeo": 27359,
+        "libgeo": "Juignettes",
+        "an": 2021,
+        "dens_pop": 17.15
+    },
+    {
+        "codgeo": 27360,
+        "libgeo": "Jumelles",
+        "an": 2021,
+        "dens_pop": 45.07
+    },
+    {
+        "codgeo": 27361,
+        "libgeo": "La Lande-Saint-Léger",
+        "an": 2021,
+        "dens_pop": 49.5
+    },
+    {
+        "codgeo": 27363,
+        "libgeo": "Le Landin",
+        "an": 2021,
+        "dens_pop": 78.71
+    },
+    {
+        "codgeo": 27364,
+        "libgeo": "Launay",
+        "an": 2021,
+        "dens_pop": 80.87
+    },
+    {
+        "codgeo": 27365,
+        "libgeo": "Léry",
+        "an": 2021,
+        "dens_pop": 232.44
+    },
+    {
+        "codgeo": 27366,
+        "libgeo": "Letteguives",
+        "an": 2021,
+        "dens_pop": 50.73
+    },
+    {
+        "codgeo": 27367,
+        "libgeo": "Lieurey",
+        "an": 2021,
+        "dens_pop": 81.15
+    },
+    {
+        "codgeo": 27368,
+        "libgeo": "Lignerolles",
+        "an": 2021,
+        "dens_pop": 56.29
+    },
+    {
+        "codgeo": 27369,
+        "libgeo": "Lilly",
+        "an": 2021,
+        "dens_pop": 12.67
+    },
+    {
+        "codgeo": 27370,
+        "libgeo": "Lisors",
+        "an": 2021,
+        "dens_pop": 28.61
+    },
+    {
+        "codgeo": 27371,
+        "libgeo": "Livet-sur-Authou",
+        "an": 2021,
+        "dens_pop": 41.79
+    },
+    {
+        "codgeo": 27372,
+        "libgeo": "Longchamps",
+        "an": 2021,
+        "dens_pop": 44.35
+    },
+    {
+        "codgeo": 27373,
+        "libgeo": "Lorleau",
+        "an": 2021,
+        "dens_pop": 8.29
+    },
+    {
+        "codgeo": 27374,
+        "libgeo": "Louversey",
+        "an": 2021,
+        "dens_pop": 48.04
+    },
+    {
+        "codgeo": 27375,
+        "libgeo": "Louviers",
+        "an": 2021,
+        "dens_pop": 677.12
+    },
+    {
+        "codgeo": 27376,
+        "libgeo": "Louye",
+        "an": 2021,
+        "dens_pop": 42.12
+    },
+    {
+        "codgeo": 27377,
+        "libgeo": "Lyons-la-Forêt",
+        "an": 2021,
+        "dens_pop": 26.07
+    },
+    {
+        "codgeo": 27378,
+        "libgeo": "La Madeleine-de-Nonancourt",
+        "an": 2021,
+        "dens_pop": 50.4
+    },
+    {
+        "codgeo": 27379,
+        "libgeo": "Mainneville",
+        "an": 2021,
+        "dens_pop": 55.43
+    },
+    {
+        "codgeo": 27380,
+        "libgeo": "Malleville-sur-le-Bec",
+        "an": 2021,
+        "dens_pop": 38.0
+    },
+    {
+        "codgeo": 27381,
+        "libgeo": "Malouy",
+        "an": 2021,
+        "dens_pop": 53.87
+    },
+    {
+        "codgeo": 27382,
+        "libgeo": "Mandeville",
+        "an": 2021,
+        "dens_pop": 110.33
+    },
+    {
+        "codgeo": 27383,
+        "libgeo": "Mandres",
+        "an": 2021,
+        "dens_pop": 30.42
+    },
+    {
+        "codgeo": 27384,
+        "libgeo": "Manneville-la-Raoult",
+        "an": 2021,
+        "dens_pop": 66.08
+    },
+    {
+        "codgeo": 27385,
+        "libgeo": "Manneville-sur-Risle",
+        "an": 2021,
+        "dens_pop": 156.56
+    },
+    {
+        "codgeo": 27386,
+        "libgeo": "Le Manoir",
+        "an": 2021,
+        "dens_pop": 539.58
+    },
+    {
+        "codgeo": 27388,
+        "libgeo": "Marais-Vernier",
+        "an": 2021,
+        "dens_pop": 18.92
+    },
+    {
+        "codgeo": 27389,
+        "libgeo": "Marbeuf",
+        "an": 2021,
+        "dens_pop": 56.35
+    },
+    {
+        "codgeo": 27390,
+        "libgeo": "Marcilly-la-Campagne",
+        "an": 2021,
+        "dens_pop": 56.97
+    },
+    {
+        "codgeo": 27391,
+        "libgeo": "Marcilly-sur-Eure",
+        "an": 2021,
+        "dens_pop": 102.45
+    },
+    {
+        "codgeo": 27392,
+        "libgeo": "Martagny",
+        "an": 2021,
+        "dens_pop": 32.05
+    },
+    {
+        "codgeo": 27393,
+        "libgeo": "Martainville",
+        "an": 2021,
+        "dens_pop": 54.84
+    },
+    {
+        "codgeo": 27394,
+        "libgeo": "Martot",
+        "an": 2021,
+        "dens_pop": 54.12
+    },
+    {
+        "codgeo": 27395,
+        "libgeo": "Mélicourt",
+        "an": 2021,
+        "dens_pop": 14.06
+    },
+    {
+        "codgeo": 27396,
+        "libgeo": "Ménesqueville",
+        "an": 2021,
+        "dens_pop": 112.38
+    },
+    {
+        "codgeo": 27397,
+        "libgeo": "Ménilles",
+        "an": 2021,
+        "dens_pop": 299.66
+    },
+    {
+        "codgeo": 27398,
+        "libgeo": "Menneval",
+        "an": 2021,
+        "dens_pop": 233.03
+    },
+    {
+        "codgeo": 27399,
+        "libgeo": "Mercey",
+        "an": 2021,
+        "dens_pop": 15.43
+    },
+    {
+        "codgeo": 27400,
+        "libgeo": "Merey",
+        "an": 2021,
+        "dens_pop": 39.31
+    },
+    {
+        "codgeo": 27401,
+        "libgeo": "Le Mesnil-Fuguet",
+        "an": 2021,
+        "dens_pop": 50.28
+    },
+    {
+        "codgeo": 27403,
+        "libgeo": "Le Mesnil-Jourdain",
+        "an": 2021,
+        "dens_pop": 22.69
+    },
+    {
+        "codgeo": 27404,
+        "libgeo": "Mesnil-Rousset",
+        "an": 2021,
+        "dens_pop": 11.94
+    },
+    {
+        "codgeo": 27405,
+        "libgeo": "Mesnil-sous-Vienne",
+        "an": 2021,
+        "dens_pop": 17.54
+    },
+    {
+        "codgeo": 27406,
+        "libgeo": "Mesnil-sur-l'Estrée",
+        "an": 2021,
+        "dens_pop": 159.83
+    },
+    {
+        "codgeo": 27407,
+        "libgeo": "Mesnil-Verclives",
+        "an": 2021,
+        "dens_pop": 31.8
+    },
+    {
+        "codgeo": 27408,
+        "libgeo": "Mézières-en-Vexin",
+        "an": 2021,
+        "dens_pop": 46.46
+    },
+    {
+        "codgeo": 27410,
+        "libgeo": "Miserey",
+        "an": 2021,
+        "dens_pop": 76.05
+    },
+    {
+        "codgeo": 27411,
+        "libgeo": "Moisville",
+        "an": 2021,
+        "dens_pop": 32.43
+    },
+    {
+        "codgeo": 27412,
+        "libgeo": "Terres de Bord",
+        "an": 2021,
+        "dens_pop": 69.11
+    },
+    {
+        "codgeo": 27413,
+        "libgeo": "Montfort-sur-Risle",
+        "an": 2021,
+        "dens_pop": 201.79
+    },
+    {
+        "codgeo": 27414,
+        "libgeo": "Montreuil-l'Argillé",
+        "an": 2021,
+        "dens_pop": 58.98
+    },
+    {
+        "codgeo": 27415,
+        "libgeo": "Morainville-Jouveaux",
+        "an": 2021,
+        "dens_pop": 23.9
+    },
+    {
+        "codgeo": 27417,
+        "libgeo": "Morgny",
+        "an": 2021,
+        "dens_pop": 38.79
+    },
+    {
+        "codgeo": 27418,
+        "libgeo": "Morsan",
+        "an": 2021,
+        "dens_pop": 24.17
+    },
+    {
+        "codgeo": 27419,
+        "libgeo": "Mouettes",
+        "an": 2021,
+        "dens_pop": 87.62
+    },
+    {
+        "codgeo": 27420,
+        "libgeo": "Mouflaines",
+        "an": 2021,
+        "dens_pop": 43.16
+    },
+    {
+        "codgeo": 27421,
+        "libgeo": "Mousseaux-Neuville",
+        "an": 2021,
+        "dens_pop": 44.72
+    },
+    {
+        "codgeo": 27422,
+        "libgeo": "Muids",
+        "an": 2021,
+        "dens_pop": 56.97
+    },
+    {
+        "codgeo": 27423,
+        "libgeo": "Muzy",
+        "an": 2021,
+        "dens_pop": 82.61
+    },
+    {
+        "codgeo": 27424,
+        "libgeo": "Nagel-Séez-Mesnil",
+        "an": 2021,
+        "dens_pop": 28.29
+    },
+    {
+        "codgeo": 27425,
+        "libgeo": "Nassandres sur Risle",
+        "an": 2021,
+        "dens_pop": 90.98
+    },
+    {
+        "codgeo": 27426,
+        "libgeo": "Neaufles-Saint-Martin",
+        "an": 2021,
+        "dens_pop": 145.49
+    },
+    {
+        "codgeo": 27427,
+        "libgeo": "Neaufles-Auvergny",
+        "an": 2021,
+        "dens_pop": 23.97
+    },
+    {
+        "codgeo": 27428,
+        "libgeo": "Le Neubourg",
+        "an": 2021,
+        "dens_pop": 431.11
+    },
+    {
+        "codgeo": 27429,
+        "libgeo": "Neuilly",
+        "an": 2021,
+        "dens_pop": 38.3
+    },
+    {
+        "codgeo": 27430,
+        "libgeo": "La Neuve-Grange",
+        "an": 2021,
+        "dens_pop": 73.33
+    },
+    {
+        "codgeo": 27431,
+        "libgeo": "La Neuve-Lyre",
+        "an": 2021,
+        "dens_pop": 190.69
+    },
+    {
+        "codgeo": 27432,
+        "libgeo": "La Neuville-du-Bosc",
+        "an": 2021,
+        "dens_pop": 49.31
+    },
+    {
+        "codgeo": 27433,
+        "libgeo": "Neuville-sur-Authou",
+        "an": 2021,
+        "dens_pop": 35.27
+    },
+    {
+        "codgeo": 27434,
+        "libgeo": "Noards",
+        "an": 2021,
+        "dens_pop": 13.57
+    },
+    {
+        "codgeo": 27435,
+        "libgeo": "La Noë-Poulain",
+        "an": 2021,
+        "dens_pop": 55.74
+    },
+    {
+        "codgeo": 27436,
+        "libgeo": "Nogent-le-Sec",
+        "an": 2021,
+        "dens_pop": 43.07
+    },
+    {
+        "codgeo": 27437,
+        "libgeo": "Nojeon-en-Vexin",
+        "an": 2021,
+        "dens_pop": 26.31
+    },
+    {
+        "codgeo": 27438,
+        "libgeo": "Nonancourt",
+        "an": 2021,
+        "dens_pop": 317.64
+    },
+    {
+        "codgeo": 27439,
+        "libgeo": "Normanville",
+        "an": 2021,
+        "dens_pop": 124.62
+    },
+    {
+        "codgeo": 27440,
+        "libgeo": "Notre-Dame-de-l'Isle",
+        "an": 2021,
+        "dens_pop": 54.92
+    },
+    {
+        "codgeo": 27441,
+        "libgeo": "Notre-Dame-d'Épine",
+        "an": 2021,
+        "dens_pop": 40.59
+    },
+    {
+        "codgeo": 27442,
+        "libgeo": "Notre-Dame-du-Hamel",
+        "an": 2021,
+        "dens_pop": 14.04
+    },
+    {
+        "codgeo": 27444,
+        "libgeo": "Le Noyer-en-Ouche",
+        "an": 2021,
+        "dens_pop": 20.09
+    },
+    {
+        "codgeo": 27445,
+        "libgeo": "Noyers",
+        "an": 2021,
+        "dens_pop": 45.19
+    },
+    {
+        "codgeo": 27446,
+        "libgeo": "Ormes",
+        "an": 2021,
+        "dens_pop": 33.33
+    },
+    {
+        "codgeo": 27447,
+        "libgeo": "Le Val-Doré",
+        "an": 2021,
+        "dens_pop": 43.81
+    },
+    {
+        "codgeo": 27448,
+        "libgeo": "Pacy-sur-Eure",
+        "an": 2021,
+        "dens_pop": 227.32
+    },
+    {
+        "codgeo": 27451,
+        "libgeo": "Parville",
+        "an": 2021,
+        "dens_pop": 64.22
+    },
+    {
+        "codgeo": 27453,
+        "libgeo": "Perriers-sur-Andelle",
+        "an": 2021,
+        "dens_pop": 160.54
+    },
+    {
+        "codgeo": 27454,
+        "libgeo": "Perruel",
+        "an": 2021,
+        "dens_pop": 85.56
+    },
+    {
+        "codgeo": 27455,
+        "libgeo": "Piencourt",
+        "an": 2021,
+        "dens_pop": 19.08
+    },
+    {
+        "codgeo": 27456,
+        "libgeo": "Pinterville",
+        "an": 2021,
+        "dens_pop": 133.9
+    },
+    {
+        "codgeo": 27457,
+        "libgeo": "Piseux",
+        "an": 2021,
+        "dens_pop": 35.15
+    },
+    {
+        "codgeo": 27458,
+        "libgeo": "Pîtres",
+        "an": 2021,
+        "dens_pop": 236.0
+    },
+    {
+        "codgeo": 27459,
+        "libgeo": "Les Places",
+        "an": 2021,
+        "dens_pop": 38.95
+    },
+    {
+        "codgeo": 27460,
+        "libgeo": "Plainville",
+        "an": 2021,
+        "dens_pop": 31.88
+    },
+    {
+        "codgeo": 27462,
+        "libgeo": "Le Planquay",
+        "an": 2021,
+        "dens_pop": 40.75
+    },
+    {
+        "codgeo": 27463,
+        "libgeo": "Plasnes",
+        "an": 2021,
+        "dens_pop": 45.09
+    },
+    {
+        "codgeo": 27464,
+        "libgeo": "Le Plessis-Grohan",
+        "an": 2021,
+        "dens_pop": 109.64
+    },
+    {
+        "codgeo": 27465,
+        "libgeo": "Le Plessis-Hébert",
+        "an": 2021,
+        "dens_pop": 34.27
+    },
+    {
+        "codgeo": 27466,
+        "libgeo": "Le Plessis-Sainte-Opportune",
+        "an": 2021,
+        "dens_pop": 30.18
+    },
+    {
+        "codgeo": 27467,
+        "libgeo": "Pont-Audemer",
+        "an": 2021,
+        "dens_pop": 669.93
+    },
+    {
+        "codgeo": 27468,
+        "libgeo": "Pont-Authou",
+        "an": 2021,
+        "dens_pop": 164.57
+    },
+    {
+        "codgeo": 27469,
+        "libgeo": "Pont-de-l'Arche",
+        "an": 2021,
+        "dens_pop": 444.62
+    },
+    {
+        "codgeo": 27470,
+        "libgeo": "Pont-Saint-Pierre",
+        "an": 2021,
+        "dens_pop": 165.22
+    },
+    {
+        "codgeo": 27471,
+        "libgeo": "Porte-de-Seine",
+        "an": 2021,
+        "dens_pop": 32.0
+    },
+    {
+        "codgeo": 27472,
+        "libgeo": "Portes",
+        "an": 2021,
+        "dens_pop": 28.19
+    },
+    {
+        "codgeo": 27473,
+        "libgeo": "Port-Mort",
+        "an": 2021,
+        "dens_pop": 73.52
+    },
+    {
+        "codgeo": 27474,
+        "libgeo": "Poses",
+        "an": 2021,
+        "dens_pop": 209.26
+    },
+    {
+        "codgeo": 27475,
+        "libgeo": "La Poterie-Mathieu",
+        "an": 2021,
+        "dens_pop": 25.47
+    },
+    {
+        "codgeo": 27476,
+        "libgeo": "Les Préaux",
+        "an": 2021,
+        "dens_pop": 65.5
+    },
+    {
+        "codgeo": 27477,
+        "libgeo": "Pressagny-l'Orgueilleux",
+        "an": 2021,
+        "dens_pop": 67.57
+    },
+    {
+        "codgeo": 27478,
+        "libgeo": "Prey",
+        "an": 2021,
+        "dens_pop": 120.74
+    },
+    {
+        "codgeo": 27480,
+        "libgeo": "Puchay",
+        "an": 2021,
+        "dens_pop": 44.89
+    },
+    {
+        "codgeo": 27481,
+        "libgeo": "Pullay",
+        "an": 2021,
+        "dens_pop": 32.75
+    },
+    {
+        "codgeo": 27482,
+        "libgeo": "La Pyle",
+        "an": 2021,
+        "dens_pop": 95.29
+    },
+    {
+        "codgeo": 27483,
+        "libgeo": "Quatremare",
+        "an": 2021,
+        "dens_pop": 73.0
+    },
+    {
+        "codgeo": 27485,
+        "libgeo": "Quillebeuf-sur-Seine",
+        "an": 2021,
+        "dens_pop": 80.79
+    },
+    {
+        "codgeo": 27486,
+        "libgeo": "Quittebeuf",
+        "an": 2021,
+        "dens_pop": 48.21
+    },
+    {
+        "codgeo": 27487,
+        "libgeo": "Radepont",
+        "an": 2021,
+        "dens_pop": 41.08
+    },
+    {
+        "codgeo": 27488,
+        "libgeo": "Renneville",
+        "an": 2021,
+        "dens_pop": 31.59
+    },
+    {
+        "codgeo": 27489,
+        "libgeo": "Reuilly",
+        "an": 2021,
+        "dens_pop": 53.81
+    },
+    {
+        "codgeo": 27490,
+        "libgeo": "Richeville",
+        "an": 2021,
+        "dens_pop": 68.21
+    },
+    {
+        "codgeo": 27492,
+        "libgeo": "Romilly-la-Puthenaye",
+        "an": 2021,
+        "dens_pop": 27.2
+    },
+    {
+        "codgeo": 27493,
+        "libgeo": "Romilly-sur-Andelle",
+        "an": 2021,
+        "dens_pop": 382.0
+    },
+    {
+        "codgeo": 27495,
+        "libgeo": "La Roquette",
+        "an": 2021,
+        "dens_pop": 40.68
+    },
+    {
+        "codgeo": 27496,
+        "libgeo": "Rosay-sur-Lieure",
+        "an": 2021,
+        "dens_pop": 61.59
+    },
+    {
+        "codgeo": 27497,
+        "libgeo": "Rougemontiers",
+        "an": 2021,
+        "dens_pop": 86.0
+    },
+    {
+        "codgeo": 27498,
+        "libgeo": "Rouge-Perriers",
+        "an": 2021,
+        "dens_pop": 89.02
+    },
+    {
+        "codgeo": 27500,
+        "libgeo": "Routot",
+        "an": 2021,
+        "dens_pop": 253.03
+    },
+    {
+        "codgeo": 27501,
+        "libgeo": "Rouvray",
+        "an": 2021,
+        "dens_pop": 103.6
+    },
+    {
+        "codgeo": 27502,
+        "libgeo": "Rugles",
+        "an": 2021,
+        "dens_pop": 155.96
+    },
+    {
+        "codgeo": 27504,
+        "libgeo": "Sacquenville",
+        "an": 2021,
+        "dens_pop": 123.4
+    },
+    {
+        "codgeo": 27505,
+        "libgeo": "Saint-Agnan-de-Cernières",
+        "an": 2021,
+        "dens_pop": 21.62
+    },
+    {
+        "codgeo": 27507,
+        "libgeo": "Saint-André-de-l'Eure",
+        "an": 2021,
+        "dens_pop": 200.91
+    },
+    {
+        "codgeo": 27508,
+        "libgeo": "Saint-Antonin-de-Sommaire",
+        "an": 2021,
+        "dens_pop": 28.89
+    },
+    {
+        "codgeo": 27511,
+        "libgeo": "Saint-Aubin-d'Écrosville",
+        "an": 2021,
+        "dens_pop": 50.62
+    },
+    {
+        "codgeo": 27512,
+        "libgeo": "Saint-Aubin-de-Scellon",
+        "an": 2021,
+        "dens_pop": 23.96
+    },
+    {
+        "codgeo": 27514,
+        "libgeo": "Saint-Aubin-du-Thenney",
+        "an": 2021,
+        "dens_pop": 25.71
+    },
+    {
+        "codgeo": 27516,
+        "libgeo": "Treis-Sants-en-Ouche",
+        "an": 2021,
+        "dens_pop": 44.3
+    },
+    {
+        "codgeo": 27517,
+        "libgeo": "Saint-Aubin-sur-Gaillon",
+        "an": 2021,
+        "dens_pop": 111.59
+    },
+    {
+        "codgeo": 27518,
+        "libgeo": "Saint-Aubin-sur-Quillebeuf",
+        "an": 2021,
+        "dens_pop": 61.69
+    },
+    {
+        "codgeo": 27520,
+        "libgeo": "Saint-Benoît-des-Ombres",
+        "an": 2021,
+        "dens_pop": 39.44
+    },
+    {
+        "codgeo": 27521,
+        "libgeo": "Saint-Christophe-sur-Avre",
+        "an": 2021,
+        "dens_pop": 12.59
+    },
+    {
+        "codgeo": 27522,
+        "libgeo": "Saint-Christophe-sur-Condé",
+        "an": 2021,
+        "dens_pop": 48.11
+    },
+    {
+        "codgeo": 27524,
+        "libgeo": "Sainte-Colombe-la-Commanderie",
+        "an": 2021,
+        "dens_pop": 79.45
+    },
+    {
+        "codgeo": 27525,
+        "libgeo": "Sainte-Colombe-près-Vernon",
+        "an": 2021,
+        "dens_pop": 110.74
+    },
+    {
+        "codgeo": 27527,
+        "libgeo": "Saint-Cyr-de-Salerne",
+        "an": 2021,
+        "dens_pop": 32.19
+    },
+    {
+        "codgeo": 27528,
+        "libgeo": "Le Vaudreuil",
+        "an": 2021,
+        "dens_pop": 660.36
+    },
+    {
+        "codgeo": 27529,
+        "libgeo": "Saint-Cyr-la-Campagne",
+        "an": 2021,
+        "dens_pop": 148.62
+    },
+    {
+        "codgeo": 27530,
+        "libgeo": "Saint-Denis-d'Augerons",
+        "an": 2021,
+        "dens_pop": 18.14
+    },
+    {
+        "codgeo": 27531,
+        "libgeo": "Saint-Denis-des-Monts",
+        "an": 2021,
+        "dens_pop": 52.56
+    },
+    {
+        "codgeo": 27533,
+        "libgeo": "Saint-Denis-le-Ferment",
+        "an": 2021,
+        "dens_pop": 27.11
+    },
+    {
+        "codgeo": 27534,
+        "libgeo": "Saint-Didier-des-Bois",
+        "an": 2021,
+        "dens_pop": 159.11
+    },
+    {
+        "codgeo": 27535,
+        "libgeo": "Saint-Élier",
+        "an": 2021,
+        "dens_pop": 180.43
+    },
+    {
+        "codgeo": 27536,
+        "libgeo": "Saint-Éloi-de-Fourques",
+        "an": 2021,
+        "dens_pop": 75.42
+    },
+    {
+        "codgeo": 27537,
+        "libgeo": "Saint-Étienne-du-Vauvray",
+        "an": 2021,
+        "dens_pop": 552.5
+    },
+    {
+        "codgeo": 27538,
+        "libgeo": "Saint-Étienne-l'Allier",
+        "an": 2021,
+        "dens_pop": 47.17
+    },
+    {
+        "codgeo": 27539,
+        "libgeo": "Saint-Étienne-sous-Bailleul",
+        "an": 2021,
+        "dens_pop": 90.0
+    },
+    {
+        "codgeo": 27540,
+        "libgeo": "Sainte-Geneviève-lès-Gasny",
+        "an": 2021,
+        "dens_pop": 155.71
+    },
+    {
+        "codgeo": 27541,
+        "libgeo": "Le Mesnil-Saint-Jean",
+        "an": 2021,
+        "dens_pop": 23.59
+    },
+    {
+        "codgeo": 27542,
+        "libgeo": "Saint-Georges-du-Vièvre",
+        "an": 2021,
+        "dens_pop": 87.45
+    },
+    {
+        "codgeo": 27543,
+        "libgeo": "Saint-Georges-Motel",
+        "an": 2021,
+        "dens_pop": 175.8
+    },
+    {
+        "codgeo": 27544,
+        "libgeo": "Saint-Germain-de-Fresney",
+        "an": 2021,
+        "dens_pop": 37.74
+    },
+    {
+        "codgeo": 27545,
+        "libgeo": "Saint-Germain-de-Pasquier",
+        "an": 2021,
+        "dens_pop": 61.0
+    },
+    {
+        "codgeo": 27546,
+        "libgeo": "Saint-Germain-des-Angles",
+        "an": 2021,
+        "dens_pop": 94.44
+    },
+    {
+        "codgeo": 27547,
+        "libgeo": "Saint-Germain-la-Campagne",
+        "an": 2021,
+        "dens_pop": 39.01
+    },
+    {
+        "codgeo": 27548,
+        "libgeo": "Saint-Germain-sur-Avre",
+        "an": 2021,
+        "dens_pop": 218.89
+    },
+    {
+        "codgeo": 27550,
+        "libgeo": "Saint-Grégoire-du-Vièvre",
+        "an": 2021,
+        "dens_pop": 34.33
+    },
+    {
+        "codgeo": 27552,
+        "libgeo": "Saint-Jean-du-Thenney",
+        "an": 2021,
+        "dens_pop": 27.23
+    },
+    {
+        "codgeo": 27553,
+        "libgeo": "Saint-Julien-de-la-Liègue",
+        "an": 2021,
+        "dens_pop": 88.72
+    },
+    {
+        "codgeo": 27554,
+        "libgeo": "La Chapelle-Longueville",
+        "an": 2021,
+        "dens_pop": 167.86
+    },
+    {
+        "codgeo": 27555,
+        "libgeo": "Saint-Laurent-des-Bois",
+        "an": 2021,
+        "dens_pop": 74.24
+    },
+    {
+        "codgeo": 27556,
+        "libgeo": "Saint-Laurent-du-Tencement",
+        "an": 2021,
+        "dens_pop": 23.57
+    },
+    {
+        "codgeo": 27557,
+        "libgeo": "Saint-Léger-de-Rôtes",
+        "an": 2021,
+        "dens_pop": 72.46
+    },
+    {
+        "codgeo": 27558,
+        "libgeo": "Saint-Léger-du-Gennetey",
+        "an": 2021,
+        "dens_pop": 53.03
+    },
+    {
+        "codgeo": 27560,
+        "libgeo": "Saint-Luc",
+        "an": 2021,
+        "dens_pop": 48.24
+    },
+    {
+        "codgeo": 27561,
+        "libgeo": "Saint-Maclou",
+        "an": 2021,
+        "dens_pop": 116.96
+    },
+    {
+        "codgeo": 27562,
+        "libgeo": "Saint-Marcel",
+        "an": 2021,
+        "dens_pop": 446.67
+    },
+    {
+        "codgeo": 27563,
+        "libgeo": "Saint-Mards-de-Blacarville",
+        "an": 2021,
+        "dens_pop": 95.68
+    },
+    {
+        "codgeo": 27564,
+        "libgeo": "Saint-Mards-de-Fresne",
+        "an": 2021,
+        "dens_pop": 25.26
+    },
+    {
+        "codgeo": 27565,
+        "libgeo": "Le Lesme",
+        "an": 2021,
+        "dens_pop": 25.96
+    },
+    {
+        "codgeo": 27567,
+        "libgeo": "Sainte-Marie-de-Vatimesnil",
+        "an": 2021,
+        "dens_pop": 37.53
+    },
+    {
+        "codgeo": 27568,
+        "libgeo": "Sainte-Marthe",
+        "an": 2021,
+        "dens_pop": 28.06
+    },
+    {
+        "codgeo": 27569,
+        "libgeo": "Saint-Martin-du-Tilleul",
+        "an": 2021,
+        "dens_pop": 47.12
+    },
+    {
+        "codgeo": 27570,
+        "libgeo": "Saint-Martin-la-Campagne",
+        "an": 2021,
+        "dens_pop": 28.86
+    },
+    {
+        "codgeo": 27571,
+        "libgeo": "Saint-Martin-Saint-Firmin",
+        "an": 2021,
+        "dens_pop": 52.81
+    },
+    {
+        "codgeo": 27572,
+        "libgeo": "Saint-Meslin-du-Bosc",
+        "an": 2021,
+        "dens_pop": 191.88
+    },
+    {
+        "codgeo": 27576,
+        "libgeo": "Sainte-Opportune-du-Bosc",
+        "an": 2021,
+        "dens_pop": 79.51
+    },
+    {
+        "codgeo": 27577,
+        "libgeo": "Sainte-Opportune-la-Mare",
+        "an": 2021,
+        "dens_pop": 39.63
+    },
+    {
+        "codgeo": 27578,
+        "libgeo": "Sainte-Marie-d'Attez",
+        "an": 2021,
+        "dens_pop": 22.5
+    },
+    {
+        "codgeo": 27579,
+        "libgeo": "Saint-Ouen-de-Pontcheuil",
+        "an": 2021,
+        "dens_pop": 84.17
+    },
+    {
+        "codgeo": 27580,
+        "libgeo": "Saint-Ouen-de-Thouberville",
+        "an": 2021,
+        "dens_pop": 388.25
+    },
+    {
+        "codgeo": 27582,
+        "libgeo": "Saint-Ouen-du-Tilleul",
+        "an": 2021,
+        "dens_pop": 440.5
+    },
+    {
+        "codgeo": 27584,
+        "libgeo": "Saint-Paul-de-Fourques",
+        "an": 2021,
+        "dens_pop": 68.25
+    },
+    {
+        "codgeo": 27586,
+        "libgeo": "Saint-Philbert-sur-Boissey",
+        "an": 2021,
+        "dens_pop": 57.67
+    },
+    {
+        "codgeo": 27587,
+        "libgeo": "Saint-Philbert-sur-Risle",
+        "an": 2021,
+        "dens_pop": 61.21
+    },
+    {
+        "codgeo": 27589,
+        "libgeo": "Saint-Pierre-de-Bailleul",
+        "an": 2021,
+        "dens_pop": 154.13
+    },
+    {
+        "codgeo": 27590,
+        "libgeo": "Saint-Pierre-de-Cernières",
+        "an": 2021,
+        "dens_pop": 20.86
+    },
+    {
+        "codgeo": 27591,
+        "libgeo": "Saint-Pierre-de-Cormeilles",
+        "an": 2021,
+        "dens_pop": 33.76
+    },
+    {
+        "codgeo": 27592,
+        "libgeo": "Saint-Pierre-de-Salerne",
+        "an": 2021,
+        "dens_pop": 35.22
+    },
+    {
+        "codgeo": 27593,
+        "libgeo": "Saint-Pierre-des-Fleurs",
+        "an": 2021,
+        "dens_pop": 590.36
+    },
+    {
+        "codgeo": 27594,
+        "libgeo": "Saint-Pierre-des-Ifs",
+        "an": 2021,
+        "dens_pop": 42.74
+    },
+    {
+        "codgeo": 27595,
+        "libgeo": "Saint-Pierre-du-Bosguérard",
+        "an": 2021,
+        "dens_pop": 96.93
+    },
+    {
+        "codgeo": 27597,
+        "libgeo": "Saint-Pierre-du-Val",
+        "an": 2021,
+        "dens_pop": 48.03
+    },
+    {
+        "codgeo": 27598,
+        "libgeo": "Saint-Pierre-du-Vauvray",
+        "an": 2021,
+        "dens_pop": 287.21
+    },
+    {
+        "codgeo": 27599,
+        "libgeo": "Saint-Pierre-la-Garenne",
+        "an": 2021,
+        "dens_pop": 120.79
+    },
+    {
+        "codgeo": 27601,
+        "libgeo": "Saint-Samson-de-la-Roque",
+        "an": 2021,
+        "dens_pop": 27.52
+    },
+    {
+        "codgeo": 27602,
+        "libgeo": "Saint-Sébastien-de-Morsent",
+        "an": 2021,
+        "dens_pop": 553.0
+    },
+    {
+        "codgeo": 27603,
+        "libgeo": "Saint-Siméon",
+        "an": 2021,
+        "dens_pop": 41.87
+    },
+    {
+        "codgeo": 27604,
+        "libgeo": "Saint-Sulpice-de-Grimbouville",
+        "an": 2021,
+        "dens_pop": 35.12
+    },
+    {
+        "codgeo": 27605,
+        "libgeo": "Saint-Sylvestre-de-Cormeilles",
+        "an": 2021,
+        "dens_pop": 23.89
+    },
+    {
+        "codgeo": 27606,
+        "libgeo": "Saint-Symphorien",
+        "an": 2021,
+        "dens_pop": 125.26
+    },
+    {
+        "codgeo": 27608,
+        "libgeo": "Saint-Victor-de-Chrétienville",
+        "an": 2021,
+        "dens_pop": 75.69
+    },
+    {
+        "codgeo": 27609,
+        "libgeo": "Saint-Victor-d'Épine",
+        "an": 2021,
+        "dens_pop": 42.53
+    },
+    {
+        "codgeo": 27610,
+        "libgeo": "Saint-Victor-sur-Avre",
+        "an": 2021,
+        "dens_pop": 7.97
+    },
+    {
+        "codgeo": 27611,
+        "libgeo": "Saint-Vigor",
+        "an": 2021,
+        "dens_pop": 47.12
+    },
+    {
+        "codgeo": 27612,
+        "libgeo": "Saint-Vincent-des-Bois",
+        "an": 2021,
+        "dens_pop": 63.4
+    },
+    {
+        "codgeo": 27613,
+        "libgeo": "Saint-Vincent-du-Boulay",
+        "an": 2021,
+        "dens_pop": 56.52
+    },
+    {
+        "codgeo": 27614,
+        "libgeo": "Sancourt",
+        "an": 2021,
+        "dens_pop": 25.91
+    },
+    {
+        "codgeo": 27615,
+        "libgeo": "Sassey",
+        "an": 2021,
+        "dens_pop": 45.58
+    },
+    {
+        "codgeo": 27616,
+        "libgeo": "La Saussaye",
+        "an": 2021,
+        "dens_pop": 539.14
+    },
+    {
+        "codgeo": 27617,
+        "libgeo": "Saussay-la-Campagne",
+        "an": 2021,
+        "dens_pop": 106.2
+    },
+    {
+        "codgeo": 27618,
+        "libgeo": "Sébécourt",
+        "an": 2021,
+        "dens_pop": 31.28
+    },
+    {
+        "codgeo": 27620,
+        "libgeo": "Selles",
+        "an": 2021,
+        "dens_pop": 46.73
+    },
+    {
+        "codgeo": 27621,
+        "libgeo": "Serez",
+        "an": 2021,
+        "dens_pop": 27.94
+    },
+    {
+        "codgeo": 27622,
+        "libgeo": "Serquigny",
+        "an": 2021,
+        "dens_pop": 156.58
+    },
+    {
+        "codgeo": 27623,
+        "libgeo": "Surtauville",
+        "an": 2021,
+        "dens_pop": 111.36
+    },
+    {
+        "codgeo": 27624,
+        "libgeo": "Surville",
+        "an": 2021,
+        "dens_pop": 152.28
+    },
+    {
+        "codgeo": 27625,
+        "libgeo": "Suzay",
+        "an": 2021,
+        "dens_pop": 85.12
+    },
+    {
+        "codgeo": 27627,
+        "libgeo": "Le Theil-Nolent",
+        "an": 2021,
+        "dens_pop": 63.17
+    },
+    {
+        "codgeo": 27629,
+        "libgeo": "Thiberville",
+        "an": 2021,
+        "dens_pop": 221.62
+    },
+    {
+        "codgeo": 27630,
+        "libgeo": "Thibouville",
+        "an": 2021,
+        "dens_pop": 36.7
+    },
+    {
+        "codgeo": 27631,
+        "libgeo": "Thierville",
+        "an": 2021,
+        "dens_pop": 102.78
+    },
+    {
+        "codgeo": 27632,
+        "libgeo": "Le Thil",
+        "an": 2021,
+        "dens_pop": 143.1
+    },
+    {
+        "codgeo": 27633,
+        "libgeo": "Les Thilliers-en-Vexin",
+        "an": 2021,
+        "dens_pop": 309.38
+    },
+    {
+        "codgeo": 27635,
+        "libgeo": "Le Thuit",
+        "an": 2021,
+        "dens_pop": 47.0
+    },
+    {
+        "codgeo": 27638,
+        "libgeo": "Le Thuit de l'Oison",
+        "an": 2021,
+        "dens_pop": 241.99
+    },
+    {
+        "codgeo": 27640,
+        "libgeo": "Tilleul-Dame-Agnès",
+        "an": 2021,
+        "dens_pop": 38.04
+    },
+    {
+        "codgeo": 27641,
+        "libgeo": "Le Tilleul-Lambert",
+        "an": 2021,
+        "dens_pop": 45.52
+    },
+    {
+        "codgeo": 27643,
+        "libgeo": "Tillières-sur-Avre",
+        "an": 2021,
+        "dens_pop": 62.38
+    },
+    {
+        "codgeo": 27644,
+        "libgeo": "Tilly",
+        "an": 2021,
+        "dens_pop": 46.8
+    },
+    {
+        "codgeo": 27645,
+        "libgeo": "Tocqueville",
+        "an": 2021,
+        "dens_pop": 60.8
+    },
+    {
+        "codgeo": 27646,
+        "libgeo": "Le Torpt",
+        "an": 2021,
+        "dens_pop": 68.33
+    },
+    {
+        "codgeo": 27649,
+        "libgeo": "Touffreville",
+        "an": 2021,
+        "dens_pop": 32.43
+    },
+    {
+        "codgeo": 27650,
+        "libgeo": "Tournedos-Bois-Hubert",
+        "an": 2021,
+        "dens_pop": 57.12
+    },
+    {
+        "codgeo": 27652,
+        "libgeo": "Tourneville",
+        "an": 2021,
+        "dens_pop": 41.37
+    },
+    {
+        "codgeo": 27654,
+        "libgeo": "Tourville-la-Campagne",
+        "an": 2021,
+        "dens_pop": 134.94
+    },
+    {
+        "codgeo": 27655,
+        "libgeo": "Tourville-sur-Pont-Audemer",
+        "an": 2021,
+        "dens_pop": 67.13
+    },
+    {
+        "codgeo": 27656,
+        "libgeo": "Toutainville",
+        "an": 2021,
+        "dens_pop": 109.32
+    },
+    {
+        "codgeo": 27658,
+        "libgeo": "Le Tremblay-Omonville",
+        "an": 2021,
+        "dens_pop": 69.63
+    },
+    {
+        "codgeo": 27659,
+        "libgeo": "La Trinité",
+        "an": 2021,
+        "dens_pop": 42.0
+    },
+    {
+        "codgeo": 27660,
+        "libgeo": "La Trinité-de-Réville",
+        "an": 2021,
+        "dens_pop": 21.07
+    },
+    {
+        "codgeo": 27661,
+        "libgeo": "La Trinité-de-Thouberville",
+        "an": 2021,
+        "dens_pop": 128.48
+    },
+    {
+        "codgeo": 27662,
+        "libgeo": "Triqueville",
+        "an": 2021,
+        "dens_pop": 36.11
+    },
+    {
+        "codgeo": 27663,
+        "libgeo": "Le Troncq",
+        "an": 2021,
+        "dens_pop": 36.52
+    },
+    {
+        "codgeo": 27664,
+        "libgeo": "Le Tronquay",
+        "an": 2021,
+        "dens_pop": 27.12
+    },
+    {
+        "codgeo": 27665,
+        "libgeo": "Trouville-la-Haule",
+        "an": 2021,
+        "dens_pop": 61.8
+    },
+    {
+        "codgeo": 27666,
+        "libgeo": "La Vacherie",
+        "an": 2021,
+        "dens_pop": 74.08
+    },
+    {
+        "codgeo": 27667,
+        "libgeo": "Valailles",
+        "an": 2021,
+        "dens_pop": 74.26
+    },
+    {
+        "codgeo": 27668,
+        "libgeo": "Le Val-David",
+        "an": 2021,
+        "dens_pop": 100.0
+    },
+    {
+        "codgeo": 27669,
+        "libgeo": "Valletot",
+        "an": 2021,
+        "dens_pop": 72.59
+    },
+    {
+        "codgeo": 27670,
+        "libgeo": "Vandrimare",
+        "an": 2021,
+        "dens_pop": 148.31
+    },
+    {
+        "codgeo": 27671,
+        "libgeo": "Vannecrocq",
+        "an": 2021,
+        "dens_pop": 33.27
+    },
+    {
+        "codgeo": 27672,
+        "libgeo": "Vascœuil",
+        "an": 2021,
+        "dens_pop": 45.81
+    },
+    {
+        "codgeo": 27673,
+        "libgeo": "Vatteville",
+        "an": 2021,
+        "dens_pop": 40.93
+    },
+    {
+        "codgeo": 27674,
+        "libgeo": "Vaux-sur-Eure",
+        "an": 2021,
+        "dens_pop": 93.1
+    },
+    {
+        "codgeo": 27676,
+        "libgeo": "Les Trois Lacs",
+        "an": 2021,
+        "dens_pop": 47.73
+    },
+    {
+        "codgeo": 27677,
+        "libgeo": "Venon",
+        "an": 2021,
+        "dens_pop": 77.84
+    },
+    {
+        "codgeo": 27678,
+        "libgeo": "Les Ventes",
+        "an": 2021,
+        "dens_pop": 50.73
+    },
+    {
+        "codgeo": 27679,
+        "libgeo": "Verneuil d'Avre et d'Iton",
+        "an": 2021,
+        "dens_pop": 130.45
+    },
+    {
+        "codgeo": 27680,
+        "libgeo": "Verneusses",
+        "an": 2021,
+        "dens_pop": 11.43
+    },
+    {
+        "codgeo": 27681,
+        "libgeo": "Vernon",
+        "an": 2021,
+        "dens_pop": 703.24
+    },
+    {
+        "codgeo": 27682,
+        "libgeo": "Vesly",
+        "an": 2021,
+        "dens_pop": 52.67
+    },
+    {
+        "codgeo": 27683,
+        "libgeo": "Vézillon",
+        "an": 2021,
+        "dens_pop": 114.5
+    },
+    {
+        "codgeo": 27684,
+        "libgeo": "Le Vieil-Évreux",
+        "an": 2021,
+        "dens_pop": 72.33
+    },
+    {
+        "codgeo": 27685,
+        "libgeo": "La Vieille-Lyre",
+        "an": 2021,
+        "dens_pop": 33.57
+    },
+    {
+        "codgeo": 27686,
+        "libgeo": "Vieux-Port",
+        "an": 2021,
+        "dens_pop": 80.0
+    },
+    {
+        "codgeo": 27689,
+        "libgeo": "Villegats",
+        "an": 2021,
+        "dens_pop": 95.28
+    },
+    {
+        "codgeo": 27690,
+        "libgeo": "Villers-en-Vexin",
+        "an": 2021,
+        "dens_pop": 49.52
+    },
+    {
+        "codgeo": 27691,
+        "libgeo": "Villers-sur-le-Roule",
+        "an": 2021,
+        "dens_pop": 198.37
+    },
+    {
+        "codgeo": 27692,
+        "libgeo": "Villettes",
+        "an": 2021,
+        "dens_pop": 24.2
+    },
+    {
+        "codgeo": 27693,
+        "libgeo": "Sylvains-Lès-Moulins",
+        "an": 2021,
+        "dens_pop": 54.1
+    },
+    {
+        "codgeo": 27694,
+        "libgeo": "Villez-sous-Bailleul",
+        "an": 2021,
+        "dens_pop": 71.82
+    },
+    {
+        "codgeo": 27695,
+        "libgeo": "Villez-sur-le-Neubourg",
+        "an": 2021,
+        "dens_pop": 51.88
+    },
+    {
+        "codgeo": 27696,
+        "libgeo": "Villiers-en-Désœuvre",
+        "an": 2021,
+        "dens_pop": 60.07
+    },
+    {
+        "codgeo": 27697,
+        "libgeo": "Vironvay",
+        "an": 2021,
+        "dens_pop": 85.64
+    },
+    {
+        "codgeo": 27698,
+        "libgeo": "Vitot",
+        "an": 2021,
+        "dens_pop": 119.15
+    },
+    {
+        "codgeo": 27699,
+        "libgeo": "Voiscreville",
+        "an": 2021,
+        "dens_pop": 68.24
+    },
+    {
+        "codgeo": 27700,
+        "libgeo": "Vraiville",
+        "an": 2021,
+        "dens_pop": 106.76
+    },
+    {
+        "codgeo": 27701,
+        "libgeo": "Val-de-Reuil",
+        "an": 2021,
+        "dens_pop": 488.3
+    }
+]
