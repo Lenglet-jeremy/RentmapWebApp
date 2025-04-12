@@ -1,0 +1,384 @@
+const express = require("express");
+const cors = require("cors");
+const fs = require('fs');
+const path = require('path');
+const { spawn } = require("child_process");
+const fetch = require('node-fetch');
+require('dotenv').config();
+
+const PORT = process.env.PORT || 5000;
+const dataFolder = path.resolve(__dirname, "../Data");
+const DVFDataFolder = path.resolve(__dirname, "../Data/DVF");
+const citiesDescriptionFolder = path.resolve(__dirname, "../../RentabiliteBiensDistance/Description villes/gpt-4");
+const MAPBOX_TOKEN = process.env.MAPBOX_TOKEN;
+
+console.log(`MAPBOX_TOKEN : ${MAPBOX_TOKEN}`); // Ajoutez ce log
+
+const app = express();
+const https = require('https');
+
+const corsOptions = {
+  origin: ['http://127.0.0.1:3000', 'https://rentmapwebapp.onrender.com', 'http://127.0.0.1:5000'],
+  methods: 'GET,POST,PUT,DELETE',
+  allowedHeaders: 'Content-Type,Authorization'
+};
+
+app.use(cors(corsOptions));
+
+app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, "../Front")));
+
+app.listen(PORT, () => {
+  console.log(`Serveur en écoute sur le port ${PORT}`);
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Front", "index.html"));
+});
+
+app.get("/api/dvf", async (req, res) => {
+  const { lat, lon, dist = 500 } = req.query;
+  if (!lat || !lon) {
+    return res.status(400).json({ error: "Latitude et longitude sont obligatoires." });
+  }
+  const url = `https://api.cquest.org/dvf?lat=${lat}&lon=${lon}&dist=${dist}`;
+  https.get(url, (apiRes) => {
+    let data = '';
+    apiRes.on('data', chunk => {
+      data += chunk;
+    });
+    apiRes.on('end', () => {
+      try {
+        const parsed = JSON.parse(data);
+        res.json(parsed);
+      } catch (e) {
+        console.error("Erreur de parsing de la réponse DVF :", e);
+        res.status(500).json({ error: "Erreur lors du parsing de la réponse DVF." });
+      }
+    });
+  }).on('error', (err) => {
+    console.error("Erreur lors de la requête à api.cquest.org :", err);
+    res.status(500).json({ error: "Erreur lors de la requête à api.cquest.org" });
+  });
+});
+
+app.get('/data', (req, res) => {
+  res.json({
+    years: ['2018', '2019', '2020', '2021', '2022'],
+    prices: [3200, 3400, 3600, 3800, 4000]
+  });
+});
+
+function readAllJsonFilesWithPattern(directory, pattern) {
+  const files = fs.readdirSync(directory);
+  const results = {};
+  const filteredFiles = files.filter(file => file.endsWith(pattern) && file.endsWith('.json'));
+  filteredFiles.forEach(file => {
+    const filePath = path.join(directory, file);
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    try {
+      results[file] = JSON.parse(fileContent);
+    } catch (error) {
+      console.error(`Erreur lors du parsing du fichier ${file}:`, error);
+    }
+  });
+  return results;
+}
+
+app.get("/api/Refined", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "Refined.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/Rentabilite", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "Rentabilite.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/EvolPop", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolPopulation.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/EvolPrixImmo", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolPrixImmo.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/TauxHabitationVacants", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "TauxHabitationVacants.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/TensionLocative", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "TensionLocative.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/run-python", (req, res) => {
+  const city = req.query.city || "Rennes";
+  console.log("Ville reçue du frontend :", city);
+  if (city !== "Coordonnées non disponibles") {
+    console.log("Exécution du fichier python");
+    const pythonProcess = spawn("python", [path.join(__dirname, "APIChatGPTDescriptionVille.py"), city]);
+    let dataString = "";
+    pythonProcess.stdout.on("data", (data) => {
+      dataString += data.toString();
+    });
+    pythonProcess.stderr.on("data", (data) => {
+      console.error(`Erreur : ${data}`);
+    });
+    pythonProcess.on("close", () => {
+      try {
+        const result = JSON.parse(dataString.trim());
+        res.json(result);
+      } catch (error) {
+        res.status(500).json({ error: "Erreur lors de la récupération de la description." });
+      }
+    });
+  }
+});
+
+app.get("/api/mapbox-token", (req, res) => {
+  res.json({ accessToken: process.env.MAPBOX_TOKEN });
+});
+
+app.get("/api/departements", (req, res) => {
+  const filePath = path.join(__dirname, "public", "departements.geojson");
+  fs.readFile(filePath, "utf8", (err, data) => {
+    if (err) {
+      console.error("Erreur de lecture du fichier GeoJSON :", err);
+      return res.status(500).json({ error: "Erreur lors de la récupération du fichier GeoJSON." });
+    }
+    res.setHeader("Content-Type", "application/json");
+    res.send(data);
+  });
+});
+
+app.get("/api/communes", (req, res) => {
+  const filePath = path.join(__dirname, "public", "communes-5m.geojson");
+  fs.readFile(filePath, "utf8", (err, data) => {
+    if (err) {
+      console.error("Erreur de lecture du fichier GeoJSON :", err);
+      return res.status(500).json({ error: "Erreur lors de la récupération du fichier GeoJSON." });
+    }
+    res.setHeader("Content-Type", "application/json");
+    res.send(data);
+  });
+});
+
+app.get("/api/quartiers", (req, res) => {
+  const filePath = path.join(__dirname, "public", "iris.geojson");
+  fs.readFile(filePath, "utf8", (err, data) => {
+    if (err) {
+      console.error("Erreur de lecture du fichier GeoJSON :", err);
+      return res.status(500).json({ error: "Erreur lors de la récupération du fichier GeoJSON." });
+    }
+    res.setHeader("Content-Type", "application/json");
+    res.send(data);
+  });
+});
+
+app.get("/api/evolPopulation", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFiles(dataFolder);
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/autocomplete", async (req, res) => {
+  const query = req.query.query;
+  if (!query) return res.status(400).json({ error: "Query parameter is required" });
+  const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?access_token=${process.env.MAPBOX_TOKEN}&autocomplete=true&types=address&limit=5&country=fr&bbox=-5.1,41.3,9.7,51.1`;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    console.error("Erreur lors de la requête à Mapbox :", error);
+    res.status(500).json({ error: "Erreur lors de la requête à Mapbox" });
+  }
+});
+
+app.get("/api/OwnerShare", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "OwnerTenantShare.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/MedianIncome", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "MedianIncome.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/PopulationDensity", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "PopulationDensity.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/Unemployed", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "Unemployed.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/CitiesDescription", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(citiesDescriptionFolder, "DescriptionVille.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/InternetConnection", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "InternetConnection.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/SecuriteCriminalite", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "SecuriteCriminalite.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/LoiLittoral", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "LoiLittoral.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/Montagnes", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "Montagnes.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/StatsNationnale", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "Criminalites.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/ClimatVilles", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "ClimatVille.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/Urbanisme", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "Urbanisme.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/GrandsAxes", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "GrandsAxes.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+const multer = require("multer");
+const upload = multer({ storage: multer.memoryStorage() });
+
+app.post("/upload-json", upload.single("file"), (req, res) => {
+  if (!req.file || !req.body.filename) {
+    return res.status(400).json({ message: "Fichier ou nom de fichier manquant." });
+  }
+  const destinationPath = path.join(dataFolder, req.body.filename);
+  fs.writeFile(destinationPath, req.file.buffer, (err) => {
+    if (err) {
+      console.error("Erreur lors de l’écriture du fichier :", err);
+      return res.status(500).json({ message: "Erreur lors de l’écriture du fichier." });
+    }
+    res.json({ message: `Fichier ${req.body.filename} sauvegardé avec succès.` });
+  });
+});

@@ -1,0 +1,355 @@
+
+<div id="ResultArea" class="ResultArea">
+    <h3>LOGO</h3>
+    <div class="TypeNbPiecesSurfaceCity">
+        <p id="TypeOfPropertyValue" class="Type"></p>
+        <p>&nbsp;|&nbsp;</p>
+        <p id="NbPiecesValue" class="NbPieces"></p>
+        <p>&nbsp;|&nbsp;</p>
+        <p id="SurfaceValue" class="Surface"></p>
+        <p>&nbsp;|&nbsp;</p>
+        <p id="CityValue" class="City"></p>
+        <p>&nbsp;|&nbsp;</p>
+        <p id="neighbourhoodValue" class="neighbourhood"></p>
+    </div>
+    <div class="CostSurfaceYield">
+        <div class="FirstLine">
+            <div class="CostSquareArea">
+                <img src="" alt="">
+                <div class="CostSquare">
+                    <p>Prix d'Achat au m²</p>
+                    <p id="CostSquareValue" class="CostSquareValue"></p>
+                </div>
+            </div>
+
+            <div class="RentArea">
+                <img src="" alt="">
+                <div class="Rent">
+                    <p>Loyer au m²</p>
+                    <p id="RentValue" class="RentValue"></p>
+                </div>
+            </div>
+
+            <div class="YieldArea">
+                <img src="" alt="">
+                <div class="Yield">
+                    <p>Rendement</p>
+                    <p id="YieldValue" class="YieldValue"></p>
+                </div>
+            </div>
+
+            <div class="DVFArea">
+                <img src="" alt="">
+                <div class="DVF">
+                    <p>Valeur fonciere</p>
+                    <p id="DVFValue" class="DVFValue"></p>
+                </div>
+            </div>
+        </div>
+        <div class="FirstLineNeighbourhood">
+            <div class="CostSquareAreaNeighbourhood">
+                <img src="" alt="">
+                <div class="CostSquareNeighbourhood">
+                    <p>Prix d'Achat moyen au m² Quartier</p>
+                    <p id="CostSquareValueNeighbourhood" class="CostSquareValueNeighbourhood"></p>
+                </div>
+            </div>
+
+            <div class="RentAreaNeighbourhood">
+                <img src="" alt="">
+                <div class="RentNeighbourhood">
+                    <p>Loyer moyen au m² Quartier</p>
+                    <p id="RentValueNeighbourhood" class="RentValueNeighbourhood"></p>
+                </div>
+            </div>
+
+            <div class="YieldAreaNeighbourhood">
+                <img src="" alt="">
+                <div class="YieldNeighbourhood">
+                    <p>Rendement moyen Quartier</p>
+                    <p id="YieldValueNeighbourhood" class="YieldValueNeighbourhood"></p>
+                </div>
+            </div>
+            
+
+            <div>
+                <img src="" alt="">
+                <div>
+                    <p>Valeur a determiner </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="CityDescription">
+        <p class="CityDescriptionValue"></p>
+    </div>
+
+    <div class="SecondLine">
+            <img src="" alt="">
+            <div class="PopulationArea">
+                <p>Population</p>
+                <p id="Population" class="RentSquare"></p>
+            </div>
+
+            <img src="" alt="">
+            <div class="StudentsRateArea">
+                <p>Taux D'étudiant</p>
+                <p id="StudentsRate" class="StudentsRate"></p>
+            </div>
+
+            <img src="" alt="">
+            <div class="UnemployedRateArea">
+                <p>Taux de chômage</p>
+                <p id="UnemployedRate" class="UnemployedRate"></p>
+            </div>
+
+            <img src="" alt="">
+            <div class="MedianIncomeArea">
+                <p>Revenu Median</p>
+                <p id="MedianIncome"></p>
+            </div>
+            
+            <img src="" alt="">
+            <div class="OwnerShareArea">
+                <p>Part propriaitaire</p>
+                <p id="OwnerShare"></p>
+            </div>
+            <img src="" alt="">
+            <div class="TenantShareArea">
+                <p>Part locataire</p>
+                <p id="TenantShare"></p>
+            </div>
+
+            <img src="" alt="">
+            <div class="AgeRate">
+                <p>Age Moyen des Habitants</p>
+                <p id="AverageAge"></p>
+            </div>
+
+            <img src="" alt="">
+            <div class="PopulationDensityArea">
+                <p>Densité de population</p>
+                <p id="PopulationDensity"></p>
+            </div>
+
+    </div>
+
+
+    <div class="ThirdLine">
+
+        <div>
+            <img src="" alt="">
+            <div class="VacantsCommodationsRateArea">
+                <p>Taux d'habitation vacants</p>
+                <p id="VacantsCommodationsRate"></p>
+            </div>
+        </div>
+        <div>
+            <img src="" alt="">
+            <div class="LocativeTensionRate">
+                <p>Tension locative</p>
+                <p id="LocativeTension"></p>
+            </div>
+        </div>
+
+        <div>
+            <img src="" alt="">
+            <div class="InternetConnection">
+                <p>Qualité couverture Internet</p>
+                <p id="InternetConnection"></p>
+            </div>
+        </div>
+
+        <div>
+            <img src="" alt="">
+            <div class="LoiLittoralArea">
+                <p>Lois litorral ?</p>
+                <p id="LoiLittoral"></p>
+            </div>
+        </div>
+
+        <div>
+            <img src="" alt="">
+            <div class="ZoneMontagnesArea">
+                <p>Zone Montagneuse ?</p>
+                <p id="ZoneMontagnes"></p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="FirstLineCharts" class="FirstLineCharts">
+
+        <!-- Exemple de graphique -->
+        <div id="PopulationChart" class="Chart">
+            <canvas id="populationChartCanvas"></canvas>
+            <img id="populationChartImage" src="" alt="Population Chart">
+        </div>
+
+        <!-- Autres graphiques -->
+        <div id="LineChart" class="Chart">
+            <canvas id="lineChartCanvas"></canvas>
+            <img id="lineChartImage" src="" alt="Line Chart">
+        </div>
+
+        <div id="PrixM2Chart" class="Chart">
+            <canvas id="prixM2ChartCanvas"></canvas>
+            <img id="prixM2ChartImage" src="" alt="PrixM2 Chart">
+        </div>
+
+        <div id="SurfaceChart" class="Chart">
+            <canvas id="surfaceChartCanvas"></canvas>
+            <img id="surfaceChartImage" src="" alt="Surface Chart">
+        </div>
+
+    </div>
+    <div id="UnemployedChart" class="Chart">
+        <canvas id="UnemployedChartCanvas"></canvas>
+        <!-- <img id="unemployedChartImage" src="" alt="Unemployed Chart"> -->
+    </div>
+
+    <div id="SecuriteCriminalte">
+        <canvas id="securiteChartCanvas"></canvas>
+    </div>
+
+    
+    <div class="CityClimat">
+        <p>Climat</p>
+        <p class="CityClimatValue"></p>
+    </div>
+
+    
+
+    <div class="UrbanismeDescription">
+        <p>Urbanisme</p>
+        <p class="UrbanismeDescriptionValue"></p>
+    </div>
+
+    <div class="GrandAxesDescription">
+        <p>Grand axes</p>
+        <p class="GrandAxesDescriptionValue"></p>
+    </div>
+
+    <div class="EtudeMarcheLocalDescription">
+        <p>Etudes du marché local</p>
+        <p class="EtudeMarcheLocalDescriptionValue"></p>
+    </div>
+
+
+    <table class="PopulationRapartion">
+        <thead>
+            <tr>
+                <th colspan="8">Repartition population </th>
+            </tr>
+            <tr>
+                <th>Année</th>
+                <th>Population totale</th>
+                <th>0 - 14 ans</th>
+                <th>15-29 ans</th>
+                <th>30-44 ans</th>
+                <th>45-59 ans</th>
+                <th>60-74 ans</th>
+                <th>75 ans ou plus</th>
+            </tr>
+        </thead>
+        <tbody id="TablePopCityName">
+            <tr><td>2021</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2020</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2019</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2018</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2017</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2016</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2015</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2014</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2013</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2012</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2011</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2010</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2009</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2008</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2007</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2006</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <table class="CostEvol">
+        <thead>
+            <tr>
+                <th colspan="8">Evolution Prix immobilier</th>
+            </tr>
+            <tr>
+                <th>Année</th>
+                <th>Prix Moyen</th>
+                <th>Prix m² Moyen</th>
+                <th>Surface Moyenne</th>
+            </tr>
+        </thead>
+        <tbody id="TablePrixImmoCityName">
+            <tr><td>2023</td><td></td><td></td><td></td></tr>
+            <tr><td>2022</td><td></td><td></td><td></td></tr>
+            <tr><td>2021</td><td></td><td></td><td></td></tr>
+            <tr><td>2020</td><td></td><td></td><td></td></tr>
+            <tr><td>2019</td><td></td><td></td><td></td></tr>
+            <tr><td>2018</td><td></td><td></td><td></td></tr>
+            <tr><td>2017</td><td></td><td></td><td></td></tr>
+            <tr><td>2016</td><td></td><td></td><td></td></tr>
+            <tr><td>2015</td><td></td><td></td><td></td></tr>
+            <tr><td>2014</td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    
+    <table id="neighborhoodCostRentTable">
+        <thead>
+            <tr>
+                <th colspan="5">Prix et loyer actuel par Quartier</th>
+            </tr>
+            <tr>
+                <th>Quartier</th>
+                <th>Prix au m² appartement</th>
+                <th>Prix au m² maison</th>
+                <th>Loyer au m² appartement</th>
+                <th>Loyer au m² maison</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Ajoutez les autres quartiers ici -->
+        </tbody>
+    </table>
+    
+
+    <table id="neighborhoodPopulationTable">
+        <thead>
+            <tr>
+                <th colspan="8">Répartition population par Quartier</th>
+            </tr>
+            <tr>
+                <th>Quartier</th>
+                <th>Population</th>
+                <th>Pop 0-14 ans</th>
+                <th>Pop 15-29 ans</th>
+                <th>Pop 30-44 ans</th>
+                <th>Pop 45-59 ans</th>
+                <th>Pop 60-74 ans</th>
+                <th>Pop 75 ans ou plus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Quartier 1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Ajoutez les autres quartiers ici -->
+        </tbody>
+    </table>
+    
+
+</div>

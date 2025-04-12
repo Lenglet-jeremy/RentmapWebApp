@@ -1,0 +1,136 @@
+.ContentArea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContentArea .MapArea {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContentArea .MapArea .MapContent {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContentArea .MapArea .MapContent .ControlPanel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContentArea .MapArea .Map {
+    width: 100%;
+    height: 100%;
+}
+
+.ContentArea .Content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.ContentArea .Content .DataContent {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContentArea .Content .PrintArea {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContentArea .Content .PrintArea .PrintButton {
+    width: 100px;
+}
+
+.ContentArea .AmenityList {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.ContentArea .AmenityList.slide-out {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.ContentArea .AmenityList #amenityCheckboxes {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.ContentArea .AmenityList.hidden {
+    display: none;
+}
+
+label{
+    input{
+        margin-right: 10px;
+    }
+}
+.ContentArea .AmenityList #amenityCheckboxes label {
+    width: 200px;
+    height: 20px;
+}
+
+.AmenityList {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateX(100%); /* Initial position off-screen */
+}
+
+.AmenityList.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.AmenityList.slide-out {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.AmenityList.hidden {
+    display: none;
+}
