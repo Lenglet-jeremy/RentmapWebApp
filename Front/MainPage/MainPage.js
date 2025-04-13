@@ -108,14 +108,14 @@ showStep(currentStep);
 
 document.getElementById('PrintButton').addEventListener('click', function () {
     const resultDiv = document.getElementById('ResultArea');
+    
+    // Convert all canvases to images for printing
     const chartCanvases = resultDiv.querySelectorAll('canvas');
-
     chartCanvases.forEach((canvas) => {
         if (canvas.getContext && canvas.width > 0 && canvas.height > 0) {
             const dataUrl = canvas.toDataURL('image/png');
             const imgId = canvas.id.replace('Canvas', 'Image');
             let img = document.getElementById(imgId);
-
             if (img) {
                 img.src = dataUrl;
                 img.style.display = 'block';
@@ -132,7 +132,8 @@ document.getElementById('PrintButton').addEventListener('click', function () {
             }
         }
     });
-
+    
+    // Create print styles that handle page breaks better
     const style = document.createElement('style');
     style.type = 'text/css';
     style.id = 'print-style';
@@ -149,7 +150,40 @@ document.getElementById('PrintButton').addEventListener('click', function () {
                 left: 0;
                 top: 0;
                 width: 100%;
+                margin: 0;
+                padding: 0;
             }
+            
+            /* Handle page breaks */
+            .FirstLineCharts, #UnemployedChart, #SecuriteCriminalte, 
+            .CityDescription, .SecondLine, .ThirdLine, 
+            .CityClimat, .UrbanismeDescription, .GrandAxesDescription, 
+            .EtudeMarcheLocalDescription, table {
+                page-break-inside: avoid;
+                break-inside: avoid;
+                margin-bottom: 20px;
+            }
+            
+            /* If a chart needs to be on a new page, force it */
+            .Chart {
+                page-break-inside: avoid;
+                break-inside: avoid;
+                max-width: 100%;
+                max-height: 80vh;
+                margin-bottom: 15px;
+            }
+            
+            /* Handle tables */
+            table {
+                page-break-inside: avoid;
+                break-inside: avoid;
+                width: 100%;
+                max-width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            
+            /* Hide canvas and show images */
             canvas {
                 display: none !important;
             }
@@ -158,12 +192,19 @@ document.getElementById('PrintButton').addEventListener('click', function () {
                 max-width: 100%;
                 height: auto;
             }
+            
+            /* Add explicit page breaks before certain sections if needed */
+            .PopulationRapartion, .CostEvol, #neighborhoodCostRentTable, #neighborhoodPopulationTable {
+                page-break-before: always;
+            }
         }
     `;
     document.head.appendChild(style);
-
+    
+    // Trigger print
     window.print();
-
+    
+    // Clean up after printing
     setTimeout(() => {
         document.getElementById('print-style').remove();
         chartCanvases.forEach(canvas => {
@@ -173,10 +214,10 @@ document.getElementById('PrintButton').addEventListener('click', function () {
             if (img) {
                 img.style.display = 'none';
             }
-            const tempImages = document.querySelectorAll('.print-only-image');
-            tempImages.forEach(tempImg => {
-                tempImg.parentNode.removeChild(tempImg);
-            });
+        });
+        const tempImages = document.querySelectorAll('.print-only-image');
+        tempImages.forEach(tempImg => {
+            tempImg.parentNode.removeChild(tempImg);
         });
     }, 1000);
 });
