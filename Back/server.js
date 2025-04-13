@@ -25,6 +25,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+
 app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, "../Front")));
 
@@ -223,6 +224,8 @@ app.get("/api/autocomplete", async (req, res) => {
   const query = req.query.query;
   if (!query) return res.status(400).json({ error: "Query parameter is required" });
   const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?access_token=${process.env.MAPBOX_TOKEN}&autocomplete=true&types=address&limit=5&country=fr&bbox=-5.1,41.3,9.7,51.1`;
+  
+  console.log(`Requête Mapbox : ${url}`); // Ajoutez ce log
   try {
     const response = await fetch(url);
     if (!response.ok) {
