@@ -6,7 +6,7 @@ window.UsersInputsLon = 2.2945;
 const steps = document.querySelectorAll(".DataContent > div");
 let currentStep = 0;
 
-function InitializeSteps(){
+function InitializeSteps() {
     const resultDiv = document.getElementById("Result");
 
     const addressInput = document.getElementById("Address");
@@ -16,7 +16,7 @@ function InitializeSteps(){
             getCoordinates();
         }
     });
-    
+
     document.querySelectorAll(".NavButtons button").forEach(button => {
         button.addEventListener("click", function () {
             if (button.id === "next") {
@@ -36,21 +36,20 @@ function InitializeSteps(){
             showStep(currentStep);
         });
     });
-
 }
 
-function saveToSessionStorage(data, dataType = ""){
-    if(typeof(data) === "object" && data.length > 0){
+function saveToSessionStorage(data, dataType = "") {
+    if (typeof (data) === "object" && data.length > 0) {
         sessionStorage.setItem("OSMLatitude", data[0].lat);
         sessionStorage.setItem("OSMLongitude", data[0].lon);
         sessionStorage.setItem("OSMDisplayName", data[0].display_name);
         sessionStorage.setItem("OSMType", data[0].type);
-    } else if (typeof(data) === "string" && dataType !== ""){
+    } else if (typeof (data) === "string" && dataType !== "") {
         sessionStorage.setItem(dataType, data);
     }
 }
 
-function loadFromSessionStorage(){
+function loadFromSessionStorage() {
     // Implémentez cette fonction si nécessaire
 }
 
@@ -63,10 +62,10 @@ function showStep(index) {
 export async function getCoordinates() {
     let url = "https://nominatim.openstreetmap.org/search?format=json";
     let address = document.getElementById("Address").value.trim();
-    const radius = document.getElementById("radius") ? 
-                  parseInt(document.getElementById("radius").value) * 1000 : 50000;
-    const amenityLimit = document.getElementById("amenityLimit") ? 
-                        parseInt(document.getElementById("amenityLimit").value) : 100;
+    const radius = document.getElementById("radius") ?
+        parseInt(document.getElementById("radius").value) * 1000 : 50000;
+    const amenityLimit = document.getElementById("amenityLimit") ?
+        parseInt(document.getElementById("amenityLimit").value) : 100;
 
     saveToSessionStorage(address, "UserInputAdresse");
 
@@ -95,7 +94,6 @@ export async function getCoordinates() {
             const lon = parseFloat(data[0].lon);
             saveToSessionStorage(data);
 
-            // Passer le rayon et la limite d'amenities
             updateMap(lat, lon, radius, amenityLimit);
         } else {
             console.error("Aucune donnée trouvée pour l'adresse fournie.");
@@ -105,20 +103,80 @@ export async function getCoordinates() {
     }
 }
 
-
 InitializeSteps();
 showStep(currentStep);
 
-document.getElementById('PrintButton').addEventListener('click', function() {
-    const originalContent = document.body.innerHTML;
-    const printContent = document.getElementById('Result').innerHTML;
+document.getElementById('PrintButton').addEventListener('click', function () {
+    const resultDiv = document.getElementById('ResultArea');
+    const chartCanvases = resultDiv.querySelectorAll('canvas');
 
-    document.body.innerHTML = printContent;
+    chartCanvases.forEach((canvas) => {
+        if (canvas.getContext && canvas.width > 0 && canvas.height > 0) {
+            const dataUrl = canvas.toDataURL('image/png');
+            const imgId = canvas.id.replace('Canvas', 'Image');
+            let img = document.getElementById(imgId);
+
+            if (img) {
+                img.src = dataUrl;
+                img.style.display = 'block';
+                canvas.style.display = 'none';
+            } else {
+                img = document.createElement('img');
+                img.id = imgId;
+                img.src = dataUrl;
+                img.alt = canvas.id + " Chart";
+                img.className = "print-only-image";
+                img.style.maxWidth = "100%";
+                canvas.parentNode.insertBefore(img, canvas.nextSibling);
+                canvas.style.display = 'none';
+            }
+        }
+    });
+
+    const style = document.createElement('style');
+    style.type = 'text/css';
+    style.id = 'print-style';
+    style.innerHTML = `
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #ResultArea, #ResultArea * {
+                visibility: visible;
+            }
+            #ResultArea {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+            canvas {
+                display: none !important;
+            }
+            .Chart img, .print-only-image {
+                display: block !important;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    `;
+    document.head.appendChild(style);
 
     window.print();
 
-    document.body.innerHTML = originalContent;
-    window.location.reload();
+    setTimeout(() => {
+        document.getElementById('print-style').remove();
+        chartCanvases.forEach(canvas => {
+            canvas.style.display = 'block';
+            const imgId = canvas.id.replace('Canvas', 'Image');
+            const img = document.getElementById(imgId);
+            if (img) {
+                img.style.display = 'none';
+            }
+            const tempImages = document.querySelectorAll('.print-only-image');
+            tempImages.forEach(tempImg => {
+                tempImg.parentNode.removeChild(tempImg);
+            });
+        });
+    }, 1000);
 });
-
-
