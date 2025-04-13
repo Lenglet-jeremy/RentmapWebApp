@@ -221,21 +221,29 @@ app.get("/api/evolPopulation", (req, res) => {
 app.get("/api/autocomplete", async (req, res) => {
   const query = req.query.query;
   if (!query) return res.status(400).json({ error: "Query parameter is required" });
+  
   const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?access_token=${process.env.MAPBOX_TOKEN}&autocomplete=true&types=address&limit=5&country=fr&bbox=-5.1,41.3,9.7,51.1`;
 
-  console.log(`Requête Mapbox : ${url}`); // Ajoutez ce log
+  console.log(`Requête Mapbox : ${url}`);
 
-  try {
-    const response = await fetch(url); // Utilisez fetch de node-fetch
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    res.json(data);
-  } catch (error) {
-    console.error("Erreur lors de la requête à Mapbox :", error);
+  https.get(url, (apiRes) => {
+    let data = '';
+    apiRes.on('data', chunk => {
+      data += chunk;
+    });
+    apiRes.on('end', () => {
+      try {
+        const parsed = JSON.parse(data);
+        res.json(parsed);
+      } catch (e) {
+        console.error("Erreur de parsing de la réponse Mapbox :", e);
+        res.status(500).json({ error: "Erreur lors du parsing de la réponse Mapbox." });
+      }
+    });
+  }).on('error', (err) => {
+    console.error("Erreur lors de la requête à Mapbox :", err);
     res.status(500).json({ error: "Erreur lors de la requête à Mapbox" });
-  }
+  });
 });
 
 app.get("/api/OwnerShare", (req, res) => {
