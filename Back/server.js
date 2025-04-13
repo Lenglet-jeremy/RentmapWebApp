@@ -10,11 +10,10 @@ const PORT = process.env.PORT || 5000;
 const isRender = process.env.RENDER === "true";
 const dataRoot = isRender ? "/Data" : path.resolve(__dirname, "../Data");
 
-// Chemins dépendants du root
 const dataFolder = dataRoot;
 const DVFDataFolder = path.join(dataRoot, "DVF");
 const citiesDescriptionFolder = isRender
-  ? "/Data/citiesDescription" // ou un autre sous-dossier que tu aurais créé
+  ? "/Data/citiesDescription"
   : path.resolve(__dirname, "../../RentabiliteBiensDistance/Description villes/gpt-4");
 
 
