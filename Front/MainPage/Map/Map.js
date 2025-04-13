@@ -214,6 +214,10 @@ const defautKmRadius = 10;
 const defaultRadius = defautKmRadius * 1000;
 const amenityLimit = 10;
 
+const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
+const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
+
+
 function getSelectedAmenities() {
     const checkboxes = document.querySelectorAll('#amenityCheckboxes input[type="checkbox"]');
     const selectedAmenities = {};
@@ -252,7 +256,7 @@ async function fetchAmenities(lat, lon, radius = defaultRadius) {
 
 async function fetchMapboxToken() {
     try {
-        const response = await fetch('/api/mapbox-token');
+        const response = await fetch(`${backendUrl}/api/mapbox-token`);
         if (!response.ok) {
             throw new Error(`Erreur HTTP! Statut: ${response.status}`);
         }

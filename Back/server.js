@@ -6,14 +6,9 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
-
-const dataFolder = getPath("../Data", "/Data");
-const DVFDataFolder = getPath("../Data/DVF", "/Data/DVF");
-const citiesDescriptionFolder = getPath("../../RentabiliteBiensDistance/Description villes/gpt-4", "/Data/Description villes/gpt-4");
-
-const MAPBOX_TOKEN = process.env.MAPBOX_TOKEN;
-
-console.log(`MAPBOX_TOKEN : ${MAPBOX_TOKEN}`); // Ajoutez ce log
+const dataFolder = path.resolve(__dirname, "../Data");
+const DVFDataFolder = path.resolve(__dirname, "../Data/DVF");
+const citiesDescriptionFolder = path.resolve(__dirname, "../../RentabiliteBiensDistance/Description villes/gpt-4");
 
 const app = express();
 const https = require('https');
@@ -84,11 +79,6 @@ function readAllJsonFilesWithPattern(directory, pattern) {
     }
   });
   return results;
-}
-
-function getPath(localPath, renderPath) {
-  const isRunningOnRender = process.env.RENDER === 'true' || process.env.NODE_ENV === 'production';
-  return isRunningOnRender ? renderPath : path.resolve(__dirname, localPath);
 }
 
 app.get("/api/Refined", (req, res) => {
@@ -230,8 +220,6 @@ app.get("/api/autocomplete", async (req, res) => {
   if (!query) return res.status(400).json({ error: "Query parameter is required" });
   
   const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?access_token=${process.env.MAPBOX_TOKEN}&autocomplete=true&types=address&limit=5&country=fr&bbox=-5.1,41.3,9.7,51.1`;
-
-  console.log(`Requête Mapbox : ${url}`);
 
   https.get(url, (apiRes) => {
     let data = '';
