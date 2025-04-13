@@ -1,7 +1,7 @@
 const input = document.getElementById("Address");
 const suggestionsList = document.getElementById("Suggestion");
 const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
-const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:3000/';
+const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
 
 input.addEventListener("input", async () => {
     const query = input.value;
