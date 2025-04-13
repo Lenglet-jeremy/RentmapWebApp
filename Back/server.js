@@ -6,9 +6,17 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
-const dataFolder = path.resolve(__dirname, "../Data");
-const DVFDataFolder = path.resolve(__dirname, "../Data/DVF");
-const citiesDescriptionFolder = path.resolve(__dirname, "../../RentabiliteBiensDistance/Description villes/gpt-4");
+
+const isRender = process.env.RENDER === "true";
+const dataRoot = isRender ? "/Data" : path.resolve(__dirname, "../Data");
+
+// Chemins dépendants du root
+const dataFolder = dataRoot;
+const DVFDataFolder = path.join(dataRoot, "DVF");
+const citiesDescriptionFolder = isRender
+  ? "/Data/citiesDescription" // ou un autre sous-dossier que tu aurais créé
+  : path.resolve(__dirname, "../../RentabiliteBiensDistance/Description villes/gpt-4");
+
 
 const app = express();
 const https = require('https');
