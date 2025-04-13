@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const fs = require('fs');
 const path = require('path');
-const fetch = (await import('node-fetch')).default
+const fetch = require('node-fetch');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
