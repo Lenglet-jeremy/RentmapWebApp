@@ -1,27 +1,29 @@
-APPLICATION EN PLEIN DEVELOPPEMENT ! 
+APPLICATION EN PLEIN DÉVELOPPEMENT !
 
-Sujets en cours : 
-    Refonte Grahphique
+Sujets en cours :
+
+    Refonte graphique
+
     Optimisation des performances
 
-Sujets prochains : 
-    Reponsivité
+Sujets à venir :
 
-Pour l'heure seul les données des departement de l'Ouest sont disponible 
-    Ille-et-Vilaine,
-    Côtes-d'Armor,
-    Finistère,
-    Morbihan,
-    Loire-Atlantique,
-    Maine-et-Loire,
-    Mayenne,
-    Sarthe,
-    Vendée,
-    Calvados,
-    Eure,
-    Manche,
-    Seine-Maritime,
+    Responsivité
 
+Pour l'heure, seules les données des départements de l'Ouest sont disponibles :
+    Ille-et-Vilaine
+    Côtes-d'Armor
+    Finistère
+    Morbihan
+    Loire-Atlantique
+    Maine-et-Loire
+    Mayenne
+    Sarthe
+    Vendée
+    Calvados
+    Eure
+    Manche
+    Seine-Maritime
 
-Lien vers le site : 
-    https://rentmapwebapp.onrender.com 
+Lien vers le site :
+    https://rentmapwebapp.onrender.com
