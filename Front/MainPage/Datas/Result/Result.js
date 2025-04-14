@@ -3,17 +3,17 @@ const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http:/
 
 function normalizeString(str) {
     return str
-        ? str.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Supprime les accents
+        ? str.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
         : "";
 }
 
 function normalizeAddress(address) {
     return address
         .toUpperCase()
-        .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // supprime accents
-        .replace(/'/g, " ")                              // remplace les apostrophes par des espaces
-        .replace(/[^A-Z0-9\s]/g, "")                     // supprime ponctuation
-        .replace(/\s+/g, " ")                            // normalise espaces
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
+        .replace(/'/g, " ")                              
+        .replace(/[^A-Z0-9\s]/g, "")                     
+        .replace(/\s+/g, " ")                            
         .trim();
 }
 
