@@ -379,7 +379,7 @@ app.get("/api/GrandsAxes", (req, res) => {
 
 const multer = require("multer");
 const upload = multer({ storage: multer.memoryStorage() });
-const UPLOAD_PASSWORD = process.env.UPLOAD_PASSWORD || "MonSuperMotDePasse";
+const UPLOAD_PASSWORD = process.env.UPLOAD_PASSWORD;
 
 app.post("/upload-json", upload.single("file"), (req, res) => {
   const password = req.headers["x-upload-password"];
