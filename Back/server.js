@@ -379,8 +379,12 @@ app.get("/api/GrandsAxes", (req, res) => {
 
 const multer = require("multer");
 const upload = multer({ storage: multer.memoryStorage() });
+<<<<<<< HEAD
 const UPLOAD_PASSWORD = process.env.UPLOAD_PASSWORD;
+=======
+>>>>>>> 8d4c162 (Fix fetch dept, city, neighborhood)
 
+const UPLOAD_PASSWORD = process.env.UPLOAD_PASSWORD;
 app.post("/upload-json", upload.single("file"), (req, res) => {
   const password = req.headers["x-upload-password"];
   if (password !== UPLOAD_PASSWORD) {

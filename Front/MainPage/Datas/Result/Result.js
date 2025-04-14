@@ -1231,22 +1231,26 @@ async function fetchLoiLittoralData(department, city) {
     }
 }
 
-async function fetchNeighbourhood() {
+async function fetchDepartmentCityNeighborhood() {
     // 3 Rue De L'horloge, 35000 Rennes, France
     const address = document.getElementById("Address").value;
     
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
+        console.log(`https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
+        
         const data = await response.json();
 
-        if (data.length === 0 || !data[0].address || !data[0].address.suburb) {
-            return null; // Aucun résultat ou pas de "suburb"
-        }
-
-        const suburb = data[0].address.suburb;
-        const parts = suburb.split('-');
-        return parts[parts.length - 1].trim();
+        const departement = data[0].address.county;
+        
+        const city = data[0].address.city || "";
+        const suburb = data[0].address.suburb || "";
+        const parts = suburb.split('-') || "";
+        console.log([departement, city, parts[parts.length - 1].trim() || ""]);
+        
+        
+        return [departement, city, parts[parts.length - 1].trim() || ""]
     } catch (error) {
         console.error("Erreur lors de la récupération du quartier :", error);
         return null;
@@ -1280,11 +1284,8 @@ async function fetchZoneMontagnesData(department, city) {
 }
 
 export async function updateValues() {
-    const lat = sessionStorage.getItem("OSMLatitude");
-    const lon = sessionStorage.getItem("OSMLongitude");
-
-    const city = await getCityFromCoords(lat, lon);
-    const department = await getDepartementFromCoordinates(lat, lon);
+    let city = "";
+    let department = ""
 
     let typeOfPropertyValue = document.getElementById("TypeOfPropertyValue");
     let nbPiecesValue = document.getElementById("NbPiecesValue");
@@ -1320,11 +1321,11 @@ export async function updateValues() {
     let UrbanismeDescriptionValue = document.querySelector(".UrbanismeDescriptionValue");
     let GrandAxesDescriptionValue = document.querySelector(".GrandAxesDescriptionValue");
 
+    [department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
     cityValue.innerText = city;
     typeOfPropertyValue.innerText = sessionStorage.getItem("propertyType") || "Non spécifié";
     nbPiecesValue.innerText = (sessionStorage.getItem("PiecesNumberUsersInputValue") || "0") + " Pièces";
     surfaceValue.innerText = (sessionStorage.getItem("SurfaceUserInputValue") || "0") + " M²";
-    neighbourhoodValue.innerText = await fetchNeighbourhood();
 
     const data = await fetchRentabiliteData(department, city, typeOfPropertyValue.innerText);
 
@@ -1333,6 +1334,8 @@ export async function updateValues() {
     yieldValue.innerText = (data.yield * 100).toFixed(2) + " %";
 
     // Fetch neighborhood-specific data
+    console.log(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
+    
     const neighborhoodCost = await fetchNeighborhoodCostData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
     const neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
 
@@ -1379,7 +1382,7 @@ export async function updateValues() {
     fillNeighborhoodCostRentTable(department, city);
     fillNeighborhoodPopulationTable(department, city);
 
-    fetchDVFData();
+    // fetchDVFData();
 }
 
 updateValues();
