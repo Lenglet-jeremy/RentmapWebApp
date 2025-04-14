@@ -379,11 +379,18 @@ app.get("/api/GrandsAxes", (req, res) => {
 
 const multer = require("multer");
 const upload = multer({ storage: multer.memoryStorage() });
+const UPLOAD_PASSWORD = process.env.UPLOAD_PASSWORD || "MonSuperMotDePasse";
 
 app.post("/upload-json", upload.single("file"), (req, res) => {
+  const password = req.headers["x-upload-password"];
+  if (password !== UPLOAD_PASSWORD) {
+    return res.status(403).json({ message: "Mot de passe invalide." });
+  }
+
   if (!req.file || !req.body.filename) {
     return res.status(400).json({ message: "Fichier ou nom de fichier manquant." });
   }
+
   const destinationPath = path.join(dataFolder, req.body.filename);
   fs.writeFile(destinationPath, req.file.buffer, (err) => {
     if (err) {
