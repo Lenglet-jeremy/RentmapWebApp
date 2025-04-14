@@ -17,46 +17,6 @@ function normalizeAddress(address) {
         .trim();
 }
 
-async function getCityFromCoords(lat, lon) {
-    if (!lat || !lon) return "Coordonnées non disponibles";
-
-    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`;
-
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-
-        return (
-            data.address.city ||
-            data.address.town ||
-            data.address.village ||
-            data.address.municipality ||
-            "Ville non trouvée"
-        );
-    } catch (error) {
-        console.error("Erreur :", error);
-        return "Erreur lors de la récupération";
-    }
-}
-
-async function getDepartementFromCoordinates(latitude, longitude) {
-    const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`;
-
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-
-        if (data.address && data.address['county']) {
-            return data.address['county'];
-        } else {
-            return "Département non trouvé";
-        }
-    } catch (error) {
-        console.error("Erreur lors de la récupération des données :", error);
-        return "Erreur lors de la récupération des données";
-    }
-}
-
 async function fetchNeighborhoodCostRentData(department, city) {
     try {
         const response = await fetch(`${backendUrl}/api/Refined`);
