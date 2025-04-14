@@ -25,5 +25,7 @@ Pour l'heure, seules les données des départements de l'Ouest sont disponibles 
     Manche
     Seine-Maritime
 
+Pour une visualisation complète des données (climat, urbanisme, Granaxes), ciblez la ville de Rennes.
+
 Lien vers le site :
     https://rentmapwebapp.onrender.com
