@@ -1192,7 +1192,6 @@ async function fetchLoiLittoralData(department, city) {
 }
 
 async function fetchDepartmentCityNeighborhood() {
-    // 3 Rue De L'horloge, 35000 Rennes, France
     const address = document.getElementById("Address").value;
     
     try {
