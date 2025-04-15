@@ -1202,7 +1202,7 @@ async function fetchDepartmentCityNeighborhood() {
         
         const data = await response.json();
 
-        const departement = data[0].address.county;
+        const departement = data[0].address.county  || "";
         
         const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
         const city = data[0].address.municipality || "";
