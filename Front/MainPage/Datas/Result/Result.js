@@ -1204,13 +1204,14 @@ async function fetchDepartmentCityNeighborhood() {
 
         const departement = data[0].address.county;
         
-        const city = data[0].address.city || "";
+        const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
+        const city = data[0].address.municipality || "";
         const suburb = data[0].address.suburb || "";
         const parts = suburb.split('-') || "";
-        console.log([departement, city, parts[parts.length - 1].trim() || ""]);
+        console.log([departmentCode, departement, city, parts[parts.length - 1].trim() || ""]);
         
         
-        return [departement, city, parts[parts.length - 1].trim() || ""]
+        return [departmentCode, departement, city, parts[parts.length - 1].trim() || ""]
     } catch (error) {
         console.error("Erreur lors de la récupération du quartier :", error);
         return null;
@@ -1246,6 +1247,7 @@ async function fetchZoneMontagnesData(department, city) {
 export async function updateValues() {
     let city = "";
     let department = ""
+    let departmentCode = ""
 
     let typeOfPropertyValue = document.getElementById("TypeOfPropertyValue");
     let nbPiecesValue = document.getElementById("NbPiecesValue");
@@ -1281,7 +1283,7 @@ export async function updateValues() {
     let UrbanismeDescriptionValue = document.querySelector(".UrbanismeDescriptionValue");
     let GrandAxesDescriptionValue = document.querySelector(".GrandAxesDescriptionValue");
 
-    [department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
+    [departmentCode, department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
     cityValue.innerText = city;
     typeOfPropertyValue.innerText = sessionStorage.getItem("propertyType") || "Non spécifié";
     nbPiecesValue.innerText = (sessionStorage.getItem("PiecesNumberUsersInputValue") || "0") + " Pièces";
@@ -1293,8 +1295,6 @@ export async function updateValues() {
     RentValue.innerText = (Number(data.rentPerSquareMeter)).toLocaleString("fr-FR") + " €";
     yieldValue.innerText = (data.yield * 100).toFixed(2) + " %";
 
-    // Fetch neighborhood-specific data
-    console.log(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
     
     const neighborhoodCost = await fetchNeighborhoodCostData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
     const neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
