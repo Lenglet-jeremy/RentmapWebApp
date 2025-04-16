@@ -26,6 +26,3 @@ Pour l'heure, seules les données des départements de l'Ouest sont disponibles 
     Seine-Maritime
 
 Pour une visualisation complète des données (Climat, Urbanisme, Grands axes), ciblez la ville de Rennes.
-
-Lien vers le site :
-    https://rentmapwebapp.onrender.com
