@@ -427,3 +427,108 @@ table{
 .neighborhoodPopulationTable{
     margin-top: 50px;
 }
+
+
+
+.TableauRentabilite {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--backgroundColor);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    div{
+        color: var(--policyColor);
+    }
+
+    .mainTitle {
+        background-color: var(--backgroundColor);
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #000;
+        margin-bottom: 10px;
+    }
+    .caseTitle {
+        background-color: var(--backgroundColor);
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #000;
+        margin-bottom: 10px;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .section {
+        border: 1px solid #000;
+        flex: 1;
+        min-width: 300px;
+        margin-bottom: 10px;
+    }
+    .sectionTitle {
+        background-color: var(--backgroundColor);
+        padding: 8px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+    .row {
+        display: flex;
+        border-bottom: 1px solid #ddd;
+    }
+    .row:last-child {
+        border-bottom: none;
+    }
+    .label {
+        padding: 8px;
+        flex: 3;
+    }
+    .value {
+        padding: 8px;
+        flex: 1;
+        text-align: right;
+    }
+    .unit {
+        padding: 8px;
+        width: 40px;
+        text-align: center;
+    }
+    .highlight {
+    }
+    .red {
+        color: red;
+    }
+    .meuble {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #e51e25;
+        margin: 20px 0;
+        border: 2px solid #e51e25;
+        padding: 10px;
+    }
+    .part2 {
+        margin-top: 20px;
+    }
+    .fullWidth {
+        width: 100%;
+    }
+    input[type="number"], input[type="text"] {
+        width: 90%;
+        padding: 5px;
+        text-align: right;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+    select {
+        width: 100%;
+        padding: 5px;
+    }
+    .typeSelect {
+        width: 100%;
+        margin-top: 5px;
+    }
+}

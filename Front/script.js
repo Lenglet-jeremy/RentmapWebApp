@@ -25,6 +25,7 @@ async function loadAllHTML() {
     await loadHTML('./MainPage/Datas/UsersInputs/Step2/Step2.html', 'Step2');
     await loadHTML('./MainPage/Datas/UsersInputs/Step3/Step3.html', 'Step3');
     await loadHTML('./MainPage/Datas/UsersInputs/Step4/Step4.html', 'Step4');
+    await loadHTML('./MainPage/Datas/UsersInputs/Step5/Step5.html', 'Step5');
     await loadHTML('./MainPage/Datas/Result/Result.html', 'Result');
 
     // Import the JavaScript files
@@ -32,6 +33,7 @@ async function loadAllHTML() {
     await import('./MainPage/Datas/UsersInputs/Step2/Step2.js');
     await import('./MainPage/Datas/UsersInputs/Step3/Step3.js');
     await import('./MainPage/Datas/UsersInputs/Step4/Step4.js');
+    await import('./MainPage/Datas/UsersInputs/Step5/Step5.js');
     await import('./MainPage/Map/Map.js');
     await import('./MainPage/MainPage.js');
     await import('./MainPage/Datas/Result/Result.js');

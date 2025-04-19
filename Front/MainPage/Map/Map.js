@@ -299,7 +299,8 @@ async function initializeMap() {
 
     map = new mapboxgl.Map({
         container: 'Map',
-        style: 'mapbox://styles/mapbox/streets-v12',
+        // style: 'mapbox://styles/mapbox/streets-v12',
+        style: 'mapbox://styles/mapbox/dark-v11',
         center: [defaultLongitude, defaultLatitude],
         zoom: 8
     });

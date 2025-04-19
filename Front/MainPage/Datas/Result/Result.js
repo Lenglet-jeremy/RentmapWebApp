@@ -47,7 +47,6 @@ async function fetchNeighborhoodCostData(department, city, neighborhood, typeOfP
         const data = await response.json();
         
 
-        // 3 Rue De L'horloge, 35000 Rennes, France
         for (const key in data) {
             if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
                 for (const collection of data[key]) {
@@ -74,7 +73,6 @@ async function fetchNeighborhoodRentData(department, city, neighborhood, typeOfP
         const data = await response.json();
         
 
-        // 3 Rue De L'horloge, 35000 Rennes, France
         for (const key in data) {
             if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
                 for (const collection of data[key]) {
@@ -294,7 +292,6 @@ async function fetchDVFData() {
         const response = await fetch(`${backendUrl}/api/DVFData/35`);
         const data = await response.json();
 
-        // Ex : 3 Rue De L'horloge, 35000 Rennes, France
         data.forEach((item, index) => {
             if( normalizeAddress(address).includes(item["No voie"]) && 
                 normalizeAddress(address).includes(item["Type de voie"]) && 
@@ -330,7 +327,6 @@ async function fetchPopulationData(department, cityName) {
                     
                     if (normalizeString(collection["Libelle commune ou ARM"]) === normalizeString(cityName)) {
                         const year = collection["Annee"];
-
                         if (!populationByYear[year]) {
                             populationByYear[year] = {
                                 totalPopulation: 0,
@@ -354,6 +350,7 @@ async function fetchPopulationData(department, cityName) {
             }
         }
 
+
         return populationByYear;
     } catch (error) {
         console.error('Erreur lors de la récupération des données de population:', error);
@@ -363,6 +360,7 @@ async function fetchPopulationData(department, cityName) {
 
 async function fillPopulationTable(department, cityName) {
     const populationData = await fetchPopulationData(department, cityName);
+    
     const tableBody = document.getElementById("TablePopCityName");  
     
 
@@ -386,7 +384,7 @@ async function fillPopulationTable(department, cityName) {
     let firstRow = document.querySelector("tbody tr") || document.querySelector("tr"); 
     let cells = firstRow.querySelectorAll("td");
 
-    let data = Array.from(cells).map(cell => cell.textContent.replace(/\s/g, '')).map(Number);
+    let data = Array.from(cells).map(cell => cell.textContent.replace(/\s/g, '').replace(",","")).map(Number);
 
     if (data.length < 8) {
         console.error("Format inattendu des données !");
@@ -398,6 +396,7 @@ async function fillPopulationTable(department, cityName) {
 
         let sommePonderee = effectifs.reduce((sum, effectif, index) => sum + effectif * agesMoyens[index], 0);
         let ageMoyen = sommePonderee / populationTotale;
+        
 
         document.getElementById("AverageAge").textContent = ageMoyen.toFixed(2) + " ans";
         // document.getElementById("AverageAge").textContent = Math.round(ageMoyen) + " ans";
@@ -1197,7 +1196,6 @@ async function fetchDepartmentCityNeighborhood() {
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
-        console.log(`https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
         
         const data = await response.json();
 
@@ -1207,7 +1205,6 @@ async function fetchDepartmentCityNeighborhood() {
         const city = data[0].address.municipality || "";
         const suburb = data[0].address.suburb || "";
         const parts = suburb.split('-') || "";
-        console.log([departmentCode, departement, city, parts[parts.length - 1].trim() || ""]);
         
         
         return [departmentCode, departement, city, parts[parts.length - 1].trim() || ""]
@@ -1241,6 +1238,189 @@ async function fetchZoneMontagnesData(department, city) {
         console.error('Erreur lors de la récupération des données de part propriaitaire:', error);
         return "";
     }
+}
+
+function TableauFinancier() {
+    // ======================= RÉCUPÉRATION DES VALEURS UTILISATEUR =======================
+    // Projet
+    const prixAchat = parseFloat(document.getElementById('projetPrixAchat').value) || 0;
+    const travaux = parseFloat(document.getElementById('projetTravaux').value) || 0;
+    
+    // Financement
+    const dureeCredit = parseFloat(document.getElementById('financementDureeCredit').value) || 25;
+    
+    // Charges annuelles
+    const chargesCopro = parseFloat(document.getElementById('chargesChargesCopro').value) || 0;
+    const taxeFonciere = parseFloat(document.getElementById('chargesTaxeFonciere').value) || 0;
+    const assurance = parseFloat(document.getElementById('chargesAssurance').value) || 0;
+    const fraisDivers = parseFloat(document.getElementById('chargesFraisDivers').value) || 0;
+    
+    // Loyers prévisionnels HC
+    const loyer1 = parseFloat(document.getElementById('loyersLoyer1').value) || 0;
+    const typeLoyer1 = document.getElementById('loyersTypeLoyer1').value;
+    const loyer2 = parseFloat(document.getElementById('loyersLoyer2').value) || 0;
+    const typeLoyer2 = document.getElementById('loyersTypeLoyer2').value;
+    const loyer3 = parseFloat(document.getElementById('loyersLoyer3').value) || 0;
+    const typeLoyer3 = document.getElementById('loyersTypeLoyer3').value;
+    
+    // Données additionnelles
+    const honorairesChasseur = parseFloat(document.getElementById('donneesHonorairesChasseur').value) || 0;
+    const meuble = parseFloat(document.getElementById('donneesMeuble').value) || 0;
+    const apportPersonnel = parseFloat(document.getElementById('donneesApportPersonnel').value) || 0;
+    const taeg = (parseFloat(document.getElementById('donneesTaeg').value) || 0) / 100;
+    
+    // ===================================================================
+
+    // =========================== VALEURS FIXES ==========================
+    // Temps d'amortissements (récupération des valeurs affichées ou définition des valeurs par défaut)
+    const amortMursAns = parseFloat(document.getElementById('TableauRentabiliteValueAmortMurs').innerText) || 20;
+    const amortTravauxAns = parseFloat(document.getElementById('TableauRentabiliteValueAmortTravaux').innerText) || 10;
+    const amortMeublesAns = parseFloat(document.getElementById('TableauRentabiliteValueAmortMeubles').innerText) || 5;
+    // ===================================================================
+
+    // Mise à jour des valeurs dans le tableau de résultats
+    
+    // Section Projet
+    document.getElementById('TableauRentabiliteValuePrixAchat').innerText = prixAchat;
+    
+    // Notaire (8% du prix d'achat)
+    const notaire = prixAchat * 0.08;
+    document.getElementById('TableauRentabiliteValueNotaire').innerText = notaire.toFixed(0);
+    
+    // Travaux
+    document.getElementById('TableauRentabiliteValueTravaux').innerText = travaux;
+    
+    // Total du projet
+    const totalProjet = prixAchat + notaire + travaux;
+    document.getElementById('TableauRentabiliteValueProjetTotal').innerText = totalProjet.toFixed(0);
+    
+    // Section Loyers
+    document.getElementById('TableauRentabiliteValueLoyer1').innerText = loyer1;
+    document.getElementById('TableauRentabiliteValueLoyer2').innerText = loyer2;
+    document.getElementById('TableauRentabiliteValueLoyer3').innerText = loyer3;
+    
+    // Total des loyers
+    const totalLoyers = loyer1 + loyer2 + loyer3;
+    document.getElementById('TableauRentabiliteValueTotalLoyers').innerText = totalLoyers;
+    
+    // Section Financement
+    // Total emprunt (90% du total projet + honoraires + meubles)
+    const totalEmprunt = (totalProjet + honorairesChasseur + meuble) - apportPersonnel;
+    document.getElementById('TableauRentabiliteValueTotalEmprunt').innerText = totalEmprunt.toFixed(0);
+    
+    // Durée du crédit
+    document.getElementById('TableauRentabiliteValueDureeCredit').innerText = dureeCredit;
+    const duree = document.getElementById('TableauRentabiliteValueDuree').innerText = dureeCredit * 12;
+    
+    // Tx Per/mois    
+    document.getElementById('TableauRentabiliteValueTxPerMois').innerText = (taeg / 12 * 100).toFixed(2);
+    
+    // Mensualité de crédit
+    const mensualite = totalEmprunt * (taeg / 12) / (1 - Math.pow(1 + taeg / 12, -12 * dureeCredit));
+    document.getElementById('TableauRentabiliteValueMensualite').innerText = mensualite.toFixed(2);
+    
+    // Amortissement du capital mensuel
+    const amortKMensuel = totalEmprunt / (dureeCredit * 12);
+    document.getElementById('TableauRentabiliteValueAmortKMensuel').innerText = amortKMensuel.toFixed(2);
+    
+    // Intérêt mensuel
+    const interetMensuel = mensualite - amortKMensuel;
+    document.getElementById('TableauRentabiliteValueInteretMensuel').innerText = interetMensuel.toFixed(2);
+    
+    // Section Charges
+    document.getElementById('TableauRentabiliteValueChargesCopro').innerText = chargesCopro;
+    document.getElementById('TableauRentabiliteValueTaxeFonciere').innerText = taxeFonciere;
+    document.getElementById('TableauRentabiliteValueAssurance').innerText = assurance;
+    document.getElementById('TableauRentabiliteValueFraisDivers').innerText = fraisDivers;
+    
+    // Total mensuel des charges
+    const totalChargesMensuel = (chargesCopro + taxeFonciere + assurance + fraisDivers) / 12;
+    document.getElementById('TableauRentabiliteValueTotalMensuel').innerText = totalChargesMensuel.toFixed(2);
+    
+    // Section Impôts
+    // Amortissements
+    const amortMeublesMensuel = meuble / amortMeublesAns / 12;
+    document.getElementById('TableauRentabiliteValueAmortMeublesMontant').innerText = amortMeublesMensuel.toFixed(4);
+    
+    const amortMursMensuel = prixAchat * 0.8 / amortMursAns / 12;
+    document.getElementById('TableauRentabiliteValueAmortMursMontant').innerText = amortMursMensuel.toFixed(4);
+    
+    // Amortissement des travaux (10ans)
+    const amortTravauxMensuel = totalProjet / amortTravauxAns / 12;
+    document.getElementById('TableauRentabiliteValueAmortTravauxMontant').innerText = amortTravauxMensuel.toFixed(2);
+    
+    // Intérêts totaux
+    const interetsTotaux = totalEmprunt - (prixAchat + totalProjet);
+    document.getElementById('TableauRentabiliteValueInteretsTotaux').innerText = interetsTotaux.toFixed(0);
+    
+    // Intérêt mensuel part 2    
+    document.getElementById('TableauRentabiliteValueInteretMensuelPart2').innerText =  interetsTotaux / duree;
+    
+    // Amortissement des intérêts (29%)
+    const amortInterets = 0.29 * (interetsTotaux / duree);
+    document.getElementById('TableauRentabiliteValueAmortInterets').innerText = amortInterets.toFixed(0);
+    
+    // Base d'imposition au Réel
+    const baseImposition = totalLoyers - (totalChargesMensuel + amortMursMensuel + amortInterets + amortTravauxMensuel );
+    document.getElementById('TableauRentabiliteValueBaseImposition').innerText = baseImposition.toFixed(0);
+    
+    // Impôt 30%
+    const impot = baseImposition * 0.3;
+    document.getElementById('TableauRentabiliteValueImpot').innerText = impot.toFixed(0);
+    
+    // Prélèvements sociaux
+    const csg = 0.099 * baseImposition;
+    document.getElementById('TableauRentabiliteValueCSG').innerText = csg.toFixed(2);
+    
+    const crds = 0.005 * baseImposition;
+    document.getElementById('TableauRentabiliteValueCRDS').innerText = crds.toFixed(2);
+    
+    const prelevSocial = 0.045 * baseImposition;
+    document.getElementById('TableauRentabiliteValuePrelevSocial').innerText = prelevSocial.toFixed(2);
+    
+    const contribAdd = 0.003 * baseImposition;
+    document.getElementById('TableauRentabiliteValueContribAdd').innerText = contribAdd.toFixed(2);
+    
+    const prelevSolidarite = 0.02 * baseImposition;
+    document.getElementById('TableauRentabiliteValuePrelevSolidarite').innerText = prelevSolidarite.toFixed(2);
+    
+    const totalImpotsSociaux = csg + crds + prelevSocial + contribAdd + prelevSolidarite;
+    document.getElementById('TableauRentabiliteValueTotalImpotSociaux').innerText = totalImpotsSociaux.toFixed(2);
+    
+    // Section Cashflow
+    // Cashflow brut
+    const cashflowBrut = totalLoyers - mensualite;
+    document.getElementById('TableauRentabiliteValueCashflowBrut').innerText = cashflowBrut.toFixed(0);
+    
+    // Cashflow net net
+    const cashflowNetNet = cashflowBrut - totalChargesMensuel - impot - totalImpotsSociaux;
+    document.getElementById('TableauRentabiliteValueCashflowNetNet').innerText = cashflowNetNet.toFixed(0);
+    
+    // Informations supplémentaires
+    document.getElementById('TableauRentabiliteValueHonorairesChasseur').innerText = honorairesChasseur;
+    document.getElementById('TableauRentabiliteValueMeuble').innerText = meuble;
+    document.getElementById('TableauRentabiliteValueApportPersonnel').innerText = apportPersonnel;
+    
+    document.getElementById('TableauRentabiliteValueTaeg').innerText = (taeg * 100).toFixed(2);
+    
+    // Bénéfice mensuel net (cashflow net net + amortissement capital)
+    const beneficeMensuelNet = cashflowNetNet + amortKMensuel;
+    document.getElementById('TableauRentabiliteValueBeneficeMensuelNet').innerText = beneficeMensuelNet.toFixed(0);
+    
+    // Bénéfice annuel net
+    const beneficeAnnuelNet = beneficeMensuelNet * 12;
+    document.getElementById('TableauRentabiliteValueBeneficeAnnuelNet').innerText = beneficeAnnuelNet.toFixed(0);
+    
+    // Rentabilité brute annuelle    
+    const rentabiliteBrute = totalLoyers * 12 / totalEmprunt * 100;
+    document.getElementById('TableauRentabiliteValueRentabiliteBruteAnnuelle').innerText = rentabiliteBrute.toFixed(2);
+    
+    // TRI (version simplifiée)
+    const tri = beneficeAnnuelNet / totalEmprunt * 0.11 * Math.pow(10 , 4);
+    document.getElementById('TableauRentabiliteValueTriAnnuel').innerText = tri.toFixed(2);
+    
+    // Loyer annuel
+    document.getElementById('TableauRentabiliteValueLoyerAnnuel').innerText = (totalLoyers * 4).toFixed(0);
 }
 
 export async function updateValues() {
@@ -1338,6 +1518,10 @@ export async function updateValues() {
 
     fillPopulationTable(department, city);
     fillPrixImmoTable(department, city);
+
+    TableauFinancier()
+    
+
     fillNeighborhoodCostRentTable(department, city);
     fillNeighborhoodPopulationTable(department, city);
 

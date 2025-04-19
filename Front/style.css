@@ -5,8 +5,13 @@
 
 :root {
     --backgroundColor : #ffffff;
-    --color : #000000;
+    --color : #ffffff;
     --policyColor : #000000;
+}
+
+.TableauRentabilitehighlight{
+    color: #000000;
+    background-color: #adadad;
 }
 
 h3 {

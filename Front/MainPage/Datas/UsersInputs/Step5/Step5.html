@@ -1,0 +1,116 @@
+<div id="locationMeubleeForm">
+    <div class="section">
+        <h2>Projet</h2>
+        <div class="formGroup">
+            <label for="projetPrixAchat">Prix d'achat</label>
+            <input type="number" id="projetPrixAchat" name="prixAchat" class="inputField">
+            <span>€</span>
+        </div>
+        <div class="formGroup">
+            <label for="projetTravaux">Travaux</label>
+            <input type="number" id="projetTravaux" name="travaux" class="inputField">
+            <span>€</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Financement</h2>
+        <div class="formGroup">
+            <label for="financementDureeCredit">Durée du crédit</label>
+            <input type="number" id="financementDureeCredit" name="dureeCredit" class="inputField">
+            <span>ans</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Charges annuelles</h2>
+        <div class="formGroup">
+            <label for="chargesChargesCopro">Charges de copropriétés</label>
+            <input type="number" id="chargesChargesCopro" name="chargesCopro" class="inputField">
+            <span>€</span>
+        </div>
+        <div class="formGroup">
+            <label for="chargesTaxeFonciere">Taxe foncière</label>
+            <input type="number" id="chargesTaxeFonciere" name="taxeFonciere" class="inputField">
+            <span>€</span>
+        </div>
+        <div class="formGroup">
+            <label for="chargesAssurance">Assurance</label>
+            <input type="number" id="chargesAssurance" name="assurance" class="inputField">
+            <span>€</span>
+        </div>
+        <div class="formGroup">
+            <label for="chargesFraisDivers">Frais divers</label>
+            <input type="number" id="chargesFraisDivers" name="fraisDivers" class="inputField">
+            <span>€</span>
+        </div>
+    </div>
+
+    <div class="section Loyerprevisionnels">
+        <h2>Loyers prévisionnels HC</h2>
+        <div class="formGroup">
+            <label for="loyersLoyer1">Chambre 1</label>
+            <input type="number" id="loyersLoyer1" name="loyer1" class="inputField">
+            <span>€</span>
+            <select id="loyersTypeLoyer1" name="typeLoyer1">
+                <option value="chambre">Chambre</option>
+                <option value="studio">Studio</option>
+                <option value="t1">T1</option>
+                <option value="t2">T2</option>
+                <option value="logementEntier">Logement entier</option>
+            </select>
+        </div>
+        <div class="formGroup">
+            <label for="loyersLoyer2">Chambre 2</label>
+            <input type="number" id="loyersLoyer2" name="loyer2" class="inputField">
+            <span>€</span>
+            <select id="loyersTypeLoyer2" name="typeLoyer2">
+                <option value="chambre">Chambre</option>
+                <option value="studio">Studio</option>
+                <option value="t1">T1</option>
+                <option value="t2">T2</option>
+                <option value="logementEntier">Logement entier</option>
+            </select>
+        </div>
+        <div class="formGroup">
+            <label for="loyersLoyer3">Chambre 3</label>
+            <input type="number" id="loyersLoyer3" name="loyer3" class="inputField">
+            <span>€</span>
+            <select id="loyersTypeLoyer3" name="typeLoyer3">
+                <option value="chambre">Chambre</option>
+                <option value="studio">Studio</option>
+                <option value="t1">T1</option>
+                <option value="t2">T2</option>
+                <option value="logementEntier">Logement entier</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Données additionnelles</h2>
+        <div class="formGroup">
+            <label for="donneesHonorairesChasseur">Honoraires Chasseur TTC</label>
+            <input type="number" id="donneesHonorairesChasseur" name="honorairesChasseur" class="inputField">
+            <span>€</span>
+        </div>
+        <div class="formGroup">
+            <label for="donneesMeuble">Meuble</label>
+            <input type="number" id="donneesMeuble" name="meuble" class="inputField">
+            <span>€</span>
+        </div>
+        <div class="formGroup">
+            <label for="donneesApportPersonnel">Apport personnel</label>
+            <input type="number" id="donneesApportPersonnel" name="apportPersonnel" class="inputField">
+            <span>€</span>
+        </div>
+        <div class="formGroup">
+            <label for="donneesTaeg">TAEG (assurance comprise)</label>
+            <input type="number" step="0.01" id="donneesTaeg" name="taeg" class="inputField">
+            <span>%</span>
+        </div>
+    </div>
+    <div class="NavButtons">
+        <button id="prev">&larr; Précédent</button>
+        <button id="getResult">Obtenir le dossier &#8594;</button>
+    </div>
+</div>
