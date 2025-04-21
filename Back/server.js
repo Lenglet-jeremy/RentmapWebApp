@@ -72,19 +72,33 @@ app.get('/data', (req, res) => {
 });
 
 function readAllJsonFilesWithPattern(directory, pattern) {
-  const files = fs.readdirSync(directory);
-  const results = {};
-  const filteredFiles = files.filter(file => file.endsWith(pattern) && file.endsWith('.json'));
-  filteredFiles.forEach(file => {
-    const filePath = path.join(directory, file);
-    const fileContent = fs.readFileSync(filePath, 'utf8');
-    try {
-      results[file] = JSON.parse(fileContent);
-    } catch (error) {
-      console.error(`Erreur lors du parsing du fichier ${file}:`, error);
-    }
-  });
-  return results;
+  console.log(`Recherche de fichiers dans: ${directory} avec pattern: ${pattern}`);
+  
+  try {
+    const files = fs.readdirSync(directory);
+    console.log(`Fichiers trouvés: ${files.join(', ')}`);
+    
+    const results = {};
+    const filteredFiles = files.filter(file => file.endsWith(pattern) && file.endsWith('.json'));
+    console.log(`Fichiers filtrés: ${filteredFiles.join(', ')}`);
+    
+    filteredFiles.forEach(file => {
+      const filePath = path.join(directory, file);
+      console.log(`Lecture du fichier: ${filePath}`);
+      
+      try {
+        const fileContent = fs.readFileSync(filePath, 'utf8');
+        results[file] = JSON.parse(fileContent);
+        console.log(`Fichier lu avec succès: ${file}`);
+      } catch (error) {
+        console.error(`Erreur lors du parsing du fichier ${file}:`, error);
+      }
+    });
+    return results;
+  } catch (error) {
+    console.error(`Erreur lors de l'accès au répertoire ${directory}:`, error);
+    throw error;
+  }
 }
 
 app.get("/api/Refined", (req, res) => {
