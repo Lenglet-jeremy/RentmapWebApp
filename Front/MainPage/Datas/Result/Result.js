@@ -1208,7 +1208,7 @@ async function fetchDepartmentCityNeighborhood() {
         if (data && data.length > 0) {
             const departement = data[0].address.county || "";
             const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
-            const city = data[0].address.municipality || "";
+            const city = data[0].name || "";
             const suburb = data[0].address.suburb || "";
             const parts = suburb.split('-') || "";
 
