@@ -1472,7 +1472,7 @@ async function updateValues() {
     let GrandAxesDescriptionValue = document.querySelector(".GrandAxesDescriptionValue");
 
     [departmentCode, department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
-    department = normalizeString(department)
+    // department = normalizeString(department)
     console.log([departmentCode, department, city, neighbourhoodValue.innerText]);
     
     if (!departmentCode || !department || !city) {
@@ -1491,6 +1491,8 @@ async function updateValues() {
     RentValue.innerText = (Number(data.rentPerSquareMeter)).toLocaleString("fr-FR") + " €";
     yieldValue.innerText = (data.yield * 100).toFixed(2) + " %";
 
+    console.log([department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText]);
+    
     const neighborhoodCost = await fetchNeighborhoodCostData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
     const neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
 
