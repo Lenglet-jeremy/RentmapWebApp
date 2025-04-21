@@ -1472,6 +1472,8 @@ async function updateValues() {
     let GrandAxesDescriptionValue = document.querySelector(".GrandAxesDescriptionValue");
 
     [departmentCode, department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
+    console.log([departmentCode, department, city, neighbourhoodValue.innerText]);
+    
     if (!departmentCode || !department || !city) {
         console.error("Failed to fetch department, city, or neighborhood.");
         return;
