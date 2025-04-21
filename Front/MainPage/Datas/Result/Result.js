@@ -1547,6 +1547,8 @@ async function updateValues() {
 
 const button = document.getElementById('getResult');
 button.addEventListener('click', () => {
+    console.log("Affichage de la feuille resultat");
+    
     const PrintArea = document.getElementById("PrintArea");
     if (PrintArea) {
         PrintArea.style.display = "flex";
