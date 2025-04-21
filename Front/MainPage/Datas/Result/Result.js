@@ -685,7 +685,6 @@ async function fetchSecuriteCriminaliteData(department, city) {
 }
 
 let chartHistogramInstance = null;
-
 async function createHistogram(canvasId, department, city, label, backgroundColor = 'rgba(75, 192, 192, 0.5)', cityInputId = null) {
     const data = await fetchData(`${backendUrl}/api/EvolPop`);
     if (!data) return;
