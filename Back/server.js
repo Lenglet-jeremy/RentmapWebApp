@@ -72,24 +72,30 @@ app.get('/data', (req, res) => {
 });
 
 function readAllJsonFilesWithPattern(directory, pattern) {
+  pattern = "ille-et-vilaine"
   console.log(`Recherche de fichiers dans: ${directory} avec pattern: ${pattern}`);
   
   try {
     const files = fs.readdirSync(directory);
-    console.log(`Fichiers trouvés: ${files.join(', ')}`);
+    console.log(`Nombre de fichiers trouvés: ${files.length}`);
     
     const results = {};
     const filteredFiles = files.filter(file => file.endsWith(pattern) && file.endsWith('.json'));
-    console.log(`Fichiers filtrés: ${filteredFiles.join(', ')}`);
+    console.log(`Nombre de fichiers filtrés: ${filteredFiles.length}`);
     
-    filteredFiles.forEach(file => {
+    // Limite la taille des données chargées
+    const MAX_FILES = 5; // Ajustez ce nombre selon vos besoins
+    const processFiles = filteredFiles.slice(0, MAX_FILES);
+    console.log(`Traitement de ${processFiles.length}/${filteredFiles.length} fichiers`);
+    
+    processFiles.forEach(file => {
       const filePath = path.join(directory, file);
       console.log(`Lecture du fichier: ${filePath}`);
       
       try {
         const fileContent = fs.readFileSync(filePath, 'utf8');
         results[file] = JSON.parse(fileContent);
-        console.log(`Fichier lu avec succès: ${file}`);
+        console.log(`Fichier lu avec succès: ${file} (taille: ${fileContent.length} caractères)`);
       } catch (error) {
         console.error(`Erreur lors du parsing du fichier ${file}:`, error);
       }
