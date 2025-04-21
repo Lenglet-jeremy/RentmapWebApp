@@ -20,7 +20,7 @@ const app = express();
 const https = require('https');
 
 const corsOptions = {
-  origin: ['http://127.0.0.1:3000', 'https://rentmapwebapp.onrender.com', 'http://127.0.0.1:5000'],
+  origin: ['http://127.0.0.1:3000', 'https://rentmapwebapp.onrender.com/', 'http://127.0.0.1:5000', 'rentmapwebapp.onrender.com'],
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization'
 };
