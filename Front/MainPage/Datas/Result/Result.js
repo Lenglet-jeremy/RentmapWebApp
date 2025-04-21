@@ -16,28 +16,35 @@ function normalizeAddress(address) {
         .trim();
 }
 
-async function fetchNeighborhoodCostRentData(department, city) {
+async function fetchData(url) {
     try {
-        const response = await fetch(`${backendUrl}/api/Refined`);
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.statusText}`);
+        }
         const data = await response.json();
-        
+        return data;
+    } catch (error) {
+        console.error(`Error fetching data from ${url}:`, error);
+        return null;
+    }
+}
 
-        let RefinedData = [];
+async function fetchNeighborhoodCostRentData(department, city) {
+    const data = await fetchData(`${backendUrl}/api/Refined`);
+    if (!data) return {};
 
-        for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
-                for (const collection of data[key]) {
-                    if (normalizeString(collection["Ville"]) === normalizeString(city)) {                        
-                        RefinedData.push(collection)
-                    }
+    let RefinedData = [];
+    for (const key in data) {
+        if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            for (const collection of data[key]) {
+                if (normalizeString(collection["Ville"]) === normalizeString(city)) {
+                    RefinedData.push(collection);
                 }
             }
-        }        
-        return RefinedData;
-    } catch (error) {
-        console.error('Erreur lors de la récupération des données de population:', error);
-        return {};
+        }
     }
+    return RefinedData;
 }
 
 async function fetchNeighborhoodCostData(department, city, neighborhood, typeOfProperty) {
@@ -678,9 +685,10 @@ async function fetchSecuriteCriminaliteData(department, city) {
 }
 
 let chartHistogramInstance = null;
+
 async function createHistogram(canvasId, department, city, label, backgroundColor = 'rgba(75, 192, 192, 0.5)', cityInputId = null) {
-    const response = await fetch(`${backendUrl}/api/EvolPop`);
-    const data = await response.json();
+    const data = await fetchData(`${backendUrl}/api/EvolPop`);
+    if (!data) return;
 
     const labels = ["Pop 0-14 ans", "Pop 15-29 ans", "Pop 30-44 ans", "Pop 45-59 ans", "Pop 60-74 ans", "Pop 75 ans ou plus"];
     const datayears = [];
