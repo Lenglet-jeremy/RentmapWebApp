@@ -1202,7 +1202,7 @@ async function fetchDepartmentCityNeighborhood() {
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
-        console.log(`Addresse : ${response}`);
+        console.log(`Addresse : https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
         
 
         const data = await response.json();
