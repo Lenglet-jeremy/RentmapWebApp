@@ -339,11 +339,11 @@ app.get("/api/Montagnes", (req, res) => {
 
 app.get("/api/StatsNationnale", (req, res) => {
   try {
-      const allJsonData = readAllJsonFilesWithPattern(dataFolder, "Criminalites.json");
-      res.json(allJsonData);
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "Criminalites.json");
+    res.json(allJsonData);
   } catch (error) {
-      console.error("Erreur lors de la lecture des fichiers JSON :", error);
-      res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
   }
 });
 
