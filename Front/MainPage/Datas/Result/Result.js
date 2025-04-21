@@ -1,6 +1,5 @@
 const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
 const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
-
 function normalizeString(str) {
     return str
         ? str.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
@@ -1192,22 +1191,25 @@ async function fetchLoiLittoralData(department, city) {
 
 async function fetchDepartmentCityNeighborhood() {
     const address = document.getElementById("Address").value;
-    
+
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
-        
+
         const data = await response.json();
 
-        const departement = data[0].address.county  || "";
-        
-        const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
-        const city = data[0].address.municipality || "";
-        const suburb = data[0].address.suburb || "";
-        const parts = suburb.split('-') || "";
-        
-        
-        return [departmentCode, departement, city, parts[parts.length - 1].trim() || ""]
+        if (data && data.length > 0) {
+            const departement = data[0].address.county || "";
+            const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
+            const city = data[0].address.municipality || "";
+            const suburb = data[0].address.suburb || "";
+            const parts = suburb.split('-') || "";
+
+            return [departmentCode, departement, city, parts[parts.length - 1].trim() || ""];
+        } else {
+            console.error("No data found for the address.");
+            return null;
+        }
     } catch (error) {
         console.error("Erreur lors de la récupération du quartier :", error);
         return null;
@@ -1420,13 +1422,13 @@ function TableauFinancier() {
     document.getElementById('TableauRentabiliteValueTriAnnuel').innerText = tri.toFixed(2);
     
     // Loyer annuel
-    document.getElementById('TableauRentabiliteValueLoyerAnnuel').innerText = (totalLoyers * 4).toFixed(0);
+    document.getElementById('TableauRentabiliteValueLoyerAnnuel').innerText = (totalLoyers * 12).toFixed(0);
 }
 
-export async function updateValues() {
+async function updateValues() {
     let city = "";
-    let department = ""
-    let departmentCode = ""
+    let department = "";
+    let departmentCode = "";
 
     let typeOfPropertyValue = document.getElementById("TypeOfPropertyValue");
     let nbPiecesValue = document.getElementById("NbPiecesValue");
@@ -1463,6 +1465,11 @@ export async function updateValues() {
     let GrandAxesDescriptionValue = document.querySelector(".GrandAxesDescriptionValue");
 
     [departmentCode, department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
+    if (!departmentCode || !department || !city) {
+        console.error("Failed to fetch department, city, or neighborhood.");
+        return;
+    }
+
     cityValue.innerText = city;
     typeOfPropertyValue.innerText = sessionStorage.getItem("propertyType") || "Non spécifié";
     nbPiecesValue.innerText = (sessionStorage.getItem("PiecesNumberUsersInputValue") || "0") + " Pièces";
@@ -1474,7 +1481,6 @@ export async function updateValues() {
     RentValue.innerText = (Number(data.rentPerSquareMeter)).toLocaleString("fr-FR") + " €";
     yieldValue.innerText = (data.yield * 100).toFixed(2) + " %";
 
-    
     const neighborhoodCost = await fetchNeighborhoodCostData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
     const neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
 
@@ -1489,7 +1495,7 @@ export async function updateValues() {
         ((Number(RentValueNeighbourhood.innerText.replace(" €", "").replace(/\s/g, '')) * 12) /
         Number(costSquareNeighbourhood.innerText.replace(" €", "").replace(/\s/g, ''))) * 100
     ).toFixed(2) + " %";
-    
+
     cityDescriptionValue.innerText = await fetchCytiesDescription(city);
     CityClimatValue.innerText = await fetchCytiesClimat(city);
     UrbanismeDescriptionValue.innerText = await fetchCytiesUrbanisme(city);
@@ -1519,8 +1525,7 @@ export async function updateValues() {
     fillPopulationTable(department, city);
     fillPrixImmoTable(department, city);
 
-    TableauFinancier()
-    
+    TableauFinancier();
 
     fillNeighborhoodCostRentTable(department, city);
     fillNeighborhoodPopulationTable(department, city);
@@ -1528,4 +1533,11 @@ export async function updateValues() {
     // fetchDVFData();
 }
 
-updateValues();
+const button = document.getElementById('getResult');
+button.addEventListener('click', () => {
+    const PrintArea = document.getElementById("PrintArea");
+    if (PrintArea) {
+        PrintArea.style.display = "flex";
+    }
+    updateValues();
+});
