@@ -1472,6 +1472,7 @@ async function updateValues() {
     let GrandAxesDescriptionValue = document.querySelector(".GrandAxesDescriptionValue");
 
     [departmentCode, department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
+    department = normalizeString(department)
     console.log([departmentCode, department, city, neighbourhoodValue.innerText]);
     
     if (!departmentCode || !department || !city) {
