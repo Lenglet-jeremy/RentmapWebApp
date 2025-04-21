@@ -72,7 +72,6 @@ app.get('/data', (req, res) => {
 });
 
 function readAllJsonFilesWithPattern(directory, pattern) {
-  pattern = "ille-et-vilaine"
   console.log(`Recherche de fichiers dans: ${directory} avec pattern: ${pattern}`);
   
   try {
