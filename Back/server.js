@@ -76,24 +76,24 @@ function readAllJsonFilesWithPattern(directory, pattern) {
   const results = {};
   const filteredFiles = files.filter(file => file.endsWith(pattern) && file.endsWith('.json'));
   filteredFiles.forEach(file => {
-      const filePath = path.join(directory, file);
-      const fileContent = fs.readFileSync(filePath, 'utf8');
-      try {
-          results[file] = JSON.parse(fileContent);
-      } catch (error) {
-          console.error(`Erreur lors du parsing du fichier ${file}:`, error);
-      }
+    const filePath = path.join(directory, file);
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    try {
+      results[file] = JSON.parse(fileContent);
+    } catch (error) {
+      console.error(`Erreur lors du parsing du fichier ${file}:`, error);
+    }
   });
   return results;
 }
 
 app.get("/api/Refined", (req, res) => {
   try {
-      const allJsonData = readAllJsonFilesWithPattern(dataFolder, "Refined.json");
-      res.json(allJsonData);
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "Refined.json");
+    res.json(allJsonData);
   } catch (error) {
-      console.error("Erreur lors de la lecture des fichiers JSON :", error);
-      res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
   }
 });
 
