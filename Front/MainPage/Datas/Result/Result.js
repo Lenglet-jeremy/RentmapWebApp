@@ -502,7 +502,7 @@ async function fetchPrixImmoData(department, cityName) {
         for (const key in data) {
             if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
                 for (const collection of data[key]) {
-                    if (normalizeString(collection["Villes"]) === normalizeString(cityName)) {
+                    if (normalizeString(collection["Villes.1"]) === normalizeString(cityName)) {
                         const year = collection["Annee"];
 
                         if (!prixImmoByYear[year]) {

@@ -126,26 +126,6 @@ app.get("/api/Rentabilite", (req, res) => {
   }
 });
 
-app.get("/api/EvolPop", (req, res) => {
-  try {
-    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolPopulation.json");
-    res.json(allJsonData);
-  } catch (error) {
-    console.error("Erreur lors de la lecture des fichiers JSON :", error);
-    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
-  }
-});
-
-app.get("/api/EvolPrixImmo", (req, res) => {
-  try {
-    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolPrixImmo.json");
-    res.json(allJsonData);
-  } catch (error) {
-    console.error("Erreur lors de la lecture des fichiers JSON :", error);
-    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
-  }
-});
-
 app.get("/api/TauxHabitationVacants", (req, res) => {
   try {
     const allJsonData = readAllJsonFilesWithPattern(dataFolder, "TauxHabitationVacants.json");
@@ -326,16 +306,6 @@ app.get("/api/InternetConnection", (req, res) => {
   }
 });
 
-app.get("/api/SecuriteCriminalite", (req, res) => {
-  try {
-    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "SecuriteCriminalite.json");
-    res.json(allJsonData);
-  } catch (error) {
-    console.error("Erreur lors de la lecture des fichiers JSON :", error);
-    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
-  }
-});
-
 app.get("/api/LoiLittoral", (req, res) => {
   try {
     const allJsonData = readAllJsonFilesWithPattern(dataFolder, "LoiLittoral.json");
@@ -418,4 +388,35 @@ app.post("/upload-json", upload.single("file"), (req, res) => {
     }
     res.json({ message: `Fichier ${req.body.filename} sauvegardé avec succès.` });
   });
+});
+
+
+app.get("/api/EvolPop", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolPopulation.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/EvolPrixImmo", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolPrixImmo.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/SecuriteCriminalite", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "SecuriteCriminalite.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
 });
