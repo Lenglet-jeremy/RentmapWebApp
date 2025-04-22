@@ -1202,7 +1202,6 @@ async function fetchDepartmentCityNeighborhood() {
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
-        console.log(`Addresse : https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
         
 
         const data = await response.json();
@@ -1475,7 +1474,6 @@ async function updateValues() {
 
     [departmentCode, department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
     // department = normalizeString(department)
-    console.log([departmentCode, department, city, neighbourhoodValue.innerText]);
     
     if (!departmentCode || !department || !city) {
         console.error("Failed to fetch department, city, or neighborhood.");
@@ -1493,10 +1491,12 @@ async function updateValues() {
     RentValue.innerText = (Number(data.rentPerSquareMeter)).toLocaleString("fr-FR") + " €";
     yieldValue.innerText = (data.yield * 100).toFixed(2) + " %";
 
-    console.log([department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText]);
     
     const neighborhoodCost = await fetchNeighborhoodCostData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
+    console.log(neighborhoodCost);
+    
     const neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
+    console.log(neighborhoodCost);
 
     if (neighborhoodCost === undefined || neighborhoodRent === undefined) {
         console.error("neighborhoodCost or neighborhoodRent is undefined");
