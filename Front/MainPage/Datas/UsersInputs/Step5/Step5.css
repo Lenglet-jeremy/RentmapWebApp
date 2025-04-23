@@ -24,8 +24,8 @@ h2 {
     color: #333;
 }
 
-#Step5{
-    display: flex;
+.Step5{
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;

@@ -51,3 +51,23 @@ dpeSelect.addEventListener('change', function(event) {
 gesSelect.addEventListener('change', function(event) {
     sessionStorage.setItem('gesValue', event.target.value);
 });
+
+const step3PrevButton = document.querySelector(".Step3PrevButton");
+const step3NextButton = document.querySelector(".Step3NextButton");
+const step2 = document.querySelector(".Step2");
+const step3 = document.querySelector(".Step3");
+const step4 = document.querySelector(".Step4");
+
+step3NextButton.addEventListener("click", () => {
+    if (step3 && step4) {
+        step3.style.display = "none";
+        step4.style.display = "flex";
+    }
+});
+
+step3PrevButton.addEventListener("click", () => {
+    if (step2 && step4) {
+        step2.style.display = "flex";
+        step3.style.display = "none";
+    }
+});

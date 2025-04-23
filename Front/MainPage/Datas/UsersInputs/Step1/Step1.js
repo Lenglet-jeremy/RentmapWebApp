@@ -53,3 +53,15 @@ input.addEventListener("keydown", (event) => {
         sessionStorage.setItem("UserInputAdress", input.value);
     }
 });
+
+
+const step1NextButton = document.querySelector(".Step1NextButton");
+const step1 = document.querySelector(".Step1");
+const step2 = document.querySelector(".Step2");
+
+step1NextButton.addEventListener("click", () => {
+    if (step1 && step2) {
+        step1.style.display = "none";
+        step2.style.display = "flex";
+    }
+});

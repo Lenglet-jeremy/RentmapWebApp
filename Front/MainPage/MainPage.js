@@ -3,8 +3,48 @@ import { updateMap } from './Map/Map.js';
 window.UsersInputsLat = 48.8584;
 window.UsersInputsLon = 2.2945;
 
+// Définir la limite maximale comme une variable globale
+const MAX_AMENITY_LIMIT = 100;
+
 const steps = document.querySelectorAll(".DataContent > div");
 let currentStep = 0;
+
+// Fonction pour créer et afficher le popup
+function showMaxLimitPopup() {
+    // Vérifier si un popup existe déjà
+    let popup = document.getElementById("max-limit-popup");
+    
+    // Si le popup n'existe pas, le créer
+    if (!popup) {
+        popup = document.createElement("div");
+        popup.id = "max-limit-popup";
+        popup.style.position = "fixed";
+        popup.style.bottom = "20px";
+        popup.style.right = "20px";
+        popup.style.backgroundColor = "#f44336";
+        popup.style.color = "white";
+        popup.style.padding = "15px";
+        popup.style.borderRadius = "5px";
+        popup.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
+        popup.style.zIndex = "1000";
+        popup.style.opacity = "0";
+        popup.style.transition = "opacity 0.3s ease-in-out";
+        document.body.appendChild(popup);
+    }
+    
+    // Mettre à jour le texte du popup
+    popup.textContent = `La limite maximale est de ${MAX_AMENITY_LIMIT} commodités`;
+    
+    // Afficher le popup
+    setTimeout(() => {
+        popup.style.opacity = "1";
+    }, 10);
+    
+    // Masquer le popup après 3 secondes
+    setTimeout(() => {
+        popup.style.opacity = "0";
+    }, 3000);
+}
 
 function InitializeSteps() {
     const resultDiv = document.getElementById("Result");
@@ -16,6 +56,42 @@ function InitializeSteps() {
             getCoordinates();
         }
     });
+
+    // Ajouter la validation pour amenityLimit
+    const amenityLimitInput = document.getElementById("amenityLimit");
+    if (amenityLimitInput) {
+        // Définir l'attribut max avec la valeur de la variable globale
+        amenityLimitInput.setAttribute("max", MAX_AMENITY_LIMIT);
+        amenityLimitInput.setAttribute("min", "0");
+        
+        amenityLimitInput.addEventListener("input", function() {
+            // Convertir la valeur en nombre
+            let value = parseInt(this.value);
+            
+            // Si la valeur est supérieure à la limite maximale, la fixer à cette limite
+            // et afficher le popup
+            if (value > MAX_AMENITY_LIMIT) {
+                this.value = MAX_AMENITY_LIMIT;
+                showMaxLimitPopup();
+            }
+            
+            // Si la valeur n'est pas un nombre, la fixer à 0
+            if (isNaN(value)) {
+                this.value = 0;
+            }
+        });
+        
+        // Ajouter également un événement pour l'input pour détecter les changements en temps réel
+        amenityLimitInput.addEventListener("input", function() {
+            // Convertir la valeur en nombre
+            let value = parseInt(this.value);
+            
+            // Si la valeur est supérieure à la limite maximale, afficher le popup
+            if (value > MAX_AMENITY_LIMIT) {
+                showMaxLimitPopup();
+            }
+        });
+    }
 
     document.querySelectorAll(".NavButtons button").forEach(button => {
         button.addEventListener("click", function () {
@@ -33,7 +109,6 @@ function InitializeSteps() {
                 return;
             }
 
-            showStep(currentStep);
         });
     });
 }
@@ -49,23 +124,31 @@ function saveToSessionStorage(data, dataType = "") {
     }
 }
 
-function loadFromSessionStorage() {
-    // Implémentez cette fonction si nécessaire
-}
-
-function showStep(index) {
-    steps.forEach((step, i) => {
-        step.style.display = i === index ? "flex" : "none";
-    });
-}
-
 export async function getCoordinates() {
     let url = "https://nominatim.openstreetmap.org/search?format=json";
     let address = document.getElementById("Address").value.trim();
     const radius = document.getElementById("radius") ?
         parseInt(document.getElementById("radius").value) * 1000 : 50000;
-    const amenityLimit = document.getElementById("amenityLimit") ?
-        parseInt(document.getElementById("amenityLimit").value) : 100;
+    
+    // Récupérer la valeur de amenityLimit
+    let amenityLimit = document.getElementById("amenityLimit") ?
+        parseInt(document.getElementById("amenityLimit").value) : MAX_AMENITY_LIMIT;
+    
+    // Vérifier si c'est un nombre valide
+    if (isNaN(amenityLimit)) {
+        amenityLimit = 0;
+    }
+    
+    // Limiter à la valeur maximale définie et afficher le popup si la limite est dépassée
+    if (amenityLimit > MAX_AMENITY_LIMIT) {
+        showMaxLimitPopup();
+        amenityLimit = MAX_AMENITY_LIMIT;
+    }
+    
+    // Mettre à jour la valeur dans l'input pour refléter la limite
+    if (document.getElementById("amenityLimit")) {
+        document.getElementById("amenityLimit").value = amenityLimit;
+    }
 
     saveToSessionStorage(address, "UserInputAdresse");
 
@@ -104,7 +187,6 @@ export async function getCoordinates() {
 }
 
 InitializeSteps();
-showStep(currentStep);
 
 document.getElementById('PrintButton').addEventListener('click', function () {
     const resultDiv = document.getElementById('ResultArea');
@@ -196,6 +278,11 @@ document.getElementById('PrintButton').addEventListener('click', function () {
             /* Add explicit page breaks before certain sections if needed */
             .PopulationRapartion, .CostEvol, #neighborhoodCostRentTable, #neighborhoodPopulationTable {
                 page-break-before: always;
+            }
+            
+            /* Hide popup during print */
+            #max-limit-popup {
+                display: none !important;
             }
         }
     `;
