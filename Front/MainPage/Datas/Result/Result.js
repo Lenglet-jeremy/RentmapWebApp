@@ -23,6 +23,7 @@ async function fetchData(url) {
             throw new Error(`Network response was not ok: ${response.statusText}`);
         }
         const data = await response.json();
+        
         return data;
     } catch (error) {
         console.error(`Error fetching data from ${url}:`, error);
@@ -50,6 +51,7 @@ async function fetchNeighborhoodCostRentData(department, city) {
 async function fetchNeighborhoodCostData(department, city, neighborhood, typeOfProperty) {
     try {
         const response = await fetch(`${backendUrl}/api/Refined`);
+        
         const data = await response.json();
         
 
@@ -76,6 +78,7 @@ async function fetchNeighborhoodCostData(department, city, neighborhood, typeOfP
 async function fetchNeighborhoodRentData(department, city, neighborhood, typeOfProperty) {
     try {
         const response = await fetch(`${backendUrl}/api/Refined`);
+        
         const data = await response.json();
         
 
@@ -327,34 +330,6 @@ async function fetchPopulationData(department, cityName) {
 
         let populationByYear = {};
 
-        for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
-                for (const collection of data[key]) {
-                    
-                    if (normalizeString(collection["Libelle commune ou ARM"]) === normalizeString(cityName)) {
-                        const year = collection["Annee"];
-                        if (!populationByYear[year]) {
-                            populationByYear[year] = {
-                                totalPopulation: 0,
-                                total0to14: 0,
-                                total15to29: 0,
-                                total30to44: 0,
-                                total45to59: 0,
-                                total60to74: 0,
-                                total75toMore: 0,
-                            };
-                        }
-                        populationByYear[year].totalPopulation += Math.round(collection["Population"]);
-                        populationByYear[year].total0to14 += Math.round(collection["Pop 0-14 ans"]);
-                        populationByYear[year].total15to29 += Math.round(collection["Pop 15-29 ans"]);
-                        populationByYear[year].total30to44 += Math.round(collection["Pop 30-44 ans"]);
-                        populationByYear[year].total45to59 += Math.round(collection["Pop 45-59 ans"]);
-                        populationByYear[year].total60to74 += Math.round(collection["Pop 60-74 ans"]);
-                        populationByYear[year].total75toMore += Math.round(collection["Pop 75 ans ou plus"]);
-                    }
-                }
-            }
-        }
 
 
         return populationByYear;
@@ -421,7 +396,7 @@ async function fetchNeighborhoodPopulationData(department, city) {
         for (const key in data) {
             if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
                 for (const collection of data[key]) {
-                    if (normalizeString(collection["Libelle commune ou ARM"]) === normalizeString(city) && String(collection["Annee"]) === "2021") {
+                    if (normalizeString(collection["Libellé commune ou ARM"]) === normalizeString(city) && String(collection["Annee"]) === "2021") {
                         populationData.push(collection);
                     }
                 }
@@ -502,7 +477,7 @@ async function fetchPrixImmoData(department, cityName) {
         for (const key in data) {
             if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
                 for (const collection of data[key]) {
-                    if (normalizeString(collection["Villes.1"]) === normalizeString(cityName)) {
+                    if (normalizeString(collection["Villes"]) === normalizeString(cityName)) {
                         const year = collection["Annee"];
 
                         if (!prixImmoByYear[year]) {
@@ -686,77 +661,111 @@ async function fetchSecuriteCriminaliteData(department, city) {
 
 let chartHistogramInstance = null;
 async function createHistogram(canvasId, department, city, label, backgroundColor = 'rgba(75, 192, 192, 0.5)', cityInputId = null) {
-    const data = await fetchData(`${backendUrl}/api/EvolPop`);
-    if (!data) return;
-
-    const labels = ["Pop 0-14 ans", "Pop 15-29 ans", "Pop 30-44 ans", "Pop 45-59 ans", "Pop 60-74 ans", "Pop 75 ans ou plus"];
-    const datayears = [];
-    let year = "2021";
-
-    for (const key in data) {
-        if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
-            year = Math.max(...data[key].map(collection => collection["Annee"]));
-
-            const filteredData = data[key].filter(collection =>
-                collection["Annee"] === year &&
-                normalizeString(collection["Libelle commune ou ARM"]) === normalizeString(city)
+    try {
+        const response = await fetch(`${backendUrl}/api/EvolPop`);
+        
+        if (!response.ok) {
+            console.error('Erreur lors de la récupération des données');
+            return;
+        }
+        
+        const data = await response.json();
+        
+        // Normaliser le nom du département pour la recherche
+        const normalizedDepartment = normalizeString(department);
+        
+        // Recherche du bon fichier de département
+        const departmentKey = Object.keys(data).find(key => 
+            normalizeString(key).includes(normalizedDepartment)
+        );
+        
+        if (!departmentKey || !Array.isArray(data[departmentKey])) {
+            console.error(`Aucune donnée trouvée pour le département: ${department}`);
+            return;
+        }
+        
+        
+        // Recherche de la ville dans le département
+        const cityData = data[departmentKey].find(item => 
+            item && 
+            item["Libellé commune ou ARM"] && 
+            normalizeString(item["Libellé commune ou ARM"]) === normalizeString(city)
+        );
+        
+        if (!cityData) {
+            console.error(`Aucune donnée trouvée pour la ville: ${city} dans le département: ${department}`);
+            return;
+        }
+        
+        
+        // Extraction des données de population par tranche d'âge
+        const labels = ["Pop 0-14 ans", "Pop 15-29 ans", "Pop 30-44 ans", "Pop 45-59 ans", "Pop 60-74 ans", "Pop 75 ans ou plus"];
+        const datayears = [];
+        
+        // Recherche des clés correspondantes dans l'objet cityData
+        for (const label of labels) {
+            let value = 0;
+            // Chercher la clé exacte ou une clé similaire
+            const key = Object.keys(cityData).find(k => 
+                k === label || 
+                normalizeString(k).includes(normalizeString(label))
             );
-
-            if (filteredData.length > 0) {
-                for (let i = 0; i < labels.length; i++) {
-                    datayears[i] = filteredData.reduce((sum, collection) => sum + (collection[labels[i]] || 0), 0);
-                }
+            
+            if (key) {
+                value = parseFloat(cityData[key]) || 0;
             }
+            datayears.push(value);
         }
-    }
-
-    const ctx = document.getElementById(canvasId).getContext('2d');
-
-    if (chartHistogramInstance) {
-        chartHistogramInstance.destroy();
-    }
-
-    chartHistogramInstance = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: labels.map(label => label.replace('Pop ', '')),
-            datasets: [{
-                label: label,
-                data: datayears,
-                backgroundColor: backgroundColor,
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            scales: {
-                x: {
-                    title: {
-                        display: true,
-                        text: 'Classes'
-                    }
-                },
-                y: {
-                    beginAtZero: true,
-                    title: {
-                        display: true,
-                        text: 'Population'
+        
+        const ctx = document.getElementById(canvasId).getContext('2d');
+        if (chartHistogramInstance) {
+            chartHistogramInstance.destroy();
+        }
+        
+        chartHistogramInstance = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels.map(label => label.replace('Pop ', '')),
+                datasets: [{
+                    label: label,
+                    data: datayears,
+                    backgroundColor: backgroundColor,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Classes'
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Population'
+                        }
                     }
                 }
             }
+        });
+        
+        if (cityInputId) {
+            const cityInput = document.getElementById(cityInputId);
+            if (cityInput && !cityInput.dataset.listenerAttached) {
+                cityInput.addEventListener("change", () => {
+                    const newCity = cityInput.value;
+                    createHistogram(canvasId, department, newCity, label, backgroundColor, cityInputId);
+                });
+                cityInput.dataset.listenerAttached = "true"; // Pour éviter les doublons
+            }
         }
-    });
-
-    if (cityInputId) {
-        const cityInput = document.getElementById(cityInputId);
-        if (cityInput && !cityInput.dataset.listenerAttached) {
-            cityInput.addEventListener("change", () => {
-                const newCity = cityInput.value;
-                createHistogram(canvasId, department, newCity, label, backgroundColor, cityInputId);
-            });
-            cityInput.dataset.listenerAttached = "true"; // Pour éviter les doublons
-        }
+    } catch (error) {
+        console.error('Erreur lors de la création de l\'histogramme:', error);
     }
 }
 
@@ -764,36 +773,41 @@ let chartLineInstance = null;
 async function createLineChart(canvasId, department, city, label, borderColor, cityInputId = null) {
     try {
         const response = await fetch(`${backendUrl}/api/EvolPrixImmo`);
+        
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         const data = await response.json();
-
         const labels = ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"];
         const AverageCost = Array(labels.length).fill(0);
-
-        for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+        
+        // Chercher les données pour le département spécifié
+        const departmentKey = Object.keys(data).find(key => 
+            key.includes(normalizeString(department))
+        );
+        
+        if (departmentKey) {
+            // Filtrer les données pour la ville spécifiée
+            const cityData = data[departmentKey].find(item => 
+                normalizeString(item["Villes.1"]) === normalizeString(city)
+            );
+            
+            if (cityData) {
+                // Récupérer les valeurs annuelles directement des données
                 for (let i = 0; i < labels.length; i++) {
                     const year = labels[i];
-                    const filteredData = data[key].filter(collection =>
-                        collection["Annee"] === parseInt(year) &&
-                        normalizeString(collection["Villes"]) === normalizeString(city)
-                    );
-
-                    if (filteredData.length > 0) {
-                        AverageCost[i] = filteredData[0]["PrixMoyen"];
+                    // Vérifier si l'année existe dans les données
+                    if (cityData[year]) {
+                        AverageCost[i] = cityData[year];
                     }
                 }
             }
         }
-
+        
         const ctx = document.getElementById(canvasId).getContext('2d');
-
         if (chartLineInstance) {
             chartLineInstance.destroy();
         }
-
         chartLineInstance = new Chart(ctx, {
             type: 'line',
             data: {
@@ -816,7 +830,7 @@ async function createLineChart(canvasId, department, city, label, borderColor, c
                 }
             }
         });
-
+        
         if (cityInputId) {
             const cityInput = document.getElementById(cityInputId);
             if (cityInput && !cityInput.dataset.listenerAttached) {
@@ -835,44 +849,54 @@ async function createLineChart(canvasId, department, city, label, borderColor, c
 let chartPrixM2Instance = null;
 async function createPrixM2Chart(canvasId, department, city, label, borderColor, cityInputId = null) {
     try {
-        const response = await fetch(`${backendUrl}/api/EvolPrixImmo`);
+        const response = await fetch(`${backendUrl}/api/EvolPrixMCarre`);
+        console.log(`${backendUrl}/api/EvolPrixMCarre`);
+        
+       
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         const data = await response.json();
-
         const labels = ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"];
-        const AverageCostPerM2 = Array(labels.length).fill(0);
-
-        for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+        const AverageCost = Array(labels.length).fill(0);
+       
+        // Chercher les données pour le département spécifié
+        const departmentKey = Object.keys(data).find(key =>
+            key.includes(normalizeString(department))
+        );
+       
+        if (departmentKey) {
+            // Filtrer les données pour la ville spécifiée
+           
+            const cityData = data[departmentKey].find(item =>
+                normalizeString(item["Villes.2"]) === normalizeString(city)
+            );
+           
+            if (cityData) {
+                // Récupérer les valeurs annuelles directement des données
                 for (let i = 0; i < labels.length; i++) {
                     const year = labels[i];
-                    const filteredData = data[key].filter(collection =>
-                        collection["Annee"] === parseInt(year) &&
-                        normalizeString(collection["Villes"]) === normalizeString(city)
-                    );
-
-                    if (filteredData.length > 0) {
-                        AverageCostPerM2[i] = filteredData[0]["Prixm2Moyen"];
+                    // Vérifier si l'année existe dans les données
+                    const yearKey = `${year}.1`;
+                    if (yearKey in cityData) {
+                        AverageCost[i] = cityData[yearKey];
                     }
                 }
             }
         }
-
+       
+        console.log(AverageCost);
         const ctx = document.getElementById(canvasId).getContext('2d');
-
         if (chartPrixM2Instance) {
             chartPrixM2Instance.destroy();
         }
-
         chartPrixM2Instance = new Chart(ctx, {
             type: 'line',
             data: {
                 labels: labels,
                 datasets: [{
                     label: label,
-                    data: AverageCostPerM2,
+                    data: AverageCost,
                     borderColor: borderColor,
                     backgroundColor: borderColor.replace('1', '0.2'),
                     borderWidth: 2,
@@ -888,7 +912,7 @@ async function createPrixM2Chart(canvasId, department, city, label, borderColor,
                 }
             }
         });
-
+       
         if (cityInputId) {
             const cityInput = document.getElementById(cityInputId);
             if (cityInput && !cityInput.dataset.listenerAttached) {
@@ -900,51 +924,61 @@ async function createPrixM2Chart(canvasId, department, city, label, borderColor,
             }
         }
     } catch (error) {
-        console.error('Error creating PrixM2 chart:', error);
+        console.error('Error creating price per square meter chart:', error);
     }
 }
 
 let chartSurfaceInstance = null;
 async function createSurfaceChart(canvasId, department, city, label, borderColor, cityInputId = null) {
     try {
-        const response = await fetch(`${backendUrl}/api/EvolPrixImmo`);
+        const response = await fetch(`${backendUrl}/api/EvolSurface`);
+        console.log(`${backendUrl}/api/EvolSurface`);
+        
+       
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         const data = await response.json();
-
         const labels = ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"];
-        const AverageSurface = Array(labels.length).fill(0);
-
-        for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+        const AverageCost = Array(labels.length).fill(0);
+       
+        // Chercher les données pour le département spécifié
+        const departmentKey = Object.keys(data).find(key =>
+            key.includes(normalizeString(department))
+        );
+       
+        if (departmentKey) {
+            // Filtrer les données pour la ville spécifiée
+           
+            const cityData = data[departmentKey].find(item =>
+                normalizeString(item["Villes.2"]) === normalizeString(city)
+            );
+           
+            if (cityData) {
+                // Récupérer les valeurs annuelles directement des données
                 for (let i = 0; i < labels.length; i++) {
                     const year = labels[i];
-                    const filteredData = data[key].filter(collection =>
-                        collection["Annee"] === parseInt(year) &&
-                        normalizeString(collection["Villes"]) === normalizeString(city)
-                    );
-
-                    if (filteredData.length > 0) {
-                        AverageSurface[i] = filteredData[0]["SurfaceMoy"];
+                    // Vérifier si l'année existe dans les données
+                    const yearKey = `${year}.1`;
+                    if (yearKey in cityData) {
+                        AverageCost[i] = cityData[yearKey];
                     }
                 }
             }
         }
-
+       
+        console.log(AverageCost);
         const ctx = document.getElementById(canvasId).getContext('2d');
-
         if (chartSurfaceInstance) {
             chartSurfaceInstance.destroy();
         }
-
         chartSurfaceInstance = new Chart(ctx, {
             type: 'line',
             data: {
                 labels: labels,
                 datasets: [{
                     label: label,
-                    data: AverageSurface,
+                    data: AverageCost,
                     borderColor: borderColor,
                     backgroundColor: borderColor.replace('1', '0.2'),
                     borderWidth: 2,
@@ -960,19 +994,19 @@ async function createSurfaceChart(canvasId, department, city, label, borderColor
                 }
             }
         });
-
+       
         if (cityInputId) {
             const cityInput = document.getElementById(cityInputId);
             if (cityInput && !cityInput.dataset.listenerAttached) {
                 cityInput.addEventListener("change", async () => {
                     const newCity = cityInput.value;
-                    await createSurfaceChart(canvasId, department, newCity, label, borderColor, cityInputId);
+                    await createPrixM2Chart(canvasId, department, newCity, label, borderColor, cityInputId);
                 });
                 cityInput.dataset.listenerAttached = "true";
             }
         }
     } catch (error) {
-        console.error('Error creating Surface chart:', error);
+        console.error('Error creating price per square meter chart:', error);
     }
 }
 
@@ -1493,10 +1527,7 @@ async function updateValues() {
 
     
     const neighborhoodCost = await fetchNeighborhoodCostData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
-    console.log(neighborhoodCost);
-    
     const neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
-    console.log(neighborhoodCost);
 
     if (neighborhoodCost === undefined || neighborhoodRent === undefined) {
         console.error("neighborhoodCost or neighborhoodRent is undefined");

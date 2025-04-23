@@ -71,30 +71,21 @@ app.get('/data', (req, res) => {
   });
 });
 
+
 function readAllJsonFilesWithPattern(directory, pattern) {
-  console.log(`Recherche de fichiers dans: ${directory} avec pattern: ${pattern}`);
-  
+
   try {
     const files = fs.readdirSync(directory);
-    console.log(`Nombre de fichiers trouvés: ${files.length}`);
-    
+
     const results = {};
-    const filteredFiles = files.filter(file => file.endsWith(pattern) && file.endsWith('.json'));
-    console.log(`Nombre de fichiers filtrés: ${filteredFiles.length}`);
-    
-    // Limite la taille des données chargées
-    const MAX_FILES = 5; // Ajustez ce nombre selon vos besoins
-    const processFiles = filteredFiles.slice(0, MAX_FILES);
-    console.log(`Traitement de ${processFiles.length}/${filteredFiles.length} fichiers`);
-    
-    processFiles.forEach(file => {
+    const filteredFiles = files.filter(file => file.includes(pattern) && file.endsWith('.json'));
+
+    filteredFiles.forEach(file => {
       const filePath = path.join(directory, file);
-      console.log(`Lecture du fichier: ${filePath}`);
-      
+
       try {
         const fileContent = fs.readFileSync(filePath, 'utf8');
         results[file] = JSON.parse(fileContent);
-        console.log(`Fichier lu avec succès: ${file} (taille: ${fileContent.length} caractères)`);
       } catch (error) {
         console.error(`Erreur lors du parsing du fichier ${file}:`, error);
       }
@@ -105,6 +96,7 @@ function readAllJsonFilesWithPattern(directory, pattern) {
     throw error;
   }
 }
+
 
 app.get("/api/Refined", (req, res) => {
   try {
@@ -210,15 +202,6 @@ app.get("/api/quartiers", (req, res) => {
   });
 });
 
-app.get("/api/evolPopulation", (req, res) => {
-  try {
-    const allJsonData = readAllJsonFiles(dataFolder);
-    res.json(allJsonData);
-  } catch (error) {
-    console.error("Erreur lors de la lecture des fichiers JSON :", error);
-    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
-  }
-});
 
 app.get("/api/autocomplete", async (req, res) => {
   const query = req.query.query;
@@ -393,7 +376,7 @@ app.post("/upload-json", upload.single("file"), (req, res) => {
 
 app.get("/api/EvolPop", (req, res) => {
   try {
-    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolPopulation.json");
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolPop.json");
     res.json(allJsonData);
   } catch (error) {
     console.error("Erreur lors de la lecture des fichiers JSON :", error);
@@ -404,6 +387,26 @@ app.get("/api/EvolPop", (req, res) => {
 app.get("/api/EvolPrixImmo", (req, res) => {
   try {
     const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolPrixImmo.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/EvolPrixMCarre", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolPrixMCarre.json");
+    res.json(allJsonData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
+    res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
+  }
+});
+
+app.get("/api/EvolSurface", (req, res) => {
+  try {
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "EvolSurface.json");
     res.json(allJsonData);
   } catch (error) {
     console.error("Erreur lors de la lecture des fichiers JSON :", error);
