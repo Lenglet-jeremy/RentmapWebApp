@@ -1236,6 +1236,8 @@ async function fetchDepartmentCityNeighborhood() {
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
+        console.log(`Adresse : https://nominatim.openstreetmap.org/search?q=${formattedAddress}&format=json&addressdetails=1`);
+        
         
 
         const data = await response.json();
@@ -1243,10 +1245,12 @@ async function fetchDepartmentCityNeighborhood() {
         if (data && data.length > 0) {
             const departement = data[0].address.county || "";
             const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
-            const city = data[0].name || "";
+            const city = data[0].name || data[0].address.city || "";
             const suburb = data[0].address.suburb || "";
             const parts = suburb.split('-') || "";
 
+            console.log([departmentCode, departement, city, parts[parts.length - 1].trim() || ""]);
+            
             return [departmentCode, departement, city, parts[parts.length - 1].trim() || ""];
         } else {
             console.error("No data found for the address.");
