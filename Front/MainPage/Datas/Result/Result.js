@@ -951,7 +951,7 @@ async function createSurfaceChart(canvasId, department, city, label, borderColor
             // Filtrer les données pour la ville spécifiée
            
             const cityData = data[departmentKey].find(item =>
-                normalizeString(item["Villes.2"]) === normalizeString(city)
+                normalizeString(item["Villes.3"]) === normalizeString(city)
             );
            
             if (cityData) {
@@ -959,7 +959,7 @@ async function createSurfaceChart(canvasId, department, city, label, borderColor
                 for (let i = 0; i < labels.length; i++) {
                     const year = labels[i];
                     // Vérifier si l'année existe dans les données
-                    const yearKey = `${year}.1`;
+                    const yearKey = `${year}.2`;
                     if (yearKey in cityData) {
                         AverageCost[i] = cityData[yearKey];
                     }
