@@ -454,3 +454,7 @@
 .CostEvol{
   display: none;
 }
+
+.PrixMCarre{
+  background-image: src("./img/PrixMCarre.png");
+}

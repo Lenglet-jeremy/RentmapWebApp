@@ -389,6 +389,8 @@ async function fillPopulationTable(department, cityName) {
 async function fetchNeighborhoodPopulationData(department, city) {
     try {
         const response = await fetch(`${backendUrl}/api/EvolPop`);
+        console.log(`${backendUrl}/api/EvolPop`);
+        
         const data = await response.json();
 
         let populationData = [];
@@ -396,12 +398,13 @@ async function fetchNeighborhoodPopulationData(department, city) {
         for (const key in data) {
             if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
                 for (const collection of data[key]) {
-                    if (normalizeString(collection["Libellé commune ou ARM"]) === normalizeString(city) && String(collection["Annee"]) === "2021") {
+                    if (normalizeString(collection["Libellé commune ou ARM"]) === normalizeString(city)) {
                         populationData.push(collection);
                     }
                 }
             }
         }
+        
         return populationData;
     } catch (error) {
         console.error('Erreur lors de la récupération des données de population:', error);
@@ -411,6 +414,8 @@ async function fetchNeighborhoodPopulationData(department, city) {
 
 async function fillNeighborhoodPopulationTable(department, city) {
     const neighborhoodPopulationData = await fetchNeighborhoodPopulationData(department, city);
+    console.log(neighborhoodPopulationData);
+    
 
     const tableBody = document.querySelector('#neighborhoodPopulationTable tbody');
     tableBody.innerHTML = '';
@@ -1577,7 +1582,7 @@ async function updateValues() {
     TableauFinancier();
 
     fillNeighborhoodCostRentTable(department, city);
-    fillNeighborhoodPopulationTable(department, city);
+    // fillNeighborhoodPopulationTable(department, city);
 
     // fetchDVFData();
 }

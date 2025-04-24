@@ -89,7 +89,6 @@
 .ContentArea .AmenityList #amenityCheckboxes {
     display: flex;
     background-color: #ffffff;
-    border: 1px solid #000000;
     padding: 10px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -114,6 +113,7 @@ label{
     position: absolute;
     align-items: center;
     justify-content: center;
+    border: 1px solid #000000;
     width: 600px;
     height: 100%;
     top: 0;
