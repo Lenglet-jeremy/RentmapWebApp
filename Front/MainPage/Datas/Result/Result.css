@@ -583,3 +583,7 @@ table tbody tr:nth-child(even) {
   width: 32px; /* ajustable */
   height: 32px; /* ajustable */
 }
+
+#neighborhoodPopulationTable{
+  display: none;
+}

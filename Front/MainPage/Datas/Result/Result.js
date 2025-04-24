@@ -197,7 +197,6 @@ async function fetchRentabiliteData(department, city, typeOfProperty) {
 async function fetchCytiesDescription(cityName) {
     try {
         const response = await fetch(`${backendUrl}/api/CitiesDescription`);
-        console.log(`${backendUrl}/api/CitiesDescription`);
         
         const data = await response.json();
 
@@ -341,53 +340,6 @@ async function fetchPopulationData(department, cityName) {
     }
 }
 
-async function fillPopulationTable(department, cityName) {
-    const populationData = await fetchPopulationData(department, cityName);
-    
-    const tableBody = document.getElementById("TablePopCityName");  
-    
-
-    // Parcourir toutes les lignes du tableau
-    const rows = tableBody.querySelectorAll("tr");
-    
-    rows.forEach(row => {
-        const year = row.querySelector("td").innerText;
-        if (populationData[year]) {
-            row.querySelectorAll("td")[1].innerText = populationData[year].totalPopulation.toLocaleString();
-            row.querySelectorAll("td")[2].innerText = populationData[year].total0to14.toLocaleString();
-            row.querySelectorAll("td")[3].innerText = populationData[year].total15to29.toLocaleString();
-            row.querySelectorAll("td")[4].innerText = populationData[year].total30to44.toLocaleString();
-            row.querySelectorAll("td")[5].innerText = populationData[year].total45to59.toLocaleString();
-            row.querySelectorAll("td")[6].innerText = populationData[year].total60to74.toLocaleString();
-            row.querySelectorAll("td")[7].innerText = populationData[year].total75toMore.toLocaleString();
-        }
-    });
-
-    
-    let firstRow = document.querySelector("tbody tr") || document.querySelector("tr"); 
-    let cells = firstRow.querySelectorAll("td");
-
-    let data = Array.from(cells).map(cell => cell.textContent.replace(/\s/g, '').replace(",","")).map(Number);
-
-    if (data.length < 8) {
-        console.error("Format inattendu des données !");
-    } else {
-        let populationTotale = data[1];
-        let effectifs = data.slice(2);
-
-        let agesMoyens = [7, 22, 37, 52, 67, 80];
-
-        let sommePonderee = effectifs.reduce((sum, effectif, index) => sum + effectif * agesMoyens[index], 0);
-        let ageMoyen = sommePonderee / populationTotale;
-        
-
-        document.getElementById("AverageAge").textContent = ageMoyen.toFixed(2) + " ans";
-        // document.getElementById("AverageAge").textContent = Math.round(ageMoyen) + " ans";
-
-    }
-    
-}
-
 async function fetchNeighborhoodPopulationData(department, city) {
     try {
         const response = await fetch(`${backendUrl}/api/EvolPop`);
@@ -413,6 +365,31 @@ async function fetchNeighborhoodPopulationData(department, city) {
         return {};
     }
 }
+async function fillPopulationTable(department, cityName) {
+    const populationData = await fetchPopulationData(department, cityName);
+    
+    const tableBody = document.getElementById("TablePopCityName");  
+    
+
+    // Parcourir toutes les lignes du tableau
+    const rows = tableBody.querySelectorAll("tr");
+    
+    rows.forEach(row => {
+        const year = row.querySelector("td").innerText;
+        if (populationData[year]) {
+            row.querySelectorAll("td")[1].innerText = populationData[year].totalPopulation.toLocaleString();
+            row.querySelectorAll("td")[2].innerText = populationData[year].total0to14.toLocaleString();
+            row.querySelectorAll("td")[3].innerText = populationData[year].total15to29.toLocaleString();
+            row.querySelectorAll("td")[4].innerText = populationData[year].total30to44.toLocaleString();
+            row.querySelectorAll("td")[5].innerText = populationData[year].total45to59.toLocaleString();
+            row.querySelectorAll("td")[6].innerText = populationData[year].total60to74.toLocaleString();
+            row.querySelectorAll("td")[7].innerText = populationData[year].total75toMore.toLocaleString();
+        }
+    });
+    document.getElementById("AverageAge").textContent = populationAverageAge.toFixed(2) + " ans";
+    
+}
+
 
 async function fillNeighborhoodPopulationTable(department, city) {
     const neighborhoodPopulationData = await fetchNeighborhoodPopulationData(department, city);
@@ -667,74 +644,86 @@ async function fetchSecuriteCriminaliteData(department, city) {
 }
 
 let chartHistogramInstance = null;
+
+let populationAverageAge = 0;
 async function createHistogram(canvasId, department, city, label, backgroundColor = 'rgba(75, 192, 192, 0.5)', cityInputId = null) {
     try {
         const response = await fetch(`${backendUrl}/api/EvolPop`);
-        
+       
         if (!response.ok) {
             console.error('Erreur lors de la récupération des données');
             return;
         }
-        
+       
         const data = await response.json();
-        
+       
         // Normaliser le nom du département pour la recherche
         const normalizedDepartment = normalizeString(department);
-        
+       
         // Recherche du bon fichier de département
-        const departmentKey = Object.keys(data).find(key => 
+        const departmentKey = Object.keys(data).find(key =>
             normalizeString(key).includes(normalizedDepartment)
         );
-        
+       
         if (!departmentKey || !Array.isArray(data[departmentKey])) {
             console.error(`Aucune donnée trouvée pour le département: ${department}`);
             return;
         }
-        
-        
+       
+       
         // Recherche de la ville dans le département
-        const cityData = data[departmentKey].find(item => 
-            item && 
-            item["Libellé commune ou ARM"] && 
+        const cityData = data[departmentKey].find(item =>
+            item &&
+            item["Libellé commune ou ARM"] &&
             normalizeString(item["Libellé commune ou ARM"]) === normalizeString(city)
         );
-        
+       
         if (!cityData) {
             console.error(`Aucune donnée trouvée pour la ville: ${city} dans le département: ${department}`);
             return;
         }
-        
-        
+       
+       
         // Extraction des données de population par tranche d'âge
         const labels = ["Pop 0-14 ans", "Pop 15-29 ans", "Pop 30-44 ans", "Pop 45-59 ans", "Pop 60-74 ans", "Pop 75 ans ou plus"];
         const datayears = [];
-        
+        const ageGroups = [7, 22, 37, 52, 67, 80]; // Âge moyen estimé pour chaque groupe
+        let totalPopulation = 0;
+        let weightedAgeSum = 0;
+       
         // Recherche des clés correspondantes dans l'objet cityData
-        for (const label of labels) {
+        for (let i = 0; i < labels.length; i++) {
+            const label = labels[i];
             let value = 0;
             // Chercher la clé exacte ou une clé similaire
-            const key = Object.keys(cityData).find(k => 
-                k === label || 
+            const key = Object.keys(cityData).find(k =>
+                k === label ||
                 normalizeString(k).includes(normalizeString(label))
             );
-            
+           
             if (key) {
                 value = parseFloat(cityData[key]) || 0;
+                totalPopulation += value;
+                weightedAgeSum += value * ageGroups[i];
             }
             datayears.push(value);
         }
         
+        // Calcul de l'âge moyen et assignation à la variable externe
+        populationAverageAge = totalPopulation > 0 ? weightedAgeSum / totalPopulation : 0;
+        console.log(`Âge moyen de la population de ${city}: ${populationAverageAge.toFixed(2)} ans`);
+       
         const ctx = document.getElementById(canvasId).getContext('2d');
         if (chartHistogramInstance) {
             chartHistogramInstance.destroy();
         }
-        
+       
         chartHistogramInstance = new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: labels.map(label => label.replace('Pop ', '')),
                 datasets: [{
-                    label: label,
+                    label: `${label} (Âge moyen: ${populationAverageAge.toFixed(2)} ans)`,
                     data: datayears,
                     backgroundColor: backgroundColor,
                     borderColor: 'rgba(75, 192, 192, 1)',
@@ -760,7 +749,7 @@ async function createHistogram(canvasId, department, city, label, backgroundColo
                 }
             }
         });
-        
+       
         if (cityInputId) {
             const cityInput = document.getElementById(cityInputId);
             if (cityInput && !cityInput.dataset.listenerAttached) {
@@ -771,8 +760,12 @@ async function createHistogram(canvasId, department, city, label, backgroundColo
                 cityInput.dataset.listenerAttached = "true"; // Pour éviter les doublons
             }
         }
+        
+        // Retourner l'âge moyen pour une utilisation éventuelle
+        return populationAverageAge;
     } catch (error) {
         console.error('Erreur lors de la création de l\'histogramme:', error);
+        return null;
     }
 }
 
@@ -891,8 +884,6 @@ async function createPrixM2Chart(canvasId, department, city, label, borderColor,
                 }
             }
         }
-       
-        console.log(AverageCost);
         const ctx = document.getElementById(canvasId).getContext('2d');
         if (chartPrixM2Instance) {
             chartPrixM2Instance.destroy();
@@ -939,7 +930,6 @@ let chartSurfaceInstance = null;
 async function createSurfaceChart(canvasId, department, city, label, borderColor, cityInputId = null) {
     try {
         const response = await fetch(`${backendUrl}/api/EvolSurface`);
-        console.log(`${backendUrl}/api/EvolSurface`);
         
        
         if (!response.ok) {
@@ -974,7 +964,6 @@ async function createSurfaceChart(canvasId, department, city, label, borderColor
             }
         }
        
-        console.log(AverageCost);
         const ctx = document.getElementById(canvasId).getContext('2d');
         if (chartSurfaceInstance) {
             chartSurfaceInstance.destroy();
@@ -1243,7 +1232,6 @@ async function fetchDepartmentCityNeighborhood() {
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
-        console.log(`Adresse : https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
         
         
 
@@ -1254,10 +1242,7 @@ async function fetchDepartmentCityNeighborhood() {
             const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
             const city = data[0].name || data[0].address.city  || data[0].address.town || "";
             const suburb = data[0].address.suburb || "";
-            const parts = suburb.split('-') || "";
-
-            console.log([departmentCode, departement, city, parts[parts.length - 1].trim() || ""]);
-            
+            const parts = suburb.split('-') || "";            
             return [departmentCode, departement, city, parts[parts.length - 1].trim() || ""];
         } else {
             console.error("No data found for the address.");
@@ -1605,7 +1590,6 @@ async function updateValues() {
 
 const button = document.getElementById('getResult');
 button.addEventListener('click', () => {
-    console.log("Affichage de la feuille resultat");
     
     const PrintArea = document.getElementById("PrintArea");
     if (PrintArea) {
