@@ -197,11 +197,13 @@ async function fetchRentabiliteData(department, city, typeOfProperty) {
 async function fetchCytiesDescription(cityName) {
     try {
         const response = await fetch(`${backendUrl}/api/CitiesDescription`);
+        console.log(`${backendUrl}/api/CitiesDescription`);
+        
         const data = await response.json();
 
         for (const key in data) {
             if (normalizeString(key).includes(normalizeString(cityName))) {            
-                return data[key].description;
+                return data[key][0].description;
             }
 
         }
@@ -1491,9 +1493,17 @@ async function updateValues() {
     let RentValue = document.getElementById("RentValue");
     let yieldValue = document.getElementById("YieldValue");
 
+    
+    let neighborhoodCost = "";
+    let neighborhoodRent = "";
+
     let costSquareNeighbourhood = document.getElementById("CostSquareValueNeighbourhood");
     let RentValueNeighbourhood = document.getElementById("RentValueNeighbourhood");
     let yieldValueNeighbourhood = document.getElementById("YieldValueNeighbourhood");
+
+    let costSquareNeighbourhoodDiv = document.getElementById("CostSquareAreaNeighbourhood");
+    let RentValueNeighbourhoodDiv = document.getElementById("RentAreaNeighbourhood");
+    let yieldValueNeighbourhoodDiv = document.getElementById("YieldAreaNeighbourhood");
 
     let cityDescriptionValue = document.querySelector(".CityDescriptionValue");
 
@@ -1531,13 +1541,19 @@ async function updateValues() {
     const data = await fetchRentabiliteData(department, city, typeOfPropertyValue.innerText);
 
     costSquare.innerText = Number(data.pricePerSquareMeter).toLocaleString("fr-FR") + " €";
-    RentValue.innerText = (Number(data.rentPerSquareMeter)).toLocaleString("fr-FR") + " €";
+    RentValue.innerText = (Number(data.rentPerSquareMeter)).toFixed(1) + " €";
     yieldValue.innerText = (data.yield * 100).toFixed(2) + " %";
 
-    
-    const neighborhoodCost = await fetchNeighborhoodCostData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
-    const neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
-
+    if(neighbourhoodValue.innerText == ""){
+        costSquareNeighbourhoodDiv.style.display = "none"
+        RentValueNeighbourhoodDiv.style.display = "none"
+        yieldValueNeighbourhoodDiv.style.display = "none"
+    }
+    else{        
+        neighborhoodCost = await fetchNeighborhoodCostData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
+        neighborhoodCost = Math.round(neighborhoodCost)
+        neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
+    }
     if (neighborhoodCost === undefined || neighborhoodRent === undefined) {
         console.error("neighborhoodCost or neighborhoodRent is undefined");
         return;

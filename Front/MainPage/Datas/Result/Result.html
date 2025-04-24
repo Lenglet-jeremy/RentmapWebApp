@@ -1,4 +1,3 @@
-
 <div id="ResultArea" class="ResultArea">
     <h3>LOGO</h3>
     <div class="TypeNbPiecesSurfaceCity">
@@ -15,7 +14,7 @@
     <div class="CostSurfaceYield">
         <div class="FirstLine">
             <div class="CostSquareArea">
-                <span class="PrixMCarre"></span>
+                <span class="PrixMCarreImg"></span>
                 <div class="CostSquare">
                     <p>Prix d'Achat au m²</p>
                     <p id="CostSquareValue" class="CostSquareValue"></p>
@@ -23,7 +22,7 @@
             </div>
 
             <div class="RentArea">
-                <span class="LoyerMCarre"></span>
+                <span class="LoyerMCarreImg"></span>
                 <div class="Rent">
                     <p>Loyer au m²</p>
                     <p id="RentValue" class="RentValue"></p>
@@ -31,24 +30,16 @@
             </div>
 
             <div class="YieldArea">
-                <img src="" alt="">
+                <span class="YieldImg"></span>
                 <div class="Yield">
                     <p>Rendement</p>
                     <p id="YieldValue" class="YieldValue"></p>
                 </div>
             </div>
-
-            <!-- <div class="DVFArea">
-                <img src="" alt="">
-                <div class="DVF">
-                    <p>Valeur fonciere</p>
-                    <p id="DVFValue" class="DVFValue"></p>
-                </div>
-            </div> -->
         </div>
         <div class="FirstLineNeighbourhood">
             <div class="CostSquareAreaNeighbourhood">
-                <img src="" alt="">
+                <span class="PrixMCarreImg"></span>
                 <div class="CostSquareNeighbourhood">
                     <p>Prix d'Achat moyen au m² Quartier</p>
                     <p id="CostSquareValueNeighbourhood" class="CostSquareValueNeighbourhood"></p>
@@ -56,7 +47,7 @@
             </div>
 
             <div class="RentAreaNeighbourhood">
-                <img src="" alt="">
+                <span class="LoyerMCarreImg"></span>
                 <div class="RentNeighbourhood">
                     <p>Loyer moyen au m² Quartier</p>
                     <p id="RentValueNeighbourhood" class="RentValueNeighbourhood"></p>
@@ -64,21 +55,20 @@
             </div>
 
             <div class="YieldAreaNeighbourhood">
-                <img src="" alt="">
+                <span class="YieldImg"></span>
                 <div class="YieldNeighbourhood">
                     <p>Rendement moyen Quartier</p>
                     <p id="YieldValueNeighbourhood" class="YieldValueNeighbourhood"></p>
                 </div>
             </div>
-            
 
-            <div>
-                <img src="" alt="">
+            <!-- <div>
+                <span class="Yield"></span>
                 <div>
-                    <p>Valeur a determiner </p>
+                    <p>Valeur à déterminer</p>
                     <p></p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -87,108 +77,119 @@
     </div>
 
     <div class="SecondLine">
-            <img src="" alt="">
-            <div class="PopulationArea">
+        <div class="PopulationArea">
+            <span class="PopulationImg"></span>
+            <div>
                 <p>Population</p>
-                <p id="Population" class="RentSquare"></p>
+                <p id="Population" class="Population"></p>
             </div>
+        </div>
 
-            <img src="" alt="">
-            <div class="StudentsRateArea">
-                <p>Taux D'étudiant</p>
+        <div class="StudentsRateArea">
+            <span class="StudentsRateImg"></span>
+            <div>
+                <p>Taux d'étudiants</p>
                 <p id="StudentsRate" class="StudentsRate"></p>
             </div>
+        </div>
 
-            <img src="" alt="">
-            <div class="UnemployedRateArea">
+        <div class="UnemployedRateArea">
+            <span class="UnemployedRateImg"></span>
+            <div>
                 <p>Taux de chômage</p>
                 <p id="UnemployedRate" class="UnemployedRate"></p>
             </div>
+        </div>
 
-            <img src="" alt="">
-            <div class="MedianIncomeArea">
-                <p>Revenu Median</p>
+        <div class="MedianIncomeArea">
+            <span class="MedianIncomeImg"></span>
+            <div>
+                <p>Revenu médian</p>
                 <p id="MedianIncome"></p>
             </div>
-            
-            <img src="" alt="">
-            <div class="OwnerShareArea">
-                <p>Part propriaitaire</p>
+        </div>
+
+        <div class="OwnerShareArea">
+            <span class="OwnerShareImg"></span>
+            <div>
+                <p>Part propriétaire</p>
                 <p id="OwnerShare"></p>
             </div>
-            <img src="" alt="">
-            <div class="TenantShareArea">
+        </div>
+
+        <div class="TenantShareArea">
+            <span class="TenantShareImg"></span>
+            <div>
                 <p>Part locataire</p>
                 <p id="TenantShare"></p>
             </div>
+        </div>
 
-            <img src="" alt="">
-            <div class="AgeRate">
-                <p>Age Moyen des Habitants</p>
+        <div class="AgeRate">
+            <span class="AverageAgeImg"></span>
+            <div>
+                <p>Âge moyen des habitants</p>
                 <p id="AverageAge"></p>
             </div>
+        </div>
 
-            <img src="" alt="">
-            <div class="PopulationDensityArea">
+        <div class="PopulationDensityArea">
+            <span class="PopulationDensityImg"></span>
+            <div>
                 <p>Densité de population</p>
                 <p id="PopulationDensity"></p>
             </div>
-
+        </div>
     </div>
 
-
     <div class="ThirdLine">
-
-        <div>
-            <img src="" alt="">
-            <div class="VacantsCommodationsRateArea">
-                <p>Taux d'habitation vacants</p>
+        <div class="VacantsCommodationsRateArea">
+            <span class="VacantsCommodationsRateImg"></span>
+            <div>
+                <p>Taux d'habitations vacantes</p>
                 <p id="VacantsCommodationsRate"></p>
             </div>
         </div>
-        <div>
-            <img src="" alt="">
-            <div class="LocativeTensionRate">
+
+        <div class="LocativeTensionRate">
+            <span class="LocativeTensionImg"></span>
+            <div>
                 <p>Tension locative</p>
                 <p id="LocativeTension"></p>
             </div>
         </div>
 
-        <div>
-            <img src="" alt="">
-            <div class="InternetConnection">
+        <div class="InternetConnection">
+            <span class="InternetConnectionImg"></span>
+            <div>
                 <p>Qualité couverture Internet</p>
                 <p id="InternetConnection"></p>
             </div>
         </div>
 
-        <div>
-            <img src="" alt="">
-            <div class="LoiLittoralArea">
-                <p>Lois litorral ?</p>
+        <div class="LoiLittoralArea">
+            <span class="LittoralImg"></span>
+            <div>
+                <p>Loi littoral ?</p>
                 <p id="LoiLittoral"></p>
             </div>
         </div>
 
-        <div>
-            <img src="" alt="">
-            <div class="ZoneMontagnesArea">
-                <p>Zone Montagneuse ?</p>
+        <div class="ZoneMontagnesArea">
+            <span class="MontagnesImg"></span>
+            <div>
+                <p>Zone montagneuse ?</p>
                 <p id="ZoneMontagnes"></p>
             </div>
         </div>
     </div>
-    
 
     <div id="FirstLineCharts" class="FirstLineCharts">
-
-        <!-- Exemple de graphique -->
         <div id="PopulationChart" class="Chart">
             <canvas id="populationChartCanvas"></canvas>
             <img id="populationChartImage" src="" alt="Population Chart">
         </div>
 
-        <!-- Autres graphiques -->
         <div id="LineChart" class="Chart">
             <canvas id="lineChartCanvas"></canvas>
             <img id="lineChartImage" src="" alt="Line Chart">
@@ -203,24 +204,20 @@
             <canvas id="surfaceChartCanvas"></canvas>
             <img id="surfaceChartImage" src="" alt="Surface Chart">
         </div>
-
     </div>
+
     <div id="UnemployedChart" class="Chart">
         <canvas id="UnemployedChartCanvas"></canvas>
-        <!-- <img id="unemployedChartImage" src="" alt="Unemployed Chart"> -->
     </div>
 
     <div id="SecuriteCriminalte">
         <canvas id="securiteChartCanvas"></canvas>
     </div>
 
-    
     <div class="CityClimat">
         <p>Climat</p>
         <p class="CityClimatValue"></p>
     </div>
-
-    
 
     <div class="UrbanismeDescription">
         <p>Urbanisme</p>
@@ -228,20 +225,19 @@
     </div>
 
     <div class="GrandAxesDescription">
-        <p>Grand axes</p>
+        <p>Grands axes</p>
         <p class="GrandAxesDescriptionValue"></p>
     </div>
 
     <div class="EtudeMarcheLocalDescription">
-        <p>Etudes du marché local</p>
+        <p>Études du marché local</p>
         <p class="EtudeMarcheLocalDescriptionValue"></p>
     </div>
-
 
     <table class="PopulationRapartion">
         <thead>
             <tr>
-                <th colspan="8">Repartition population </th>
+                <th colspan="8">Répartition de la population</th>
             </tr>
             <tr>
                 <th>Année</th>
@@ -277,13 +273,13 @@
     <table class="CostEvol">
         <thead>
             <tr>
-                <th colspan="8">Evolution Prix immobilier</th>
+                <th colspan="8">Évolution des prix immobiliers</th>
             </tr>
             <tr>
                 <th>Année</th>
-                <th>Prix Moyen</th>
-                <th>Prix m² Moyen</th>
-                <th>Surface Moyenne</th>
+                <th>Prix moyen</th>
+                <th>Prix m² moyen</th>
+                <th>Surface moyenne</th>
             </tr>
         </thead>
         <tbody id="TablePrixImmoCityName">
@@ -302,9 +298,9 @@
 
     <div class="TableauRentabilite" id="TableauRentabiliteContainer">
         <div class="mainTitle" id="TableauRentabiliteMainTitle">Tableur rentabilité - Imposition location meublée</div>
-        
+
         <div class="caseTitle" id="TableauRentabiliteCaseTitle">CAS 4</div>
-        
+
         <div class="content" id="TableauRentabiliteContent">
             <div class="section" id="TableauRentabiliteProjetSection">
                 <div class="sectionTitle" id="TableauRentabiliteProjetTitle">Projet</div>
@@ -329,7 +325,7 @@
                     <div class="unit" id="TableauRentabiliteUnitProjetTotal">€</div>
                 </div>
             </div>
-            
+
             <div class="section" id="TableauRentabiliteLoyers">
                 <div class="sectionTitle" id="TableauRentabiliteLoyersTitle">Loyers prévisionnels HC</div>
                 <div class="row" id="TableauRentabiliteRowLoyer1">
@@ -363,7 +359,7 @@
                     <div class="unit" id="TableauRentabiliteUnitTotalLoyers">€</div>
                 </div>
             </div>
-            
+
             <div class="section" id="TableauRentabiliteImpotsSection">
                 <div class="sectionTitle" id="TableauRentabiliteImpotsTitle">Impôts</div>
                 <div class="row" id="TableauRentabiliteRowAmortMurs">
@@ -412,7 +408,7 @@
                     <div class="unit" id="TableauRentabiliteUnitImpot">€</div>
                 </div>
             </div>
-            
+
             <div class="section" id="TableauRentabiliteFinancementSection">
                 <div class="sectionTitle" id="TableauRentabiliteFinancementTitle">Financement</div>
                 <div class="row" id="TableauRentabiliteRowTotalEmprunt">
@@ -431,9 +427,9 @@
                     <div class="unit" id="TableauRentabiliteUnitMensualite">€</div>
                 </div>
             </div>
-            
+
             <div class="section" id="TableauRentabilitePrelevSociauxSection">
-                <div class="sectionTitle" id="TableauRentabilitePrelevSociauxTitle">Prélèvement sociaux</div>
+                <div class="sectionTitle" id="TableauRentabilitePrelevSociauxTitle">Prélèvements sociaux</div>
                 <div class="row" id="TableauRentabiliteRowCSG">
                     <div class="label" id="TableauRentabiliteLabelCSG">CSG 9,9</div>
                     <div class="value" id="TableauRentabiliteValueCSG">-12,26</div>
@@ -445,31 +441,31 @@
                     <div class="unit" id="TableauRentabiliteUnitCRDS">€</div>
                 </div>
                 <div class="row" id="TableauRentabiliteRowPrelevSocial">
-                    <div class="label" id="TableauRentabiliteLabelPrelevSocial">prelev social (4,5%)</div>
+                    <div class="label" id="TableauRentabiliteLabelPrelevSocial">Prélèvement social (4,5%)</div>
                     <div class="value" id="TableauRentabiliteValuePrelevSocial">-5,57</div>
                     <div class="unit" id="TableauRentabiliteUnitPrelevSocial">€</div>
                 </div>
                 <div class="row" id="TableauRentabiliteRowContribAdd">
-                    <div class="label" id="TableauRentabiliteLabelContribAdd">contrib additionnelle (0,3%)</div>
+                    <div class="label" id="TableauRentabiliteLabelContribAdd">Contribution additionnelle (0,3%)</div>
                     <div class="value" id="TableauRentabiliteValueContribAdd">-0,37</div>
                     <div class="unit" id="TableauRentabiliteUnitContribAdd">€</div>
                 </div>
                 <div class="row" id="TableauRentabiliteRowPrelevSolidarite">
-                    <div class="label" id="TableauRentabiliteLabelPrelevSolidarite">prelev solidarité (2%)</div>
+                    <div class="label" id="TableauRentabiliteLabelPrelevSolidarite">Prélèvement solidarité (2%)</div>
                     <div class="value" id="TableauRentabiliteValuePrelevSolidarite">-2,48</div>
                     <div class="unit" id="TableauRentabiliteUnitPrelevSolidarite">€</div>
                 </div>
                 <div class="row" id="TableauRentabiliteRowTotalImpotSociaux">
-                    <div class="label" id="TableauRentabiliteLabelTotalImpotSociaux">Total impot sociaux</div>
+                    <div class="label" id="TableauRentabiliteLabelTotalImpotSociaux">Total impôts sociaux</div>
                     <div class="value" id="TableauRentabiliteValueTotalImpotSociaux">-21,31</div>
                     <div class="unit" id="TableauRentabiliteUnitTotalImpotSociaux">€</div>
                 </div>
             </div>
-            
+
             <div class="section" id="TableauRentabiliteChargesSection">
-                <div class="sectionTitle" id="TableauRentabiliteChargesTitle">Charges annuel</div>
+                <div class="sectionTitle" id="TableauRentabiliteChargesTitle">Charges annuelles</div>
                 <div class="row" id="TableauRentabiliteRowChargesCopro">
-                    <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelChargesCopro">Charges de copropriétés</div>
+                    <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelChargesCopro">Charges de copropriété</div>
                     <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueChargesCopro">1300</div>
                     <div class="unit" id="TableauRentabiliteUnitChargesCopro">€</div>
                 </div>
@@ -494,7 +490,7 @@
                     <div class="unit" id="TableauRentabiliteUnitTotalMensuel">€</div>
                 </div>
             </div>
-            
+
             <div class="section" id="TableauRentabiliteCashflowSection">
                 <div class="sectionTitle" id="TableauRentabiliteCashflowTitle">Cashflow</div>
                 <div class="row" id="TableauRentabiliteRowCashflowBrut">
@@ -509,7 +505,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="part2" id="TableauRentabilitePart2">
             <table class="fullWidth" cellspacing="0" cellpadding="8" border="1" id="TableauRentabiliteTable">
                 <tr id="TableauRentabiliteRowHonorairesChasseur">
@@ -590,13 +586,11 @@
             </table>
         </div>
     </div>
-    
 
-    
     <table id="neighborhoodCostRentTable">
         <thead>
             <tr>
-                <th colspan="5">Prix et loyer actuel par Quartier</th>
+                <th colspan="5">Prix et loyer actuel par quartier</th>
             </tr>
             <tr>
                 <th>Quartier</th>
@@ -610,37 +604,4 @@
             <!-- Ajoutez les autres quartiers ici -->
         </tbody>
     </table>
-    
-
-    <!-- <table id="neighborhoodPopulationTable">
-        <thead>
-            <tr>
-                <th colspan="8">Répartition population par Quartier</th>
-            </tr>
-            <tr>
-                <th>Quartier</th>
-                <th>Population</th>
-                <th>Pop 0-14 ans</th>
-                <th>Pop 15-29 ans</th>
-                <th>Pop 30-44 ans</th>
-                <th>Pop 45-59 ans</th>
-                <th>Pop 60-74 ans</th>
-                <th>Pop 75 ans ou plus</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Quartier 1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table> -->
-    
-
 </div>

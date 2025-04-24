@@ -1,469 +1,583 @@
 /* Variables pour une cohérence des couleurs et faciliter les modifications */
 :root {
-    --primary-color: #3b82f6;
-    --primary-dark: #2563eb;
-    --secondary-color: #64748b;
-    --accent-color: #f59e0b;
-    --text-color: #334155;
-    --text-light: #64748b;
-    --background-color: #f8fafc;
-    --card-bg: #ffffff;
-    --border-color: #e2e8f0;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
-    --radius: 8px;
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
-  }
-  
-  /* Reset et base */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  }
-  
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.5;
-    font-size: 16px;
-  }
-  
-  /* Layout principal */
+  --primary-color: #3b82f6;
+  --primary-dark: #2563eb;
+  --secondary-color: #64748b;
+  --accent-color: #f59e0b;
+  --text-color: #334155;
+  --text-light: #64748b;
+  --background-color: #f8fafc;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  --radius: 8px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+}
+
+/* Reset et base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Layout principal */
+.ResultArea {
+  display: grid;
+  max-width: 1200px;
+  height: 90%;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+/* Header avec logo */
+.ResultArea h3 {
+  grid-column: 1 / -1;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+/* Informations de base du bien */
+.TypeNbPiecesSurfaceCity {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--spacing-md);
+}
+
+.TypeNbPiecesSurfaceCity p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.Type, .NbPieces, .Surface, .City, .neighbourhood {
+  font-weight: 600;
+}
+
+/* Première ligne de statistiques */
+.CostSurfaceYield {
+  grid-column: 1 / -1;
+  margin-bottom: var(--spacing-lg);
+}
+
+.FirstLine, .FirstLineNeighbourhood {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.CostSquareArea, .RentArea, .YieldArea, .DVFArea,
+.CostSquareAreaNeighbourhood, .RentAreaNeighbourhood, .YieldAreaNeighbourhood {
+  background-color: var(--card-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CostSquareArea img, .RentArea img, .YieldArea img, .DVFArea img,
+.CostSquareAreaNeighbourhood img, .RentAreaNeighbourhood img, .YieldAreaNeighbourhood img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.CostSquare, .Rent, .Yield, .DVF,
+.CostSquareNeighbourhood, .RentNeighbourhood, .YieldNeighbourhood {
+  text-align: center;
+}
+
+.CostSquare p:first-child, .Rent p:first-child, .Yield p:first-child, .DVF p:first-child,
+.CostSquareNeighbourhood p:first-child, .RentNeighbourhood p:first-child, .YieldNeighbourhood p:first-child {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.CostSquareValue, .RentValue, .YieldValue, .DVFValue,
+.CostSquareValueNeighbourhood, .RentValueNeighbourhood, .YieldValueNeighbourhood {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.YieldValue, .YieldValueNeighbourhood {
+  color: var(--accent-color);
+}
+
+/* Description de la ville */
+.CityDescription {
+  grid-column: 1 / -1;
+  background-color: var(--card-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--spacing-lg);
+}
+
+.CityDescriptionValue {
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+/* Deuxième ligne de statistiques */
+.SecondLine {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.SecondLine > div {
+  background-color: var(--card-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.SecondLine img {
+  width: 28px;
+  height: 28px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.SecondLine p:first-child {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.SecondLine p:last-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Troisième ligne de statistiques */
+.ThirdLine {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.ThirdLine > div {
+  background-color: var(--card-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ThirdLine img {
+  width: 28px;
+  height: 28px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.ThirdLine p:first-child {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.ThirdLine p:last-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Graphiques */
+.FirstLineCharts {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.Chart {
+  background-color: var(--card-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  height: 300px;
+}
+
+#UnemployedChart, #SecuriteCriminalte {
+  grid-column: 1 / -1;
+  height: 300px;
+  background-color: var(--card-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Descriptions */
+.CityClimat, .UrbanismeDescription, .GrandAxesDescription, .EtudeMarcheLocalDescription {
+  grid-column: 1 / -1;
+  background-color: var(--card-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--spacing-lg);
+}
+
+.CityClimat p:first-child, .UrbanismeDescription p:first-child,
+.GrandAxesDescription p:first-child, .EtudeMarcheLocalDescription p:first-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.CityClimatValue, .UrbanismeDescriptionValue,
+.GrandAxesDescriptionValue, .EtudeMarcheLocalDescriptionValue {
+  line-height: 1.7;
+}
+
+/* Tableaux */
+table {
+  grid-column: 1 / -1;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-lg);
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+table thead th {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-md);
+  text-align: left;
+}
+
+table thead th:first-child {
+  border-top-left-radius: var(--radius);
+}
+
+table thead th:last-child {
+  border-top-right-radius: var(--radius);
+}
+
+table tbody td {
+  padding: var(--spacing-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Tableau de rentabilité */
+.TableauRentabilite {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--spacing-lg);
+}
+
+.mainTitle {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-md);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.caseTitle {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: var(--spacing-sm);
+  font-weight: 600;
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+}
+
+.section {
+  margin-bottom: var(--spacing-md);
+}
+
+.sectionTitle {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-weight: 600;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.5fr;
+  padding: var(--spacing-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.row .label {
+  font-size: 0.9rem;
+}
+
+.row .value {
+  text-align: right;
+  font-weight: 600;
+}
+
+.row .unit {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.TableauRentabilitehighlight {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.meuble {
+  background-color: var(--accent-color);
+  color: white;
+  padding: var(--spacing-sm);
+  font-weight: 600;
+  text-align: center;
+}
+
+.part2 {
+  padding: var(--spacing-md);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/* Adaptations pour mobile */
+@media screen and (max-width: 768px) {
   .ResultArea {
-    display: grid;
-    max-width: 1200px;
-    height: 90%;
-    margin: 0 auto;
-    padding: var(--spacing-lg);
-  }
-  
-  /* Header avec logo */
-  .ResultArea h3 {
-    grid-column: 1 / -1;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-md);
-    text-align: center;
-  }
-  
-  /* Informations de base du bien */
-  .TypeNbPiecesSurfaceCity {
-    grid-column: 1 / -1;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md);
-    background-color: var(--card-bg);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    margin-bottom: var(--spacing-md);
-  }
-  
-  .TypeNbPiecesSurfaceCity p {
-    font-size: 1rem;
-    color: var(--text-color);
-  }
-  
-  .Type, .NbPieces, .Surface, .City, .neighbourhood {
-    font-weight: 600;
-  }
-  
-  /* Première ligne de statistiques */
-  .CostSurfaceYield {
-    grid-column: 1 / -1;
-    margin-bottom: var(--spacing-lg);
-  }
-  
-  .FirstLine, .FirstLineNeighbourhood {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
-  }
-  
-  .CostSquareArea, .RentArea, .YieldArea, .DVFArea,
-  .CostSquareAreaNeighbourhood, .RentAreaNeighbourhood, .YieldAreaNeighbourhood {
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .CostSquareArea img, .RentArea img, .YieldArea img, .DVFArea img,
-  .CostSquareAreaNeighbourhood img, .RentAreaNeighbourhood img, .YieldAreaNeighbourhood img {
-    width: 36px;
-    height: 36px;
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .CostSquare, .Rent, .Yield, .DVF,
-  .CostSquareNeighbourhood, .RentNeighbourhood, .YieldNeighbourhood {
-    text-align: center;
-  }
-  
-  .CostSquare p:first-child, .Rent p:first-child, .Yield p:first-child, .DVF p:first-child,
-  .CostSquareNeighbourhood p:first-child, .RentNeighbourhood p:first-child, .YieldNeighbourhood p:first-child {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .CostSquareValue, .RentValue, .YieldValue, .DVFValue,
-  .CostSquareValueNeighbourhood, .RentValueNeighbourhood, .YieldValueNeighbourhood {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-  }
-  
-  .YieldValue, .YieldValueNeighbourhood {
-    color: var(--accent-color);
-  }
-  
-  /* Description de la ville */
-  .CityDescription {
-    grid-column: 1 / -1;
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    margin-bottom: var(--spacing-lg);
-  }
-  
-  .CityDescriptionValue {
-    line-height: 1.7;
-    color: var(--text-color);
-  }
-  
-  /* Deuxième ligne de statistiques */
-  .SecondLine {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
-  }
-  
-  .SecondLine > div {
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .SecondLine img {
-    width: 28px;
-    height: 28px;
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .SecondLine p:first-child {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .SecondLine p:last-child {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--text-color);
-  }
-  
-  /* Troisième ligne de statistiques */
-  .ThirdLine {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
-  }
-  
-  .ThirdLine > div {
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .ThirdLine img {
-    width: 28px;
-    height: 28px;
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .ThirdLine p:first-child {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .ThirdLine p:last-child {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--text-color);
-  }
-  
-  /* Graphiques */
-  .FirstLineCharts {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-lg);
-  }
-  
-  .Chart {
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    height: 300px;
-  }
-  
-  #UnemployedChart, #SecuriteCriminalte {
-    grid-column: 1 / -1;
-    height: 300px;
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    margin-bottom: var(--spacing-lg);
-  }
-  
-  /* Descriptions */
-  .CityClimat, .UrbanismeDescription, .GrandAxesDescription, .EtudeMarcheLocalDescription {
-    grid-column: 1 / -1;
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    margin-bottom: var(--spacing-lg);
-  }
-  
-  .CityClimat p:first-child, .UrbanismeDescription p:first-child, 
-  .GrandAxesDescription p:first-child, .EtudeMarcheLocalDescription p:first-child {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .CityClimatValue, .UrbanismeDescriptionValue, 
-  .GrandAxesDescriptionValue, .EtudeMarcheLocalDescriptionValue {
-    line-height: 1.7;
-  }
-  
-  /* Tableaux */
-  table {
-    grid-column: 1 / -1;
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: var(--spacing-lg);
-    background-color: var(--card-bg);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    overflow: hidden;
-  }
-  
-  table thead th {
-    background-color: var(--primary-color);
-    color: white;
-    padding: var(--spacing-md);
-    text-align: left;
-  }
-  
-  table thead th:first-child {
-    border-top-left-radius: var(--radius);
-  }
-  
-  table thead th:last-child {
-    border-top-right-radius: var(--radius);
-  }
-  
-  table tbody td {
-    padding: var(--spacing-sm);
-    border-bottom: 1px solid var(--border-color);
-  }
-  
-  table tbody tr:last-child td {
-    border-bottom: none;
-  }
-  
-  table tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.02);
-  }
-  
-  /* Tableau de rentabilité */
-  .TableauRentabilite {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: var(--card-bg);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    margin-bottom: var(--spacing-lg);
-  }
-  
-  .mainTitle {
-    background-color: var(--primary-color);
-    color: white;
-    padding: var(--spacing-md);
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-  }
-  
-  .caseTitle {
-    background-color: var(--primary-dark);
-    color: white;
-    padding: var(--spacing-sm);
-    font-weight: 600;
-    text-align: center;
-  }
-  
-  .content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-md);
-    padding: var(--spacing-md);
-  }
-  
-  .section {
-    margin-bottom: var(--spacing-md);
-  }
-  
-  .sectionTitle {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: var(--spacing-sm) var(--spacing-md);
-    font-weight: 600;
-    border-radius: var(--radius) var(--radius) 0 0;
-  }
-  
-  .row {
-    display: grid;
-    grid-template-columns: 2fr 1fr 0.5fr;
-    padding: var(--spacing-sm);
-    border-bottom: 1px solid var(--border-color);
-  }
-  
-  .row .label {
-    font-size: 0.9rem;
-  }
-  
-  .row .value {
-    text-align: right;
-    font-weight: 600;
-  }
-  
-  .row .unit {
-    text-align: center;
-    font-size: 0.9rem;
-    color: var(--text-light);
-  }
-  
-  .TableauRentabilitehighlight {
-    color: var(--primary-color);
-    font-weight: 700;
-  }
-  
-  .meuble {
-    background-color: var(--accent-color);
-    color: white;
-    padding: var(--spacing-sm);
-    font-weight: 600;
-    text-align: center;
-  }
-  
-  .part2 {
-    padding: var(--spacing-md);
-  }
-  
-  .fullWidth {
-    width: 100%;
-  }
-  
-  /* Adaptations pour mobile */
-  @media screen and (max-width: 768px) {
-    .ResultArea {
       padding: var(--spacing-sm);
       grid-gap: var(--spacing-md);
-    }
-    
-    .TypeNbPiecesSurfaceCity {
+  }
+
+  .TypeNbPiecesSurfaceCity {
       flex-direction: column;
       text-align: center;
-    }
-    
-    .TypeNbPiecesSurfaceCity p:nth-child(even) {
-      display: none;
-    }
-    
-    .FirstLine, .FirstLineNeighbourhood, .SecondLine, .ThirdLine {
-      grid-template-columns: 1fr;
-    }
-    
-    .FirstLineCharts {
-      grid-template-columns: 1fr;
-    }
-    
-    .content {
-      grid-template-columns: 1fr;
-    }
-    
-    .row {
-      grid-template-columns: 1.5fr 1fr 0.5fr;
-    }
-    
-    table {
-      font-size: 0.85rem;
-    }
-    
-    table thead th, table tbody td {
-      padding: var(--spacing-sm) 4px;
-    }
   }
-  #Result{
-    display: none;
-    width: 100%;
-    height: 90%;
-    overflow-y: scroll;
+
+  .TypeNbPiecesSurfaceCity p:nth-child(even) {
+      display: none;
+  }
+
+  .FirstLine, .FirstLineNeighbourhood, .SecondLine, .ThirdLine {
+      grid-template-columns: 1fr;
+  }
+
+  .FirstLineCharts {
+      grid-template-columns: 1fr;
+  }
+
+  .content {
+      grid-template-columns: 1fr;
+  }
+
+  .row {
+      grid-template-columns: 1.5fr 1fr 0.5fr;
+  }
+
+  table {
+      font-size: 0.85rem;
+  }
+
+  table thead th, table tbody td {
+      padding: var(--spacing-sm) 4px;
+  }
 }
 
-.PopulationRapartion{
+#Result {
+  display: none;
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.PopulationRapartion {
   display: none;
 }
 
-.CostEvol{
+.CostEvol {
   display: none;
 }
 
-.PrixMCarre {
+.PrixMCarreImg {
   background-image: url("./img/PrixMCarre.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 32px; /* ajustable */
   height: 32px; /* ajustable */
 }
-.LoyerMCarre {
+
+.LoyerMCarreImg {
   background-image: url("./img/LoyermCarre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.YieldImg {
+  background-image: url("./img/yield.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.PopulationImg {
+  background-image: url("./img/Population.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.StudentsRateImg {
+  background-image: url("./img/TauxEtudiant.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.UnemployedRateImg {
+  background-image: url("./img/Taux Chomage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.MedianIncomeImg {
+  background-image: url("./img/RevenuMedian.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.OwnerShareImg {
+  background-image: url("./img/PartProprietaire.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.TenantShareImg {
+  background-image: url("./img/Locataire.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.AverageAgeImg {
+  background-image: url("./img/AgeMoyen.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.PopulationDensityImg {
+  background-image: url("./img/DensitePopulation.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.VacantsCommodationsRateImg {
+  background-image: url("./img/Habitation Vacant.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.LocativeTensionImg {
+  background-image: url("./img/TensionLocative.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.InternetConnectionImg {
+  background-image: url("./img/QualiteInternet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.LittoralImg {
+  background-image: url("./img/Littoral.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* ajustable */
+  height: 32px; /* ajustable */
+}
+
+.MontagnesImg {
+  background-image: url("./img/Montagnes.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 32px; /* ajustable */

@@ -13,7 +13,7 @@ const dataFolder = dataRoot;
 const DVFDataFolder = path.join(dataRoot, "DVF");
 const citiesDescriptionFolder = isRender
   ? "/Data"
-  : path.resolve(__dirname, "../../RentabiliteBiensDistance/Description villes/gpt-4");
+  : path.resolve(__dirname, "../Data");
 
 
 const app = express();
