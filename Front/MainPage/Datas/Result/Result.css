@@ -81,10 +81,18 @@ body {
 }
 
 .FirstLine, .FirstLineNeighbourhood {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.FirstLine div{
+  width: 200px;
+}
+
+.FirstLineNeighbourhood div{
+  width: 200px;
 }
 
 .CostSquareArea, .RentArea, .YieldArea, .DVFArea,
@@ -233,7 +241,8 @@ body {
   padding: var(--spacing-md);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  height: 300px;
+  height: 250px;
+  width: auto;
 }
 
 #UnemployedChart, #SecuriteCriminalte {

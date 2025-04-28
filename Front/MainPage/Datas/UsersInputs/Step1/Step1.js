@@ -47,7 +47,6 @@ async function fetchSuggestions(query) {
     suggestionsList.style.marginTop = "45px";
     
     const url = `${backendUrl}/api/autocomplete?query=${encodeURIComponent(query)}`;
-    console.log(`URL de la requête : ${url}`);
     
     const response = await fetch(url);
     if (!response.ok) {

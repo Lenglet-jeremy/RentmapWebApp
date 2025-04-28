@@ -2,7 +2,9 @@ const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
 const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
 function normalizeString(str) {
     return str
-        ? str.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
+        ? str.trim().toLowerCase().normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace("saint-", "st ")
         : "";
 }
 
@@ -12,7 +14,8 @@ function normalizeAddress(address) {
         .normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
         .replace(/'/g, " ")                              
         .replace(/[^A-Z0-9\s]/g, "")                     
-        .replace(/\s+/g, " ")                            
+        .replace(/\s+/g, " ")        
+        .replace("saint-", "st ")                    
         .trim();
 }
 
@@ -51,6 +54,8 @@ async function fetchNeighborhoodCostRentData(department, city) {
 async function fetchNeighborhoodCostData(department, city, neighborhood, typeOfProperty) {
     try {
         const response = await fetch(`${backendUrl}/api/Refined`);
+        console.log(`${backendUrl}/api/Refined`);
+        
         
         const data = await response.json();
         
@@ -1097,6 +1102,8 @@ let chartCriminalityInstance = null;
 async function CreateCriminalityChart(canvasId, department, city, population, label, borderColor, cityInputId = null) {
     try {
         const response = await fetch(`${backendUrl}/api/SecuriteCriminalite`);
+        console.log(`${backendUrl}/api/SecuriteCriminalite`);
+        
         const statsNationnaleResponse = await fetch(`${backendUrl}/api/StatsNationnale`);
         const data = await response.json();
         const nationalData = await statsNationnaleResponse.json();
@@ -1123,6 +1130,7 @@ async function CreateCriminalityChart(canvasId, department, city, population, la
         });
 
         const labels = Array.from(labelsSet);
+        
 
         const totalPopulationFrance = 68290000;
         const nationalRates = [];
@@ -1232,6 +1240,8 @@ async function fetchDepartmentCityNeighborhood() {
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
+        console.log(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
+        
         
         
 
@@ -1242,8 +1252,7 @@ async function fetchDepartmentCityNeighborhood() {
             const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
             const city = data[0].name || data[0].address.city  || data[0].address.town || "";
             const suburb = data[0].address.suburb || "";
-            const parts = suburb.split('-') || "";            
-            return [departmentCode, departement, city, parts[parts.length - 1].trim() || ""];
+            return [departmentCode, departement, city, suburb || ""];
         } else {
             console.error("No data found for the address.");
             return null;
@@ -1538,6 +1547,7 @@ async function updateValues() {
         neighborhoodCost = await fetchNeighborhoodCostData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
         neighborhoodCost = Math.round(neighborhoodCost)
         neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
+        
     }
     if (neighborhoodCost === undefined || neighborhoodRent === undefined) {
         console.error("neighborhoodCost or neighborhoodRent is undefined");

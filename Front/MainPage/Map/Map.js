@@ -109,7 +109,7 @@ const amenityTranslations = {
     'pub': 'Pub',
     'hotel': 'Hôtel',
     'motel': 'Motel',
-    'guest_house': 'Maison d\'hôtes',
+    // 'guest_house': 'Maison d\'hôtes',
     'bakery': 'Boulangerie',
     'convenience': 'Supérette',
     'supermarket': 'Super marché',
@@ -201,6 +201,37 @@ const amenityTranslations = {
     'money_transfer': 'Transfert d\'argent',
     'townhall': 'Mairie',
 };
+
+const amenityGroups = {
+    'Food and Drink': ['restaurant', 'cafe', 'bar', 'fast_food', 'pub'],
+    'Accommodation': ['hotel', 'motel', 'guest_house'],
+    'Shopping': ['bakery', 'convenience', 'supermarket'],
+    'Health': ['pharmacy', 'hospital', 'clinic', 'dentist', 'doctors'],
+    'Education': ['school', 'university', 'college', 'prep_school', 'library'],
+    'Entertainment': ['museum', 'theatre', 'cinema'],
+    'Transport': ['fuel', 'parking', 'parking_space', 'bicycle_parking', 'motorcycle_parking', 'parking_entrance', 'ferry_terminal'],
+    'Finance': ['bank', 'atm'],
+    'Public Services': ['post_office', 'post_box', 'townhall'],
+    'Recreation': ['park', 'garden', 'playground', 'sports_centre'],
+    'Transport Hubs': ['subway_entrance', 'bus_stop', 'train_station', 'aerodrome'],
+    'Other': ['shopping_centre', 'toilets', 'drinking_water', 'charging_station', 'bureau_de_change', 'community_centre', 'fountain', 'bench', 'clock', 'waste_basket', 'bicycle_rental', 'taxi', 'ice_cream', 'recycling', 'public_bookcase', 'monastery', 'bicycle_repair_station', 'nightclub', 'car_sharing', 'vending_machine', 'shower', 'place_of_worship', 'waste_disposal', 'marketplace', 'water_point', 'social_facility', 'shelter', 'childcare', 'device_charging_station', 'parcel_locker', 'handwashing', 'photo_booth', 'ticket_validator', 'dojo', 'veterinary', 'food_court', 'social_centre', 'car_wash', 'kindergarten', 'weighbridge', 'music_school', 'police', 'compressed_air', 'driving_school', 'arts_centre', 'personal_service', 'grit_bin', 'coworking_space', 'vacuum_cleaner', 'art_school', 'language_school', 'events_venue', 'courthouse', 'money_transfer']
+};
+
+const groupTranslations = {
+    'Food and Drink': 'Alimentation et Boissons',
+    'Accommodation': 'Hébergement',
+    'Shopping': 'Shopping',
+    'Health': 'Santé',
+    'Education': 'Éducation',
+    'Entertainment': 'Divertissement',
+    'Transport': 'Transport',
+    'Finance': 'Finance',
+    'Public Services': 'Services Publics',
+    'Recreation': 'Loisirs',
+    'Transport Hubs': 'Pôles de Transport',
+    'Other': 'Autres'
+};
+
 let map;
 let centerMarker;
 let markers = [];
@@ -567,27 +598,33 @@ document.getElementById('toggleAmenityList').addEventListener('click', () => {
     const amenityCheckboxes = document.getElementById('amenityCheckboxes');
     const amenityList = document.getElementById('amenityList');
 
-    if (amenityCheckboxes.children.length === 0) {
-        for (const amenity in amenityConfig) {
-            const label = document.createElement('label');
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.value = amenity;
-            checkbox.checked = amenityConfig[amenity].display;
-            checkbox.id = `amenity-${amenity}`;
+    // Clear existing checkboxes
+    amenityCheckboxes.innerHTML = '';
 
-            checkbox.addEventListener('change', function() {
-                amenityConfig[amenity].display = this.checked;
-                updateMapWithCurrentValues();
+    // Add group checkboxes only
+    for (const group in amenityGroups) {
+        const groupLabel = document.createElement('label');
+        const groupCheckbox = document.createElement('input');
+        groupCheckbox.type = 'checkbox';
+        groupCheckbox.value = group;
+        groupCheckbox.id = `group-${group.toLowerCase().replace(/ /g, '-')}`;
+        groupCheckbox.checked = amenityGroups[group].some(amenity => amenityConfig[amenity].display);
+
+        groupCheckbox.addEventListener('change', function() {
+            const isChecked = this.checked;
+            // Mettre à jour toutes les commodités dans ce groupe
+            amenityGroups[group].forEach(amenity => {
+                amenityConfig[amenity].display = isChecked;
             });
+            updateMapWithCurrentValues();
+        });
 
-            const amenityName = amenityTranslations[amenity] || amenity.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
-
-            label.appendChild(checkbox);
-            label.appendChild(document.createTextNode(amenityName));
-            amenityCheckboxes.appendChild(label);
-            amenityCheckboxes.appendChild(document.createElement('br'));
-        }
+        groupLabel.appendChild(groupCheckbox);
+        // Utiliser la traduction française si disponible, sinon utiliser le nom anglais
+        const groupName = groupTranslations[group] || group;
+        groupLabel.appendChild(document.createTextNode(groupName));
+        amenityCheckboxes.appendChild(groupLabel);
+        amenityCheckboxes.appendChild(document.createElement('br'));
     }
 
     if (amenityList.classList.contains('active')) {
@@ -603,5 +640,6 @@ document.getElementById('toggleAmenityList').addEventListener('click', () => {
         }, 0);
     }
 });
+
 
 initializeMap();
