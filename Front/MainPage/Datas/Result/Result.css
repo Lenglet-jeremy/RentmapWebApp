@@ -596,3 +596,13 @@ table tbody tr:nth-child(even) {
 #neighborhoodPopulationTable{
   display: none;
 }
+
+
+@media screen and (max-width: 768px) {
+  #Result{
+    background-color: #FF0000;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+}

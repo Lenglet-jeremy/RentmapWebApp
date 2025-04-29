@@ -105,6 +105,8 @@ function InitializeSteps() {
                 }
             } else if (button.id === "getResult") {
                 resultDiv.style.display = "flex";
+                document.querySelector(".MapArea").style.display = "none"
+                document.querySelector(".ContentArea .Content").style.width = "100%"
                 steps[currentStep].style.display = "none";
                 return;
             }
