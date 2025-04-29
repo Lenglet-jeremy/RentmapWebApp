@@ -411,10 +411,6 @@ table tbody tr:nth-child(even) {
 
 /* Adaptations pour mobile */
 @media screen and (max-width: 768px) {
-  .ResultArea {
-      padding: var(--spacing-sm);
-      grid-gap: var(--spacing-md);
-  }
 
   .TypeNbPiecesSurfaceCity {
       flex-direction: column;
@@ -597,12 +593,3 @@ table tbody tr:nth-child(even) {
   display: none;
 }
 
-
-@media screen and (max-width: 768px) {
-  #Result{
-    background-color: #FF0000;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-  }
-}
