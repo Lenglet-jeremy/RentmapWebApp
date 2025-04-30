@@ -1,3 +1,5 @@
+// Script.js
+
 const steps = document.querySelectorAll(".DataContent > div");
 let currentStep = 1;
 
@@ -27,6 +29,7 @@ async function loadAllHTML() {
     await loadHTML('./MainPage/Datas/UsersInputs/Step4/Step4.html', 'Step4');
     await loadHTML('./MainPage/Datas/UsersInputs/Step5/Step5.html', 'Step5');
     await loadHTML('./MainPage/Datas/Result/Result.html', 'Result');
+    await loadHTML('./MainPage/Datas/Result/Amenieties/Amenities.html', 'amenities-container');
 
     // Import the JavaScript files
     await import('./MainPage/Datas/UsersInputs/Step1/Step1.js');
@@ -37,6 +40,7 @@ async function loadAllHTML() {
     await import('./MainPage/Map/Map.js');
     await import('./MainPage/MainPage.js');
     await import('./MainPage/Datas/Result/Result.js');
+    await import('./MainPage/Datas/Result/Amenieties/Amenities.js');
 }
 
 window.addEventListener('beforeunload', function (e) {

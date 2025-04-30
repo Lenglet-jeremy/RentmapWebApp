@@ -1,6 +1,8 @@
-const amenityConfig = {
+// Map.js
+
+export const amenityConfig = {
     'default': { display: true, color: '#000000' },
-    'townhall': { display: true, color: '#478295' }, 
+    'townhall': { display: false, color: '#478295' },
     'restaurant': { display: false, color: '#FF0000' }, // Rouge
     'cafe': { display: false, color: '#00FF00' },       // Vert
     'bar': { display: false, color: '#0000FF' },        // Bleu
@@ -101,143 +103,96 @@ const amenityConfig = {
     'money_transfer': { display: false, color: '#2E8B57' }, // Vert mer
 };
 
-const amenityTranslations = {
-    'restaurant': 'Restaurant',
-    'cafe': 'Café',
-    'bar': 'Bar',
-    'fast_food': 'Fast-food',
-    'pub': 'Pub',
-    'hotel': 'Hôtel',
-    'motel': 'Motel',
-    // 'guest_house': 'Maison d\'hôtes',
-    'bakery': 'Boulangerie',
-    'convenience': 'Supérette',
-    'supermarket': 'Super marché',
-    'pharmacy': 'Pharmacie',
+export const amenityTranslations = {
     'hospital': 'Hôpital',
-    'clinic': 'Clinique',
     'dentist': 'Dentiste',
     'doctors': 'Médecins',
-    'school': 'École',
-    'university': 'Université',
-    'college': 'Collège',
+    'cafe': 'Café',
+    'pub': 'Pub',
+    'bar': 'Bar',
+    'nightclub': 'Boîte de nuit',
     'prep_school': 'École préparatoire',
-    'library': 'Bibliothèque',
-    'museum': 'Musée',
+    'university': 'Université',
+    'school': 'École',
+    'college': 'Collège',
+    'music_school': 'École de musique',
+    'art_school': 'École d\'art',
+    'driving_school': 'Auto-école',
+    'language_school': 'École de langues',
     'theatre': 'Théâtre',
-    'cinema': 'Cinéma',
-    'fuel': 'Station-service',
+    'playground': 'Aire de jeux',
     'parking': 'Parking',
-    'parking_space': 'Place de parking',
-    'bicycle_parking': 'Parking à vélos',
     'motorcycle_parking': 'Parking moto',
+    'bus_stop': 'Arrêt de bus',
+    'subway_entrance': 'Entrée de métro',
+    'aerodrome': 'Aérodrome',
+    'taxi': 'Taxi',
+    'shopping_centre': 'Centre commercial',
+    'convenience': 'Supérette',
+    'bakery': 'Boulangerie',
+    'supermarket': 'Super marché',
+    'ice_cream': 'Glacier',
+    'fast_food': 'Fast-food',
+    'restaurant': 'Restaurant',
+    'dojo': 'Dojo',
+    'sports_centre': 'Centre sportif',
+    'social_centre': 'Centre social',
+    'social_facility': 'Établissement social',
+    'library': 'Bibliothèque',
+    'cinema': 'Cinéma',
+    'museum': 'Musée',
+    'arts_centre': 'Centre d\'arts',
     'parking_entrance': 'Entrée de parking',
+    'parking_space': 'Place de parking',
+    'fuel': 'Station-service',
+    'charging_station': 'Station de recharge',
     'ferry_terminal': 'Terminal de ferry',
-    'bank': 'Banque',
-    'atm': 'Distributeur de billets',
+    'coworking_space': 'Espace de coworking',
+    'veterinary': 'Vétérinaire',
+    'courthouse': 'Tribunal',
+    'hotel': 'Hôtel',
+    'motel': 'Motel',
     'post_office': 'Bureau de poste',
-    'post_box': 'Boîte aux lettres',
+    'public_bookcase': 'Bibliothèque publique',
+    'waste_disposal': 'Déchetterie',
+    'police': 'Police',
     'park': 'Parc',
     'garden': 'Jardin',
-    'playground': 'Aire de jeux',
-    'sports_centre': 'Centre sportif',
-    'subway_entrance': 'Entrée de métro',
-    'bus_stop': 'Arrêt de bus',
+    'pharmacy': 'Pharmacie',
+    'clinic': 'Clinique',
+    'bank': 'Banque',
     'train_station': 'Gare',
-    'aerodrome': 'Aérodrome',
-    'shopping_centre': 'Centre commercial',
-    'toilets': 'Toilettes',
-    'drinking_water': 'Eau potable',
-    'charging_station': 'Station de recharge',
-    'bureau_de_change': 'Bureau de change',
-    'community_centre': 'Centre communautaire',
-    'fountain': 'Fontaine',
-    'bench': 'Banc',
-    'clock': 'Horloge',
-    'waste_basket': 'Poubelle',
+    'railway': 'Gare',
     'bicycle_rental': 'Location de vélos',
-    'taxi': 'Taxi',
-    'ice_cream': 'Glacier',
-    'recycling': 'Recyclage',
-    'public_bookcase': 'Bibliothèque publique',
-    'monastery': 'Monastère',
-    'bicycle_repair_station': 'Station de réparation de vélos',
-    'nightclub': 'Boîte de nuit',
-    'car_sharing': 'Partage de voiture',
-    'vending_machine': 'Distributeur automatique',
-    'shower': 'Douche',
-    'place_of_worship': 'Lieu de culte',
-    'waste_disposal': 'Déchetterie',
-    'marketplace': 'Marché',
-    'water_point': 'Point d\'eau',
-    'social_facility': 'Établissement social',
-    'shelter': 'Abri',
     'childcare': 'Garde d\'enfants',
-    'device_charging_station': 'Station de recharge d\'appareils',
-    'parcel_locker': 'Consignes',
-    'handwashing': 'Lavabo',
-    'photo_booth': 'Photomaton',
-    'ticket_validator': 'Validateur de tickets',
-    'dojo': 'Dojo',
-    'veterinary': 'Vétérinaire',
-    'food_court': 'Cour de restauration',
-    'social_centre': 'Centre social',
-    'car_wash': 'Lavage auto',
-    'kindergarten': 'Jardin d\'enfants',
-    'weighbridge': 'Pont-bascule',
-    'music_school': 'École de musique',
-    'police': 'Police',
-    'compressed_air': 'Air comprimé',
-    'driving_school': 'Auto-école',
-    'arts_centre': 'Centre d\'arts',
-    'personal_service': 'Service personnel',
-    'grit_bin': 'Bac à sel',
-    'coworking_space': 'Espace de coworking',
-    'vacuum_cleaner': 'Aspirateur',
-    'art_school': 'École d\'art',
-    'language_school': 'École de langues',
-    'events_venue': 'Lieu d\'événements',
-    'courthouse': 'Tribunal',
-    'money_transfer': 'Transfert d\'argent',
     'townhall': 'Mairie',
 };
 
-const amenityGroups = {
-    'Food and Drink': ['restaurant', 'cafe', 'bar', 'fast_food', 'pub'],
-    'Accommodation': ['hotel', 'motel', 'guest_house'],
-    'Shopping': ['bakery', 'convenience', 'supermarket'],
-    'Health': ['pharmacy', 'hospital', 'clinic', 'dentist', 'doctors'],
-    'Education': ['school', 'university', 'college', 'prep_school', 'library'],
-    'Entertainment': ['museum', 'theatre', 'cinema'],
-    'Transport': ['fuel', 'parking', 'parking_space', 'bicycle_parking', 'motorcycle_parking', 'parking_entrance', 'ferry_terminal'],
-    'Finance': ['bank', 'atm'],
-    'Public Services': ['post_office', 'post_box', 'townhall'],
-    'Recreation': ['park', 'garden', 'playground', 'sports_centre'],
-    'Transport Hubs': ['subway_entrance', 'bus_stop', 'train_station', 'aerodrome'],
-    'Other': ['shopping_centre', 'toilets', 'drinking_water', 'charging_station', 'bureau_de_change', 'community_centre', 'fountain', 'bench', 'clock', 'waste_basket', 'bicycle_rental', 'taxi', 'ice_cream', 'recycling', 'public_bookcase', 'monastery', 'bicycle_repair_station', 'nightclub', 'car_sharing', 'vending_machine', 'shower', 'place_of_worship', 'waste_disposal', 'marketplace', 'water_point', 'social_facility', 'shelter', 'childcare', 'device_charging_station', 'parcel_locker', 'handwashing', 'photo_booth', 'ticket_validator', 'dojo', 'veterinary', 'food_court', 'social_centre', 'car_wash', 'kindergarten', 'weighbridge', 'music_school', 'police', 'compressed_air', 'driving_school', 'arts_centre', 'personal_service', 'grit_bin', 'coworking_space', 'vacuum_cleaner', 'art_school', 'language_school', 'events_venue', 'courthouse', 'money_transfer']
+export const amenityGroups = {
+    "Services de santé" : ["dentist", "hospital", "doctors"],
+    "Bar" : ["cafe", "pub", "nightclub", "bar"],
+    "Etablissements d'enseignement" : ["prep_school", "university", "school", "music_school", "art_school", "driving_school", "college", "language_school"],
+    "Loisir" : ["theatre", "playground"],
+    "Parking" : ["parking", "motorcycle_parking"],
+    "Transport" : ["bus_stop", "subway_entrance", "aerodrome", "taxi", "train_station", "railway"],
+    "Commerces" : ["shopping_centre", "convenience", "bakery", "supermarket"],
+    "Restaurants" : ["ice_cream", "fast_food", "restaurant"],
+    "Infrastructure sportive" : ["dojo", "sports_centre"],
+    "Centre social" : ["social_centre", "social_facility"],
+    "Activités culturelle" : ["library", "cinema", "museum", "arts_centre"],
+    "Stationnement" : ["parking_space", "parking_entrance"],
+    "Utilitaires" : ["fuel", "charging_station", "ferry_terminal", "coworking_space"],
+    "Services pour animaux" : ["veterinary"],
+    "Justice" : ["courthouse"],
+    "Hostels & hébergement" : ["hotel", "motel"],
+    "Services public" : ["post_office", "public_bookcase", "police", "waste_disposal"],
+    "Jardin et parc" : ["garden", "park"],
+    "Divers" : ["pharmacy", "clinic", "bank", "bicycle_rental", "childcare", "townhall"]
 };
 
-const groupTranslations = {
-    'Food and Drink': 'Alimentation et Boissons',
-    'Accommodation': 'Hébergement',
-    'Shopping': 'Shopping',
-    'Health': 'Santé',
-    'Education': 'Éducation',
-    'Entertainment': 'Divertissement',
-    'Transport': 'Transport',
-    'Finance': 'Finance',
-    'Public Services': 'Services Publics',
-    'Recreation': 'Loisirs',
-    'Transport Hubs': 'Pôles de Transport',
-    'Other': 'Autres'
-};
-
-let map;
-let centerMarker;
-let markers = [];
-let lastValidLat = 50.523110;
-let lastValidLon = 2.625950;
-let lastAddress = "";
+export let lastValidLat = 50.523110;
+export let lastValidLon = 2.625950;
+export let lastAddress = "";
 
 const defaultLatitude = 50.523110;
 const defaultLongitude = 2.625950;
@@ -248,6 +203,9 @@ const amenityLimit = 10;
 const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
 const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
 
+let map1;
+let centerMarker1;
+let markers1 = [];
 
 function getSelectedAmenities() {
     const checkboxes = document.querySelectorAll('#amenityCheckboxes input[type="checkbox"]');
@@ -260,32 +218,119 @@ function getSelectedAmenities() {
     return selectedAmenities;
 }
 
-async function fetchAmenities(lat, lon, radius = defaultRadius) {
-    const overpassQuery = `
-        [out:json];
-        (
-            node(around:${radius}, ${lat}, ${lon})["amenity"];
-        );
-        out body;
-    `;
-
-    const url = `https://overpass-api.de/api/interpreter?data=${encodeURIComponent(overpassQuery)}`;
-
+export async function fetchAmenities(lat, lon, radius, ignoreDisplayConfig = false) {
     try {
-        const response = await fetch(url);
+        const overpassUrl = `https://overpass-api.de/api/interpreter`;
+        const overpassQuery = `
+            [out:json];
+            (
+                node["amenity"](around:${radius},${lat},${lon});
+                way["amenity"](around:${radius},${lat},${lon});
+                relation["amenity"](around:${radius},${lat},${lon});
+                node["shop"](around:${radius},${lat},${lon});
+                way["shop"](around:${radius},${lat},${lon});
+                relation["shop"](around:${radius},${lat},${lon});
+                node["leisure"](around:${radius},${lat},${lon});
+                way["leisure"](around:${radius},${lat},${lon});
+                relation["leisure"](around:${radius},${lat},${lon});
+                node["tourism"](around:${radius},${lat},${lon});
+                way["tourism"](around:${radius},${lat},${lon});
+                relation["tourism"](around:${radius},${lat},${lon});
+                node["healthcare"](around:${radius},${lat},${lon});
+                way["healthcare"](around:${radius},${lat},${lon});
+                relation["healthcare"](around:${radius},${lat},${lon});
+                node["public_transport"](around:${radius},${lat},${lon});
+                way["public_transport"](around:${radius},${lat},${lon});
+                relation["public_transport"](around:${radius},${lat},${lon});
+                node["office"](around:${radius},${lat},${lon});
+                way["office"](around:${radius},${lat},${lon});
+                relation["office"](around:${radius},${lat},${lon});
+            );
+            out center;
+        `;
+
+        const response = await fetch(overpassUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `data=${encodeURIComponent(overpassQuery)}`
+        });
+
         if (!response.ok) {
-            throw new Error(`Erreur HTTP! Statut: ${response.status}`);
+            throw new Error(`Erreur HTTP: ${response.status}`);
         }
 
         const data = await response.json();
-        return data.elements;
+
+        const elements = data.elements.filter(e => {
+            if (ignoreDisplayConfig) return true;
+            const amenityType = getAmenityType(e.tags);
+            if (amenityConfig[amenityType]) {
+                return amenityConfig[amenityType].display;
+            }
+            return amenityConfig.default.display;
+        });
+
+        return elements.map(e => {
+            if (e.type === 'node') {
+                return {
+                    id: e.id,
+                    type: e.type,
+                    lat: e.lat,
+                    lon: e.lon,
+                    tags: e.tags
+                };
+            } else if (e.type === 'way' || e.type === 'relation') {
+                return {
+                    id: e.id,
+                    type: e.type,
+                    lat: e.center.lat,
+                    lon: e.center.lon,
+                    tags: e.tags
+                };
+            }
+            return null;
+        }).filter(item => item !== null);
     } catch (error) {
-        console.error("Erreur lors de la récupération des commodités :", error);
+        console.error("Erreur lors de la récupération des commodités:", error);
         return [];
     }
 }
 
-async function fetchMapboxToken() {
+function displayAmenitiesOnMap(map, amenities, userLat, userLon, amenityLimit) {
+    const selectedAmenities = getSelectedAmenities();
+    const sortedAmenities = sortAmenitiesByDistance(amenities, userLat, userLon);
+
+    const processedAmenities = sortedAmenities.map(amenity => {
+        const amenityType = getAmenityType(amenity.tags);
+        return { ...amenity, type: amenityType };
+    });
+
+    const filteredAmenities = processedAmenities.filter(amenity => {
+        const amenityConfigItem = amenityConfig[amenity.type] || amenityConfig['default'];
+        return selectedAmenities[amenity.type] !== false && amenityConfigItem.display;
+    });
+
+    const limitedAmenities = filteredAmenities.slice(0, amenityLimit);
+
+    limitedAmenities.forEach(amenity => {
+        if (amenity.lat && amenity.lon) {
+            const amenityConfigItem = amenityConfig[amenity.type] || amenityConfig['default'];
+            const markerColor = amenityConfigItem.color;
+            const amenityName = amenityTranslations[amenity.type] || amenity.type || "Commodité";
+
+            const marker = new mapboxgl.Marker({ color: markerColor })
+                .setLngLat([amenity.lon, amenity.lat])
+                .setPopup(new mapboxgl.Popup().setText(amenityName))
+                .addTo(map);
+
+            markers1.push(marker);
+        }
+    });
+}
+
+export async function fetchMapboxToken() {
     try {
         const response = await fetch(`${backendUrl}/api/mapbox-token`);
         if (!response.ok) {
@@ -299,7 +344,7 @@ async function fetchMapboxToken() {
     }
 }
 
-function calculateDistance(lat1, lon1, lat2, lon2) {
+export function calculateDistance(lat1, lon1, lat2, lon2) {
     const R = 6371;
     const dLat = (lat2 - lat1) * (Math.PI / 180);
     const dLon = (lon2 - lon1) * (Math.PI / 180);
@@ -318,8 +363,22 @@ function sortAmenitiesByDistance(amenities, userLat, userLon) {
         return distA - distB;
     });
 }
+export function destroyMap1() {
+    if (map1) {
+        // Supprimer tous les marqueurs
+        markers1.forEach(marker => marker.remove());
+        markers1 = [];
+        
+        // Supprimer les événements liés à la carte
+        map1.off();
+        
+        // Détruire l'instance de la carte
+        map1.remove();
+        map1 = null;
+    }
+}
 
-async function initializeMap() {
+export async function initializeMap1(mapId) {
     const token = await fetchMapboxToken();
     if (!token) {
         console.error("Le token Mapbox est manquant");
@@ -328,27 +387,26 @@ async function initializeMap() {
 
     mapboxgl.accessToken = token;
 
-    map = new mapboxgl.Map({
-        container: 'Map',
+    map1 = new mapboxgl.Map({
+        container: mapId,
         style: 'mapbox://styles/mapbox/streets-v12',
-        // style: 'mapbox://styles/mapbox/dark-v11',
         center: [defaultLongitude, defaultLatitude],
         zoom: 8
     });
 
-    map.addControl(new mapboxgl.NavigationControl());
+    map1.addControl(new mapboxgl.NavigationControl());
 
-    centerMarker = new mapboxgl.Marker()
+    centerMarker1 = new mapboxgl.Marker()
         .setLngLat([defaultLongitude, defaultLatitude])
-        .addTo(map);
+        .addTo(map1);
 
-    map.on('load', () => {
-        map.addSource('circle-source', {
+    map1.on('load', () => {
+        map1.addSource('circle-source', {
             type: 'geojson',
             data: createGeoJSONCircle([defaultLongitude, defaultLatitude], defautKmRadius)
         });
 
-        map.addLayer({
+        map1.addLayer({
             id: 'circle-outline',
             type: 'line',
             source: 'circle-source',
@@ -359,7 +417,7 @@ async function initializeMap() {
             }
         });
 
-        map.addLayer({
+        map1.addLayer({
             id: 'circle-fill',
             type: 'fill',
             source: 'circle-source',
@@ -373,7 +431,7 @@ async function initializeMap() {
     });
 
     const amenities = await fetchAmenities(defaultLatitude, defaultLongitude, defaultRadius);
-    displayAmenitiesOnMap(map, amenities, defaultLatitude, defaultLongitude, amenityLimit);
+    displayAmenitiesOnMap(map1, amenities, defaultLatitude, defaultLongitude, amenityLimit);
 }
 
 function updateMapWithCurrentValues() {
@@ -384,7 +442,7 @@ function updateMapWithCurrentValues() {
     if (addressInput && addressInput.value.trim() !== "") {
         const currentAddress = addressInput.value.trim();
         if (currentAddress === lastAddress) {
-            updateMap(lastValidLat, lastValidLon, radiusValue, limitValue);
+            updateMap1(lastValidLat, lastValidLon, radiusValue, limitValue);
         } else {
             geocodeAddress(currentAddress).then(coordinates => {
                 if (coordinates) {
@@ -392,31 +450,31 @@ function updateMapWithCurrentValues() {
                     lastValidLat = lat;
                     lastValidLon = lon;
                     lastAddress = currentAddress;
-                    updateMap(lat, lon, radiusValue, limitValue);
+                    updateMap1(lat, lon, radiusValue, limitValue);
                 }
             });
         }
     } else {
-        updateMap(lastValidLat, lastValidLon, radiusValue, limitValue);
+        updateMap1(lastValidLat, lastValidLon, radiusValue, limitValue);
     }
 }
 
-export async function updateMap(lat, lon, radius = defaultRadius, amenityLimit = 100) {
-    if (!map) {
+export async function updateMap1(lat, lon, radius = defaultRadius, amenityLimit = 100) {
+    if (!map1) {
         console.error("La carte n'est pas encore initialisée.");
         return;
     }
 
     const radiusInKm = radius / 1000;
-    if (map.getSource('circle-source')) {
-        map.getSource('circle-source').setData(createGeoJSONCircle([lon, lat], radiusInKm));
+    if (map1.getSource('circle-source')) {
+        map1.getSource('circle-source').setData(createGeoJSONCircle([lon, lat], radiusInKm));
     } else {
-        map.addSource('circle-source', {
+        map1.addSource('circle-source', {
             type: 'geojson',
             data: createGeoJSONCircle([lon, lat], radiusInKm)
         });
 
-        map.addLayer({
+        map1.addLayer({
             id: 'circle-outline',
             type: 'line',
             source: 'circle-source',
@@ -427,7 +485,7 @@ export async function updateMap(lat, lon, radius = defaultRadius, amenityLimit =
             }
         });
 
-        map.addLayer({
+        map1.addLayer({
             id: 'circle-fill',
             type: 'fill',
             source: 'circle-source',
@@ -438,11 +496,11 @@ export async function updateMap(lat, lon, radius = defaultRadius, amenityLimit =
         });
     }
 
-    markers.forEach(marker => marker.remove());
-    markers = [];
+    markers1.forEach(marker => marker.remove());
+    markers1 = [];
 
     const amenities = await fetchAmenities(lat, lon, radius);
-    displayAmenitiesOnMap(map, amenities, lat, lon, amenityLimit);
+    displayAmenitiesOnMap(map1, amenities, lat, lon, amenityLimit);
 }
 
 function createGeoJSONCircle(center, radiusInKm) {
@@ -488,36 +546,14 @@ if (amenityCheckboxes) {
     amenityCheckboxes.addEventListener('change', updateMapWithCurrentValues);
 }
 
-function displayAmenitiesOnMap(map, amenities, userLat, userLon, amenityLimit) {
-    const selectedAmenities = getSelectedAmenities();
-    const sortedAmenities = sortAmenitiesByDistance(amenities, userLat, userLon);
-
-    const filteredAmenities = sortedAmenities.filter(amenity => {
-        const amenityType = amenity.tags.amenity || 'default';
-        const amenityConfigItem = amenityConfig[amenityType] || amenityConfig['default'];
-        return selectedAmenities[amenityType] !== false && amenityConfigItem.display;
-    });
-
-    const limitedAmenities = filteredAmenities.slice(0, amenityLimit);
-
-    limitedAmenities.forEach(amenity => {
-        if (amenity.lat && amenity.lon) {
-            const amenityType = amenity.tags.amenity || 'default';
-            const amenityConfigItem = amenityConfig[amenityType] || amenityConfig['default'];
-            const markerColor = amenityConfigItem.color;
-            const amenityName = amenityTranslations[amenityType] || amenityType || "Commodité";
-
-            const marker = new mapboxgl.Marker({ color: markerColor })
-                .setLngLat([amenity.lon, amenity.lat])
-                .setPopup(new mapboxgl.Popup().setText(amenityName))
-                .addTo(map);
-
-            markers.push(marker);
-        }
-    });
+export function getAmenityType(tags) {
+    if (tags.railway === 'station' || tags.amenity === 'train_station') {
+        return 'train_station';
+    }
+    return tags.amenity || tags.shop || tags.railway || 'default';
 }
 
-async function geocodeAddress(address) {
+export async function geocodeAddress(address) {
     const token = await fetchMapboxToken();
     if (!token) {
         console.error("Le token Mapbox est manquant");
@@ -561,10 +597,10 @@ document.getElementById('Address').addEventListener('blur', async function() {
 
         const radiusValue = parseInt(document.getElementById('radius')?.value || defaultRadius / 1000) * 1000;
         const limitValue = parseInt(document.getElementById('amenityLimit')?.value || amenityLimit);
-        updateMap(lat, lon, radiusValue, limitValue);
+        updateMap1(lat, lon, radiusValue, limitValue);
 
-        map.setCenter([lon, lat]);
-        centerMarker.setLngLat([lon, lat]);
+        map1.setCenter([lon, lat]);
+        centerMarker1.setLngLat([lon, lat]);
     }
 });
 
@@ -586,10 +622,10 @@ document.getElementById('Address').addEventListener('keydown', async function(ev
 
             const radiusValue = parseInt(document.getElementById('radius')?.value || defaultRadius / 1000) * 1000;
             const limitValue = parseInt(document.getElementById('amenityLimit')?.value || amenityLimit);
-            updateMap(lat, lon, radiusValue, limitValue);
+            updateMap1(lat, lon, radiusValue, limitValue);
 
-            map.setCenter([lon, lat]);
-            centerMarker.setLngLat([lon, lat]);
+            map1.setCenter([lon, lat]);
+            centerMarker1.setLngLat([lon, lat]);
         }
     }
 });
@@ -598,31 +634,48 @@ document.getElementById('toggleAmenityList').addEventListener('click', () => {
     const amenityCheckboxes = document.getElementById('amenityCheckboxes');
     const amenityList = document.getElementById('amenityList');
 
-    // Clear existing checkboxes
     amenityCheckboxes.innerHTML = '';
 
-    // Add group checkboxes only
     for (const group in amenityGroups) {
+        const groupValue = amenityGroups[group];
+
+        if (!Array.isArray(groupValue)) {
+            continue;
+        }
+
         const groupLabel = document.createElement('label');
         const groupCheckbox = document.createElement('input');
         groupCheckbox.type = 'checkbox';
         groupCheckbox.value = group;
         groupCheckbox.id = `group-${group.toLowerCase().replace(/ /g, '-')}`;
-        groupCheckbox.checked = amenityGroups[group].some(amenity => amenityConfig[amenity].display);
+
+        let groupIsChecked = false;
+
+        for (const amenity of groupValue) {
+            if (amenityConfig[amenity] && amenityConfig[amenity].display) {
+                groupIsChecked = true;
+                break;
+            }
+        }
+
+        groupCheckbox.checked = groupIsChecked;
 
         groupCheckbox.addEventListener('change', function() {
             const isChecked = this.checked;
-            // Mettre à jour toutes les commodités dans ce groupe
-            amenityGroups[group].forEach(amenity => {
-                amenityConfig[amenity].display = isChecked;
+
+            groupValue.forEach(amenity => {
+                if (amenityConfig[amenity]) {
+                    amenityConfig[amenity].display = isChecked;
+                } else {
+                    console.warn(`  - ${amenity}: non trouvé dans amenityConfig!`);
+                }
             });
+
             updateMapWithCurrentValues();
         });
 
         groupLabel.appendChild(groupCheckbox);
-        // Utiliser la traduction française si disponible, sinon utiliser le nom anglais
-        const groupName = groupTranslations[group] || group;
-        groupLabel.appendChild(document.createTextNode(groupName));
+        groupLabel.appendChild(document.createTextNode(group));
         amenityCheckboxes.appendChild(groupLabel);
         amenityCheckboxes.appendChild(document.createElement('br'));
     }
@@ -641,5 +694,4 @@ document.getElementById('toggleAmenityList').addEventListener('click', () => {
     }
 });
 
-
-initializeMap();
+initializeMap1("Map");

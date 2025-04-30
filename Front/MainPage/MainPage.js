@@ -1,4 +1,6 @@
-import { updateMap } from './Map/Map.js';
+// MainPage.js
+
+import { updateMap1, destroyMap1 } from './Map/Map.js';
 
 window.UsersInputsLat = 48.8584;
 window.UsersInputsLon = 2.2945;
@@ -105,7 +107,14 @@ function InitializeSteps() {
                 }
             } else if (button.id === "getResult") {
                 resultDiv.style.display = "flex";
-                document.querySelector(".MapArea").style.display = "none"
+                destroyMap1();
+                const mapArea = document.querySelector(".MapArea");
+                mapArea.classList.add("slide-out");
+                
+                // Facultatif : masquer définitivement après l'animation
+                setTimeout(() => {
+                    mapArea.style.display = "none";
+                }, 500);
                 document.querySelector(".ContentArea .Content").style.width = "100%"
                 steps[currentStep].style.display = "none";
                 return;
@@ -179,7 +188,7 @@ export async function getCoordinates() {
             const lon = parseFloat(data[0].lon);
             saveToSessionStorage(data);
 
-            updateMap(lat, lon, radius, amenityLimit);
+            updateMap1(lat, lon, radius, amenityLimit);
         } else {
             console.error("Aucune donnée trouvée pour l'adresse fournie.");
         }

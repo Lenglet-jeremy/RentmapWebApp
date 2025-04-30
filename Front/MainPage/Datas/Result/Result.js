@@ -1,3 +1,5 @@
+// Result.js
+
 const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
 const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
 function normalizeString(str) {
@@ -1595,7 +1597,7 @@ async function updateValues() {
     TableauFinancier();
 
     fillNeighborhoodCostRentTable(department, city);
-    // fillNeighborhoodPopulationTable(department, city);
+    // Ici se trouve les commodités
 
     // fetchDVFData();
 }

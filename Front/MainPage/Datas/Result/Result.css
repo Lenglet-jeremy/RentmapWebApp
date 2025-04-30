@@ -593,3 +593,7 @@ table tbody tr:nth-child(even) {
   display: none;
 }
 
+.Map2{
+  width: 100%;
+  height: 500px;
+}
