@@ -128,17 +128,15 @@ function displaySuggestions(data) {
     // Événements pour l'élément de liste
     li.addEventListener("click", () => {
       input.value = feature.place_name;
-      console.log(input.value);
-      
       suggestionsList.style.display = "none";
-      
-      // Stocker l'adresse sélectionnée dans sessionStorage
+    
+      // Stocker l'adresse sélectionnée
       sessionStorage.setItem("UserInputAdress", input.value);
-      // Déclencher un événement pour signaler la sélection d'une adresse
-      input.dispatchEvent(new CustomEvent('addressSelected', { 
-        detail: feature 
-      }));
+    
+      // Déclencher un événement personnalisé
+      input.dispatchEvent(new CustomEvent('addressSelected', { detail: feature }));
     });
+    
     
     li.addEventListener("mouseover", () => {
       selectedIndex = index;
@@ -166,13 +164,18 @@ function highlightSelection() {
   });
 }
 
-// Gestion du flou (perte de focus) du champ d'adresse
+// Gestion de la perte de focus du champ d'adresse
 input.addEventListener("blur", () => {
+  // Attendre que le clic sur une suggestion soit traité avant de masquer
   setTimeout(() => {
     suggestionsList.style.display = "none";
-  }, 200);
-  sessionStorage.setItem("UserInputAdress", input.value);
+  }, 100);
 });
+
+suggestionsList.addEventListener("mousedown", (e) => {
+  e.preventDefault(); // Empêche le champ d'être "blurred" avant le clic
+});
+
 
 // Gestion de la navigation clavier pour les suggestions
 input.addEventListener("keydown", (event) => {
@@ -216,10 +219,14 @@ input.addEventListener("keydown", (event) => {
 
 // Gérer le clic en dehors pour fermer la liste
 document.addEventListener("click", (event) => {
-  if (!suggestionsList.contains(event.target) && event.target !== input) {
+  if (
+    event.target !== input &&
+    !suggestionsList.contains(event.target)
+  ) {
     suggestionsList.style.display = "none";
   }
 });
+
 
 // Configuration des boutons de navigation entre les étapes
 const step1NextButton = document.querySelector(".Step1NextButton");
