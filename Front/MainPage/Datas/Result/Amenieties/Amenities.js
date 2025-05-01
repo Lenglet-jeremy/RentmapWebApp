@@ -450,7 +450,10 @@ async function getAmenitiesNearby(userAddress) {
   }
 }
 
-const address = document.getElementById("Address").value;
+const address = sessionStorage.getItem("UserInputAdress");
+
+console.log(`Address : ${address}`);
+
 if (address) {
   console.log("Adresse trouvée, initialisation de la carte:", address);
   getAmenitiesNearby(address);
