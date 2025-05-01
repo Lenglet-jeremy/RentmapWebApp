@@ -56,7 +56,6 @@ async function fetchNeighborhoodCostRentData(department, city) {
 async function fetchNeighborhoodCostData(department, city, neighborhood, typeOfProperty) {
     try {
         const response = await fetch(`${backendUrl}/api/Refined`);
-        console.log(`${backendUrl}/api/Refined`);
         
         
         const data = await response.json();
@@ -350,7 +349,6 @@ async function fetchPopulationData(department, cityName) {
 async function fetchNeighborhoodPopulationData(department, city) {
     try {
         const response = await fetch(`${backendUrl}/api/EvolPop`);
-        console.log(`${backendUrl}/api/EvolPop`);
         
         const data = await response.json();
 
@@ -535,7 +533,6 @@ async function fetchLocativeTension(cityName) {
 async function fetchMedianIncomeData(department, city) {
     try {
         const response = await fetch(`${backendUrl}/api/MedianIncome`);
-        console.log(`${backendUrl}/api/MedianIncome`);
         
         const data = await response.json();
 
@@ -719,7 +716,6 @@ async function createHistogram(canvasId, department, city, label, backgroundColo
         
         // Calcul de l'âge moyen et assignation à la variable externe
         populationAverageAge = totalPopulation > 0 ? weightedAgeSum / totalPopulation : 0;
-        console.log(`Âge moyen de la population de ${city}: ${populationAverageAge.toFixed(2)} ans`);
        
         const ctx = document.getElementById(canvasId).getContext('2d');
         if (chartHistogramInstance) {
@@ -858,8 +854,6 @@ let chartPrixM2Instance = null;
 async function createPrixM2Chart(canvasId, department, city, label, borderColor, cityInputId = null) {
     try {
         const response = await fetch(`${backendUrl}/api/EvolPrixMCarre`);
-        console.log(`${backendUrl}/api/EvolPrixMCarre`);
-        
        
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -1105,7 +1099,6 @@ let chartCriminalityInstance = null;
 async function CreateCriminalityChart(canvasId, department, city, population, label, borderColor, cityInputId = null) {
     try {
         const response = await fetch(`${backendUrl}/api/SecuriteCriminalite`);
-        console.log(`${backendUrl}/api/SecuriteCriminalite`);
         
         const statsNationnaleResponse = await fetch(`${backendUrl}/api/StatsNationnale`);
         const data = await response.json();
@@ -1243,7 +1236,6 @@ async function fetchDepartmentCityNeighborhood() {
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
-        console.log(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
         
         
         
