@@ -162,6 +162,28 @@ const CATEGORY_ICONS = {
   `
 };
 
+const categories = {
+  Transports: ['amenity=bus_station', 'amenity=taxi', 'railway=subway_entrance', 'railway=station'],
+  Enseignement: ['amenity=school', 'amenity=college', 'amenity=kindergarten', 'amenity=university'],
+  Commerces: ['shop=supermarket', 'shop=mall', 'shop=convenience', 'shop=bakery'],
+  ServicesDeSante: ['amenity=hospital', 'amenity=clinic', 'amenity=pharmacy', 'amenity=doctors'],
+  Loisirs: ['amenity=cinema', 'amenity=theatre', 'amenity=nightclub'],
+  ServicesPublic: ['amenity=townhall', 'amenity=post_office', 'amenity=police', 'amenity=fire_station'],
+  Bar: ['amenity=bar', 'amenity=pub'],
+  Parking: ['amenity=parking'],
+  Restaurants: ['amenity=restaurant', 'amenity=fast_food', 'amenity=cafe'],
+  ActivitesCulturelle: ['amenity=library', 'amenity=arts_centre'],
+  ServicesPourAnimaux: ['amenity=veterinary', 'shop=pet'],
+  InfrastructureSportive: ['leisure=sports_centre', 'leisure=stadium', 'leisure=fitness_centre'],
+  Stationnement: ['amenity=parking', 'amenity=parking_space'],
+  Justice: ['amenity=courthouse'],
+  JardinEtParc: ['leisure=park', 'leisure=garden'],
+  CentreSocial: ['amenity=community_centre', 'social_facility=social_facility'],
+  Utilitaires: ['amenity=toilets', 'amenity=recycling', 'amenity=waste_basket'],
+  Hebergement: ['tourism=hotel', 'tourism=hostel', 'tourism=motel'],
+  Divers: ['amenity=place_of_worship', 'amenity=bank', 'amenity=atm']
+};
+
 // Exemple d'utilisation d'un SVG comme marqueur
 function createMarker(category, coordinates) {
   const el = document.createElement('div');
@@ -213,28 +235,6 @@ function createMarker(category, coordinates) {
     .setLngLat(coordinates)
     .addTo(map); // `map` est maintenant global
 }
-
-const categories = {
-  Transports: ['amenity=bus_station', 'amenity=taxi', 'railway=subway_entrance', 'railway=station'],
-  Enseignement: ['amenity=school', 'amenity=college', 'amenity=kindergarten', 'amenity=university'],
-  Commerces: ['shop=supermarket', 'shop=mall', 'shop=convenience', 'shop=bakery'],
-  ServicesDeSante: ['amenity=hospital', 'amenity=clinic', 'amenity=pharmacy', 'amenity=doctors'],
-  Loisirs: ['amenity=cinema', 'amenity=theatre', 'amenity=nightclub'],
-  ServicesPublic: ['amenity=townhall', 'amenity=post_office', 'amenity=police', 'amenity=fire_station'],
-  Bar: ['amenity=bar', 'amenity=pub'],
-  Parking: ['amenity=parking'],
-  Restaurants: ['amenity=restaurant', 'amenity=fast_food', 'amenity=cafe'],
-  ActivitesCulturelle: ['amenity=library', 'amenity=arts_centre'],
-  ServicesPourAnimaux: ['amenity=veterinary', 'shop=pet'],
-  InfrastructureSportive: ['leisure=sports_centre', 'leisure=stadium', 'leisure=fitness_centre'],
-  Stationnement: ['amenity=parking', 'amenity=parking_space'],
-  Justice: ['amenity=courthouse'],
-  JardinEtParc: ['leisure=park', 'leisure=garden'],
-  CentreSocial: ['amenity=community_centre', 'social_facility=social_facility'],
-  Utilitaires: ['amenity=toilets', 'amenity=recycling', 'amenity=waste_basket'],
-  Hebergement: ['tourism=hotel', 'tourism=hostel', 'tourism=motel'],
-  Divers: ['amenity=place_of_worship', 'amenity=bank', 'amenity=atm']
-};
 
 async function geocodeAddress(address) {
   const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
@@ -413,7 +413,7 @@ async function getAmenitiesNearby(userAddress) {
   }
 }
 
-const address = sessionStorage.getItem("UserInputAdress");
+const address = document.getElementById("Address").value;
 if (address) {
   console.log("Adresse trouvée, initialisation de la carte:", address);
   getAmenitiesNearby(address);
