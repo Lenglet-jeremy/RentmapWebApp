@@ -1,531 +1,422 @@
-// Importer le token Mapbox
 import { fetchMapboxToken } from "../../../Map/Map.js";
-import { amenityGroups } from "../../../Map/Map.js";
+const token = await fetchMapboxToken();
 
-// Variable pour stocker l'instance de la carte
-let map;
-
-// Fonction pour construire la requête Overpass avec tous les tags demandés
-function buildOverpassQuery([lng, lat], radius = 500) {
-    // Utiliser la requête que vous avez fournie avec tous les tags
-    return `[out:json][timeout:60];
-    (
-        node["amenity"](around:${radius},${lat},${lng});
-        way["amenity"](around:${radius},${lat},${lng});
-        relation["amenity"](around:${radius},${lat},${lng});
-
-        node["shop"](around:${radius},${lat},${lng});
-        way["shop"](around:${radius},${lat},${lng});
-        relation["shop"](around:${radius},${lat},${lng});
-
-        node["leisure"](around:${radius},${lat},${lng});
-        way["leisure"](around:${radius},${lat},${lng});
-        relation["leisure"](around:${radius},${lat},${lng});
-
-        node["tourism"](around:${radius},${lat},${lng});
-        way["tourism"](around:${radius},${lat},${lng});
-        relation["tourism"](around:${radius},${lat},${lng});
-
-        node["healthcare"](around:${radius},${lat},${lng});
-        way["healthcare"](around:${radius},${lat},${lng});
-        relation["healthcare"](around:${radius},${lat},${lng});
-
-        node["public_transport"](around:${radius},${lat},${lng});
-        way["public_transport"](around:${radius},${lat},${lng});
-        relation["public_transport"](around:${radius},${lat},${lng});
-        
-        node["office"](around:${radius},${lat},${lng});
-        way["office"](around:${radius},${lat},${lng});
-        relation["office"](around:${radius},${lat},${lng});
-    );
-    out center;`;
-}
-
-// Définir les principales catégories de commodités
-const MAIN_CATEGORIES = [
-  'amenity',
-  'shop',
-  'leisure',
-  'tourism',
-  'healthcare',
-  'public_transport',
-  'office'
-];
-
-// Couleurs pour chaque catégorie de marqueur
-const CATEGORY_COLORS = {
-  'amenity': '#FF7E00',
-  'shop': '#4CAF50',
-  'leisure': '#2196F3',
-  'tourism': '#9C27B0',
-  'healthcare': '#F44336',
-  'public_transport': '#009688',
-  'office': '#795548'
+const CATEGORY_ICONS = {
+  'Transports': `
+    <!-- Voiture -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 17h10v-4H7v4zm11-7l-1.5-4.5h-9L6 10h12z"/>
+      <circle cx="7" cy="17" r="2"/>
+      <circle cx="17" cy="17" r="2"/>
+      <path d="M5 10h14v7h-2M5 17h2"/>
+    </svg>
+  `,
+  'Enseignement': `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+      <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+    </svg>
+  `,
+  'Commerces': `
+    <!-- Billet -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="6" width="20" height="12" rx="2"/>
+      <circle cx="12" cy="12" r="3"/>
+      <path d="M6 10h1M6 14h1M17 10h1M17 14h1"/>
+    </svg>
+  `,
+  'ServicesDeSante': `
+    <!-- Croix verte de pharmacie -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="12" y1="6" x2="12" y2="18"/>
+      <line x1="6" y1="12" x2="18" y2="12"/>
+    </svg>
+  `,
+  'Loisirs': `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M12 6v6l4 2"/>
+    </svg>
+  `,
+  'ServicesPublic': `
+    <!-- Main avec des gens dessus -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 16v-4a2 2 0 0 0-2-2h-1"/>
+      <path d="M7 16v-4a2 2 0 0 1 2-2h8"/>
+      <path d="M12 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+      <path d="M18 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+      <path d="M6 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+      <path d="M3 19h18c-1-5-4-7-9-7s-8 2-9 7z"/>
+    </svg>
+  `,
+  'Bar': `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+      <path d="M5 8h12v9a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V8z"/>
+      <line x1="5" y1="3" x2="19" y2="3"/>
+    </svg>
+  `,
+  'Parking': `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="2"/>
+      <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
+    </svg>
+  `,
+  'Restaurants': `
+    <!-- Fourchette -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 3v18"/>
+      <path d="M14 3v5M14 12v9"/>
+      <path d="M7 3v3c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V3"/>
+      <path d="M16 8v4"/>
+    </svg>
+  `,
+  'ActivitesCulturelle': `
+    <!-- Masques de théâtre -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 5a2 2 0 0 0-2 2v4a2 2 0 0 0 4 0V7a2 2 0 0 0-2-2z"/>
+      <path d="M17 5a2 2 0 0 1 2 2v4a2 2 0 0 1-4 0V7a2 2 0 0 1 2-2z"/>
+      <path d="M7 5h10"/>
+      <path d="M19 9v2a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4V9"/>
+      <line x1="8" y1="9" x2="8" y2="9"/>
+      <line x1="16" y1="9" x2="16" y2="9"/>
+      <path d="M9 13 c 0 2 3 2 3 0"/>
+      <path d="M15 13 c 0 2 -3 2 -3 0"/>
+    </svg>
+  `,
+  'ServicesPourAnimaux': `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"/>
+      <path d="M14.5 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.96-1.45-2.344-2.5"/>
+      <path d="M8 14v.5"/>
+      <path d="M16 14v.5"/>
+      <path d="M11.25 16.25h1.5L12 17l-.75-.75z"/>
+      <path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444c0-1.061-.162-2.2-.493-3.309"/>
+    </svg>
+  `,
+  'InfrastructureSportive': `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="m4.93 4.93 4.24 4.24"/>
+      <path d="m14.83 9.17 4.24-4.24"/>
+      <path d="m14.83 14.83 4.24 4.24"/>
+      <path d="m9.17 14.83-4.24 4.24"/>
+      <circle cx="12" cy="12" r="4"/>
+    </svg>
+  `,
+  'Stationnement': `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="2"/>
+      <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
+      <path d="M3 10h18"/>
+    </svg>
+  `,
+  'Justice': `
+    <!-- Marteau de juge -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 6l4 4M18 6l-4 4"/>
+      <path d="M14 10v7l-8 2V15l8-2"/>
+      <path d="M10 19v3"/>
+      <path d="M14 5v-2"/>
+      <path d="M18 10h2"/>
+      <rect x="6" y="6" width="4" height="4"/>
+    </svg>
+  `,
+  'JardinEtParc': `
+    <!-- Feuille (plante) -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 21c4.667-3 8-7.333 8-12 0-2-1-9-8-9C5 6 3 9 3 12c0 2.667 1.333 5.333 3 8"/>
+      <path d="M12 9c0 4-2 7-6 9"/>
+    </svg>
+  `,
+  'CentreSocial': `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+      <circle cx="9" cy="7" r="4"/>
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </svg>
+  `,
+  'Utilitaires': `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+    </svg>
+  `,
+  'Hebergement': `
+    <!-- Lit -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 9v6h20V9"/>
+      <path d="M2 19h20"/>
+      <path d="M2 13h20"/>
+      <path d="M4 5v4h16V5"/>
+      <path d="M4 9h16"/>
+    </svg>
+  `,
+  'Divers': `
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="12" y1="8" x2="12" y2="12"/>
+      <line x1="12" y1="16" x2="12.01" y2="16"/>
+    </svg>
+  `
 };
 
-async function getNearbyAmenities([lng, lat], radius = 500) {
-  try {
-    const query = buildOverpassQuery([lng, lat], radius);
-    
-    const response = await fetch("https://overpass-api.de/api/interpreter", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      body: query,
-    });
+// Exemple d'utilisation d'un SVG comme marqueur
+function createMarker(category, coordinates) {
+  const el = document.createElement('div');
+  el.className = 'custom-marker';
+  el.innerHTML = CATEGORY_ICONS[category] || `
+    <!-- Marqueur par défaut -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="12" y1="8" x2="12" y2="12"/>
+      <line x1="12" y1="16" x2="12.01" y2="16"/>
+    </svg>
+  `;
 
-    if (!response.ok) {
-      console.error("Erreur Overpass API:", response.status, response.statusText);
-      return [];
-    }
+  el.style.width = '32px';
+  el.style.height = '32px';
+  el.style.display = 'flex';
+  el.style.alignItems = 'center';
+  el.style.justifyContent = 'center';
+  el.style.background = '#fff';
+  el.style.borderRadius = '50%';
+  el.style.border = '2px solid #333';
+  el.style.boxShadow = '0 2px 4px rgba(0,0,0,0.3)';
 
-    const data = await response.json();
-    
-    // Calculer la distance de chaque commodité par rapport au point de référence
-    const elementsWithDistance = data.elements.map(el => {
-      // Pour les ways et relations, utiliser le centre si disponible
-      const elLat = el.center ? el.center.lat : el.lat;
-      const elLon = el.center ? el.center.lon : el.lon;
-      
-      // Si les coordonnées ne sont pas disponibles, assigner une distance maximale
-      if (!elLat || !elLon) {
-        return { ...el, distance: Infinity };
-      }
-      
-      // Calculer la distance en mètres (formule de Haversine simplifiée)
-      const R = 6371000; // Rayon de la Terre en mètres
-      const dLat = (elLat - lat) * Math.PI / 180;
-      const dLon = (elLon - lng) * Math.PI / 180;
-      const a = 
-        Math.sin(dLat/2) * Math.sin(dLat/2) +
-        Math.cos(lat * Math.PI / 180) * Math.cos(elLat * Math.PI / 180) * 
-        Math.sin(dLon/2) * Math.sin(dLon/2);
-      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-      const distance = R * c;
-      
-      // Déterminer la catégorie principale de l'élément
-      let category = null;
-      for (const cat of MAIN_CATEGORIES) {
-        if (el.tags && el.tags[cat]) {
-          category = cat;
-          break;
-        }
-      }
-      
-      return { ...el, distance, category };
-    })
-    .filter(el => el.category !== null); // Filtrer les éléments sans catégorie
-    
-    // Regrouper par catégorie principale
-    const elementsByCategory = {};
-    
-    MAIN_CATEGORIES.forEach(cat => {
-      elementsByCategory[cat] = elementsWithDistance
-        .filter(el => el.category === cat)
-        .sort((a, b) => a.distance - b.distance)
-        .slice(0, 3); // Prendre les 3 plus proches pour chaque catégorie
-    });
-    
-    
-    // Fusionner tous les résultats dans un seul tableau
-    const result = Object.values(elementsByCategory).flat();
-    
-    return result;
-  } catch (error) {
-    console.error("Erreur lors de la récupération des commodités:", error);
-    return [];
-  }
-}
-
-// Fonction pour déterminer le type de commodité
-function getAmenityType(tags) {
-  if (tags.amenity) return tags.amenity;
-  if (tags.shop) return `shop_${tags.shop}`;
-  if (tags.leisure) return `leisure_${tags.leisure}`;
-  if (tags.tourism) return `tourism_${tags.tourism}`;
-  if (tags.healthcare) return `healthcare_${tags.healthcare}`;
-  if (tags.public_transport) return `transport_${tags.public_transport}`;
-  if (tags.office) return `office_${tags.office}`;
-  return "autre";
-}
-
-// Fonction pour obtenir un nom plus convivial pour l'affichage
-function getFriendlyName(tags) {
-  // Priorité au nom si disponible
-  if (tags.name) return tags.name;
-  
-  // Sinon, formater selon le type
-  if (tags.amenity) {
-    const amenityMap = {
-      "restaurant": "Restaurant",
-      "cafe": "Café",
-      "bar": "Bar",
-      "fast_food": "Fast food",
-      "pub": "Pub",
-      "pharmacy": "Pharmacie",
-      "hospital": "Hôpital",
-      "school": "École",
-      "bank": "Banque",
-      "parking": "Parking"
-      // Ajoutez d'autres mappings selon vos besoins
-    };
-    return amenityMap[tags.amenity] || `Amenity: ${tags.amenity}`;
-  }
-  
-  // Pour les autres types de tags
-  if (tags.shop) return `Magasin: ${tags.shop}`;
-  if (tags.leisure) return `Loisir: ${tags.leisure}`;
-  if (tags.tourism) return `Tourisme: ${tags.tourism}`;
-  if (tags.healthcare) return `Santé: ${tags.healthcare}`;
-  if (tags.public_transport) return `Transport: ${tags.public_transport}`;
-  if (tags.office) return `Bureau: ${tags.office}`;
-  
-  return "Point d'intérêt";
-}
-
-// Fonction pour obtenir le nom de la catégorie en français
-function getFriendlyCategoryName(category) {
-  const categoryMap = {
-    'public_transport': 'Transports',
-    'amenity': 'Services',
-    'shop': 'Commerces',
-    'leisure': 'Loisirs',
-    'tourism': 'Tourisme',
-    'healthcare': 'Santé',
-    'office': 'Bureau de poste'
+  // Ajouter une couleur différente selon la catégorie
+  const colors = {
+    'Transports': '#3498db',
+    'Enseignement': '#f1c40f',
+    'Commerces': '#e74c3c',
+    'ServicesDeSante': '#2ecc71',
+    'Loisirs': '#9b59b6',
+    'ServicesPublic': '#34495e',
+    'Bar': '#e67e22',
+    'Parking': '#7f8c8d',
+    'Restaurants': '#d35400',
+    'ActivitesCulturelle': '#1abc9c',
+    'ServicesPourAnimaux': '#27ae60',
+    'InfrastructureSportive': '#2980b9',
+    'Stationnement': '#95a5a6',
+    'Justice': '#c0392b',
+    'JardinEtParc': '#16a085',
+    'CentreSocial': '#8e44ad',
+    'Utilitaires': '#bdc3c7',
+    'Hebergement': '#f39c12',
+    'Divers': '#7f8c8d'
   };
-  
-  return categoryMap[category] || category;
+  el.style.color = colors[category] || '#333';
+
+  new mapboxgl.Marker(el)
+    .setLngLat(coordinates)
+    .addTo(map); // `map` est maintenant global
 }
 
-// Fonction pour regrouper les commodités par type
-function groupAmenities(elements) {
-  const groups = {};
-  
-  elements.forEach(el => {
-    const type = getAmenityType(el.tags || {});
-    if (!groups[type]) {
-      groups[type] = { count: 0, elements: [] };
+const categories = {
+  Transports: ['amenity=bus_station', 'amenity=taxi', 'railway=subway_entrance', 'railway=station'],
+  Enseignement: ['amenity=school', 'amenity=college', 'amenity=kindergarten', 'amenity=university'],
+  Commerces: ['shop=supermarket', 'shop=mall', 'shop=convenience', 'shop=bakery'],
+  ServicesDeSante: ['amenity=hospital', 'amenity=clinic', 'amenity=pharmacy', 'amenity=doctors'],
+  Loisirs: ['amenity=cinema', 'amenity=theatre', 'amenity=nightclub'],
+  ServicesPublic: ['amenity=townhall', 'amenity=post_office', 'amenity=police', 'amenity=fire_station'],
+  Bar: ['amenity=bar', 'amenity=pub'],
+  Parking: ['amenity=parking'],
+  Restaurants: ['amenity=restaurant', 'amenity=fast_food', 'amenity=cafe'],
+  ActivitesCulturelle: ['amenity=library', 'amenity=arts_centre'],
+  ServicesPourAnimaux: ['amenity=veterinary', 'shop=pet'],
+  InfrastructureSportive: ['leisure=sports_centre', 'leisure=stadium', 'leisure=fitness_centre'],
+  Stationnement: ['amenity=parking', 'amenity=parking_space'],
+  Justice: ['amenity=courthouse'],
+  JardinEtParc: ['leisure=park', 'leisure=garden'],
+  CentreSocial: ['amenity=community_centre', 'social_facility=social_facility'],
+  Utilitaires: ['amenity=toilets', 'amenity=recycling', 'amenity=waste_basket'],
+  Hebergement: ['tourism=hotel', 'tourism=hostel', 'tourism=motel'],
+  Divers: ['amenity=place_of_worship', 'amenity=bank', 'amenity=atm']
+};
+
+async function geocodeAddress(address) {
+  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  if (data.length === 0) throw new Error("Adresse introuvable");
+  return { lat: parseFloat(data[0].lat), lon: parseFloat(data[0].lon) };
+}
+
+function buildOverpassQuery(lat, lon, tags) {
+  const radius = 50000;
+  const filters = tags.map(t => {
+    const [key, value] = t.split('=');
+    return `node["${key}"="${value}"](around:${radius},${lat},${lon});`;
+  }).join('\n');
+  return `[out:json][timeout:25];(${filters});out body;`;
+}
+
+function haversine(lat1, lon1, lat2, lon2) {
+  const R = 6371e3;
+  const rad = deg => deg * Math.PI / 180;
+  const dLat = rad(lat2 - lat1);
+  const dLon = rad(lon2 - lon1);
+  const a = Math.sin(dLat/2)**2 + Math.cos(rad(lat1)) * Math.cos(rad(lat2)) * Math.sin(dLon/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function injectInDOM(category, results) {
+  results.forEach((item, index) => {
+    const nameElement = document.querySelector(`#${category}-item-${index + 1} .amenities-name`);
+    const distElement = document.querySelector(`#${category}-item-${index + 1} .amenities-distance`);
+    if (nameElement && distElement) {
+      nameElement.innerText = item.name;
+      distElement.innerText = `${Math.round(item.distance)} m`;
     }
-    groups[type].count++;
-    groups[type].elements.push(el);
   });
-  
-  return Object.entries(groups)
-    .sort((a, b) => b[1].count - a[1].count)
-    .map(([type, data]) => ({ type, count: data.count }));
 }
 
-async function getCoordinatesFromAddress(address, token) {
+let map; // 📌 Rendu global pour être utilisable dans createMarker()
+async function getAmenitiesNearby(userAddress) {
   try {
-    const encodedAddress = encodeURIComponent(address);
-    const response = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodedAddress}.json?access_token=${token}`);
-    
-    if (!response.ok) {
-      throw new Error(`Erreur lors de la géolocalisation: ${response.status}`);
+    // Vérifier si l'élément Map2 existe
+    const mapContainer = document.getElementById('Map2');
+    if (!mapContainer) {
+      console.error("Erreur : L'élément avec l'ID 'Map2' n'existe pas dans le DOM");
+      return;
     }
     
-    const data = await response.json();
-    
-    if (data.features && data.features.length > 0) {
-      return data.features[0].center;
-    } else {
-      console.warn("Aucun résultat trouvé pour l'adresse:", address);
-      return null;
+    // S'assurer que le conteneur a une hauteur
+    if (mapContainer.clientHeight === 0) {
+      mapContainer.style.height = '500px';
     }
-  } catch (error) {
-    console.error("Erreur lors de la géolocalisation de l'adresse:", error);
-    return null;
-  }
-}
 
-function updateHTML(amenities) {
-  // Réinitialiser toutes les commodités existantes
-  const categoryDivs = document.querySelectorAll('.amenities-category');
-  
-  categoryDivs.forEach(div => {
-    const items = div.querySelectorAll('.amenities-item');
-    items.forEach(item => {
-      const nameElement = item.querySelector('.amenities-name');
-      const distanceElement = item.querySelector('.amenities-distance');
-      
-      if (nameElement) nameElement.textContent = '';
-      if (distanceElement) distanceElement.textContent = '';
-    });
-  });
-  
-  // Regrouper les commodités par catégorie
-  const amenitiesByCategory = {};
-  
-  amenities.forEach(amenity => {
-    const category = getFriendlyCategoryName(amenity.category);
-    if (!amenitiesByCategory[category]) {
-      amenitiesByCategory[category] = [];
+    // Attendre que DOM soit complètement chargé
+    if (document.readyState !== 'complete') {
+      await new Promise(resolve => {
+        window.addEventListener('load', resolve);
+      });
     }
-    amenitiesByCategory[category].push(amenity);
-  });
-  
-  // Mettre à jour l'interface avec les commodités triées par distance
-  Object.entries(amenitiesByCategory).forEach(([category, items]) => {
-    // Trier par distance
-    items.sort((a, b) => a.distance - b.distance);
+
+    const { lat, lon } = await geocodeAddress(userAddress);
     
-    // Limiter à 3 commodités par catégorie
-    const topItems = items.slice(0, 3);
+    // Vérifier si Mapbox est chargé correctement
+    if (!mapboxgl) {
+      console.error("Erreur : Mapbox GL JS n'est pas chargé");
+      return;
+    }
     
-    // Trouver le div correspondant à cette catégorie
-    categoryDivs.forEach(div => {
-      const categoryElement = div.querySelector('.categorie');
+    // Vérifier si le token existe
+    if (!token) {
+      console.error("Erreur : Token Mapbox non disponible");
+      return;
+    }
+    
+    // Initialiser la carte avec davantage d'options et gestionnaires d'événements
+    mapboxgl.accessToken = token;
+    
+    // Attendre un court instant pour s'assurer que le DOM est prêt
+    await new Promise(resolve => setTimeout(resolve, 100));
+    
+    try {
+      map = new mapboxgl.Map({
+        container: 'Map2',
+        style: 'mapbox://styles/mapbox/streets-v12',
+        center: [lon, lat],
+        zoom: 13,
+        minZoom: 9,
+        maxZoom: 18,
+        attributionControl: true
+      });
       
-      if (categoryElement && categoryElement.textContent === category) {
-        // Mettre à jour chaque élément
-        topItems.forEach((item, index) => {
-          const amenitiesItems = div.querySelectorAll('.amenities-item');
-          
-          if (index < amenitiesItems.length) {
-            const nameElement = amenitiesItems[index].querySelector('.amenities-name');
-            const distanceElement = amenitiesItems[index].querySelector('.amenities-distance');
-            
-            if (nameElement) {
-              nameElement.textContent = getFriendlyName(item.tags || {});
-            }
-            
-            if (distanceElement) {
-              const distance = item.distance < 1000
-                ? `${Math.round(item.distance)} m`
-                : `${(item.distance / 1000).toFixed(1)} km`;
-              distanceElement.textContent = distance;
-            }
-          }
-        });
+      // Ajouter des gestionnaires d'événements pour déboguer
+      map.on('load', () => {
+        console.log("Carte chargée avec succès");
+      });
+      
+      map.on('error', (e) => {
+        console.error("Erreur lors du chargement de la carte:", e);
+      });
+    } catch (mapError) {
+      console.error("Erreur lors de l'initialisation de la carte:", mapError);
+      return;
+    }
+
+    // Attendre que la carte soit chargée
+    await new Promise(resolve => {
+      if (map.loaded()) {
+        resolve();
+      } else {
+        map.on('load', resolve);
       }
     });
-  });
-}
 
-// On conserve une liste globale de marqueurs pour pouvoir les retirer
-let amenityMarkers = [];
-
-// Mise à jour de la fonction updateMapCenter pour utiliser la nouvelle fonction updateHTML
-async function updateMapCenter(coordinates) {
-  if (!map || !coordinates) {
-    console.error("Carte ou coordonnées non disponibles");
-    return;
-  }
-
-  console.log(coordinates);
-
-  try {
-    map.flyTo({
-      center: coordinates,
-      zoom: 15,
-      essential: true
-    });
-
-    // Supprimer les marqueurs existants
-    amenityMarkers.forEach(m => m.remove());
-    amenityMarkers = [];
-
-    // Ajouter un marqueur principal pour l'emplacement recherché
-    new mapboxgl.Marker({ color: "#3FB1CE" })
-      .setLngLat(coordinates)
+    // Ajouter le marqueur de l'adresse de l'utilisateur
+    new mapboxgl.Marker({ color: 'blue' })
+      .setLngLat([lon, lat])
+      .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
       .addTo(map);
 
-    // Récupérer les commodités par catégorie
-    const nearbyAmenities = await getNearbyAmenities(coordinates);
-
-    if (nearbyAmenities.length > 0) {
-      // Mettre à jour l'interface HTML avec toutes les commodités trouvées
-      updateHTML(nearbyAmenities);
-
-      // Afficher les marqueurs pour toutes les commodités trouvées
-      nearbyAmenities.forEach(el => {
-        const elLat = el.center ? el.center.lat : el.lat;
-        const elLon = el.center ? el.center.lon : el.lon;
-
-        if (!elLat || !elLon) return;
-
-        const color = CATEGORY_COLORS[el.category] || "#FF7E00";
-
-        const marker = new mapboxgl.Marker({ color })
-          .setLngLat([elLon, elLat])
-          .setPopup(new mapboxgl.Popup().setHTML(
-            `<strong>${getFriendlyName(el.tags || {})}</strong><br>
-             <span style="color:#666">Catégorie: ${getFriendlyCategoryName(el.category)}</span><br>
-             Distance: ${el.distance < 1000
-                ? `${Math.round(el.distance)} m`
-                : `${(el.distance / 1000).toFixed(1)} km`}`
-          ))
-          .addTo(map);
-
-        amenityMarkers.push(marker);
-      });
-
-    } else {
-      console.warn("Aucune commodité trouvée dans la zone");
-      new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML("<strong>Aucune commodité trouvée dans cette zone</strong>")
-        .addTo(map);
-    }
-  } catch (error) {
-    console.error("Erreur lors de la mise à jour de la carte:", error);
-  }
-}
-
-
-// Ajout d'un debounce pour éviter de faire trop de requêtes
-function debounce(func, wait) {
-  let timeout;
-  return function(...args) {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(this, args), wait);
-  };
-}
-
-// Éviter de faire des recherches à chaque caractère
-const debouncedProcessAddress = debounce(async (address) => {
-  if (address.length < 3) return; // Ne pas rechercher pour des entrées trop courtes
-  
-  const token = await fetchMapboxToken();
-  const coordinates = await getCoordinatesFromAddress(address, token);
-  if (coordinates) {
-    updateMapCenter(coordinates);
-  }
-}, 800); // Attendre 800ms après la dernière frappe
-
-function watchAddressChanges() {
-  // Sélectionner l'élément qui contient l'adresse
-  const addressElement = document.querySelector('#Address');
-  
-  if (!addressElement) {
-    console.error("L'élément #Address n'a pas été trouvé dans le DOM");
-    return;
-  }
-  
-  // Vérifier aussi les événements de saisie pour les champs de formulaire
-  addressElement.addEventListener('input', () => {
-    const address = addressElement.value || addressElement.textContent;
-    if (address && address.trim() !== '') {
-      debouncedProcessAddress(address);
-    }
-  });
-  
-  // Vérifier également les événements change
-  addressElement.addEventListener('change', () => {
-    const address = addressElement.value || addressElement.textContent;
-    if (address && address.trim() !== '') {
-      processAddress(address);
-    }
-  });
-}
-
-// Fonction pour traiter une adresse complète
-async function processAddress(address) {
-  const token = await fetchMapboxToken();
-  const coordinates = await getCoordinatesFromAddress(address, token);
-  if (coordinates) {
-    updateMapCenter(coordinates);
-  }
-}
-
-// Fonction pour initialiser la carte
-async function initializeMap() {
-  try {
-    const token = await fetchMapboxToken();
-    if (!window.mapboxgl) {
-      console.error("Mapbox GL JS n'est pas chargé. Assurez-vous d'inclure la bibliothèque Mapbox GL JS.");
-      return;
-    }
+    // Limiter le nombre de requêtes simultanées pour éviter de surcharger l'API
+    const categoryEntries = Object.entries(categories);
+    const batchSize = 3; // Traiter 3 catégories à la fois
     
-    window.mapboxgl.accessToken = token;
-    
-    const mapContainer = document.querySelector('.Map2');
-    
-    if (!mapContainer) {
-      console.error("L'élément avec la classe .Map2 n'a pas été trouvé dans le DOM.");
-      return;
-    }
-    
-    map = new window.mapboxgl.Map({
-      container: mapContainer,
-      style: 'mapbox://styles/mapbox/streets-v11', // Style par défaut
-      center: [2.3522, 48.8566], // Coordonnées par défaut (Paris)
-      zoom: 12 // Niveau de zoom par défaut
-    });
-    
-    map.addControl(new window.mapboxgl.NavigationControl());
-    
-    map.on('load', () => {
-      // Commencer à surveiller les changements d'adresse une fois la carte chargée
-      watchAddressChanges();
+    for (let i = 0; i < categoryEntries.length; i += batchSize) {
+      const batch = categoryEntries.slice(i, i + batchSize);
       
-      // Fonction pour tester manuellement la recherche de commodités
-      window.testAmenities = async (address) => {
-        if (address) {
-          processAddress(address);
-        } else {
-          // Paris comme exemple
-          updateMapCenter([2.3522, 48.8566]);
+      // Exécuter les requêtes par lots
+      await Promise.all(batch.map(async ([category, tags]) => {
+        try {
+          const query = buildOverpassQuery(lat, lon, tags);
+          const response = await fetch("https://overpass-api.de/api/interpreter", {
+            method: "POST",
+            body: query
+          });
+          
+          // Vérifier si la réponse est OK
+          if (!response.ok) {
+            throw new Error(`Erreur HTTP: ${response.status}`);
+          }
+          
+          const json = await response.json();
+          if (!json.elements || !json.elements.length) return;
+
+          const sorted = json.elements
+            .map(e => ({
+              name: e.tags?.name || '[Sans nom]',
+              lat: e.lat,
+              lon: e.lon,
+              distance: haversine(lat, lon, e.lat, e.lon)
+            }))
+            .sort((a, b) => a.distance - b.distance)
+            .slice(0, 3);
+
+          injectInDOM(category, sorted);
+
+          // Ajouter les marqueurs si la carte est toujours valide
+          if (map && !map.removed) {
+            sorted.forEach(amenity => {
+              createMarker(category, [amenity.lon, amenity.lat]);
+            });
+          }
+        } catch (categoryError) {
+          console.error(`Erreur lors du traitement de la catégorie ${category}:`, categoryError);
         }
-      };
+      }));
       
-      // Ajouter une légende pour les couleurs des catégories
-      const legendHTML = `
-        <div class="map-legend" style="
-          position: absolute;
-          bottom: 30px;
-          right: 10px;
-          background: white;
-          padding: 10px;
-          border-radius: 4px;
-          box-shadow: 0 0 10px rgba(0,0,0,0.1);
-          font-size: 12px;
-          max-width: 200px;
-        ">
-          <h4 style="margin-top: 0; margin-bottom: 8px; font-size: 14px;">Légende</h4>
-          ${Object.entries(CATEGORY_COLORS).map(([category, color]) => `
-            <div style="display: flex; align-items: center; margin-bottom: 4px;">
-              <span style="
-                display: inline-block;
-                width: 12px;
-                height: 12px;
-                background-color: ${color};
-                margin-right: 6px;
-                border-radius: 50%;
-              "></span>
-              <span>${getFriendlyCategoryName(category)}</span>
-            </div>
-          `).join('')}
-          <div style="display: flex; align-items: center; margin-bottom: 4px;">
-            <span style="
-              display: inline-block;
-              width: 12px;
-              height: 12px;
-              background-color: #3FB1CE;
-              margin-right: 6px;
-              border-radius: 50%;
-            "></span>
-            <span>Votre position</span>
-          </div>
-        </div>
-      `;
-      
-      const legendContainer = document.createElement('div');
-      legendContainer.innerHTML = legendHTML;
-      mapContainer.appendChild(legendContainer.firstElementChild);
-    });
+      // Petite pause entre les lots pour éviter de surcharger l'API
+      await new Promise(resolve => setTimeout(resolve, 100));
+    }
     
-    map.on('error', (e) => {
-      console.error('Erreur lors du chargement de la carte Mapbox:', e);
-    });
+    // Ajuster la vue de la carte après avoir ajouté tous les marqueurs
+    map.resize();
     
-    return map;
-  } catch (error) {
-    console.error('Erreur lors de l\'initialisation de la carte:', error);
+  } catch (err) {
+    console.error("Erreur globale:", err.message);
   }
 }
 
-// Initialiser la carte
-initializeMap();
+const address = sessionStorage.getItem("UserInputAdress");
+if (address) {
+  console.log("Adresse trouvée, initialisation de la carte:", address);
+  getAmenitiesNearby(address);
+} else {
+  console.error("Aucune adresse trouvée dans sessionStorage");
+}
