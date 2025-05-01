@@ -38,9 +38,9 @@ async function loadAllHTML() {
     await import('./MainPage/Datas/UsersInputs/Step4/Step4.js');
     await import('./MainPage/Datas/UsersInputs/Step5/Step5.js');
     await import('./MainPage/Map/Map.js');
-    await import('./MainPage/MainPage.js');
     await import('./MainPage/Datas/Result/Result.js');
     await import('./MainPage/Datas/Result/Amenieties/Amenities.js');
+    await import('./MainPage/MainPage.js');
 }
 
 window.addEventListener('beforeunload', function (e) {

@@ -452,7 +452,6 @@ async function getAmenitiesNearby(userAddress) {
 
 const address = sessionStorage.getItem("UserInputAdress")
 console.log(`Adresse SessionStorage : ${address}`);
-
 console.log(`Address : ${document.getElementById("Address").value}`);
 
 if (address) {

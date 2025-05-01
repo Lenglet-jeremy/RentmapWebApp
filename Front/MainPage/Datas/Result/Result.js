@@ -1593,12 +1593,3 @@ async function updateValues() {
     // fetchDVFData();
 }
 
-const button = document.getElementById('getResult');
-button.addEventListener('click', () => {
-    
-    const PrintArea = document.getElementById("PrintArea");
-    if (PrintArea) {
-        PrintArea.style.display = "flex";
-    }
-    updateValues();
-});

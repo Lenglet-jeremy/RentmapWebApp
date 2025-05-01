@@ -319,3 +319,19 @@ document.getElementById('PrintButton').addEventListener('click', function () {
         });
     }, 1000);
 });
+
+const button = document.getElementById('getResult');
+button.addEventListener('click', () => {
+    
+    const PrintArea = document.getElementById("PrintArea");
+    if (PrintArea) {
+        PrintArea.style.display = "flex";
+    }
+
+    const address = sessionStorage.getItem("UserInputAdress")
+    if (address) {
+        getAmenitiesNearby(address);
+    } 
+    updateValues();
+});
+
