@@ -2,6 +2,7 @@
 
 import { updateMap1, destroyMap1 } from './Map/Map.js';
 
+
 window.UsersInputsLat = 48.8584;
 window.UsersInputsLon = 2.2945;
 
