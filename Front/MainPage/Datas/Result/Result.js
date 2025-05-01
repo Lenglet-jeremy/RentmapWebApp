@@ -400,7 +400,6 @@ async function fillPopulationTable(department, cityName) {
 
 async function fillNeighborhoodPopulationTable(department, city) {
     const neighborhoodPopulationData = await fetchNeighborhoodPopulationData(department, city);
-    console.log(neighborhoodPopulationData);
     
 
     const tableBody = document.querySelector('#neighborhoodPopulationTable tbody');

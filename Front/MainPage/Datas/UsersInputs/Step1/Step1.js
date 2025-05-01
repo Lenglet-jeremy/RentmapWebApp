@@ -128,7 +128,10 @@ function displaySuggestions(data) {
     // Événements pour l'élément de liste
     li.addEventListener("click", () => {
       input.value = feature.place_name;
+      console.log(input.value);
+      
       suggestionsList.style.display = "none";
+      
       // Stocker l'adresse sélectionnée dans sessionStorage
       sessionStorage.setItem("UserInputAdress", input.value);
       // Déclencher un événement pour signaler la sélection d'une adresse
@@ -150,6 +153,7 @@ function displaySuggestions(data) {
     suggestionsList.style.display = "none";
   }
 }
+
 // Fonction pour mettre en surbrillance la suggestion sélectionnée
 function highlightSelection() {
   // Supprimer la surbrillance de tous les éléments

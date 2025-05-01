@@ -65,9 +65,7 @@ const CATEGORY_COLORS = {
 
 async function getNearbyAmenities([lng, lat], radius = 500) {
   try {
-    console.log("Recherche de commodités autour de:", lat, lng, "avec rayon:", radius);
     const query = buildOverpassQuery([lng, lat], radius);
-    console.log("Requête Overpass:", query);
     
     const response = await fetch("https://overpass-api.de/api/interpreter", {
       method: "POST",
@@ -83,7 +81,6 @@ async function getNearbyAmenities([lng, lat], radius = 500) {
     }
 
     const data = await response.json();
-    console.log("Résultats Overpass:", data.elements?.length || 0, "éléments trouvés");
     
     // Calculer la distance de chaque commodité par rapport au point de référence
     const elementsWithDistance = data.elements.map(el => {
@@ -130,11 +127,9 @@ async function getNearbyAmenities([lng, lat], radius = 500) {
         .slice(0, 3); // Prendre les 3 plus proches pour chaque catégorie
     });
     
-    console.log("Commodités par catégorie:", elementsByCategory);
     
     // Fusionner tous les résultats dans un seul tableau
     const result = Object.values(elementsByCategory).flat();
-    console.log(`${result.length} commodités à afficher au total`);
     
     return result;
   } catch (error) {
@@ -234,7 +229,6 @@ async function getCoordinatesFromAddress(address, token) {
     const data = await response.json();
     
     if (data.features && data.features.length > 0) {
-      console.log("Coordonnées trouvées pour", address, ":", data.features[0].center);
       return data.features[0].center;
     } else {
       console.warn("Aucun résultat trouvé pour l'adresse:", address);
@@ -246,79 +240,86 @@ async function getCoordinatesFromAddress(address, token) {
   }
 }
 
-function updateHTML(categorie, name, distance) {
-  // Get all amenities-category divs
+function updateHTML(amenities) {
+  // Réinitialiser toutes les commodités existantes
   const categoryDivs = document.querySelectorAll('.amenities-category');
   
-  // Loop through each div
   categoryDivs.forEach(div => {
-    // Find the category element within this div
-    const categoryElement = div.querySelector('.categorie');
-    
-    // If the category matches the provided category
-    if (categoryElement && categoryElement.textContent === categorie) {
-      // Check if this name already exists in any of the 3 items
-      const nameElements = div.querySelectorAll('.amenities-name');
-      let updated = false;
+    const items = div.querySelectorAll('.amenities-item');
+    items.forEach(item => {
+      const nameElement = item.querySelector('.amenities-name');
+      const distanceElement = item.querySelector('.amenities-distance');
       
-      // First, check if this amenity already exists to update it
-      for (let i = 0; i < nameElements.length; i++) {
-        if (nameElements[i].textContent === name) {
-          // Update the corresponding distance
-          const parentItem = nameElements[i].closest('.amenities-item');
-          if (parentItem) {
-            const distanceElement = parentItem.querySelector('.amenities-distance');
-            if (distanceElement) {
-              distanceElement.textContent = distance;
-            }
-          }
-          updated = true;
-          break;
-        }
-      }
-      
-      // If not found, find an empty slot to add the new amenity
-      if (!updated) {
-        // Get all item containers for this category
-        const amenitiesItems = div.querySelectorAll('.amenities-item');
-        
-        // Find the first empty item
-        for (let i = 0; i < amenitiesItems.length; i++) {
-          const nameElement = amenitiesItems[i].querySelector('.amenities-name');
-          
-          // Check if this slot is empty
-          if (nameElement && (!nameElement.textContent || nameElement.textContent.trim() === '')) {
-            // Update name and distance
-            nameElement.textContent = name;
-            
-            const distanceElement = amenitiesItems[i].querySelector('.amenities-distance');
-            if (distanceElement) {
-              distanceElement.textContent = distance;
-            }
-            
-            updated = true;
-            break;
-          }
-        }
-      }
+      if (nameElement) nameElement.textContent = '';
+      if (distanceElement) distanceElement.textContent = '';
+    });
+  });
+  
+  // Regrouper les commodités par catégorie
+  const amenitiesByCategory = {};
+  
+  amenities.forEach(amenity => {
+    const category = getFriendlyCategoryName(amenity.category);
+    if (!amenitiesByCategory[category]) {
+      amenitiesByCategory[category] = [];
     }
+    amenitiesByCategory[category].push(amenity);
+  });
+  
+  // Mettre à jour l'interface avec les commodités triées par distance
+  Object.entries(amenitiesByCategory).forEach(([category, items]) => {
+    // Trier par distance
+    items.sort((a, b) => a.distance - b.distance);
+    
+    // Limiter à 3 commodités par catégorie
+    const topItems = items.slice(0, 3);
+    
+    // Trouver le div correspondant à cette catégorie
+    categoryDivs.forEach(div => {
+      const categoryElement = div.querySelector('.categorie');
+      
+      if (categoryElement && categoryElement.textContent === category) {
+        // Mettre à jour chaque élément
+        topItems.forEach((item, index) => {
+          const amenitiesItems = div.querySelectorAll('.amenities-item');
+          
+          if (index < amenitiesItems.length) {
+            const nameElement = amenitiesItems[index].querySelector('.amenities-name');
+            const distanceElement = amenitiesItems[index].querySelector('.amenities-distance');
+            
+            if (nameElement) {
+              nameElement.textContent = getFriendlyName(item.tags || {});
+            }
+            
+            if (distanceElement) {
+              const distance = item.distance < 1000
+                ? `${Math.round(item.distance)} m`
+                : `${(item.distance / 1000).toFixed(1)} km`;
+              distanceElement.textContent = distance;
+            }
+          }
+        });
+      }
+    });
   });
 }
 
 // On conserve une liste globale de marqueurs pour pouvoir les retirer
 let amenityMarkers = [];
+
+// Mise à jour de la fonction updateMapCenter pour utiliser la nouvelle fonction updateHTML
 async function updateMapCenter(coordinates) {
   if (!map || !coordinates) {
     console.error("Carte ou coordonnées non disponibles");
     return;
   }
 
-  console.log("Mise à jour du centre de la carte vers:", coordinates);
+  console.log(coordinates);
 
   try {
     map.flyTo({
       center: coordinates,
-      zoom: 15, // Zoom un peu plus prononcé pour voir les détails
+      zoom: 15,
       essential: true
     });
 
@@ -332,38 +333,11 @@ async function updateMapCenter(coordinates) {
       .addTo(map);
 
     // Récupérer les commodités par catégorie
-    console.log("Récupération des commodités...");
     const nearbyAmenities = await getNearbyAmenities(coordinates);
-    console.log(`${nearbyAmenities.length} commodités trouvées`);
 
     if (nearbyAmenities.length > 0) {
-      // Parcourir chaque commodité trouvée
-      nearbyAmenities.forEach((el, index) => {
-        // Déterminer la catégorie et le nom convivial
-        const category = getFriendlyCategoryName(el.category);
-        
-      
-        
-        const name = getFriendlyName(el.tags || {});
-        const distance = el.distance < 1000
-          ? `${Math.round(el.distance)} m`
-          : `${(el.distance / 1000).toFixed(1)} km`;
-        console.log(`Catégorie: ${category}, Nom: ${getFriendlyName(el.tags || {})}, Distance : ${distance}`);
-        updateHTML(category, getFriendlyName(el.tags || {}), distance)
-
-        // Trouver la balise correspondante dans le DOM
-        const categoryElement = document.querySelector(`#category-${el.category}`);
-        if (categoryElement) {
-          const nameElement = categoryElement.querySelector(`.amenities-item:nth-child(${index + 1}) .amenities-name`);
-          const distanceElement = categoryElement.querySelector(`.amenities-item:nth-child(${index + 1}) .amenities-distance`);
-
-          if (nameElement && distanceElement) {
-            // Remplir les balises avec les données
-            nameElement.textContent = name;
-            distanceElement.textContent = distance;
-          }
-        }
-      });
+      // Mettre à jour l'interface HTML avec toutes les commodités trouvées
+      updateHTML(nearbyAmenities);
 
       // Afficher les marqueurs pour toutes les commodités trouvées
       nearbyAmenities.forEach(el => {
@@ -388,7 +362,6 @@ async function updateMapCenter(coordinates) {
         amenityMarkers.push(marker);
       });
 
-      console.log(`${amenityMarkers.length} marqueurs ajoutés sur la carte`);
     } else {
       console.warn("Aucune commodité trouvée dans la zone");
       new mapboxgl.Popup()
@@ -415,7 +388,6 @@ function debounce(func, wait) {
 const debouncedProcessAddress = debounce(async (address) => {
   if (address.length < 3) return; // Ne pas rechercher pour des entrées trop courtes
   
-  console.log("Traitement de l'adresse (debounced):", address);
   const token = await fetchMapboxToken();
   const coordinates = await getCoordinatesFromAddress(address, token);
   if (coordinates) {
@@ -451,7 +423,6 @@ function watchAddressChanges() {
 
 // Fonction pour traiter une adresse complète
 async function processAddress(address) {
-  console.log("Traitement de l'adresse complète:", address);
   const token = await fetchMapboxToken();
   const coordinates = await getCoordinatesFromAddress(address, token);
   if (coordinates) {
@@ -487,7 +458,6 @@ async function initializeMap() {
     map.addControl(new window.mapboxgl.NavigationControl());
     
     map.on('load', () => {
-      console.log('Carte Mapbox chargée avec succès');
       // Commencer à surveiller les changements d'adresse une fois la carte chargée
       watchAddressChanges();
       
