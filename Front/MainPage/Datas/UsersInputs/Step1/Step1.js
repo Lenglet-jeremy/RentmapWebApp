@@ -1,3 +1,5 @@
+// Step1.js
+
 // Sélection des éléments du DOM
 const input = document.getElementById("Address");
 const suggestionsList = document.getElementById("Suggestion");
@@ -286,3 +288,19 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+
+document.getElementById('Address').addEventListener('blur', () => {
+  const address = document.getElementById('Address').value.trim();
+  if (address) {
+      sessionStorage.setItem('UserInputAdress', address);
+  }
+});
+
+document.getElementById('Address').addEventListener('keypress', (event) => {
+  if (event.key === 'Enter') {
+      const address = document.getElementById('Address').value.trim();
+      if (address) {
+          sessionStorage.setItem('UserInputAdress', address);
+      }
+  }
+});

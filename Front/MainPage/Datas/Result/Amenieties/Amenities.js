@@ -1,3 +1,5 @@
+// Amenities.js
+
 import { fetchMapboxToken } from "../../../Map/Map.js";
 const token = await fetchMapboxToken();
 
