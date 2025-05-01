@@ -191,7 +191,7 @@ let map;
 let allAmenitiesData = []; // Stocke toutes les données de commodités avant d'ajouter les marqueurs
 
 // Fonction pour créer un marqueur
-function createMarker(category, coordinates) {
+function createMarker(category, coordinates, amenityName, distance) {
   const el = document.createElement('div');
   el.className = 'custom-marker';
   el.innerHTML = CATEGORY_ICONS[category] || `
@@ -237,10 +237,22 @@ function createMarker(category, coordinates) {
   };
   el.style.color = colors[category] || '#333';
 
-  new mapboxgl.Marker(el)
+  // Créer le contenu du popup
+  const popupContent = `
+    <div>
+      <strong>Catégorie:</strong> ${category}<br>
+      <strong>Nom:</strong> ${amenityName}<br>
+      <strong>Distance:</strong> ${Math.round(distance)} m
+    </div>
+  `;
+
+  const marker = new mapboxgl.Marker(el)
     .setLngLat(coordinates)
+    .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML(popupContent)) // Ajouter une infobulle avec le contenu
     .addTo(map);
 }
+
+
 
 async function geocodeAddress(address) {
   const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
@@ -434,10 +446,11 @@ async function getAmenitiesNearby(userAddress) {
       amenitiesData.forEach(({ category, amenities }) => {
         if (amenities && amenities.length > 0) {
           amenities.forEach(amenity => {
-            createMarker(category, [amenity.lon, amenity.lat]);
+            createMarker(category, [amenity.lon, amenity.lat], amenity.name, amenity.distance); // Passer le nom et la distance de la commodité
           });
         }
       });
+
       
       // S'assurer que la carte est correctement redimensionnée
       map.resize();

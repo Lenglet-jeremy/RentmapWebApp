@@ -212,7 +212,3 @@
   .custom-marker:hover {
     transform: scale(1.2);
   }
-
-  #neighborhoodCostRentTable {
-    display: block;
-}
