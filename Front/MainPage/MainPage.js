@@ -1,6 +1,5 @@
 // MainPage.js
 
-import { getAmenitiesNearby } from './Datas/Result/Amenieties/Amenities.js';
 import { updateMap1, destroyMap1 } from './Map/Map.js';
 
 window.UsersInputsLat = 48.8584;
@@ -320,19 +319,3 @@ document.getElementById('PrintButton').addEventListener('click', function () {
         });
     }, 1000);
 });
-
-const button = document.getElementById('getResult');
-button.addEventListener('click', () => {
-    
-    const PrintArea = document.getElementById("PrintArea");
-    if (PrintArea) {
-        PrintArea.style.display = "flex";
-    }
-
-    const address = sessionStorage.getItem("UserInputAdress")
-    if (address) {
-        getAmenitiesNearby(address);
-    } 
-    updateValues();
-});
-
