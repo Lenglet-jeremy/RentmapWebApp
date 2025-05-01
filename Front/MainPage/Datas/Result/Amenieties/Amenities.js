@@ -184,7 +184,11 @@ const categories = {
   Divers: ['amenity=place_of_worship', 'amenity=bank', 'amenity=atm']
 };
 
-// Exemple d'utilisation d'un SVG comme marqueur
+// Variable globale pour la carte
+let map;
+let allAmenitiesData = []; // Stocke toutes les données de commodités avant d'ajouter les marqueurs
+
+// Fonction pour créer un marqueur
 function createMarker(category, coordinates) {
   const el = document.createElement('div');
   el.className = 'custom-marker';
@@ -233,7 +237,7 @@ function createMarker(category, coordinates) {
 
   new mapboxgl.Marker(el)
     .setLngLat(coordinates)
-    .addTo(map); // `map` est maintenant global
+    .addTo(map);
 }
 
 async function geocodeAddress(address) {
@@ -273,21 +277,108 @@ function injectInDOM(category, results) {
   });
 }
 
-let map; // 📌 Rendu global pour être utilisable dans createMarker()
+// Fonction pour initialiser la carte et attendre qu'elle soit complètement chargée
+async function initializeMap(lon, lat) {
+  return new Promise((resolve, reject) => {
+    try {
+      // Vérifier si l'élément Map2 existe
+      const mapContainer = document.getElementById('Map2');
+      if (!mapContainer) {
+        reject(new Error("L'élément avec l'ID 'Map2' n'existe pas dans le DOM"));
+        return;
+      }
+      
+      // S'assurer que le conteneur a une hauteur
+      if (mapContainer.clientHeight === 0) {
+        mapContainer.style.height = '500px';
+      }
+      
+      // Initialiser la carte
+      mapboxgl.accessToken = token;
+      map = new mapboxgl.Map({
+        container: 'Map2',
+        style: 'mapbox://styles/mapbox/streets-v12',
+        center: [lon, lat],
+        zoom: 13,
+        minZoom: 9,
+        maxZoom: 18,
+        attributionControl: true
+      });
+      
+      // Résoudre la promesse lorsque la carte est complètement chargée
+      map.on('load', () => {
+        console.log("Carte chargée avec succès");
+        resolve(map);
+      });
+      
+      map.on('error', (e) => {
+        console.error("Erreur lors du chargement de la carte:", e);
+        reject(e);
+      });
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+// Fonction pour récupérer toutes les données d'amenities
+async function fetchAllAmenities(lat, lon) {
+  const categoryEntries = Object.entries(categories);
+  const batchSize = 3; // Traiter 3 catégories à la fois
+  const allAmenities = [];
+  
+  for (let i = 0; i < categoryEntries.length; i += batchSize) {
+    const batch = categoryEntries.slice(i, i + batchSize);
+    
+    // Exécuter les requêtes par lots
+    const batchResults = await Promise.all(batch.map(async ([category, tags]) => {
+      try {
+        const query = buildOverpassQuery(lat, lon, tags);
+        const response = await fetch("https://overpass-api.de/api/interpreter", {
+          method: "POST",
+          body: query
+        });
+        
+        // Vérifier si la réponse est OK
+        if (!response.ok) {
+          throw new Error(`Erreur HTTP: ${response.status}`);
+        }
+        
+        const json = await response.json();
+        if (!json.elements || !json.elements.length) return null;
+
+        const sorted = json.elements
+          .map(e => ({
+            name: e.tags?.name || '[Sans nom]',
+            lat: e.lat,
+            lon: e.lon,
+            distance: haversine(lat, lon, e.lat, e.lon)
+          }))
+          .sort((a, b) => a.distance - b.distance)
+          .slice(0, 3);
+
+        return { category, amenities: sorted };
+      } catch (categoryError) {
+        console.error(`Erreur lors du traitement de la catégorie ${category}:`, categoryError);
+        return null;
+      }
+    }));
+    
+    // Ajouter les résultats valides au tableau final
+    batchResults.forEach(result => {
+      if (result) allAmenities.push(result);
+    });
+    
+    // Petite pause entre les lots pour éviter de surcharger l'API
+    await new Promise(resolve => setTimeout(resolve, 100));
+  }
+  
+  return allAmenities;
+}
+
+// Fonction principale réorganisée pour charger complètement la carte avant d'ajouter les commodités
 async function getAmenitiesNearby(userAddress) {
   try {
-    // Vérifier si l'élément Map2 existe
-    const mapContainer = document.getElementById('Map2');
-    if (!mapContainer) {
-      console.error("Erreur : L'élément avec l'ID 'Map2' n'existe pas dans le DOM");
-      return;
-    }
-    
-    // S'assurer que le conteneur a une hauteur
-    if (mapContainer.clientHeight === 0) {
-      mapContainer.style.height = '500px';
-    }
-
     // Attendre que DOM soit complètement chargé
     if (document.readyState !== 'complete') {
       await new Promise(resolve => {
@@ -295,6 +386,7 @@ async function getAmenitiesNearby(userAddress) {
       });
     }
 
+    // Obtenir les coordonnées de l'adresse
     const { lat, lon } = await geocodeAddress(userAddress);
     
     // Vérifier si Mapbox est chargé correctement
@@ -309,105 +401,50 @@ async function getAmenitiesNearby(userAddress) {
       return;
     }
     
-    // Initialiser la carte avec davantage d'options et gestionnaires d'événements
-    mapboxgl.accessToken = token;
-    
     // Attendre un court instant pour s'assurer que le DOM est prêt
     await new Promise(resolve => setTimeout(resolve, 100));
     
+    // Étape 1 : Initialiser et attendre que la carte soit complètement chargée
     try {
-      map = new mapboxgl.Map({
-        container: 'Map2',
-        style: 'mapbox://styles/mapbox/streets-v12',
-        center: [lon, lat],
-        zoom: 13,
-        minZoom: 9,
-        maxZoom: 18,
-        attributionControl: true
+      console.log("Initialisation de la carte...");
+      await initializeMap(lon, lat);
+      console.log("Carte complètement chargée et prête");
+      
+      // Ajouter le marqueur de l'utilisateur une fois la carte chargée
+      new mapboxgl.Marker({ color: 'blue' })
+        .setLngLat([lon, lat])
+        .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
+        .addTo(map);
+      
+      // Étape 2 : Récupérer toutes les données d'amenities
+      console.log("Récupération des données d'amenities...");
+      const amenitiesData = await fetchAllAmenities(lat, lon);
+      
+      // Étape 3 : Mettre à jour le DOM avec les données récupérées
+      amenitiesData.forEach(({ category, amenities }) => {
+        if (amenities && amenities.length > 0) {
+          injectInDOM(category, amenities);
+        }
       });
       
-      // Ajouter des gestionnaires d'événements pour déboguer
-      map.on('load', () => {
-        console.log("Carte chargée avec succès");
+      // Étape 4 : Ajouter tous les marqueurs après que la carte et les données sont prêtes
+      console.log("Ajout des marqueurs sur la carte...");
+      amenitiesData.forEach(({ category, amenities }) => {
+        if (amenities && amenities.length > 0) {
+          amenities.forEach(amenity => {
+            createMarker(category, [amenity.lon, amenity.lat]);
+          });
+        }
       });
       
-      map.on('error', (e) => {
-        console.error("Erreur lors du chargement de la carte:", e);
-      });
+      // S'assurer que la carte est correctement redimensionnée
+      map.resize();
+      console.log("Processus terminé avec succès");
+      
     } catch (mapError) {
       console.error("Erreur lors de l'initialisation de la carte:", mapError);
       return;
     }
-
-    // Attendre que la carte soit chargée
-    await new Promise(resolve => {
-      if (map.loaded()) {
-        resolve();
-      } else {
-        map.on('load', resolve);
-      }
-    });
-
-    // Ajouter le marqueur de l'adresse de l'utilisateur
-    new mapboxgl.Marker({ color: 'blue' })
-      .setLngLat([lon, lat])
-      .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
-      .addTo(map);
-
-    // Limiter le nombre de requêtes simultanées pour éviter de surcharger l'API
-    const categoryEntries = Object.entries(categories);
-    const batchSize = 3; // Traiter 3 catégories à la fois
-    
-    for (let i = 0; i < categoryEntries.length; i += batchSize) {
-      const batch = categoryEntries.slice(i, i + batchSize);
-      
-      // Exécuter les requêtes par lots
-      await Promise.all(batch.map(async ([category, tags]) => {
-        try {
-          const query = buildOverpassQuery(lat, lon, tags);
-          const response = await fetch("https://overpass-api.de/api/interpreter", {
-            method: "POST",
-            body: query
-          });
-          
-          // Vérifier si la réponse est OK
-          if (!response.ok) {
-            throw new Error(`Erreur HTTP: ${response.status}`);
-          }
-          
-          const json = await response.json();
-          if (!json.elements || !json.elements.length) return;
-
-          const sorted = json.elements
-            .map(e => ({
-              name: e.tags?.name || '[Sans nom]',
-              lat: e.lat,
-              lon: e.lon,
-              distance: haversine(lat, lon, e.lat, e.lon)
-            }))
-            .sort((a, b) => a.distance - b.distance)
-            .slice(0, 3);
-
-          injectInDOM(category, sorted);
-
-          // Ajouter les marqueurs si la carte est toujours valide
-          if (map && !map.removed) {
-            sorted.forEach(amenity => {
-              createMarker(category, [amenity.lon, amenity.lat]);
-            });
-          }
-        } catch (categoryError) {
-          console.error(`Erreur lors du traitement de la catégorie ${category}:`, categoryError);
-        }
-      }));
-      
-      // Petite pause entre les lots pour éviter de surcharger l'API
-      await new Promise(resolve => setTimeout(resolve, 100));
-    }
-    
-    // Ajuster la vue de la carte après avoir ajouté tous les marqueurs
-    map.resize();
-    
   } catch (err) {
     console.error("Erreur globale:", err.message);
   }
