@@ -452,10 +452,9 @@ async function getAmenitiesNearby(userAddress) {
   }
 }
 
-const address = sessionStorage.getItem("UserInputAdress")
-if (address) {
-  console.log("Adresse trouvée, initialisation de la carte:", address);
-  getAmenitiesNearby(address);
-} else {
-  console.error("Aucune adresse trouvée");
-}
+document.getElementById('Address').addEventListener('change', function(event) {
+  const address = document.getElementById('Address');
+  const newValue = address.value;
+  getAmenitiesNearby(newValue);
+  console.log('Valeur changée :', newValue);
+});
