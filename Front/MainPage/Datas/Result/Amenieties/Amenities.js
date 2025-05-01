@@ -377,7 +377,7 @@ async function fetchAllAmenities(lat, lon) {
 }
 
 // Fonction principale réorganisée pour charger complètement la carte avant d'ajouter les commodités
-export async function getAmenitiesNearby(userAddress) {
+async function getAmenitiesNearby(userAddress) {
   try {
     // Attendre que DOM soit complètement chargé
     if (document.readyState !== 'complete') {
@@ -448,4 +448,12 @@ export async function getAmenitiesNearby(userAddress) {
   } catch (err) {
     console.error("Erreur globale:", err.message);
   }
+}
+
+const address = sessionStorage.getItem("UserInputAdress")
+if (address) {
+  console.log("Adresse trouvée, initialisation de la carte:", address);
+  getAmenitiesNearby(address);
+} else {
+  console.error("Aucune adresse trouvée");
 }
