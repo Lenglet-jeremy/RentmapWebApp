@@ -1,5 +1,6 @@
 // MainPage.js
 
+import { getAmenitiesNearby } from './Datas/Result/Amenieties/Amenities.js';
 import { updateMap1, destroyMap1 } from './Map/Map.js';
 
 window.UsersInputsLat = 48.8584;
