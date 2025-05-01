@@ -1,5 +1,7 @@
 // Result.js
 
+import { getAmenitiesNearby } from "./Amenieties/Amenities";
+
 const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
 const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
 function normalizeString(str) {
@@ -1593,3 +1595,14 @@ async function updateValues() {
     // fetchDVFData();
 }
 
+const button = document.getElementById('getResult');
+button.addEventListener('click', () => {
+    
+    const address = sessionStorage.getItem("UserInputAdress")
+    const PrintArea = document.getElementById("PrintArea");
+    if (PrintArea) {
+        PrintArea.style.display = "flex";
+    }
+    updateValues();
+    getAmenitiesNearby(address)
+});
