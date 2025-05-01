@@ -418,5 +418,5 @@ if (address) {
   console.log("Adresse trouvée, initialisation de la carte:", address);
   getAmenitiesNearby(address);
 } else {
-  console.error("Aucune adresse trouvée dans sessionStorage");
+  console.error("Aucune adresse trouvée");
 }
