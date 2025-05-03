@@ -7,6 +7,7 @@ function normalizeString(str) {
         ? str.trim().toLowerCase().normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
             .replace("saint-", "st ")
+            .replace(" ", "-")
         : "";
 }
 
@@ -38,6 +39,8 @@ async function fetchData(url) {
 
 async function fetchNeighborhoodCostRentData(department, city) {
     const data = await fetchData(`${backendUrl}/api/Refined`);
+    console.log(`${backendUrl}/api/Refined`);
+    
     if (!data) return {};
 
     let RefinedData = [];
@@ -56,6 +59,7 @@ async function fetchNeighborhoodCostRentData(department, city) {
 async function fetchNeighborhoodCostData(department, city, neighborhood, typeOfProperty) {
     try {
         const response = await fetch(`${backendUrl}/api/Refined`);
+        
         
         
         const data = await response.json();
@@ -85,12 +89,15 @@ async function fetchNeighborhoodRentData(department, city, neighborhood, typeOfP
     try {
         const response = await fetch(`${backendUrl}/api/Refined`);
         
+        
         const data = await response.json();
         
 
         for (const key in data) {
             if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
                 for (const collection of data[key]) {
+                    console.log(normalizeString(collection["Quartier"]));
+                    console.log(normalizeString(neighborhood));
                     if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(collection["Quartier"]).includes(normalizeString(neighborhood))) {    
                         if(typeOfProperty === "Appartement"){
                             return collection["Loyer au m2 appartement"]
@@ -171,6 +178,7 @@ async function fillNeighborhoodCostRentTable(department, city) {
 async function fetchRentabiliteData(department, city, typeOfProperty) {
     try {
         const response = await fetch(`${backendUrl}/api/Rentabilite`);
+        
         const data = await response.json();
 
         let cityData = {};
@@ -1236,6 +1244,9 @@ async function fetchDepartmentCityNeighborhood() {
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
+        console.log(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
+        
+        
         
         
         
@@ -1245,8 +1256,10 @@ async function fetchDepartmentCityNeighborhood() {
         if (data && data.length > 0) {
             const departement = data[0].address.county || "";
             const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
-            const city = data[0].address.village || data[0].name || data[0].address.city  || data[0].address.town || "";
+            const city = data[0].address.village || data[0].address.town ||  data[0].name || data[0].address.city || "";
             const suburb = data[0].address.suburb || "";
+            console.log([departmentCode, departement, city, suburb || ""]);
+            
             return [departmentCode, departement, city, suburb || ""];
         } else {
             console.error("No data found for the address.");
@@ -1540,6 +1553,7 @@ async function updateValues() {
     }
     else{        
         neighborhoodCost = await fetchNeighborhoodCostData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
+        
         neighborhoodCost = Math.round(neighborhoodCost)
         neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
         
