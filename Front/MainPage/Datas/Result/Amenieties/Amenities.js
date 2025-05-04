@@ -286,7 +286,7 @@ async function initializeMap(lon, lat) {
       map.on('load', () => {
         setTimeout(() => {
           map.resize();
-        }, 2000);
+        }, 4000);
         resolve(map);
       });
       
