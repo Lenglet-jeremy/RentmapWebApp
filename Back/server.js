@@ -424,14 +424,12 @@ app.get("/api/SecuriteCriminalite", (req, res) => {
   }
 });
 
-app.get("/api/commoditees/:departement/:ville", (req, res) => {
-  const { departement, ville } = req.params;
+app.get("/api/commoditees", (req, res) => {
   try {
-    const filePath = `${dataFolder}/commoditees/${departement}/${ville}.json`;
-    const jsonData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    res.json(jsonData);
+    const allJsonData = readAllJsonFilesWithPattern(dataFolder, "commoditees.json");
+    res.json(allJsonData);
   } catch (error) {
-    console.error("Erreur lors de la lecture du fichier JSON :", error);
+    console.error("Erreur lors de la lecture des fichiers JSON :", error);
     res.status(500).json({ error: "Erreur lors de la récupération des données JSON." });
   }
 });

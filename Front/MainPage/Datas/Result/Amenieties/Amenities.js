@@ -304,17 +304,24 @@ async function initializeMap(lon, lat) {
 
 // Fonction pour récupérer toutes les données d'amenities
 async function fetchAllAmenities(department, city) {
-
-  const response = await fetch(`${backendUrl}/api/commoditees/${department}/${city}`);
-  console.log(`${backendUrl}/api/commoditees/${department}/${city}`);
+  const response = await fetch(`${backendUrl}/api/commoditees/`);
   
   if (!response.ok) {
     throw new Error(`Erreur lors de la récupération des commodités : ${response.status}`);
   }
-  const data = await response.json();
-  return data;
 
+  const data = await response.json();
+  const key = `${city}commoditees.json`;
+  console.log(data[key]);
+  
+
+  if (!data[key]) {
+    throw new Error(`Aucune donnée trouvée pour la ville : ${city}`);
+  }
+
+  return data[key];
 }
+
 
 // Fonction principale réorganisée pour charger complètement la carte avant d'ajouter les commodités
 async function getAmenitiesNearby(userAddress) {

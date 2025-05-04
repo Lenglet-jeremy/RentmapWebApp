@@ -2,27 +2,25 @@ import os
 import requests
 from getpass import getpass
 
-# 📁 Dossier contenant les JSON
 json_folder = "../Data"
-
-# 🌐 URL de ton backend
-upload_url = "https://rentmapwebapp.onrender.com/upload-json"  # à adapter si besoin
-
-# 🔐 Demande du mot de passe
+upload_url = "https://rentmapwebapp.onrender.com/upload-json"
 password = getpass("Entrez le mot de passe d’upload : ")
 
-# 🔁 Parcours tous les fichiers JSON du dossier
-for filename in os.listdir(json_folder):
-    if filename.endswith(".json"):
-        filepath = os.path.join(json_folder, filename)
-        
-        with open(filepath, "rb") as f:
-            files = {'file': (filename, f, 'application/json')}
-            data = {'filename': filename}
-            headers = {'x-upload-password': password}
+for root, dirs, files in os.walk(json_folder):
+    for filename in files:
+        if filename.endswith(".json"):
+            filepath = os.path.join(root, filename)
 
-            try:
-                response = requests.post(upload_url, files=files, data=data, headers=headers)
-                print(f"{filename}: {response.status_code} - {response.json().get('message')}")
-            except Exception as e:
-                print(f"Erreur lors de l’envoi de {filename} :", e)
+            # Chemin relatif à partir de json_folder (ex: "Ille-et-Vilaine/Rennes.json")
+            relative_path = os.path.relpath(filepath, json_folder)
+
+            with open(filepath, "rb") as f:
+                files_data = {'file': (relative_path, f, 'application/json')}
+                data = {'filename': relative_path}
+                headers = {'x-upload-password': password}
+
+                try:
+                    response = requests.post(upload_url, files=files_data, data=data, headers=headers)
+                    print(f"{relative_path}: {response.status_code} - {response.json().get('message')}")
+                except Exception as e:
+                    print(f"Erreur lors de l’envoi de {relative_path} :", e)
