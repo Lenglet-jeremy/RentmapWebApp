@@ -183,7 +183,6 @@ export async function getCoordinates() {
         }
 
         const data = await response.json();
-        console.log("Données de Nominatim :", data);
         if (data.length > 0) {
             const lat = parseFloat(data[0].lat);
             const lon = parseFloat(data[0].lon);

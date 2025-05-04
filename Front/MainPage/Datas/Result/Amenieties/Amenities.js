@@ -1,7 +1,12 @@
 // Amenities.js
 
 import { fetchMapboxToken } from "../../../Map/Map.js";
+import { fetchDepartmentCityNeighborhood } from "../Result.js";
 const token = await fetchMapboxToken();
+
+
+const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
+const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
 
 const CATEGORY_ICONS = {
   'Transports': `
@@ -165,30 +170,234 @@ const CATEGORY_ICONS = {
 };
 
 const categories = {
-  Transports: ['amenity=bus_station', 'amenity=taxi', 'railway=subway_entrance', 'railway=station'],
-  Enseignement: ['amenity=school', 'amenity=college', 'amenity=kindergarten', 'amenity=university'],
-  Commerces: ['shop=supermarket', 'shop=mall', 'shop=convenience', 'shop=bakery'],
-  ServicesDeSante: ['amenity=hospital', 'amenity=clinic', 'amenity=pharmacy', 'amenity=doctors'],
-  Loisirs: ['amenity=cinema', 'amenity=theatre', 'amenity=nightclub'],
-  ServicesPublic: ['amenity=townhall', 'amenity=post_office', 'amenity=police', 'amenity=fire_station'],
-  Bar: ['amenity=bar', 'amenity=pub'],
-  Parking: ['amenity=parking'],
-  Restaurants: ['amenity=restaurant', 'amenity=fast_food', 'amenity=cafe'],
   ActivitesCulturelle: ['amenity=library', 'amenity=arts_centre'],
-  ServicesPourAnimaux: ['amenity=veterinary', 'shop=pet'],
-  InfrastructureSportive: ['leisure=sports_centre', 'leisure=stadium', 'leisure=fitness_centre'],
-  Stationnement: ['amenity=parking', 'amenity=parking_space'],
-  Justice: ['amenity=courthouse'],
-  JardinEtParc: ['leisure=park', 'leisure=garden'],
+  Bar: ['amenity=bar', 'amenity=pub'],
   CentreSocial: ['amenity=community_centre', 'social_facility=social_facility'],
-  Utilitaires: ['amenity=toilets', 'amenity=recycling', 'amenity=waste_basket'],
-  Hebergement: ['tourism=hotel', 'tourism=hostel', 'tourism=motel'],
-  Divers: ['amenity=place_of_worship', 'amenity=bank', 'amenity=atm']
+  Commerces: ['shop=supermarket', 'shop=mall', 'shop=convenience', 'shop=bakery'],
+  Divers: ['amenity=place_of_worship', 'amenity=bank', 'amenity=atm'],
+  Enseignement: ['amenity=school', 'amenity=college', 'amenity=kindergarten', 'amenity=university'],
+  Hebergement: [
+    'tourism=hotel',
+    'tourism=hostel',
+    'tourism=motel',
+    'tourism=guest_house',
+    'tourism=bed_and_breakfast',
+    'tourism=camp_site',
+    'tourism=chalet',
+    'tourism=caravan_site',
+    'tourism=apartment'
+  ],  
+  InfrastructureSportive: [
+    'leisure=sports_centre',
+    'leisure=stadium',
+    'leisure=fitness_centre',
+    'leisure=swimming_pool',
+    'leisure=pitch',
+    'sport=soccer',
+    'sport=tennis',
+    'sport=basketball',
+    'sport=athletics',
+    'sport=climbing',
+    'sport=skating',
+    'sport=swimming',
+    'sport=fitness'
+  ],  
+  JardinEtParc: [
+    'leisure=park',
+    'leisure=garden',
+    'leisure=nature_reserve',
+    'leisure=playground',
+    'leisure=dog_park',
+    'leisure=common',
+    'landuse=forest',
+    'landuse=grass',
+    'natural=wood',
+    'natural=heath',
+    'natural=scrub'
+  ],  
+  Justice: ['amenity=courthouse'],
+  Loisirs: ['amenity=cinema', 'amenity=theatre', 'amenity=nightclub'],
+  Parking: ['amenity=parking_entrance', 'amenity=bicycle_parking', 'amenity=parking_space'],
+  Restaurants: ['amenity=restaurant', 'amenity=fast_food', 'amenity=cafe'],
+  ServicesDeSante: ['amenity=hospital', 'amenity=clinic', 'amenity=pharmacy', 'amenity=doctors'],
+  ServicesPourAnimaux: ['amenity=veterinary', 'shop=pet'],
+  ServicesPublic: ['amenity=townhall', 'amenity=post_office', 'amenity=police', 'amenity=fire_station'],
+  Stationnement: ['amenity=parking', 'amenity=parking_space'],
+  Transports: ['amenity=bus_station', 'amenity=taxi', 'railway=subway_entrance', 'railway=station'],
+  Utilitaires: ['amenity=toilets', 'amenity=recycling', 'amenity=waste_basket']
 };
+
 
 // Variable globale pour la carte
 let map;
-let allAmenitiesData = []; // Stocke toutes les données de commodités avant d'ajouter les marqueurs
+
+
+async function geocodeAddress(address) {
+  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
+  
+  const response = await fetch(url);
+  const data = await response.json();
+  if (data.length === 0) throw new Error("Adresse introuvable");
+  return { lat: parseFloat(data[0].lat), lon: parseFloat(data[0].lon) };
+}
+
+function calculateDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371000; // Rayon de la Terre en mètres
+  const rad = Math.PI / 180;
+  const dLat = (lat2 - lat1) * rad;
+  const dLon = (lon2 - lon1) * rad;
+  const a = Math.sin(dLat / 2) ** 2 +
+            Math.cos(lat1 * rad) * Math.cos(lat2 * rad) *
+            Math.sin(dLon / 2) ** 2;
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+}
+
+// Fonction pour initialiser la carte et attendre qu'elle soit complètement chargée
+async function initializeMap(lon, lat) {
+  
+  return new Promise((resolve, reject) => {
+    try {
+      // Vérifier si l'élément Map2 existe
+      const mapContainer = document.getElementById('Map2');
+      if (!mapContainer) {
+        reject(new Error("L'élément avec l'ID 'Map2' n'existe pas dans le DOM"));
+        return;
+      }
+      
+      // S'assurer que le conteneur a une hauteur
+      if (mapContainer.clientHeight === 0) {
+        mapContainer.style.height = '500px';
+      }
+      
+      // Initialiser la carte
+      mapboxgl.accessToken = token;
+      map = new mapboxgl.Map({
+        container: 'Map2',
+        style: 'mapbox://styles/mapbox/streets-v12',
+        center: [lon, lat],
+        zoom: 13,
+        minZoom: 9,
+        maxZoom: 18,
+        attributionControl: true
+      });
+      
+      // Résoudre la promesse lorsque la carte est complètement chargée
+      map.on('load', () => {
+        setTimeout(() => {
+          map.resize();
+        }, 2000);
+        resolve(map);
+      });
+      
+      map.on('error', (e) => {
+        console.error("Erreur lors du chargement de la carte:", e);
+        reject(e);
+      });
+
+
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+// Fonction pour récupérer toutes les données d'amenities
+async function fetchAllAmenities(department, city) {
+
+  const response = await fetch(`${backendUrl}/api/commoditees/${department}/${city}`);
+  console.log(`${backendUrl}/api/commoditees/${department}/${city}`);
+  
+  if (!response.ok) {
+    throw new Error(`Erreur lors de la récupération des commodités : ${response.status}`);
+  }
+  const data = await response.json();
+  return data;
+
+}
+
+// Fonction principale réorganisée pour charger complètement la carte avant d'ajouter les commodités
+async function getAmenitiesNearby(userAddress) {
+  let departmentCode = "";
+  let department = "";
+  let city = "";
+
+  const neighbourhoodValue = document.getElementById("neighbourhoodValue");
+
+  const { lat, lon } = await geocodeAddress(userAddress);
+  [departmentCode, department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
+  const allAmenities = await fetchAllAmenities(department, city);
+  
+
+  // Calculer la distance et reformater
+  const amenitiesWithDistance = allAmenities.map(amenity => {
+    const distance = calculateDistance(lat, lon, amenity.latitude, amenity.longitude);
+    return {
+      ...amenity,
+      distance,
+    };
+  });
+
+  const flatCategoryMap = {};
+  for (const [group, keys] of Object.entries(categories)) {
+    keys.forEach(key => {
+      flatCategoryMap[key] = group;
+    });
+  }
+
+  const groupedAmenities = {};
+  amenitiesWithDistance.forEach(amenity => {
+    const key = `${amenity.type}=${amenity.category}`;
+    const group = flatCategoryMap[key] || 'Divers';
+    if (!groupedAmenities[group]) {
+      groupedAmenities[group] = [];
+    }
+    groupedAmenities[group].push(amenity);
+  });
+  console.log(groupedAmenities);
+  
+  
+
+  // Convertir le regroupement en tableau pour traitement uniforme
+  const amenitiesData = Object.entries(groupedAmenities).map(([category, amenities]) => ({
+    category,
+    amenities: amenities.sort((a, b) => a.distance - b.distance).slice(0, 3) // garder les 3 plus proches
+  }));
+  console.log(amenitiesData);
+
+  // Initialisation de la carte + ajout des marqueurs
+  try {
+    if (document.readyState !== 'complete') {
+      await new Promise(resolve => window.addEventListener('load', resolve));
+    }
+
+    if (!mapboxgl || !token) {
+      console.error("Erreur : Mapbox ou token manquant");
+      return;
+    }
+
+    await new Promise(resolve => setTimeout(resolve, 100));
+    await initializeMap(lon, lat);
+
+    new mapboxgl.Marker({ color: 'blue' })
+      .setLngLat([lon, lat])
+      .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
+      .addTo(map);
+
+    // Injection DOM
+    amenitiesData.forEach(({ category, amenities }) => injectInDOM(category, amenities));
+
+    // Ajout marqueurs
+    amenitiesData.forEach(({ category, amenities }) => {
+      amenities.forEach(amenity => {
+        createMarker(category, [amenity.longitude, amenity.latitude], amenity.name, amenity.distance);
+      });
+    });
+
+  } catch (err) {
+    console.error("Erreur globale:", err.message);
+  }
+}
 
 // Fonction pour créer un marqueur
 function createMarker(category, coordinates, amenityName, distance) {
@@ -253,217 +462,26 @@ function createMarker(category, coordinates, amenityName, distance) {
 }
 
 
-
-async function geocodeAddress(address) {
-  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
-  const response = await fetch(url);
-  const data = await response.json();
-  if (data.length === 0) throw new Error("Adresse introuvable");
-  return { lat: parseFloat(data[0].lat), lon: parseFloat(data[0].lon) };
-}
-
-function buildOverpassQuery(lat, lon, tags) {
-  const radius = 50000;
-  const filters = tags.map(t => {
-    const [key, value] = t.split('=');
-    return `node["${key}"="${value}"](around:${radius},${lat},${lon});`;
-  }).join('\n');
-  return `[out:json][timeout:25];(${filters});out body;`;
-}
-
-function haversine(lat1, lon1, lat2, lon2) {
-  const R = 6371e3;
-  const rad = deg => deg * Math.PI / 180;
-  const dLat = rad(lat2 - lat1);
-  const dLon = rad(lon2 - lon1);
-  const a = Math.sin(dLat/2)**2 + Math.cos(rad(lat1)) * Math.cos(rad(lat2)) * Math.sin(dLon/2)**2;
-  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-}
-
 function injectInDOM(category, results) {
-  results.forEach((item, index) => {
+  
+    
+  results.forEach((item, index) => {    
+
     const nameElement = document.querySelector(`#${category}-item-${index + 1} .amenities-name`);
     const distElement = document.querySelector(`#${category}-item-${index + 1} .amenities-distance`);
-    if (nameElement && distElement) {
+
+    if (item.name === "Inconnu"){
+      nameElement.innerText = item.category;
+      distElement.innerText = `${Math.round(item.distance)} m`;
+    }
+    else{
       nameElement.innerText = item.name;
       distElement.innerText = `${Math.round(item.distance)} m`;
     }
   });
 }
 
-// Fonction pour initialiser la carte et attendre qu'elle soit complètement chargée
-async function initializeMap(lon, lat) {
-  return new Promise((resolve, reject) => {
-    try {
-      // Vérifier si l'élément Map2 existe
-      const mapContainer = document.getElementById('Map2');
-      if (!mapContainer) {
-        reject(new Error("L'élément avec l'ID 'Map2' n'existe pas dans le DOM"));
-        return;
-      }
-      
-      // S'assurer que le conteneur a une hauteur
-      if (mapContainer.clientHeight === 0) {
-        mapContainer.style.height = '500px';
-      }
-      
-      // Initialiser la carte
-      mapboxgl.accessToken = token;
-      map = new mapboxgl.Map({
-        container: 'Map2',
-        style: 'mapbox://styles/mapbox/streets-v12',
-        center: [lon, lat],
-        zoom: 13,
-        minZoom: 9,
-        maxZoom: 18,
-        attributionControl: true
-      });
-      
-      // Résoudre la promesse lorsque la carte est complètement chargée
-      map.on('load', () => {
-        console.log("Carte chargée avec succès");
-        resolve(map);
-      });
-      
-      map.on('error', (e) => {
-        console.error("Erreur lors du chargement de la carte:", e);
-        reject(e);
-      });
-    } catch (error) {
-      reject(error);
-    }
-  });
-}
 
-// Fonction pour récupérer toutes les données d'amenities
-async function fetchAllAmenities(lat, lon) {
-  const categoryEntries = Object.entries(categories);
-  const batchSize = 3; // Traiter 3 catégories à la fois
-  const allAmenities = [];
-  
-  for (let i = 0; i < categoryEntries.length; i += batchSize) {
-    const batch = categoryEntries.slice(i, i + batchSize);
-    
-    // Exécuter les requêtes par lots
-    const batchResults = await Promise.all(batch.map(async ([category, tags]) => {
-      try {
-        const query = buildOverpassQuery(lat, lon, tags);
-        const response = await fetch("https://overpass-api.de/api/interpreter", {
-          method: "POST",
-          body: query
-        });
-        
-        // Vérifier si la réponse est OK
-        if (!response.ok) {
-          throw new Error(`Erreur HTTP: ${response.status}`);
-        }
-        
-        const json = await response.json();
-        if (!json.elements || !json.elements.length) return null;
-
-        const sorted = json.elements
-          .map(e => ({
-            name: e.tags?.name || '[Sans nom]',
-            lat: e.lat,
-            lon: e.lon,
-            distance: haversine(lat, lon, e.lat, e.lon)
-          }))
-          .sort((a, b) => a.distance - b.distance)
-          .slice(0, 3);
-
-        return { category, amenities: sorted };
-      } catch (categoryError) {
-        console.error(`Erreur lors du traitement de la catégorie ${category}:`, categoryError);
-        return null;
-      }
-    }));
-    
-    // Ajouter les résultats valides au tableau final
-    batchResults.forEach(result => {
-      if (result) allAmenities.push(result);
-    });
-    
-    // Petite pause entre les lots pour éviter de surcharger l'API
-    await new Promise(resolve => setTimeout(resolve, 100));
-  }
-  
-  return allAmenities;
-}
-
-// Fonction principale réorganisée pour charger complètement la carte avant d'ajouter les commodités
-async function getAmenitiesNearby(userAddress) {
-  try {
-    // Attendre que DOM soit complètement chargé
-    if (document.readyState !== 'complete') {
-      await new Promise(resolve => {
-        window.addEventListener('load', resolve);
-      });
-    }
-
-    // Obtenir les coordonnées de l'adresse
-    const { lat, lon } = await geocodeAddress(userAddress);
-    
-    // Vérifier si Mapbox est chargé correctement
-    if (!mapboxgl) {
-      console.error("Erreur : Mapbox GL JS n'est pas chargé");
-      return;
-    }
-    
-    // Vérifier si le token existe
-    if (!token) {
-      console.error("Erreur : Token Mapbox non disponible");
-      return;
-    }
-    
-    // Attendre un court instant pour s'assurer que le DOM est prêt
-    await new Promise(resolve => setTimeout(resolve, 100));
-    
-    // Étape 1 : Initialiser et attendre que la carte soit complètement chargée
-    try {
-      console.log("Initialisation de la carte...");
-      await initializeMap(lon, lat);
-      console.log("Carte complètement chargée et prête");
-      
-      // Ajouter le marqueur de l'utilisateur une fois la carte chargée
-      new mapboxgl.Marker({ color: 'blue' })
-        .setLngLat([lon, lat])
-        .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
-        .addTo(map);
-      
-      // Étape 2 : Récupérer toutes les données d'amenities
-      console.log("Récupération des données d'amenities...");
-      const amenitiesData = await fetchAllAmenities(lat, lon);
-      
-      // Étape 3 : Mettre à jour le DOM avec les données récupérées
-      amenitiesData.forEach(({ category, amenities }) => {
-        if (amenities && amenities.length > 0) {
-          injectInDOM(category, amenities);
-        }
-      });
-      
-      // Étape 4 : Ajouter tous les marqueurs après que la carte et les données sont prêtes
-      console.log("Ajout des marqueurs sur la carte...");
-      amenitiesData.forEach(({ category, amenities }) => {
-        if (amenities && amenities.length > 0) {
-          amenities.forEach(amenity => {
-            createMarker(category, [amenity.lon, amenity.lat], amenity.name, amenity.distance); // Passer le nom et la distance de la commodité
-          });
-        }
-      });
-
-      
-      // S'assurer que la carte est correctement redimensionnée
-      map.resize();
-      console.log("Processus terminé avec succès");
-      
-    } catch (mapError) {
-      console.error("Erreur lors de l'initialisation de la carte:", mapError);
-      return;
-    }
-  } catch (err) {
-    console.error("Erreur globale:", err.message);
-  }
-}
 
 document.getElementById('Address').addEventListener('change', function(event) {
   const address = document.getElementById('Address');

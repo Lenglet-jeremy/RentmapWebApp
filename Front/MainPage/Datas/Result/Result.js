@@ -39,7 +39,6 @@ async function fetchData(url) {
 
 async function fetchNeighborhoodCostRentData(department, city) {
     const data = await fetchData(`${backendUrl}/api/Refined`);
-    console.log(`${backendUrl}/api/Refined`);
     
     if (!data) return {};
 
@@ -96,8 +95,6 @@ async function fetchNeighborhoodRentData(department, city, neighborhood, typeOfP
         for (const key in data) {
             if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
                 for (const collection of data[key]) {
-                    console.log(normalizeString(collection["Quartier"]));
-                    console.log(normalizeString(neighborhood));
                     if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(collection["Quartier"]).includes(normalizeString(neighborhood))) {    
                         if(typeOfProperty === "Appartement"){
                             return collection["Loyer au m2 appartement"]
@@ -1238,13 +1235,12 @@ async function fetchLoiLittoralData(department, city) {
     }
 }
 
-async function fetchDepartmentCityNeighborhood() {
+export async function fetchDepartmentCityNeighborhood() {
     const address = document.getElementById("Address").value;
 
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
-        console.log(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
         
         
         
@@ -1258,7 +1254,6 @@ async function fetchDepartmentCityNeighborhood() {
             const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
             const city = data[0].address.village || data[0].address.town ||  data[0].name || data[0].address.city || "";
             const suburb = data[0].address.suburb || "";
-            console.log([departmentCode, departement, city, suburb || ""]);
             
             return [departmentCode, departement, city, suburb || ""];
         } else {
@@ -1479,11 +1474,11 @@ function TableauFinancier() {
     // Loyer annuel
     document.getElementById('TableauRentabiliteValueLoyerAnnuel').innerText = (totalLoyers * 12).toFixed(0);
 }
-
 async function updateValues() {
-    let city = "";
-    let department = "";
     let departmentCode = "";
+    let department = "";
+    let city = "";
+
 
     let typeOfPropertyValue = document.getElementById("TypeOfPropertyValue");
     let nbPiecesValue = document.getElementById("NbPiecesValue");
