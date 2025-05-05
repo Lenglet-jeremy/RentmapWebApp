@@ -212,3 +212,26 @@
   .custom-marker:hover {
     transform: scale(1.2);
   }
+
+
+
+  .amenities-category {
+    position: relative; /* Assurez-vous que le parent est positionné relativement */
+}
+
+#floatingDiv {
+    display: none; /* Masquer par défaut */
+    position: absolute; /* Positionner de manière absolue */
+    top: 30px; /* Ajustez selon la distance souhaitée sous le bouton */
+    left: 0;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.additional-amenity {
+    margin-bottom: 5px; /* Ajouter un espacement entre les éléments */
+}
