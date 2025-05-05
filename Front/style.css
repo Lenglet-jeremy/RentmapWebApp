@@ -1,10 +1,10 @@
-
-/* Styles spécifiques pour chaque étape */
 @import url('./Datas/UsersInputs/Step1/Step1.css');
 @import url('./Datas/UsersInputs/Step2/Step2.css');
 @import url('./Datas/UsersInputs/Step3/Step3.css');
 @import url('./Datas/UsersInputs/Step4/Step4.css');
 @import url('./Datas/Result/Result.css');
+
+
 * {
     padding: 0;
     margin: 0;
