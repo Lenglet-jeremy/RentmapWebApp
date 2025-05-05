@@ -30,12 +30,12 @@
             <span>€</span>
         </div>
         <div class="formGroup">
-            <label for="chargesTaxeFonciere">Taxe foncière</label>
-            <input type="number" id="chargesTaxeFonciere" name="taxeFonciere" class="inputField">
+            <label for="TFPB">TFPB</label>
+            <input type="number" id="TFPB" name="taxeFonciere" class="inputField">
             <span>€</span>
         </div>
         <div class="formGroup">
-            <label for="chargesAssurance">Assurance</label>
+            <label for="chargesAssurance">Assurance PNO</label>
             <input type="number" id="chargesAssurance" name="assurance" class="inputField">
             <span>€</span>
         </div>
@@ -44,42 +44,27 @@
             <input type="number" id="chargesFraisDivers" name="fraisDivers" class="inputField">
             <span>€</span>
         </div>
+        <div class="formGroup">
+            <label for="chargesFraisGestion">Frais de gestion</label>
+            <input type="number" id="chargesFraisGestion" name="fraisGestion" class="inputField">
+            <span>€</span>
+        </div>
     </div>
 
     <div class="section Loyerprevisionnels">
         <h2>Loyers prévisionnels HC</h2>
         <div class="formGroup">
-            <label for="loyersLoyer1">Chambre 1</label>
+            <label for="loyersLoyer1">Loyer 1</label>
             <input type="number" id="loyersLoyer1" name="loyer1" class="inputField">
             <span>€</span>
             <select id="loyersTypeLoyer1" name="typeLoyer1">
-                <option value="chambre">Chambre</option>²&
+                <option value="chambre">Chambre</option>
                 <option value="logementEntier">Logement entier</option>
             </select>
         </div>
-        <div class="formGroup">
-            <label for="loyersLoyer2">Chambre 2</label>
-            <input type="number" id="loyersLoyer2" name="loyer2" class="inputField">
-            <span>€</span>
-            <select id="loyersTypeLoyer2" name="typeLoyer2">
-                <option value="chambre">Chambre</option>
-                <option value="studio">Studio</option>
-                <option value="t1">T1</option>
-                <option value="t2">T2</option>
-                <option value="logementEntier">Logement entier</option>
-            </select>
-        </div>
-        <div class="formGroup">
-            <label for="loyersLoyer3">Chambre 3</label>
-            <input type="number" id="loyersLoyer3" name="loyer3" class="inputField">
-            <span>€</span>
-            <select id="loyersTypeLoyer3" name="typeLoyer3">
-                <option value="chambre">Chambre</option>
-                <option value="studio">Studio</option>
-                <option value="t1">T1</option>
-                <option value="t2">T2</option>
-                <option value="logementEntier">Logement entier</option>
-            </select>
+        <div class="FormGroupControlButtons">
+            <button id="removeFormGroup">Retirer un loyer</button>
+            <button id="addFormGroup">Ajouter un loyer</button>
         </div>
     </div>
 

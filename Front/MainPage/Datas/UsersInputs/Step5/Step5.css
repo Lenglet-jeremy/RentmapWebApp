@@ -37,3 +37,17 @@ h2 {
     display: flex;
     overflow: hidden;
 }
+
+.FormGroupControlButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 50px;
+
+
+    button{
+        width: 120px;
+        height: 40px;
+    }
+}

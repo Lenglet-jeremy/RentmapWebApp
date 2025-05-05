@@ -265,7 +265,7 @@ async function initializeMap(lon, lat) {
         return;
       }
       
-      // S'assurer que le conteneur a une hauteur
+      // S'assurer que le conteneur a une hauteur explicite
       if (mapContainer.clientHeight === 0) {
         mapContainer.style.height = '500px';
       }
@@ -282,11 +282,36 @@ async function initializeMap(lon, lat) {
         attributionControl: true
       });
       
+      // Gérer le redimensionnement de la carte
+      const handleResize = () => {
+        if (map) {
+          map.resize();
+          console.log('Map resized');
+        }
+      };
+
       // Résoudre la promesse lorsque la carte est complètement chargée
       map.on('load', () => {
-        setTimeout(() => {
-          map.resize();
-        }, 4000);
+        // Forcer plusieurs redimensionnements pour s'assurer que la carte s'adapte correctement
+        handleResize();
+        
+        // Planifier plusieurs redimensionnements avec des délais différents
+        setTimeout(handleResize, 100);
+        setTimeout(handleResize, 500);
+        setTimeout(handleResize, 1000);
+        setTimeout(handleResize, 2000);
+        
+        // Observer les changements de taille du conteneur
+        if (window.ResizeObserver) {
+          const resizeObserver = new ResizeObserver(() => {
+            handleResize();
+          });
+          resizeObserver.observe(mapContainer);
+        } else {
+          // Fallback pour les navigateurs qui ne supportent pas ResizeObserver
+          window.addEventListener('resize', handleResize);
+        }
+        
         resolve(map);
       });
       
@@ -294,7 +319,6 @@ async function initializeMap(lon, lat) {
         console.error("Erreur lors du chargement de la carte:", e);
         reject(e);
       });
-
 
     } catch (error) {
       reject(error);

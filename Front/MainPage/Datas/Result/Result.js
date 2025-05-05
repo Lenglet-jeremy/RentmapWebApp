@@ -2,6 +2,9 @@
 
 const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
 const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
+
+let totalLoyers = 0
+
 function normalizeString(str) {
     return str
         ? str.trim().toLowerCase().normalize("NFD")
@@ -1292,35 +1295,128 @@ async function fetchZoneMontagnesData(department, city) {
     }
 }
 
+function miseAjourTableauFinancierLoyer() {
+    const section = document.querySelector(".section.Loyerprevisionnels");
+    const addButton = document.getElementById("addFormGroup");
+    const removeButton = document.getElementById("removeFormGroup");
+    const tableauRentabilite = document.getElementById("TableauRentabiliteLoyers");
+
+    function mettreAJourTableau() {
+        const formGroups = section.querySelectorAll(".formGroup");
+        let total = 0;
+    
+        // Réinitialiser le tableau
+        const lignesExistantes = tableauRentabilite.querySelectorAll(".row");
+        lignesExistantes.forEach(row => {
+            if (!row.id.includes("TotalLoyers") && !row.id.includes("Empty")) {
+                row.remove();
+            }
+        });
+    
+        // Compteurs par type
+        const compteurs = {
+            chambre: 0,
+            logementEntier: 0
+        };
+    
+        formGroups.forEach((group) => {
+            const valeur = parseFloat(group.querySelector("input").value) || 0;
+            const type = group.querySelector("select").value; // exemple : "chambre"
+    
+            total += valeur;
+            compteurs[type] += 1;
+    
+            const typeLabel = {
+                chambre: "Chambre",
+                logementEntier: "Logement entier"
+            }[type];
+    
+            const labelFinal = `${typeLabel} ${compteurs[type]}`;
+    
+            const row = document.createElement("div");
+            row.className = "row";
+            row.innerHTML = `
+                <div class="label TableauRentabilitehighlight">${labelFinal}</div>
+                <div class="value TableauRentabilitehighlight">${valeur.toFixed(2)}</div>
+                <div class="unit">€</div>
+            `;
+    
+            const ligneTotal = document.getElementById("TableauRentabiliteRowTotalLoyers");
+            tableauRentabilite.insertBefore(row, ligneTotal);
+        });
+    
+        // Mettre à jour le total
+        totalLoyers = total.toFixed(2)
+        document.getElementById("TableauRentabiliteValueTotalLoyers").textContent = total.toFixed(2);
+    }
+    
+
+    // Ajout de champ
+    addButton.addEventListener("click", () => {
+        const formGroups = section.querySelectorAll(".formGroup");
+        const nextIndex = formGroups.length + 1;
+
+        const newGroup = document.createElement("div");
+        newGroup.className = "formGroup";
+        newGroup.innerHTML = `
+            <label for="loyersLoyer${nextIndex}">Chambre ${nextIndex}</label>
+            <input type="number" id="loyersLoyer${nextIndex}" name="loyer${nextIndex}" class="inputField">
+            <span>€</span>
+            <select id="loyersTypeLoyer${nextIndex}" name="typeLoyer${nextIndex}">
+                <option value="chambre">Chambre</option>
+                <option value="studio">Studio</option>
+                <option value="t1">T1</option>
+                <option value="t2">T2</option>
+                <option value="logementEntier">Logement entier</option>
+            </select>
+        `;
+        section.insertBefore(newGroup, addButton);
+        mettreAJourTableau();
+    });
+
+    // Suppression de champ
+    removeButton.addEventListener("click", () => {
+        const formGroups = section.querySelectorAll(".formGroup");
+        if (formGroups.length > 0) {
+            formGroups[formGroups.length - 1].remove();
+            mettreAJourTableau();
+        }
+    });
+
+    // Mise à jour en temps réel
+    document.addEventListener("input", (event) => {
+        if (event.target.closest(".formGroup input[type='number']")) {
+            mettreAJourTableau();
+        }
+    });
+
+    // Mise à jour initiale
+    mettreAJourTableau();
+}
+
+
 function TableauFinancier() {
     // ======================= RÉCUPÉRATION DES VALEURS UTILISATEUR =======================
     // Projet
     const prixAchat = parseFloat(document.getElementById('projetPrixAchat').value) || 0;
     const travaux = parseFloat(document.getElementById('projetTravaux').value) || 0;
-    
+
     // Financement
     const dureeCredit = parseFloat(document.getElementById('financementDureeCredit').value) || 25;
-    
+
     // Charges annuelles
     const chargesCopro = parseFloat(document.getElementById('chargesChargesCopro').value) || 0;
-    const taxeFonciere = parseFloat(document.getElementById('chargesTaxeFonciere').value) || 0;
+    const taxeFonciere = parseFloat(document.getElementById('TFPB').value) || 0;
     const assurance = parseFloat(document.getElementById('chargesAssurance').value) || 0;
     const fraisDivers = parseFloat(document.getElementById('chargesFraisDivers').value) || 0;
-    
-    // Loyers prévisionnels HC
-    const loyer1 = parseFloat(document.getElementById('loyersLoyer1').value) || 0;
-    const typeLoyer1 = document.getElementById('loyersTypeLoyer1').value;
-    const loyer2 = parseFloat(document.getElementById('loyersLoyer2').value) || 0;
-    const typeLoyer2 = document.getElementById('loyersTypeLoyer2').value;
-    const loyer3 = parseFloat(document.getElementById('loyersLoyer3').value) || 0;
-    const typeLoyer3 = document.getElementById('loyersTypeLoyer3').value;
-    
+    const fraisGestion = parseFloat(document.getElementById('chargesFraisGestion').value) || 0;
+
     // Données additionnelles
     const honorairesChasseur = parseFloat(document.getElementById('donneesHonorairesChasseur').value) || 0;
     const meuble = parseFloat(document.getElementById('donneesMeuble').value) || 0;
     const apportPersonnel = parseFloat(document.getElementById('donneesApportPersonnel').value) || 0;
     const taeg = (parseFloat(document.getElementById('donneesTaeg').value) || 0) / 100;
-    
+
     // ===================================================================
 
     // =========================== VALEURS FIXES ==========================
@@ -1331,149 +1427,167 @@ function TableauFinancier() {
     // ===================================================================
 
     // Mise à jour des valeurs dans le tableau de résultats
-    
+
     // Section Projet
-    document.getElementById('TableauRentabiliteValuePrixAchat').innerText = prixAchat;
-    
+    document.getElementById('TableauRentabiliteValuePrixAchat').innerText = prixAchat.toLocaleString();
+
     // Notaire (8% du prix d'achat)
     const notaire = prixAchat * 0.08;
-    document.getElementById('TableauRentabiliteValueNotaire').innerText = notaire.toFixed(0);
-    
+    document.getElementById('TableauRentabiliteValueNotaire').innerText = notaire.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Travaux
-    document.getElementById('TableauRentabiliteValueTravaux').innerText = travaux;
-    
+    document.getElementById('TableauRentabiliteValueTravaux').innerText = travaux.toLocaleString();
+
     // Total du projet
-    const totalProjet = prixAchat + notaire + travaux;
-    document.getElementById('TableauRentabiliteValueProjetTotal').innerText = totalProjet.toFixed(0);
-    
-    // Section Loyers
-    document.getElementById('TableauRentabiliteValueLoyer1').innerText = loyer1;
-    document.getElementById('TableauRentabiliteValueLoyer2').innerText = loyer2;
-    document.getElementById('TableauRentabiliteValueLoyer3').innerText = loyer3;
-    
+    const totalProjet = prixAchat + notaire + travaux + meuble;
+    document.getElementById('TableauRentabiliteValueProjetTotal').innerText = totalProjet.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Total des loyers
-    const totalLoyers = loyer1 + loyer2 + loyer3;
-    document.getElementById('TableauRentabiliteValueTotalLoyers').innerText = totalLoyers;
-    
+    miseAjourTableauFinancierLoyer();
+
     // Section Financement
     // Total emprunt (90% du total projet + honoraires + meubles)
     const totalEmprunt = (totalProjet + honorairesChasseur + meuble) - apportPersonnel;
-    document.getElementById('TableauRentabiliteValueTotalEmprunt').innerText = totalEmprunt.toFixed(0);
-    
+    document.getElementById('TableauRentabiliteValueTotalEmprunt').innerText = totalEmprunt.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Durée du crédit
-    document.getElementById('TableauRentabiliteValueDureeCredit').innerText = dureeCredit;
-    const duree = document.getElementById('TableauRentabiliteValueDuree').innerText = dureeCredit * 12;
-    
-    // Tx Per/mois    
-    document.getElementById('TableauRentabiliteValueTxPerMois').innerText = (taeg / 12 * 100).toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueDureeCredit').innerText = dureeCredit.toLocaleString();
+    const duree = document.getElementById('TableauRentabiliteValueDuree').innerText = (dureeCredit * 12).toLocaleString();
+
+    // Tx Per/mois
+    document.getElementById('TableauRentabiliteValueTxPerMois').innerText = (taeg / 12 * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Mensualité de crédit
     const mensualite = totalEmprunt * (taeg / 12) / (1 - Math.pow(1 + taeg / 12, -12 * dureeCredit));
-    document.getElementById('TableauRentabiliteValueMensualite').innerText = mensualite.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueMensualite').innerText = mensualite.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Amortissement du capital mensuel
     const amortKMensuel = totalEmprunt / (dureeCredit * 12);
-    document.getElementById('TableauRentabiliteValueAmortKMensuel').innerText = amortKMensuel.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueAmortKMensuel').innerText = amortKMensuel.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Intérêt mensuel
     const interetMensuel = mensualite - amortKMensuel;
-    document.getElementById('TableauRentabiliteValueInteretMensuel').innerText = interetMensuel.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueInteretMensuel').innerText = interetMensuel.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Section Charges
-    document.getElementById('TableauRentabiliteValueChargesCopro').innerText = chargesCopro;
-    document.getElementById('TableauRentabiliteValueTaxeFonciere').innerText = taxeFonciere;
-    document.getElementById('TableauRentabiliteValueAssurance').innerText = assurance;
-    document.getElementById('TableauRentabiliteValueFraisDivers').innerText = fraisDivers;
-    
+    document.getElementById('TableauRentabiliteValueChargesCopro').innerText = chargesCopro.toLocaleString();
+    document.getElementById('TableauRentabiliteValueTaxeFonciere').innerText = taxeFonciere.toLocaleString();
+    document.getElementById('TableauRentabiliteValueAssurance').innerText = assurance.toLocaleString();
+    document.getElementById('TableauRentabiliteValueFraisDivers').innerText = fraisDivers.toLocaleString();
+    document.getElementById('TableauRentabiliteValueFraisGestion').innerText = fraisGestion.toLocaleString();
+
     // Total mensuel des charges
-    const totalChargesMensuel = (chargesCopro + taxeFonciere + assurance + fraisDivers) / 12;
-    document.getElementById('TableauRentabiliteValueTotalMensuel').innerText = totalChargesMensuel.toFixed(2);
-    
+    const totalChargesMensuel = (chargesCopro + taxeFonciere + assurance + fraisDivers + fraisGestion) / 12 ;
+    document.getElementById('TableauRentabiliteValueTotalMensuel').innerText = totalChargesMensuel.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Section Impôts
     // Amortissements
     const amortMeublesMensuel = meuble / amortMeublesAns / 12;
-    document.getElementById('TableauRentabiliteValueAmortMeublesMontant').innerText = amortMeublesMensuel.toFixed(4);
-    
-    const amortMursMensuel = prixAchat * 0.8 / amortMursAns / 12;
-    document.getElementById('TableauRentabiliteValueAmortMursMontant').innerText = amortMursMensuel.toFixed(4);
-    
+    document.getElementById('TableauRentabiliteValueAmortMeublesMontant').innerText = amortMeublesMensuel.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Amortissement des murs
+    const amortMursMensuel = (prixAchat + notaire + honorairesChasseur) * 0.8 / amortMursAns / 12;
+    document.getElementById('TableauRentabiliteValueAmortMursMontant').innerText = amortMursMensuel.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Amortissement des travaux (10ans)
-    const amortTravauxMensuel = totalProjet / amortTravauxAns / 12;
-    document.getElementById('TableauRentabiliteValueAmortTravauxMontant').innerText = amortTravauxMensuel.toFixed(2);
-    
+    const amortTravauxMensuel = travaux / amortTravauxAns + fraisDivers;
+    document.getElementById('TableauRentabiliteValueAmortTravauxMontant').innerText = amortTravauxMensuel.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Intérêts totaux
-    const interetsTotaux = totalEmprunt - (prixAchat + totalProjet);
-    document.getElementById('TableauRentabiliteValueInteretsTotaux').innerText = interetsTotaux.toFixed(0);
-    
-    // Intérêt mensuel part 2    
-    document.getElementById('TableauRentabiliteValueInteretMensuelPart2').innerText =  interetsTotaux / duree;
-    
-    // Amortissement des intérêts (29%)
-    const amortInterets = 0.29 * (interetsTotaux / duree);
-    document.getElementById('TableauRentabiliteValueAmortInterets').innerText = amortInterets.toFixed(0);
-    
+    const interetsTotaux = mensualite * 300 - totalEmprunt;
+    document.getElementById('TableauRentabiliteValueInteretsTotaux').innerText = interetsTotaux.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Intérêt mensuel part 2
+    const interetMensuel2 = interetsTotaux / duree;
+    document.getElementById('TableauRentabiliteValueInteretMensuelPart2').innerText = interetMensuel2.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Amortissement des intérêts
+    const amortInterets = interetMensuel2;
+    document.getElementById('TableauRentabiliteValueAmortInterets').innerText = amortInterets.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Base d'imposition au Réel
     const baseImposition = totalLoyers - (totalChargesMensuel + amortMursMensuel + amortInterets + amortTravauxMensuel );
-    document.getElementById('TableauRentabiliteValueBaseImposition').innerText = baseImposition.toFixed(0);
-    
+    document.getElementById('TableauRentabiliteValueBaseImposition').innerText = baseImposition.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Impôt 30%
     const impot = baseImposition * 0.3;
-    document.getElementById('TableauRentabiliteValueImpot').innerText = impot.toFixed(0);
-    
+    document.getElementById('TableauRentabiliteValueImpot').innerText = impot.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Prélèvements sociaux
     const csg = 0.099 * baseImposition;
-    document.getElementById('TableauRentabiliteValueCSG').innerText = csg.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueCSG').innerText = csg.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     const crds = 0.005 * baseImposition;
-    document.getElementById('TableauRentabiliteValueCRDS').innerText = crds.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueCRDS').innerText = crds.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     const prelevSocial = 0.045 * baseImposition;
-    document.getElementById('TableauRentabiliteValuePrelevSocial').innerText = prelevSocial.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValuePrelevSocial').innerText = prelevSocial.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     const contribAdd = 0.003 * baseImposition;
-    document.getElementById('TableauRentabiliteValueContribAdd').innerText = contribAdd.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueContribAdd').innerText = contribAdd.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     const prelevSolidarite = 0.02 * baseImposition;
-    document.getElementById('TableauRentabiliteValuePrelevSolidarite').innerText = prelevSolidarite.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValuePrelevSolidarite').innerText = prelevSolidarite.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     const totalImpotsSociaux = csg + crds + prelevSocial + contribAdd + prelevSolidarite;
-    document.getElementById('TableauRentabiliteValueTotalImpotSociaux').innerText = totalImpotsSociaux.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueTotalImpotSociaux').innerText = totalImpotsSociaux.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Section Cashflow
     // Cashflow brut
     const cashflowBrut = totalLoyers - mensualite;
-    document.getElementById('TableauRentabiliteValueCashflowBrut').innerText = cashflowBrut.toFixed(0);
-    
+    document.getElementById('TableauRentabiliteValueCashflowBrut').innerText = cashflowBrut.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Cashflow net
+    const cashflowNet = cashflowBrut - totalChargesMensuel;
+    document.getElementById('TableauRentabiliteValueCashflowNet').innerText = cashflowNet.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Cashflow net net
-    const cashflowNetNet = cashflowBrut - totalChargesMensuel - impot - totalImpotsSociaux;
-    document.getElementById('TableauRentabiliteValueCashflowNetNet').innerText = cashflowNetNet.toFixed(0);
-    
+    const operation = cashflowBrut - totalChargesMensuel - totalImpotsSociaux - impot;
+    const comparateur = cashflowNet;
+    const cashflowNetNet = operation < comparateur ? operation : comparateur;
+    document.getElementById('TableauRentabiliteValueCashflowNetNet').innerText = cashflowNetNet.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Informations supplémentaires
-    document.getElementById('TableauRentabiliteValueHonorairesChasseur').innerText = honorairesChasseur;
-    document.getElementById('TableauRentabiliteValueMeuble').innerText = meuble;
-    document.getElementById('TableauRentabiliteValueApportPersonnel').innerText = apportPersonnel;
-    
-    document.getElementById('TableauRentabiliteValueTaeg').innerText = (taeg * 100).toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueHonorairesChasseur').innerText = honorairesChasseur.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    document.getElementById('TableauRentabiliteValueMeuble').innerText = meuble.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    document.getElementById('TableauRentabiliteValueApportPersonnel').innerText = apportPersonnel.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    document.getElementById('TableauRentabiliteValueTaeg').innerText = (taeg * 100).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Bénéfice mensuel net (cashflow net net + amortissement capital)
-    const beneficeMensuelNet = cashflowNetNet + amortKMensuel;
-    document.getElementById('TableauRentabiliteValueBeneficeMensuelNet').innerText = beneficeMensuelNet.toFixed(0);
-    
+    const beneficeMensuelNet = cashflowNet + amortKMensuel;
+    document.getElementById('TableauRentabiliteValueBeneficeMensuelNet').innerText = beneficeMensuelNet.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Bénéfice annuel net
     const beneficeAnnuelNet = beneficeMensuelNet * 12;
-    document.getElementById('TableauRentabiliteValueBeneficeAnnuelNet').innerText = beneficeAnnuelNet.toFixed(0);
-    
-    // Rentabilité brute annuelle    
+    document.getElementById('TableauRentabiliteValueBeneficeAnnuelNet').innerText = beneficeAnnuelNet.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Rentabilité brute annuelle
     const rentabiliteBrute = totalLoyers * 12 / totalEmprunt * 100;
-    document.getElementById('TableauRentabiliteValueRentabiliteBruteAnnuelle').innerText = rentabiliteBrute.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueRentabiliteBruteAnnuelle').innerText = rentabiliteBrute.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // TRI (version simplifiée)
     const tri = beneficeAnnuelNet / totalEmprunt * 0.11 * Math.pow(10 , 4);
-    document.getElementById('TableauRentabiliteValueTriAnnuel').innerText = tri.toFixed(2);
-    
+    document.getElementById('TableauRentabiliteValueTriAnnuel').innerText = tri.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
     // Loyer annuel
-    document.getElementById('TableauRentabiliteValueLoyerAnnuel').innerText = (totalLoyers * 12).toFixed(0);
+    document.getElementById('TableauRentabiliteValueLoyerAnnuel').innerText = (totalLoyers * 12).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Taux de rendement brut
+    const TauxRendendementBrut = ((totalLoyers * 12) / totalProjet) * 100
+    document.getElementById('TableauRentabiliteValueTauxRendementBrut').innerText = TauxRendendementBrut.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Bénéfice annuel net comprenant la valorisation du bien
+    const beneficeAnnuelNet2 = beneficeAnnuelNet + (prixAchat * 0.02);
+    document.getElementById('TableauRentabiliteValueBeneficeAnnuelNetIncluantBiens').innerText = beneficeAnnuelNet2.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Taux de rendement sur fonds propre
+    const TauxRendementFondsPropre = (beneficeAnnuelNet2 / apportPersonnel) * 100;
+    document.getElementById('TableauRentabiliteValueTauxRendementFondsPropre').innerText = TauxRendementFondsPropre.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
+
+
+
 async function updateValues() {
     let departmentCode = "";
     let department = "";
