@@ -8,6 +8,8 @@ const token = await fetchMapboxToken();
 const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
 const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
 
+
+const MAX_AMENITIES_DISPLAYED = 10
 const CATEGORY_ICONS = {
   'Transports': `
     <!-- Voiture -->
@@ -396,7 +398,7 @@ async function getAmenitiesNearby(userAddress) {
   // Convertir le regroupement en tableau pour traitement uniforme
   const amenitiesData = Object.entries(groupedAmenities).map(([category, amenities]) => ({
       category,
-      amenities: amenities.sort((a, b) => a.distance - b.distance).slice(0, 10) // garder les 6 plus proches
+      amenities: amenities.sort((a, b) => a.distance - b.distance).slice(0, MAX_AMENITIES_DISPLAYED) 
   }));
 
   
