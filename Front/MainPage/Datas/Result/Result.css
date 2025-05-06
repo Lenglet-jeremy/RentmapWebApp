@@ -606,3 +606,7 @@ table tbody tr:nth-child(even) {
   justify-content: space-between;
   width: 100%;
 }
+
+.TableauRentabiliteRowTriAnnuel{
+  display: none;
+}

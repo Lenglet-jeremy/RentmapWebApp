@@ -9,7 +9,7 @@ const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
 const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
 
 
-const MAX_AMENITIES_DISPLAYED = 10
+const MAX_AMENITIES_DISPLAYED = 5
 const CATEGORY_ICONS = {
   'Transports': `
     <!-- Voiture -->
@@ -467,53 +467,53 @@ async function getAmenitiesNearby(userAddress) {
     });
 });
 
-// Ajouter un gestionnaire d'événements pour masquer la div flottante lorsque l'on clique en dehors
-window.addEventListener('click', function(event) {
-    const floatingDiv = document.getElementById('floatingDiv');
-    const isClickInside = floatingDiv.contains(event.target);
-    const isButtonClicked = event.target.classList.contains('more-button');
+  // Ajouter un gestionnaire d'événements pour masquer la div flottante lorsque l'on clique en dehors
+  window.addEventListener('click', function(event) {
+      const floatingDiv = document.getElementById('floatingDiv');
+      const isClickInside = floatingDiv.contains(event.target);
+      const isButtonClicked = event.target.classList.contains('more-button');
 
-    if (!isClickInside && !isButtonClicked) {
-        floatingDiv.style.display = 'none';
-    }
-});
-
-
-
-// Initialisation de la carte + ajout des marqueurs
-try {
-  if (document.readyState !== 'complete') {
-      await new Promise(resolve => window.addEventListener('load', resolve));
-  }
-
-  if (!mapboxgl || !token) {
-      console.error("Erreur : Mapbox ou token manquant");
-      return;
-  }
-
-  await new Promise(resolve => setTimeout(resolve, 100));
-  await initializeMap(lon, lat);
-
-  // Injection DOM
-  amenitiesData.forEach(({ category, amenities }) => injectInDOM(category, amenities));
-
-  // Ajout marqueurs
-  amenitiesData.forEach(({ category, amenities }) => {
-      amenities.forEach(amenity => {
-          createMarker(category, [amenity.longitude, amenity.latitude], amenity.name, amenity.distance);
-      });
+      if (!isClickInside && !isButtonClicked) {
+          floatingDiv.style.display = 'none';
+      }
   });
 
-  // Ajouter le marqueur de l'utilisateur après tous les autres marqueurs
-  new mapboxgl.Marker({ color: 'blue' })
-      .setLngLat([lon, lat])
-      .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
-      .addTo(map);
 
-} catch (err) {
-  console.error("Erreur globale:", err.message);
-}
 
+  // Initialisation de la carte + ajout des marqueurs
+  try {
+    if (document.readyState !== 'complete') {
+        await new Promise(resolve => window.addEventListener('load', resolve));
+    }
+
+    if (!mapboxgl || !token) {
+        console.error("Erreur : Mapbox ou token manquant");
+        return;
+    }
+
+    await new Promise(resolve => setTimeout(resolve, 100));
+    await initializeMap(lon, lat);
+
+    // Injection DOM
+    amenitiesData.forEach(({ category, amenities }) => injectInDOM(category, amenities));
+
+    // Ajout marqueurs
+    amenitiesData.forEach(({ category, amenities }) => {
+        amenities.forEach(amenity => {
+            createMarker(category, [amenity.longitude, amenity.latitude], amenity.name, amenity.distance);
+        });
+    });
+
+    // Ajouter le marqueur de l'utilisateur après tous les autres marqueurs
+    const userMarker = new mapboxgl.Marker({ color: 'blue' })
+        .setLngLat([lon, lat])
+        .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
+        .addTo(map);
+
+
+  } catch (err) {
+    console.error("Erreur globale:", err.message);
+  }
 }
 
 // Fonction pour créer un marqueur
