@@ -411,18 +411,36 @@ async function getAmenitiesNearby(userAddress) {
         // Positionner la div flottante sous le bouton cliqué
         const rect = this.getBoundingClientRect();
         const windowHeight = window.innerHeight;
+        const windowWidth = window.innerWidth;
         const divHeight = floatingDiv.offsetHeight;
+        const divWidth = floatingDiv.offsetWidth;
 
         // Calculer la position de la div flottante
         let top = rect.bottom;
+        let left = rect.left;
 
-        // Si la div dépasse la fenêtre, la déplacer vers le haut
+        // Si la div dépasse la fenêtre en bas, la déplacer vers le haut
         if (top + divHeight > windowHeight) {
             top = rect.top - divHeight;
         }
 
+        // Si la div dépasse la fenêtre à droite, la déplacer vers la gauche
+        if (left + divWidth > windowWidth) {
+            left = rect.right - divWidth;
+        }
+
+        // Si la div dépasse la fenêtre en haut, la déplacer vers le bas
+        if (top < 0) {
+            top = rect.bottom;
+        }
+
+        // Si la div dépasse la fenêtre à gauche, la déplacer vers la droite
+        if (left < 0) {
+            left = 0;
+        }
+
         floatingDiv.style.top = `${top}px`; // Positionner sous ou au-dessus du bouton
-        floatingDiv.style.left = `${rect.left}px`; // Aligner avec le bouton
+        floatingDiv.style.left = `${left}px`; // Aligner avec le bouton
         floatingDiv.style.display = 'block'; // Afficher la div flottante
 
         // Effacer le contenu précédent
@@ -447,52 +465,55 @@ async function getAmenitiesNearby(userAddress) {
         // Empêcher la propagation de l'événement pour éviter de masquer la div immédiatement
         event.stopPropagation();
     });
-  });
+});
 
 // Ajouter un gestionnaire d'événements pour masquer la div flottante lorsque l'on clique en dehors
-  window.addEventListener('click', function(event) {
-      const floatingDiv = document.getElementById('floatingDiv');
-      const isClickInside = floatingDiv.contains(event.target);
-      const isButtonClicked = event.target.classList.contains('more-button');
+window.addEventListener('click', function(event) {
+    const floatingDiv = document.getElementById('floatingDiv');
+    const isClickInside = floatingDiv.contains(event.target);
+    const isButtonClicked = event.target.classList.contains('more-button');
 
-      if (!isClickInside && !isButtonClicked) {
-          floatingDiv.style.display = 'none';
-      }
+    if (!isClickInside && !isButtonClicked) {
+        floatingDiv.style.display = 'none';
+    }
+});
+
+
+
+// Initialisation de la carte + ajout des marqueurs
+try {
+  if (document.readyState !== 'complete') {
+      await new Promise(resolve => window.addEventListener('load', resolve));
+  }
+
+  if (!mapboxgl || !token) {
+      console.error("Erreur : Mapbox ou token manquant");
+      return;
+  }
+
+  await new Promise(resolve => setTimeout(resolve, 100));
+  await initializeMap(lon, lat);
+
+  // Injection DOM
+  amenitiesData.forEach(({ category, amenities }) => injectInDOM(category, amenities));
+
+  // Ajout marqueurs
+  amenitiesData.forEach(({ category, amenities }) => {
+      amenities.forEach(amenity => {
+          createMarker(category, [amenity.longitude, amenity.latitude], amenity.name, amenity.distance);
+      });
   });
 
+  // Ajouter le marqueur de l'utilisateur après tous les autres marqueurs
+  new mapboxgl.Marker({ color: 'blue' })
+      .setLngLat([lon, lat])
+      .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
+      .addTo(map);
 
-  // Initialisation de la carte + ajout des marqueurs
-  try {
-      if (document.readyState !== 'complete') {
-          await new Promise(resolve => window.addEventListener('load', resolve));
-      }
+} catch (err) {
+  console.error("Erreur globale:", err.message);
+}
 
-      if (!mapboxgl || !token) {
-          console.error("Erreur : Mapbox ou token manquant");
-          return;
-      }
-
-      await new Promise(resolve => setTimeout(resolve, 100));
-      await initializeMap(lon, lat);
-
-      new mapboxgl.Marker({ color: 'blue' })
-          .setLngLat([lon, lat])
-          .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
-          .addTo(map);
-
-      // Injection DOM
-      amenitiesData.forEach(({ category, amenities }) => injectInDOM(category, amenities));
-
-      // Ajout marqueurs
-      amenitiesData.forEach(({ category, amenities }) => {
-          amenities.forEach(amenity => {
-              createMarker(category, [amenity.longitude, amenity.latitude], amenity.name, amenity.distance);
-          });
-      });
-
-  } catch (err) {
-      console.error("Erreur globale:", err.message);
-  }
 }
 
 // Fonction pour créer un marqueur

@@ -235,3 +235,15 @@
 .additional-amenity {
     margin-bottom: 5px; /* Ajouter un espacement entre les éléments */
 }
+
+.AmenietieTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .more-button{
+        width: 40px;
+        height: 20px;
+    }
+}
