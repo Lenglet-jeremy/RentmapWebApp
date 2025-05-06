@@ -1587,6 +1587,27 @@ function TableauFinancier() {
     document.getElementById('TableauRentabiliteValueTauxRendementFondsPropre').innerText = TauxRendementFondsPropre.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
+async function showLocServiceWidget() {
+    const container = document.querySelector('.LocService');
+    if (!container) return;
+
+    container.style.display = 'block';
+}
+
+function fillLocService() {
+    // Sélectionnez l'élément <iframe>
+    let iframe = document.getElementById('cote-des-loyers');
+
+    // Accédez au document de l'<iframe>
+    let iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+    // Modifiez un champ de formulaire dans l'<iframe>
+    let inputField = iframeDocument.getElementById('uiville');
+    if (inputField) {
+        inputField.value = 'Nouvelle valeur';
+    }
+
+}
 
 
 async function updateValues() {
@@ -1669,6 +1690,8 @@ async function updateValues() {
         
     }
     if (neighborhoodCost === undefined || neighborhoodRent === undefined) {
+        console.log();
+        
         console.error("neighborhoodCost or neighborhoodRent is undefined");
         return;
     }
@@ -1712,17 +1735,23 @@ async function updateValues() {
     TableauFinancier();
 
     fillNeighborhoodCostRentTable(department, city);
-    // Ici se trouve les commodités
 
+
+    // Ici se trouve les commodités
     // fetchDVFData();
 }
 
+
+// Écouteur de clic – function fléchée async
 const button = document.getElementById('getResult');
-button.addEventListener('click', () => {
-    
+button.addEventListener('click', async () => {
     const PrintArea = document.getElementById("PrintArea");
     if (PrintArea) {
         PrintArea.style.display = "flex";
     }
-    updateValues();
+
+    updateValues(); // si cette fonction est définie ailleurs
+
+    await showLocServiceWidget(); // await est maintenant autorisé ici
+    fillLocService()
 });
