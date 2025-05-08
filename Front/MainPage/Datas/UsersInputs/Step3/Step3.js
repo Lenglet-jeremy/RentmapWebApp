@@ -58,16 +58,66 @@ const step2 = document.querySelector(".Step2");
 const step3 = document.querySelector(".Step3");
 const step4 = document.querySelector(".Step4");
 
-step3NextButton.addEventListener("click", () => {
-    if (step3 && step4) {
-        step3.style.display = "none";
-        step4.style.display = "flex";
+const step4Display = sessionStorage.getItem("step4Display");
+if (step4Display !== null) step4.style.display = step4Display;
+
+// ➤ Restauration des champs de l'étape 3
+
+// Surface
+const savedSurface = sessionStorage.getItem('SurfaceUserInputValue');
+if (savedSurface !== null) {
+    SurfaceUserInputValue.value = savedSurface;
+}
+
+// Nombre de pièces, chambres, SDB, etc.
+const idsToRestore = [
+    'PiecesNumberUsersInputValue',
+    'ChamberNumberUsersInputValue',
+    'BathroomsNumberUsersInputValue',
+    'AppartementFloorsUsersInputValue',
+    'AppartementFloorsNumberUsersInputValue'
+];
+
+idsToRestore.forEach(id => {
+    const savedValue = sessionStorage.getItem(id);
+    if (savedValue !== null) {
+        const input = document.getElementById(id);
+        if (input) input.value = savedValue;
     }
 });
 
-step3PrevButton.addEventListener("click", () => {
-    if (step2 && step4) {
-        step2.style.display = "flex";
-        step3.style.display = "none";
+// Checkbox ascenseur
+const savedElevator = sessionStorage.getItem('ElevatorOptionUserChoice');
+if (savedElevator !== null) {
+    ElevatorOptionUserChoice.checked = (savedElevator === 'true');
+}
+
+// DPE & GES
+const savedDPE = sessionStorage.getItem('dpeValue');
+if (savedDPE !== null) dpeSelect.value = savedDPE;
+
+const savedGES = sessionStorage.getItem('gesValue');
+if (savedGES !== null) gesSelect.value = savedGES;
+
+
+// ➤ Étape 3 → Étape 4
+step3NextButton.addEventListener("click", () => {
+    if (step3 && step4) {
+      step3.style.display = "none";
+      step4.style.display = "flex";
+      sessionStorage.setItem("step3Display", "none");
+      sessionStorage.setItem("step4Display", "flex");
     }
-});
+  });
+  
+  // ➤ Étape 3 ← Étape 2 (bouton précédent)
+  step3PrevButton.addEventListener("click", () => {
+    if (step2 && step3) {
+      step2.style.display = "flex";
+      step3.style.display = "none";
+      sessionStorage.setItem("step2Display", "flex");
+      sessionStorage.setItem("step3Display", "none");
+      sessionStorage.setItem("step4Display", "none"); // sécurité
+    }
+  });
+  

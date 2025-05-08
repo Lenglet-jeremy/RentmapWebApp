@@ -24,16 +24,42 @@ const step3 = document.querySelector(".Step3");
 const step4 = document.querySelector(".Step4");
 const step5 = document.querySelector(".Step5");
 
+const step5Display = sessionStorage.getItem("step5Display");
+if (step5Display !== null) step5.style.display = step5Display;
+
+// ➤ Étape 4 → Étape 5
 step4NextButton.addEventListener("click", () => {
     if (step4 && step5) {
-        step4.style.display = "none";
-        step5.style.display = "flex";
+      step4.style.display = "none";
+      step5.style.display = "flex";
+      sessionStorage.setItem("step4Display", "none");
+      sessionStorage.setItem("step5Display", "flex");
     }
-});
+  });
+  
+  // ➤ Étape 4 ← Étape 3 (bouton précédent)
+  step4PrevButton.addEventListener("click", () => {
+    if (step3 && step4) {
+      step3.style.display = "flex";
+      step4.style.display = "none";
+      sessionStorage.setItem("step3Display", "flex");
+      sessionStorage.setItem("step4Display", "none");
+      sessionStorage.setItem("step5Display", "none"); // sécurité
+    }
+  });
+  
 
-step4PrevButton.addEventListener("click", () => {
-    if (step3 && step5) {
-        step3.style.display = "flex";
-        step4.style.display = "none";
-    }
-});
+  // ➤ Restauration des champs de l'étape 4
+
+const anneeInput = document.getElementById('annee');
+const etatSelect = document.getElementById('etat');
+const statutSelect = document.getElementById('statut');
+
+const savedAnnee = sessionStorage.getItem('anneeUserInput');
+if (savedAnnee !== null) anneeInput.value = savedAnnee;
+
+const savedEtat = sessionStorage.getItem('etatUserChoice');
+if (savedEtat !== null) etatSelect.value = savedEtat;
+
+const savedStatut = sessionStorage.getItem('statutUserChoice');
+if (savedStatut !== null) statutSelect.value = savedStatut;

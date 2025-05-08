@@ -194,6 +194,9 @@ export let lastValidLat = 50.523110;
 export let lastValidLon = 2.625950;
 export let lastAddress = "";
 
+export let radiusValue = parseInt(document.getElementById('radius')?.value || defaultRadius / 1000) * 1000;
+export let limitValue = parseInt(document.getElementById('amenityLimit')?.value || amenityLimit);
+
 const defaultLatitude = 50.523110;
 const defaultLongitude = 2.625950;
 const defautKmRadius = 10;
@@ -387,23 +390,28 @@ export async function initializeMap1(mapId) {
 
     mapboxgl.accessToken = token;
 
+    // Récupérer les informations sauvegardées
+    const savedCenter = JSON.parse(localStorage.getItem('mapCenter'));
+    const savedZoom = localStorage.getItem('mapZoom');
+
+    // Initialiser la carte avec les informations sauvegardées ou les valeurs par défaut
     map1 = new mapboxgl.Map({
         container: mapId,
         style: 'mapbox://styles/mapbox/streets-v12',
-        center: [defaultLongitude, defaultLatitude],
-        zoom: 8
+        center: savedCenter || [defaultLongitude, defaultLatitude],
+        zoom: savedZoom || 8
     });
 
     map1.addControl(new mapboxgl.NavigationControl());
 
     centerMarker1 = new mapboxgl.Marker()
-        .setLngLat([defaultLongitude, defaultLatitude])
+        .setLngLat(savedCenter || [defaultLongitude, defaultLatitude])
         .addTo(map1);
 
     map1.on('load', () => {
         map1.addSource('circle-source', {
             type: 'geojson',
-            data: createGeoJSONCircle([defaultLongitude, defaultLatitude], defautKmRadius)
+            data: createGeoJSONCircle(savedCenter || [defaultLongitude, defaultLatitude], defautKmRadius)
         });
 
         map1.addLayer({
@@ -430,13 +438,12 @@ export async function initializeMap1(mapId) {
         updateMapWithCurrentValues();
     });
 
-    const amenities = await fetchAmenities(defaultLatitude, defaultLongitude, defaultRadius);
-    displayAmenitiesOnMap(map1, amenities, defaultLatitude, defaultLongitude, amenityLimit);
+    const amenities = await fetchAmenities(savedCenter ? savedCenter[1] : defaultLatitude, savedCenter ? savedCenter[0] : defaultLongitude, defaultRadius);
+    displayAmenitiesOnMap(map1, amenities, savedCenter ? savedCenter[1] : defaultLatitude, savedCenter ? savedCenter[0] : defaultLongitude, amenityLimit);
 }
 
+
 function updateMapWithCurrentValues() {
-    const radiusValue = parseInt(document.getElementById('radius')?.value || defaultRadius / 1000) * 1000;
-    const limitValue = parseInt(document.getElementById('amenityLimit')?.value || amenityLimit);
     const addressInput = document.getElementById('Address');
 
     if (addressInput && addressInput.value.trim() !== "") {
@@ -693,5 +700,16 @@ document.getElementById('toggleAmenityList').addEventListener('click', () => {
         }, 0);
     }
 });
+
+window.addEventListener('beforeunload', () => {
+    if (map1) {
+        const center = map1.getCenter();
+        const zoom = map1.getZoom();
+
+        localStorage.setItem('mapCenter', JSON.stringify(center));
+        localStorage.setItem('mapZoom', zoom);
+    }
+});
+
 
 initializeMap1("Map");

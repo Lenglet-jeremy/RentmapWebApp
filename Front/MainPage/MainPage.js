@@ -50,7 +50,31 @@ function showMaxLimitPopup() {
 }
 
 function InitializeSteps() {
+
+    const resultDisplay = sessionStorage.getItem("resultDisplay");
+    const step5Display = sessionStorage.getItem("step5Display");
+
     const resultDiv = document.getElementById("Result");
+    const step5 = document.querySelector(".Step5");
+    const step1 = document.querySelector("#Step1");
+    const mapArea = document.querySelector("#MapArea");
+    const content = document.querySelector(".ContentArea .Content");
+
+    // Cas 1 : L'utilisateur revient sur les résultats
+    if (resultDisplay === "flex") {
+        resultDiv.style.display = "flex";
+        step5.style.display = "none";
+        mapArea.style.display = "none";
+        content.style.width = "100%";
+    } else {
+        // Cas 2 : Aucun état => première visite ou reset => on affiche Step1 et MapArea
+        step1.style.display = "block"; // ou "flex" selon ton CSS
+        mapArea.style.display = "flex";
+    }
+
+    // Toujours afficher le body une fois prêt
+    document.body.style.display = "block";
+
 
     const addressInput = document.getElementById("Address");
     addressInput.addEventListener("blur", getCoordinates);
@@ -96,6 +120,19 @@ function InitializeSteps() {
         });
     }
 
+    if (resultDisplay !== null) {
+        resultDiv.style.display = resultDisplay;
+
+        // ➤ Si on est sur la page de résultat, masquer la carte
+        if (resultDisplay === "flex") {
+            const mapArea = document.querySelector(".MapArea");
+            mapArea.style.display = "none";
+            document.querySelector(".ContentArea .Content").style.width = "100%";
+        }
+    }
+
+
+    
     document.querySelectorAll(".NavButtons button").forEach(button => {
         button.addEventListener("click", function () {
             if (button.id === "next") {
@@ -107,19 +144,27 @@ function InitializeSteps() {
                     currentStep--;
                 }
             } else if (button.id === "getResult") {
+                // ➤ Masquer l'étape 5 et stocker l'état
+                step5.style.display = "none";
+                sessionStorage.setItem("step5Display", "none");
+            
+                // ➤ Afficher la section de résultat et stocker l'état
                 resultDiv.style.display = "flex";
+                sessionStorage.setItem("resultDisplay", "flex");
+            
+                // ➤ Gérer la carte
                 destroyMap1();
                 const mapArea = document.querySelector(".MapArea");
                 mapArea.classList.add("slide-out");
-                
-                // Facultatif : masquer définitivement après l'animation
+            
                 setTimeout(() => {
                     mapArea.style.display = "none";
                 }, 500);
-                document.querySelector(".ContentArea .Content").style.width = "100%"
-                steps[currentStep].style.display = "none";
+            
+                document.querySelector(".ContentArea .Content").style.width = "100%";
                 return;
             }
+            
 
         });
     });
@@ -196,6 +241,8 @@ export async function getCoordinates() {
         console.error("Erreur lors de la requête :", error);
     }
 }
+
+
 
 InitializeSteps();
 

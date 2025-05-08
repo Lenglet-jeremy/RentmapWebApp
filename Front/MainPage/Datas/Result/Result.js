@@ -4,6 +4,7 @@ const isProduction = window.location.hostname === 'rentmapwebapp.onrender.com';
 const backendUrl = isProduction ? 'https://rentmapwebapp.onrender.com' : 'http://localhost:5000';
 
 let totalLoyers = 0
+let nbloyer = 0
 
 function normalizeString(str) {
     return str
@@ -64,14 +65,17 @@ async function fetchNeighborhoodCostData(department, city, neighborhood, typeOfP
         
         
         
+        
         const data = await response.json();
         
 
-        for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
-                for (const collection of data[key]) {
+        for (const [key, value] of Object.entries(data)) {
+            if (key.includes(normalizeString(department))) {
+                for (const collection of value) {              
+                    
                     if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(collection["Quartier"]).includes(normalizeString(neighborhood))) {    
-                        if(typeOfProperty === "Appartement"){
+                           
+                    if(typeOfProperty === "Appartement"){
                             return collection["Prix au m2 appartement"]
                         }   
                         else if(typeOfProperty === "Maison"){
@@ -98,7 +102,7 @@ async function fetchNeighborhoodRentData(department, city, neighborhood, typeOfP
         for (const key in data) {
             if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
                 for (const collection of data[key]) {
-                    if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(collection["Quartier"]).includes(normalizeString(neighborhood))) {    
+                    if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(collection["Quartier"]).includes(normalizeString(neighborhood))) { 
                         if(typeOfProperty === "Appartement"){
                             return collection["Loyer au m2 appartement"]
                         }   
@@ -136,44 +140,9 @@ async function fetchVacantsAcommodationsData(department, city) {
     }
 }
 
-async function fillNeighborhoodCostRentTable(department, city) {
-    const neighborhoodCostRentData = await fetchNeighborhoodCostRentData(department, city);
-
-    const tableBody = document.querySelector('#neighborhoodCostRentTable tbody');
-    tableBody.innerHTML = '';
 
 
-    for (let i = 0; i < neighborhoodCostRentData.length; i++) {
-        const neighborhoodData = neighborhoodCostRentData[i];
 
-        // Vérifiez si l'élément a la propriété 'Quartier' avant de continuer
-        if (neighborhoodData.Quartier) {
-            const row = document.createElement('tr');
-
-            const neighborhoodCell = document.createElement('td');
-            neighborhoodCell.textContent = neighborhoodData.Quartier;
-            row.appendChild(neighborhoodCell);
-
-            const apartmentPriceCell = document.createElement('td');
-            apartmentPriceCell.textContent = Number(neighborhoodData['Prix au m2 appartement']).toLocaleString();
-            row.appendChild(apartmentPriceCell);
-
-            const housePriceCell = document.createElement('td');
-            housePriceCell.textContent = Number(neighborhoodData['Prix au m2 maison']).toLocaleString();
-            row.appendChild(housePriceCell);
-
-            const apartmentRentCell = document.createElement('td');
-            apartmentRentCell.textContent = Number(neighborhoodData['Loyer au m2 appartement']).toLocaleString();
-            row.appendChild(apartmentRentCell);
-
-            const houseRentCell = document.createElement('td');
-            houseRentCell.textContent = Number(neighborhoodData['Loyer au m2 maison']).toLocaleString();
-            row.appendChild(houseRentCell);
-
-            tableBody.appendChild(row);
-        }
-    }
-}
 
 async function fetchRentabiliteData(department, city, typeOfProperty) {
     try {
@@ -211,6 +180,8 @@ async function fetchRentabiliteData(department, city, typeOfProperty) {
 async function fetchCytiesDescription(cityName) {
     try {
         const response = await fetch(`${backendUrl}/api/CitiesDescription`);
+        
+        
         
         const data = await response.json();
 
@@ -378,6 +349,7 @@ async function fetchNeighborhoodPopulationData(department, city) {
         return {};
     }
 }
+
 async function fillPopulationTable(department, cityName) {
     const populationData = await fetchPopulationData(department, cityName);
     
@@ -631,30 +603,6 @@ async function fetchInternetConnectionData(department, city) {
     
 }
 
-async function fetchSecuriteCriminaliteData(department, city) {
-    try {
-        const response = await fetch(`${backendUrl}/api/SecuriteCriminalite`);
-        const data = await response.json();
-
-        // Initialiser le dictionnaire
-        const resultDict = {};
-
-        for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
-                for (const collection of data[key]) {
-                    if (normalizeString(collection["Villes"]) === normalizeString(city)) {
-                        // Ajouter les valeurs au dictionnaire
-                        resultDict[collection["indicateur"]] = collection["nombre"];
-                    }
-                }
-            }
-        }        
-        return resultDict;
-    } catch (error) {
-        console.error('Erreur lors de la récupération des données de part propriaitaire:', error);
-        return "";
-    }
-}
 
 let chartHistogramInstance = null;
 
@@ -1103,112 +1051,7 @@ async function CreateUnemployedChart(canvasId, department, city, label, borderCo
     }
 }
 
-let chartCriminalityInstance = null;
-async function CreateCriminalityChart(canvasId, department, city, population, label, borderColor, cityInputId = null) {
-    try {
-        const response = await fetch(`${backendUrl}/api/SecuriteCriminalite`);
-        
-        const statsNationnaleResponse = await fetch(`${backendUrl}/api/StatsNationnale`);
-        const data = await response.json();
-        const nationalData = await statsNationnaleResponse.json();
 
-
-        const labelsSet = new Set();
-        const Criminalitys = [];
-
-        population = Number(String(population).replace(/[\s ,.]/g, ''));
-
-        Object.entries(data).forEach(([key, collections]) => {
-            if (key.includes(normalizeString(department))) {
-                collections.forEach(collection => {
-                    if (normalizeString(collection["Villes"]) === normalizeString(city)) {
-                        labelsSet.add(collection["indicateur"]);
-
-                        const rawNombre = String(collection["nombre"]).replace(/[\s ,.]/g, '');
-                        const nombre = Number(rawNombre);
-                        const tauxPourMille = (nombre / population) * 1000;
-                        Criminalitys.push(tauxPourMille.toFixed(2));
-                    }
-                });
-            }
-        });
-
-        const labels = Array.from(labelsSet);
-        
-
-        const totalPopulationFrance = 68290000;
-        const nationalRates = [];
-
-        
-        Object.entries(nationalData).forEach(([key, collections]) => {
-            collections.forEach(collection => {
-                
-                labelsSet.add(collection["indicateur"]);
-
-                const rawNombre = String(collection["nombre"]).replace(/[\s ,.]/g, '');
-                const nombre = Number(rawNombre);
-                const tauxPourMille = (nombre / totalPopulationFrance) * 1000;
-                nationalRates.push(tauxPourMille.toFixed(2));
-            });
-        });
-
-        if (labels.length === 0 || Criminalitys.length === 0) {
-            console.warn("Pas de données disponibles pour ce département/ville.");
-            return;
-        }
-
-        const ctx = document.getElementById(canvasId).getContext('2d');
-
-        if (window.chartCriminalityInstance) {
-            window.chartCriminalityInstance.destroy();
-        }
-
-        window.chartCriminalityInstance = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: labels,
-                datasets: [
-                    {
-                        label: `${label} (pour 1 000 habitants)`,
-                        data: Criminalitys,
-                        borderColor: borderColor,
-                        backgroundColor: "rgba(75, 192, 192, 0.6)",
-                        borderWidth: 1
-                    },
-                    {
-                        label: "Moyenne nationale (pour 1 000 habitants)",
-                        data: nationalRates,
-                        backgroundColor: "rgba(255, 99, 132, 0.4)",
-                        borderColor: "rgba(255, 99, 132, 1)",
-                        borderWidth: 1
-                    }
-                ]
-            },
-            options: {
-                responsive: true,
-                indexAxis: 'y',
-                scales: {
-                    x: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        if (cityInputId) {
-            const cityInput = document.getElementById(cityInputId);
-            if (cityInput && !cityInput.dataset.listenerAttached) {
-                cityInput.addEventListener("change", async () => {
-                    const newCity = cityInput.value;
-                    await CreateCriminalityChart(canvasId, department, newCity, population, label, borderColor, cityInputId);
-                });
-                cityInput.dataset.listenerAttached = "true";
-            }
-        }
-    } catch (error) {
-        console.error("Erreur lors de la création du graphique :", error);
-    }
-}
 
 async function fetchLoiLittoralData(department, city) {
     try {
@@ -1244,7 +1087,6 @@ export async function fetchDepartmentCityNeighborhood() {
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
-        console.log(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
         
         
         
@@ -1305,7 +1147,7 @@ function miseAjourTableauFinancierLoyer() {
     function mettreAJourTableau() {
         const formGroups = section.querySelectorAll(".formGroup");
         let total = 0;
-    
+
         // Réinitialiser le tableau
         const lignesExistantes = tableauRentabilite.querySelectorAll(".row");
         lignesExistantes.forEach(row => {
@@ -1313,44 +1155,44 @@ function miseAjourTableauFinancierLoyer() {
                 row.remove();
             }
         });
-    
+
         // Compteurs par type
         const compteurs = {
             chambre: 0,
-            logementEntier: 0
+            logementEntier: 0,
         };
-    
+
         formGroups.forEach((group) => {
             const valeur = parseFloat(group.querySelector("input").value) || 0;
             const type = group.querySelector("select").value; // exemple : "chambre"
-    
+
             total += valeur;
             compteurs[type] += 1;
-    
+            nbloyer += 1;
+
             const typeLabel = {
                 chambre: "Chambre",
                 logementEntier: "Logement entier"
             }[type];
-    
+
             const labelFinal = `${typeLabel} ${compteurs[type]}`;
-    
+
             const row = document.createElement("div");
             row.className = "row";
             row.innerHTML = `
                 <div class="label TableauRentabilitehighlight">${labelFinal}</div>
-                <div class="value TableauRentabilitehighlight">${valeur.toFixed(2)}</div>
+                <div class="value TableauRentabilitehighlight" id="Loyer${nbloyer}">${valeur.toFixed(2)}</div>
                 <div class="unit">€</div>
             `;
-    
+
             const ligneTotal = document.getElementById("TableauRentabiliteRowTotalLoyers");
             tableauRentabilite.insertBefore(row, ligneTotal);
         });
-    
+
         // Mettre à jour le total
-        totalLoyers = total.toFixed(2)
+        totalLoyers = total.toFixed(2);
         document.getElementById("TableauRentabiliteValueTotalLoyers").textContent = total.toFixed(2);
     }
-    
 
     // Ajout de champ
     addButton.addEventListener("click", () => {
@@ -1594,21 +1436,215 @@ async function showLocServiceWidget() {
     container.style.display = 'block';
 }
 
-function fillLocService() {
-    // Sélectionnez l'élément <iframe>
-    let iframe = document.getElementById('cote-des-loyers');
+// Sauvegarde des paramètres dans le sessionstorage (à faire à chaque changement de ville)
+function saveChartParams(key, params) {
+    sessionStorage.setItem(key, JSON.stringify(params));
+}
 
-    // Accédez au document de l'<iframe>
-    let iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+async function fillNeighborhoodCostRentTable(department, city) {
+    let nbCostRentTableRow = 0; // Réinitialisation locale
+    const neighborhoodCostRentData = await fetchNeighborhoodCostRentData(department, city);
 
-    // Modifiez un champ de formulaire dans l'<iframe>
-    let inputField = iframeDocument.getElementById('uiville');
-    if (inputField) {
-        inputField.value = 'Nouvelle valeur';
+    const tableBody = document.querySelector('#neighborhoodCostRentTable tbody');
+    tableBody.innerHTML = '';
+
+    for (let i = 1; i < neighborhoodCostRentData.length; i++) {
+        const neighborhoodData = neighborhoodCostRentData[i];
+    
+        if (neighborhoodData.Quartier) {
+            const row = document.createElement('tr');
+    
+            const neighborhoodCell = document.createElement('td');
+            neighborhoodCell.textContent = neighborhoodData.Quartier;
+            neighborhoodCell.id = `neighborhood-${i}`;
+            sessionStorage.setItem(`neighborhood-${i}`, neighborhoodData.Quartier); // 🔁 ← manquait
+            row.appendChild(neighborhoodCell);
+    
+            const apartmentPrice = Number(neighborhoodData['Prix au m2 appartement']).toLocaleString();
+            const apartmentPriceCell = document.createElement('td');
+            apartmentPriceCell.textContent = apartmentPrice;
+            apartmentPriceCell.id = `apartmentPrice-${i}`;
+            sessionStorage.setItem(`apartmentPrice-${i}`, apartmentPrice);
+            row.appendChild(apartmentPriceCell);
+    
+            const housePrice = Number(neighborhoodData['Prix au m2 maison']).toLocaleString();
+            const housePriceCell = document.createElement('td');
+            housePriceCell.textContent = housePrice;
+            housePriceCell.id = `housePrice-${i}`;
+            sessionStorage.setItem(`housePrice-${i}`, housePrice);
+            row.appendChild(housePriceCell);
+    
+            const apartmentRent = Number(neighborhoodData['Loyer au m2 appartement']).toLocaleString();
+            const apartmentRentCell = document.createElement('td');
+            apartmentRentCell.textContent = apartmentRent;
+            apartmentRentCell.id = `apartmentRent-${i}`;
+            sessionStorage.setItem(`apartmentRent-${i}`, apartmentRent);
+            row.appendChild(apartmentRentCell);
+    
+            const houseRent = Number(neighborhoodData['Loyer au m2 maison']).toLocaleString();
+            const houseRentCell = document.createElement('td');
+            houseRentCell.textContent = houseRent;
+            houseRentCell.id = `houseRent-${i}`;
+            sessionStorage.setItem(`houseRent-${i}`, houseRent);
+            row.appendChild(houseRentCell);
+    
+            tableBody.appendChild(row);
+            nbCostRentTableRow += 1;
+        }
     }
+    
+    
+
+    sessionStorage.setItem('nbCostRentTableRow', nbCostRentTableRow);
+    for (let i = 0; i < sessionStorage.length; i++) {
+        const key = sessionStorage.key(i);
+    }
+    
+}
+
+function saveResultData() {
+    
+    const elementsToSave = [
+        "TypeOfPropertyValue", "NbPiecesValue", "SurfaceValue", "CityValue", "neighbourhoodValue",
+        "CostSquareValue", "RentValue", "YieldValue", "CityDescriptionValue", "CityClimatValue",
+        "UrbanismeDescriptionValue", "GrandAxesDescriptionValue", "EtudeMarcheLocalDescriptionValue",
+        "CostSquareValueNeighbourhood", "RentValueNeighbourhood", "YieldValueNeighbourhood",
+        "Population", "AverageAge", "StudentsRate", "UnemployedRate", "MedianIncome",
+        "OwnerShare", "TenantShare", "PopulationDensity",
+        "VacantsCommodationsRate", "LocativeTension", "InternetConnection",
+        "LoiLittoral", "ZoneMontagnes", "TableauRentabiliteValuePrixAchat", "TableauRentabiliteValueNotaire",
+        "TableauRentabiliteValueTravaux", "TableauRentabiliteValueProjetTotal", "TableauRentabiliteValueTotalLoyers",
+        "TableauRentabiliteValueAmortMurs", "TableauRentabiliteValueAmortTravaux", "TableauRentabiliteValueAmortMeubles",
+        "TableauRentabiliteValueAmortMeublesMontant", "TableauRentabiliteValueAmortMursMontant",
+        "TableauRentabiliteValueAmortTravauxMontant", "TableauRentabiliteValueAmortInterets",
+        "TableauRentabiliteValueBaseImposition", "TableauRentabiliteValueImpot", "TableauRentabiliteValueTotalEmprunt",
+        "TableauRentabiliteValueDureeCredit", "TableauRentabiliteValueMensualite", "TableauRentabiliteValueCSG",
+        "TableauRentabiliteValueCRDS", "TableauRentabiliteValuePrelevSocial", "TableauRentabiliteValueContribAdd",
+        "TableauRentabiliteValuePrelevSolidarite", "TableauRentabiliteValueTotalImpotSociaux",
+        "TableauRentabiliteValueChargesCopro", "TableauRentabiliteValueTaxeFonciere", "TableauRentabiliteValueAssurance",
+        "TableauRentabiliteValueFraisDivers", "TableauRentabiliteValueFraisGestion", "TableauRentabiliteValueTotalMensuel",
+        "TableauRentabiliteValueCashflowBrut", "TableauRentabiliteValueCashflowNet", "TableauRentabiliteValueCashflowNetNet",
+        "TableauRentabiliteValueHonorairesChasseur", "TableauRentabiliteValueMeuble", "TableauRentabiliteValueApportPersonnel",
+        "TableauRentabiliteValueTaeg", "TableauRentabiliteValueTxPerMois", "TableauRentabiliteValueDuree",
+        "TableauRentabiliteValueAmortKMensuel", "TableauRentabiliteValueInteretMensuel", "TableauRentabiliteValueBeneficeMensuelNet",
+        "TableauRentabiliteValueBeneficeAnnuelNet", "TableauRentabiliteValueRentabiliteBruteAnnuelle",
+        "TableauRentabiliteValueInteretsTotaux", "TableauRentabiliteValueInteretMensuelPart2", "TableauRentabiliteValueTriAnnuel",
+        "TableauRentabiliteValueLoyerAnnuel", "TableauRentabiliteValueTauxRendementBrut", "TableauRentabiliteValuePlusValueLatente",
+        "TableauRentabiliteValueTauxRendementFondsPropre", "TableauRentabiliteValueBeneficeAnnuelNetIncluantBiens"
+    ];
+
+    
+
+    elementsToSave.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            sessionStorage.setItem(id, element.textContent.trim());
+        }
+    });
 
 }
 
+function loadResultData() {
+    const elementsToLoad = [
+        "TypeOfPropertyValue", "NbPiecesValue", "SurfaceValue", "CityValue", "neighbourhoodValue",
+        "CostSquareValue", "RentValue", "YieldValue", "CityDescriptionValue", "CityClimatValue",
+        "UrbanismeDescriptionValue", "GrandAxesDescriptionValue", "EtudeMarcheLocalDescriptionValue",
+        "CostSquareValueNeighbourhood", "RentValueNeighbourhood", "YieldValueNeighbourhood",
+        "Population", "AverageAge", "StudentsRate", "UnemployedRate", "MedianIncome",
+        "OwnerShare", "TenantShare", "PopulationDensity",
+        "VacantsCommodationsRate", "LocativeTension", "InternetConnection",
+        "LoiLittoral", "ZoneMontagnes", "TableauRentabiliteValuePrixAchat", "TableauRentabiliteValueNotaire",
+        "TableauRentabiliteValueTravaux", "TableauRentabiliteValueProjetTotal", "TableauRentabiliteValueTotalLoyers",
+        "TableauRentabiliteValueAmortMurs", "TableauRentabiliteValueAmortTravaux", "TableauRentabiliteValueAmortMeubles",
+        "TableauRentabiliteValueAmortMeublesMontant", "TableauRentabiliteValueAmortMursMontant",
+        "TableauRentabiliteValueAmortTravauxMontant", "TableauRentabiliteValueAmortInterets",
+        "TableauRentabiliteValueBaseImposition", "TableauRentabiliteValueImpot", "TableauRentabiliteValueTotalEmprunt",
+        "TableauRentabiliteValueDureeCredit", "TableauRentabiliteValueMensualite", "TableauRentabiliteValueCSG",
+        "TableauRentabiliteValueCRDS", "TableauRentabiliteValuePrelevSocial", "TableauRentabiliteValueContribAdd",
+        "TableauRentabiliteValuePrelevSolidarite", "TableauRentabiliteValueTotalImpotSociaux",
+        "TableauRentabiliteValueChargesCopro", "TableauRentabiliteValueTaxeFonciere", "TableauRentabiliteValueAssurance",
+        "TableauRentabiliteValueFraisDivers", "TableauRentabiliteValueFraisGestion", "TableauRentabiliteValueTotalMensuel",
+        "TableauRentabiliteValueCashflowBrut", "TableauRentabiliteValueCashflowNet", "TableauRentabiliteValueCashflowNetNet",
+        "TableauRentabiliteValueHonorairesChasseur", "TableauRentabiliteValueMeuble", "TableauRentabiliteValueApportPersonnel",
+        "TableauRentabiliteValueTaeg", "TableauRentabiliteValueTxPerMois", "TableauRentabiliteValueDuree",
+        "TableauRentabiliteValueAmortKMensuel", "TableauRentabiliteValueInteretMensuel", "TableauRentabiliteValueBeneficeMensuelNet",
+        "TableauRentabiliteValueBeneficeAnnuelNet", "TableauRentabiliteValueRentabiliteBruteAnnuelle",
+        "TableauRentabiliteValueInteretsTotaux", "TableauRentabiliteValueInteretMensuelPart2", "TableauRentabiliteValueTriAnnuel",
+        "TableauRentabiliteValueLoyerAnnuel", "TableauRentabiliteValueTauxRendementBrut", "TableauRentabiliteValuePlusValueLatente",
+        "TableauRentabiliteValueTauxRendementFondsPropre", "TableauRentabiliteValueBeneficeAnnuelNetIncluantBiens"
+    ];
+
+
+    // Charger les éléments
+    elementsToLoad.forEach(id => {
+        const element = document.getElementById(id);
+        const value = sessionStorage.getItem(id);
+        if (element && value !== null) {
+            element.textContent = value;
+        }
+    });
+
+
+
+    // Charger le tableau des prix/loyers
+    const tableBody = document.querySelector('#neighborhoodCostRentTable tbody');
+    if (!tableBody) return;
+
+
+    const nblines = sessionStorage.getItem("nbCostRentTableRow");
+
+    for (let i = 1; i <= nblines; i++) {  // ← Corrigé : boucle doit commencer à 0
+        const row = document.createElement('tr');
+
+        const neighborhoodCell = document.createElement('td');
+        neighborhoodCell.textContent = sessionStorage.getItem(`neighborhood-${i}`);
+        neighborhoodCell.id = `neighborhood-${i}`;
+        row.appendChild(neighborhoodCell);
+
+        const apartmentPriceCell = document.createElement('td');
+        apartmentPriceCell.textContent = sessionStorage.getItem(`apartmentPrice-${i}`); // ← REMPLIR
+        apartmentPriceCell.id = `apartmentPrice-${i}`;
+        row.appendChild(apartmentPriceCell);
+
+        const housePriceCell = document.createElement('td');
+        housePriceCell.textContent = sessionStorage.getItem(`housePrice-${i}`); // ← REMPLIR
+        housePriceCell.id = `housePrice-${i}`;
+        row.appendChild(housePriceCell);
+
+        const apartmentRentCell = document.createElement('td');
+        apartmentRentCell.textContent = sessionStorage.getItem(`apartmentRent-${i}`); // ← REMPLIR
+        apartmentRentCell.id = `apartmentRent-${i}`;
+        row.appendChild(apartmentRentCell);
+
+        const houseRentCell = document.createElement('td');
+        houseRentCell.textContent = sessionStorage.getItem(`houseRent-${i}`); // ← REMPLIR
+        houseRentCell.id = `houseRent-${i}`;
+        row.appendChild(houseRentCell);
+
+        tableBody.appendChild(row);
+    }
+
+
+}
+
+
+
+
+
+// ✅ Cette fonction restaure les graphiques après un rechargement
+function restoreCharts() {
+    const histogramParams = JSON.parse(sessionStorage.getItem("populationChart"));
+    const lineChartParams = JSON.parse(sessionStorage.getItem("lineChart"));
+    const prixM2Params = JSON.parse(sessionStorage.getItem("prixM2Chart"));
+    const surfaceParams = JSON.parse(sessionStorage.getItem("surfaceChart"));
+    const unemployedParams = JSON.parse(sessionStorage.getItem("UnemployedChart"));
+
+    if (histogramParams) createHistogram(...histogramParams);
+    if (lineChartParams) createLineChart(...lineChartParams);
+    if (prixM2Params) createPrixM2Chart(...prixM2Params);
+    if (surfaceParams) createSurfaceChart(...surfaceParams);
+    if (unemployedParams) CreateUnemployedChart(...unemployedParams);
+}
 
 async function updateValues() {
     let departmentCode = "";
@@ -1638,8 +1674,7 @@ async function updateValues() {
     let RentValueNeighbourhoodDiv = document.getElementById("RentAreaNeighbourhood");
     let yieldValueNeighbourhoodDiv = document.getElementById("YieldAreaNeighbourhood");
 
-    let cityDescriptionValue = document.querySelector(".CityDescriptionValue");
-
+    let cityDescriptionValue = document.getElementById("CityDescriptionValue");
     let Population = document.getElementById("Population");
     let StudentsRate = document.getElementById("StudentsRate");
     let UnemployedRate = document.getElementById("UnemployedRate");
@@ -1654,9 +1689,9 @@ async function updateValues() {
     let LoiLittoral = document.getElementById("LoiLittoral");
     let ZoneMontagnes = document.getElementById("ZoneMontagnes");
 
-    let CityClimatValue = document.querySelector(".CityClimatValue");
-    let UrbanismeDescriptionValue = document.querySelector(".UrbanismeDescriptionValue");
-    let GrandAxesDescriptionValue = document.querySelector(".GrandAxesDescriptionValue");
+    let CityClimatValue = document.getElementById("CityClimatValue");
+    let UrbanismeDescriptionValue = document.getElementById("UrbanismeDescriptionValue");
+    let GrandAxesDescriptionValue = document.getElementById("GrandAxesDescriptionValue");
 
     [departmentCode, department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
     // department = normalizeString(department)
@@ -1667,7 +1702,7 @@ async function updateValues() {
     }
 
     cityValue.innerText = city;
-    typeOfPropertyValue.innerText = sessionStorage.getItem("propertyType") || "Non spécifié";
+    typeOfPropertyValue.innerText = sessionStorage.getItem("selectedPropertyType") || "Non spécifié";
     nbPiecesValue.innerText = (sessionStorage.getItem("PiecesNumberUsersInputValue") || "0") + " Pièces";
     surfaceValue.innerText = (sessionStorage.getItem("SurfaceUserInputValue") || "0") + " M²";
 
@@ -1687,11 +1722,8 @@ async function updateValues() {
         
         neighborhoodCost = Math.round(neighborhoodCost)
         neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
-        
     }
-    if (neighborhoodCost === undefined || neighborhoodRent === undefined) {
-        console.log();
-        
+    if (neighborhoodCost === undefined || neighborhoodRent === undefined) {        
         console.error("neighborhoodCost or neighborhoodRent is undefined");
         return;
     }
@@ -1727,14 +1759,21 @@ async function updateValues() {
     createPrixM2Chart('prixM2ChartCanvas', department, city, 'Prix au m²', 'rgba(153, 102, 255, 1)', 'cityInputId');
     createSurfaceChart('surfaceChartCanvas', department, city, 'Surface Moyenne', 'rgba(255, 99, 132, 1)', 'cityInputId');
     CreateUnemployedChart('UnemployedChartCanvas', department, city, 'Taux de Chômage', 'rgba(255, 159, 64, 1)', 'cityInputId');
-    CreateCriminalityChart("securiteChartCanvas", department, city, Population.innerText, "Criminalité", "rgb(124, 255, 64)");
 
+    saveChartParams("populationChart", ['populationChartCanvas', department, city, "Répartition des âges"]);
+    saveChartParams("lineChart", ['lineChartCanvas', department, city, "Prix Moyen", "rgba(75, 192, 192, 1)", "cityInputId"]);
+    saveChartParams("prixM2Chart", ['prixM2ChartCanvas', department, city, "Prix au m²", "rgba(153, 102, 255, 1)", "cityInputId"]);
+    saveChartParams("surfaceChart", ['surfaceChartCanvas', department, city, "Surface Moyenne", "rgba(255, 99, 132, 1)", "cityInputId"]);
+    saveChartParams("UnemployedChart", ['UnemployedChartCanvas', department, city, "Taux de Chômage", "rgba(255, 159, 64, 1)", "cityInputId"]);
+
+    
     fillPopulationTable(department, city);
     fillPrixImmoTable(department, city);
 
     TableauFinancier();
 
     fillNeighborhoodCostRentTable(department, city);
+    console.log(sessionStorage.getItem('nbCostRentTableRow'))
 
 
     // Ici se trouve les commodités
@@ -1750,8 +1789,33 @@ button.addEventListener('click', async () => {
         PrintArea.style.display = "flex";
     }
 
-    updateValues(); // si cette fonction est définie ailleurs
-
-    await showLocServiceWidget(); // await est maintenant autorisé ici
-    fillLocService()
+    try {
+        await updateValues();
+        saveResultData();
+        await showLocServiceWidget();
+    } catch (e) {
+        console.error("Erreur lors de la mise à jour des données :", e);
+    }
 });
+
+// ✅ Exécuter dès que le DOM est prêt
+if (document.readyState === "complete" || document.readyState === "interactive") {
+    restoreCharts();
+} else {
+    window.addEventListener("load", () => {
+        restoreCharts();
+        const savedData = sessionStorage.getItem('tableauRentabiliteData');
+        if (savedData) {
+            const values = JSON.parse(savedData);
+            for (const [id, value] of Object.entries(values)) {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.innerText = value;
+                }
+            }
+        }
+    });
+}
+
+
+loadResultData();

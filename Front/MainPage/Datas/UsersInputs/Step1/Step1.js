@@ -225,18 +225,6 @@ input.addEventListener("keydown", (event) => {
   }
 });
 
-document.addEventListener("click", (event) => {
-  if (event.target !== input && !suggestionsList.contains(event.target)) {
-    suggestionsList.style.display = "none";
-  }
-});
-
-step1NextButton.addEventListener("click", () => {
-  if (!step1NextButton.disabled && step1 && step2) {
-    step1.style.display = "none";
-    step2.style.display = "flex";
-  }
-});
 
 // CSS dynamique
 const style = document.createElement("style");
@@ -289,3 +277,52 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+
+// =====================================================
+// ==================== RELOAD PAGE ====================
+// =====================================================
+
+// ➤ Récupération des états depuis sessionStorage
+const step1Display = sessionStorage.getItem("step1Display");
+const step2Display = sessionStorage.getItem("step2Display");
+const suggestionsDisplay = sessionStorage.getItem("suggestionsDisplay");
+const addressInput = document.getElementById("Address");
+
+
+const savedUserAddress = sessionStorage.getItem("UserInputAdress");
+if (savedUserAddress !== null) {
+  addressInput.value = savedUserAddress;
+  step1NextButton.disabled = false;
+  updateButtonTooltip();
+}
+
+
+
+// ➤ Application des états au chargement
+if (step1Display !== null) step1.style.display = step1Display;
+if (step2Display !== null) step2.style.display = step2Display;
+if (suggestionsDisplay !== null) suggestionsList.style.display = suggestionsDisplay;
+
+// ➤ Masquer la liste de suggestions si clic en dehors
+document.addEventListener("click", (event) => {
+  if (event.target !== input && !suggestionsList.contains(event.target)) {
+    suggestionsList.style.display = "none";
+    sessionStorage.setItem("suggestionsDisplay", "none");
+  }
+});
+
+// ➤ Étape 1 → Étape 2
+step1NextButton.addEventListener("click", () => {
+  if (!step1NextButton.disabled && step1 && step2) {
+    step1.style.display = "none";
+    step2.style.display = "flex";
+    suggestionsList.style.display = "none"; // Sécurité si suggestions ouvertes
+    sessionStorage.setItem("step1Display", "none");
+    sessionStorage.setItem("step2Display", "flex");
+    sessionStorage.setItem("suggestionsDisplay", "none");
+  }
+});
+
+// =====================================================
+// ================== END RELOAD PAGE ==================
+// =====================================================

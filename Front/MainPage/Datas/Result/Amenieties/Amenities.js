@@ -229,8 +229,6 @@ const categories = {
   Utilitaires: ['amenity=toilets', 'amenity=recycling', 'amenity=waste_basket']
 };
 
-
-// Variable globale pour la carte
 let map;
 
 function normalizeCategoryName(category) {
@@ -238,8 +236,6 @@ function normalizeCategoryName(category) {
   console.log(`Normalized category: ${category} -> ${normalized}`); // Log de la normalisation
   return normalized;
 }
-
-
 
 async function geocodeAddress(address) {
   const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
@@ -355,8 +351,6 @@ async function fetchAllAmenities(department, city) {
   return data[key];
 }
 
-
-
 // Modifier la fonction getAmenitiesNearby pour obtenir les 6 premières commodités
 async function getAmenitiesNearby(userAddress) {
   let departmentCode = "";
@@ -465,7 +459,7 @@ async function getAmenitiesNearby(userAddress) {
         // Empêcher la propagation de l'événement pour éviter de masquer la div immédiatement
         event.stopPropagation();
     });
-});
+  });
 
   // Ajouter un gestionnaire d'événements pour masquer la div flottante lorsque l'on clique en dehors
   window.addEventListener('click', function(event) {
@@ -514,7 +508,42 @@ async function getAmenitiesNearby(userAddress) {
   } catch (err) {
     console.error("Erreur globale:", err.message);
   }
+
+  saveMapState([lon, lat], map.getZoom(), amenitiesData);
+
 }
+
+async function loadSavedMapState() {
+  const center = JSON.parse(sessionStorage.getItem('mapCenter'));
+  const zoom = sessionStorage.getItem('mapZoom');
+  const amenitiesData = JSON.parse(sessionStorage.getItem('amenitiesData'));
+
+  if (center && zoom && amenitiesData) {
+    await initializeMap(center[0], center[1]);
+
+    // Réinjecter dans le DOM
+    amenitiesData.forEach(({ category, amenities }) => injectInDOM(category, amenities));
+
+    // Replacer les marqueurs
+    amenitiesData.forEach(({ category, amenities }) => {
+      amenities.forEach(amenity => {
+        createMarker(category, [amenity.longitude, amenity.latitude], amenity.name, amenity.distance);
+      });
+    });
+
+    const userMarker = new mapboxgl.Marker({ color: 'blue' })
+      .setLngLat(center)
+      .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
+      .addTo(map);
+
+    // Zoom
+    map.setZoom(parseFloat(zoom));
+    return true;
+  }
+
+  return false;
+}
+
 
 // Fonction pour créer un marqueur
 function createMarker(category, coordinates, amenityName, distance) {
@@ -578,7 +607,6 @@ function createMarker(category, coordinates, amenityName, distance) {
     .addTo(map);
 }
 
-
 function injectInDOM(category, results) {
   results.forEach((item, index) => {
       if (index < 3) {
@@ -606,6 +634,11 @@ function injectInDOM(category, results) {
   });
 }
 
+function saveMapState(center, zoom, amenitiesData) {
+  sessionStorage.setItem('mapCenter', JSON.stringify(center));
+  sessionStorage.setItem('mapZoom', zoom);
+  sessionStorage.setItem('amenitiesData', JSON.stringify(amenitiesData));
+}
 
 
 document.getElementById('Address').addEventListener('change', function(event) {
@@ -614,3 +647,4 @@ document.getElementById('Address').addEventListener('change', function(event) {
   getAmenitiesNearby(newValue);
   console.log('Valeur changée :', newValue);
 });
+const loaded = await loadSavedMapState();
