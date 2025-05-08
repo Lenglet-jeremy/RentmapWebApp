@@ -395,72 +395,6 @@ async function getAmenitiesNearby(userAddress) {
       amenities: amenities.sort((a, b) => a.distance - b.distance).slice(0, MAX_AMENITIES_DISPLAYED) 
   }));
 
-  
-  document.querySelectorAll('.more-button').forEach(button => {
-    button.addEventListener('click', function(event) {
-        const category = normalizeCategoryName(this.getAttribute('data-category'));
-        const additionalAmenitiesDiv = document.getElementById('additionalAmenities');
-        const floatingDiv = document.getElementById('floatingDiv');
-
-        // Positionner la div flottante sous le bouton cliqué
-        const rect = this.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        const windowWidth = window.innerWidth;
-        const divHeight = floatingDiv.offsetHeight;
-        const divWidth = floatingDiv.offsetWidth;
-
-        // Calculer la position de la div flottante
-        let top = rect.bottom;
-        let left = rect.left;
-
-        // Si la div dépasse la fenêtre en bas, la déplacer vers le haut
-        if (top + divHeight > windowHeight) {
-            top = rect.top - divHeight;
-        }
-
-        // Si la div dépasse la fenêtre à droite, la déplacer vers la gauche
-        if (left + divWidth > windowWidth) {
-            left = rect.right - divWidth;
-        }
-
-        // Si la div dépasse la fenêtre en haut, la déplacer vers le bas
-        if (top < 0) {
-            top = rect.bottom;
-        }
-
-        // Si la div dépasse la fenêtre à gauche, la déplacer vers la droite
-        if (left < 0) {
-            left = 0;
-        }
-
-        floatingDiv.style.top = `${top}px`; // Positionner sous ou au-dessus du bouton
-        floatingDiv.style.left = `${left}px`; // Aligner avec le bouton
-        floatingDiv.style.display = 'block'; // Afficher la div flottante
-
-        // Effacer le contenu précédent
-        additionalAmenitiesDiv.innerHTML = '';
-
-        // Récupérer les commodités supplémentaires pour la catégorie sélectionnée
-        const additionalAmenities = amenitiesData.find(data => normalizeCategoryName(data.category) === category)?.amenities.slice(3);
-
-        if (additionalAmenities && additionalAmenities.length > 0) {
-            additionalAmenities.forEach(item => {
-                const amenityDiv = document.createElement('div');
-                amenityDiv.classList.add('additional-amenity');
-                amenityDiv.innerHTML = `
-                    <strong>${item.name || item.category}</strong> - ${Math.round(item.distance)} m
-                `;
-                additionalAmenitiesDiv.appendChild(amenityDiv);
-            });
-        } else {
-            additionalAmenitiesDiv.innerHTML = '<p>Aucune commodité supplémentaire disponible.</p>';
-        }
-
-        // Empêcher la propagation de l'événement pour éviter de masquer la div immédiatement
-        event.stopPropagation();
-    });
-  });
-
   // Ajouter un gestionnaire d'événements pour masquer la div flottante lorsque l'on clique en dehors
   window.addEventListener('click', function(event) {
       const floatingDiv = document.getElementById('floatingDiv');
@@ -490,6 +424,72 @@ async function getAmenitiesNearby(userAddress) {
 
     // Injection DOM
     amenitiesData.forEach(({ category, amenities }) => injectInDOM(category, amenities));
+
+  
+    document.querySelectorAll('.more-button').forEach(button => {
+      button.addEventListener('click', function(event) {
+          const category = normalizeCategoryName(this.getAttribute('data-category'));
+          const additionalAmenitiesDiv = document.getElementById('additionalAmenities');
+          const floatingDiv = document.getElementById('floatingDiv');
+
+          // Positionner la div flottante sous le bouton cliqué
+          const rect = this.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+          const windowWidth = window.innerWidth;
+          const divHeight = floatingDiv.offsetHeight;
+          const divWidth = floatingDiv.offsetWidth;
+
+          // Calculer la position de la div flottante
+          let top = rect.bottom;
+          let left = rect.left;
+
+          // Si la div dépasse la fenêtre en bas, la déplacer vers le haut
+          if (top + divHeight > windowHeight) {
+              top = rect.top - divHeight;
+          }
+
+          // Si la div dépasse la fenêtre à droite, la déplacer vers la gauche
+          if (left + divWidth > windowWidth) {
+              left = rect.right - divWidth;
+          }
+
+          // Si la div dépasse la fenêtre en haut, la déplacer vers le bas
+          if (top < 0) {
+              top = rect.bottom;
+          }
+
+          // Si la div dépasse la fenêtre à gauche, la déplacer vers la droite
+          if (left < 0) {
+              left = 0;
+          }
+
+          floatingDiv.style.top = `${top}px`; // Positionner sous ou au-dessus du bouton
+          floatingDiv.style.left = `${left}px`; // Aligner avec le bouton
+          floatingDiv.style.display = 'block'; // Afficher la div flottante
+
+          // Effacer le contenu précédent
+          additionalAmenitiesDiv.innerHTML = '';
+
+          // Récupérer les commodités supplémentaires pour la catégorie sélectionnée
+          const additionalAmenities = amenitiesData.find(data => normalizeCategoryName(data.category) === category)?.amenities.slice(3);
+
+          if (additionalAmenities && additionalAmenities.length > 0) {
+              additionalAmenities.forEach(item => {
+                  const amenityDiv = document.createElement('div');
+                  amenityDiv.classList.add('additional-amenity');
+                  amenityDiv.innerHTML = `
+                      <strong>${item.name || item.category}</strong> - ${Math.round(item.distance)} m
+                  `;
+                  additionalAmenitiesDiv.appendChild(amenityDiv);
+              });
+          } else {
+              additionalAmenitiesDiv.innerHTML = '<p>Aucune commodité supplémentaire disponible.</p>';
+          }
+
+          // Empêcher la propagation de l'événement pour éviter de masquer la div immédiatement
+          event.stopPropagation();
+      });
+    });
 
     // Ajout marqueurs
     amenitiesData.forEach(({ category, amenities }) => {
