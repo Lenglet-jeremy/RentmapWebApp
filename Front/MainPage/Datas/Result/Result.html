@@ -301,297 +301,298 @@
             <div class="caseTitle" id="TableauRentabiliteCaseTitle">CAS 4</div>
         </div>
         <div class="content" id="TableauRentabiliteContent">
-            <div class="section" id="TableauRentabiliteProjetSection">
-                <div class="sectionTitle" id="TableauRentabiliteProjetTitle">Projet</div>
-                <div class="row" id="TableauRentabiliteRowPrixAchat">
-                    <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelPrixAchat">Prix d'achat</div>
-                    <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValuePrixAchat"></div>
-                    <div class="unit" id="TableauRentabiliteUnitPrixAchat">€</div>
+            <div class="part1" id="TableauRentabilitePart1">
+                <div class="section" id="TableauRentabiliteProjetSection">
+                    <div class="sectionTitle" id="TableauRentabiliteProjetTitle">Projet</div>
+                    <div class="row" id="TableauRentabiliteRowPrixAchat">
+                        <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelPrixAchat">Prix d'achat</div>
+                        <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValuePrixAchat"></div>
+                        <div class="unit" id="TableauRentabiliteUnitPrixAchat">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowNotaire">
+                        <div class="label" id="TableauRentabiliteLabelNotaire">Notaire</div>
+                        <div class="value" id="TableauRentabiliteValueNotaire"></div>
+                        <div class="unit" id="TableauRentabiliteUnitNotaire">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowTravaux">
+                        <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelTravaux">Travaux</div>
+                        <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueTravaux"></div>
+                        <div class="unit" id="TableauRentabiliteUnitTravaux">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowProjetTotal">
+                        <div class="label" id="TableauRentabiliteLabelProjetTotal">Total</div>
+                        <div class="value" id="TableauRentabiliteValueProjetTotal"></div>
+                        <div class="unit" id="TableauRentabiliteUnitProjetTotal">€</div>
+                    </div>
                 </div>
-                <div class="row" id="TableauRentabiliteRowNotaire">
-                    <div class="label" id="TableauRentabiliteLabelNotaire">Notaire</div>
-                    <div class="value" id="TableauRentabiliteValueNotaire"></div>
-                    <div class="unit" id="TableauRentabiliteUnitNotaire">€</div>
+
+                <div class="section" id="TableauRentabiliteImpotsSection">
+                    <div class="sectionTitle" id="TableauRentabiliteImpotsTitle">Impôts</div>
+                    <div class="row" id="TableauRentabiliteRowAmortMurs">
+                        <div class="label" id="TableauRentabiliteLabelAmortMurs">Temps d'amortissement murs</div>
+                        <div class="value" id="TableauRentabiliteValueAmortMurs">20</div>
+                        <div class="unit" id="TableauRentabiliteUnitAmortMurs">ans</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowAmortTravaux">
+                        <div class="label" id="TableauRentabiliteLabelAmortTravaux">Temps d'amortissement travaux</div>
+                        <div class="value" id="TableauRentabiliteValueAmortTravaux">10</div>
+                        <div class="unit" id="TableauRentabiliteUnitAmortTravaux">ans</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowAmortMeubles">
+                        <div class="label" id="TableauRentabiliteLabelAmortMeubles">Temps d'amortissement meubles</div>
+                        <div class="value" id="TableauRentabiliteValueAmortMeubles">5</div>
+                        <div class="unit" id="TableauRentabiliteUnitAmortMeubles">ans</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowAmortMeublesMontant">
+                        <div class="label" id="TableauRentabiliteLabelAmortMeublesMontant">Amortissement des meubles</div>
+                        <div class="value" id="TableauRentabiliteValueAmortMeublesMontant"></div>
+                        <div class="unit" id="TableauRentabiliteUnitAmortMeublesMontant">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowAmortMursMontant">
+                        <div class="label" id="TableauRentabiliteLabelAmortMursMontant">Amortissement des murs</div>
+                        <div class="value" id="TableauRentabiliteValueAmortMursMontant"></div>
+                        <div class="unit" id="TableauRentabiliteUnitAmortMursMontant">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowAmortTravauxMontant">
+                        <div class="label" id="TableauRentabiliteLabelAmortTravauxMontant">Amortissement des travaux (10ans)</div>
+                        <div class="value" id="TableauRentabiliteValueAmortTravauxMontant"></div>
+                        <div class="unit" id="TableauRentabiliteUnitAmortTravauxMontant">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowAmortInterets">
+                        <div class="label" id="TableauRentabiliteLabelAmortInterets">Amortissement des intérêts</div>
+                        <div class="value" id="TableauRentabiliteValueAmortInterets"></div>
+                        <div class="unit" id="TableauRentabiliteUnitAmortInterets">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowBaseImposition">
+                        <div class="label" id="TableauRentabiliteLabelBaseImposition">Base d'imposition au Réel</div>
+                        <div class="value" id="TableauRentabiliteValueBaseImposition"></div>
+                        <div class="unit" id="TableauRentabiliteUnitBaseImposition">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowImpot">
+                        <div class="label" id="TableauRentabiliteLabelImpot">Impôt 30%</div>
+                        <div class="value " id="TableauRentabiliteValueImpot"></div>
+                        <div class="unit" id="TableauRentabiliteUnitImpot">€</div>
+                    </div>
                 </div>
-                <div class="row" id="TableauRentabiliteRowTravaux">
-                    <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelTravaux">Travaux</div>
-                    <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueTravaux"></div>
-                    <div class="unit" id="TableauRentabiliteUnitTravaux">€</div>
+
+                <div class="section" id="TableauRentabiliteFinancementSection">
+                    <div class="sectionTitle" id="TableauRentabiliteFinancementTitle">Financement</div>
+                    <div class="row" id="TableauRentabiliteRowTotalEmprunt">
+                        <div class="label" id="TableauRentabiliteLabelTotalEmprunt">Total emprunt</div>
+                        <div class="value" id="TableauRentabiliteValueTotalEmprunt"></div>
+                        <div class="unit" id="TableauRentabiliteUnitTotalEmprunt">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowDureeCredit">
+                        <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelDureeCredit">Durée du crédit</div>
+                        <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueDureeCredit"></div>
+                        <div class="unit" id="TableauRentabiliteUnitDureeCredit">ans</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowMensualite">
+                        <div class="label" id="TableauRentabiliteLabelMensualite">Mensualité</div>
+                        <div class="value" id="TableauRentabiliteValueMensualite"></div>
+                        <div class="unit" id="TableauRentabiliteUnitMensualite">€</div>
+                    </div>
                 </div>
-                <div class="row" id="TableauRentabiliteRowProjetTotal">
-                    <div class="label" id="TableauRentabiliteLabelProjetTotal">Total</div>
-                    <div class="value" id="TableauRentabiliteValueProjetTotal"></div>
-                    <div class="unit" id="TableauRentabiliteUnitProjetTotal">€</div>
+
+                <div class="section" id="TableauRentabilitePrelevSociauxSection">
+                    <div class="sectionTitle" id="TableauRentabilitePrelevSociauxTitle">Prélèvements sociaux</div>
+                    <div class="row" id="TableauRentabiliteRowCSG">
+                        <div class="label" id="TableauRentabiliteLabelCSG">CSG 9,9</div>
+                        <div class="value" id="TableauRentabiliteValueCSG"></div>
+                        <div class="unit" id="TableauRentabiliteUnitCSG">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowCRDS">
+                        <div class="label" id="TableauRentabiliteLabelCRDS">CRDS 0,50%</div>
+                        <div class="value" id="TableauRentabiliteValueCRDS"></div>
+                        <div class="unit" id="TableauRentabiliteUnitCRDS">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowPrelevSocial">
+                        <div class="label" id="TableauRentabiliteLabelPrelevSocial">Prélèvement social (4,5%)</div>
+                        <div class="value" id="TableauRentabiliteValuePrelevSocial"></div>
+                        <div class="unit" id="TableauRentabiliteUnitPrelevSocial">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowContribAdd">
+                        <div class="label" id="TableauRentabiliteLabelContribAdd">Contribution additionnelle (0,3%)</div>
+                        <div class="value" id="TableauRentabiliteValueContribAdd"></div>
+                        <div class="unit" id="TableauRentabiliteUnitContribAdd">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowPrelevSolidarite">
+                        <div class="label" id="TableauRentabiliteLabelPrelevSolidarite">Prélèvement solidarité (2%)</div>
+                        <div class="value" id="TableauRentabiliteValuePrelevSolidarite"></div>
+                        <div class="unit" id="TableauRentabiliteUnitPrelevSolidarite">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowTotalImpotSociaux">
+                        <div class="label" id="TableauRentabiliteLabelTotalImpotSociaux">Total impôts sociaux</div>
+                        <div class="value" id="TableauRentabiliteValueTotalImpotSociaux"></div>
+                        <div class="unit" id="TableauRentabiliteUnitTotalImpotSociaux">€</div>
+                    </div>
+                </div>
+
+                <div class="section" id="TableauRentabiliteChargesSection">
+                    <div class="sectionTitle" id="TableauRentabiliteChargesTitle">Charges annuelles</div>
+                    <div class="row" id="TableauRentabiliteRowChargesCopro">
+                        <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelChargesCopro">Charges de copropriété</div>
+                        <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueChargesCopro"></div>
+                        <div class="unit" id="TableauRentabiliteUnitChargesCopro">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowTaxeFonciere">
+                        <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelTaxeFonciere">TFPB</div>
+                        <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueTaxeFonciere"></div>
+                        <div class="unit" id="TableauRentabiliteUnitTaxeFonciere">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowAssurance">
+                        <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelAssurance">Assurance PNO</div>
+                        <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueAssurance"></div>
+                        <div class="unit" id="TableauRentabiliteUnitAssurance">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowFraisDivers">
+                        <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelFraisDivers">Frais divers</div>
+                        <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueFraisDivers"></div>
+                        <div class="unit" id="TableauRentabiliteUnitFraisDivers">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowFraisGestion">
+                        <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelFraisGestion">Frais de gestion</div>
+                        <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueFraisGestion"></div>
+                        <div class="unit" id="TableauRentabiliteUnitFraisGestion">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowTotalMensuel">
+                        <div class="label" id="TableauRentabiliteLabelTotalMensuel">Total mensuel</div>
+                        <div class="value" id="TableauRentabiliteValueTotalMensuel"></div>
+                        <div class="unit" id="TableauRentabiliteUnitTotalMensuel">€</div>
+                    </div>
+                </div>
+
+                <div class="section" id="TableauRentabiliteCashflowSection">
+                    <div class="sectionTitle" id="TableauRentabiliteCashflowTitle">Cashflow</div>
+                    <div class="row" id="TableauRentabiliteRowCashflowBrut">
+                        <div class="label" id="TableauRentabiliteLabelCashflowBrut">Cashflow brut</div>
+                        <div class="value" id="TableauRentabiliteValueCashflowBrut"></div>
+                        <div class="unit" id="TableauRentabiliteUnitCashflowBrut">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowCashflowNet">
+                        <div class="label" id="TableauRentabiliteLabelCashflowNet">Cashflow net</div>
+                        <div class="value" id="TableauRentabiliteValueCashflowNet"></div>
+                        <div class="unit" id="TableauRentabiliteUnitCashflowNet">€</div>
+                    </div>
+                    <div class="row" id="TableauRentabiliteRowCashflowNetNet">
+                        <div class="label" id="TableauRentabiliteLabelCashflowNetNet">Cashflow net net</div>
+                        <div class="value" id="TableauRentabiliteValueCashflowNetNet"></div>
+                        <div class="unit" id="TableauRentabiliteUnitCashflowNetNet">€</div>
+                    </div>
                 </div>
             </div>
+            <div class="part2" id="TableauRentabilitePart2">
+                <table class="fullWidth" cellspacing="0" cellpadding="8" border="1" id="TableauRentabiliteTable">
+                    <tr id="TableauRentabiliteRowHonorairesChasseur">
+                        <td id="TableauRentabiliteLabelHonorairesChasseur">Honoraires Chasseur TTC</td>
+                        <td class="TableauRentabilitehighlight" id="TableauRentabiliteValueHonorairesChasseur"></td>
+                        <td id="TableauRentabiliteUnitHonorairesChasseur">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowMeuble">
+                        <td id="TableauRentabiliteLabelMeuble">Meuble</td>
+                        <td class="TableauRentabilitehighlight" id="TableauRentabiliteValueMeuble"></td>
+                        <td id="TableauRentabiliteUnitMeuble">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowApportPersonnel">
+                        <td id="TableauRentabiliteLabelApportPersonnel">Apport personnel</td>
+                        <td class="TableauRentabilitehighlight" id="TableauRentabiliteValueApportPersonnel"></td>
+                        <td id="TableauRentabiliteUnitApportPersonnel">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowTaeg">
+                        <td id="TableauRentabiliteLabelTaeg">TAEG (assurance comprise)</td>
+                        <td class="TableauRentabilitehighlight" id="TableauRentabiliteValueTaeg"></td>
+                        <td id="TableauRentabiliteUnitTaeg">%</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowTxPerMois">
+                        <td id="TableauRentabiliteLabelTxPerMois">Tx Per/mois</td>
+                        <td id="TableauRentabiliteValueTxPerMois"></td>
+                        <td id="TableauRentabiliteUnitTxPerMois">%</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowDuree">
+                        <td id="TableauRentabiliteLabelDuree">Durée</td>
+                        <td id="TableauRentabiliteValueDuree"></td>
+                        <td id="TableauRentabiliteUnitDuree">mois</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowAmortKMensuel">
+                        <td id="TableauRentabiliteLabelAmortKMensuel">Amortissement K mensuel</td>
+                        <td id="TableauRentabiliteValueAmortKMensuel"></td>
+                        <td id="TableauRentabiliteUnitAmortKMensuel">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowInteretMensuel">
+                        <td id="TableauRentabiliteLabelInteretMensuel">Intérêt mensuel</td>
+                        <td id="TableauRentabiliteValueInteretMensuel"></td>
+                        <td id="TableauRentabiliteUnitInteretMensuel">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowBeneficeMensuelNet">
+                        <td id="TableauRentabiliteLabelBeneficeMensuelNet">Bénéfice mensuel net</td>
+                        <td id="TableauRentabiliteValueBeneficeMensuelNet"></td>
+                        <td id="TableauRentabiliteUnitBeneficeMensuelNet">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowBeneficeAnnuelNet">
+                        <td id="TableauRentabiliteLabelBeneficeAnnuelNet">Bénéfice annuel net</td>
+                        <td id="TableauRentabiliteValueBeneficeAnnuelNet"></td>
+                        <td id="TableauRentabiliteUnitBeneficeAnnuelNet">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowRentabiliteBruteAnnuelle">
+                        <td id="TableauRentabiliteLabelRentabiliteBruteAnnuelle">Rentabilité brute annuelle</td>
+                        <td id="TableauRentabiliteValueRentabiliteBruteAnnuelle"></td>
+                        <td id="TableauRentabiliteUnitRentabiliteBruteAnnuelle">%</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowInteretsTotaux">
+                        <td id="TableauRentabiliteLabelInteretsTotaux">Intérêts totaux</td>
+                        <td id="TableauRentabiliteValueInteretsTotaux"></td>
+                        <td id="TableauRentabiliteUnitInteretsTotaux">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowInteretMensuelPart2">
+                        <td id="TableauRentabiliteLabelInteretMensuelPart2">Intérêt mensuel</td>
+                        <td id="TableauRentabiliteValueInteretMensuelPart2"></td>
+                        <td id="TableauRentabiliteUnitInteretMensuelPart2">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowTriAnnuel">
+                        <td id="TableauRentabiliteLabelTriAnnuel">TRI</td>
+                        <td id="TableauRentabiliteValueTriAnnuel"></td>
+                        <td id="TableauRentabiliteUnitTriAnnuel">%</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowLoyerAnnuel">
+                        <td id="TableauRentabiliteLabelLoyerAnnuel">Loyer annuel</td>
+                        <td id="TableauRentabiliteValueLoyerAnnuel"></td>
+                        <td id="TableauRentabiliteUnitLoyerAnnuel">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowTauxRendementBrut">
+                        <td id="TableauRentabiliteLabelTauxRendementBrut">Taux de rendement brut</td>
+                        <td id="TableauRentabiliteValueTauxRendementBrut"></td>
+                        <td id="TableauRentabiliteUnitTauxRendementBrut">%</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowPlusValueLatente">
+                        <td id="TableauRentabiliteLabelPlusValueLatente">Plus value latente</td>
+                        <td id="TableauRentabiliteValuePlusValueLatente">0</td>
+                        <td id="TableauRentabiliteUnitPlusValueLatente">€</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowTauxRendementBrut">
+                        <td id="TableauRentabiliteLabelTauxRendementFondsPropre">Taux de rendement sur fonds propre</td>
+                        <td id="TableauRentabiliteValueTauxRendementFondsPropre"></td>
+                        <td id="TableauRentabiliteUnitTauxRendementFondsPropre">%</td>
+                    </tr>
+                    <tr id="TableauRentabiliteRowBeneficeAnnuelNetIncluantBiens">
+                        <td id="TableauRentabiliteLabelBeneficeAnnuelNetIncluantBiens">
+                            Benefices annuel net<br>
+                            <i>comprenants la valorisation du bien</i>
+                        </td>
+                    
+                        <td id="TableauRentabiliteValueBeneficeAnnuelNetIncluantBiens"></td>
+                        <td id="TableauRentabiliteUnitBeneficeAnnuelNetIncluantBiens">€</td>
+                    </tr>
+                </table>
 
-            <div class="section" id="TableauRentabiliteLoyers">
-                <div class="sectionTitle" id="TableauRentabiliteLoyersTitle">Loyers prévisionnels HC</div>
-                <div class="row" id="TableauRentabiliteRowTotalLoyers">
-                    <div class="label" id="TableauRentabiliteLabelTotalLoyers">TOTAL LOYERS</div>
-                    <div class="value" id="TableauRentabiliteValueTotalLoyers"></div>
-                    <div class="unit" id="TableauRentabiliteUnitTotalLoyers">€</div>
+                <div class="section" id="TableauRentabiliteLoyers">
+                    <div class="sectionTitle" id="TableauRentabiliteLoyersTitle">Loyers prévisionnels HC</div>
+                    <div class="row" id="TableauRentabiliteRowTotalLoyers">
+                        <div class="label" id="TableauRentabiliteLabelTotalLoyers">TOTAL LOYERS</div>
+                        <div class="value" id="TableauRentabiliteValueTotalLoyers"></div>
+                        <div class="unit" id="TableauRentabiliteUnitTotalLoyers">€</div>
+                    </div>
                 </div>
             </div>
-
-            <div class="section" id="TableauRentabiliteImpotsSection">
-                <div class="sectionTitle" id="TableauRentabiliteImpotsTitle">Impôts</div>
-                <div class="row" id="TableauRentabiliteRowAmortMurs">
-                    <div class="label" id="TableauRentabiliteLabelAmortMurs">Temps d'amortissement murs</div>
-                    <div class="value" id="TableauRentabiliteValueAmortMurs">20</div>
-                    <div class="unit" id="TableauRentabiliteUnitAmortMurs">ans</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowAmortTravaux">
-                    <div class="label" id="TableauRentabiliteLabelAmortTravaux">Temps d'amortissement travaux</div>
-                    <div class="value" id="TableauRentabiliteValueAmortTravaux">10</div>
-                    <div class="unit" id="TableauRentabiliteUnitAmortTravaux">ans</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowAmortMeubles">
-                    <div class="label" id="TableauRentabiliteLabelAmortMeubles">Temps d'amortissement meubles</div>
-                    <div class="value" id="TableauRentabiliteValueAmortMeubles">5</div>
-                    <div class="unit" id="TableauRentabiliteUnitAmortMeubles">ans</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowAmortMeublesMontant">
-                    <div class="label" id="TableauRentabiliteLabelAmortMeublesMontant">Amortissement des meubles</div>
-                    <div class="value" id="TableauRentabiliteValueAmortMeublesMontant"></div>
-                    <div class="unit" id="TableauRentabiliteUnitAmortMeublesMontant">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowAmortMursMontant">
-                    <div class="label" id="TableauRentabiliteLabelAmortMursMontant">Amortissement des murs</div>
-                    <div class="value" id="TableauRentabiliteValueAmortMursMontant"></div>
-                    <div class="unit" id="TableauRentabiliteUnitAmortMursMontant">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowAmortTravauxMontant">
-                    <div class="label" id="TableauRentabiliteLabelAmortTravauxMontant">Amortissement des travaux (10ans)</div>
-                    <div class="value" id="TableauRentabiliteValueAmortTravauxMontant"></div>
-                    <div class="unit" id="TableauRentabiliteUnitAmortTravauxMontant">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowAmortInterets">
-                    <div class="label" id="TableauRentabiliteLabelAmortInterets">Amortissement des intérêts</div>
-                    <div class="value" id="TableauRentabiliteValueAmortInterets"></div>
-                    <div class="unit" id="TableauRentabiliteUnitAmortInterets">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowBaseImposition">
-                    <div class="label" id="TableauRentabiliteLabelBaseImposition">Base d'imposition au Réel</div>
-                    <div class="value" id="TableauRentabiliteValueBaseImposition"></div>
-                    <div class="unit" id="TableauRentabiliteUnitBaseImposition">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowImpot">
-                    <div class="label" id="TableauRentabiliteLabelImpot">Impôt 30%</div>
-                    <div class="value " id="TableauRentabiliteValueImpot"></div>
-                    <div class="unit" id="TableauRentabiliteUnitImpot">€</div>
-                </div>
-            </div>
-
-            <div class="section" id="TableauRentabiliteFinancementSection">
-                <div class="sectionTitle" id="TableauRentabiliteFinancementTitle">Financement</div>
-                <div class="row" id="TableauRentabiliteRowTotalEmprunt">
-                    <div class="label" id="TableauRentabiliteLabelTotalEmprunt">Total emprunt</div>
-                    <div class="value" id="TableauRentabiliteValueTotalEmprunt"></div>
-                    <div class="unit" id="TableauRentabiliteUnitTotalEmprunt">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowDureeCredit">
-                    <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelDureeCredit">Durée du crédit</div>
-                    <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueDureeCredit"></div>
-                    <div class="unit" id="TableauRentabiliteUnitDureeCredit">ans</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowMensualite">
-                    <div class="label" id="TableauRentabiliteLabelMensualite">Mensualité</div>
-                    <div class="value" id="TableauRentabiliteValueMensualite"></div>
-                    <div class="unit" id="TableauRentabiliteUnitMensualite">€</div>
-                </div>
-            </div>
-
-            <div class="section" id="TableauRentabilitePrelevSociauxSection">
-                <div class="sectionTitle" id="TableauRentabilitePrelevSociauxTitle">Prélèvements sociaux</div>
-                <div class="row" id="TableauRentabiliteRowCSG">
-                    <div class="label" id="TableauRentabiliteLabelCSG">CSG 9,9</div>
-                    <div class="value" id="TableauRentabiliteValueCSG"></div>
-                    <div class="unit" id="TableauRentabiliteUnitCSG">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowCRDS">
-                    <div class="label" id="TableauRentabiliteLabelCRDS">CRDS 0,50%</div>
-                    <div class="value" id="TableauRentabiliteValueCRDS"></div>
-                    <div class="unit" id="TableauRentabiliteUnitCRDS">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowPrelevSocial">
-                    <div class="label" id="TableauRentabiliteLabelPrelevSocial">Prélèvement social (4,5%)</div>
-                    <div class="value" id="TableauRentabiliteValuePrelevSocial"></div>
-                    <div class="unit" id="TableauRentabiliteUnitPrelevSocial">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowContribAdd">
-                    <div class="label" id="TableauRentabiliteLabelContribAdd">Contribution additionnelle (0,3%)</div>
-                    <div class="value" id="TableauRentabiliteValueContribAdd"></div>
-                    <div class="unit" id="TableauRentabiliteUnitContribAdd">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowPrelevSolidarite">
-                    <div class="label" id="TableauRentabiliteLabelPrelevSolidarite">Prélèvement solidarité (2%)</div>
-                    <div class="value" id="TableauRentabiliteValuePrelevSolidarite"></div>
-                    <div class="unit" id="TableauRentabiliteUnitPrelevSolidarite">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowTotalImpotSociaux">
-                    <div class="label" id="TableauRentabiliteLabelTotalImpotSociaux">Total impôts sociaux</div>
-                    <div class="value" id="TableauRentabiliteValueTotalImpotSociaux"></div>
-                    <div class="unit" id="TableauRentabiliteUnitTotalImpotSociaux">€</div>
-                </div>
-            </div>
-
-            <div class="section" id="TableauRentabiliteChargesSection">
-                <div class="sectionTitle" id="TableauRentabiliteChargesTitle">Charges annuelles</div>
-                <div class="row" id="TableauRentabiliteRowChargesCopro">
-                    <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelChargesCopro">Charges de copropriété</div>
-                    <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueChargesCopro"></div>
-                    <div class="unit" id="TableauRentabiliteUnitChargesCopro">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowTaxeFonciere">
-                    <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelTaxeFonciere">TFPB</div>
-                    <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueTaxeFonciere"></div>
-                    <div class="unit" id="TableauRentabiliteUnitTaxeFonciere">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowAssurance">
-                    <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelAssurance">Assurance PNO</div>
-                    <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueAssurance"></div>
-                    <div class="unit" id="TableauRentabiliteUnitAssurance">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowFraisDivers">
-                    <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelFraisDivers">Frais divers</div>
-                    <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueFraisDivers"></div>
-                    <div class="unit" id="TableauRentabiliteUnitFraisDivers">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowFraisGestion">
-                    <div class="label TableauRentabilitehighlight" id="TableauRentabiliteLabelFraisGestion">Frais de gestion</div>
-                    <div class="value TableauRentabilitehighlight" id="TableauRentabiliteValueFraisGestion"></div>
-                    <div class="unit" id="TableauRentabiliteUnitFraisGestion">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowTotalMensuel">
-                    <div class="label" id="TableauRentabiliteLabelTotalMensuel">Total mensuel</div>
-                    <div class="value" id="TableauRentabiliteValueTotalMensuel"></div>
-                    <div class="unit" id="TableauRentabiliteUnitTotalMensuel">€</div>
-                </div>
-            </div>
-
-            <div class="section" id="TableauRentabiliteCashflowSection">
-                <div class="sectionTitle" id="TableauRentabiliteCashflowTitle">Cashflow</div>
-                <div class="row" id="TableauRentabiliteRowCashflowBrut">
-                    <div class="label" id="TableauRentabiliteLabelCashflowBrut">Cashflow brut</div>
-                    <div class="value" id="TableauRentabiliteValueCashflowBrut"></div>
-                    <div class="unit" id="TableauRentabiliteUnitCashflowBrut">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowCashflowNet">
-                    <div class="label" id="TableauRentabiliteLabelCashflowNet">Cashflow net</div>
-                    <div class="value" id="TableauRentabiliteValueCashflowNet"></div>
-                    <div class="unit" id="TableauRentabiliteUnitCashflowNet">€</div>
-                </div>
-                <div class="row" id="TableauRentabiliteRowCashflowNetNet">
-                    <div class="label" id="TableauRentabiliteLabelCashflowNetNet">Cashflow net net</div>
-                    <div class="value" id="TableauRentabiliteValueCashflowNetNet"></div>
-                    <div class="unit" id="TableauRentabiliteUnitCashflowNetNet">€</div>
-                </div>
-            </div>
-
-        <div class="part2" id="TableauRentabilitePart2">
-            <table class="fullWidth" cellspacing="0" cellpadding="8" border="1" id="TableauRentabiliteTable">
-                <tr id="TableauRentabiliteRowHonorairesChasseur">
-                    <td id="TableauRentabiliteLabelHonorairesChasseur">Honoraires Chasseur TTC</td>
-                    <td class="TableauRentabilitehighlight" id="TableauRentabiliteValueHonorairesChasseur"></td>
-                    <td id="TableauRentabiliteUnitHonorairesChasseur">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowMeuble">
-                    <td id="TableauRentabiliteLabelMeuble">Meuble</td>
-                    <td class="TableauRentabilitehighlight" id="TableauRentabiliteValueMeuble"></td>
-                    <td id="TableauRentabiliteUnitMeuble">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowApportPersonnel">
-                    <td id="TableauRentabiliteLabelApportPersonnel">Apport personnel</td>
-                    <td class="TableauRentabilitehighlight" id="TableauRentabiliteValueApportPersonnel"></td>
-                    <td id="TableauRentabiliteUnitApportPersonnel">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowTaeg">
-                    <td id="TableauRentabiliteLabelTaeg">TAEG (assurance comprise)</td>
-                    <td class="TableauRentabilitehighlight" id="TableauRentabiliteValueTaeg"></td>
-                    <td id="TableauRentabiliteUnitTaeg">%</td>
-                </tr>
-                <tr id="TableauRentabiliteRowTxPerMois">
-                    <td id="TableauRentabiliteLabelTxPerMois">Tx Per/mois</td>
-                    <td id="TableauRentabiliteValueTxPerMois"></td>
-                    <td id="TableauRentabiliteUnitTxPerMois">%</td>
-                </tr>
-                <tr id="TableauRentabiliteRowDuree">
-                    <td id="TableauRentabiliteLabelDuree">Durée</td>
-                    <td id="TableauRentabiliteValueDuree"></td>
-                    <td id="TableauRentabiliteUnitDuree">mois</td>
-                </tr>
-                <tr id="TableauRentabiliteRowAmortKMensuel">
-                    <td id="TableauRentabiliteLabelAmortKMensuel">Amortissement K mensuel</td>
-                    <td id="TableauRentabiliteValueAmortKMensuel"></td>
-                    <td id="TableauRentabiliteUnitAmortKMensuel">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowInteretMensuel">
-                    <td id="TableauRentabiliteLabelInteretMensuel">Intérêt mensuel</td>
-                    <td id="TableauRentabiliteValueInteretMensuel"></td>
-                    <td id="TableauRentabiliteUnitInteretMensuel">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowBeneficeMensuelNet">
-                    <td id="TableauRentabiliteLabelBeneficeMensuelNet">Bénéfice mensuel net</td>
-                    <td id="TableauRentabiliteValueBeneficeMensuelNet"></td>
-                    <td id="TableauRentabiliteUnitBeneficeMensuelNet">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowBeneficeAnnuelNet">
-                    <td id="TableauRentabiliteLabelBeneficeAnnuelNet">Bénéfice annuel net</td>
-                    <td id="TableauRentabiliteValueBeneficeAnnuelNet"></td>
-                    <td id="TableauRentabiliteUnitBeneficeAnnuelNet">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowRentabiliteBruteAnnuelle">
-                    <td id="TableauRentabiliteLabelRentabiliteBruteAnnuelle">Rentabilité brute annuelle</td>
-                    <td id="TableauRentabiliteValueRentabiliteBruteAnnuelle"></td>
-                    <td id="TableauRentabiliteUnitRentabiliteBruteAnnuelle">%</td>
-                </tr>
-                <tr id="TableauRentabiliteRowInteretsTotaux">
-                    <td id="TableauRentabiliteLabelInteretsTotaux">Intérêts totaux</td>
-                    <td id="TableauRentabiliteValueInteretsTotaux"></td>
-                    <td id="TableauRentabiliteUnitInteretsTotaux">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowInteretMensuelPart2">
-                    <td id="TableauRentabiliteLabelInteretMensuelPart2">Intérêt mensuel</td>
-                    <td id="TableauRentabiliteValueInteretMensuelPart2"></td>
-                    <td id="TableauRentabiliteUnitInteretMensuelPart2">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowTriAnnuel">
-                    <td id="TableauRentabiliteLabelTriAnnuel">TRI</td>
-                    <td id="TableauRentabiliteValueTriAnnuel"></td>
-                    <td id="TableauRentabiliteUnitTriAnnuel">%</td>
-                </tr>
-                <tr id="TableauRentabiliteRowLoyerAnnuel">
-                    <td id="TableauRentabiliteLabelLoyerAnnuel">Loyer annuel</td>
-                    <td id="TableauRentabiliteValueLoyerAnnuel"></td>
-                    <td id="TableauRentabiliteUnitLoyerAnnuel">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowTauxRendementBrut">
-                    <td id="TableauRentabiliteLabelTauxRendementBrut">Taux de rendement brut</td>
-                    <td id="TableauRentabiliteValueTauxRendementBrut"></td>
-                    <td id="TableauRentabiliteUnitTauxRendementBrut">%</td>
-                </tr>
-                <tr id="TableauRentabiliteRowPlusValueLatente">
-                    <td id="TableauRentabiliteLabelPlusValueLatente">Plus value latente</td>
-                    <td id="TableauRentabiliteValuePlusValueLatente">0</td>
-                    <td id="TableauRentabiliteUnitPlusValueLatente">€</td>
-                </tr>
-                <tr id="TableauRentabiliteRowTauxRendementBrut">
-                    <td id="TableauRentabiliteLabelTauxRendementFondsPropre">Taux de rendement sur fonds propre</td>
-                    <td id="TableauRentabiliteValueTauxRendementFondsPropre"></td>
-                    <td id="TableauRentabiliteUnitTauxRendementFondsPropre">%</td>
-                </tr>
-                <tr id="TableauRentabiliteRowBeneficeAnnuelNetIncluantBiens">
-                    <td id="TableauRentabiliteLabelBeneficeAnnuelNetIncluantBiens">
-                        Benefices annuel net<br>
-                        <i>comprenants la valorisation du bien</i>
-                    </td>
-                
-                    <td id="TableauRentabiliteValueBeneficeAnnuelNetIncluantBiens"></td>
-                    <td id="TableauRentabiliteUnitBeneficeAnnuelNetIncluantBiens">€</td>
-                </tr>
-            </table>
-        </div>
         </div>
     </div>
 

@@ -1,8 +1,11 @@
 .amenities-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     font-family: Arial, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -20,8 +23,8 @@
 }
 
 .amenities-category {
-    width: 50%;
-    padding: 0 15px;
+    width: 300px;
+    margin: 15px 0px;
     box-sizing: border-box;
 }
 
@@ -224,7 +227,7 @@
     position: absolute; /* Positionner de manière absolue */
     top: 30px; /* Ajustez selon la distance souhaitée sous le bouton */
     left: 0;
-    width: 300px;
+    min-width: 300px;
     background: white;
     border: 1px solid #ccc;
     padding: 10px;

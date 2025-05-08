@@ -353,11 +353,20 @@ async function fetchAllAmenities(department, city) {
 
 // Fonction utilitaire pour attacher les écouteurs aux boutons "..."
 function attachMoreButtonListeners(amenitiesData) {
+  // Modifiez l'écouteur d'événements des boutons pour masquer la div si elle est déjà visible
+
+  // Modifiez l'écouteur d'événements des boutons pour masquer la div si elle est déjà visible
   document.querySelectorAll('.more-button').forEach(button => {
     button.addEventListener('click', function(event) {
       const category = normalizeCategoryName(this.getAttribute('data-category'));
       const additionalAmenitiesDiv = document.getElementById('additionalAmenities');
       const floatingDiv = document.getElementById('floatingDiv');
+
+      // Si la div flottante est déjà visible et correspond à la même catégorie, masquez-la
+      if (floatingDiv.style.display === 'block' && floatingDiv.getAttribute('data-category') === category) {
+        floatingDiv.style.display = 'none';
+        return;
+      }
 
       const rect = this.getBoundingClientRect();
       const windowHeight = window.innerHeight;
@@ -384,6 +393,7 @@ function attachMoreButtonListeners(amenitiesData) {
       floatingDiv.style.top = `${top}px`;
       floatingDiv.style.left = `${left}px`;
       floatingDiv.style.display = 'block';
+      floatingDiv.setAttribute('data-category', category);
 
       additionalAmenitiesDiv.innerHTML = '';
 
@@ -447,15 +457,17 @@ async function getAmenitiesNearby(userAddress) {
     amenities: amenities.sort((a, b) => a.distance - b.distance).slice(0, MAX_AMENITIES_DISPLAYED)
   }));
 
+  // Ajoutez un écouteur d'événements global pour masquer la div flottante
   window.addEventListener('click', function(event) {
     const floatingDiv = document.getElementById('floatingDiv');
     const isClickInside = floatingDiv.contains(event.target);
-    const isButtonClicked = event.target.classList.contains('more-button');
+    const isMoreButton = event.target.closest('.more-button');
 
-    if (!isClickInside && !isButtonClicked) {
+    if (!isClickInside && !isMoreButton) {
       floatingDiv.style.display = 'none';
     }
   });
+
 
   try {
     if (document.readyState !== 'complete') {
@@ -628,6 +640,18 @@ function saveMapState(center, zoom, amenitiesData) {
   sessionStorage.setItem('mapZoom', zoom);
   sessionStorage.setItem('amenitiesData', JSON.stringify(amenitiesData));
 }
+
+// Ajoutez un écouteur d'événements global pour masquer la div flottante
+document.addEventListener('click', function(event) {
+  const floatingDiv = document.getElementById('floatingDiv');
+  const isClickInsideFloatingDiv = floatingDiv.contains(event.target);
+  const isMoreButton = event.target.closest('.more-button');
+
+  // Si le clic est en dehors de la div flottante et non sur un bouton "...", masquez la div
+  if (!isClickInsideFloatingDiv && !isMoreButton) {
+    floatingDiv.style.display = 'none';
+  }
+});
 
 
 document.getElementById('Address').addEventListener('change', function(event) {
