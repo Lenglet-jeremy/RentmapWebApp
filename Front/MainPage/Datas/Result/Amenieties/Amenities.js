@@ -351,7 +351,61 @@ async function fetchAllAmenities(department, city) {
   return data[key];
 }
 
-// Modifier la fonction getAmenitiesNearby pour obtenir les 6 premières commodités
+// Fonction utilitaire pour attacher les écouteurs aux boutons "..."
+function attachMoreButtonListeners(amenitiesData) {
+  document.querySelectorAll('.more-button').forEach(button => {
+    button.addEventListener('click', function(event) {
+      const category = normalizeCategoryName(this.getAttribute('data-category'));
+      const additionalAmenitiesDiv = document.getElementById('additionalAmenities');
+      const floatingDiv = document.getElementById('floatingDiv');
+
+      const rect = this.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const windowWidth = window.innerWidth;
+      const divHeight = floatingDiv.offsetHeight;
+      const divWidth = floatingDiv.offsetWidth;
+
+      let top = rect.bottom;
+      let left = rect.left;
+
+      if (top + divHeight > windowHeight) {
+        top = rect.top - divHeight;
+      }
+      if (left + divWidth > windowWidth) {
+        left = rect.right - divWidth;
+      }
+      if (top < 0) {
+        top = rect.bottom;
+      }
+      if (left < 0) {
+        left = 0;
+      }
+
+      floatingDiv.style.top = `${top}px`;
+      floatingDiv.style.left = `${left}px`;
+      floatingDiv.style.display = 'block';
+
+      additionalAmenitiesDiv.innerHTML = '';
+
+      const additionalAmenities = amenitiesData.find(data => normalizeCategoryName(data.category) === category)?.amenities.slice(3);
+
+      if (additionalAmenities && additionalAmenities.length > 0) {
+        additionalAmenities.forEach(item => {
+          const amenityDiv = document.createElement('div');
+          amenityDiv.classList.add('additional-amenity');
+          amenityDiv.innerHTML = `<strong>${item.name || item.category}</strong> - ${Math.round(item.distance)} m`;
+          additionalAmenitiesDiv.appendChild(amenityDiv);
+        });
+      } else {
+        additionalAmenitiesDiv.innerHTML = '<p>Aucune commodité supplémentaire disponible.</p>';
+      }
+
+      event.stopPropagation();
+    });
+  });
+}
+
+// Fonction principale modifiée
 async function getAmenitiesNearby(userAddress) {
   let departmentCode = "";
   let department = "";
@@ -363,155 +417,85 @@ async function getAmenitiesNearby(userAddress) {
   [departmentCode, department, city, neighbourhoodValue.innerText] = await fetchDepartmentCityNeighborhood();
   const allAmenities = await fetchAllAmenities(department, city);
 
-  // Calculer la distance et reformater
   const amenitiesWithDistance = allAmenities.map(amenity => {
-      const distance = calculateDistance(lat, lon, amenity.latitude, amenity.longitude);
-      return {
-          ...amenity,
-          distance,
-      };
+    const distance = calculateDistance(lat, lon, amenity.latitude, amenity.longitude);
+    return {
+      ...amenity,
+      distance,
+    };
   });
 
   const flatCategoryMap = {};
   for (const [group, keys] of Object.entries(categories)) {
-      keys.forEach(key => {
-          flatCategoryMap[key] = group;
-      });
+    keys.forEach(key => {
+      flatCategoryMap[key] = group;
+    });
   }
 
   const groupedAmenities = {};
   amenitiesWithDistance.forEach(amenity => {
-      const key = `${amenity.type}=${amenity.category}`;
-      const group = flatCategoryMap[key] || 'Divers';
-      if (!groupedAmenities[group]) {
-          groupedAmenities[group] = [];
-      }
-      groupedAmenities[group].push(amenity);
+    const key = `${amenity.type}=${amenity.category}`;
+    const group = flatCategoryMap[key] || 'Divers';
+    if (!groupedAmenities[group]) {
+      groupedAmenities[group] = [];
+    }
+    groupedAmenities[group].push(amenity);
   });
 
-  // Convertir le regroupement en tableau pour traitement uniforme
   const amenitiesData = Object.entries(groupedAmenities).map(([category, amenities]) => ({
-      category,
-      amenities: amenities.sort((a, b) => a.distance - b.distance).slice(0, MAX_AMENITIES_DISPLAYED) 
+    category,
+    amenities: amenities.sort((a, b) => a.distance - b.distance).slice(0, MAX_AMENITIES_DISPLAYED)
   }));
 
-  // Ajouter un gestionnaire d'événements pour masquer la div flottante lorsque l'on clique en dehors
   window.addEventListener('click', function(event) {
-      const floatingDiv = document.getElementById('floatingDiv');
-      const isClickInside = floatingDiv.contains(event.target);
-      const isButtonClicked = event.target.classList.contains('more-button');
+    const floatingDiv = document.getElementById('floatingDiv');
+    const isClickInside = floatingDiv.contains(event.target);
+    const isButtonClicked = event.target.classList.contains('more-button');
 
-      if (!isClickInside && !isButtonClicked) {
-          floatingDiv.style.display = 'none';
-      }
+    if (!isClickInside && !isButtonClicked) {
+      floatingDiv.style.display = 'none';
+    }
   });
 
-
-
-  // Initialisation de la carte + ajout des marqueurs
   try {
     if (document.readyState !== 'complete') {
-        await new Promise(resolve => window.addEventListener('load', resolve));
+      await new Promise(resolve => window.addEventListener('load', resolve));
     }
 
     if (!mapboxgl || !token) {
-        console.error("Erreur : Mapbox ou token manquant");
-        return;
+      console.error("Erreur : Mapbox ou token manquant");
+      return;
     }
 
     await new Promise(resolve => setTimeout(resolve, 100));
     await initializeMap(lon, lat);
 
-    // Injection DOM
+    // Injecter les commodités dans le DOM
     amenitiesData.forEach(({ category, amenities }) => injectInDOM(category, amenities));
 
-  
-    document.querySelectorAll('.more-button').forEach(button => {
-      button.addEventListener('click', function(event) {
-          const category = normalizeCategoryName(this.getAttribute('data-category'));
-          const additionalAmenitiesDiv = document.getElementById('additionalAmenities');
-          const floatingDiv = document.getElementById('floatingDiv');
+    // ✅ Réattacher les écouteurs après injection DOM
+    attachMoreButtonListeners(amenitiesData);
 
-          // Positionner la div flottante sous le bouton cliqué
-          const rect = this.getBoundingClientRect();
-          const windowHeight = window.innerHeight;
-          const windowWidth = window.innerWidth;
-          const divHeight = floatingDiv.offsetHeight;
-          const divWidth = floatingDiv.offsetWidth;
-
-          // Calculer la position de la div flottante
-          let top = rect.bottom;
-          let left = rect.left;
-
-          // Si la div dépasse la fenêtre en bas, la déplacer vers le haut
-          if (top + divHeight > windowHeight) {
-              top = rect.top - divHeight;
-          }
-
-          // Si la div dépasse la fenêtre à droite, la déplacer vers la gauche
-          if (left + divWidth > windowWidth) {
-              left = rect.right - divWidth;
-          }
-
-          // Si la div dépasse la fenêtre en haut, la déplacer vers le bas
-          if (top < 0) {
-              top = rect.bottom;
-          }
-
-          // Si la div dépasse la fenêtre à gauche, la déplacer vers la droite
-          if (left < 0) {
-              left = 0;
-          }
-
-          floatingDiv.style.top = `${top}px`; // Positionner sous ou au-dessus du bouton
-          floatingDiv.style.left = `${left}px`; // Aligner avec le bouton
-          floatingDiv.style.display = 'block'; // Afficher la div flottante
-
-          // Effacer le contenu précédent
-          additionalAmenitiesDiv.innerHTML = '';
-
-          // Récupérer les commodités supplémentaires pour la catégorie sélectionnée
-          const additionalAmenities = amenitiesData.find(data => normalizeCategoryName(data.category) === category)?.amenities.slice(3);
-
-          if (additionalAmenities && additionalAmenities.length > 0) {
-              additionalAmenities.forEach(item => {
-                  const amenityDiv = document.createElement('div');
-                  amenityDiv.classList.add('additional-amenity');
-                  amenityDiv.innerHTML = `
-                      <strong>${item.name || item.category}</strong> - ${Math.round(item.distance)} m
-                  `;
-                  additionalAmenitiesDiv.appendChild(amenityDiv);
-              });
-          } else {
-              additionalAmenitiesDiv.innerHTML = '<p>Aucune commodité supplémentaire disponible.</p>';
-          }
-
-          // Empêcher la propagation de l'événement pour éviter de masquer la div immédiatement
-          event.stopPropagation();
+    // Ajouter les marqueurs pour les commodités
+    amenitiesData.forEach(({ category, amenities }) => {
+      amenities.forEach(amenity => {
+        createMarker(category, [amenity.longitude, amenity.latitude], amenity.name, amenity.distance);
       });
     });
 
-    // Ajout marqueurs
-    amenitiesData.forEach(({ category, amenities }) => {
-        amenities.forEach(amenity => {
-            createMarker(category, [amenity.longitude, amenity.latitude], amenity.name, amenity.distance);
-        });
-    });
-
-    // Ajouter le marqueur de l'utilisateur après tous les autres marqueurs
-    const userMarker = new mapboxgl.Marker({ color: 'blue' })
-        .setLngLat([lon, lat])
-        .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
-        .addTo(map);
-
+    // Marqueur utilisateur
+    new mapboxgl.Marker({ color: 'blue' })
+      .setLngLat([lon, lat])
+      .setPopup(new mapboxgl.Popup().setText("Votre adresse"))
+      .addTo(map);
 
   } catch (err) {
     console.error("Erreur globale:", err.message);
   }
 
   saveMapState([lon, lat], map.getZoom(), amenitiesData);
-
 }
+
 
 async function loadSavedMapState() {
   const center = JSON.parse(sessionStorage.getItem('mapCenter'));
@@ -538,11 +522,16 @@ async function loadSavedMapState() {
 
     // Zoom
     map.setZoom(parseFloat(zoom));
+
+    // Réattacher les écouteurs d'événements
+    attachMoreButtonListeners(amenitiesData);
+
     return true;
   }
 
   return false;
 }
+
 
 
 // Fonction pour créer un marqueur
