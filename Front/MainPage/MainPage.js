@@ -368,3 +368,80 @@ document.getElementById('PrintButton').addEventListener('click', function () {
 });
 
 
+document.getElementById("BackToStep1").addEventListener("click", function () {
+        sessionStorage.clear(); // Vide le sessionStorage
+        location.reload();      // Recharge la page
+    });
+
+
+// Sauvegarde avant le reload (par exemple à l'événement d'un bouton)
+document.getElementById("PrintButton").addEventListener("click", function () {
+const resultVisible = window.getComputedStyle(document.getElementById("Result")).display !== "none";
+sessionStorage.setItem("keepPrintAreaVisible", resultVisible ? "true" : "false");
+location.reload(); // ou autre logique de reload
+});
+
+if (sessionStorage.getItem("keepPrintAreaVisible") === "true") {
+    document.querySelector(".PrintArea").style.display = "flex";
+    // Nettoyage si on veut que ça ne s'applique qu'une fois
+    sessionStorage.removeItem("keepPrintAreaVisible");
+}
+
+// Fonction qui met à jour l'affichage de PrintArea selon l'état de #Result
+function updatePrintAreaVisibility() {
+    const result = document.getElementById("Result");
+    const printArea = document.getElementById("PrintArea");
+
+    const isResultVisible = window.getComputedStyle(result).display !== "none";
+    if (isResultVisible) {
+        printArea.style.display = "flex";
+    } else {
+        printArea.style.display = "none";
+}
+}
+
+
+function updateVisibility() {
+    const resultVisible = window.getComputedStyle(document.getElementById("Result")).display !== "none";
+
+    // Affichage PrintArea
+    const printArea = document.getElementById("PrintArea");
+    printArea.style.display = resultVisible ? "flex" : "none";
+
+    // Affichage LocService
+    const locService = document.querySelector(".LocService");
+    if (locService) locService.style.display = resultVisible ? "block" : "none";
+}
+
+// Bouton "imprimer"
+document.getElementById("PrintButton").addEventListener("click", function () {
+    const resultVisible = window.getComputedStyle(document.getElementById("Result")).display !== "none";
+    sessionStorage.setItem("keepVisible", resultVisible ? "true" : "false");
+    location.reload(); // ou ta logique de reload
+});
+
+const keepVisible = sessionStorage.getItem("keepVisible");
+
+if (keepVisible === "true") {
+    document.getElementById("PrintArea").style.display = "flex";
+    const locService = document.querySelector(".LocService");
+    if (locService) locService.style.display = "block";
+    sessionStorage.removeItem("keepVisible");
+} else {
+    updateVisibility(); // Gère l'affichage initial
+}
+
+// Sauvegarde dans sessionStorage avant reload
+document.getElementById("PrintButton").addEventListener("click", function () {
+    const isResultVisible = window.getComputedStyle(document.getElementById("Result")).display !== "none";
+    sessionStorage.setItem("keepPrintAreaVisible", isResultVisible ? "true" : "false");
+    location.reload(); // ou une autre logique de reload
+});
+
+const restore = sessionStorage.getItem("keepPrintAreaVisible");
+if (restore === "true") {
+    document.getElementById("PrintArea").style.display = "flex";
+    sessionStorage.removeItem("keepPrintAreaVisible");
+} else {
+    updatePrintAreaVisibility(); // pour l'état initial si pas de sessionStorage
+}

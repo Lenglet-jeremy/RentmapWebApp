@@ -1,5 +1,7 @@
 // Step1.js
 
+const LIMIT_HISTORY = 5
+
 // Sélection des éléments du DOM
 const input = document.getElementById("Address");
 const suggestionsList = document.getElementById("Suggestion");
@@ -86,6 +88,26 @@ input.addEventListener("input", () => {
   }, DEBOUNCE_DELAY);
 });
 
+function saveAddressToHistory(address) {
+  let history = JSON.parse(localStorage.getItem("addressHistory")) || [];
+  
+  // Supprime les doublons
+  history = history.filter(item => item !== address);
+
+  // Ajoute au début
+  history.unshift(address);
+
+  // Garde les 5 dernières
+  history = history.slice(0, LIMIT_HISTORY);
+
+  localStorage.setItem("addressHistory", JSON.stringify(history));
+}
+
+function getAddressHistory() {
+  return JSON.parse(localStorage.getItem("addressHistory")) || [];
+}
+
+
 // Récupération des suggestions
 async function fetchSuggestions(query) {
   try {
@@ -155,6 +177,9 @@ function displaySuggestions(data) {
 
     li.addEventListener("click", () => {
       input.value = feature.place_name;
+      saveAddressToHistory(feature.place_name);
+  displayAddressHistory(); // met à jour l'affichage
+
       suggestionsList.style.display = "none";
       sessionStorage.setItem("UserInputAdress", input.value);
       input.dispatchEvent(new CustomEvent('addressSelected', { detail: feature }));
@@ -175,6 +200,52 @@ function displaySuggestions(data) {
     suggestionsList.style.display = "none";
   }
 }
+
+function displayAddressHistory() {
+  const container = document.getElementById("AddressHistory");
+  const history = getAddressHistory();
+
+  if (history.length === 0) {
+    container.style.display = "none";
+    return;
+  }
+
+  const rect = input.getBoundingClientRect();
+  container.style.top = `${input.offsetTop + input.offsetHeight}px`;
+  container.style.left = `${input.offsetLeft}px`;
+  container.style.width = `${input.offsetWidth}px`;
+
+  container.innerHTML = "<p>Historique des adresses :</p><ul>" +
+    history.map(addr => `<li>${addr}</li>`).join('') +
+    "</ul>";
+
+  container.querySelectorAll("li").forEach(li => {
+  li.addEventListener("click", () => {
+    input.value = li.textContent;
+    sessionStorage.setItem("UserInputAdress", input.value);
+    step1NextButton.disabled = false;
+    updateButtonTooltip();
+    container.style.display = "none";
+
+    // Forcer le focus dans l'input
+    input.focus();
+
+    // Simuler une touche "Enter" pour déclencher le traitement
+    const enterEvent = new KeyboardEvent("keydown", {
+      key: "Enter",
+      keyCode: 13,
+      which: 13,
+      bubbles: true
+    });
+    input.dispatchEvent(enterEvent);
+    input.dispatchEvent(new Event('change'));
+
+  });
+});
+
+}
+
+
 
 // Navigation clavier
 function highlightSelection() {
@@ -228,55 +299,50 @@ input.addEventListener("keydown", (event) => {
 
 // CSS dynamique
 const style = document.createElement("style");
-style.textContent = `
-  #Suggestion {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+style.textContent += `
+  .AddressHistory {
     position: absolute;
-    width: 100%;
-    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-
-  #Suggestion li {
-    margin: 0;
+    border-radius: 4px;
     width: 100%;
+    z-index: 999;
+    display: none;
+    padding: 8px 0;
+    margin-top: 4px;
   }
 
-  #Suggestion li:last-child {
+  .AddressHistory p {
+    margin: 0 10px 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .AddressHistory ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .AddressHistory li {
+    padding: 5px 0;
+    cursor: pointer;
+    color: #1a73e8;
+    border-bottom: 1px solid #eee;
+  }
+
+  .AddressHistory li:last-child {
     border-bottom: none;
   }
 
-  #Suggestion li:hover {
-    background-color: #e0e0e0;
-  }
-
-  #Suggestion .loading {
-    text-align: center;
-    padding: 10px;
-    color: #666;
-  }
-
-  #Suggestion .error {
-    text-align: center;
-    padding: 10px;
-    color: #d32f2f;
-  }
-
-  #Suggestion .no-result {
-    text-align: center;
-    padding: 10px;
-    color: #666;
-    font-style: italic;
-  }
-
-  .Step1NextButton[disabled] {
-    pointer-events: auto;
-    cursor: not-allowed;
+  .AddressHistory li:hover {
+    background-color: #f0f0f0;
   }
 `;
 document.head.appendChild(style);
+
 
 // =====================================================
 // ==================== RELOAD PAGE ====================
@@ -296,7 +362,17 @@ if (savedUserAddress !== null) {
   updateButtonTooltip();
 }
 
+input.addEventListener("click", () => {
+  if (input.value.trim() === "") {
+    displayAddressHistory(); // (re)génère le HTML
+    document.getElementById("AddressHistory").style.display = "block";
+  }
+});
 
+// Masque l'historique dès qu'on commence à taper
+input.addEventListener("input", () => {
+  document.getElementById("AddressHistory").style.display = "none";
+});
 
 // ➤ Application des états au chargement
 if (step1Display !== null) step1.style.display = step1Display;
@@ -311,6 +387,14 @@ document.addEventListener("click", (event) => {
   }
 });
 
+document.addEventListener("click", (e) => {
+  const historyBox = document.getElementById("AddressHistory");
+  if (!input.contains(e.target) && !historyBox.contains(e.target)) {
+    historyBox.style.display = "none";
+  }
+});
+
+
 // ➤ Étape 1 → Étape 2
 step1NextButton.addEventListener("click", () => {
   if (!step1NextButton.disabled && step1 && step2) {
@@ -322,6 +406,9 @@ step1NextButton.addEventListener("click", () => {
     sessionStorage.setItem("suggestionsDisplay", "none");
   }
 });
+
+displayAddressHistory();
+
 
 // =====================================================
 // ================== END RELOAD PAGE ==================

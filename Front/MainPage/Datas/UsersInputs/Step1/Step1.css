@@ -7,11 +7,17 @@
 }
 
 .AdressContainer{
+    position: relative; /* Nécessaire pour les enfants en absolute */
     display: flex;
     flex-direction: column;
     .Suggestion{
-        display: flex;
-        flex-direction: column;
+      position: absolute;
+      top: 100%; /* Juste sous le champ */
+      left: 0;
+      width: 100%;
+      background-color: white;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
         /* Style de base pour les éléments <li> */
         li {
             font-family: Arial, sans-serif;
@@ -86,4 +92,27 @@
   .tooltip-container button:enabled + .custom-tooltip {
     display: none;
   }
+
   
+.AddressHistory {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  margin-top: 0; /* Supprimer ce qui causait le décalage */
+}
+
+
+.AddressHistory ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.AddressHistory li {
+  padding: 4px 0;
+  color: #1a73e8;
+  text-decoration: underline;
+}

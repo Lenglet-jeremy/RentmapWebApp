@@ -56,15 +56,14 @@
         justify-content: center;
         align-items: center;
     }
-
+    
     .ContentArea .Content .PrintArea {
         display: none;
         flex-direction: column;
-        width: 100%;
-        margin-top: 50px;
         justify-content: center;
         align-items: center;
     }
+
 
     .ContentArea .Content .PrintArea .PrintButton {
         width: 100px;
@@ -271,4 +270,17 @@
 
 .MapArea.slide-out {
     animation: slideOutToLeft 1s ease forwards;
+}
+
+#BackToStep1{
+    width: 150px;
+    height: 30px;
+}
+
+.NavHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
