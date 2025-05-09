@@ -11,7 +11,7 @@ function normalizeString(str) {
         ? str.trim().toLowerCase().normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
             .replace("saint-", "st ")
-            .replace(" ", "-")
+            .replace(/-/g, " ")
         : "";
 }
 
@@ -48,7 +48,7 @@ async function fetchNeighborhoodCostRentData(department, city) {
 
     let RefinedData = [];
     for (const key in data) {
-        if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+        if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
             for (const collection of data[key]) {
                 if (normalizeString(collection["Ville"]) === normalizeString(city)) {
                     RefinedData.push(collection);
@@ -62,26 +62,42 @@ async function fetchNeighborhoodCostRentData(department, city) {
 async function fetchNeighborhoodCostData(department, city, neighborhood, typeOfProperty) {
     try {
         const response = await fetch(`${backendUrl}/api/Refined`);
-        
-        
-        
-        
         const data = await response.json();
-        
 
         for (const [key, value] of Object.entries(data)) {
-            if (key.includes(normalizeString(department))) {
-                for (const collection of value) {              
+            
+            if (normalizeString(key).includes(normalizeString(department))) {
+                                
+                for (const collection of value) {
+
+                    console.log();
                     
-                    if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(collection["Quartier"]).includes(normalizeString(neighborhood))) {    
+                    console.log(normalizeString(neighborhood.split("-")[1]));
+                    console.log(normalizeString(collection["Quartier"]));
+                    
+                    
+
+                    if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(neighborhood.split("-")[1]) === normalizeString(collection["Quartier"])) {
+                        
+                        if(typeOfProperty === "Appartement"){
+                                return collection["Prix au m2 appartement"]
+                            }   
+                        else if(typeOfProperty === "Maison"){
+                            return collection["Prix au m2 maison"]
+                        }
+                    }    
+
+                    
+                    else if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(collection["Quartier"]).includes(normalizeString(neighborhood))) {    
                            
-                    if(typeOfProperty === "Appartement"){
-                            return collection["Prix au m2 appartement"]
-                        }   
+                        if(typeOfProperty === "Appartement"){
+                                return collection["Prix au m2 appartement"]
+                            }   
                         else if(typeOfProperty === "Maison"){
                             return collection["Prix au m2 maison"]
                         }
                     }
+                    
                 }
             }
         }        
@@ -100,9 +116,21 @@ async function fetchNeighborhoodRentData(department, city, neighborhood, typeOfP
         
 
         for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 for (const collection of data[key]) {
-                    if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(collection["Quartier"]).includes(normalizeString(neighborhood))) { 
+
+                    
+                    if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(neighborhood.split("-")[1]) === normalizeString(collection["Quartier"])) {
+                        
+                        if(typeOfProperty === "Appartement"){
+                            return collection["Loyer au m2 appartement"]
+                        }   
+                        else if(typeOfProperty === "Maison"){
+                            return collection["Loyer au m2 maison"]
+                        }
+                    }   
+
+                    else if (normalizeString(collection["Ville"]) === normalizeString(city) && normalizeString(collection["Quartier"]).includes(normalizeString(neighborhood))) { 
                         if(typeOfProperty === "Appartement"){
                             return collection["Loyer au m2 appartement"]
                         }   
@@ -126,7 +154,7 @@ async function fetchVacantsAcommodationsData(department, city) {
         const data = await response.json();
 
         for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 for (const collection of data[key]) {
                     if (normalizeString(collection["libgeo"]) === normalizeString(city)) {                                  
                         return collection["part_logt_vacant"]
@@ -153,9 +181,11 @@ async function fetchRentabiliteData(department, city, typeOfProperty) {
         let cityData = {};
 
         for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 for (const collection of data[key]) {
                     if (collection.Villes && normalizeString(collection.Villes) === normalizeString(city)) {
+                        
                         cityData = collection;
                         break;
                     }
@@ -334,7 +364,7 @@ async function fetchNeighborhoodPopulationData(department, city) {
         let populationData = [];
 
         for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 for (const collection of data[key]) {
                     if (normalizeString(collection["Libellé commune ou ARM"]) === normalizeString(city)) {
                         populationData.push(collection);
@@ -443,7 +473,7 @@ async function fetchPrixImmoData(department, cityName) {
         let prixImmoByYear = {};
 
         for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 for (const collection of data[key]) {
                     if (normalizeString(collection["Villes"]) === normalizeString(cityName)) {
                         const year = collection["Annee"];
@@ -517,7 +547,7 @@ async function fetchMedianIncomeData(department, city) {
         const data = await response.json();
 
         for (const key in data) {            
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 
                 for (const collection of data[key]) {
                     if (normalizeString(collection["libgeo"]) === normalizeString(city)) {
@@ -539,7 +569,7 @@ async function fetchOwnerShareData(department, city) {
         const data = await response.json();
 
         for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 for (const collection of data[key]) {
                     if (normalizeString(collection["libgeo"]) === normalizeString(city)) {
                                              
@@ -560,7 +590,7 @@ async function fetchPopulationDensityData(department, city) {
         const data = await response.json();
 
         for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 for (const collection of data[key]) {
                     if (normalizeString(collection["libgeo"]) === normalizeString(city)) {
                         
@@ -582,7 +612,7 @@ async function fetchInternetConnectionData(department, city) {
         const data = await response.json();
 
         for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 for (const collection of data[key]) {
                     if (normalizeString(collection["Commune"]) === normalizeString(city)) {   
                         let firstValue = collection["0,5 Mbit/s"] * 1;
@@ -743,7 +773,7 @@ async function createLineChart(canvasId, department, city, label, borderColor, c
         
         // Chercher les données pour le département spécifié
         const departmentKey = Object.keys(data).find(key => 
-            key.includes(normalizeString(department))
+            normalizeString(key).includes(normalizeString(department))
         );
         
         if (departmentKey) {
@@ -820,7 +850,7 @@ async function createPrixM2Chart(canvasId, department, city, label, borderColor,
        
         // Chercher les données pour le département spécifié
         const departmentKey = Object.keys(data).find(key =>
-            key.includes(normalizeString(department))
+            normalizeString(key).includes(normalizeString(department))
         );
        
         if (departmentKey) {
@@ -899,7 +929,7 @@ async function createSurfaceChart(canvasId, department, city, label, borderColor
        
         // Chercher les données pour le département spécifié
         const departmentKey = Object.keys(data).find(key =>
-            key.includes(normalizeString(department))
+            normalizeString(key).includes(normalizeString(department))
         );
        
         if (departmentKey) {
@@ -977,7 +1007,7 @@ async function CreateUnemployedChart(canvasId, department, city, label, borderCo
         let AverageUnemployed = [];
 
         for (const key in data) {
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 // Extraire les clés à partir du premier élément de l'entrée correspondante
                 labels = Object.keys(data[key][0]).slice(2);
 
@@ -1059,7 +1089,7 @@ async function fetchLoiLittoralData(department, city) {
         const data = await response.json();
 
         for (const key in data) {            
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 
                 for (const collection of data[key]) {
                     
@@ -1087,9 +1117,9 @@ export async function fetchDepartmentCityNeighborhood() {
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
-        
-        
-        
+
+        console.log("Requete adresse : ");        
+        console.log(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`)
         
         
 
@@ -1098,7 +1128,7 @@ export async function fetchDepartmentCityNeighborhood() {
         if (data && data.length > 0) {
             const departement = data[0].address.county || "";
             const departmentCode = data[0].address["ISO3166-2-lvl6"].split("-")[1];
-            const city = data[0].address.village || data[0].address.town || data[0].address.city || data[0].name ||  "";
+            const city = data[0].address.city || data[0].address.village || data[0].address.town || data[0].name ||  "";
             const suburb = data[0].address.suburb || "";
             
             return [departmentCode, departement, city, suburb || ""];
@@ -1118,7 +1148,7 @@ async function fetchZoneMontagnesData(department, city) {
         const data = await response.json();
 
         for (const key in data) {            
-            if (data.hasOwnProperty(key) && key.includes(normalizeString(department))) {
+            if (data.hasOwnProperty(key) && normalizeString(key).includes(normalizeString(department))) {
                 
                 for (const collection of data[key]) {
                     if (normalizeString(collection["libgeo"]) === normalizeString(city)) {
@@ -1723,10 +1753,7 @@ async function updateValues() {
         neighborhoodCost = Math.round(neighborhoodCost)
         neighborhoodRent = await fetchNeighborhoodRentData(department, city, neighbourhoodValue.innerText, typeOfPropertyValue.innerText);
     }
-    if (neighborhoodCost === undefined || neighborhoodRent === undefined) {        
-        console.error("neighborhoodCost or neighborhoodRent is undefined");
-        return;
-    }
+    
 
     costSquareNeighbourhood.innerText = neighborhoodCost.toLocaleString("fr-FR") + " €";
     RentValueNeighbourhood.innerText = neighborhoodRent.toLocaleString("fr-FR") + " €";
@@ -1773,7 +1800,6 @@ async function updateValues() {
     TableauFinancier();
 
     fillNeighborhoodCostRentTable(department, city);
-    console.log(sessionStorage.getItem('nbCostRentTableRow'))
 
 
     // Ici se trouve les commodités
