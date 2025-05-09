@@ -71,7 +71,6 @@ async function fetchNeighborhoodCostData(department, city, neighborhood, typeOfP
                 for (const collection of value) {
 
                     console.log();
-                    
                     console.log(normalizeString(neighborhood.split("-")[1]));
                     console.log(normalizeString(collection["Quartier"]));
                     
