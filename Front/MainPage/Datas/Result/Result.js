@@ -397,7 +397,6 @@ async function fillPopulationTable(department, cityName) {
             row.querySelectorAll("td")[7].innerText = populationData[year].total75toMore.toLocaleString();
         }
     });
-    document.getElementById("AverageAge").textContent = populationAverageAge.toFixed(2) + " ans";
     
 }
 
@@ -1790,7 +1789,9 @@ async function updateValues() {
     saveChartParams("UnemployedChart", ['UnemployedChartCanvas', department, city, "Taux de Chômage", "rgba(255, 159, 64, 1)", "cityInputId"]);
 
     
-    fillPopulationTable(department, city);
+    await fillPopulationTable(department, city);
+    
+    document.getElementById("AverageAge").textContent = populationAverageAge.toFixed(2) + " ans";
     fillPrixImmoTable(department, city);
 
     TableauFinancier();
