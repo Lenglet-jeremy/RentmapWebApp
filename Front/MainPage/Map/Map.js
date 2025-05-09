@@ -713,5 +713,4 @@ window.addEventListener('beforeunload', () => {
 
 
 await initializeMap1("Map");
-
 map1.resise()
