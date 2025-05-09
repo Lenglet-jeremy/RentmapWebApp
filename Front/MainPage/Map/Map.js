@@ -712,4 +712,6 @@ window.addEventListener('beforeunload', () => {
 });
 
 
-initializeMap1("Map");
+await initializeMap1("Map");
+
+map1.resise()

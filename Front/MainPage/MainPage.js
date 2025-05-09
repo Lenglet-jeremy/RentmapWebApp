@@ -232,16 +232,8 @@ export async function getCoordinates() {
             const lat = parseFloat(data[0].lat);
             const lon = parseFloat(data[0].lon);
             saveToSessionStorage(data);
-            const mapArea = document.getElementById("MapArea");
-            if (mapArea && mapArea.offsetWidth > 0 && mapArea.offsetHeight > 0) {
-                updateMap1(lat, lon, radius, amenityLimit);
-            } else {
-                // Reporter l'appel jusqu'à ce que le conteneur soit visible
-                setTimeout(() => {
-                    updateMap1(lat, lon, radius, amenityLimit);
-                }, 300); // Ajuste le délai selon les transitions CSS
-            }
 
+            updateMap1(lat, lon, radius, amenityLimit);
         } else {
             console.error("Aucune donnée trouvée pour l'adresse fournie.");
         }
