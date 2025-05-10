@@ -10,7 +10,8 @@
     position: relative; /* Nécessaire pour les enfants en absolute */
     display: flex;
     flex-direction: column;
-    .Suggestion{
+    .AddressSuggestion{
+      display: flex;
       position: absolute;
       top: 100%; /* Juste sous le champ */
       left: 0;
@@ -94,25 +95,43 @@
   }
 
   
-.AddressHistory {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 999;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  margin-top: 0; /* Supprimer ce qui causait le décalage */
-}
 
+  .AddressHistory {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    padding: 8px 0;
+  }
 
-.AddressHistory ul {
-  list-style: none;
-  padding-left: 0;
-}
+  .AddressHistory p {
+    margin: 0 10px 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+  }
 
-.AddressHistory li {
-  padding: 4px 0;
-  color: #1a73e8;
-  text-decoration: underline;
-}
+  .AddressHistory ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .AddressHistory li {
+    padding: 5px 0;
+    cursor: pointer;
+    color: #1a73e8;
+    border-bottom: 1px solid #eee;
+  }
+
+  .AddressHistory li:last-child {
+    border-bottom: none;
+  }
+
+  .AddressHistory li:hover {
+    background-color: #f0f0f0;
+  }

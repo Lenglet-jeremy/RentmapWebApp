@@ -233,7 +233,6 @@ let map;
 
 function normalizeCategoryName(category) {
   const normalized = category.normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "").toLowerCase();
-  console.log(`Normalized category: ${category} -> ${normalized}`); // Log de la normalisation
   return normalized;
 }
 
@@ -291,7 +290,6 @@ async function initializeMap(lon, lat) {
       const handleResize = () => {
         if (map) {
           map.resize();
-          console.log('Map resized');
         }
       };
 
@@ -341,7 +339,6 @@ async function fetchAllAmenities(department, city) {
 
   const data = await response.json();
   const key = `${city}commoditees.json`;
-  console.log(data[key]);
   
 
   if (!data[key]) {
@@ -654,10 +651,9 @@ document.addEventListener('click', function(event) {
 });
 
 
-document.getElementById('Address').addEventListener('change', function(event) {
-  const address = document.getElementById('Address');
+document.getElementById('UserAddress').addEventListener('change', function(event) {
+  const address = document.getElementById('UserAddress');
   const newValue = address.value;
   getAmenitiesNearby(newValue);
-  console.log('Valeur changée :', newValue);
 });
-const loaded = await loadSavedMapState();
+await loadSavedMapState();

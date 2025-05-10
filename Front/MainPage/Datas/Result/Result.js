@@ -1107,14 +1107,12 @@ async function fetchLoiLittoralData(department, city) {
 }
 
 export async function fetchDepartmentCityNeighborhood() {
-    const address = document.getElementById("Address").value;
+    const address = document.getElementById("UserAddress").value;
 
     try {
         const formattedAddress = address.replace(/ /g, '+');
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`);
 
-        console.log("Requete adresse : ");        
-        console.log(`https://nominatim.openstreetmap.org/search?q=${normalizeString(formattedAddress)}&format=json&addressdetails=1`)
         
         
 

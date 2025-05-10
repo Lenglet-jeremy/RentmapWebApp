@@ -444,7 +444,7 @@ export async function initializeMap1(mapId) {
 
 
 function updateMapWithCurrentValues() {
-    const addressInput = document.getElementById('Address');
+    const addressInput = document.getElementById('UserAddress');
 
     if (addressInput && addressInput.value.trim() !== "") {
         const currentAddress = addressInput.value.trim();
@@ -589,7 +589,7 @@ export async function geocodeAddress(address) {
     }
 }
 
-document.getElementById('Address').addEventListener('blur', async function() {
+document.getElementById('UserAddress').addEventListener('change', async function() {
     const address = this.value.trim();
     if (address === "") {
         return;
@@ -611,7 +611,7 @@ document.getElementById('Address').addEventListener('blur', async function() {
     }
 });
 
-document.getElementById('Address').addEventListener('keydown', async function(event) {
+document.getElementById('UserAddress').addEventListener('keydown', async function(event) {
     if (event.key === 'Enter') {
         event.preventDefault();
 

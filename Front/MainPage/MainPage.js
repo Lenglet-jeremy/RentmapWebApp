@@ -76,9 +76,9 @@ function InitializeSteps() {
     document.body.style.display = "block";
 
 
-    const addressInput = document.getElementById("Address");
-    addressInput.addEventListener("blur", getCoordinates);
-    addressInput.addEventListener("keypress", (event) => {
+    const userAddress = document.getElementById("UserAddress");
+    userAddress.addEventListener("blur", getCoordinates);
+    userAddress.addEventListener("keypress", (event) => {
         if (event.key === "Enter") {
             getCoordinates();
         }
@@ -183,7 +183,7 @@ function saveToSessionStorage(data, dataType = "") {
 
 export async function getCoordinates() {
     let url = "https://nominatim.openstreetmap.org/search?format=json";
-    let address = document.getElementById("Address").value.trim();
+    let address = document.getElementById("UserAddress").value.trim();
     const radius = document.getElementById("radius") ?
         parseInt(document.getElementById("radius").value) * 1000 : 50000;
     
